@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Scoutfeed</title>
+<style>
+:root {
+	--bg: #0a0a10;
+	--surface: rgba(255, 255, 255, 0.045);
+	--surface-hover: rgba(255, 255, 255, 0.07);
+	--border: rgba(255, 255, 255, 0.09);
+	--text: #ececf4;
+	--text-dim: #a3a3b8;
+	--text-faint: #71718a;
+	--accent: #a78bfa;
+	--accent-deep: #7c5cf0;
+	--sent: #6ee7b7;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+	background: var(--bg);
+	background-image: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(124, 92, 240, 0.13), transparent);
+	color: var(--text);
+	font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	min-height: 100dvh;
+	padding: max(20px, env(safe-area-inset-top)) 16px max(40px, env(safe-area-inset-bottom));
+}
+.wrap { max-width: 640px; margin: 0 auto; }
+header { padding: 8px 0 4px; }
+h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
+h1 .tld { color: var(--accent); }
+.sub { color: var(--text-faint); font-size: 13px; margin-top: 2px; }
+.chips { display: flex; gap: 8px; overflow-x: auto; padding: 14px 0 4px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.chips::-webkit-scrollbar { display: none; }
+.chip {
+	flex: 0 0 auto; min-height: 44px; padding: 0 16px;
+	background: var(--surface); color: var(--text-dim);
+	border: 1px solid var(--border); border-radius: 999px;
+	font: inherit; font-size: 14px; font-weight: 500;
+	cursor: pointer; touch-action: manipulation;
+	transition: background 150ms ease-out, color 150ms ease-out, border-color 150ms ease-out;
+}
+.chip:hover { background: var(--surface-hover); }
+.chip.active { background: rgba(124, 92, 240, 0.18); color: var(--accent); border-color: rgba(124, 92, 240, 0.45); }
+.chip:focus-visible, .title:focus-visible, .toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.toggle {
+	flex: 0 0 auto; min-height: 44px; padding: 0 16px; margin-left: auto;
+	background: none; color: var(--text-faint);
+	border: 1px dashed var(--border); border-radius: 999px;
+	font: inherit; font-size: 14px; cursor: pointer; touch-action: manipulation;
+}
+.toggle.active { color: var(--sent); border-color: rgba(110, 231, 183, 0.4); border-style: solid; }
+.day { margin-top: 26px; }
+.day h2 {
+	font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.09em;
+	color: var(--text-faint); margin-bottom: 10px; display: flex; align-items: baseline; gap: 8px;
+}
+.day .count { font-weight: 400; color: var(--text-faint); opacity: 0.7; font-size: 12px; }
+.card {
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: 14px;
+	padding: 14px 16px;
+	margin-bottom: 10px;
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+}
+.meta { display: flex; align-items: center; gap: 7px; font-size: 12.5px; color: var(--text-faint); margin-bottom: 6px; flex-wrap: wrap; }
+.src { color: var(--text-dim); font-weight: 500; }
+.dot { width: 3px; height: 3px; border-radius: 50%; background: var(--text-faint); }
+.badge {
+	display: inline-flex; align-items: center; gap: 4px;
+	font-size: 11px; font-weight: 600; letter-spacing: 0.02em;
+	padding: 2px 8px; border-radius: 999px;
+}
+.badge.cat { background: rgba(167, 139, 250, 0.12); color: var(--accent); }
+.badge.sent { background: rgba(110, 231, 183, 0.1); color: var(--sent); }
+.title {
+	display: block; color: var(--text); font-size: 16.5px; font-weight: 600;
+	line-height: 1.4; text-decoration: none; letter-spacing: -0.01em;
+}
+a.title:hover { color: var(--accent); }
+.snippet {
+	color: var(--text-dim); font-size: 14px; margin-top: 6px;
+	display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.empty { color: var(--text-faint); text-align: center; padding: 60px 0; }
+footer { color: var(--text-faint); font-size: 12px; text-align: center; margin-top: 40px; opacity: 0.8; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+	<h1>scout<span class="tld">feed</span></h1>
+	<p class="sub">Everything your scout matched — texted or not. Updated Aug 8, 3:36 PM ET.</p>
+</header>
+<nav class="chips" aria-label="Filter feed">
+	<button class="chip active" data-filter="">All</button><button class="chip" data-filter="industry">Industry</button><button class="chip" data-filter="tech">Tech</button>
+	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
+</nav>
+<main id="feed">
+<section class="day">
+<h2>Today<span class="count">5</span></h2>
+<article class="card" data-cat="healthcare" data-sent="0">
+	<div class="meta"><span class="src">Fierce Healthcare</span><span class="dot" aria-hidden="true"></span><time>3:36 pm</time><span class="badge cat">Industry</span></div>
+	<a class="title" href="https://www.fiercehealthcare.com/providers/ccbhc-model-continues-expand-faces-some-funding-constraints" target="_blank" rel="noopener noreferrer">&lt;a href=&quot;/providers/ccbhc-model-continues-expand-faces-some-funding-constraints&quot; hreflang=&quot;en&quot;&gt;CCBHC model continues to expand, but faces some funding constraints&lt;/a&gt;</a>
+	<p class="snippet">More uninsured people due to OBBBA Medicaid cuts, predicted to lead to millions losing Medicaid coverage, could increase uncompensated care costs and strain CCBHCs.</p>
+</article>
+<article class="card" data-cat="healthcare" data-sent="0">
+	<div class="meta"><span class="src">Fierce Healthcare</span><span class="dot" aria-hidden="true"></span><time>3:36 pm</time><span class="badge cat">Industry</span></div>
+	<a class="title" href="https://www.fiercehealthcare.com/payers/payer-2026-q2-earnings-unitedhealth-cvs-cigna-elevance-health" target="_blank" rel="noopener noreferrer">&lt;a href=&quot;/payers/payer-2026-q2-earnings-unitedhealth-cvs-cigna-elevance-health&quot; hreflang=&quot;en&quot;&gt;Insurers see positive results in managing health costs in Q2&lt;/a&gt;</a>
+	<p class="snippet">The health insurance industry weathered a rough 2025, and the turnaround for some companies through the midpoint has surprised even Wall Street analysts.</p>
+</article>
+<article class="card" data-cat="tech" data-sent="1">
+	<div class="meta"><span class="src">TechCrunch</span><span class="dot" aria-hidden="true"></span><time>11:00 am</time><span class="badge cat">Tech</span><span class="badge sent" title="This one was texted to you"><svg viewBox="0 0 16 16" width="11" height="11" aria-hidden="true"><path fill="currentColor" d="M6.1 11.6 2.9 8.4l-1 1 4.2 4.2 8-8-1-1z"/></svg>texted</span></div>
+	<a class="title" href="https://techcrunch.com/2026/08/08/googles-top-hacker-hunter-explains-why-hacking-groups-get-codenames/" target="_blank" rel="noopener noreferrer">Google’s top hacker hunter explains why hacking groups get codenames</a>
+	<p class="snippet">Google recently changed how it refers and assigns names to hacking groups. TechCrunch spoke with one of the world’s foremost experts on tracking hackers to understand why companies give hackers codena</p>
+</article>
+<article class="card" data-cat="tech" data-sent="0">
+	<div class="meta"><span class="src">Hacker News</span><span class="dot" aria-hidden="true"></span><time>6:57 am</time><span class="badge cat">Tech</span></div>
+	<a class="title" href="https://simonwillison.net/2026/Aug/7/openai-timeline/" target="_blank" rel="noopener noreferrer">Timeline of the OpenAI accidental attack against Hugging Face</a>
+	<p class="snippet">Comments</p>
+</article>
+<article class="card" data-cat="tech" data-sent="0">
+	<div class="meta"><span class="src">Hacker News</span><span class="dot" aria-hidden="true"></span><time>5:18 am</time><span class="badge cat">Tech</span></div>
+	<a class="title" href="https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/" target="_blank" rel="noopener noreferrer">DeepMind&#39;s WeatherNext model achieves breakthrough forecasting cyclones</a>
+	<p class="snippet">Comments</p>
+</article>
+</section>
+<section class="day">
+<h2>Yesterday<span class="count">2</span></h2>
+<article class="card" data-cat="tech" data-sent="0">
+	<div class="meta"><span class="src">TechCrunch</span><span class="dot" aria-hidden="true"></span><time>6:48 pm</time><span class="badge cat">Tech</span></div>
+	<a class="title" href="https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/" target="_blank" rel="noopener noreferrer">OpenAI says it slowed Astra model development over security concerns</a>
+	<p class="snippet">OpenAI said this model, which is still in development, reached its &quot;critical cybersecurity threshold,&quot; meaning it could independently identify and carry out cyberattacks against traditionally well-pro</p>
+</article>
+<article class="card" data-cat="tech" data-sent="0">
+	<div class="meta"><span class="src">TechCrunch</span><span class="dot" aria-hidden="true"></span><time>10:07 am</time><span class="badge cat">Tech</span></div>
+	<a class="title" href="https://techcrunch.com/2026/08/07/spacexs-terafab-will-rely-on-natural-gas-power-plants-not-tesla-solar-panels/" target="_blank" rel="noopener noreferrer">SpaceX’s Terafab will rely on natural gas power plants, not Tesla solar panels</a>
+	<p class="snippet">The fab is intended to build chips for data centers that will be run by SpaceX and its xAI subsidiary.</p>
+</article>
+</section>
+<section class="day">
+<h2>Thursday, August 6<span class="count">1</span></h2>
+<article class="card" data-cat="tech" data-sent="0">
+	<div class="meta"><span class="src">TechCrunch</span><span class="dot" aria-hidden="true"></span><time>6:43 pm</time><span class="badge cat">Tech</span></div>
+	<a class="title" href="https://techcrunch.com/2026/08/06/openais-new-ai-smart-speaker-will-reportedly-sell-for-between-300-and-400/" target="_blank" rel="noopener noreferrer">OpenAI’s new AI smart speaker will reportedly sell for between $300 and $400</a>
+	<p class="snippet">Additional details about OpenAI&#39;s mysterious new AI device make it sound like a pricey smart speaker.</p>
+</article>
+</section>
+</main>
+<footer>scoutfeed · a Scout / P.A.M. companion</footer>
+</div>
+<script>
+(function () {
+	var cat = '';
+	var sentOnly = false;
+	function apply() {
+		document.querySelectorAll('.card').forEach(function (card) {
+			var catLabel = (card.querySelector('.badge.cat') || {}).textContent || '';
+			var okCat = !cat || catLabel.toLowerCase() === cat;
+			var okSent = !sentOnly || card.getAttribute('data-sent') === '1';
+			card.style.display = okCat && okSent ? '' : 'none';
+		});
+		document.querySelectorAll('.day').forEach(function (day) {
+			var visible = Array.prototype.some.call(day.querySelectorAll('.card'), function (c) { return c.style.display !== 'none'; });
+			day.style.display = visible ? '' : 'none';
+		});
+	}
+	document.querySelectorAll('.chip').forEach(function (chip) {
+		chip.addEventListener('click', function () {
+			document.querySelectorAll('.chip').forEach(function (c) { c.classList.remove('active'); });
+			chip.classList.add('active');
+			cat = chip.getAttribute('data-filter') || '';
+			apply();
+		});
+	});
+	var toggle = document.querySelector('[data-sent-only]');
+	toggle.addEventListener('click', function () {
+		sentOnly = !sentOnly;
+		toggle.classList.toggle('active', sentOnly);
+		toggle.setAttribute('aria-pressed', String(sentOnly));
+		apply();
+	});
+})();
+</script>
+</body>
+</html>
