@@ -8,168 +8,320 @@
 <style>
 :root {
 	--bg: #0a0a10;
-	--surface: rgba(255, 255, 255, 0.045);
-	--surface-hover: rgba(255, 255, 255, 0.07);
+	--surface: rgba(255, 255, 255, 0.04);
+	--surface-hover: rgba(255, 255, 255, 0.065);
 	--border: rgba(255, 255, 255, 0.09);
 	--text: #ececf4;
-	--text-dim: #a3a3b8;
-	--text-faint: #71718a;
+	--text-dim: #a6a6bc;
+	--text-faint: #73738c;
 	--accent: #a78bfa;
 	--accent-deep: #7c5cf0;
 	--sent: #6ee7b7;
+	--serif: ui-serif, Georgia, "Iowan Old Style", "Times New Roman", serif;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body {
 	background: var(--bg);
-	background-image: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(124, 92, 240, 0.13), transparent);
+	background-image: radial-gradient(ellipse 90% 45% at 50% -8%, rgba(124, 92, 240, 0.14), transparent);
 	color: var(--text);
 	font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 	min-height: 100dvh;
-	padding: max(20px, env(safe-area-inset-top)) 16px max(40px, env(safe-area-inset-bottom));
+	padding: max(28px, env(safe-area-inset-top)) 18px max(48px, env(safe-area-inset-bottom));
 }
-.wrap { max-width: 640px; margin: 0 auto; }
-header { padding: 8px 0 4px; }
-h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
+.wrap { max-width: 760px; margin: 0 auto; }
+.eyebrow {
+	display: flex; align-items: center; gap: 10px;
+	color: var(--accent); font-size: 12.5px; font-weight: 700; letter-spacing: 0.14em;
+}
+.eyebrow::before { content: ""; width: 28px; height: 2px; background: var(--accent); border-radius: 2px; }
+h1 {
+	font-family: var(--serif);
+	font-size: clamp(42px, 9vw, 58px); font-weight: 700; letter-spacing: -0.015em;
+	margin: 10px 0 8px; line-height: 1.05;
+}
 h1 .tld { color: var(--accent); }
-.sub { color: var(--text-faint); font-size: 13px; margin-top: 2px; }
-.chips { display: flex; gap: 8px; overflow-x: auto; padding: 14px 0 4px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.sub { color: var(--text-dim); font-size: 17px; max-width: 46ch; }
+.stats { color: var(--text-faint); font-size: 12.5px; font-weight: 600; letter-spacing: 0.08em; margin-top: 14px; }
+.chips { display: flex; gap: 8px; overflow-x: auto; padding: 18px 0 2px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
 .chips::-webkit-scrollbar { display: none; }
 .chip {
-	flex: 0 0 auto; min-height: 44px; padding: 0 16px;
+	flex: 0 0 auto; min-height: 44px; padding: 0 18px;
 	background: var(--surface); color: var(--text-dim);
 	border: 1px solid var(--border); border-radius: 999px;
-	font: inherit; font-size: 14px; font-weight: 500;
+	font: inherit; font-size: 14.5px; font-weight: 600;
 	cursor: pointer; touch-action: manipulation;
 	transition: background 150ms ease-out, color 150ms ease-out, border-color 150ms ease-out;
 }
 .chip:hover { background: var(--surface-hover); }
-.chip.active { background: rgba(124, 92, 240, 0.18); color: var(--accent); border-color: rgba(124, 92, 240, 0.45); }
-.chip:focus-visible, .title:focus-visible, .toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.chip.active { background: var(--accent-deep); color: #fff; border-color: var(--accent-deep); }
+.chip:focus-visible, .toggle:focus-visible, .title:focus-visible, .srcfoot:focus-visible, .search input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .toggle {
-	flex: 0 0 auto; min-height: 44px; padding: 0 16px; margin-left: auto;
+	flex: 0 0 auto; min-height: 44px; padding: 0 18px; margin-left: auto;
 	background: none; color: var(--text-faint);
 	border: 1px dashed var(--border); border-radius: 999px;
-	font: inherit; font-size: 14px; cursor: pointer; touch-action: manipulation;
+	font: inherit; font-size: 14.5px; font-weight: 600; cursor: pointer; touch-action: manipulation;
 }
-.toggle.active { color: var(--sent); border-color: rgba(110, 231, 183, 0.4); border-style: solid; }
-.day { margin-top: 26px; }
-.day h2 {
-	font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.09em;
-	color: var(--text-faint); margin-bottom: 10px; display: flex; align-items: baseline; gap: 8px;
+.toggle.active { color: var(--sent); border-color: rgba(110, 231, 183, 0.45); border-style: solid; background: rgba(110, 231, 183, 0.08); }
+.search { position: relative; margin-top: 14px; }
+.search svg { position: absolute; left: 18px; top: 50%; transform: translateY(-50%); color: var(--text-faint); }
+.search input {
+	width: 100%; min-height: 52px; padding: 0 52px 0 48px;
+	background: var(--surface); color: var(--text);
+	border: 1px solid var(--border); border-radius: 999px;
+	font: inherit; font-size: 16px;
+	backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
 }
-.day .count { font-weight: 400; color: var(--text-faint); opacity: 0.7; font-size: 12px; }
+.search input::placeholder { color: var(--text-faint); }
+.search kbd {
+	position: absolute; right: 16px; top: 50%; transform: translateY(-50%);
+	color: var(--text-faint); font-size: 12px; font-family: inherit;
+	border: 1px solid var(--border); border-radius: 6px; padding: 3px 8px;
+}
+.day { margin-top: 34px; }
+.day h2 { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.day .date { font-size: 13.5px; font-weight: 700; letter-spacing: 0.08em; color: var(--text-dim); }
+.day .rel { font-size: 12.5px; font-weight: 700; letter-spacing: 0.1em; color: var(--accent); }
+.day .rule { flex: 1; height: 1px; background: var(--border); }
+.grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+@media (min-width: 720px) { .grid { grid-template-columns: 1fr 1fr; } .card { margin-bottom: 0; } }
 .card {
 	background: var(--surface);
 	border: 1px solid var(--border);
-	border-radius: 14px;
-	padding: 14px 16px;
-	margin-bottom: 10px;
+	border-radius: 16px;
+	padding: 16px;
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
+	transition: border-color 150ms ease-out, background 150ms ease-out;
 }
-.meta { display: flex; align-items: center; gap: 7px; font-size: 12.5px; color: var(--text-faint); margin-bottom: 6px; flex-wrap: wrap; }
-.src { color: var(--text-dim); font-weight: 500; }
-.dot { width: 3px; height: 3px; border-radius: 50%; background: var(--text-faint); }
+.card:hover { border-color: rgba(167, 139, 250, 0.35); background: var(--surface-hover); }
+.row { display: flex; gap: 12px; align-items: flex-start; }
+.thumb {
+	flex: 0 0 40px; width: 40px; height: 40px; border-radius: 10px; overflow: hidden;
+	background: rgba(124, 92, 240, 0.14); display: flex; align-items: center; justify-content: center;
+}
+.thumb img { width: 40px; height: 40px; object-fit: cover; }
+.thumb .fallback { width: 100%; height: 100%; align-items: center; justify-content: center; display: flex; color: var(--accent); font-weight: 700; font-size: 17px; }
+.body { min-width: 0; flex: 1; }
+.meta { display: flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--text-faint); margin-bottom: 5px; flex-wrap: wrap; }
 .badge {
 	display: inline-flex; align-items: center; gap: 4px;
-	font-size: 11px; font-weight: 600; letter-spacing: 0.02em;
-	padding: 2px 8px; border-radius: 999px;
+	font-size: 11px; font-weight: 700; letter-spacing: 0.03em;
+	padding: 2.5px 9px; border-radius: 999px;
 }
-.badge.cat { background: rgba(167, 139, 250, 0.12); color: var(--accent); }
+.badge.cat { background: rgba(167, 139, 250, 0.13); color: var(--accent); }
 .badge.sent { background: rgba(110, 231, 183, 0.1); color: var(--sent); }
 .title {
-	display: block; color: var(--text); font-size: 16.5px; font-weight: 600;
-	line-height: 1.4; text-decoration: none; letter-spacing: -0.01em;
+	display: block; color: var(--text); font-size: 16.5px; font-weight: 650;
+	line-height: 1.38; text-decoration: none; letter-spacing: -0.01em;
 }
 a.title:hover { color: var(--accent); }
 .snippet {
-	color: var(--text-dim); font-size: 14px; margin-top: 6px;
+	color: var(--text-dim); font-size: 14px; margin-top: 5px;
 	display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
 }
-.empty { color: var(--text-faint); text-align: center; padding: 60px 0; }
-footer { color: var(--text-faint); font-size: 12px; text-align: center; margin-top: 40px; opacity: 0.8; }
+.srcfoot {
+	display: inline-block; margin-top: 9px;
+	color: var(--accent); font-size: 11.5px; font-weight: 700; letter-spacing: 0.09em;
+	text-decoration: none;
+}
+.srcfoot:hover { color: #c4b0ff; }
+.empty { color: var(--text-faint); text-align: center; padding: 70px 0; }
+footer { color: var(--text-faint); font-size: 12px; text-align: center; margin-top: 48px; opacity: 0.8; }
+footer a { color: var(--text-faint); }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 </head>
 <body>
 <div class="wrap">
 <header>
-	<h1>scout<span class="tld">feed</span></h1>
-	<p class="sub">Everything your scout matched — texted or not. Updated Aug 8, 3:59 PM ET.</p>
+	<p class="eyebrow">PERSONAL NEWS RADAR</p>
+	<h1>Scout<span class="tld">feed</span></h1>
+	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
+	<p class="stats">UPDATED AUGUST 8, 2026 &middot; 9 TODAY &middot; 13 THIS WEEK &middot; 2 TEXTED</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All</button><button class="chip" data-filter="industry">Industry</button><button class="chip" data-filter="tech">Tech</button>
+	<button class="chip active" data-filter="">All</button><button class="chip" data-filter="ai">AI</button><button class="chip" data-filter="industry">Industry</button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 </nav>
+<div class="search">
+	<svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 21l-4.35-4.35M17 10.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+	<input type="search" id="q" placeholder="Search stories..." aria-label="Search stories">
+	<kbd>/</kbd>
+</div>
 <main id="feed">
 <section class="day">
-<h2>Today<span class="count">6</span></h2>
-<article class="card" data-cat="tech" data-sent="1">
-	<div class="meta"><span class="src">TechCrunch</span><span class="dot" aria-hidden="true"></span><time>3:44 pm</time><span class="badge cat">Tech</span><span class="badge sent" title="This one was texted to you"><svg viewBox="0 0 16 16" width="11" height="11" aria-hidden="true"><path fill="currentColor" d="M6.1 11.6 2.9 8.4l-1 1 4.2 4.2 8-8-1-1z"/></svg>texted</span></div>
-	<a class="title" href="https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/" target="_blank" rel="noopener noreferrer">OpenAI acquires presentation startup NextSlide</a>
-	<p class="snippet">NextSlide says its team members are now working on ChatGPT.</p>
+<h2><span class="date">SAT, AUG 8, 2026</span><span class="rel">TODAY</span><span class="rule" aria-hidden="true"></span></h2>
+<div class="grid">
+<article class="card" data-cat="industry" data-sent="0">
+	<div class="row">
+		<span class="thumb"><img src="https://icons.duckduckgo.com/ip3/www.fiercehealthcare.com.ico" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fallback" style="display:none">F</span></span>
+		<div class="body">
+			<div class="meta"><time>4:10 pm</time><span class="badge cat">Industry</span></div>
+			<a class="title" href="https://www.fiercehealthcare.com/finance/amwell-boasts-dha-intent-sole-source-contract-q2-earnings-touts-increasing-subscription" target="_blank" rel="noopener noreferrer">Amwell deepens partnership with Defense Health Agency, boosts 2026 revenue outlook</a>
+			<p class="snippet">The DHA renewed its contract with the telehealth platform last August, and negotiations are currently underway.</p>
+			<a class="srcfoot" href="https://www.fiercehealthcare.com/finance/amwell-boasts-dha-intent-sole-source-contract-q2-earnings-touts-increasing-subscription" target="_blank" rel="noopener noreferrer">FIERCE HEALTHCARE <span aria-hidden="true">&#8599;</span></a>
+		</div>
+	</div>
 </article>
-<article class="card" data-cat="healthcare" data-sent="0">
-	<div class="meta"><span class="src">Fierce Healthcare</span><span class="dot" aria-hidden="true"></span><time>3:36 pm</time><span class="badge cat">Industry</span></div>
-	<a class="title" href="https://www.fiercehealthcare.com/providers/ccbhc-model-continues-expand-faces-some-funding-constraints" target="_blank" rel="noopener noreferrer">&lt;a href=&quot;/providers/ccbhc-model-continues-expand-faces-some-funding-constraints&quot; hreflang=&quot;en&quot;&gt;CCBHC model continues to expand, but faces some funding constraints&lt;/a&gt;</a>
-	<p class="snippet">More uninsured people due to OBBBA Medicaid cuts, predicted to lead to millions losing Medicaid coverage, could increase uncompensated care costs and strain CCBHCs.</p>
+<article class="card" data-cat="industry" data-sent="0">
+	<div class="row">
+		<span class="thumb"><img src="https://icons.duckduckgo.com/ip3/www.fiercehealthcare.com.ico" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fallback" style="display:none">F</span></span>
+		<div class="body">
+			<div class="meta"><time>4:10 pm</time><span class="badge cat">Industry</span></div>
+			<a class="title" href="https://www.fiercehealthcare.com/payers/cvs-raises-guidance-it-posts-3b-profit-106b-revenue-q2" target="_blank" rel="noopener noreferrer">CVS enhances supports for patients taking GLP-1s</a>
+			<p class="snippet">CVS Health is raising its guidance for the year as it blew past Wall Street analysts&#39; expectations in the second quarter.</p>
+			<a class="srcfoot" href="https://www.fiercehealthcare.com/payers/cvs-raises-guidance-it-posts-3b-profit-106b-revenue-q2" target="_blank" rel="noopener noreferrer">FIERCE HEALTHCARE <span aria-hidden="true">&#8599;</span></a>
+		</div>
+	</div>
 </article>
-<article class="card" data-cat="healthcare" data-sent="0">
-	<div class="meta"><span class="src">Fierce Healthcare</span><span class="dot" aria-hidden="true"></span><time>3:36 pm</time><span class="badge cat">Industry</span></div>
-	<a class="title" href="https://www.fiercehealthcare.com/payers/payer-2026-q2-earnings-unitedhealth-cvs-cigna-elevance-health" target="_blank" rel="noopener noreferrer">&lt;a href=&quot;/payers/payer-2026-q2-earnings-unitedhealth-cvs-cigna-elevance-health&quot; hreflang=&quot;en&quot;&gt;Insurers see positive results in managing health costs in Q2&lt;/a&gt;</a>
-	<p class="snippet">The health insurance industry weathered a rough 2025, and the turnaround for some companies through the midpoint has surprised even Wall Street analysts.</p>
+<article class="card" data-cat="industry" data-sent="0">
+	<div class="row">
+		<span class="thumb"><img src="https://icons.duckduckgo.com/ip3/www.fiercehealthcare.com.ico" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fallback" style="display:none">F</span></span>
+		<div class="body">
+			<div class="meta"><time>4:10 pm</time><span class="badge cat">Industry</span></div>
+			<a class="title" href="https://www.fiercehealthcare.com/finance/fierce-healthcare-layoff-tracker-2026-job-cuts-eliminations-health-systems-hospitals" target="_blank" rel="noopener noreferrer">Fierce Healthcare Layoff Tracker—UCare cuts 102 jobs; MaineHealth reorgs hit 83</a>
+			<p class="snippet">Stick with this tracker for the latest layoff and workforce updates from across healthcare.</p>
+			<a class="srcfoot" href="https://www.fiercehealthcare.com/finance/fierce-healthcare-layoff-tracker-2026-job-cuts-eliminations-health-systems-hospitals" target="_blank" rel="noopener noreferrer">FIERCE HEALTHCARE <span aria-hidden="true">&#8599;</span></a>
+		</div>
+	</div>
 </article>
-<article class="card" data-cat="tech" data-sent="1">
-	<div class="meta"><span class="src">TechCrunch</span><span class="dot" aria-hidden="true"></span><time>11:00 am</time><span class="badge cat">Tech</span><span class="badge sent" title="This one was texted to you"><svg viewBox="0 0 16 16" width="11" height="11" aria-hidden="true"><path fill="currentColor" d="M6.1 11.6 2.9 8.4l-1 1 4.2 4.2 8-8-1-1z"/></svg>texted</span></div>
-	<a class="title" href="https://techcrunch.com/2026/08/08/googles-top-hacker-hunter-explains-why-hacking-groups-get-codenames/" target="_blank" rel="noopener noreferrer">Google’s top hacker hunter explains why hacking groups get codenames</a>
-	<p class="snippet">Google recently changed how it refers and assigns names to hacking groups. TechCrunch spoke with one of the world’s foremost experts on tracking hackers to understand why companies give hackers codena</p>
+<article class="card" data-cat="industry" data-sent="0">
+	<div class="row">
+		<span class="thumb"><img src="https://icons.duckduckgo.com/ip3/www.fiercehealthcare.com.ico" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fallback" style="display:none">F</span></span>
+		<div class="body">
+			<div class="meta"><time>4:10 pm</time><span class="badge cat">Industry</span></div>
+			<a class="title" href="https://www.fiercehealthcare.com/payers/payer-2026-q2-earnings-unitedhealth-cvs-cigna-elevance-health" target="_blank" rel="noopener noreferrer">Insurers see positive results in managing health costs in Q2</a>
+			<p class="snippet">The health insurance industry weathered a rough 2025, and the turnaround for some companies through the midpoint has surprised even Wall Street analysts.</p>
+			<a class="srcfoot" href="https://www.fiercehealthcare.com/payers/payer-2026-q2-earnings-unitedhealth-cvs-cigna-elevance-health" target="_blank" rel="noopener noreferrer">FIERCE HEALTHCARE <span aria-hidden="true">&#8599;</span></a>
+		</div>
+	</div>
 </article>
-<article class="card" data-cat="tech" data-sent="0">
-	<div class="meta"><span class="src">Hacker News</span><span class="dot" aria-hidden="true"></span><time>6:57 am</time><span class="badge cat">Tech</span></div>
-	<a class="title" href="https://simonwillison.net/2026/Aug/7/openai-timeline/" target="_blank" rel="noopener noreferrer">Timeline of the OpenAI accidental attack against Hugging Face</a>
-	<p class="snippet">Comments</p>
+<article class="card" data-cat="ai" data-sent="1">
+	<div class="row">
+		<span class="thumb"><img src="https://icons.duckduckgo.com/ip3/techcrunch.com.ico" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fallback" style="display:none">T</span></span>
+		<div class="body">
+			<div class="meta"><time>3:41 pm</time><span class="badge cat">AI</span><span class="badge sent" title="This one was texted to you"><svg viewBox="0 0 16 16" width="10" height="10" aria-hidden="true"><path fill="currentColor" d="M6.1 11.6 2.9 8.4l-1 1 4.2 4.2 8-8-1-1z"/></svg>texted</span></div>
+			<a class="title" href="https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/" target="_blank" rel="noopener noreferrer">OpenAI acquires presentation startup NextSlide</a>
+			<p class="snippet">NextSlide says its team members are now working on ChatGPT.</p>
+			<a class="srcfoot" href="https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/" target="_blank" rel="noopener noreferrer">TECHCRUNCH <span aria-hidden="true">&#8599;</span></a>
+		</div>
+	</div>
 </article>
-<article class="card" data-cat="tech" data-sent="0">
-	<div class="meta"><span class="src">Hacker News</span><span class="dot" aria-hidden="true"></span><time>5:18 am</time><span class="badge cat">Tech</span></div>
-	<a class="title" href="https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/" target="_blank" rel="noopener noreferrer">DeepMind&#39;s WeatherNext model achieves breakthrough forecasting cyclones</a>
-	<p class="snippet">Comments</p>
+<article class="card" data-cat="ai" data-sent="0">
+	<div class="row">
+		<span class="thumb"><img src="https://icons.duckduckgo.com/ip3/code.claude.com.ico" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fallback" style="display:none">H</span></span>
+		<div class="body">
+			<div class="meta"><time>11:34 am</time><span class="badge cat">AI</span></div>
+			<a class="title" href="https://code.claude.com/docs/en/cross-session-messaging" target="_blank" rel="noopener noreferrer">Message your other Claude Code sessions</a>
+			<p class="snippet">Comments</p>
+			<a class="srcfoot" href="https://code.claude.com/docs/en/cross-session-messaging" target="_blank" rel="noopener noreferrer">HACKER NEWS <span aria-hidden="true">&#8599;</span></a>
+		</div>
+	</div>
 </article>
+<article class="card" data-cat="ai" data-sent="1">
+	<div class="row">
+		<span class="thumb"><img src="https://icons.duckduckgo.com/ip3/techcrunch.com.ico" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fallback" style="display:none">T</span></span>
+		<div class="body">
+			<div class="meta"><time>11:00 am</time><span class="badge cat">AI</span><span class="badge sent" title="This one was texted to you"><svg viewBox="0 0 16 16" width="10" height="10" aria-hidden="true"><path fill="currentColor" d="M6.1 11.6 2.9 8.4l-1 1 4.2 4.2 8-8-1-1z"/></svg>texted</span></div>
+			<a class="title" href="https://techcrunch.com/2026/08/08/googles-top-hacker-hunter-explains-why-hacking-groups-get-codenames/" target="_blank" rel="noopener noreferrer">Google’s top hacker hunter explains why hacking groups get codenames</a>
+			<p class="snippet">Google recently changed how it refers and assigns names to hacking groups. TechCrunch spoke with one of the world’s foremost experts on tracking hackers to understand why companies give hackers codena</p>
+			<a class="srcfoot" href="https://techcrunch.com/2026/08/08/googles-top-hacker-hunter-explains-why-hacking-groups-get-codenames/" target="_blank" rel="noopener noreferrer">TECHCRUNCH <span aria-hidden="true">&#8599;</span></a>
+		</div>
+	</div>
+</article>
+<article class="card" data-cat="ai" data-sent="0">
+	<div class="row">
+		<span class="thumb"><img src="https://icons.duckduckgo.com/ip3/simonwillison.net.ico" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fallback" style="display:none">H</span></span>
+		<div class="body">
+			<div class="meta"><time>6:57 am</time><span class="badge cat">AI</span></div>
+			<a class="title" href="https://simonwillison.net/2026/Aug/7/openai-timeline/" target="_blank" rel="noopener noreferrer">Timeline of the OpenAI accidental attack against Hugging Face</a>
+			<p class="snippet">Comments</p>
+			<a class="srcfoot" href="https://simonwillison.net/2026/Aug/7/openai-timeline/" target="_blank" rel="noopener noreferrer">HACKER NEWS <span aria-hidden="true">&#8599;</span></a>
+		</div>
+	</div>
+</article>
+<article class="card" data-cat="ai" data-sent="0">
+	<div class="row">
+		<span class="thumb"><img src="https://icons.duckduckgo.com/ip3/deepmind.google.ico" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fallback" style="display:none">H</span></span>
+		<div class="body">
+			<div class="meta"><time>5:18 am</time><span class="badge cat">AI</span></div>
+			<a class="title" href="https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/" target="_blank" rel="noopener noreferrer">DeepMind&#39;s WeatherNext model achieves breakthrough forecasting cyclones</a>
+			<p class="snippet">Comments</p>
+			<a class="srcfoot" href="https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/" target="_blank" rel="noopener noreferrer">HACKER NEWS <span aria-hidden="true">&#8599;</span></a>
+		</div>
+	</div>
+</article>
+</div>
 </section>
 <section class="day">
-<h2>Yesterday<span class="count">2</span></h2>
-<article class="card" data-cat="tech" data-sent="0">
-	<div class="meta"><span class="src">TechCrunch</span><span class="dot" aria-hidden="true"></span><time>6:48 pm</time><span class="badge cat">Tech</span></div>
-	<a class="title" href="https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/" target="_blank" rel="noopener noreferrer">OpenAI says it slowed Astra model development over security concerns</a>
-	<p class="snippet">OpenAI said this model, which is still in development, reached its &quot;critical cybersecurity threshold,&quot; meaning it could independently identify and carry out cyberattacks against traditionally well-pro</p>
+<h2><span class="date">FRI, AUG 7, 2026</span><span class="rel">YESTERDAY</span><span class="rule" aria-hidden="true"></span></h2>
+<div class="grid">
+<article class="card" data-cat="ai" data-sent="0">
+	<div class="row">
+		<span class="thumb"><img src="https://icons.duckduckgo.com/ip3/techcrunch.com.ico" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fallback" style="display:none">T</span></span>
+		<div class="body">
+			<div class="meta"><time>6:48 pm</time><span class="badge cat">AI</span></div>
+			<a class="title" href="https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/" target="_blank" rel="noopener noreferrer">OpenAI says it slowed Astra model development over security concerns</a>
+			<p class="snippet">OpenAI said this model, which is still in development, reached its &quot;critical cybersecurity threshold,&quot; meaning it could independently identify and carry out cyberattacks against traditionally well-pro</p>
+			<a class="srcfoot" href="https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/" target="_blank" rel="noopener noreferrer">TECHCRUNCH <span aria-hidden="true">&#8599;</span></a>
+		</div>
+	</div>
 </article>
-<article class="card" data-cat="tech" data-sent="0">
-	<div class="meta"><span class="src">TechCrunch</span><span class="dot" aria-hidden="true"></span><time>10:07 am</time><span class="badge cat">Tech</span></div>
-	<a class="title" href="https://techcrunch.com/2026/08/07/spacexs-terafab-will-rely-on-natural-gas-power-plants-not-tesla-solar-panels/" target="_blank" rel="noopener noreferrer">SpaceX’s Terafab will rely on natural gas power plants, not Tesla solar panels</a>
-	<p class="snippet">The fab is intended to build chips for data centers that will be run by SpaceX and its xAI subsidiary.</p>
+<article class="card" data-cat="ai" data-sent="0">
+	<div class="row">
+		<span class="thumb"><img src="https://icons.duckduckgo.com/ip3/twitter.com.ico" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fallback" style="display:none">H</span></span>
+		<div class="body">
+			<div class="meta"><time>4:25 pm</time><span class="badge cat">AI</span></div>
+			<a class="title" href="https://twitter.com/un1c0rnioz/status/2084686552299634805" target="_blank" rel="noopener noreferrer">Lost my phone at the office. Claude suggested tracking Bluetooth signal strength</a>
+			<p class="snippet">Comments</p>
+			<a class="srcfoot" href="https://twitter.com/un1c0rnioz/status/2084686552299634805" target="_blank" rel="noopener noreferrer">HACKER NEWS <span aria-hidden="true">&#8599;</span></a>
+		</div>
+	</div>
 </article>
+<article class="card" data-cat="ai" data-sent="0">
+	<div class="row">
+		<span class="thumb"><img src="https://icons.duckduckgo.com/ip3/techcrunch.com.ico" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fallback" style="display:none">T</span></span>
+		<div class="body">
+			<div class="meta"><time>10:07 am</time><span class="badge cat">AI</span></div>
+			<a class="title" href="https://techcrunch.com/2026/08/07/spacexs-terafab-will-rely-on-natural-gas-power-plants-not-tesla-solar-panels/" target="_blank" rel="noopener noreferrer">SpaceX’s Terafab will rely on natural gas power plants, not Tesla solar panels</a>
+			<p class="snippet">The fab is intended to build chips for data centers that will be run by SpaceX and its xAI subsidiary.</p>
+			<a class="srcfoot" href="https://techcrunch.com/2026/08/07/spacexs-terafab-will-rely-on-natural-gas-power-plants-not-tesla-solar-panels/" target="_blank" rel="noopener noreferrer">TECHCRUNCH <span aria-hidden="true">&#8599;</span></a>
+		</div>
+	</div>
+</article>
+</div>
 </section>
 <section class="day">
-<h2>Thursday, August 6<span class="count">1</span></h2>
-<article class="card" data-cat="tech" data-sent="0">
-	<div class="meta"><span class="src">TechCrunch</span><span class="dot" aria-hidden="true"></span><time>6:43 pm</time><span class="badge cat">Tech</span></div>
-	<a class="title" href="https://techcrunch.com/2026/08/06/openais-new-ai-smart-speaker-will-reportedly-sell-for-between-300-and-400/" target="_blank" rel="noopener noreferrer">OpenAI’s new AI smart speaker will reportedly sell for between $300 and $400</a>
-	<p class="snippet">Additional details about OpenAI&#39;s mysterious new AI device make it sound like a pricey smart speaker.</p>
+<h2><span class="date">THU, AUG 6, 2026</span><span class="rule" aria-hidden="true"></span></h2>
+<div class="grid">
+<article class="card" data-cat="ai" data-sent="0">
+	<div class="row">
+		<span class="thumb"><img src="https://icons.duckduckgo.com/ip3/techcrunch.com.ico" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fallback" style="display:none">T</span></span>
+		<div class="body">
+			<div class="meta"><time>6:43 pm</time><span class="badge cat">AI</span></div>
+			<a class="title" href="https://techcrunch.com/2026/08/06/openais-new-ai-smart-speaker-will-reportedly-sell-for-between-300-and-400/" target="_blank" rel="noopener noreferrer">OpenAI’s new AI smart speaker will reportedly sell for between $300 and $400</a>
+			<p class="snippet">Additional details about OpenAI&#39;s mysterious new AI device make it sound like a pricey smart speaker.</p>
+			<a class="srcfoot" href="https://techcrunch.com/2026/08/06/openais-new-ai-smart-speaker-will-reportedly-sell-for-between-300-and-400/" target="_blank" rel="noopener noreferrer">TECHCRUNCH <span aria-hidden="true">&#8599;</span></a>
+		</div>
+	</div>
 </article>
+</div>
 </section>
 </main>
-<footer>scoutfeed · a Scout / P.A.M. companion</footer>
+<footer>scoutfeed &middot; a Scout / P.A.M. companion &middot; sibling of <a href="https://amir-hackett.github.io/watchfeed/">watchfeed</a></footer>
 </div>
 <script>
 (function () {
 	var cat = '';
 	var sentOnly = false;
+	var query = '';
 	function apply() {
 		document.querySelectorAll('.card').forEach(function (card) {
-			var catLabel = (card.querySelector('.badge.cat') || {}).textContent || '';
-			var okCat = !cat || catLabel.toLowerCase() === cat;
+			var okCat = !cat || card.getAttribute('data-cat') === cat;
 			var okSent = !sentOnly || card.getAttribute('data-sent') === '1';
-			card.style.display = okCat && okSent ? '' : 'none';
+			var okQuery = !query || card.textContent.toLowerCase().indexOf(query) !== -1;
+			card.style.display = okCat && okSent && okQuery ? '' : 'none';
 		});
 		document.querySelectorAll('.day').forEach(function (day) {
 			var visible = Array.prototype.some.call(day.querySelectorAll('.card'), function (c) { return c.style.display !== 'none'; });
@@ -190,6 +342,17 @@ footer { color: var(--text-faint); font-size: 12px; text-align: center; margin-t
 		toggle.classList.toggle('active', sentOnly);
 		toggle.setAttribute('aria-pressed', String(sentOnly));
 		apply();
+	});
+	var input = document.getElementById('q');
+	input.addEventListener('input', function () {
+		query = input.value.trim().toLowerCase();
+		apply();
+	});
+	document.addEventListener('keydown', function (e) {
+		if (e.key === '/' && document.activeElement !== input) {
+			e.preventDefault();
+			input.focus();
+		}
 	});
 })();
 </script>
