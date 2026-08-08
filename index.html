@@ -86,9 +86,23 @@ h1 .tld { color: var(--accent); }
 .day .rule { flex: 1; height: 1px; background: var(--border); }
 /* Lead + river: the day's top story runs full width; the rest pack into
    masonry columns (no row alignment → no ragged dead space, ever). */
-.river { margin-top: 12px; }
-@media (min-width: 720px) { .river { columns: 2; column-gap: 12px; } }
-.river .card { break-inside: avoid; margin-bottom: 12px; }
+.river { margin-top: 4px; }
+@media (min-width: 720px) { .river { columns: 2; column-gap: 40px; } }
+/* Two visual registers: the lead is a card; the river is a borderless
+   headline list — no repeated boxes, just rows with hairline separators
+   and a short category tick. */
+.river .card {
+	break-inside: avoid; margin-bottom: 0;
+	background: none; border: none; border-radius: 0;
+	padding: 12px 2px 13px 14px;
+	border-bottom: 1px solid var(--border);
+}
+.river .card::before {
+	top: 15px; bottom: auto; height: 26px; width: 3px;
+	left: 0; border-radius: 2px;
+}
+.river .card:hover { background: none; border-color: var(--border); }
+.river .card:hover .title { color: var(--accent); }
 .card {
 	position: relative;
 	background: var(--surface);
@@ -160,13 +174,13 @@ footer a { color: var(--text-faint); }
 <h2><span class="date">SAT, AUG 8, 2026</span><span class="rel">TODAY</span><span class="rule" aria-hidden="true"></span></h2>
 <article class="card lead" style="--rail:#f87171" data-cat="world" data-sent="1">
 	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time>6:45 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span><span class="sent" title="This one was texted to you"><svg viewBox="0 0 16 16" width="10" height="10" aria-hidden="true"><path fill="currentColor" d="M6.1 11.6 2.9 8.4l-1 1 4.2 4.2 8-8-1-1z"/></svg>texted</span></div>
-	<a class="title" href="https://www.bbc.co.uk/news/articles/c5yv5l6yr5ko?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Spain imposes border controls against Italy as row over Ceuta migrant influx intensifies</a>
+	<a class="title" href="https://www.bbc.co.uk/news/articles/c5yv5l6yr5ko" target="_blank" rel="noopener noreferrer">Spain imposes border controls against Italy as row over Ceuta migrant influx intensifies</a>
 	<p class="snippet">Italy introduced border controls following an influx of about 78,000 migrants from Morocco into the neighbouring Spanish exclave of Ceuta.</p>
 </article>
 <div class="river">
 <article class="card compact" style="--rail:#f87171" data-cat="world" data-sent="0">
 	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time>6:45 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
-	<a class="title" href="https://www.bbc.co.uk/news/articles/cx25dkwk3e3o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Fast-moving Canada wildfire doubles in size forcing thousands to flee homes</a>
+	<a class="title" href="https://www.bbc.co.uk/news/articles/cx25dkwk3e3o" target="_blank" rel="noopener noreferrer">Fast-moving Canada wildfire doubles in size forcing thousands to flee homes</a>
 	
 </article>
 <article class="card compact" style="--rail:#fb923c" data-cat="politics" data-sent="0">
@@ -176,7 +190,7 @@ footer a { color: var(--text-faint); }
 </article>
 <article class="card compact" style="--rail:#f87171" data-cat="world" data-sent="0">
 	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time>6:45 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
-	<a class="title" href="https://www.bbc.co.uk/news/articles/cvglp2zlvrlo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Typhoon Dolphin batters Japan&#39;s Okinawa before bearing down on China</a>
+	<a class="title" href="https://www.bbc.co.uk/news/articles/cvglp2zlvrlo" target="_blank" rel="noopener noreferrer">Typhoon Dolphin batters Japan&#39;s Okinawa before bearing down on China</a>
 	
 </article>
 <article class="card compact" style="--rail:#fb923c" data-cat="politics" data-sent="0">
@@ -186,7 +200,7 @@ footer a { color: var(--text-faint); }
 </article>
 <article class="card compact" style="--rail:#f87171" data-cat="world" data-sent="0">
 	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time>6:45 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
-	<a class="title" href="https://www.bbc.co.uk/news/articles/cz7dy8gq99eo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Child among three killed in Russian missile attacks near Kyiv</a>
+	<a class="title" href="https://www.bbc.co.uk/news/articles/cz7dy8gq99eo" target="_blank" rel="noopener noreferrer">Child among three killed in Russian missile attacks near Kyiv</a>
 	
 </article>
 <article class="card compact" style="--rail:#fb923c" data-cat="politics" data-sent="0">
@@ -196,7 +210,7 @@ footer a { color: var(--text-faint); }
 </article>
 <article class="card compact" style="--rail:#f87171" data-cat="world" data-sent="0">
 	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time>6:45 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
-	<a class="title" href="https://www.bbc.co.uk/news/articles/c89nkln7w7ko?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Paris tells e-scooter riders to wear safety gear or face fines</a>
+	<a class="title" href="https://www.bbc.co.uk/news/articles/c89nkln7w7ko" target="_blank" rel="noopener noreferrer">Paris tells e-scooter riders to wear safety gear or face fines</a>
 	
 </article>
 <article class="card compact" style="--rail:#fb923c" data-cat="politics" data-sent="0">
@@ -206,7 +220,7 @@ footer a { color: var(--text-faint); }
 </article>
 <article class="card compact" style="--rail:#f87171" data-cat="world" data-sent="0">
 	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time>6:45 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
-	<a class="title" href="https://www.bbc.co.uk/news/videos/cvg8je12xxeo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Watch: Moment opposition MP throws eggs at Kosovo&#39;s acting PM</a>
+	<a class="title" href="https://www.bbc.co.uk/news/videos/cvg8je12xxeo" target="_blank" rel="noopener noreferrer">Watch: Moment opposition MP throws eggs at Kosovo&#39;s acting PM</a>
 	
 </article>
 <article class="card compact" style="--rail:#fb923c" data-cat="politics" data-sent="0">
@@ -216,7 +230,7 @@ footer a { color: var(--text-faint); }
 </article>
 <article class="card compact" style="--rail:#f87171" data-cat="world" data-sent="0">
 	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time>6:45 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
-	<a class="title" href="https://www.bbc.co.uk/news/articles/cewr8wel4z8o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Madonna pays tribute to &#39;genius, otherworldly&#39; producer William Orbit</a>
+	<a class="title" href="https://www.bbc.co.uk/news/articles/cewr8wel4z8o" target="_blank" rel="noopener noreferrer">Madonna pays tribute to &#39;genius, otherworldly&#39; producer William Orbit</a>
 	
 </article>
 <article class="card compact" style="--rail:#fb923c" data-cat="politics" data-sent="0">
@@ -226,7 +240,7 @@ footer a { color: var(--text-faint); }
 </article>
 <article class="card compact" style="--rail:#f87171" data-cat="world" data-sent="0">
 	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time>6:45 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
-	<a class="title" href="https://www.bbc.co.uk/sport/football/articles/c70gn3w5ek5o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Messi&#39;s father Jorge dies aged 68 after illness</a>
+	<a class="title" href="https://www.bbc.co.uk/sport/football/articles/c70gn3w5ek5o" target="_blank" rel="noopener noreferrer">Messi&#39;s father Jorge dies aged 68 after illness</a>
 	
 </article>
 <article class="card compact" style="--rail:#fb923c" data-cat="politics" data-sent="0">
@@ -236,7 +250,7 @@ footer a { color: var(--text-faint); }
 </article>
 <article class="card compact" style="--rail:#f87171" data-cat="world" data-sent="0">
 	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time>6:45 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
-	<a class="title" href="https://www.bbc.co.uk/news/articles/cy9wy3y0e5wo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">US offers $1bn to Colombia on new right-wing president&#39;s first day of office</a>
+	<a class="title" href="https://www.bbc.co.uk/news/articles/cy9wy3y0e5wo" target="_blank" rel="noopener noreferrer">US offers $1bn to Colombia on new right-wing president&#39;s first day of office</a>
 	
 </article>
 <article class="card compact" style="--rail:#fb923c" data-cat="politics" data-sent="0">
@@ -246,7 +260,7 @@ footer a { color: var(--text-faint); }
 </article>
 <article class="card compact" style="--rail:#f87171" data-cat="world" data-sent="0">
 	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time>6:45 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
-	<a class="title" href="https://www.bbc.co.uk/news/articles/cewr898jy8go?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Trump&#39;s ex-lawyer Todd Blanche narrowly confirmed as US attorney general</a>
+	<a class="title" href="https://www.bbc.co.uk/news/articles/cewr898jy8go" target="_blank" rel="noopener noreferrer">Trump&#39;s ex-lawyer Todd Blanche narrowly confirmed as US attorney general</a>
 	
 </article>
 <article class="card compact" style="--rail:#fb923c" data-cat="politics" data-sent="0">
@@ -256,7 +270,7 @@ footer a { color: var(--text-faint); }
 </article>
 <article class="card compact" style="--rail:#f87171" data-cat="world" data-sent="0">
 	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time>6:45 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
-	<a class="title" href="https://www.bbc.co.uk/news/articles/c934j5y2lq9o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Hormuz talks positive, Oman says, as Iran warns deal would not open strait</a>
+	<a class="title" href="https://www.bbc.co.uk/news/articles/c934j5y2lq9o" target="_blank" rel="noopener noreferrer">Hormuz talks positive, Oman says, as Iran warns deal would not open strait</a>
 	
 </article>
 <article class="card compact" style="--rail:#fb923c" data-cat="politics" data-sent="0">
