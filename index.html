@@ -46,6 +46,8 @@ body {
 	/* Adaptive gutter: 18px on phones, growing to 44px on wide screens
 	   (ui-ux review 2026-08-09: no breathing room at the edges on desktop). */
 	--gutter: clamp(18px, 4vw, 44px);
+	/* chip row: 44px touch target + 10px padding top and bottom */
+	--chips-h: 64px;
 	background: var(--bg);
 	background-image: radial-gradient(ellipse 90% 45% at 50% -8%, var(--glow), transparent);
 	color: var(--text);
@@ -102,7 +104,19 @@ h1 .tld { color: var(--accent); }
 	-webkit-mask-image: linear-gradient(to right, transparent, #000 var(--gutter), #000 calc(100% - var(--gutter)), transparent);
 	mask-image: linear-gradient(to right, transparent, #000 var(--gutter), #000 calc(100% - var(--gutter)), transparent);
 }
-.chips { display: flex; gap: 8px; overflow-x: auto; padding-top: 18px; padding-bottom: 2px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+/* The chip bar floats with the search pill (owner request 2026-08-09):
+   same translucent-blur treatment, pinned just above it. --chips-h keeps the
+   two-tier offset in ONE place so the search top and scroll margins can't
+   drift out of sync. */
+.chips {
+	position: sticky; top: 8px; z-index: 21;
+	display: flex; gap: 8px; overflow-x: auto;
+	padding-top: 10px; padding-bottom: 10px;
+	scrollbar-width: none; -webkit-overflow-scrolling: touch;
+	background: rgba(15, 15, 26, 0.82);
+	background: color-mix(in srgb, var(--bg) 82%, transparent);
+	-webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+}
 .chips::-webkit-scrollbar { display: none; }
 .chip {
 	flex: 0 0 auto; min-height: 44px; padding: 0 18px;
@@ -128,7 +142,7 @@ h1 .tld { color: var(--accent); }
    also what caused the invisible-magnifier paint bug and the off-center
    theme icons. */
 .search {
-	position: sticky; top: 14px; z-index: 20;
+	position: sticky; top: calc(8px + var(--chips-h) + 8px); z-index: 20;
 	display: flex; align-items: center; gap: 10px;
 	margin-top: 14px; padding: 0 18px; min-height: 52px;
 	background: rgba(26, 26, 40, 0.82);
@@ -224,7 +238,8 @@ h1 .tld { color: var(--accent); }
 }
 .trend-meta .src { font-weight: 700; letter-spacing: 0.08em; }
 .trend-meta .sep { opacity: 0.5; margin: 0 5px; }
-.day { margin-top: 26px; scroll-margin-top: 16px; }
+.day { margin-top: 26px; }
+.day, .trending { scroll-margin-top: calc(8px + var(--chips-h) + 8px + 52px + 14px); }
 .day h2 { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
 .day .date { font-size: 13.5px; font-weight: 700; letter-spacing: 0.08em; color: var(--text-dim); }
 .day .rel { font-size: 12.5px; font-weight: 700; letter-spacing: 0.1em; color: var(--accent); }
@@ -253,9 +268,23 @@ h1 .tld { color: var(--accent); }
 .card.h2 .front .title { -webkit-line-clamp: 4; font-size: 19px; }
 .card.h2 .front .snippet { -webkit-line-clamp: 6; }
 .card.w2.h2 .front .title { font-size: 22px; -webkit-line-clamp: 3; }
-/* Tall cards mount their art on top, magazine-style; text flows beneath. */
-.card.h2.has-thumb .front { padding-right: 20px; padding-top: 182px; }
-.card.h2 .front .thumb { left: 12px; right: 12px; top: 12px; width: auto; height: 158px; }
+/* Tall cards mount their art on top, magazine-style; text flows beneath.
+   The art is a FLEX CHILD that absorbs the leftover height — a fixed strip
+   left a dead void under short text on 2-row cards (owner report
+   2026-08-09). */
+.card.h2.has-thumb .front { padding-right: 20px; }
+.card.h2 .front .thumb {
+	position: static; order: -1; flex: 1 1 auto;
+	width: 100%; height: auto; min-height: 110px;
+}
+/* Headline-only cards centre their type in the leftover space rather than
+   top-aligning it above a void; the bigger sizes earn their footprint with
+   display type instead of emptiness. */
+.card.no-snippet .front .title { margin-top: auto; margin-bottom: auto; }
+.card.h2:not(.has-thumb) .front .title { font-size: 23px; -webkit-line-clamp: 5; }
+.card.h2:not(.has-thumb) .front .snippet { font-size: 15px; -webkit-line-clamp: 8; }
+.card.w2:not(.h2):not(.has-thumb) .front .title { font-size: 20px; -webkit-line-clamp: 3; }
+.card.w2:not(.h2):not(.has-thumb) .front .snippet { -webkit-line-clamp: 3; }
 .card:hover { transform: translateY(-2px); }
 .card:active { transform: scale(0.985); }
 .card.lead { grid-column: 1 / -1; }
@@ -1416,7 +1445,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2" style="--rail:#a78bfa" data-id="rss:https://www.youtube.com/watch?v=Z_O6Lwj1yjQ" data-srckey="hacker news" data-cat="ai" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="Google Caught AI Faking Creativity in Every Office in America [video] — flip for details">
+<article class="card compact w2 no-snippet" style="--rail:#a78bfa" data-id="rss:https://www.youtube.com/watch?v=Z_O6Lwj1yjQ" data-srckey="hacker news" data-cat="ai" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="Google Caught AI Faking Creativity in Every Office in America [video] — flip for details">
 <div class="inner">
 <div class="face front">
 	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time>1:59 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
@@ -1796,7 +1825,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2" style="--rail:#a78bfa" data-id="rss:https://www.youtube.com/watch?v=68X8yEatepQ" data-srckey="hacker news" data-cat="ai" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="70% of AI revenue comes from OpenAI and Anthropic — flip for details">
+<article class="card compact w2 h2 no-snippet" style="--rail:#a78bfa" data-id="rss:https://www.youtube.com/watch?v=68X8yEatepQ" data-srckey="hacker news" data-cat="ai" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="70% of AI revenue comes from OpenAI and Anthropic — flip for details">
 <div class="inner">
 <div class="face front">
 	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time>11:04 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
@@ -3061,7 +3090,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact h2 has-thumb" style="--rail:#a3e635" data-id="rss:d1817722-f8cc-4d64-9fcf-74bf34e495d7" data-srckey="ign" data-cat="games" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="The Best Deals Today: AirPods Pro 3, LEGO Back to the Future, Saros, and More — flip for details">
+<article class="card compact h2 has-thumb no-snippet" style="--rail:#a3e635" data-id="rss:d1817722-f8cc-4d64-9fcf-74bf34e495d7" data-srckey="ign" data-cat="games" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="The Best Deals Today: AirPods Pro 3, LEGO Back to the Future, Saros, and More — flip for details">
 <div class="inner">
 <div class="face front">
 	<div class="meta"><span class="src" style="color:#f87171">IGN</span><span class="sep" aria-hidden="true">&middot;</span><time>1:21 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
@@ -4306,7 +4335,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact has-thumb" style="--rail:#a3e635" data-id="rss:33c85d37-2b92-45f5-8245-bd482e33f2f4" data-srckey="ign" data-cat="games" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="Obsession Star Inde Navarrette Wants to Voice a Resident Evil Character — flip for details">
+<article class="card compact has-thumb no-snippet" style="--rail:#a3e635" data-id="rss:33c85d37-2b92-45f5-8245-bd482e33f2f4" data-srckey="ign" data-cat="games" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="Obsession Star Inde Navarrette Wants to Voice a Resident Evil Character — flip for details">
 <div class="inner">
 <div class="face front">
 	<div class="meta"><span class="src" style="color:#f87171">IGN</span><span class="sep" aria-hidden="true">&middot;</span><time>3:04 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
@@ -5086,7 +5115,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 has-thumb" style="--rail:#a3e635" data-id="rss:cae1f534-5b4a-4e5a-94d2-93bd09ce50cc" data-srckey="ign" data-cat="games" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="Brainrot Royale Brings Some Of The Internet’s Wildest Characters To PUBG MOBILE’s World of Wonder — flip for details">
+<article class="card compact w2 has-thumb no-snippet" style="--rail:#a3e635" data-id="rss:cae1f534-5b4a-4e5a-94d2-93bd09ce50cc" data-srckey="ign" data-cat="games" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="Brainrot Royale Brings Some Of The Internet’s Wildest Characters To PUBG MOBILE’s World of Wonder — flip for details">
 <div class="inner">
 <div class="face front">
 	<div class="meta"><span class="src" style="color:#f87171">IGN</span><span class="sep" aria-hidden="true">&middot;</span><time>7:31 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
@@ -5791,7 +5820,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact has-thumb" style="--rail:#fb923c" data-id="rss:0000019f-d46f-d3c1-a7bf-ff6f9f860000" data-srckey="politico" data-cat="politics" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="Dasha Burns presses Mike Johnson on the economy, Iran and Trump&#39;s agenda — flip for details">
+<article class="card compact has-thumb no-snippet" style="--rail:#fb923c" data-id="rss:0000019f-d46f-d3c1-a7bf-ff6f9f860000" data-srckey="politico" data-cat="politics" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="Dasha Burns presses Mike Johnson on the economy, Iran and Trump&#39;s agenda — flip for details">
 <div class="inner">
 <div class="face front">
 	<div class="meta"><span class="src" style="color:#f87171">POLITICO</span><span class="sep" aria-hidden="true">&middot;</span><time>12:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
