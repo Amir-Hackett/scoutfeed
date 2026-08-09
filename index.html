@@ -107,6 +107,10 @@ h1 .tld { color: var(--accent); }
 	backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
 }
 .search input::placeholder { color: var(--text-faint); }
+/* Kill the stock WebKit clear button — it rendered as an unstyled blue x
+   floating mid-pill between the text and the slash hint (owner report
+   2026-08-09). Esc (and select-all + type) already clears. */
+.search input::-webkit-search-cancel-button, .search input::-webkit-search-decoration { -webkit-appearance: none; appearance: none; }
 .search kbd {
 	position: absolute; right: 52px; top: 50%; transform: translateY(-50%);
 	color: var(--text-faint); font-size: 12px; font-family: inherit;
@@ -3259,6 +3263,7 @@ footer a { color: var(--text-faint); }
 
 </div>
 </section>
+<p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
 </main>
 <footer>tap a card for the full story &middot; scoutfeed &middot; a Scout / P.A.M. companion &middot; sibling of <a href="https://amir-hackett.github.io/watchfeed/">watchfeed</a></footer>
 </div>
@@ -3268,16 +3273,24 @@ footer a { color: var(--text-faint); }
 	var sentOnly = false;
 	var query = '';
 	function apply() {
+		var anyVisible = false;
 		document.querySelectorAll('.card').forEach(function (card) {
 			var okCat = !cat || card.getAttribute('data-cat') === cat;
 			var okSent = !sentOnly || card.getAttribute('data-sent') === '1';
 			var okQuery = !query || card.textContent.toLowerCase().indexOf(query) !== -1;
-			card.style.display = okCat && okSent && okQuery ? '' : 'none';
+			var show = okCat && okSent && okQuery;
+			if (show) anyVisible = true;
+			card.style.display = show ? '' : 'none';
 		});
 		document.querySelectorAll('.day').forEach(function (day) {
 			var visible = Array.prototype.some.call(day.querySelectorAll('.card'), function (c) { return c.style.display !== 'none'; });
 			day.style.display = visible ? '' : 'none';
 		});
+		// A silent blank void reads as "search is broken" (owner report
+		// 2026-08-09, searching Drake under the Music chip while the Drake
+		// stories sat mis-filed under Entertainment).
+		var noMatch = document.getElementById('no-match');
+		if (noMatch) noMatch.hidden = anyVisible || document.querySelectorAll('.card').length === 0;
 	}
 	document.querySelectorAll('.chip').forEach(function (chip) {
 		chip.addEventListener('click', function () {
