@@ -211,7 +211,10 @@ h1 .tld { color: var(--accent); }
 	letter-spacing: -0.005em;
 	display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
 }
-.back .title { -webkit-line-clamp: 1; font-size: 15.5px; }
+/* The back face is the "full story" view: give the headline room (one
+   clamped line meant flipping never revealed the full title — owner report
+   2026-08-09); the about text scrolls beneath it. */
+.back .title { -webkit-line-clamp: 4; font-size: 14.5px; }
 .snippet {
 	color: var(--text-dim); font-size: 13.5px; line-height: 1.5;
 	display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
@@ -247,7 +250,7 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED AUGUST 9, 2026 &middot; 43 TODAY &middot; 284 THIS WEEK &middot; 4 TEXTED</p>
+	<p class="stats">UPDATED AUGUST 9, 2026 &middot; 44 TODAY &middot; 284 THIS WEEK &middot; 4 TEXTED</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
 	<button class="chip active" data-filter="">All</button><button class="chip" data-filter="ai">AI</button><button class="chip" data-filter="industry">Industry</button><button class="chip" data-filter="dev">Dev</button><button class="chip" data-filter="entertainment">Entertainment</button><button class="chip" data-filter="games">Games</button><button class="chip" data-filter="music">Music</button><button class="chip" data-filter="world">World</button><button class="chip" data-filter="politics">Politics</button><button class="chip" data-filter="tech">Tech</button>
@@ -444,6 +447,26 @@ footer a { color: var(--text-faint); }
 	<h3 class="title">‘Donkey Princess’ Review: A Princess Escapes the Kingdom, but Not the Patriarchy, in an Inventive, Shape-Shifting Fairytale</h3>
 	<p class="about">Chilean duo Cristobal León and Joaquín Cociña made a dream nightmare debut with “The Wolf House,” a stop-motion fantasy that turned heads both with its wholly original design — incorporating claymatio</p>
 	<a class="more" href="https://variety.com/2026/film/news/donkey-princess-review-1236830559/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#f472b6" data-id="rss:https://www.billboard.com/?p=1236312360" data-srckey="billboard" data-cat="music" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="Morrissey Cancels Las Vegas Residency Shows Days Before Opening Night — flip for details">
+<div class="inner">
+<div class="face front">
+	<div class="meta"><span class="src" style="color:#60a5fa">BILLBOARD</span><span class="sep" aria-hidden="true">&middot;</span><time>4:06 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
+	<h3 class="title">Morrissey Cancels Las Vegas Residency Shows Days Before Opening Night</h3>
+	<p class="snippet">The four-night run at Wynn Las Vegas’ Encore Theater was scheduled to begin Aug. 14.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back">
+	<h3 class="title">Morrissey Cancels Las Vegas Residency Shows Days Before Opening Night</h3>
+	<p class="about">The four-night run at Wynn Las Vegas’ Encore Theater was scheduled to begin Aug. 14.</p>
+	<a class="more" href="https://www.billboard.com/music/music-news/morrissey-cancels-las-vegas-residency-logistical-issues-1236312360/" target="_blank" rel="noopener noreferrer">Billboard &#8599;</a>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
 	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
