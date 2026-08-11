@@ -204,7 +204,18 @@ h1 .tld { color: var(--accent); }
 .foryou .rule { flex: 1; height: 1px; background: var(--border); }
 .rail-row { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 8px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
 .rail-row::-webkit-scrollbar { display: none; }
-.rail-row .card { flex: 0 0 320px; height: 188px; }
+.rail-row .card { flex: 0 0 320px; height: 228px; }
+/* Rail cards are the narrowest box on the page, and the shared 100px side
+   thumb left the headline ~176px — 7 of 8 headlines cut mid-phrase, which on a
+   phone is the whole card (owner report 2026-08-10). The rail gets its own
+   proportions: a slimmer thumb, a slightly smaller headline, and the height for
+   five lines of it. Auto margins centre the text block in whatever is left so
+   a short headline doesn't sit above a dead void (same trick as .no-snippet).
+   The grid cards keep the original 188px unit — this is rail-only. */
+.rail-row .card.has-thumb .front { padding-right: 92px; }
+.rail-row .front .thumb { width: 72px; }
+.rail-row .front .title { font-size: 16px; -webkit-line-clamp: 5; margin-top: auto; }
+.rail-row .front .snippet { margin-bottom: auto; }
 /* Trending strips — the office's Reddit/Google-Trends pool as web-search
    pills, visually lighter than story cards (dashed, no surface). */
 .trending { margin-top: 26px; }
@@ -393,19 +404,19 @@ footer a { color: var(--text-faint); }
 <section class="foryou" id="foryou">
 <h2><span class="date">FOR YOU</span><span class="rel">RANKED BY YOUR INTERESTS</span><span class="rule" aria-hidden="true"></span></h2>
 <div class="rail-row">
-<article class="card compact" style="--rail:#fbbf24" data-id="rss:https://variety.com/?p=1236830559" data-srckey="variety" data-cat="entertainment" data-sent="1" tabindex="0" role="button" aria-expanded="false" aria-label="‘Donkey Princess’ Review: A Princess Escapes the Kingdom, but Not the Patriarchy, in an Inventive, Shape-Shifting Fairytale — flip for details">
+<article class="card compact has-thumb" style="--rail:#34d399" data-id="rss:https://www.theverge.com/gadgets/977626/anker-nano-travel-adapter-summer-travel-tech-deal-sale" data-srckey="the verge" data-cat="tech" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="Anker’s travel charger works in almost any country and is down to $20 — flip for details">
 <div class="inner">
 <div class="face front">
-	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time>4:25 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span><span class="sent" title="This one was texted to you"><svg viewBox="0 0 16 16" width="10" height="10" aria-hidden="true"><path fill="currentColor" d="M6.1 11.6 2.9 8.4l-1 1 4.2 4.2 8-8-1-1z"/></svg>texted</span></div>
-	<h3 class="title">‘Donkey Princess’ Review: A Princess Escapes the Kingdom, but Not the Patriarchy, in an Inventive, Shape-Shifting Fairytale</h3>
-	<p class="snippet">Chilean duo Cristobal León and Joaquín Cociña made a dream nightmare debut with “The Wolf House,” a stop-motion fantasy that turned heads both with its wholly original design — incorporating claymatio</p>
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time>5:18 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Anker’s travel charger works in almost any country and is down to $20</h3>
+	<p class="snippet">Anker’s Nano Travel Adapter can power up to five devices at once. | Image: Anker If you’ve got international travel coming up, an adapter is essential for keeping your phone, earbuds, power banks, and</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/anker_travel1.jpg?quality=90&amp;amp;strip=all&amp;amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;amp;w=1200" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back">
-	<h3 class="title">‘Donkey Princess’ Review: A Princess Escapes the Kingdom, but Not the Patriarchy, in an Inventive, Shape-Shifting Fairytale</h3>
-	<p class="about">Chilean duo Cristobal León and Joaquín Cociña made a dream nightmare debut with “The Wolf House,” a stop-motion fantasy that turned heads both with its wholly original design — incorporating claymatio</p>
-	<a class="more" href="https://variety.com/2026/film/news/donkey-princess-review-1236830559/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<h3 class="title">Anker’s travel charger works in almost any country and is down to $20</h3>
+	<p class="about">Anker’s Nano Travel Adapter can power up to five devices at once. | Image: Anker If you’ve got international travel coming up, an adapter is essential for keeping your phone, earbuds, power banks, and</p>
+	<a class="more" href="https://www.theverge.com/gadgets/977626/anker-nano-travel-adapter-summer-travel-tech-deal-sale" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
 	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
@@ -413,19 +424,19 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact has-thumb" style="--rail:#34d399" data-id="rss:https://techcrunch.com/?p=3151149" data-srckey="techcrunch" data-cat="tech" data-sent="1" tabindex="0" role="button" aria-expanded="false" aria-label="This ‘adversarial’ pattern can prevent surveillance cameras from detecting you — flip for details">
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-id="rss:US-EN-49575837" data-srckey="espn" data-cat="sports" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="NFL to allow coach&#39;s designee to challenge calls — flip for details">
 <div class="inner">
 <div class="face front">
-	<div class="meta"><span class="src" style="color:#34d399">TECHCRUNCH</span><span class="sep" aria-hidden="true">&middot;</span><time>10:04 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span><span class="sent" title="This one was texted to you"><svg viewBox="0 0 16 16" width="10" height="10" aria-hidden="true"><path fill="currentColor" d="M6.1 11.6 2.9 8.4l-1 1 4.2 4.2 8-8-1-1z"/></svg>texted</span></div>
-	<h3 class="title">This ‘adversarial’ pattern can prevent surveillance cameras from detecting you</h3>
-	<p class="snippet">A security researcher has designed an algorithm that can create computer-generated patterns capable of hiding people, faces, and vehicles from detection by surveillance cameras.</p>
+	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time>2:16 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">NFL to allow coach&#39;s designee to challenge calls</h3>
+	<p class="snippet">The NFL will allow head coaches to designate a member of their sideline staff to initiate replay challenges this season.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://techcrunch.com/wp-content/uploads/2026/08/donut-media-car-swearingen.jpg?resize=1151,1200" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+	<img class="thumb" src="https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2021%2F1013%2Fr922518_1296x729_16%2D9.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back">
-	<h3 class="title">This ‘adversarial’ pattern can prevent surveillance cameras from detecting you</h3>
-	<p class="about">A security researcher has designed an algorithm that can create computer-generated patterns capable of hiding people, faces, and vehicles from detection by surveillance cameras.</p>
-	<a class="more" href="https://techcrunch.com/2026/08/09/this-adversarial-pattern-can-prevent-surveillance-cameras-from-detecting-you/" target="_blank" rel="noopener noreferrer">TechCrunch &#8599;</a>
+	<h3 class="title">NFL to allow coach&#39;s designee to challenge calls</h3>
+	<p class="about">The NFL will allow head coaches to designate a member of their sideline staff to initiate replay challenges this season.</p>
+	<a class="more" href="https://www.espn.com/nfl/story/_/id/49575837/nfl-allow-coach-designee-initiate-replay-challenges" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
 	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
@@ -433,19 +444,19 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact has-thumb" style="--rail:#34d399" data-id="rss:https://www.theverge.com/tech/976092/pc-building-dropbox-backup" data-srckey="the verge" data-cat="tech" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="Dropbox is a PC builder’s best friend — flip for details">
+<article class="card compact has-thumb" style="--rail:#34d399" data-id="rss:https://www.theverge.com/gadgets/977300/keychron-hall-effect-sony-inzone-headsets-gaming-laptop-deal-sale" data-srckey="the verge" data-cat="tech" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="Keychron’s wireless Hall effect keyboard is back to its lowest price — flip for details">
 <div class="inner">
 <div class="face front">
-	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time>9:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
-	<h3 class="title">Dropbox is a PC builder’s best friend</h3>
-	<p class="snippet">In 2018 I bet my reputation and self-worth on a huge crowdfunded game design project. It could have been a failure for many reasons, but the one I became most worried about was losing all of the work</p>
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time>10:27 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Keychron’s wireless Hall effect keyboard is back to its lowest price</h3>
+	<p class="snippet">Getting a keyboard with customizable Hall effect sensors is more affordable than it used to be, and you don’t need to compromise on quality to get a good deal. Keychron’s aluminum-clad K2 HE with a 75</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/12/STKS523_RAM_SHORTAGE_D.jpg?quality=90&amp;amp;strip=all&amp;amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;amp;w=1200" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/keychron.png?quality=90&amp;amp;strip=all&amp;amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;amp;w=1200" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back">
-	<h3 class="title">Dropbox is a PC builder’s best friend</h3>
-	<p class="about">In 2018 I bet my reputation and self-worth on a huge crowdfunded game design project. It could have been a failure for many reasons, but the one I became most worried about was losing all of the work</p>
-	<a class="more" href="https://www.theverge.com/tech/976092/pc-building-dropbox-backup" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
+	<h3 class="title">Keychron’s wireless Hall effect keyboard is back to its lowest price</h3>
+	<p class="about">Getting a keyboard with customizable Hall effect sensors is more affordable than it used to be, and you don’t need to compromise on quality to get a good deal. Keychron’s aluminum-clad K2 HE with a 75</p>
+	<a class="more" href="https://www.theverge.com/gadgets/977300/keychron-hall-effect-sony-inzone-headsets-gaming-laptop-deal-sale" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
 	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
@@ -453,19 +464,19 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact has-thumb" style="--rail:#fbbf24" data-id="rss:https://variety.com/?p=1236831001" data-srckey="variety" data-cat="entertainment" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="David Sackeroff, Emmy-Nominated ‘Seinfeld’ and ‘Home Improvement’ Production Designer, Dies at 81 — flip for details">
+<article class="card compact has-thumb" style="--rail:#34d399" data-id="rss:https://www.theverge.com/podcast/975732/bose-ceo-lila-snyder-ai-wearables-licensing-headphones-audio" data-srckey="the verge" data-cat="tech" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="Bose CEO Lila Snyder on the fight for high-quality audio — flip for details">
 <div class="inner">
 <div class="face front">
-	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time>7:23 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
-	<h3 class="title">David Sackeroff, Emmy-Nominated ‘Seinfeld’ and ‘Home Improvement’ Production Designer, Dies at 81</h3>
-	<p class="snippet">David Sackeroff, an Emmy-nominated production designer and art director known for his work on classic shows like “Seinfeld,” “Alf” and “Carol &amp; Company”, died July 10 on Bainbridge Island, Wash. He wa</p>
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time>10:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Bose CEO Lila Snyder on the fight for high-quality audio</h3>
+	<p class="snippet">Today, I’m talking with Lila Snyder, who is the CEO of Bose. You certainly know Bose — it’s one of the most famous brands in all of consumer tech. The company started 60 years ago selling speakers to</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/08/MixCollage-09-Aug-2026-04-14-PM-5474.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/DCD-Lila-Snyder.jpg?quality=90&amp;amp;strip=all&amp;amp;crop=0%2C10.711631919237%2C100%2C78.576736161526&amp;amp;w=1200" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back">
-	<h3 class="title">David Sackeroff, Emmy-Nominated ‘Seinfeld’ and ‘Home Improvement’ Production Designer, Dies at 81</h3>
-	<p class="about">David Sackeroff, an Emmy-nominated production designer and art director known for his work on classic shows like “Seinfeld,” “Alf” and “Carol &amp; Company”, died July 10 on Bainbridge Island, Wash. He wa</p>
-	<a class="more" href="https://variety.com/2026/digital/news/david-sackeroff-dead-seinfeld-production-designer-1236831001/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<h3 class="title">Bose CEO Lila Snyder on the fight for high-quality audio</h3>
+	<p class="about">Today, I’m talking with Lila Snyder, who is the CEO of Bose. You certainly know Bose — it’s one of the most famous brands in all of consumer tech. The company started 60 years ago selling speakers to</p>
+	<a class="more" href="https://www.theverge.com/podcast/975732/bose-ceo-lila-snyder-ai-wearables-licensing-headphones-audio" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
 	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
@@ -473,59 +484,19 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact has-thumb" style="--rail:#fbbf24" data-id="rss:https://variety.com/?p=1236830970" data-srckey="variety" data-cat="entertainment" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="‘Widow’s Bay,’ ‘Fallout’ and ‘Hacks’ Among Set Decorators Society of America TV Award Winners — flip for details">
+<article class="card compact has-thumb" style="--rail:#a3e635" data-id="rss:d1fb88f5-9736-4ea9-9d00-f791c1f0090c" data-srckey="ign" data-cat="games" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="Bethesda Veteran Reveals How He Would Have Designed Starfield Differently — flip for details">
 <div class="inner">
 <div class="face front">
-	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time>9:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
-	<h3 class="title">‘Widow’s Bay,’ ‘Fallout’ and ‘Hacks’ Among Set Decorators Society of America TV Award Winners</h3>
-	<p class="snippet">“Widow’s Bay,” “Fallout,” “Hacks” and “Beef” are among the shows that took home top honors from the Set Decorators Society of America. This year’s SDSA Awards honor the best set decoration work from s</p>
+	<div class="meta"><span class="src" style="color:#f87171">IGN</span><span class="sep" aria-hidden="true">&middot;</span><time>9:25 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">Bethesda Veteran Reveals How He Would Have Designed Starfield Differently</h3>
+	<p class="snippet">A former Bethesda developer who worked on Skyrim, Fallout 3, Fallout 4, and Fallout 76 has outlined how he would have designed Starfield had he been in charge of the game — and it sounds very differen</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/05/WidowsBay-flashback-episode.MAIN_.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+	<img class="thumb" src="https://assets-prd.ignimgs.com/2026/08/10/starfield-1786368054191.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back">
-	<h3 class="title">‘Widow’s Bay,’ ‘Fallout’ and ‘Hacks’ Among Set Decorators Society of America TV Award Winners</h3>
-	<p class="about">“Widow’s Bay,” “Fallout,” “Hacks” and “Beef” are among the shows that took home top honors from the Set Decorators Society of America. This year’s SDSA Awards honor the best set decoration work from s</p>
-	<a class="more" href="https://variety.com/2026/artisans/news/set-decorators-society-of-america-tv-award-winners-full-list-1236830970/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
-<article class="card compact has-thumb" style="--rail:#fbbf24" data-id="rss:https://variety.com/?p=1236831053" data-srckey="variety" data-cat="entertainment" data-sent="1" tabindex="0" role="button" aria-expanded="false" aria-label="John Oliver Takes Shots at Own Company’s DC Superhero Movies on ‘Last Week Tonight’ — flip for details">
-<div class="inner">
-<div class="face front">
-	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time>12:56 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span><span class="sent" title="This one was texted to you"><svg viewBox="0 0 16 16" width="10" height="10" aria-hidden="true"><path fill="currentColor" d="M6.1 11.6 2.9 8.4l-1 1 4.2 4.2 8-8-1-1z"/></svg>texted</span></div>
-	<h3 class="title">John Oliver Takes Shots at Own Company’s DC Superhero Movies on ‘Last Week Tonight’</h3>
-	<p class="snippet">On Sunday’s edition of “Last Week Tonight,” John Oliver aimed his ire at President Trump’s Department of Justice that has, under former Attorney General Pam Bondi, designate Attorney General Todd Blan</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/07/JohnOliverTease.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-</div>
-<div class="face back">
-	<h3 class="title">John Oliver Takes Shots at Own Company’s DC Superhero Movies on ‘Last Week Tonight’</h3>
-	<p class="about">On Sunday’s edition of “Last Week Tonight,” John Oliver aimed his ire at President Trump’s Department of Justice that has, under former Attorney General Pam Bondi, designate Attorney General Todd Blan</p>
-	<a class="more" href="https://variety.com/2026/tv/news/john-oliver-takes-shots-dc-superhero-movies-supergirl-last-week-tonight-1236831053/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
-<article class="card compact has-thumb" style="--rail:#fbbf24" data-id="rss:https://www.polygon.com/teenage-sex-death-camp-miasma-matte-painting-interview/" data-srckey="polygon" data-cat="entertainment" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="How &#39;Camp Miasma’s Crew Revived a Pre-CGI Technique with &quot;Old-School Film Nerd&quot; Ambition — flip for details">
-<div class="inner">
-<div class="face front">
-	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time>8:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
-	<h3 class="title">How &#39;Camp Miasma’s Crew Revived a Pre-CGI Technique with &quot;Old-School Film Nerd&quot; Ambition</h3>
-	<p class="snippet">Camp Miasma&#39;s production designers Brandon Tonner-Connolly &amp; Matt Hyland explain how they revived old-school matte painting techniques for their film.</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/cm_screencap_teaser.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-</div>
-<div class="face back">
-	<h3 class="title">How &#39;Camp Miasma’s Crew Revived a Pre-CGI Technique with &quot;Old-School Film Nerd&quot; Ambition</h3>
-	<p class="about">Camp Miasma&#39;s production designers Brandon Tonner-Connolly &amp; Matt Hyland explain how they revived old-school matte painting techniques for their film.</p>
-	<a class="more" href="https://www.polygon.com/teenage-sex-death-camp-miasma-matte-painting-interview/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<h3 class="title">Bethesda Veteran Reveals How He Would Have Designed Starfield Differently</h3>
+	<p class="about">A former Bethesda developer who worked on Skyrim, Fallout 3, Fallout 4, and Fallout 76 has outlined how he would have designed Starfield had he been in charge of the game — and it sounds very differen</p>
+	<a class="more" href="https://www.ign.com/articles/bethesda-veteran-reveals-how-he-would-have-designed-starfield-differently" target="_blank" rel="noopener noreferrer">IGN &#8599;</a>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
 	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
@@ -553,6 +524,46 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-id="rss:https://www.polygon.com/teenage-sex-death-camp-miasma-matte-painting-interview/" data-srckey="polygon" data-cat="entertainment" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="How &#39;Camp Miasma’s Crew Revived a Pre-CGI Technique with &quot;Old-School Film Nerd&quot; Ambition — flip for details">
+<div class="inner">
+<div class="face front">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time>8:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">How &#39;Camp Miasma’s Crew Revived a Pre-CGI Technique with &quot;Old-School Film Nerd&quot; Ambition</h3>
+	<p class="snippet">Camp Miasma&#39;s production designers Brandon Tonner-Connolly &amp; Matt Hyland explain how they revived old-school matte painting techniques for their film.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/cm_screencap_teaser.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back">
+	<h3 class="title">How &#39;Camp Miasma’s Crew Revived a Pre-CGI Technique with &quot;Old-School Film Nerd&quot; Ambition</h3>
+	<p class="about">Camp Miasma&#39;s production designers Brandon Tonner-Connolly &amp; Matt Hyland explain how they revived old-school matte painting techniques for their film.</p>
+	<a class="more" href="https://www.polygon.com/teenage-sex-death-camp-miasma-matte-painting-interview/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-id="rss:https://variety.com/?p=1236831053" data-srckey="variety" data-cat="entertainment" data-sent="1" tabindex="0" role="button" aria-expanded="false" aria-label="John Oliver Takes Shots at Own Company’s DC Superhero Movies on ‘Last Week Tonight’ — flip for details">
+<div class="inner">
+<div class="face front">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time>12:56 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span><span class="sent" title="This one was texted to you"><svg viewBox="0 0 16 16" width="10" height="10" aria-hidden="true"><path fill="currentColor" d="M6.1 11.6 2.9 8.4l-1 1 4.2 4.2 8-8-1-1z"/></svg>texted</span></div>
+	<h3 class="title">John Oliver Takes Shots at Own Company’s DC Superhero Movies on ‘Last Week Tonight’</h3>
+	<p class="snippet">On Sunday’s edition of “Last Week Tonight,” John Oliver aimed his ire at President Trump’s Department of Justice that has, under former Attorney General Pam Bondi, designate Attorney General Todd Blan</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/07/JohnOliverTease.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back">
+	<h3 class="title">John Oliver Takes Shots at Own Company’s DC Superhero Movies on ‘Last Week Tonight’</h3>
+	<p class="about">On Sunday’s edition of “Last Week Tonight,” John Oliver aimed his ire at President Trump’s Department of Justice that has, under former Attorney General Pam Bondi, designate Attorney General Todd Blan</p>
+	<a class="more" href="https://variety.com/2026/tv/news/john-oliver-takes-shots-dc-superhero-movies-supergirl-last-week-tonight-1236831053/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 </div>
 </section>
 <main id="feed">
@@ -562,43 +573,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.kyivpost.com/analysis/82077" target="_blank" rel="noopener noreferrer">ANALYSIS: Inside the Effort to Unseat Pro-Russia Congresswoman Anna Paulina Luna</a>
-		<p class="trend-meta"><span class="src">KYIV POST</span><span class="sep" aria-hidden="true">&middot;</span>"anna paulina luna" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.covers.com/mlb/astros-vs-giants-prediction-picks-odds-monday-8-10-2026" target="_blank" rel="noopener noreferrer">Astros vs Giants Prediction, Picks &amp; Odds for Tonight&#39;s MLB Game</a>
+		<p class="trend-meta"><span class="src">COVERS.COM</span><span class="sep" aria-hidden="true">&middot;</span>"astros vs giants" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.usatoday.com/story/sports/mlb/llws/2026/08/10/tulsa-national-little-league-team-disqualified-southwest-region/91246291007/" target="_blank" rel="noopener noreferrer">Why Little League removed Tulsa baseball team from Southwest regionals</a>
-		<p class="trend-meta"><span class="src">USA TODAY</span><span class="sep" aria-hidden="true">&middot;</span>"llws" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.azsnakepit.com/arizona-diamondbacks-analysis/95948/series-preview-39-rockies-diamondbacks" target="_blank" rel="noopener noreferrer">Series Preview #39: Rockies @ Diamondbacks</a>
+		<p class="trend-meta"><span class="src">AZ SNAKE PIT</span><span class="sep" aria-hidden="true">&middot;</span>"rockies vs diamondbacks" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.miaminewtimes.com/arts-culture/miami-celeb-sightings-ashley-graham-nas-daniella-karagach-and-others-40574048/" target="_blank" rel="noopener noreferrer">Celeb Sightings: Ashley Graham, Nas, Daniella Karagach, and Others</a>
-		<p class="trend-meta"><span class="src">MIAMI NEW TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"daniella karagach" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://dknetwork.draftkings.com/2026/08/10/tampa-bay-rays-at-athletics-prediction-pick-for-monday-8-10-26/" target="_blank" rel="noopener noreferrer">Tampa Bay Rays at Athletics prediction, pick for Monday 8/10/26</a>
+		<p class="trend-meta"><span class="src">DRAFTKINGS NETWORK</span><span class="sep" aria-hidden="true">&middot;</span>"rays vs athletics" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://uclabruins.com/news/2026/08/10/ucla-football-adds-derek-carr-as-special-advisor-to-head-coach-bob-chesney" target="_blank" rel="noopener noreferrer">UCLA Football Adds Derek Carr as Special Advisor to Head Coach Bob Chesney</a>
-		<p class="trend-meta"><span class="src">UCLA BRUINS</span><span class="sep" aria-hidden="true">&middot;</span>"derek carr" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.wwe.com/shows/raw/2026-08-10" target="_blank" rel="noopener noreferrer">Raw preview, Aug. 10, 2026: Penta battles Laredo Kid in tournament to determine who challenges Roman Reigns</a>
+		<p class="trend-meta"><span class="src">WWE</span><span class="sep" aria-hidden="true">&middot;</span>"stephanie vaquer" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.mlb.com/news/devin-williams-right-shoulder-strain-injured-list" target="_blank" rel="noopener noreferrer">Mets lose closer Williams to IL with shoulder strain</a>
-		<p class="trend-meta"><span class="src">MLB.COM</span><span class="sep" aria-hidden="true">&middot;</span>"mets" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://seekingalpha.com/news/4630304-getty-images-slips-further-into-the-red-engages-guggenheim-to-shore-up-liquidity" target="_blank" rel="noopener noreferrer">Getty Images slips further into the red, engages Guggenheim to shore up liquidity (GETY:NYSE)</a>
+		<p class="trend-meta"><span class="src">SEEKING ALPHA</span><span class="sep" aria-hidden="true">&middot;</span>"getty images" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/espn/betting/story/_/id/49578130/congress-members-ask-mlb-players-union-change-policies-enabled-bryce-harper-betting-video" target="_blank" rel="noopener noreferrer">Congress asks MLB to take action after Bryce Harper betting video</a>
-		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"bryce harper betting" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.upi.com/News_Photos/view/upi/d24c6c15b103ca89ced36ad2f778276a/New-York-Mets-Francisco-Lindor-Hit-by-Pitch/" target="_blank" rel="noopener noreferrer">Photo: New York Mets Francisco Lindor Hit by Pitch - PIT2026080903</a>
+		<p class="trend-meta"><span class="src">UPI.COM</span><span class="sep" aria-hidden="true">&middot;</span>"francisco lindor" &middot; 500+ searches</p>
 	</div>
 </li>
 </ol>
