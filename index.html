@@ -274,11 +274,24 @@ h1 .tld { color: var(--accent); }
    column and overflow the phone layout. */
 @media (min-width: 680px) {
 	.card.w2 { grid-column: span 2; }
+	/* The w2 TYPOGRAPHY belongs to the same breakpoint as the w2 span. Below it
+	   the card is single-width but was still wearing double-width type (20-22px
+	   headlines, a 3-line dek) in the same 188px box — it did not fit, and the
+	   overflowing text was sliced through the middle of a letterform (owner
+	   report 2026-08-10, phone screenshots). Above 680px these still earn it. */
+	.card.w2.h2 .front .title { font-size: 22px; -webkit-line-clamp: 3; }
+	.card.w2:not(.h2):not(.has-thumb) .front .title { font-size: 20px; -webkit-line-clamp: 3; }
+	.card.w2:not(.h2):not(.has-thumb) .front .snippet { -webkit-line-clamp: 3; }
 }
+/* A fixed-height card can only hold so many lines. Text boxes are pinned at
+   their clamped height (flex: none) so a flex engine can never shrink one a
+   few pixels and cut a line through its glyphs — Safari does this where Chrome
+   does not, which is why this survived a desktop-Chrome check. The art is the
+   one element allowed to give up space, so the budget always balances there. */
+.face > .meta, .face > .title, .face > .snippet { flex: none; }
 .card.h2 { grid-row: span 2; }
 .card.h2 .front .title { -webkit-line-clamp: 4; font-size: 19px; }
-.card.h2 .front .snippet { -webkit-line-clamp: 6; }
-.card.w2.h2 .front .title { font-size: 22px; -webkit-line-clamp: 3; }
+.card.h2 .front .snippet { -webkit-line-clamp: 4; }
 /* Tall cards mount their art on top, magazine-style; text flows beneath.
    The art is a FLEX CHILD that absorbs the leftover height — a fixed strip
    left a dead void under short text on 2-row cards (owner report
@@ -286,16 +299,14 @@ h1 .tld { color: var(--accent); }
 .card.h2.has-thumb .front { padding-right: 20px; }
 .card.h2 .front .thumb {
 	position: static; order: -1; flex: 1 1 auto;
-	width: 100%; height: auto; min-height: 110px;
+	width: 100%; height: auto; min-height: 0;
 }
 /* Headline-only cards centre their type in the leftover space rather than
    top-aligning it above a void; the bigger sizes earn their footprint with
    display type instead of emptiness. */
 .card.no-snippet .front .title { margin-top: auto; margin-bottom: auto; }
 .card.h2:not(.has-thumb) .front .title { font-size: 23px; -webkit-line-clamp: 5; }
-.card.h2:not(.has-thumb) .front .snippet { font-size: 15px; -webkit-line-clamp: 8; }
-.card.w2:not(.h2):not(.has-thumb) .front .title { font-size: 20px; -webkit-line-clamp: 3; }
-.card.w2:not(.h2):not(.has-thumb) .front .snippet { -webkit-line-clamp: 3; }
+.card.h2:not(.has-thumb) .front .snippet { font-size: 15px; -webkit-line-clamp: 6; }
 .card:hover { transform: translateY(-2px); }
 .card:active { transform: scale(0.985); }
 .card.lead { grid-column: 1 / -1; }
@@ -325,7 +336,12 @@ h1 .tld { color: var(--accent); }
 .card:hover .face::before { opacity: 1; }
 .back { transform: rotateY(180deg); }
 .meta {
-	display: flex; align-items: center; gap: 7px; flex-wrap: wrap;
+	display: flex; align-items: center; gap: 7px;
+	/* One line, always: a wrapped meta silently stole ~24px of the fixed card
+	   from 282 of 667 cards on a phone, which is what pushed the headline out
+	   of its box. The tail (category, texted badge) clips before the headline
+	   ever does. */
+	flex-wrap: nowrap; white-space: nowrap; overflow: hidden;
 	font-size: 11.5px; font-weight: 700; letter-spacing: 0.08em;
 	color: var(--text-faint);
 }
@@ -385,7 +401,7 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED AUGUST 10, 2026 &middot; 198 TODAY &middot; 602 THIS WEEK &middot; 7 TEXTED</p>
+	<p class="stats">UPDATED AUGUST 10, 2026 &middot; 199 TODAY &middot; 603 THIS WEEK &middot; 7 TEXTED</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
 	<button class="chip active" data-filter="">All</button><button class="chip" data-filter="ai">AI</button><button class="chip" data-filter="healthcare">Healthcare</button><button class="chip" data-filter="dev">Dev</button><button class="chip" data-filter="entertainment">Entertainment</button><button class="chip" data-filter="games">Games</button><button class="chip" data-filter="markets">Markets</button><button class="chip" data-filter="music">Music</button><button class="chip" data-filter="sports">Sports</button><button class="chip" data-filter="world">World</button><button class="chip" data-filter="politics">Politics</button><button class="chip" data-filter="tech">Tech</button>
@@ -573,43 +589,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.covers.com/mlb/astros-vs-giants-prediction-picks-odds-monday-8-10-2026" target="_blank" rel="noopener noreferrer">Astros vs Giants Prediction, Picks &amp; Odds for Tonight&#39;s MLB Game</a>
-		<p class="trend-meta"><span class="src">COVERS.COM</span><span class="sep" aria-hidden="true">&middot;</span>"astros vs giants" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://sports.yahoo.com/articles/final-injury-report-sky-storm-220000370.html" target="_blank" rel="noopener noreferrer">Final Injury Report for Sky-Storm: Will Flau&#39;jae Johnson, Sydney Taylor Play?</a>
+		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"sky vs storm" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.azsnakepit.com/arizona-diamondbacks-analysis/95948/series-preview-39-rockies-diamondbacks" target="_blank" rel="noopener noreferrer">Series Preview #39: Rockies @ Diamondbacks</a>
-		<p class="trend-meta"><span class="src">AZ SNAKE PIT</span><span class="sep" aria-hidden="true">&middot;</span>"rockies vs diamondbacks" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://www.informador.mx/mexico/pension-mujeres-bienestar-calendario-tentativo-de-registro-para-cobrar-3100-pesos-20260808-0018.html" target="_blank" rel="noopener noreferrer">Pensión Mujeres Bienestar: Calendario TENTATIVO de registro para cobrar 3,100 pesos</a>
+		<p class="trend-meta"><span class="src">EL INFORMADOR</span><span class="sep" aria-hidden="true">&middot;</span>"mujeres bienestar" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://dknetwork.draftkings.com/2026/08/10/tampa-bay-rays-at-athletics-prediction-pick-for-monday-8-10-26/" target="_blank" rel="noopener noreferrer">Tampa Bay Rays at Athletics prediction, pick for Monday 8/10/26</a>
-		<p class="trend-meta"><span class="src">DRAFTKINGS NETWORK</span><span class="sep" aria-hidden="true">&middot;</span>"rays vs athletics" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://www.cbssports.com/fantasy/baseball/news/twins-austin-martin-handling-leadoff-role-monday/" target="_blank" rel="noopener noreferrer">Twins&#39; Austin Martin: Handling leadoff role Monday</a>
+		<p class="trend-meta"><span class="src">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"austin martin" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.wwe.com/shows/raw/2026-08-10" target="_blank" rel="noopener noreferrer">Raw preview, Aug. 10, 2026: Penta battles Laredo Kid in tournament to determine who challenges Roman Reigns</a>
-		<p class="trend-meta"><span class="src">WWE</span><span class="sep" aria-hidden="true">&middot;</span>"stephanie vaquer" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.bbc.com/sport/tennis/articles/c98vqj4zl9vo" target="_blank" rel="noopener noreferrer">Aryna Sabalenka and Cameron Norrie lose at Canadian Open</a>
+		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"alexandrova" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://seekingalpha.com/news/4630304-getty-images-slips-further-into-the-red-engages-guggenheim-to-shore-up-liquidity" target="_blank" rel="noopener noreferrer">Getty Images slips further into the red, engages Guggenheim to shore up liquidity (GETY:NYSE)</a>
-		<p class="trend-meta"><span class="src">SEEKING ALPHA</span><span class="sep" aria-hidden="true">&middot;</span>"getty images" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://mashable.com/entertainment/pips-nyt-games-hints-answers-easy-medium-hard-august-10-2026" target="_blank" rel="noopener noreferrer">NYT Pips hints, answers for August 10, 2026</a>
+		<p class="trend-meta"><span class="src">MASHABLE</span><span class="sep" aria-hidden="true">&middot;</span>"pips" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.upi.com/News_Photos/view/upi/d24c6c15b103ca89ced36ad2f778276a/New-York-Mets-Francisco-Lindor-Hit-by-Pitch/" target="_blank" rel="noopener noreferrer">Photo: New York Mets Francisco Lindor Hit by Pitch - PIT2026080903</a>
-		<p class="trend-meta"><span class="src">UPI.COM</span><span class="sep" aria-hidden="true">&middot;</span>"francisco lindor" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://sports.yahoo.com/articles/watch-san-francisco-giants-vs-011500553.html" target="_blank" rel="noopener noreferrer">How to watch San Francisco Giants vs. Houston Astros</a>
+		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"astros vs giants" &middot; 5000+ searches</p>
 	</div>
 </li>
 </ol>
@@ -629,6 +645,26 @@ footer a { color: var(--text-faint); }
 	<h3 class="title">John Oliver Takes Shots at Own Company’s DC Superhero Movies on ‘Last Week Tonight’</h3>
 	<p class="about">On Sunday’s edition of “Last Week Tonight,” John Oliver aimed his ire at President Trump’s Department of Justice that has, under former Attorney General Pam Bondi, designate Attorney General Todd Blan</p>
 	<a class="more" href="https://variety.com/2026/tv/news/john-oliver-takes-shots-dc-superhero-movies-supergirl-last-week-tonight-1236831053/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#f472b6" data-id="rss:https://www.rollingstone.com/?p=1235606586" data-srckey="rolling stone music" data-cat="music" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="ZZ Top Drummer Frank Beard’s Health Led to Recent Show Cancellation — flip for details">
+<div class="inner">
+<div class="face front">
+	<div class="meta"><span class="src" style="color:#fb7185">ROLLING STONE MUSIC</span><span class="sep" aria-hidden="true">&middot;</span><time>9:11 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
+	<h3 class="title">ZZ Top Drummer Frank Beard’s Health Led to Recent Show Cancellation</h3>
+	<p class="snippet">Billy Gibbons and Elwood Francis will continue the tour with a fill-in for the musician, a spokesperson told Rolling Stone</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.rollingstone.com/wp-content/uploads/2026/08/zz-top-frank-beard-health.jpg?w=1600&amp;#038;h=900&amp;#038;crop=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back">
+	<h3 class="title">ZZ Top Drummer Frank Beard’s Health Led to Recent Show Cancellation</h3>
+	<p class="about">Billy Gibbons and Elwood Francis will continue the tour with a fill-in for the musician, a spokesperson told Rolling Stone</p>
+	<a class="more" href="https://www.rollingstone.com/music/music-news/zz-top-frank-beard-health-show-cancellation-1235606586/" target="_blank" rel="noopener noreferrer">Rolling Stone Music &#8599;</a>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
 	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
