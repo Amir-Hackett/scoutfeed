@@ -225,16 +225,27 @@ h1 .tld { color: var(--accent); }
 .foryou .rule { flex: 1; height: 1px; background: var(--border); }
 .rail-row { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 8px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
 .rail-row::-webkit-scrollbar { display: none; }
-.rail-row .card { flex: 0 0 320px; height: 228px; }
-/* Rail cards are the narrowest box on the page, and the shared 100px side
-   thumb left the headline ~176px — 7 of 8 headlines cut mid-phrase, which on a
-   phone is the whole card (owner report 2026-08-10). The rail gets its own
-   proportions: a slimmer thumb, a slightly smaller headline, and the height for
-   five lines of it. Auto margins centre the text block in whatever is left so
-   a short headline doesn't sit above a dead void (same trick as .no-snippet).
-   The grid cards keep the original 188px unit — this is rail-only. */
-.rail-row .card.has-thumb .front { padding-right: 92px; }
-.rail-row .front .thumb { width: 72px; }
+.rail-row .card { flex: 0 0 320px; height: 250px; }
+/* Rail art is a full-width TOP STRIP, magazine-style — the third shape this
+   rail has carried, and the constraints that killed the other two are both
+   real: a 100px side thumb cut 7 of 8 headlines mid-phrase (owner report
+   2026-08-10), and the square side thumb that replaced it read as a postage
+   stamp at rail width ("these pics are too small", owner 2026-08-17). The
+   strip is the only layout where art and headline stop competing for the
+   same 320px. It costs the snippet on art cards — on the rail the headline
+   IS the pitch — and text-only rail cards keep the centred five-line
+   layout below. The grid cards keep the original 188px unit + square side
+   thumb — this is rail-only. */
+.rail-row .card.has-thumb .front { padding-right: 18px; }
+.rail-row .card.has-thumb .front .thumb {
+	position: static; order: -1; flex: none;
+	width: 100%; height: 120px; margin-bottom: 4px;
+	/* Same opt-out the h2 magazine card documents: the base square window
+	   must not shape a strip. */
+	aspect-ratio: auto; max-height: none;
+}
+.rail-row .card.has-thumb .front .snippet { display: none; }
+.rail-row .card.has-thumb .front .title { margin-top: 0; -webkit-line-clamp: 3; }
 .rail-row .front .title { font-size: 16px; -webkit-line-clamp: 5; margin-top: auto; }
 .rail-row .front .snippet { margin-bottom: auto; }
 /* Trending strips — the office's Reddit/Google-Trends pool as web-search
@@ -426,7 +437,7 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 6:46 PM &middot; 315 TODAY</p>
+	<p class="stats">UPDATED 6:49 PM &middot; 316 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
 	<button class="chip active" data-filter="">All</button><button class="chip" data-filter="ai">AI</button><button class="chip" data-filter="healthcare">Healthcare</button><button class="chip" data-filter="dev">Dev</button><button class="chip" data-filter="entertainment">Entertainment</button><button class="chip" data-filter="games">Games</button><button class="chip" data-filter="markets">Markets</button><button class="chip" data-filter="music">Music</button><button class="chip" data-filter="sports">Sports</button><button class="chip" data-filter="world">World</button><button class="chip" data-filter="politics">Politics</button><button class="chip" data-filter="tech">Tech</button>
@@ -2790,6 +2801,26 @@ footer a { color: var(--text-faint); }
 	<h3 class="title">Ranking every rookie QB from Week 1 of the preseason, plus winners and losers and NFL team valuations</h3>
 	<p class="about">Here&#39;s everything you need to know about the NFL for Aug. 17</p>
 	<a class="more" href="https://www.cbssports.com/nfl/news/ranking-every-rookie-qb-from-week-1-of-the-preseason-plus-winners-and-losers-and-nfl-team-valuations/" target="_blank" rel="noopener noreferrer">CBS Sports &#8599;</a>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact no-snippet" style="--rail:#5eead4" data-id="rss:https://lobste.rs/s/5odlru" data-srckey="lobsters" data-cat="dev" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="How AI text watermarking works: a visual guide — flip for details">
+<div class="inner">
+<div class="face front">
+	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time>12:49 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">How AI text watermarking works: a visual guide</h3>
+	
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back">
+	<h3 class="title">How AI text watermarking works: a visual guide</h3>
+	<p class="about">No summary in this feed — follow the link for the story.</p>
+	<a class="more" href="https://declaude.org/watermarking/" target="_blank" rel="noopener noreferrer">Lobsters &#8599;</a>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
 	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
