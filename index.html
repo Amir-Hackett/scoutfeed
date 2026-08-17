@@ -189,10 +189,18 @@ h1 .tld { color: var(--accent); }
    keeps the window square wherever the card allows; max-height caps it on
    short cards, where the window goes landscape — the friendlier direction
    for landscape art. */
-.card.has-thumb .front { padding-right: 124px; }
+.card.has-thumb .front { padding-right: min(calc(34% + 26px), 196px); }
 .front .thumb {
 	position: absolute; right: 12px; top: 12px;
-	width: 100px; height: auto; aspect-ratio: 1 / 1;
+	/* Proportional, not fixed (owner 2026-08-17, round two: the fixed 100px
+	   square read small on desktop cards). The thumb scales with the card —
+	   34% is ~146px on a typical 3-column desktop card and ~170px capped on
+	   wide ones, about twice the old art area — while a 300px phone-width
+	   card computes back to ~102px, preserving the headline room that the
+	   rail's 2026-08-10 incident proved is not negotiable. The lead card
+	   already sizes art this way (min(42%, 340px)); this brings the grid in
+	   line. max-height still bounds it square-ish on the 188px row unit. */
+	width: min(34%, 170px); height: auto; aspect-ratio: 1 / 1;
 	max-height: calc(100% - 24px);
 	object-fit: cover; border-radius: 10px;
 	background: var(--border);
@@ -437,7 +445,7 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 6:49 PM &middot; 316 TODAY</p>
+	<p class="stats">UPDATED 6:58 PM &middot; 317 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
 	<button class="chip active" data-filter="">All</button><button class="chip" data-filter="ai">AI</button><button class="chip" data-filter="healthcare">Healthcare</button><button class="chip" data-filter="dev">Dev</button><button class="chip" data-filter="entertainment">Entertainment</button><button class="chip" data-filter="games">Games</button><button class="chip" data-filter="markets">Markets</button><button class="chip" data-filter="music">Music</button><button class="chip" data-filter="sports">Sports</button><button class="chip" data-filter="world">World</button><button class="chip" data-filter="politics">Politics</button><button class="chip" data-filter="tech">Tech</button>
@@ -625,8 +633,8 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://chicago.suntimes.com/bears/2026/08/16/bears-training-camp-kyle-monangai-right-knee-injury-practice" target="_blank" rel="noopener noreferrer">Bears RB Kyle Monangai leaves practice after hurting right knee</a>
-		<p class="trend-meta"><span class="src">CHICAGO SUN-TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"kyle monangai" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.thescore.com/nfl/news/3581482/report-bears-monangai-to-miss-multiple-weeks-with-hyperextended-knee" target="_blank" rel="noopener noreferrer">Report: Bears&#39; Monangai to miss multiple weeks with hyperextended knee</a>
+		<p class="trend-meta"><span class="src">THESCORE</span><span class="sep" aria-hidden="true">&middot;</span>"kyle monangai" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
@@ -681,6 +689,26 @@ footer a { color: var(--text-faint); }
 	<h3 class="title">Dragon Ball Super Vol. 19 Alternate Cover Gives Us Our Sorta First Canon Glimpse Of Vegeta’s Mother</h3>
 	<p class="about">It&#39;s been almost 40 years since Vegeta&#39;s first appearance, and we only just got our first, very obscured look at his mom</p>
 	<a class="more" href="https://kotaku.com/dragon-ball-super-vol-19-alternate-cover-gives-us-our-sorta-first-canon-glimpse-of-vegetas-mother-2000724948" target="_blank" rel="noopener noreferrer">Kotaku &#8599;</a>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2" style="--rail:#7dd3fc" data-id="rss:https://www.fiercehealthcare.com/17f0be2f-4425-4aae-a50f-e22bf698071d" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="DocGo agrees to acquire virtual care provider Hicuity Health, assumes $52M debt — flip for details">
+<div class="inner">
+<div class="face front">
+	<div class="meta"><span class="src" style="color:#7dd3fc">FIERCE HEALTHCARE</span><span class="sep" aria-hidden="true">&middot;</span><time>6:58 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#7dd3fc">Healthcare</span></div>
+	<h3 class="title">DocGo agrees to acquire virtual care provider Hicuity Health, assumes $52M debt</h3>
+	<p class="snippet">DocGo is acquiring the virtual care provider by assuming approximately $52 million in existing debt.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back">
+	<h3 class="title">DocGo agrees to acquire virtual care provider Hicuity Health, assumes $52M debt</h3>
+	<p class="about">DocGo is acquiring the virtual care provider by assuming approximately $52 million in existing debt.</p>
+	<a class="more" href="https://www.fiercehealthcare.com/finance/docgo-enters-definitive-agreement-acquire-virtual-care-provider-hicuity-health-assumes-52m" target="_blank" rel="noopener noreferrer">Fierce Healthcare &#8599;</a>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
 	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
