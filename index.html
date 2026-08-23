@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-23T16:38:51.857Z">
+<meta name="sf-version" content="2026-08-23T16:47:49.574Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -33,7 +33,7 @@
 </script>
 <!-- Stored override first, system preference as the fallback — the old
      script read localStorage only, so a light-mode OS still got dark. -->
-<script>try{var t=localStorage.getItem('sf-theme');if(t==='light'||(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches))document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+<script>try{var t=localStorage.getItem('sf-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);else if(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches)document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
 <style>
 :root {
 	--bg: #0a0a10;
@@ -515,9 +515,11 @@ h1 .tld { color: var(--accent); }
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
+:root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
+:root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
@@ -525,7 +527,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
-:root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
@@ -534,7 +535,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
 :root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
 :root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
-:root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
 :root[data-theme="light"] .meta [style*="hsl(111 55% 72%)"] { color: #2f6e23 !important; }
 :root[data-theme="light"] .meta [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
@@ -654,10 +654,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 12:38 PM &middot; 117 TODAY</p>
+	<p class="stats">UPDATED 12:47 PM &middot; 120 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">155</span><span class="sr-only"> — 155 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">84</span><span class="sr-only"> — 84 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">294</span><span class="sr-only"> — 294 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">418</span><span class="sr-only"> — 418 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">294</span><span class="sr-only"> — 294 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">412</span><span class="sr-only"> — 412 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">158</span><span class="sr-only"> — 158 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">502</span><span class="sr-only"> — 502 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">150</span><span class="sr-only"> — 150 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">17</span><span class="sr-only"> — 17 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">516</span><span class="sr-only"> — 516 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">155</span><span class="sr-only"> — 155 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">84</span><span class="sr-only"> — 84 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">294</span><span class="sr-only"> — 294 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">418</span><span class="sr-only"> — 418 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">295</span><span class="sr-only"> — 295 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">412</span><span class="sr-only"> — 412 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">158</span><span class="sr-only"> — 158 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">503</span><span class="sr-only"> — 503 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">148</span><span class="sr-only"> — 148 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">17</span><span class="sr-only"> — 17 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">516</span><span class="sr-only"> — 516 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -873,43 +873,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
+		<a class="trend-title" href="https://www.foxnews.com/entertainment/tom-hanks-band-of-brothers-stars-boot-camp-mutiny-neal-mcdonough-reveals" target="_blank" rel="noopener noreferrer">Tom Hanks put &#39;Band of Brothers&#39; stars in their place during boot camp &#39;mutiny&#39;, Neal McDonough reveals</a>
+		<p class="trend-meta"><span class="src">FOX NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"tom hanks" &middot; 500+ searches</p>
+	</div>
+</li>
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">2</span>
+	<div class="trend-body">
+		<a class="trend-title" href="https://www.cleveland.com/browns/2026/08/with-de-alex-wright-possibly-out-for-much-or-all-of-the-season-with-a-lower-leg-injury-the-browns-must-regroup-at-edge-rusher-mary-kay-cabot.html" target="_blank" rel="noopener noreferrer">With DE Alex Wright suffering a potentially serious leg injury, the Browns must regroup at edge rusher: Mary</a>
+		<p class="trend-meta"><span class="src">CLEVELAND.COM</span><span class="sep" aria-hidden="true">&middot;</span>"derek barnett" &middot; 500+ searches</p>
+	</div>
+</li>
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">3</span>
+	<div class="trend-body">
 		<a class="trend-title" href="https://www.foxnews.com/entertainment/jill-wagner-pitched-taylor-sheridan-lioness-after-military-husband-revealed-real-life-program-what-know" target="_blank" rel="noopener noreferrer">Jill Wagner pitched Taylor Sheridan &#39;Lioness&#39; after military husband revealed real-life program: What to know</a>
 		<p class="trend-meta"><span class="src">FOX NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"jill wagner" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
-	<span class="rank" aria-hidden="true">2</span>
+	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
 		<a class="trend-title" href="https://www.infobae.com/mexico/2026/08/22/que-paso-con-los-policias-que-detuvieron-a-el-chapo-guzman-en-2016/" target="_blank" rel="noopener noreferrer">What happened to the police officers who captured El Chapo Guzmán in 2016?</a>
 		<p class="trend-meta"><span class="src">INFOBAE</span><span class="sep" aria-hidden="true">&middot;</span>"el chapo guzman" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
-	<span class="rank" aria-hidden="true">3</span>
+	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
 		<a class="trend-title" href="https://www.sabah.com.tr/spor/futbol/2026/08/23/canli-super-ligde-trabzonspor-basaksehir-maci-ne-zaman-saat-kacta-hangi-kanalda" target="_blank" rel="noopener noreferrer">LIVE | Trabzonspor - Başakşehir match in the Süper Lig! Starting lineups announced</a>
 		<p class="trend-meta"><span class="src">SABAH</span><span class="sep" aria-hidden="true">&middot;</span>"trabzonspor" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
-	<span class="rank" aria-hidden="true">4</span>
+	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
 		<a class="trend-title" href="https://variety.com/2026/tv/news/dungeon-crawler-carl-tv-series-eric-heisserer-co-showrunner-1236840197/" target="_blank" rel="noopener noreferrer">‘Dungeon Crawler Carl’ TV Series Sets Netflix’s ‘Shadow and Bone’ Creator Eric Heisserer as Co-Showrunner</a>
 		<p class="trend-meta"><span class="src">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span>"dungeon crawler carl showrunners chris yost" &middot; 200+ searches</p>
-	</div>
-</li>
-<li class="trend-item">
-	<span class="rank" aria-hidden="true">5</span>
-	<div class="trend-body">
-		<a class="trend-title" href="https://www.nytimes.com/athletic/7532939/2026/08/23/dan-burn-newcastle-injury-latest/" target="_blank" rel="noopener noreferrer">Newcastle captain Dan Burn expected to miss start of season with ankle injury</a>
-		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"dan burn" &middot; 200+ searches</p>
-	</div>
-</li>
-<li class="trend-item">
-	<span class="rank" aria-hidden="true">6</span>
-	<div class="trend-body">
-		<a class="trend-title" href="https://www.twincities.com/2026/08/23/mn-state-fair-free-events/" target="_blank" rel="noopener noreferrer">Minnesota State Fair 2026: Your day-by-day guide to free Fairgrounds fun</a>
-		<p class="trend-meta"><span class="src">PIONEER PRESS</span><span class="sep" aria-hidden="true">&middot;</span>"mn state fair" &middot; 200+ searches</p>
 	</div>
 </li>
 </ol>
@@ -931,6 +931,52 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://variety.com/2026/awards/awards/sentimental-value-anders-danielsen-lie-anne-marie-ottersen-1236840981/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49701850" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1787503652416" data-slug="soccer story with marc guehi midfield enzo maresca sends statement man city win bournemouth">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="With Guéhi in midfield, Maresca makes transfer needs clear in Man City win — flip for details">
+	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-23T16:47:32.416Z">12:47 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">With Guéhi in midfield, Maresca makes transfer needs clear in Man City win</h3>
+	<p class="snippet">Marc Guéhi was given a surprise role in center midfield against Bournemouth. Enzo Maresca will hope he never has to do so again.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0823%2Fr1705784_1296x729_16-9.jpg&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0823%2Fr1705784_1296x729_16-9.jpg&amp;w=240 240w, https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0823%2Fr1705784_1296x729_16-9.jpg&amp;w=340 340w, https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0823%2Fr1705784_1296x729_16-9.jpg&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">With Guéhi in midfield, Maresca makes transfer needs clear in Man City win</h3>
+	<p class="about">Marc Guéhi was given a surprise role in center midfield against Bournemouth. Enzo Maresca will hope he never has to do so again.</p>
+	
+	
+	<a class="more" href="https://www.espn.com/soccer/story/_/id/49701850/with-marc-guehi-midfield-enzo-maresca-sends-statement-man-city-win-bournemouth" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://kotaku.com/?p=2000727246" data-srckey="kotaku" data-cat="games" data-sent="0" data-ts="1787503104000" data-slug="viral chinese cow cartoon becomes one the most profitable movies ever made">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Viral Chinese Cow Cartoon Becomes One Of The Most Profitable Movies Ever Made — flip for details">
+	<div class="meta"><span class="src" style="color:#a3e635">KOTAKU</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-23T16:38:24.000Z">12:38 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">Viral Chinese Cow Cartoon Becomes One Of The Most Profitable Movies Ever Made</h3>
+	<p class="snippet">Rudimentary animated feature Niu Lai bounces back from mockery, with this cow laughing all the way to the bank</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://kotaku.com/app/uploads/2026/08/Niu-Lai-1.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Viral Chinese Cow Cartoon Becomes One Of The Most Profitable Movies Ever Made</h3>
+	<p class="about">Rudimentary animated feature Niu Lai bounces back from mockery, with this cow laughing all the way to the bank</p>
+	
+	
+	<a class="more" href="https://kotaku.com/viral-chinese-cow-cartoon-becomes-one-of-the-most-profitable-movies-ever-made-2000727246" target="_blank" rel="noopener noreferrer">Kotaku &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1023,6 +1069,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://variety.com/2026/tv/awards/martin-short-busy-emmy-race-three-very-different-projects-1236839629/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 h2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://reinvently.co.uk/tools/ed-o-meter/" data-srckey="hacker news" data-cat="tech" data-sent="0" data-ts="1787502261000" data-slug="tools meter">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="GLM-5.3 (open-weight) beat Anthropic/OpenAI models – for 1/5 the cost — flip for details">
+	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-23T16:24:21.000Z">12:24 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">GLM-5.3 (open-weight) beat Anthropic/OpenAI models – for 1/5 the cost</h3>
+	<p class="snippet">Seventeen models on the Featherbench leaderboard: glm-5.3 leads at 100%, eight tie at 96%, and checker errors flip the safety ranking. See who tops the board.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://reinvently.co.uk/images/hero-ed-o-meter-leaderboard.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">GLM-5.3 (open-weight) beat Anthropic/OpenAI models – for 1/5 the cost</h3>
+	<p class="about">Seventeen models on the Featherbench leaderboard: glm-5.3 leads at 100%, eight tie at 96%, and checker errors flip the safety ranking. See who tops the board.</p>
+	
+	
+	<a class="more" href="https://reinvently.co.uk/tools/ed-o-meter/" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -9227,7 +9296,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2632 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2629 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://dev.to/kavin_k_5b0b0c5a2e4bbf880/java-script-c-2-variables-5bji" data-cat="dev" data-sent="0" data-slug="kavin 5b0b0c5a2e4bbf880 java script variables 5bji" hidden="until-found"><span class="ameta">DEV.TO &middot; Aug 21 &middot; Dev</span><a href="https://dev.to/kavin_k_5b0b0c5a2e4bbf880/java-script-c-2-variables-5bji" target="_blank" rel="noopener noreferrer">Java script c-2 variables</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c62xpre63j2o#1" data-cat="world" data-sent="0" data-slug="news articles c62xpre63j2o" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 21 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/c62xpre63j2o" target="_blank" rel="noopener noreferrer">Lindsay Clancy suffering &#39;command hallucination&#39; when she killed children, court hears</a></li>
@@ -11858,9 +11927,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:108349606" data-cat="markets" data-sent="0" data-slug="treasury yields iran economic sanctions html" hidden="until-found"><span class="ameta">CNBC &middot; Aug 14 &middot; Markets</span><a href="https://www.cnbc.com/2026/08/14/treasury-yields-us-iran-economic-sanctions.html" target="_blank" rel="noopener noreferrer">Treasury yields rise as U.S. threatens Iran with more economic sanctions</a></li>
 <li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/news/jpmorgan-debanked-polymarket-regulatory-concerns-report" data-cat="markets" data-sent="0" data-slug="news jpmorgan debanked polymarket regulatory concerns report" hidden="until-found"><span class="ameta">COINTELEGRAPH &middot; Aug 14 &middot; Markets</span><a href="https://cointelegraph.com/news/jpmorgan-debanked-polymarket-regulatory-concerns-report" target="_blank" rel="noopener noreferrer">JPMorgan cut Polymarket banking ties over regulatory concerns: Report</a></li>
 <li class="arow" data-count="1" data-id="rss:f558d407-4683-41ee-a160-be7799dbe88f" data-cat="markets" data-sent="0" data-slug="tech live updates bitcoin slips below usd63 oil yields climb" hidden="until-found"><span class="ameta">COINDESK &middot; Aug 14 &middot; Markets</span><a href="https://www.coindesk.com/tech/2026/08/14/live-updates-bitcoin-slips-below-usd63-000-as-oil-yields-climb" target="_blank" rel="noopener noreferrer">Live updates: Bitcoin slips below $63,000 as oil, yields climb</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.theverge.com/tech/980142/cards-against-humanity-elon-musk-monument" data-cat="tech" data-sent="0" data-slug="tech cards against humanity elon musk monument" hidden="until-found"><span class="ameta">THE VERGE &middot; Aug 14 &middot; Tech</span><a href="https://www.theverge.com/tech/980142/cards-against-humanity-elon-musk-monument" target="_blank" rel="noopener noreferrer">Help build a monument to that ‘sad little bitch’ Elon Musk</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c78gy6ep3n5o#0" data-cat="world" data-sent="0" data-slug="news articles c78gy6ep3n5o" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 14 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/c78gy6ep3n5o" target="_blank" rel="noopener noreferrer">US says dozens of countries helped China dodge Trump&#39;s tariffs</a></li>
-<li class="arow" data-count="1" data-id="rss:417fa3f5-618f-4415-a744-e8c6b0816d36" data-cat="world" data-sent="0" data-slug="other health emergencies must not neglected eastern drc" hidden="until-found"><span class="ameta">MSF &middot; Aug 14 &middot; World</span><a href="https://www.msf.org/other-health-emergencies-must-not-be-neglected-eastern-drc" target="_blank" rel="noopener noreferrer">Other health emergencies must not be neglected in eastern DRC</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
@@ -12174,9 +12240,12 @@ footer a { color: var(--text-faint); }
 	}
 	syncTheme();
 	themeBtn.addEventListener('click', function () {
+		// An explicit choice is always STAMPED — never "remove the attribute and
+		// let the OS decide". Removing it let the prefers-color-scheme: light
+		// block keep the page light on a light-mode Mac, so "switch to dark"
+		// looked like a dead button (owner report 2026-08-23).
 		var toLight = document.documentElement.getAttribute('data-theme') !== 'light';
-		if (toLight) document.documentElement.setAttribute('data-theme', 'light');
-		else document.documentElement.removeAttribute('data-theme');
+		document.documentElement.setAttribute('data-theme', toLight ? 'light' : 'dark');
 		syncTheme();
 		try { localStorage.setItem('sf-theme', toLight ? 'light' : 'dark'); } catch (err) { void err; }
 	});
