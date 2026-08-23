@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-23T17:02:29.598Z">
+<meta name="sf-version" content="2026-08-23T17:02:53.762Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -381,8 +381,14 @@ h1 .tld { color: var(--accent); }
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); grid-auto-rows: 188px; grid-auto-flow: dense; gap: 12px; }
 /* Search-only archive of older stories (RENDER_DAYS+): compact rows, no art. */
 .archive { margin-top: 28px; }
-.alist { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
-.arow { display: flex; flex-direction: column; gap: 2px; padding: 10px 14px; background: var(--surface-solid); border: 1px solid var(--border); border-radius: 10px; }
+/* hidden="until-found" is NOT display:none — the spec keeps the element's box
+   (content-visibility: hidden-matchable) so find-in-page can reveal it. The row
+   chrome therefore painted as 2,632 empty pills with the list gap between them
+   (owner report 2026-08-23). Collapse the box while it is still hidden, and
+   carry the spacing on the revealed rows instead of on the list. */
+.alist { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.arow[hidden] { padding: 0; border: 0; margin: 0; background: none; border-radius: 0; }
+.arow { display: flex; flex-direction: column; gap: 2px; margin-bottom: 6px; padding: 10px 14px; background: var(--surface-solid); border: 1px solid var(--border); border-radius: 10px; }
 .arow a { color: var(--text); font-weight: 600; text-decoration: none; }
 .arow a:hover { text-decoration: underline; }
 .ameta { font-size: 12px; letter-spacing: 0.04em; color: var(--text-faint); }
@@ -515,19 +521,19 @@ h1 .tld { color: var(--accent); }
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
+:root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
+:root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
-:root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
-:root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
@@ -654,10 +660,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 1:02 PM &middot; 120 TODAY</p>
+	<p class="stats">UPDATED 1:02 PM &middot; 124 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">155</span><span class="sr-only"> — 155 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">84</span><span class="sr-only"> — 84 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">294</span><span class="sr-only"> — 294 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">419</span><span class="sr-only"> — 419 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">294</span><span class="sr-only"> — 294 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">412</span><span class="sr-only"> — 412 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">158</span><span class="sr-only"> — 158 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">503</span><span class="sr-only"> — 503 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">148</span><span class="sr-only"> — 148 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">17</span><span class="sr-only"> — 17 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">516</span><span class="sr-only"> — 516 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">155</span><span class="sr-only"> — 155 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">84</span><span class="sr-only"> — 84 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">294</span><span class="sr-only"> — 294 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">419</span><span class="sr-only"> — 419 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">296</span><span class="sr-only"> — 296 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">409</span><span class="sr-only"> — 409 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">158</span><span class="sr-only"> — 158 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">505</span><span class="sr-only"> — 505 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">148</span><span class="sr-only"> — 148 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">16</span><span class="sr-only"> — 16 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">516</span><span class="sr-only"> — 516 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -873,43 +879,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.foxnews.com/entertainment/tom-hanks-band-of-brothers-stars-boot-camp-mutiny-neal-mcdonough-reveals" target="_blank" rel="noopener noreferrer">Tom Hanks put &#39;Band of Brothers&#39; stars in their place during boot camp &#39;mutiny&#39;, Neal McDonough reveals</a>
-		<p class="trend-meta"><span class="src">FOX NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"tom hanks" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://sports.yahoo.com/articles/journalist-provides-cody-gakpo-potential-115500080.html" target="_blank" rel="noopener noreferrer">Journalist provides update on Cody Gakpo’s potential Liverpool exit</a>
+		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"cody gakpo" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.cleveland.com/browns/2026/08/with-de-alex-wright-possibly-out-for-much-or-all-of-the-season-with-a-lower-leg-injury-the-browns-must-regroup-at-edge-rusher-mary-kay-cabot.html" target="_blank" rel="noopener noreferrer">With DE Alex Wright suffering a potentially serious leg injury, the Browns must regroup at edge rusher: Mary</a>
-		<p class="trend-meta"><span class="src">CLEVELAND.COM</span><span class="sep" aria-hidden="true">&middot;</span>"derek barnett" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://finance.yahoo.com/markets/stocks/article/spacex-stock-slips-as-319-million-new-shares-come-to-market-143100875.html" target="_blank" rel="noopener noreferrer">SpaceX stock slips as 319 million new shares come to market</a>
+		<p class="trend-meta"><span class="src">YAHOO FINANCE</span><span class="sep" aria-hidden="true">&middot;</span>"spacex stock price drop" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.foxnews.com/entertainment/jill-wagner-pitched-taylor-sheridan-lioness-after-military-husband-revealed-real-life-program-what-know" target="_blank" rel="noopener noreferrer">Jill Wagner pitched Taylor Sheridan &#39;Lioness&#39; after military husband revealed real-life program: What to know</a>
-		<p class="trend-meta"><span class="src">FOX NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"jill wagner" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.nytimes.com/athletic/7517993/2026/08/17/verdict-transfers-mls-colorado-atlanta-denkey/" target="_blank" rel="noopener noreferrer">The Verdict: Transfers ramp up as Colorado seek winger; Atlanta finalize Embolo signing; Hull pursue Denkey</a>
+		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"breel embolo" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.infobae.com/mexico/2026/08/22/que-paso-con-los-policias-que-detuvieron-a-el-chapo-guzman-en-2016/" target="_blank" rel="noopener noreferrer">What happened to the police officers who captured El Chapo Guzmán in 2016?</a>
-		<p class="trend-meta"><span class="src">INFOBAE</span><span class="sep" aria-hidden="true">&middot;</span>"el chapo guzman" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://www.foxnews.com/politics/karoline-leavitt-reveals-next-role-after-leaving-white-house-press-secretary-post" target="_blank" rel="noopener noreferrer">Karoline Leavitt reveals next role after leaving White House press secretary post</a>
+		<p class="trend-meta"><span class="src">FOX NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"press secretary" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.sabah.com.tr/spor/futbol/2026/08/23/canli-super-ligde-trabzonspor-basaksehir-maci-ne-zaman-saat-kacta-hangi-kanalda" target="_blank" rel="noopener noreferrer">LIVE | Trabzonspor - Başakşehir match in the Süper Lig! Starting lineups announced</a>
-		<p class="trend-meta"><span class="src">SABAH</span><span class="sep" aria-hidden="true">&middot;</span>"trabzonspor" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.espn.com/nfl/story/_/id/49702666/sources-browns-lose-de-wright-achilles-season-add-barnett" target="_blank" rel="noopener noreferrer">Sources: Browns lose DE Wright (Achilles) for season, add Barnett</a>
+		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"derek barnett" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://variety.com/2026/tv/news/dungeon-crawler-carl-tv-series-eric-heisserer-co-showrunner-1236840197/" target="_blank" rel="noopener noreferrer">‘Dungeon Crawler Carl’ TV Series Sets Netflix’s ‘Shadow and Bone’ Creator Eric Heisserer as Co-Showrunner</a>
-		<p class="trend-meta"><span class="src">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span>"dungeon crawler carl showrunners chris yost" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.foxnews.com/entertainment/tom-hanks-band-of-brothers-stars-boot-camp-mutiny-neal-mcdonough-reveals" target="_blank" rel="noopener noreferrer">Tom Hanks put &#39;Band of Brothers&#39; stars in their place during boot camp &#39;mutiny&#39;, Neal McDonough reveals</a>
+		<p class="trend-meta"><span class="src">FOX NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"tom hanks" &middot; 1000+ searches</p>
 	</div>
 </li>
 </ol>
@@ -931,6 +937,75 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://variety.com/2026/awards/awards/sentimental-value-anders-danielsen-lie-anne-marie-ottersen-1236840981/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49702666" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1787504554508" data-slug="nfl story sources browns lose wright achilles season add barnett">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Sources: Browns starting DE Wright out for year — flip for details">
+	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-23T17:02:34.508Z">1:02 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Sources: Browns starting DE Wright out for year</h3>
+	<p class="snippet">The Browns are placing starting defensive end Alex Wright on season-ending injured reserve with a ruptured Achilles, and now will sign veteran defensive end Derek Barnett.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0823%2Fr1705789_1296x729_16-9.jpg&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0823%2Fr1705789_1296x729_16-9.jpg&amp;w=240 240w, https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0823%2Fr1705789_1296x729_16-9.jpg&amp;w=340 340w, https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0823%2Fr1705789_1296x729_16-9.jpg&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Sources: Browns starting DE Wright out for year</h3>
+	<p class="about">The Browns are placing starting defensive end Alex Wright on season-ending injured reserve with a ruptured Achilles, and now will sign veteran defensive end Derek Barnett.</p>
+	
+	
+	<a class="more" href="https://www.espn.com/nfl/story/_/id/49702666/sources-browns-lose-de-wright-achilles-season-add-barnett" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.eurogamer.net/twitch-amazon-generative-ai-training-lawsuit-streamers" data-srckey="eurogamer" data-cat="games" data-sent="0" data-ts="1787504120000" data-slug="twitch amazon generative training lawsuit streamers">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Twitch faces a class action lawsuit over using streamers&#39; content to train Amazon&#39;s AI — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">EUROGAMER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-23T16:55:20.000Z">12:55 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">Twitch faces a class action lawsuit over using streamers&#39; content to train Amazon&#39;s AI</h3>
+	<p class="snippet">A Twitch streamer has filed a proposed class action against the platform and its parent company Amazon, claiming his broadcasts, and those of countless other creators, were fed into generative AI training with neither consent nor payment. Read more</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assetsio.gnwcdn.com/OpenLetterHeader_1920x1080.png?width=340&amp;quality=85&amp;format=jpg&amp;auto=webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://assetsio.gnwcdn.com/OpenLetterHeader_1920x1080.png?width=240&amp;quality=85&amp;format=jpg&amp;auto=webp 240w, https://assetsio.gnwcdn.com/OpenLetterHeader_1920x1080.png?width=340&amp;quality=85&amp;format=jpg&amp;auto=webp 340w, https://assetsio.gnwcdn.com/OpenLetterHeader_1920x1080.png?width=510&amp;quality=85&amp;format=jpg&amp;auto=webp 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Twitch faces a class action lawsuit over using streamers&#39; content to train Amazon&#39;s AI</h3>
+	<p class="about">A Twitch streamer has filed a proposed class action against the platform and its parent company Amazon, claiming his broadcasts, and those of countless other creators, were fed into generative AI training with neither consent nor payment. Read more</p>
+	
+	
+	<a class="more" href="https://www.eurogamer.net/twitch-amazon-generative-ai-training-lawsuit-streamers" target="_blank" rel="noopener noreferrer">Eurogamer &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.polygon.com/mewgenics-xbox-release-date-leak/" data-srckey="polygon" data-cat="games" data-sent="0" data-ts="1787503978000" data-slug="mewgenics xbox release date leak">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Mewgenics&#39; Xbox Port Is Coming Sooner Than Expected, Store Leak Suggests — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-23T16:52:58.000Z">12:52 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">Mewgenics&#39; Xbox Port Is Coming Sooner Than Expected, Store Leak Suggests</h3>
+	<p class="snippet">A early Xbox store page listing for Mewgenics suggests that it&#39;ll come to Xbox Series X on Sept. 8</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/02/mewgenics-rat.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/02/mewgenics-rat.jpg?w=240 240w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/02/mewgenics-rat.jpg?w=340 340w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/02/mewgenics-rat.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Mewgenics&#39; Xbox Port Is Coming Sooner Than Expected, Store Leak Suggests</h3>
+	<p class="about">A early Xbox store page listing for Mewgenics suggests that it&#39;ll come to Xbox Series X on Sept. 8</p>
+	
+	
+	<a class="more" href="https://www.polygon.com/mewgenics-xbox-release-date-leak/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1092,6 +1167,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://reinvently.co.uk/tools/ed-o-meter/" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.bbc.com/future/article/20260820-how-social-nudity-can-boost-your-body-image" data-srckey="hacker news" data-cat="tech" data-sent="0" data-ts="1787502097000" data-slug="future article how social nudity can boost your body image">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Being nude in public can make us feel better about our bodies — flip for details">
+	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-23T16:21:37.000Z">12:21 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Being nude in public can make us feel better about our bodies</h3>
+	<p class="snippet">Research suggests that naturism, the practice of non-sexual social nudity, can help people improve their body image. Naturists and experts tell the BBC how it works.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ychef.files.bbci.co.uk/624x351/p0p5hgnw.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Being nude in public can make us feel better about our bodies</h3>
+	<p class="about">Research suggests that naturism, the practice of non-sexual social nudity, can help people improve their body image. Naturists and experts tell the BBC how it works.</p>
+	
+	
+	<a class="more" href="https://www.bbc.com/future/article/20260820-how-social-nudity-can-boost-your-body-image" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -9296,7 +9394,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2629 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2625 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://dev.to/kavin_k_5b0b0c5a2e4bbf880/java-script-c-2-variables-5bji" data-cat="dev" data-sent="0" data-slug="kavin 5b0b0c5a2e4bbf880 java script variables 5bji" hidden="until-found"><span class="ameta">DEV.TO &middot; Aug 21 &middot; Dev</span><a href="https://dev.to/kavin_k_5b0b0c5a2e4bbf880/java-script-c-2-variables-5bji" target="_blank" rel="noopener noreferrer">Java script c-2 variables</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c62xpre63j2o#1" data-cat="world" data-sent="0" data-slug="news articles c62xpre63j2o" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 21 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/c62xpre63j2o" target="_blank" rel="noopener noreferrer">Lindsay Clancy suffering &#39;command hallucination&#39; when she killed children, court hears</a></li>
@@ -9638,6 +9736,7 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000726365" data-cat="games" data-sent="0" data-slug="metal gear solid guns the patriots kotaku review" hidden="until-found"><span class="ameta">KOTAKU &middot; Aug 21 &middot; Games</span><a href="https://kotaku.com/metal-gear-solid-4-guns-of-the-patriots-the-kotaku-review-2000726365" target="_blank" rel="noopener noreferrer">Metal Gear Solid 4: Guns Of The Patriots: The Kotaku Review</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2241335/rayneo-ar-smart-glasses-io-gt-series/" data-cat="tech" data-sent="0" data-slug="rayneo smart glasses series" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 21 &middot; Tech</span><a href="https://www.engadget.com/2241335/rayneo-ar-smart-glasses-io-gt-series/" target="_blank" rel="noopener noreferrer">RayNeo is going both minimalist and maximalist with its latest AR smart glasses</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/mixed-martial-arts/articles/cn9nr189ze2o#2" data-cat="sports" data-sent="0" data-slug="sport mixed martial arts articles cn9nr189ze2o" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 21 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/mixed-martial-arts/articles/cn9nr189ze2o" target="_blank" rel="noopener noreferrer">Opening door for women in MMA my proudest moment - Cyborg</a></li>
+<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/cn9nqzny7n7o#14" data-cat="sports" data-sent="0" data-slug="sport football articles cn9nqzny7n7o" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 21 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/football/articles/cn9nqzny7n7o" target="_blank" rel="noopener noreferrer">Sutton&#39;s opening weekend predictions v Courteeners frontman Liam Fray</a></li>
 <li class="arow" data-count="1" data-id="rss:11212c3d-0f30-46a4-95b6-901fb31e035f" data-cat="markets" data-sent="0" data-slug="tech live updates bitcoin ether etfs pull usd800 million inflows surge for second day" hidden="until-found"><span class="ameta">COINDESK &middot; Aug 21 &middot; Markets</span><a href="https://www.coindesk.com/tech/2026/08/21/live-updates-bitcoin-ether-etfs-pull-in-usd800-million-as-inflows-surge-for-a-second-day" target="_blank" rel="noopener noreferrer">Live updates: Bitcoin, ether ETFs pull in $800 million as inflows surge for a second day</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c4gdn2vmgvwo#0" data-cat="world" data-sent="0" data-slug="news articles c4gdn2vmgvwo" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 21 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/c4gdn2vmgvwo" target="_blank" rel="noopener noreferrer">Gandhi&#39;s handwritten notes on life sold for $1.69m at Indian auction</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/c4gxxyyn8yeo#1" data-cat="sports" data-sent="0" data-slug="sport football articles c4gxxyyn8yeo" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 21 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/football/articles/c4gxxyyn8yeo" target="_blank" rel="noopener noreferrer">Flex your football brain with our daily quizzes</a></li>
@@ -11922,11 +12021,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.technologyreview.com/?p=1141919" data-cat="tech" data-sent="0" data-slug="cloning save species make human organ sacks" hidden="until-found"><span class="ameta">MIT TECH REVIEW &middot; Aug 14 &middot; Tech</span><a href="https://www.technologyreview.com/2026/08/14/1141919/cloning-save-species-or-make-human-organ-sacks/" target="_blank" rel="noopener noreferrer">Cloning could be used to save species—or make human “organ sacks”</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.technologyreview.com/?p=1141431" data-cat="tech" data-sent="0" data-slug="job titles space travel agent roman chiporukha" hidden="until-found"><span class="ameta">MIT TECH REVIEW &middot; Aug 14 &middot; Tech</span><a href="https://www.technologyreview.com/2026/08/14/1141431/job-titles-space-travel-agent-roman-chiporukha/" target="_blank" rel="noopener noreferrer">Job titles of the future: Space travel agent</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.technologyreview.com/?p=1141354" data-cat="tech" data-sent="0" data-slug="deanne taylor gene expression children" hidden="until-found"><span class="ameta">MIT TECH REVIEW &middot; Aug 14 &middot; Tech</span><a href="https://www.technologyreview.com/2026/08/14/1141354/deanne-taylor-gene-expression-children/" target="_blank" rel="noopener noreferrer">This scientist is helping build a missing map of childhood</a></li>
-<li class="arow" data-count="1" data-id="rss:6a7e221c89f89b7e8931115c" data-cat="tech" data-sent="0" data-slug="story real reason data center gas power plants are dirty" hidden="until-found"><span class="ameta">WIRED &middot; Aug 14 &middot; Tech</span><a href="https://www.wired.com/story/real-reason-data-center-gas-power-plants-are-so-dirty/" target="_blank" rel="noopener noreferrer">The Real Reason Data Center Gas Power Plants Are So Dirty</a></li>
-<li class="arow" data-count="1" data-id="rss:0000019f-fd01-d68a-a39f-fdcb4fe10000" data-cat="politics" data-sent="0" data-slug="gallery the nations cartoonists week politics" hidden="until-found"><span class="ameta">POLITICO &middot; Aug 14 &middot; Politics</span><a href="https://www.politico.com/gallery/2026/08/14/the-nations-cartoonists-on-the-week-in-politics-01037047" target="_blank" rel="noopener noreferrer">The nation’s cartoonists on the week in politics</a></li>
-<li class="arow" data-count="1" data-id="rss:108349606" data-cat="markets" data-sent="0" data-slug="treasury yields iran economic sanctions html" hidden="until-found"><span class="ameta">CNBC &middot; Aug 14 &middot; Markets</span><a href="https://www.cnbc.com/2026/08/14/treasury-yields-us-iran-economic-sanctions.html" target="_blank" rel="noopener noreferrer">Treasury yields rise as U.S. threatens Iran with more economic sanctions</a></li>
-<li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/news/jpmorgan-debanked-polymarket-regulatory-concerns-report" data-cat="markets" data-sent="0" data-slug="news jpmorgan debanked polymarket regulatory concerns report" hidden="until-found"><span class="ameta">COINTELEGRAPH &middot; Aug 14 &middot; Markets</span><a href="https://cointelegraph.com/news/jpmorgan-debanked-polymarket-regulatory-concerns-report" target="_blank" rel="noopener noreferrer">JPMorgan cut Polymarket banking ties over regulatory concerns: Report</a></li>
-<li class="arow" data-count="1" data-id="rss:f558d407-4683-41ee-a160-be7799dbe88f" data-cat="markets" data-sent="0" data-slug="tech live updates bitcoin slips below usd63 oil yields climb" hidden="until-found"><span class="ameta">COINDESK &middot; Aug 14 &middot; Markets</span><a href="https://www.coindesk.com/tech/2026/08/14/live-updates-bitcoin-slips-below-usd63-000-as-oil-yields-climb" target="_blank" rel="noopener noreferrer">Live updates: Bitcoin slips below $63,000 as oil, yields climb</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
