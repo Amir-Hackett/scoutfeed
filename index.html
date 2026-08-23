@@ -305,10 +305,18 @@ h1 .tld { color: var(--accent); }
    row-aligned, never ragged. */
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); grid-auto-rows: 188px; grid-auto-flow: dense; gap: 12px; }
 .card {
-	position: relative; height: 100%; perspective: 1200px; cursor: pointer;
+	position: relative; height: 100%; cursor: pointer;
 	-webkit-tap-highlight-color: transparent;
 	transition: transform 180ms ease-out;
+	/* Perf (owner: "it chugs", 2026-08-23 — 3,000 cards on one page): a card
+	   that is off-screen skips layout + paint entirely. The grid fixes every
+	   card's box (grid-auto-rows), so the intrinsic size only matters before
+	   first paint and can't cause scroll jumps. */
+	content-visibility: auto; contain-intrinsic-size: auto 300px 188px;
 }
+/* 3D only while a card is actually flipping/flipped — perspective +
+   preserve-3d on every card minted thousands of compositor layers. */
+.card.flipped, .card.flipping { perspective: 1200px; }
 /* Size variants. Column spans only engage when the grid actually has
    multiple columns — span 2 on a one-column grid would mint a phantom
    column and overflow the phone layout. */
@@ -358,9 +366,9 @@ h1 .tld { color: var(--accent); }
 .card.lead .front .snippet { font-size: 14.5px; }
 .card .inner {
 	position: absolute; inset: 0;
-	transform-style: preserve-3d;
 	transition: transform 550ms cubic-bezier(0.3, 0.8, 0.3, 1);
 }
+.card.flipped .inner, .card.flipping .inner { transform-style: preserve-3d; }
 .card.flipped .inner { transform: rotateY(180deg); }
 .face {
 	position: absolute; inset: 0; overflow: hidden;
@@ -445,7 +453,7 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 5:02 AM &middot; 14 TODAY</p>
+	<p class="stats">UPDATED 5:51 AM &middot; 21 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
 	<button class="chip active" data-filter="">All</button><button class="chip" data-filter="ai">AI</button><button class="chip" data-filter="healthcare">Healthcare</button><button class="chip" data-filter="dev">Dev</button><button class="chip" data-filter="entertainment">Entertainment</button><button class="chip" data-filter="games">Games</button><button class="chip" data-filter="markets">Markets</button><button class="chip" data-filter="music">Music</button><button class="chip" data-filter="sports">Sports</button><button class="chip" data-filter="world">World</button><button class="chip" data-filter="politics">Politics</button><button class="chip" data-filter="tech">Tech</button>
@@ -484,19 +492,19 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact has-thumb" style="--rail:#5eead4" data-id="rss:https://dev.to/hyunho_lee_e4373878e60f62/i-failed-at-time-management-five-times-then-i-audited-where-the-time-actually-went-ode" data-srckey="dev.to" data-cat="dev" data-sent="0" data-slug="hyunho lee e4373878e60f62 failed time management five times then audited where the actually went ode" tabindex="0" role="button" aria-expanded="false" aria-label="I failed at time management five times. Then I audited where the time actually went. — flip for details">
+<article class="card compact has-thumb" style="--rail:#5eead4" data-id="rss:https://lobste.rs/s/ssw0gv" data-srckey="lobsters" data-cat="dev" data-sent="0" tabindex="0" role="button" aria-expanded="false" aria-label="An arcade fighting game over SSH — flip for details">
 <div class="inner">
 <div class="face front">
-	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time>9:29 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
-	<h3 class="title">I failed at time management five times. Then I audited where the time actually went.</h3>
-	<p class="snippet">I&#39;ve promised myself I&#39;d &quot;manage my time better&quot; more times than I can count. None of it lasted a month. Work harder. Cut the distractions. Stay focused. Every one of those resolutions quietly died, a</p>
+	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time>2:24 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">An arcade fighting game over SSH</h3>
+	<p class="snippet">This is an intriguing demonstration of terminal graphics capabilities, and has a strong retro Street Fighter feeling. Comments</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=1200,height=627,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F7gc6o6jemmv3d3ewlcpd.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+	<img class="thumb" src="https://sshfighter.com/opengraph-image" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back">
-	<h3 class="title">I failed at time management five times. Then I audited where the time actually went.</h3>
-	<p class="about">I&#39;ve promised myself I&#39;d &quot;manage my time better&quot; more times than I can count. None of it lasted a month. Work harder. Cut the distractions. Stay focused. Every one of those resolutions quietly died, a</p>
-	<a class="more" href="https://dev.to/hyunho_lee_e4373878e60f62/i-failed-at-time-management-five-times-then-i-audited-where-the-time-actually-went-ode" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<h3 class="title">An arcade fighting game over SSH</h3>
+	<p class="about">This is an intriguing demonstration of terminal graphics capabilities, and has a strong retro Street Fighter feeling. Comments</p>
+	<a class="more" href="https://sshfighter.com/" target="_blank" rel="noopener noreferrer">Lobsters &#8599;</a>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
 	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
@@ -633,43 +641,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://people.com/post-malone-and-christy-lee-are-engaged-12063995" target="_blank" rel="noopener noreferrer">Post Malone Is Engaged to Christy Lee — See Her Massive Diamond Ring</a>
-		<p class="trend-meta"><span class="src">PEOPLE.COM</span><span class="sep" aria-hidden="true">&middot;</span>"engagement rings" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://sports.yahoo.com/articles/chicago-sky-coach-announces-plan-165917835.html" target="_blank" rel="noopener noreferrer">Chicago Sky Coach Announces Plan for DiJonai Carrington Ahead of Indiana Fever Game</a>
+		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"dijonai carrington chicago sky status" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nbcphiladelphia.com/weather/stories-weather/live-updates-cleanup-tornado-strong-storms-philadelphia-delaware-pennsylvania-new-jersey/4451535/" target="_blank" rel="noopener noreferrer">Cleanup continues after tornado, strong storms hit Philly region</a>
-		<p class="trend-meta"><span class="src">NBC10 PHILADELPHIA</span><span class="sep" aria-hidden="true">&middot;</span>"weather philadelphia" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://nypost.com/2026/08/22/betting/draftkings-predictions-promo-code-trade-5-get-150-for-cowboys-vs-cardinals/" target="_blank" rel="noopener noreferrer">DraftKings Predictions promo code: Trade $5, Get $150 for Cowboys vs. Cardinals</a>
+		<p class="trend-meta"><span class="src">NEW YORK POST</span><span class="sep" aria-hidden="true">&middot;</span>"draftkings" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.yahoo.com/entertainment/movies/articles/one-potential-james-bond-taken-111118961.html" target="_blank" rel="noopener noreferrer">One potential James Bond has taken himself out of the race as he&#39;s &quot;too old,&quot; and it&#39;s a role &quot;you could never come back from&quot;</a>
-		<p class="trend-meta"><span class="src">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"theo james" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.ctinsider.com/connecticut/article/starter-home-prices-connecticut-22393338.php" target="_blank" rel="noopener noreferrer">Starter homes now cost $300,000 in CT, doubling from a decade ago</a>
+		<p class="trend-meta"><span class="src">CT INSIDER</span><span class="sep" aria-hidden="true">&middot;</span>"home prices" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.imdb.com/news/ni65980448/?ref_=ttnw_art_perm" target="_blank" rel="noopener noreferrer">‘Lioness’ Season 3 Episode 4 Teaser Breakdown: Is Joe Still Missing?</a>
-		<p class="trend-meta"><span class="src">IMDB</span><span class="sep" aria-hidden="true">&middot;</span>"lioness season 3 episode 4" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.thestreet.com/real-estate/zillow-warns-americans-on-mortgage-rates-housing-market" target="_blank" rel="noopener noreferrer">Zillow warns Americans on mortgage rates, housing market</a>
+		<p class="trend-meta"><span class="src">THESTREET</span><span class="sep" aria-hidden="true">&middot;</span>"housing market" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://bloody-disgusting.com/exclusives/3964485/ruth-wilson-is-absolutely-terrifying-in-creepy-family-trailer/" target="_blank" rel="noopener noreferrer">Ruth Wilson Is Absolutely Terrifying In Creepy ‘Family’ Trailer</a>
-		<p class="trend-meta"><span class="src">BLOODY DISGUSTING</span><span class="sep" aria-hidden="true">&middot;</span>"family horror movie" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.foxweather.com/earth-space/san-andreas-fault-surprising-movement-earthquake-california-research" target="_blank" rel="noopener noreferrer">Scientists uncover potentially significant movement at one of America&#39;s most dangerous fault lines</a>
+		<p class="trend-meta"><span class="src">FOX WEATHER</span><span class="sep" aria-hidden="true">&middot;</span>"san andreas fault" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.today.com/health/coronavirus/summer-covid-surge-symptoms-guidelines-2026-covid-vaccine-test-rcna592549" target="_blank" rel="noopener noreferrer">Is There a Summer COVID Surge? With Cases Rising in Nearly Every State, Watch for These Symptoms</a>
-		<p class="trend-meta"><span class="src">TODAY.COM</span><span class="sep" aria-hidden="true">&middot;</span>"covid summer wave" &middot; 10000+ searches</p>
+		<a class="trend-title" href="https://www.chosun.com/english/sports-en/2026/08/23/EO6Q3UPLC5EPPOXHNZE5NB5ST4/" target="_blank" rel="noopener noreferrer">LCK Enters Warring States Era, Halting Gen.G&#39;s Reign</a>
+		<p class="trend-meta"><span class="src">조선일보</span><span class="sep" aria-hidden="true">&middot;</span>"lck" &middot; 100+ searches</p>
 	</div>
 </li>
 </ol>
@@ -689,6 +697,126 @@ footer a { color: var(--text-faint); }
 	<h3 class="title">Wi-Fi 8 is the first wireless upgrade in years that isn&#39;t chasing speed</h3>
 	<p class="about">It&#39;s time to fix the real problems</p>
 	<a class="more" href="https://www.xda-developers.com/wi-fi-8-first-wireless-upgrade-years-isnt-chasing-speed-home-networks-need-it/" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-id="rss:https://www.bbc.co.uk/news/videos/c7vgvj6e1emo#0" data-srckey="bbc world" data-cat="world" data-sent="0" data-slug="news videos c7vgvj6e1emo" tabindex="0" role="button" aria-expanded="false" aria-label="Robots compete in boxing, football and sprinting at World Humanoid Games — flip for details">
+<div class="inner">
+<div class="face front">
+	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time>5:42 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Robots compete in boxing, football and sprinting at World Humanoid Games</h3>
+	<p class="snippet">The second-edition of the five-day competition kicked off in Beijing, China, on Saturday.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/7317/live/a6132ae0-9ed6-11f1-a291-b542ee92de7c.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back">
+	<h3 class="title">Robots compete in boxing, football and sprinting at World Humanoid Games</h3>
+	<p class="about">The second-edition of the five-day competition kicked off in Beijing, China, on Saturday.</p>
+	<a class="more" href="https://www.bbc.co.uk/news/videos/c7vgvj6e1emo" target="_blank" rel="noopener noreferrer">BBC World &#8599;</a>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#34d399" data-id="rss:6a872b1cf11d52dc97865852" data-srckey="wired" data-cat="tech" data-sent="0" data-slug="story basic iphone tricks built with ios 27s revamped shortcuts app" tabindex="0" role="button" aria-expanded="false" aria-label="7 Basic iPhone Tricks I Built With iOS 27’s Revamped Shortcuts App — flip for details">
+<div class="inner">
+<div class="face front">
+	<div class="meta"><span class="src" style="color:hsl(207 55% 72%)">WIRED</span><span class="sep" aria-hidden="true">&middot;</span><time>5:30 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">7 Basic iPhone Tricks I Built With iOS 27’s Revamped Shortcuts App</h3>
+	<p class="snippet">From halting my doomscrolls to automating air-quality checks, Apple’s streamlined Shortcuts app is my favorite iOS 27 feature.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media.wired.com/photos/6a877da620408e2e1b24b434/master/pass/Apple-Shortcuts-Gear.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back">
+	<h3 class="title">7 Basic iPhone Tricks I Built With iOS 27’s Revamped Shortcuts App</h3>
+	<p class="about">From halting my doomscrolls to automating air-quality checks, Apple’s streamlined Shortcuts app is my favorite iOS 27 feature.</p>
+	<a class="more" href="https://www.wired.com/story/7-basic-iphone-tricks-i-built-with-ios-27s-revamped-shortcuts-app/" target="_blank" rel="noopener noreferrer">Wired &#8599;</a>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-id="rss:https://www.bbc.co.uk/sport/boxing/articles/c87n7rd30vro#0" data-srckey="bbc sport" data-cat="sports" data-sent="0" data-slug="sport boxing articles c87n7rd30vro" tabindex="0" role="button" aria-expanded="false" aria-label="Lopez beats Romero then snubs Catterall fight — flip for details">
+<div class="inner">
+<div class="face front">
+	<div class="meta"><span class="src" style="color:#facc15">BBC SPORT</span><span class="sep" aria-hidden="true">&middot;</span><time>5:14 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Lopez beats Romero then snubs Catterall fight</h3>
+	<p class="snippet">American Teofimo Lopez beats Rolando Romero in Las Vegas to claim the WBA welterweight title then seemingly snubs number one challenger Jack Catterall.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/8e9c/live/c7dd59a0-9ece-11f1-8957-ef757d61d645.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back">
+	<h3 class="title">Lopez beats Romero then snubs Catterall fight</h3>
+	<p class="about">American Teofimo Lopez beats Rolando Romero in Las Vegas to claim the WBA welterweight title then seemingly snubs number one challenger Jack Catterall.</p>
+	<a class="more" href="https://www.bbc.co.uk/sport/boxing/articles/c87n7rd30vro" target="_blank" rel="noopener noreferrer">BBC Sport &#8599;</a>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-id="rss:https://www.eurogamer.net/optimism-week-big-question-video-game-happy-places" data-srckey="eurogamer" data-cat="entertainment" data-sent="0" data-slug="optimism week big question video game happy places" tabindex="0" role="button" aria-expanded="false" aria-label="What&#39;s your video game happy place? — flip for details">
+<div class="inner">
+<div class="face front">
+	<div class="meta"><span class="src" style="color:#60a5fa">EUROGAMER</span><span class="sep" aria-hidden="true">&middot;</span><time>5:04 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">What&#39;s your video game happy place?</h3>
+	<p class="snippet">We all have our happy places: somewhere - real or otherwise - to escape, relax, and replenish away from the stresses of the modern world. Perhaps yours is in nature, lost in the reverie of a spirited</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assetsio.gnwcdn.com/optimism-happy-places.jpg?width=690&amp;quality=85&amp;format=jpg&amp;auto=webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back">
+	<h3 class="title">What&#39;s your video game happy place?</h3>
+	<p class="about">We all have our happy places: somewhere - real or otherwise - to escape, relax, and replenish away from the stresses of the modern world. Perhaps yours is in nature, lost in the reverie of a spirited</p>
+	<a class="more" href="https://www.eurogamer.net/optimism-week-big-question-video-game-happy-places" target="_blank" rel="noopener noreferrer">Eurogamer &#8599;</a>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#a78bfa" data-id="rss:https://the-decoder.com/?p=39351" data-srckey="the decoder" data-cat="ai" data-sent="0" data-slug="could make scientists more work less well not better study argues" tabindex="0" role="button" aria-expanded="false" aria-label="AI could make scientists do more work less well, not less work better, study argues — flip for details">
+<div class="inner">
+<div class="face front">
+	<div class="meta"><span class="src" style="color:hsl(45 55% 72%)">THE DECODER</span><span class="sep" aria-hidden="true">&middot;</span><time>5:01 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">AI could make scientists do more work less well, not less work better, study argues</h3>
+	<p class="snippet">Even if language models worked perfectly, they could make research worse, not better. A new theoretical study argues that because AI saves time, researchers&#39; remaining hours become more valuable and g</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://the-decoder.com/wp-content/uploads/2026/08/ai-science-flood-nano-banana-pro.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back">
+	<h3 class="title">AI could make scientists do more work less well, not less work better, study argues</h3>
+	<p class="about">Even if language models worked perfectly, they could make research worse, not better. A new theoretical study argues that because AI saves time, researchers&#39; remaining hours become more valuable and g</p>
+	<a class="more" href="https://the-decoder.com/ai-could-make-scientists-do-more-work-less-well-not-less-work-better-study-argues/" target="_blank" rel="noopener noreferrer">The Decoder &#8599;</a>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-id="rss:6a8871205460fa5f837c51a7" data-srckey="wired" data-cat="tech" data-sent="0" data-slug="story expensive bottled water actually better for you" tabindex="0" role="button" aria-expanded="false" aria-label="Is Expensive Bottled Water Actually Better for You? — flip for details">
+<div class="inner">
+<div class="face front">
+	<div class="meta"><span class="src" style="color:hsl(207 55% 72%)">WIRED</span><span class="sep" aria-hidden="true">&middot;</span><time>5:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Is Expensive Bottled Water Actually Better for You?</h3>
+	<p class="snippet">Luxury water can contain different minerals and taste noticeably different. But a remote source, alkaline pH, and high price do not necessarily mean better hydration.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media.wired.com/photos/6a887120972ab76be668fd4e/master/pass/expensiveWater_Lead.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back">
+	<h3 class="title">Is Expensive Bottled Water Actually Better for You?</h3>
+	<p class="about">Luxury water can contain different minerals and taste noticeably different. But a remote source, alkaline pH, and high price do not necessarily mean better hydration.</p>
+	<a class="more" href="https://www.wired.com/story/is-expensive-bottled-water-actually-better-for-you/" target="_blank" rel="noopener noreferrer">Wired &#8599;</a>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
 	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
@@ -809,6 +937,26 @@ footer a { color: var(--text-faint); }
 	<h3 class="title">How China&#39;s gray market sells Claude tokens at a fraction of the price</h3>
 	<p class="about">Anthropic&#39;s strict access controls against China, from geoblocking to selfie verification, are being systematically bypassed through a thriving network of so-called &quot;transfer stations.&quot; Chinese develo</p>
 	<a class="more" href="https://the-decoder.com/how-chinas-gray-market-sells-claude-tokens-at-a-fraction-of-the-price/" target="_blank" rel="noopener noreferrer">The Decoder &#8599;</a>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#3b82f6" data-id="rss:https://www.bbc.co.uk/sport/football/articles/c3w0wpy86z7o#0" data-srckey="bbc sport" data-cat="sports" data-sent="0" data-slug="sport football articles c3w0wpy86z7o" tabindex="0" role="button" aria-expanded="false" aria-label="What does Savinho&#39;s £75m move reveal about Man City&#39;s multi-club model? — flip for details">
+<div class="inner">
+<div class="face front">
+	<div class="meta"><span class="src" style="color:#facc15">BBC SPORT</span><span class="sep" aria-hidden="true">&middot;</span><time>3:43 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">What does Savinho&#39;s £75m move reveal about Man City&#39;s multi-club model?</h3>
+	<p class="snippet">Does Savinho&#39;s £75m move from Manchester City to Tottenham represent a sporting success for the Abu Dhabi-owned club?</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/ff03/live/3a05b270-9e20-11f1-bc51-19e4b5ccc0f6.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back">
+	<h3 class="title">What does Savinho&#39;s £75m move reveal about Man City&#39;s multi-club model?</h3>
+	<p class="about">Does Savinho&#39;s £75m move from Manchester City to Tottenham represent a sporting success for the Abu Dhabi-owned club?</p>
+	<a class="more" href="https://www.bbc.co.uk/sport/football/articles/c3w0wpy86z7o" target="_blank" rel="noopener noreferrer">BBC Sport &#8599;</a>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
 	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
@@ -60586,146 +60734,6 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact has-thumb" style="--rail:#fbbf24" data-id="rss:https://variety.com/?p=1236833979" data-srckey="variety" data-cat="entertainment" data-sent="0" data-slug="film news nara smith caa" tabindex="0" role="button" aria-expanded="false" aria-label="Nara Smith Signs With CAA (EXCLUSIVE) — flip for details">
-<div class="inner">
-<div class="face front">
-	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time>2:30 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
-	<h3 class="title">Nara Smith Signs With CAA (EXCLUSIVE)</h3>
-	<p class="snippet">Nara Smith, a popular influencer on TikTok and other platforms, has signed with CAA for representation. Smith is a South African and German model, content creator and entrepreneur. She is best known f</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/08/MixCollage-13-Aug-2026-01-25-PM-3863.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-</div>
-<div class="face back">
-	<h3 class="title">Nara Smith Signs With CAA (EXCLUSIVE)</h3>
-	<p class="about">Nara Smith, a popular influencer on TikTok and other platforms, has signed with CAA for representation. Smith is a South African and German model, content creator and entrepreneur. She is best known f</p>
-	<a class="more" href="https://variety.com/2026/film/news/nara-smith-caa-1236833979/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
-<article class="card compact has-thumb" style="--rail:#a78bfa" data-id="rss:https://techcrunch.com/?p=3152849" data-srckey="techcrunch" data-cat="ai" data-sent="0" data-slug="anthropic set agents loose the same task they started turf war" tabindex="0" role="button" aria-expanded="false" aria-label="Anthropic set AI agents loose on the same task. They started a turf war. — flip for details">
-<div class="inner">
-<div class="face front">
-	<div class="meta"><span class="src" style="color:#34d399">TECHCRUNCH</span><span class="sep" aria-hidden="true">&middot;</span><time>2:28 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
-	<h3 class="title">Anthropic set AI agents loose on the same task. They started a turf war.</h3>
-	<p class="snippet">Anthropic researchers found AI agents can clash, collude and coordinate in unexpected ways, raising new questions about whether today’s safety tests capture the risks of multi-agent systems.</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-1354100261.jpg?resize=1200,600" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-</div>
-<div class="face back">
-	<h3 class="title">Anthropic set AI agents loose on the same task. They started a turf war.</h3>
-	<p class="about">Anthropic researchers found AI agents can clash, collude and coordinate in unexpected ways, raising new questions about whether today’s safety tests capture the risks of multi-agent systems.</p>
-	<a class="more" href="https://techcrunch.com/2026/08/13/anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war/" target="_blank" rel="noopener noreferrer">TechCrunch &#8599;</a>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
-<article class="card compact h2 has-thumb" style="--rail:#5eead4" data-id="rss:https://lobste.rs/s/xi7txx" data-srckey="lobsters" data-cat="dev" data-sent="0" data-slug="djc oxish" tabindex="0" role="button" aria-expanded="false" aria-label="OxiSH: SSH server written in Rust — flip for details">
-<div class="inner">
-<div class="face front">
-	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time>2:23 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
-	<h3 class="title">OxiSH: SSH server written in Rust</h3>
-	<p class="snippet">A modern, memory-safe SSH server. Contribute to djc/oxish development by creating an account on GitHub.</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://opengraph.githubassets.com/c9c8dd748a0ad75ef23cacb419a4279240d94c77678ecea446bdfa1b57da7d11/djc/oxish" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-</div>
-<div class="face back">
-	<h3 class="title">OxiSH: SSH server written in Rust</h3>
-	<p class="about">A modern, memory-safe SSH server. Contribute to djc/oxish development by creating an account on GitHub.</p>
-	<a class="more" href="https://github.com/djc/oxish" target="_blank" rel="noopener noreferrer">Lobsters &#8599;</a>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
-<article class="card compact w2 has-thumb" style="--rail:#facc15" data-id="rss:https://cointelegraph.com/news/cftc-exploring-crypto-regulations-clarity-act" data-srckey="cointelegraph" data-cat="markets" data-sent="0" data-slug="news cftc exploring crypto regulations clarity act" tabindex="0" role="button" aria-expanded="false" aria-label="CFTC to join SEC in exploring crypto regulations without CLARITY bill — flip for details">
-<div class="inner">
-<div class="face front">
-	<div class="meta"><span class="src" style="color:#a78bfa">COINTELEGRAPH</span><span class="sep" aria-hidden="true">&middot;</span><time>2:18 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
-	<h3 class="title">CFTC to join SEC in exploring crypto regulations without CLARITY bill</h3>
-	<p class="snippet">The CFTC will hold a meeting for its Innovation Advisory Committee on Aug. 20 to address regulation related to crypto assets, artificial intelligence and prediction markets.</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://s3-images.ctmedia.io/media/article-covers/paper-document-man-office-cftc-1.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-</div>
-<div class="face back">
-	<h3 class="title">CFTC to join SEC in exploring crypto regulations without CLARITY bill</h3>
-	<p class="about">The CFTC will hold a meeting for its Innovation Advisory Committee on Aug. 20 to address regulation related to crypto assets, artificial intelligence and prediction markets.</p>
-	<a class="more" href="https://cointelegraph.com/news/cftc-exploring-crypto-regulations-clarity-act" target="_blank" rel="noopener noreferrer">Cointelegraph &#8599;</a>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
-<article class="card compact has-thumb" style="--rail:#facc15" data-id="rss:108349219" data-srckey="cnbc" data-cat="markets" data-sent="0" data-slug="cisco shares slide 9percent despite earnings beat and strong guidance html" tabindex="0" role="button" aria-expanded="false" aria-label="Cisco shares slide 9% despite earnings beat and stronger-than-expected guidance — flip for details">
-<div class="inner">
-<div class="face front">
-	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time>2:17 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
-	<h3 class="title">Cisco shares slide 9% despite earnings beat and stronger-than-expected guidance</h3>
-	<p class="snippet">Cisco is showing booming demand for AI infrastructure, but its results weren&#39;t good enough to satisfy investors.</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://image.cnbcfm.com/api/v1/image/108264683-1770843445357-gettyimages-2256809517-DAVOS_WEF_2026.jpeg?v=1770843513&amp;amp;w=1920&amp;amp;h=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-</div>
-<div class="face back">
-	<h3 class="title">Cisco shares slide 9% despite earnings beat and stronger-than-expected guidance</h3>
-	<p class="about">Cisco is showing booming demand for AI infrastructure, but its results weren&#39;t good enough to satisfy investors.</p>
-	<a class="more" href="https://www.cnbc.com/2026/08/13/cisco-shares-slide-9percent-despite-earnings-beat-and-strong-guidance.html" target="_blank" rel="noopener noreferrer">CNBC &#8599;</a>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
-<article class="card compact has-thumb" style="--rail:#3b82f6" data-id="rss:https://www.bbc.co.uk/sport/tennis/articles/cm2gp2xmdkjo#1" data-srckey="bbc sport" data-cat="sports" data-sent="0" data-slug="sport tennis articles cm2gp2xmdkjo" tabindex="0" role="button" aria-expanded="false" aria-label="Draper slumps to first-round loss in Cincinnati — flip for details">
-<div class="inner">
-<div class="face front">
-	<div class="meta"><span class="src" style="color:#facc15">BBC SPORT</span><span class="sep" aria-hidden="true">&middot;</span><time>2:16 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
-	<h3 class="title">Draper slumps to first-round loss in Cincinnati</h3>
-	<p class="snippet">Jack Draper slumps to a straight sets defeat in the first round of the Cincinnati Open after leading 5-2 in the second set.</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/328e/live/735e74e0-973f-11f1-96db-71945ca8cae7.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-</div>
-<div class="face back">
-	<h3 class="title">Draper slumps to first-round loss in Cincinnati</h3>
-	<p class="about">Jack Draper slumps to a straight sets defeat in the first round of the Cincinnati Open after leading 5-2 in the second set.</p>
-	<a class="more" href="https://www.bbc.co.uk/sport/tennis/articles/cm2gp2xmdkjo" target="_blank" rel="noopener noreferrer">BBC Sport &#8599;</a>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
-<article class="card compact has-thumb" style="--rail:#f472b6" data-id="rss:https://www.xxlmag.com/?p=1085367" data-srckey="xxl" data-cat="music" data-sent="0" data-slug="interview album comedy" tabindex="0" role="button" aria-expanded="false" aria-label="T.I. on His Final Album, Comedy Career and Jeezy Joint Project — flip for details">
-<div class="inner">
-<div class="face front">
-	<div class="meta"><span class="src" style="color:#facc15">XXL</span><span class="sep" aria-hidden="true">&middot;</span><time>2:13 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
-	<h3 class="title">T.I. on His Final Album, Comedy Career and Jeezy Joint Project</h3>
-	<p class="snippet">T.I. speaks to XXL in a new interview about his final album, comedy career and the long-awaited Jeezy joint project. Continue reading…</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://townsquare.media/site/812/files/2026/08/attachment-t-i-4.jpg?format=natural" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-</div>
-<div class="face back">
-	<h3 class="title">T.I. on His Final Album, Comedy Career and Jeezy Joint Project</h3>
-	<p class="about">T.I. speaks to XXL in a new interview about his final album, comedy career and the long-awaited Jeezy joint project. Continue reading…</p>
-	<a class="more" href="https://www.xxlmag.com/t-i-interview-album-comedy/" target="_blank" rel="noopener noreferrer">XXL &#8599;</a>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
 </div>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
@@ -60757,7 +60765,10 @@ footer a { color: var(--text-faint); }
 			// Engine Remake Reimagines A Classic" never says Emerald anywhere but
 			// its URL, so a reader searching the word that IS the story found
 			// nothing and read it as never published (owner report 2026-08-22).
-			var okQuery = !query || (card.textContent + ' ' + (card.getAttribute('data-slug') || '')).toLowerCase().indexOf(query) !== -1;
+			// Cached per card: walking 3,000 textContents per keystroke was part
+			// of the "chugs" report (2026-08-23).
+			if (query && card._sfText === undefined) card._sfText = (card.textContent + ' ' + (card.getAttribute('data-slug') || '')).toLowerCase();
+			var okQuery = !query || card._sfText.indexOf(query) !== -1;
 			var okHidden = !hidden.has(card.getAttribute('data-id'));
 			var show = okCat && okSent && okQuery && okHidden;
 			if (show) anyVisible = true;
@@ -60842,9 +60853,12 @@ footer a { color: var(--text-faint); }
 		apply();
 	});
 	var input = document.getElementById('q');
+	var applyT = null;
 	input.addEventListener('input', function () {
 		query = input.value.trim().toLowerCase();
-		apply();
+		// Debounced: one pass over the grid per pause in typing, not per key.
+		clearTimeout(applyT);
+		applyT = setTimeout(apply, 120);
 	});
 	document.addEventListener('keydown', function (e) {
 		if (e.key === '/' && document.activeElement !== input) {
@@ -60860,6 +60874,11 @@ footer a { color: var(--text-faint); }
 	function flip(card) {
 		var on = card.classList.toggle('flipped');
 		card.setAttribute('aria-expanded', on ? 'true' : 'false');
+		// Keep the 3D context for the whole transition either way (the CSS only
+		// grants perspective/preserve-3d to .flipped/.flipping — see .card).
+		card.classList.add('flipping');
+		clearTimeout(card._sfFlipT);
+		card._sfFlipT = setTimeout(function () { card.classList.remove('flipping'); }, 600);
 	}
 	document.addEventListener('click', function (e) {
 		if (e.target.closest('a') || e.target.closest('button') || e.target.closest('input')) return;
