@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-23T17:02:53.762Z">
+<meta name="sf-version" content="2026-08-23T17:05:52.372Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -520,10 +520,10 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
-:root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
@@ -660,10 +660,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 1:02 PM &middot; 124 TODAY</p>
+	<p class="stats">UPDATED 1:05 PM &middot; 125 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">155</span><span class="sr-only"> — 155 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">84</span><span class="sr-only"> — 84 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">294</span><span class="sr-only"> — 294 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">419</span><span class="sr-only"> — 419 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">296</span><span class="sr-only"> — 296 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">409</span><span class="sr-only"> — 409 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">158</span><span class="sr-only"> — 158 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">505</span><span class="sr-only"> — 505 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">148</span><span class="sr-only"> — 148 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">16</span><span class="sr-only"> — 16 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">516</span><span class="sr-only"> — 516 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">155</span><span class="sr-only"> — 155 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">84</span><span class="sr-only"> — 84 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">294</span><span class="sr-only"> — 294 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">419</span><span class="sr-only"> — 419 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">297</span><span class="sr-only"> — 297 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">409</span><span class="sr-only"> — 409 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">158</span><span class="sr-only"> — 158 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">505</span><span class="sr-only"> — 505 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">148</span><span class="sr-only"> — 148 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">16</span><span class="sr-only"> — 16 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">515</span><span class="sr-only"> — 515 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -686,67 +686,21 @@ footer a { color: var(--text-faint); }
 <h2><span class="date">FOR YOU</span><span class="rel">RANKED BY YOUR INTERESTS</span><span class="rule" aria-hidden="true"></span></h2>
 
 <div class="rail-row">
-<article class="card compact rail-art has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49610336" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1787424619801" data-slug="story george russell title fight teammate kimi antonelli pressures gain dutch grand prix formula zandvoort">
+<article class="card compact rail-art has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.bbc.com/future/article/20260820-how-social-nudity-can-boost-your-body-image" data-srckey="hacker news" data-cat="tech" data-sent="0" data-ts="1787502097000" data-slug="future article how social nudity can boost your body image">
 <div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Russell: Title fight &#39;pressure is off&#39; vs. Antonelli — flip for details">
-	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-22T18:50:19.801Z">2:50 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
-	<h3 class="title">Russell: Title fight &#39;pressure is off&#39; vs. Antonelli</h3>
-	<p class="snippet">George Russell has said he no longer feels like he is in a title battle and has attributed his strong performance at this weekend&#39;s Dutch Grand Prix to feeling less pressure as the second half of the</p>
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Being nude in public can make us feel better about our bodies — flip for details">
+	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-23T16:21:37.000Z">12:21 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Being nude in public can make us feel better about our bodies</h3>
+	<p class="snippet">Research suggests that naturism, the practice of non-sexual social nudity, can help people improve their body image. Naturists and experts tell the BBC how it works.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0822%2Fr1705376_1296x729_16-9.jpg&amp;w=640" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0822%2Fr1705376_1296x729_16-9.jpg&amp;w=320 320w, https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0822%2Fr1705376_1296x729_16-9.jpg&amp;w=640 640w, https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0822%2Fr1705376_1296x729_16-9.jpg&amp;w=960 960w" sizes="(max-width: 640px) 78vw, 320px">
+	<img class="thumb" src="https://ychef.files.bbci.co.uk/624x351/p0p5hgnw.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
-	<h3 class="title">Russell: Title fight &#39;pressure is off&#39; vs. Antonelli</h3>
-	<p class="about">George Russell has said he no longer feels like he is in a title battle and has attributed his strong performance at this weekend&#39;s Dutch Grand Prix to feeling less pressure as the second half of the</p>
+	<h3 class="title">Being nude in public can make us feel better about our bodies</h3>
+	<p class="about">Research suggests that naturism, the practice of non-sexual social nudity, can help people improve their body image. Naturists and experts tell the BBC how it works.</p>
 	
 	
-	<a class="more" href="https://www.espn.com/f1/story/_/id/49610336/george-russell-title-fight-teammate-kimi-antonelli-pressures-gain-dutch-grand-prix-formula-1-zandvoort" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
-<article class="card compact rail-art has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/ssw0gv" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1787423083000">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="An arcade fighting game over SSH — flip for details">
-	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-22T18:24:43.000Z">2:24 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
-	<h3 class="title">An arcade fighting game over SSH</h3>
-	<p class="snippet">This is an intriguing demonstration of terminal graphics capabilities, and has a strong retro Street Fighter feeling. Comments</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://sshfighter.com/opengraph-image" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-</div>
-<div class="face back" inert>
-	<h3 class="title">An arcade fighting game over SSH</h3>
-	<p class="about">This is an intriguing demonstration of terminal graphics capabilities, and has a strong retro Street Fighter feeling. Comments</p>
-	
-	
-	<a class="more" href="https://sshfighter.com/" target="_blank" rel="noopener noreferrer">Lobsters &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
-<article class="card compact rail-art has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/tech/983375/fairphone-6-plus-framework-12-laptop-mutiny-mortal-shell-2" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1787400000000" data-slug="tech fairphone plus framework laptop mutiny mortal shell">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Two great new repairable gadgets — flip for details">
-	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-22T12:00:00.000Z">8:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
-	<h3 class="title">Two great new repairable gadgets</h3>
-	<p class="snippet">Hi, friends! Welcome to Installer No. 141, your guide to the best and Verge-iest stuff in the world. (If you&#39;re new here, welcome, I&#39;m newish here too, and also you can read all the old editions at th</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/installer.jpg?quality=90&amp;strip=all&amp;crop=0%2C3.4150404569253%2C100%2C93.169919086149&amp;w=640" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/installer.jpg?quality=90&amp;strip=all&amp;crop=0%2C3.4150404569253%2C100%2C93.169919086149&amp;w=320 320w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/installer.jpg?quality=90&amp;strip=all&amp;crop=0%2C3.4150404569253%2C100%2C93.169919086149&amp;w=640 640w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/installer.jpg?quality=90&amp;strip=all&amp;crop=0%2C3.4150404569253%2C100%2C93.169919086149&amp;w=960 960w" sizes="(max-width: 640px) 78vw, 320px">
-</div>
-<div class="face back" inert>
-	<h3 class="title">Two great new repairable gadgets</h3>
-	<p class="about">Hi, friends! Welcome to Installer No. 141, your guide to the best and Verge-iest stuff in the world. (If you&#39;re new here, welcome, I&#39;m newish here too, and also you can read all the old editions at th</p>
-	
-	
-	<a class="more" href="https://www.theverge.com/tech/983375/fairphone-6-plus-framework-12-laptop-mutiny-mortal-shell-2" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
+	<a class="more" href="https://www.bbc.com/future/article/20260820-how-social-nudity-can-boost-your-body-image" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -770,6 +724,52 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://variety.com/2026/awards/awards/sentimental-value-anders-danielsen-lie-anne-marie-ottersen-1236840981/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact rail-art has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/hyunho_lee_e4373878e60f62/i-failed-at-time-management-five-times-then-i-audited-where-the-time-actually-went-ode" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1787448553000" data-slug="hyunho lee e4373878e60f62 failed time management five times then audited where the actually went ode">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="I failed at time management five times. Then I audited where the time actually went. — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-23T01:29:13.000Z">9:29 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">I failed at time management five times. Then I audited where the time actually went.</h3>
+	<p class="snippet">I&#39;ve promised myself I&#39;d &quot;manage my time better&quot; more times than I can count. None of it lasted a month. Work harder. Cut the distractions. Stay focused. Every one of those resolutions quietly died, a</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=640,height=334,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F7gc6o6jemmv3d3ewlcpd.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=320,height=167,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F7gc6o6jemmv3d3ewlcpd.png 320w, https://media2.dev.to/dynamic/image/width=640,height=334,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F7gc6o6jemmv3d3ewlcpd.png 640w, https://media2.dev.to/dynamic/image/width=960,height=502,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F7gc6o6jemmv3d3ewlcpd.png 960w" sizes="(max-width: 640px) 78vw, 320px">
+</div>
+<div class="face back" inert>
+	<h3 class="title">I failed at time management five times. Then I audited where the time actually went.</h3>
+	<p class="about">I&#39;ve promised myself I&#39;d &quot;manage my time better&quot; more times than I can count. None of it lasted a month. Work harder. Cut the distractions. Stay focused. Every one of those resolutions quietly died, a</p>
+	
+	
+	<a class="more" href="https://dev.to/hyunho_lee_e4373878e60f62/i-failed-at-time-management-five-times-then-i-audited-where-the-time-actually-went-ode" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact rail-art has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49610336" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1787424619801" data-slug="story george russell title fight teammate kimi antonelli pressures gain dutch grand prix formula zandvoort">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Russell: Title fight &#39;pressure is off&#39; vs. Antonelli — flip for details">
+	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-22T18:50:19.801Z">2:50 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Russell: Title fight &#39;pressure is off&#39; vs. Antonelli</h3>
+	<p class="snippet">George Russell has said he no longer feels like he is in a title battle and has attributed his strong performance at this weekend&#39;s Dutch Grand Prix to feeling less pressure as the second half of the</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0822%2Fr1705376_1296x729_16-9.jpg&amp;w=640" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0822%2Fr1705376_1296x729_16-9.jpg&amp;w=320 320w, https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0822%2Fr1705376_1296x729_16-9.jpg&amp;w=640 640w, https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0822%2Fr1705376_1296x729_16-9.jpg&amp;w=960 960w" sizes="(max-width: 640px) 78vw, 320px">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Russell: Title fight &#39;pressure is off&#39; vs. Antonelli</h3>
+	<p class="about">George Russell has said he no longer feels like he is in a title battle and has attributed his strong performance at this weekend&#39;s Dutch Grand Prix to feeling less pressure as the second half of the</p>
+	
+	
+	<a class="more" href="https://www.espn.com/f1/story/_/id/49610336/george-russell-title-fight-teammate-kimi-antonelli-pressures-gain-dutch-grand-prix-formula-1-zandvoort" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -879,43 +879,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sports.yahoo.com/articles/journalist-provides-cody-gakpo-potential-115500080.html" target="_blank" rel="noopener noreferrer">Journalist provides update on Cody Gakpo’s potential Liverpool exit</a>
-		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"cody gakpo" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.foxsports.com/articles/mlb/brewers-try-to-keep-home-win-streak-going-host-the-braves" target="_blank" rel="noopener noreferrer">Brewers try to keep home win streak going, host the Braves</a>
+		<p class="trend-meta"><span class="src">FOX SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"jackson chourio" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://finance.yahoo.com/markets/stocks/article/spacex-stock-slips-as-319-million-new-shares-come-to-market-143100875.html" target="_blank" rel="noopener noreferrer">SpaceX stock slips as 319 million new shares come to market</a>
-		<p class="trend-meta"><span class="src">YAHOO FINANCE</span><span class="sep" aria-hidden="true">&middot;</span>"spacex stock price drop" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.wesh.com/article/three-atlantic-areas-of-interest-tropics-nhc/73501854" target="_blank" rel="noopener noreferrer">Formation chances up slightly as NHC monitors 3 areas of interest in Atlantic</a>
+		<p class="trend-meta"><span class="src">WESH</span><span class="sep" aria-hidden="true">&middot;</span>"low-pressure area" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nytimes.com/athletic/7517993/2026/08/17/verdict-transfers-mls-colorado-atlanta-denkey/" target="_blank" rel="noopener noreferrer">The Verdict: Transfers ramp up as Colorado seek winger; Atlanta finalize Embolo signing; Hull pursue Denkey</a>
-		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"breel embolo" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.roadandtrack.com/car-culture/a73192613/mario-andretti-bobby-unser-1981-indy-500/" target="_blank" rel="noopener noreferrer">Mario Andretti, Bobby Unser, and the Most Controversial Finish in American Racing</a>
+		<p class="trend-meta"><span class="src">ROAD &AMP; TRACK</span><span class="sep" aria-hidden="true">&middot;</span>"mario andretti" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.foxnews.com/politics/karoline-leavitt-reveals-next-role-after-leaving-white-house-press-secretary-post" target="_blank" rel="noopener noreferrer">Karoline Leavitt reveals next role after leaving White House press secretary post</a>
-		<p class="trend-meta"><span class="src">FOX NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"press secretary" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://www.nascar.com/news-media/2026/08/22/what-to-watch-nhms/" target="_blank" rel="noopener noreferrer">What to Watch: Want to make The Chase? Time to make some Loudon magic</a>
+		<p class="trend-meta"><span class="src">NASCAR.COM</span><span class="sep" aria-hidden="true">&middot;</span>"what time is the nascar race today" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/nfl/story/_/id/49702666/sources-browns-lose-de-wright-achilles-season-add-barnett" target="_blank" rel="noopener noreferrer">Sources: Browns lose DE Wright (Achilles) for season, add Barnett</a>
-		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"derek barnett" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.motorsport.com/imsa/news/estre-on-an-extremely-short-leash-following-road-america-collision-says-imsas-barfield/10847888/" target="_blank" rel="noopener noreferrer">Kevin Estre “on extremely short leash” as IMSA warns of suspension</a>
+		<p class="trend-meta"><span class="src">MOTORSPORT.COM</span><span class="sep" aria-hidden="true">&middot;</span>"imsa" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.foxnews.com/entertainment/tom-hanks-band-of-brothers-stars-boot-camp-mutiny-neal-mcdonough-reveals" target="_blank" rel="noopener noreferrer">Tom Hanks put &#39;Band of Brothers&#39; stars in their place during boot camp &#39;mutiny&#39;, Neal McDonough reveals</a>
-		<p class="trend-meta"><span class="src">FOX NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"tom hanks" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://readnewcastle.com/2026/08/22/submitted-bid-fabrizio-romano-drops-newcastle-united-transfer-news/" target="_blank" rel="noopener noreferrer">‘Submitted a bid’ – Fabrizio Romano drops Newcastle United transfer news</a>
+		<p class="trend-meta"><span class="src">READ NEWCASTLE</span><span class="sep" aria-hidden="true">&middot;</span>"joe willock" &middot; 1000+ searches</p>
 	</div>
 </li>
 </ol>
@@ -937,6 +937,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://variety.com/2026/awards/awards/sentimental-value-anders-danielsen-lie-anne-marie-ottersen-1236840981/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://kotaku.com/?p=2000727250" data-srckey="kotaku" data-cat="games" data-sent="0" data-ts="1787504723000" data-slug="you guessed another gta leak has hit the timeline and this one npc recreating viral prank">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="You Guessed It, Another GTA 6 Leak Has Hit The Timeline, And This One Has An NPC Recreating A Viral 2021 Prank — flip for details">
+	<div class="meta"><span class="src" style="color:#a3e635">KOTAKU</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-23T17:05:23.000Z">1:05 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">You Guessed It, Another GTA 6 Leak Has Hit The Timeline, And This One Has An NPC Recreating A Viral 2021 Prank</h3>
+	<p class="snippet">Is there gas in the car?</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://kotaku.com/app/uploads/2026/08/gas-1280x720.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">You Guessed It, Another GTA 6 Leak Has Hit The Timeline, And This One Has An NPC Recreating A Viral 2021 Prank</h3>
+	<p class="about">Is there gas in the car?</p>
+	
+	
+	<a class="more" href="https://kotaku.com/you-guessed-it-another-gta-6-leak-has-hit-the-timeline-and-this-one-has-an-npc-recreating-a-viral-2021-prank-2000727250" target="_blank" rel="noopener noreferrer">Kotaku &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -9394,7 +9417,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2625 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2624 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://dev.to/kavin_k_5b0b0c5a2e4bbf880/java-script-c-2-variables-5bji" data-cat="dev" data-sent="0" data-slug="kavin 5b0b0c5a2e4bbf880 java script variables 5bji" hidden="until-found"><span class="ameta">DEV.TO &middot; Aug 21 &middot; Dev</span><a href="https://dev.to/kavin_k_5b0b0c5a2e4bbf880/java-script-c-2-variables-5bji" target="_blank" rel="noopener noreferrer">Java script c-2 variables</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c62xpre63j2o#1" data-cat="world" data-sent="0" data-slug="news articles c62xpre63j2o" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 21 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/c62xpre63j2o" target="_blank" rel="noopener noreferrer">Lindsay Clancy suffering &#39;command hallucination&#39; when she killed children, court hears</a></li>
@@ -12020,7 +12043,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:WP-MKTW-0005169970" data-cat="markets" data-sent="0" data-slug="story american pie star seann william scott lists stunning malibu waterfront home for million dc7e97b1" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 14 &middot; Markets</span><a href="https://www.marketwatch.com/story/american-pie-star-seann-william-scott-lists-stunning-malibu-waterfront-home-for-17-5-million-dc7e97b1?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">‘American Pie’ star Seann William Scott lists stunning Malibu waterfront home for $17.5 million</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.technologyreview.com/?p=1141919" data-cat="tech" data-sent="0" data-slug="cloning save species make human organ sacks" hidden="until-found"><span class="ameta">MIT TECH REVIEW &middot; Aug 14 &middot; Tech</span><a href="https://www.technologyreview.com/2026/08/14/1141919/cloning-save-species-or-make-human-organ-sacks/" target="_blank" rel="noopener noreferrer">Cloning could be used to save species—or make human “organ sacks”</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.technologyreview.com/?p=1141431" data-cat="tech" data-sent="0" data-slug="job titles space travel agent roman chiporukha" hidden="until-found"><span class="ameta">MIT TECH REVIEW &middot; Aug 14 &middot; Tech</span><a href="https://www.technologyreview.com/2026/08/14/1141431/job-titles-space-travel-agent-roman-chiporukha/" target="_blank" rel="noopener noreferrer">Job titles of the future: Space travel agent</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.technologyreview.com/?p=1141354" data-cat="tech" data-sent="0" data-slug="deanne taylor gene expression children" hidden="until-found"><span class="ameta">MIT TECH REVIEW &middot; Aug 14 &middot; Tech</span><a href="https://www.technologyreview.com/2026/08/14/1141354/deanne-taylor-gene-expression-children/" target="_blank" rel="noopener noreferrer">This scientist is helping build a missing map of childhood</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
