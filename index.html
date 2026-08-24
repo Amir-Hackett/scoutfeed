@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-24T00:16:43.377Z">
+<meta name="sf-version" content="2026-08-24T00:35:39.972Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -521,6 +521,7 @@ h1 .tld { color: var(--accent); }
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
+:root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
@@ -537,7 +538,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
-:root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
 :root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
 :root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
@@ -660,10 +660,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 8:16 PM &middot; 206 TODAY</p>
+	<p class="stats">UPDATED 8:35 PM &middot; 208 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">153</span><span class="sr-only"> — 153 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">79</span><span class="sr-only"> — 79 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">280</span><span class="sr-only"> — 280 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">430</span><span class="sr-only"> — 430 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">297</span><span class="sr-only"> — 297 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">407</span><span class="sr-only"> — 407 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">160</span><span class="sr-only"> — 160 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">526</span><span class="sr-only"> — 526 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">145</span><span class="sr-only"> — 145 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">16</span><span class="sr-only"> — 16 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">507</span><span class="sr-only"> — 507 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">153</span><span class="sr-only"> — 153 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">79</span><span class="sr-only"> — 79 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">281</span><span class="sr-only"> — 281 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">430</span><span class="sr-only"> — 430 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">295</span><span class="sr-only"> — 295 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">407</span><span class="sr-only"> — 407 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">160</span><span class="sr-only"> — 160 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">527</span><span class="sr-only"> — 527 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">145</span><span class="sr-only"> — 145 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">16</span><span class="sr-only"> — 16 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">507</span><span class="sr-only"> — 507 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -879,43 +879,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.tycsports.com/liga-profesional-de-futbol/argentina-torneo-clausura-2026-racing-club-vs-boca-juniors-fecha-6-id756500.html" target="_blank" rel="noopener noreferrer">Racing vs. Boca in the Torneo Clausura: what time they play today, lineups and where to watch LIVE</a>
-		<p class="trend-meta"><span class="src">TYC SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"racing - boca juniors" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.seasidejoe.com/p/all-22-breakdowns-rylie-mills-bud" target="_blank" rel="noopener noreferrer">All-22 Breakdowns: Rylie Mills, Bud Clark, Tyrice Knight, Mike Macdonald</a>
+		<p class="trend-meta"><span class="src">SEASIDE JOE</span><span class="sep" aria-hidden="true">&middot;</span>"bud clark" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/wnba/story/_/id/49698478/in-return-leonie-fiebich-sparks-new-york-liberty-win" target="_blank" rel="noopener noreferrer">In her return, Leonie Fiebich sparks Liberty win over Fever</a>
-		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"monique billings" &middot; 10000+ searches</p>
+		<a class="trend-title" href="https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cam-ward-carnell-tate-will-be-a-key-reason-were-successful-on-offense" target="_blank" rel="noopener noreferrer">Cam Ward: Carnell Tate will be a key reason we’re successful on offense</a>
+		<p class="trend-meta"><span class="src">NBC SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"carnell tate" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://apnews.com/article/lille-manchester-city-ayyoub-bouaddi-00323b69c86e201b28b57cd5a9f1e339" target="_blank" rel="noopener noreferrer">Bouaddi left out of Lille&#39;s squad as his transfer to Man City appears imminent</a>
-		<p class="trend-meta"><span class="src">AP NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"neymar" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://www.dazn.com/es-MX/news/f%C3%BAtbol/como-ver-pumas-unam-vs-necaxa-vivo-canales-streaming-horarios-apertura-liga-mx-espana-mexico-latinoamerica-usa/bwt44l2xlmrb13uylc3feo88l" target="_blank" rel="noopener noreferrer">How to watch Pumas UNAM vs Necaxa live: channels, streaming and times for the Liga MX Apertura in Spain, Mexico, Latin America and the USA</a>
+		<p class="trend-meta"><span class="src">DAZN</span><span class="sep" aria-hidden="true">&middot;</span>"pumas - necaxa" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.motor1.com/news/805738/man-ford-mustang-price-carmax/" target="_blank" rel="noopener noreferrer">Man Shops For Ford Mustang At CarMax. Then He Sees What They Want For It: ‘These Prices Have Gotten Outrageous’</a>
-		<p class="trend-meta"><span class="src">MOTOR1.COM</span><span class="sep" aria-hidden="true">&middot;</span>"motor1.com" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://nflspinzone.com/nfl-power-rankings-2026-updated-roster-rankings-as-preseason-week-1-ends/3" target="_blank" rel="noopener noreferrer">NFL Power Rankings, 2026: Updated roster rankings as preseason Week 1 ends</a>
+		<p class="trend-meta"><span class="src">NFL SPIN ZONE</span><span class="sep" aria-hidden="true">&middot;</span>"tony pollard" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.rotowire.com/baseball/headlines/carson-kelly-news-drawing-third-start-in-four-games-1021803" target="_blank" rel="noopener noreferrer">Carson Kelly News: Drawing third start in four games</a>
-		<p class="trend-meta"><span class="src">ROTOWIRE</span><span class="sep" aria-hidden="true">&middot;</span>"carson kelly" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.jsonline.com/story/sports/mlb/brewers/2026/08/22/brewers-vs-braves-score-live-updates-lineups/91408583007/" target="_blank" rel="noopener noreferrer">Jake Bauers&#39; marathon at-bat ends in homer to spark 4-1 win over Braves</a>
+		<p class="trend-meta"><span class="src">MILWAUKEE JOURNAL SENTINEL</span><span class="sep" aria-hidden="true">&middot;</span>"jake bauers" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.kvue.com/article/news/local/fire-austin-country-flea-market/269-78de4e70-4270-4544-a170-1e6635b6528f" target="_blank" rel="noopener noreferrer">Crews battling fire at Austin Country Flea Market in East Austin</a>
-		<p class="trend-meta"><span class="src">KVUE</span><span class="sep" aria-hidden="true">&middot;</span>"austin fire" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.thefantasyfootballers.com/news/634616/drew-lock-starting-sundays-preseason-game/" target="_blank" rel="noopener noreferrer">Drew Lock Starting Sunday&#39;s preseason game</a>
+		<p class="trend-meta"><span class="src">FANTASY FOOTBALLERS PODCAST</span><span class="sep" aria-hidden="true">&middot;</span>"drew lock" &middot; 2000+ searches</p>
 	</div>
 </li>
 </ol>
@@ -937,6 +937,52 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://variety.com/2026/awards/awards/sentimental-value-anders-danielsen-lie-anne-marie-ottersen-1236840981/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 h2 has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49706394" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1787531727930" data-slug="mlb story kyle schwarber walk home run caps phillies comeback cardinals 9th straight win">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Schwarber walk-off HR caps rally as Phils win again — flip for details">
+	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T00:35:27.930Z">8:35 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Schwarber walk-off HR caps rally as Phils win again</h3>
+	<p class="snippet">Kyle Schwarber&#39;s major-league-leading 39th home run punctuated Philadelphia&#39;s unlikely rally from a four-run deficit in the bottom of the ninth inning Sunday and secured the Phillies&#39; ninth straight win.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0823%2Fr1706011_1296x729_16-9.jpg&amp;w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0823%2Fr1706011_1296x729_16-9.jpg&amp;w=600 600w, https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0823%2Fr1706011_1296x729_16-9.jpg&amp;w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Schwarber walk-off HR caps rally as Phils win again</h3>
+	<p class="about">Kyle Schwarber&#39;s major-league-leading 39th home run punctuated Philadelphia&#39;s unlikely rally from a four-run deficit in the bottom of the ninth inning Sunday and secured the Phillies&#39; ninth straight win.</p>
+	
+	
+	<a class="more" href="https://www.espn.com/mlb/story/_/id/49706394/kyle-schwarber-walk-home-run-caps-phillies-comeback-vs-cardinals-9th-straight-win" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/nickytonline/test-1dm4" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1787531522000" data-slug="nickytonline test 1dm4">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="test — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T00:32:02.000Z">8:32 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">test</h3>
+	<p class="snippet">testing updating canonical url without deleting tags.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=1080,height=564,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F2ohecopo11slq2vtrrau.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=600,height=314,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F2ohecopo11slq2vtrrau.png 600w, https://media2.dev.to/dynamic/image/width=1080,height=564,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F2ohecopo11slq2vtrrau.png 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">test</h3>
+	<p class="about">testing updating canonical url without deleting tags.</p>
+	
+	
+	<a class="more" href="https://dev.to/nickytonline/test-1dm4" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -11280,7 +11326,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2543 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2541 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://dev.to/kavin_k_5b0b0c5a2e4bbf880/java-script-c-2-variables-5bji" data-cat="dev" data-sent="0" data-slug="kavin 5b0b0c5a2e4bbf880 java script variables 5bji" hidden="until-found"><span class="ameta">DEV.TO &middot; Aug 21 &middot; Dev</span><a href="https://dev.to/kavin_k_5b0b0c5a2e4bbf880/java-script-c-2-variables-5bji" target="_blank" rel="noopener noreferrer">Java script c-2 variables</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c62xpre63j2o#1" data-cat="world" data-sent="0" data-slug="news articles c62xpre63j2o" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 21 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/c62xpre63j2o" target="_blank" rel="noopener noreferrer">Lindsay Clancy suffering &#39;command hallucination&#39; when she killed children, court hears</a></li>
@@ -13823,8 +13869,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.billboard.com/?p=1236316110" data-cat="music" data-sent="0" data-slug="music news jimmy webb found songs album 80th interview" hidden="until-found"><span class="ameta">BILLBOARD &middot; Aug 14 &middot; Music</span><a href="https://www.billboard.com/music/music-news/jimmy-webb-found-songs-album-80th-interview-1236316110/" target="_blank" rel="noopener noreferrer">Jimmy Webb to Celebrate His 80th Birthday With Career-Spanning ‘Found Songs’ Album: ‘I’m Always 18 on the Inside’</a></li>
 <li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236834548" data-cat="entertainment" data-sent="0" data-slug="film global ana vaz locarno fukushima nuclear disaster hanabi" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 14 &middot; Entertainment</span><a href="https://variety.com/2026/film/global/ana-vaz-locarno-fukushima-nuclear-disaster-hanabi-1236834548/" target="_blank" rel="noopener noreferrer">Ana Vaz Discusses the Impact of the Fukushima Nuclear Disaster, the Work of Yoko Hayasuke and Preferring to Be a Mother Rather than a Zombie</a></li>
 <li class="arow" data-count="1" data-id="rss:WP-MKTW-0005178576" data-cat="markets" data-sent="0" data-slug="story retail sales slump july cheaper gas and amazon prime hangover are the chief culprits b9db8535" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 14 &middot; Markets</span><a href="https://www.marketwatch.com/story/retail-sales-slump-in-july-cheaper-gas-and-amazon-prime-hangover-are-the-chief-culprits-b9db8535?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Retail sales slump. Cheaper gas and an Amazon Prime hangover are the chief culprits.</a></li>
-<li class="arow" data-count="1" data-id="rss:26e760e9-ec1e-42f9-83d8-61880d33e9cc" data-cat="games" data-sent="0" data-slug="articles the lord rings war north dev warned warner bros not against skyrim back" hidden="until-found"><span class="ameta">IGN &middot; Aug 14 &middot; Games</span><a href="https://www.ign.com/articles/the-lord-of-the-rings-war-in-the-north-dev-warned-warner-bros-not-to-go-up-against-skyrim-back-in-2011" target="_blank" rel="noopener noreferrer">The Lord of the Rings: War in the North Dev Warned Warner Bros. Not to Go Up Against Skyrim Back in 2011</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/pokemon-pokopia-5m-sales" data-cat="games" data-sent="0" data-slug="pokemon pokopia sales" hidden="until-found"><span class="ameta">EUROGAMER &middot; Aug 14 &middot; Games</span><a href="https://www.eurogamer.net/pokemon-pokopia-5m-sales" target="_blank" rel="noopener noreferrer">Nintendo announces Pokémon Pokopia has sold over 5m copies, meaning that roughly one in four Switch 2 users now owns the game</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
