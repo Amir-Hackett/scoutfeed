@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-24T09:37:04.931Z">
+<meta name="sf-version" content="2026-08-24T09:53:21.172Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -532,11 +532,12 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
-:root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
+:root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
+:root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
+:root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] .meta [style*="hsl(111 55% 72%)"] { color: #2f6e23 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
-:root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
@@ -545,7 +546,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
-:root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
@@ -672,10 +672,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 5:37 AM &middot; 51 TODAY</p>
+	<p class="stats">UPDATED 5:53 AM &middot; 57 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">155</span><span class="sr-only"> — 155 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">80</span><span class="sr-only"> — 80 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">297</span><span class="sr-only"> — 297 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">432</span><span class="sr-only"> — 432 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">287</span><span class="sr-only"> — 287 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">412</span><span class="sr-only"> — 412 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">155</span><span class="sr-only"> — 155 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">518</span><span class="sr-only"> — 518 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">149</span><span class="sr-only"> — 149 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">16</span><span class="sr-only"> — 16 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">499</span><span class="sr-only"> — 499 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">155</span><span class="sr-only"> — 155 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">80</span><span class="sr-only"> — 80 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">297</span><span class="sr-only"> — 297 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">428</span><span class="sr-only"> — 428 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">286</span><span class="sr-only"> — 286 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">413</span><span class="sr-only"> — 413 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">155</span><span class="sr-only"> — 155 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">520</span><span class="sr-only"> — 520 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">150</span><span class="sr-only"> — 150 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">16</span><span class="sr-only"> — 16 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">500</span><span class="sr-only"> — 500 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -698,21 +698,21 @@ footer a { color: var(--text-faint); }
 <h2><span class="date">FOR YOU</span><span class="rel">RANKED BY YOUR INTERESTS</span><span class="rule" aria-hidden="true"></span></h2>
 
 <div class="rail-row">
-<article class="card compact rail-art has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/kumar_swamy_0b18518741d91/i-found-a-p0-auth-bypass-by-testing-what-null-does-to-bcrypt-ffc" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1787544695000" data-slug="kumar swamy 0b18518741d91 found auth bypass testing what null does bcrypt ffc">
+<article class="card compact rail-art has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/lo28ad" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1787564430000" data-slug="lo28ad what are you doing this week">
 <div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="I Found a P0 Auth Bypass by Testing What null Does to BCrypt — flip for details">
-	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T04:11:35.000Z">12:11 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
-	<h3 class="title">I Found a P0 Auth Bypass by Testing What null Does to BCrypt</h3>
-	<p class="snippet">While building SCIP — a supply chain platform with 90+ Spring Boot REST endpoints — I was boundary-testing the auth flow when I noticed something that shouldn&#39;t have been possible. java This was returning true. Not for a specific hash. Not under some obscure edge case. Any account with a null password field — a soft-deleted user, a malformed request, anything that left password unset — could…</p>
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="What are you doing this week? — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T09:40:30.000Z">5:40 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">What are you doing this week?</h3>
+	<p class="snippet">What are you doing this week? Feel free to share! Keep in mind it’s OK to do nothing at all, too.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=640,height=334,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fqyopge7d1d0am68uxzhp.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=320,height=167,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fqyopge7d1d0am68uxzhp.png 320w, https://media2.dev.to/dynamic/image/width=640,height=334,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fqyopge7d1d0am68uxzhp.png 640w, https://media2.dev.to/dynamic/image/width=960,height=502,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fqyopge7d1d0am68uxzhp.png 960w" sizes="(max-width: 640px) 78vw, 320px">
+	<img class="thumb" src="https://lobste.rs/story_image/lo28ad.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
-	<h3 class="title">I Found a P0 Auth Bypass by Testing What null Does to BCrypt</h3>
-	<p class="about">While building SCIP — a supply chain platform with 90+ Spring Boot REST endpoints — I was boundary-testing the auth flow when I noticed something that shouldn&#39;t have been possible. java This was returning true. Not for a specific hash. Not under some obscure edge case. Any account with a null password field — a soft-deleted user, a malformed request, anything that left password unset — could…</p>
+	<h3 class="title">What are you doing this week?</h3>
+	<p class="about">What are you doing this week? Feel free to share! Keep in mind it’s OK to do nothing at all, too.</p>
 	
 	
-	<a class="more" href="https://dev.to/kumar_swamy_0b18518741d91/i-found-a-p0-auth-bypass-by-testing-what-null-does-to-bcrypt-ffc" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<a class="more" href="https://lobste.rs/s/lo28ad/what_are_you_doing_this_week" target="_blank" rel="noopener noreferrer">Lobsters &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -891,43 +891,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nbcdfw.com/news/local/device-catches-fire-american-airlines-flight-dallas/4066436/" target="_blank" rel="noopener noreferrer">Person treated after device catches fire on American Airlines flight to Dallas</a>
-		<p class="trend-meta"><span class="src">NBC 5 DALLAS-FORT WORTH</span><span class="sep" aria-hidden="true">&middot;</span>"laptop" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.sciencedaily.com/releases/2026/08/260821012226.htm" target="_blank" rel="noopener noreferrer">Multilingual people may have brains up to 13 years younger</a>
+		<p class="trend-meta"><span class="src">SCIENCE DAILY</span><span class="sep" aria-hidden="true">&middot;</span>"language learning" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://abc7ny.com/post/east-new-york-shooting-man-killed-apparent-road-rage-incident-crescent-street-gunman-sought/19717734/" target="_blank" rel="noopener noreferrer">East New York shooting: Man killed on Crescent Street in road rage incident, manhunt underway</a>
-		<p class="trend-meta"><span class="src">ABC7 NEW YORK</span><span class="sep" aria-hidden="true">&middot;</span>"pizza" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.cnn.com/2026/08/23/world/video/europes-hottest-town-abdelaziz-pkg-082312aseg2-cnni-world-fast" target="_blank" rel="noopener noreferrer">Extreme heat reshapes daily life in Floridia, Sicily</a>
+		<p class="trend-meta"><span class="src">CNN</span><span class="sep" aria-hidden="true">&middot;</span>"climate change" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.cricinfo.com/series/india-in-sri-lanka-2026-1543999/sri-lanka-vs-india-2nd-test-1544002/match-report" target="_blank" rel="noopener noreferrer">Padikkal century puts India ahead on hard-fought day</a>
-		<p class="trend-meta"><span class="src">CRICINFO</span><span class="sep" aria-hidden="true">&middot;</span>"dhruv jurel" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://13wham.com/news/local/patient-at-strong-hospital-charged-with-making-false-shooting-call" target="_blank" rel="noopener noreferrer">Patient at Strong Hospital charged with making false shooting call</a>
+		<p class="trend-meta"><span class="src">13WHAM-TV</span><span class="sep" aria-hidden="true">&middot;</span>"hospital" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sportsbook.fanduel.com/basketball/ebasketball-h2h-gg-league-4x5-mins/milwaukee-bucks-(starfire)-@-cleveland-cavaliers-(bloodhound)-35975081" target="_blank" rel="noopener noreferrer">Milwaukee Bucks (STARFIRE) @ Cleveland Cavaliers (BLOODHOUND) Odds</a>
-		<p class="trend-meta"><span class="src">FANDUEL SPORTSBOOK</span><span class="sep" aria-hidden="true">&middot;</span>"cleveland cavaliers" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.timesreporter.com/story/entertainment/events/2026/08/24/check-out-labor-day-2026-ohio-festivals/91374133007/" target="_blank" rel="noopener noreferrer">Farewells and funnel cakes: Must-do Ohio Labor Day events</a>
+		<p class="trend-meta"><span class="src">TIMES REPORTER</span><span class="sep" aria-hidden="true">&middot;</span>"labor day 2026" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://finance.yahoo.com/real-estate/articles/kevin-oleary-says-york-mayor-193106711.html" target="_blank" rel="noopener noreferrer">Kevin O&#39;Leary Says New York Mayor Deserves &#39;Real Estate Agent of the Year Award&#39; for Driving People Out of the City — ‘Beyond Insane, But I Love It’</a>
-		<p class="trend-meta"><span class="src">YAHOO FINANCE</span><span class="sep" aria-hidden="true">&middot;</span>"kevin o&#39;leary" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-08-24-2026" target="_blank" rel="noopener noreferrer">Stock Market Today: Oil Drops Ahead of Bessent Iran Presser, Tech Stocks Under Pressure — Live Updates</a>
+		<p class="trend-meta"><span class="src">WSJ</span><span class="sep" aria-hidden="true">&middot;</span>"stock market" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://siliconangle.com/2026/08/23/nobody-knows-who-built-ai-coding-model-ox-alpha-or-where-the-code-goes/" target="_blank" rel="noopener noreferrer">Nobody knows who built AI coding model Ox Alpha or where the code goes</a>
-		<p class="trend-meta"><span class="src">SILICONANGLE</span><span class="sep" aria-hidden="true">&middot;</span>"ox alpha" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.bostonglobe.com/2026/08/23/metro/boston-new-england-weather-monday-forecast/" target="_blank" rel="noopener noreferrer">Exiting front makes way for sunshine on Monday as humidity drops</a>
+		<p class="trend-meta"><span class="src">THE BOSTON GLOBE</span><span class="sep" aria-hidden="true">&middot;</span>"weather forecast" &middot; 500+ searches</p>
 	</div>
 </li>
 </ol>
@@ -949,6 +949,75 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://dev.to/kumar_swamy_0b18518741d91/i-found-a-p0-auth-bypass-by-testing-what-null-does-to-bcrypt-ffc" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/lo28ad" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1787564430000" data-slug="lo28ad what are you doing this week">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="What are you doing this week? — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T09:40:30.000Z">5:40 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">What are you doing this week?</h3>
+	<p class="snippet">What are you doing this week? Feel free to share! Keep in mind it’s OK to do nothing at all, too.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://lobste.rs/story_image/lo28ad.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">What are you doing this week?</h3>
+	<p class="about">What are you doing this week? Feel free to share! Keep in mind it’s OK to do nothing at all, too.</p>
+	
+	
+	<a class="more" href="https://lobste.rs/s/lo28ad/what_are_you_doing_this_week" target="_blank" rel="noopener noreferrer">Lobsters &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.eurogamer.net/how-to-fish-one-million-sales-steam" data-srckey="eurogamer" data-cat="games" data-sent="0" data-ts="1787564032000" data-slug="how fish one million sales steam">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="How to Fish is the latest Steam indie sensation, selling 1 million copies in just two days — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">EUROGAMER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T09:33:52.000Z">5:33 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">How to Fish is the latest Steam indie sensation, selling 1 million copies in just two days</h3>
+	<p class="snippet">If you&#39;ve browsed the frontpage of Steam in the last few days, you&#39;ll no doubt have come across How to Fish, the debut project from developer Dazed Games. The co-op fishing game released on 20th August, and just three days later, its developer announced it had sold 1 million copies. Read more</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assetsio.gnwcdn.com/how-to-fish-screen-1.jpg?width=1080&amp;quality=85&amp;format=jpg&amp;auto=webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://assetsio.gnwcdn.com/how-to-fish-screen-1.jpg?width=600&amp;quality=85&amp;format=jpg&amp;auto=webp 600w, https://assetsio.gnwcdn.com/how-to-fish-screen-1.jpg?width=1080&amp;quality=85&amp;format=jpg&amp;auto=webp 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">How to Fish is the latest Steam indie sensation, selling 1 million copies in just two days</h3>
+	<p class="about">If you&#39;ve browsed the frontpage of Steam in the last few days, you&#39;ll no doubt have come across How to Fish, the debut project from developer Dazed Games. The co-op fishing game released on 20th August, and just three days later, its developer announced it had sold 1 million copies. Read more</p>
+	
+	
+	<a class="more" href="https://www.eurogamer.net/how-to-fish-one-million-sales-steam" target="_blank" rel="noopener noreferrer">Eurogamer &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:6a6a638dbda4e52fe44bd61a" data-srckey="wired" data-cat="tech" data-sent="0" data-ts="1787563800000" data-slug="story teachers deepfake students content">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="They Dedicated Their Lives to Teaching. Then the Deepfakes Started — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(207 55% 72%)">WIRED</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T09:30:00.000Z">5:30 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">They Dedicated Their Lives to Teaching. Then the Deepfakes Started</h3>
+	<p class="snippet">The deepfake epidemic in schools is affecting more than students. Four teachers tell WIRED about becoming targets of sexualized, AI-generated content—and how difficult it was to find accountability.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media.wired.com/photos/6a7658f0de0a40f999466656/master/pass/080726-teachers-deepfakes-ai.gif" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">They Dedicated Their Lives to Teaching. Then the Deepfakes Started</h3>
+	<p class="about">The deepfake epidemic in schools is affecting more than students. Four teachers tell WIRED about becoming targets of sexualized, AI-generated content—and how difficult it was to find accountability.</p>
+	
+	
+	<a class="more" href="https://www.wired.com/story/teachers-deepfake-ai-students-content/" target="_blank" rel="noopener noreferrer">Wired &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1233,6 +1302,29 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact w2 h2 has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.bbc.co.uk/news/videos/cy0zr8lkr8lo#3" data-srckey="bbc world" data-cat="world" data-sent="0" data-ts="1787560871000" data-slug="news videos cy0zr8lkr8lo">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Watch: Wildfire seen near Reno as tens of thousands told to evacuate — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T08:41:11.000Z">4:41 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Watch: Wildfire seen near Reno as tens of thousands told to evacuate</h3>
+	<p class="snippet">Thousands of people in the US state of Nevada have been warned to evacuate as the wildfire continues to spread in the outskirts of Reno.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/3ac7/live/923f1560-9f94-11f1-b109-879e35c24276.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/600/cpsprodpb/3ac7/live/923f1560-9f94-11f1-b109-879e35c24276.jpg 600w, https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/3ac7/live/923f1560-9f94-11f1-b109-879e35c24276.jpg 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Watch: Wildfire seen near Reno as tens of thousands told to evacuate</h3>
+	<p class="about">Thousands of people in the US state of Nevada have been warned to evacuate as the wildfire continues to spread in the outskirts of Reno.</p>
+	
+	
+	<a class="more" href="https://www.bbc.co.uk/news/videos/cy0zr8lkr8lo" target="_blank" rel="noopener noreferrer">BBC World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:WP-MKTW-0005194680" data-srckey="marketwatch" data-cat="markets" data-sent="0" data-ts="1787560860000" data-slug="story samsung electronics stock had its worst day three weeks and the other memory stocks are">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Samsung Electronics stock had its worst day in three weeks, and the other memory stocks are lower as well — flip for details">
@@ -1509,6 +1601,29 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact w2 has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:108353114" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1787556857000" data-slug="shein ipo valuation hong kong html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Shein targets $27 billion Hong Kong IPO — a fraction of its 2022 valuation — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T07:34:17.000Z">3:34 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Shein targets $27 billion Hong Kong IPO — a fraction of its 2022 valuation</h3>
+	<p class="snippet">Shein is planning to raise up to $13.86 billion in Hong Kong dollars ($1.77 billion) in its initial public offering, according to a filing on Monday.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://image.cnbcfm.com/api/v1/image/108340839-1785201669670-gettyimages-2285967068-img_9906.jpeg?v=1785201852&amp;w=340&amp;h=191" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://image.cnbcfm.com/api/v1/image/108340839-1785201669670-gettyimages-2285967068-img_9906.jpeg?v=1785201852&amp;w=240&amp;h=135 240w, https://image.cnbcfm.com/api/v1/image/108340839-1785201669670-gettyimages-2285967068-img_9906.jpeg?v=1785201852&amp;w=340&amp;h=191 340w, https://image.cnbcfm.com/api/v1/image/108340839-1785201669670-gettyimages-2285967068-img_9906.jpeg?v=1785201852&amp;w=510&amp;h=287 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Shein targets $27 billion Hong Kong IPO — a fraction of its 2022 valuation</h3>
+	<p class="about">Shein is planning to raise up to $13.86 billion in Hong Kong dollars ($1.77 billion) in its initial public offering, according to a filing on Monday.</p>
+	
+	
+	<a class="more" href="https://www.cnbc.com/2026/08/24/shein-ipo-valuation-hong-kong.html" target="_blank" rel="noopener noreferrer">CNBC &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact w2" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/8ttu5n" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1787556765000" data-slug="your executable sqlite database">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Your executable is a SQLite database — flip for details">
@@ -1547,6 +1662,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://employees.theworknumber.com/" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/cqxvj8j7gy8o#0" data-srckey="bbc sport" data-cat="sports" data-sent="0" data-ts="1787554506000" data-slug="sport football articles cqxvj8j7gy8o">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Maradona&#39;s &#39;Hand of God&#39; ball sells for £2.5m — flip for details">
+	<div class="meta"><span class="src" style="color:#facc15">BBC SPORT</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T06:55:06.000Z">2:55 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Maradona&#39;s &#39;Hand of God&#39; ball sells for £2.5m</h3>
+	<p class="snippet">The football with which Diego Maradona scored his famous &#39;hand of God&#39; goal in the 1986 World Cup quarter-final victory over England is sold at auction.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/f5e5/live/c6488df0-9f80-11f1-82a0-8dbe1008b861.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f5e5/live/c6488df0-9f80-11f1-82a0-8dbe1008b861.jpg 240w, https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/f5e5/live/c6488df0-9f80-11f1-82a0-8dbe1008b861.jpg 340w, https://ichef.bbci.co.uk/ace/standard/510/cpsprodpb/f5e5/live/c6488df0-9f80-11f1-82a0-8dbe1008b861.jpg 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Maradona&#39;s &#39;Hand of God&#39; ball sells for £2.5m</h3>
+	<p class="about">The football with which Diego Maradona scored his famous &#39;hand of God&#39; goal in the 1986 World Cup quarter-final victory over England is sold at auction.</p>
+	
+	
+	<a class="more" href="https://www.bbc.co.uk/sport/football/articles/cqxvj8j7gy8o" target="_blank" rel="noopener noreferrer">BBC Sport &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -3415,6 +3553,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.billboard.com/music/music-news/dr-dre-ai-music-1236322613/" target="_blank" rel="noopener noreferrer">Billboard &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/czxqx29jy02o#5" data-srckey="bbc sport" data-cat="sports" data-sent="0" data-ts="1787517394000" data-slug="sport football articles czxqx29jy02o">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Man City ready to meet Chelsea&#39;s Fernandez demand - Monday&#39;s gossip — flip for details">
+	<div class="meta"><span class="src" style="color:#facc15">BBC SPORT</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-23T20:36:34.000Z">4:36 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Man City ready to meet Chelsea&#39;s Fernandez demand - Monday&#39;s gossip</h3>
+	<p class="snippet">Manchester City are ready to make Enzo Fernandez move, Liverpool consider a third bid for Yankuba Minteh, and a Barcelona full-back pushes to join Manchester United.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/954f/live/046a1130-9f31-11f1-aed2-8d6da8d75094.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/600/cpsprodpb/954f/live/046a1130-9f31-11f1-aed2-8d6da8d75094.png 600w, https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/954f/live/046a1130-9f31-11f1-aed2-8d6da8d75094.png 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Man City ready to meet Chelsea&#39;s Fernandez demand - Monday&#39;s gossip</h3>
+	<p class="about">Manchester City are ready to make Enzo Fernandez move, Liverpool consider a third bid for Yankuba Minteh, and a Barcelona full-back pushes to join Manchester United.</p>
+	
+	
+	<a class="more" href="https://www.bbc.co.uk/sport/football/articles/czxqx29jy02o" target="_blank" rel="noopener noreferrer">BBC Sport &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -13275,7 +13436,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2456 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2449 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://dev.to/kavin_k_5b0b0c5a2e4bbf880/java-script-c-2-variables-5bji" data-cat="dev" data-sent="0" data-slug="kavin 5b0b0c5a2e4bbf880 java script variables 5bji" hidden="until-found"><span class="ameta">DEV.TO &middot; Aug 21 &middot; Dev</span><a href="https://dev.to/kavin_k_5b0b0c5a2e4bbf880/java-script-c-2-variables-5bji" target="_blank" rel="noopener noreferrer">Java script c-2 variables</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c62xpre63j2o#1" data-cat="world" data-sent="0" data-slug="news articles c62xpre63j2o" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 21 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/c62xpre63j2o" target="_blank" rel="noopener noreferrer">Lindsay Clancy suffering &#39;command hallucination&#39; when she killed children, court hears</a></li>
@@ -15726,13 +15887,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:744efa0e-2189-46af-81c3-78e27f879740" data-cat="sports" data-sent="0" data-slug="mlb news edwin diaz blown save dodgers bullpen struggles brewers" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 14 &middot; Sports</span><a href="https://www.cbssports.com/mlb/news/edwin-diaz-blown-save-dodgers-bullpen-struggles-brewers/" target="_blank" rel="noopener noreferrer">Edwin Díaz blows another save in crushing loss for Dodgers: Why prized closer has struggled so much in L.A.</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/cx2vj4l9wxyo#0" data-cat="sports" data-sent="0" data-slug="sport football articles cx2vj4l9wxyo" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 14 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/football/articles/cx2vj4l9wxyo" target="_blank" rel="noopener noreferrer">Bezos-backed consortium buys a third of Liverpool</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/lanterns-review-hbo/" data-cat="entertainment" data-sent="0" data-slug="lanterns review hbo" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 14 &middot; Entertainment</span><a href="https://www.polygon.com/lanterns-review-hbo/" target="_blank" rel="noopener noreferrer">&#39;Lanterns&#39; Review: &#39;Watchmen&#39; Meets &#39;Yellowstone&#39; in HBO&#39;s Brilliant New Sci-Fi Show</a></li>
-<li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236833207" data-cat="entertainment" data-sent="0" data-slug="reviews lanterns review kyle chandler aaron pierre hbo" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 14 &middot; Entertainment</span><a href="https://variety.com/2026/tv/reviews/lanterns-review-kyle-chandler-aaron-pierre-hbo-dc-1236833207/" target="_blank" rel="noopener noreferrer">Kyle Chandler and Aaron Pierre Are Great ‘Lanterns’, but HBO’s DC Drama Is Overshadowed by Its Influences: TV Review</a></li>
-<li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236834144" data-cat="entertainment" data-sent="0" data-slug="news neil degrasse tyson judges xprize scifi film competition" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 14 &middot; Entertainment</span><a href="https://variety.com/2026/tv/news/neil-degrasse-tyson-judges-xprize-scifi-film-competition-1236834144/" target="_blank" rel="noopener noreferrer">Neil deGrasse Tyson, Neal Stephenson, Mira Lane, Rod Roddenberry to Judge XPRIZE Sci-Fi Film Competition</a></li>
-<li class="arow" data-count="1" data-id="rss:868d5015-5f25-441c-a8ad-7d2094019ddd" data-cat="games" data-sent="0" data-slug="articles the watcher orwellian surveillance sim announced for" hidden="until-found"><span class="ameta">IGN &middot; Aug 14 &middot; Games</span><a href="https://www.ign.com/articles/the-watcher-an-orwellian-surveillance-sim-announced-for-pc" target="_blank" rel="noopener noreferrer">The Watcher, an Orwellian Surveillance Sim, Announced for PC</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240288" data-cat="entertainment" data-sent="0" data-slug="review game sweet hamster days" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 14 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/review/game/pc/sweet-hamster-days/.240288" target="_blank" rel="noopener noreferrer">Sweet Hamster Days Game Review</a></li>
-<li class="arow" data-count="1" data-id="rss:https://github.blog/?p=98252" data-cat="dev" data-sent="0" data-slug="and github copilot how bring your software delivery workflow into with agent apps" hidden="until-found"><span class="ameta">GITHUB BLOG &middot; Aug 14 &middot; Dev</span><a href="https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/" target="_blank" rel="noopener noreferrer">How to bring your software delivery workflow into GitHub with agent apps</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.polygon.com/skyrim-realistic-snow-deformation-mod-best-weather-why-impossible/" data-cat="games" data-sent="0" data-slug="skyrim realistic snow deformation mod best weather why impossible" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 14 &middot; Games</span><a href="https://www.polygon.com/skyrim-realistic-snow-deformation-mod-best-weather-why-impossible/" target="_blank" rel="noopener noreferrer">Miracle &#39;Skyrim&#39; Mod Adds Essential Feature That Was Impossible For Nearly 15 Years</a></li>
-<li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236834636" data-cat="entertainment" data-sent="0" data-slug="news netflix gothic romance sid zoey blumhouse bad robot" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 14 &middot; Entertainment</span><a href="https://variety.com/2026/tv/news/netflix-ya-gothic-romance-sid-zoey-blumhouse-bad-robot-1236834636/" target="_blank" rel="noopener noreferrer">Netflix Orders YA Gothic Romance ‘Sid &amp; Zoey,’ Blumhouse Atomic Monster and Bad Robot to Produce</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
