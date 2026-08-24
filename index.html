@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-24T02:06:23.311Z">
+<meta name="sf-version" content="2026-08-24T03:37:04.930Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -532,11 +532,12 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
-:root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
-:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
-:root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
+:root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
+:root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
+:root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
+:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
@@ -548,7 +549,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
-:root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
 :root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
@@ -672,10 +672,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 10:06 PM &middot; 215 TODAY</p>
+	<p class="stats">UPDATED 11:37 PM &middot; 230 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">153</span><span class="sr-only"> — 153 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">79</span><span class="sr-only"> — 79 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">282</span><span class="sr-only"> — 282 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">433</span><span class="sr-only"> — 433 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">295</span><span class="sr-only"> — 295 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">404</span><span class="sr-only"> — 404 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">159</span><span class="sr-only"> — 159 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">527</span><span class="sr-only"> — 527 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">145</span><span class="sr-only"> — 145 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">16</span><span class="sr-only"> — 16 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">507</span><span class="sr-only"> — 507 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">153</span><span class="sr-only"> — 153 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">78</span><span class="sr-only"> — 78 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">290</span><span class="sr-only"> — 290 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">432</span><span class="sr-only"> — 432 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">293</span><span class="sr-only"> — 293 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">401</span><span class="sr-only"> — 401 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">157</span><span class="sr-only"> — 157 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">527</span><span class="sr-only"> — 527 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">147</span><span class="sr-only"> — 147 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">16</span><span class="sr-only"> — 16 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">506</span><span class="sr-only"> — 506 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -891,43 +891,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.tvline.com/2242012/kyle-chandler-hal-jordan-lanterns-episode-1-performance/" target="_blank" rel="noopener noreferrer">Lanterns Episode 1: Kyle Chandler&#39;s Hal Jordan Is The Performance Of The Week</a>
-		<p class="trend-meta"><span class="src">TVLINE</span><span class="sep" aria-hidden="true">&middot;</span>"kyle chandler" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.hollywoodreporter.com/tv/tv-features/chase-stokes-outer-banks-finale-goodbye-interview-1236677412/" target="_blank" rel="noopener noreferrer">Chase Stokes Bids Farewell to ‘Outer Banks’</a>
+		<p class="trend-meta"><span class="src">THE HOLLYWOOD REPORTER</span><span class="sep" aria-hidden="true">&middot;</span>"rudy pankow" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.euronews.com/2026/08/23/uzbekistan-and-azerbaijan-deepen-alliance-with-1bn-trade-target-and-stronger-trans-caspian" target="_blank" rel="noopener noreferrer">Uzbekistan and Azerbaijan deepen trade and Trans-Caspian ties</a>
-		<p class="trend-meta"><span class="src">EURONEWS.COM</span><span class="sep" aria-hidden="true">&middot;</span>"azerbaijan" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.miamidolphins.com/news/transcript-cb-chris-johnson-press-conference-august-22" target="_blank" rel="noopener noreferrer">Transcript: CB Chris Johnson Press Conference - August 22</a>
+		<p class="trend-meta"><span class="src">MIAMI DOLPHINS</span><span class="sep" aria-hidden="true">&middot;</span>"chris johnson" &middot; 5000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/nfl/story/_/id/49673878/aaron-donald-continue-workouts-rams-decision-looms" target="_blank" rel="noopener noreferrer">Aaron Donald to continue workouts with Rams as decision looms</a>
-		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"aaron donald" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.cnbc.com/2026/08/24/us-iran-war-trump-hormuz-bessent-economic-sanctions-.html" target="_blank" rel="noopener noreferrer">U.S. to unveil &#39;greatest financial offensive&#39; against Iran as Tehran threatens ship seizures</a>
+		<p class="trend-meta"><span class="src">CNBC</span><span class="sep" aria-hidden="true">&middot;</span>"iran economy" &middot; 10000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://variety.com/2026/tv/awards/martin-short-busy-emmy-race-three-very-different-projects-1236839629/" target="_blank" rel="noopener noreferrer">Martin Short Gets Honest: What It’s Like to Be All Over the Emmy Race, Thanks to Three Very Different Projects</a>
-		<p class="trend-meta"><span class="src">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span>"martin short" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.newyorkjets.com/news/5-standout-players-in-jets-preseason-shutout-victory-over-steelers" target="_blank" rel="noopener noreferrer">5 Standout Players in Jets&#39; Preseason Shutout Victory Over Steelers</a>
+		<p class="trend-meta"><span class="src">NEW YORK JETS</span><span class="sep" aria-hidden="true">&middot;</span>"jeffery simmons" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.wnba.com/news/race-to-2026-kia-mvp-wilson-miles-clark-on-top" target="_blank" rel="noopener noreferrer">Race to 2026 Kia WNBA MVP: Wilson, Miles, Clark on Top</a>
-		<p class="trend-meta"><span class="src">WNBA</span><span class="sep" aria-hidden="true">&middot;</span>"wnba standings" &middot; 5000+ searches</p>
+		<a class="trend-title" href="https://www.justjared.com/2026/08/23/connor-storrie-cuts-off-signature-curls-amid-heated-rivalry-season-2-filming/" target="_blank" rel="noopener noreferrer">Connor Storrie Cuts Off Signature Curls Amid ‘Heated Rivalry’ Season 2 Filming</a>
+		<p class="trend-meta"><span class="src">JUST JARED</span><span class="sep" aria-hidden="true">&middot;</span>"connor storrie" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.reutersconnect.com/item/vessels-near-the-strait-of-hormuz-as-seen-from-musandam/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMkMwTkFSMUQ1Nw%3D%3D" target="_blank" rel="noopener noreferrer">Licensable picture: Vessels near the Strait of Hormuz, as seen from Musandam</a>
-		<p class="trend-meta"><span class="src">REUTERS CONNECT</span><span class="sep" aria-hidden="true">&middot;</span>"will levis" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.goal.com/en-us/news/watch-angel-city-fc-v-gotham-fc-live-stream-online-tv-channel/blt29f4d209e1707a3d" target="_blank" rel="noopener noreferrer">Watch Angel City FC vs Gotham FC NWSL soccer game LIVE: Online streams, TV channel, early teams news, start time</a>
+		<p class="trend-meta"><span class="src">GOAL.COM</span><span class="sep" aria-hidden="true">&middot;</span>"gotham fc vs angel city fc standings" &middot; 2000+ searches</p>
 	</div>
 </li>
 </ol>
@@ -949,6 +949,282 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://variety.com/2026/awards/awards/sentimental-value-anders-danielsen-lie-anne-marie-ottersen-1236840981/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49707438" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1787541399000" data-slug="mlb story mariners crushed again bryce miller start lose cubs">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="M&#39;s crushed again in Miller start, lose 19-2 to Cubs — flip for details">
+	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T03:16:39.000Z">11:16 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">M&#39;s crushed again in Miller start, lose 19-2 to Cubs</h3>
+	<p class="snippet">Mariners starter Bryce Miller lost his second straight start by at least 17 runs after the Cubs crushed Seattle 19-2, days after the M&#39;s lost 22-0 to Milwaukee.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0824%2Fr1706074_1024x576_16-9.jpg&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0824%2Fr1706074_1024x576_16-9.jpg&amp;w=240 240w, https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0824%2Fr1706074_1024x576_16-9.jpg&amp;w=340 340w, https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0824%2Fr1706074_1024x576_16-9.jpg&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">M&#39;s crushed again in Miller start, lose 19-2 to Cubs</h3>
+	<p class="about">Mariners starter Bryce Miller lost his second straight start by at least 17 runs after the Cubs crushed Seattle 19-2, days after the M&#39;s lost 22-0 to Milwaukee.</p>
+	
+	
+	<a class="more" href="https://www.espn.com/mlb/story/_/id/49707438/mariners-crushed-again-bryce-miller-start-lose-19-2-cubs" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#3b82f6" data-count="2" data-id="rss:US-EN-49707455" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1787541399000" data-slug="wnba story kanter freedom ejected confrontation sky cloud">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Kanter Freedom tossed after clash with Cloud — flip for details">
+	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T03:16:39.000Z">11:16 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Kanter Freedom tossed after clash with Cloud</h3>
+	<p class="snippet">Ex-NBA player Enes Kanter Freedom was ejected from Sunday&#39;s game between the Fever and the Sky after a verbal altercation with Chicago&#39;s Natasha Cloud.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0824%2Fr1706065_1296x729_16-9.jpg&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0824%2Fr1706065_1296x729_16-9.jpg&amp;w=240 240w, https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0824%2Fr1706065_1296x729_16-9.jpg&amp;w=340 340w, https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0824%2Fr1706065_1296x729_16-9.jpg&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Kanter Freedom tossed after clash with Cloud</h3>
+	<p class="about">Ex-NBA player Enes Kanter Freedom was ejected from Sunday&#39;s game between the Fever and the Sky after a verbal altercation with Chicago&#39;s Natasha Cloud.</p>
+	
+	<details class="sources"><summary class="srcmore">+1 source</summary><ul class="srclist"><li><span class="ssrc">CBS SPORTS</span><a href="https://www.cbssports.com/wnba/news/enes-kanter-freedom-ejected-wnba-game-natasha-cloud-altercation/" target="_blank" rel="noopener noreferrer">11:10 pm</a></li></ul></details>
+	<a class="more" href="https://www.espn.com/wnba/story/_/id/49707455/kanter-freedom-ejected-confrontation-sky-cloud" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/aimodels-fyi/a-beginners-guide-to-the-vibevoice-model-by-microsoft-on-replicate-296a" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1787541208000" data-slug="aimodels fyi beginners guide the vibevoice model microsoft replicate 296a">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="A beginner&#39;s guide to the Vibevoice model by Microsoft on Replicate — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T03:13:28.000Z">11:13 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">A beginner&#39;s guide to the Vibevoice model by Microsoft on Replicate</h3>
+	<p class="snippet">This is a simplified guide to an AI model called Vibevoice maintained by Microsoft. If you like these kinds of analysis, you should join AImodels.fyi or follow us on Twitter. vibevoice is microsoft&#39;s long-form multi-speaker text-to-speech model that synthesizes conversational audio up to 90 minutes in a single pass with support for up to 4 distinct speakers. The model uses continuous speech…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Ftjzk.replicate.delivery%2Fmodels_models_cover_image%2F22453b70-7c5b-46d4-80d7-92dc4eb99a0f%2FVibeVoice_logo_white.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=240,height=125,fit=cover,gravity=auto,format=auto/https%3A%2F%2Ftjzk.replicate.delivery%2Fmodels_models_cover_image%2F22453b70-7c5b-46d4-80d7-92dc4eb99a0f%2FVibeVoice_logo_white.png 240w, https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Ftjzk.replicate.delivery%2Fmodels_models_cover_image%2F22453b70-7c5b-46d4-80d7-92dc4eb99a0f%2FVibeVoice_logo_white.png 340w, https://media2.dev.to/dynamic/image/width=510,height=266,fit=cover,gravity=auto,format=auto/https%3A%2F%2Ftjzk.replicate.delivery%2Fmodels_models_cover_image%2F22453b70-7c5b-46d4-80d7-92dc4eb99a0f%2FVibeVoice_logo_white.png 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">A beginner&#39;s guide to the Vibevoice model by Microsoft on Replicate</h3>
+	<p class="about">This is a simplified guide to an AI model called Vibevoice maintained by Microsoft. If you like these kinds of analysis, you should join AImodels.fyi or follow us on Twitter. vibevoice is microsoft&#39;s long-form multi-speaker text-to-speech model that synthesizes conversational audio up to 90 minutes in a single pass with support for up to 4 distinct speakers. The model uses continuous speech…</p>
+	
+	
+	<a class="more" href="https://dev.to/aimodels-fyi/a-beginners-guide-to-the-vibevoice-model-by-microsoft-on-replicate-296a" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/aimodels-fyi/a-beginners-guide-to-the-qwen-image-2-pro-model-by-qwen-on-replicate-3k1" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1787541140000" data-slug="aimodels fyi beginners guide the qwen image pro model replicate 3k1">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="A beginner&#39;s guide to the Qwen-Image-2-Pro model by Qwen on Replicate — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T03:12:20.000Z">11:12 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">A beginner&#39;s guide to the Qwen-Image-2-Pro model by Qwen on Replicate</h3>
+	<p class="snippet">This is a simplified guide to an AI model called Qwen-Image-2-Pro maintained by Qwen. If you like these kinds of analysis, you should join AImodels.fyi or follow us on Twitter. qwen-image-2-pro is a text-to-image generation model from qwen, Alibaba&#39;s Qwen team, that emphasizes text rendering, semantic adherence, and realism. The model is built on a 20-billion-parameter Multimodal Diffusion…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Ftjzk.replicate.delivery%2Fmodels_models_featured_image%2F025604c2-329f-4ec6-9acf-6345295d2b0a%2Ftmpe8vp600a.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=240,height=125,fit=cover,gravity=auto,format=auto/https%3A%2F%2Ftjzk.replicate.delivery%2Fmodels_models_featured_image%2F025604c2-329f-4ec6-9acf-6345295d2b0a%2Ftmpe8vp600a.png 240w, https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Ftjzk.replicate.delivery%2Fmodels_models_featured_image%2F025604c2-329f-4ec6-9acf-6345295d2b0a%2Ftmpe8vp600a.png 340w, https://media2.dev.to/dynamic/image/width=510,height=266,fit=cover,gravity=auto,format=auto/https%3A%2F%2Ftjzk.replicate.delivery%2Fmodels_models_featured_image%2F025604c2-329f-4ec6-9acf-6345295d2b0a%2Ftmpe8vp600a.png 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">A beginner&#39;s guide to the Qwen-Image-2-Pro model by Qwen on Replicate</h3>
+	<p class="about">This is a simplified guide to an AI model called Qwen-Image-2-Pro maintained by Qwen. If you like these kinds of analysis, you should join AImodels.fyi or follow us on Twitter. qwen-image-2-pro is a text-to-image generation model from qwen, Alibaba&#39;s Qwen team, that emphasizes text rendering, semantic adherence, and realism. The model is built on a 20-billion-parameter Multimodal Diffusion…</p>
+	
+	
+	<a class="more" href="https://dev.to/aimodels-fyi/a-beginners-guide-to-the-qwen-image-2-pro-model-by-qwen-on-replicate-3k1" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/deepeshd/prove-your-backups-actually-restore-automatically-on-a-separate-server-o36" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1787541075000" data-slug="deepeshd prove your backups actually restore automatically separate server o36">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Prove Your Backups Actually Restore Automatically, on a Separate Server — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T03:11:15.000Z">11:11 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">Prove Your Backups Actually Restore Automatically, on a Separate Server</h3>
+	<p class="snippet">If you haven&#39;t done any restoration of your backups, you cannot count it as your retrieval strategy. It&#39;s simply a case of gambling. The backup job completes successfully once the data is written – how it will do after that is a different story. Corrupted backups, broken chains, and retrieval times that keep increasing exponentially remain camouflaged behind the success signs until you face the…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fhx4iezng86r3kbgdstnk.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=240,height=125,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fhx4iezng86r3kbgdstnk.png 240w, https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fhx4iezng86r3kbgdstnk.png 340w, https://media2.dev.to/dynamic/image/width=510,height=266,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fhx4iezng86r3kbgdstnk.png 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Prove Your Backups Actually Restore Automatically, on a Separate Server</h3>
+	<p class="about">If you haven&#39;t done any restoration of your backups, you cannot count it as your retrieval strategy. It&#39;s simply a case of gambling. The backup job completes successfully once the data is written – how it will do after that is a different story. Corrupted backups, broken chains, and retrieval times that keep increasing exponentially remain camouflaged behind the success signs until you face the…</p>
+	
+	
+	<a class="more" href="https://dev.to/deepeshd/prove-your-backups-actually-restore-automatically-on-a-separate-server-o36" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/aimodels-fyi/a-beginners-guide-to-the-qwen-image-2-model-by-qwen-on-replicate-h2i" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1787541073000" data-slug="aimodels fyi beginners guide the qwen image model replicate h2i">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="A beginner&#39;s guide to the Qwen-Image-2 model by Qwen on Replicate — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T03:11:13.000Z">11:11 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">A beginner&#39;s guide to the Qwen-Image-2 model by Qwen on Replicate</h3>
+	<p class="snippet">This is a simplified guide to an AI model called Qwen-Image-2 maintained by Qwen. If you like these kinds of analysis, you should join AImodels.fyi or follow us on Twitter. qwen-image-2 is a next-generation image generation and editing foundation model from qwen, Alibaba&#39;s Qwen team. It is a 20-billion-parameter Multimodal Diffusion Transformer (MMDiT) that handles both text-to-image generation…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Ftjzk.replicate.delivery%2Fmodels_models_featured_image%2Fe4487200-0961-45c3-92e5-627ebb62462d%2Ftmp130tj2mm.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=240,height=125,fit=cover,gravity=auto,format=auto/https%3A%2F%2Ftjzk.replicate.delivery%2Fmodels_models_featured_image%2Fe4487200-0961-45c3-92e5-627ebb62462d%2Ftmp130tj2mm.png 240w, https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Ftjzk.replicate.delivery%2Fmodels_models_featured_image%2Fe4487200-0961-45c3-92e5-627ebb62462d%2Ftmp130tj2mm.png 340w, https://media2.dev.to/dynamic/image/width=510,height=266,fit=cover,gravity=auto,format=auto/https%3A%2F%2Ftjzk.replicate.delivery%2Fmodels_models_featured_image%2Fe4487200-0961-45c3-92e5-627ebb62462d%2Ftmp130tj2mm.png 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">A beginner&#39;s guide to the Qwen-Image-2 model by Qwen on Replicate</h3>
+	<p class="about">This is a simplified guide to an AI model called Qwen-Image-2 maintained by Qwen. If you like these kinds of analysis, you should join AImodels.fyi or follow us on Twitter. qwen-image-2 is a next-generation image generation and editing foundation model from qwen, Alibaba&#39;s Qwen team. It is a 20-billion-parameter Multimodal Diffusion Transformer (MMDiT) that handles both text-to-image generation…</p>
+	
+	
+	<a class="more" href="https://dev.to/aimodels-fyi/a-beginners-guide-to-the-qwen-image-2-model-by-qwen-on-replicate-h2i" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 h2" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/aimodels-fyi/a-beginners-guide-to-the-hypir-sd2-model-by-0x3f3f3f3fun-on-replicate-3bn9" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1787540972000" data-slug="aimodels fyi beginners guide the hypir sd2 model 0x3f3f3f3fun replicate 3bn9">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="A beginner&#39;s guide to the Hypir-Sd2 model by 0x3f3f3f3fun on Replicate — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T03:09:32.000Z">11:09 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">A beginner&#39;s guide to the Hypir-Sd2 model by 0x3f3f3f3fun on Replicate</h3>
+	<p class="snippet">This is a simplified guide to an AI model called Hypir-Sd2 maintained by 0x3f3f3f3fun. If you like these kinds of analysis, you should join AImodels.fyi or follow us on Twitter. hypir-sd2 performs image restoration and upscaling using diffusion-based score priors, developed by 0x3f3f3f3fun at the Shenzhen Institutes of Advanced Technology. The model harnesses Stable Diffusion 2.1 as its base…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">A beginner&#39;s guide to the Hypir-Sd2 model by 0x3f3f3f3fun on Replicate</h3>
+	<p class="about">This is a simplified guide to an AI model called Hypir-Sd2 maintained by 0x3f3f3f3fun. If you like these kinds of analysis, you should join AImodels.fyi or follow us on Twitter. hypir-sd2 performs image restoration and upscaling using diffusion-based score priors, developed by 0x3f3f3f3fun at the Shenzhen Institutes of Advanced Technology. The model harnesses Stable Diffusion 2.1 as its base…</p>
+	
+	
+	<a class="more" href="https://dev.to/aimodels-fyi/a-beginners-guide-to-the-hypir-sd2-model-by-0x3f3f3f3fun-on-replicate-3bn9" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/aimodels-fyi/a-beginners-guide-to-the-yolo26-model-by-ultralytics-on-replicate-he0" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1787540904000" data-slug="aimodels fyi beginners guide the yolo26 model ultralytics replicate he0">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="A beginner&#39;s guide to the Yolo26 model by Ultralytics on Replicate — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T03:08:24.000Z">11:08 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">A beginner&#39;s guide to the Yolo26 model by Ultralytics on Replicate</h3>
+	<p class="snippet">This is a simplified guide to an AI model called Yolo26 maintained by Ultralytics. If you like these kinds of analysis, you should join AImodels.fyi or follow us on Twitter. YOLO26 is an object detection model from ultralytics that detects objects across 80 COCO classes. The model comes in five size variants—nano (n), small (s), medium (m), large (l), and extra-large (x)—allowing you to trade…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">A beginner&#39;s guide to the Yolo26 model by Ultralytics on Replicate</h3>
+	<p class="about">This is a simplified guide to an AI model called Yolo26 maintained by Ultralytics. If you like these kinds of analysis, you should join AImodels.fyi or follow us on Twitter. YOLO26 is an object detection model from ultralytics that detects objects across 80 COCO classes. The model comes in five size variants—nano (n), small (s), medium (m), large (l), and extra-large (x)—allowing you to trade…</p>
+	
+	
+	<a class="more" href="https://dev.to/aimodels-fyi/a-beginners-guide-to-the-yolo26-model-by-ultralytics-on-replicate-he0" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.polygon.com/strongest-characters-kaiju-no-8-ranked/" data-srckey="polygon" data-cat="entertainment" data-sent="0" data-ts="1787540415000" data-slug="strongest characters kaiju ranked">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="5 Strongest Characters In Kaiju No. 8 — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T03:00:15.000Z">11:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">5 Strongest Characters In Kaiju No. 8</h3>
+	<p class="snippet">Strength manifests in many forms, be it for a human or a kaiju.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/thumb-1920-1399066.png?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/thumb-1920-1399066.png?w=240 240w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/thumb-1920-1399066.png?w=340 340w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/thumb-1920-1399066.png?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">5 Strongest Characters In Kaiju No. 8</h3>
+	<p class="about">Strength manifests in many forms, be it for a human or a kaiju.</p>
+	
+	
+	<a class="more" href="https://www.polygon.com/strongest-characters-kaiju-no-8-ranked/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:108353087" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1787540122000" data-slug="alibaba share placement drop hong kong html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Alibaba plunges after announcing $10.2 billion share placement to fund AI push — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T02:55:22.000Z">10:55 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Alibaba plunges after announcing $10.2 billion share placement to fund AI push</h3>
+	<p class="snippet">Alibaba shares plunged 10% after the tech giant priced a $10.2 billion share placement to fund its growing AI investments.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://image.cnbcfm.com/api/v1/image/108228550-1763579370604-gettyimages-2246549520-Alibaba_Building_in_Shanghai.jpeg?v=1763579516&amp;w=340&amp;h=191" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://image.cnbcfm.com/api/v1/image/108228550-1763579370604-gettyimages-2246549520-Alibaba_Building_in_Shanghai.jpeg?v=1763579516&amp;w=240&amp;h=135 240w, https://image.cnbcfm.com/api/v1/image/108228550-1763579370604-gettyimages-2246549520-Alibaba_Building_in_Shanghai.jpeg?v=1763579516&amp;w=340&amp;h=191 340w, https://image.cnbcfm.com/api/v1/image/108228550-1763579370604-gettyimages-2246549520-Alibaba_Building_in_Shanghai.jpeg?v=1763579516&amp;w=510&amp;h=287 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Alibaba plunges after announcing $10.2 billion share placement to fund AI push</h3>
+	<p class="about">Alibaba shares plunged 10% after the tech giant priced a $10.2 billion share placement to fund its growing AI investments.</p>
+	
+	
+	<a class="more" href="https://www.cnbc.com/2026/08/24/alibaba-share-placement-drop-ai-hong-kong.html" target="_blank" rel="noopener noreferrer">CNBC &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:108353071" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1787538307000" data-slug="iran war trump hormuz bessent economic sanctions html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="U.S. to unveil &#39;greatest financial offensive&#39; against Iran as Tehran threatens ship seizures — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T02:25:07.000Z">10:25 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">U.S. to unveil &#39;greatest financial offensive&#39; against Iran as Tehran threatens ship seizures</h3>
+	<p class="snippet">The escalation came as both sides have missed a 60-day ceasefire window to reach a deal, closing off the formal truce mechanism to end the six-month war.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://image.cnbcfm.com/api/v1/image/108352211-17872404112026-08-20t153741z_1726519747_rc2f2nag98je_rtrmadp_0_usa-trump.jpeg?v=1787240447&amp;w=340&amp;h=191" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://image.cnbcfm.com/api/v1/image/108352211-17872404112026-08-20t153741z_1726519747_rc2f2nag98je_rtrmadp_0_usa-trump.jpeg?v=1787240447&amp;w=240&amp;h=135 240w, https://image.cnbcfm.com/api/v1/image/108352211-17872404112026-08-20t153741z_1726519747_rc2f2nag98je_rtrmadp_0_usa-trump.jpeg?v=1787240447&amp;w=340&amp;h=191 340w, https://image.cnbcfm.com/api/v1/image/108352211-17872404112026-08-20t153741z_1726519747_rc2f2nag98je_rtrmadp_0_usa-trump.jpeg?v=1787240447&amp;w=510&amp;h=287 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">U.S. to unveil &#39;greatest financial offensive&#39; against Iran as Tehran threatens ship seizures</h3>
+	<p class="about">The escalation came as both sides have missed a 60-day ceasefire window to reach a deal, closing off the formal truce mechanism to end the six-month war.</p>
+	
+	
+	<a class="more" href="https://www.cnbc.com/2026/08/24/us-iran-war-trump-hormuz-bessent-economic-sanctions-.html" target="_blank" rel="noopener noreferrer">CNBC &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cdeweewjdxno#0" data-srckey="bbc world" data-cat="world" data-sent="0" data-ts="1787537104000" data-slug="news articles cdeweewjdxno">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Shein aims for almost $27bn valuation in stock market debut — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-24T02:05:04.000Z">10:05 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Shein aims for almost $27bn valuation in stock market debut</h3>
+	<p class="snippet">The fast-fashion giant&#39;s shares are due to start trading in Hong Kong on 1 September.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/e462/live/c906d120-9f60-11f1-8564-6b99aa01bb8b.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e462/live/c906d120-9f60-11f1-8564-6b99aa01bb8b.jpg 240w, https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/e462/live/c906d120-9f60-11f1-8564-6b99aa01bb8b.jpg 340w, https://ichef.bbci.co.uk/ace/standard/510/cpsprodpb/e462/live/c906d120-9f60-11f1-8564-6b99aa01bb8b.jpg 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Shein aims for almost $27bn valuation in stock market debut</h3>
+	<p class="about">The fast-fashion giant&#39;s shares are due to start trading in Hong Kong on 1 September.</p>
+	
+	
+	<a class="more" href="https://www.bbc.co.uk/news/articles/cdeweewjdxno" target="_blank" rel="noopener noreferrer">BBC World &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -2199,6 +2475,29 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact w2 no-snippet" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/xiwynb" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1787510966000">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="tmp.0ut volume 5 — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-23T18:49:26.000Z">2:49 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">tmp.0ut volume 5</h3>
+	
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">tmp.0ut volume 5</h3>
+	<p class="about">No summary in this feed — follow the link for the story.</p>
+	
+	
+	<a class="more" href="https://tmpout.sh/5/" target="_blank" rel="noopener noreferrer">Lobsters &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:118e9f6c-7d9a-44a2-ba7c-f57966cc3b5e" data-srckey="cbs sports" data-cat="sports" data-sent="0" data-ts="1787510784000" data-slug="mlb news dodgers shohei ohtani pitching mvp race pete crow armstrong">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Dodgers&#39; Shohei Ohtani could return to pitching as soon as next week as MVP race heats up — flip for details">
@@ -2375,6 +2674,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://variety.com/2026/film/news/ridley-scott-not-a-filmmaker-im-an-influencer-the-dog-stars-1236841083/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c4g3g36z7p6o#0" data-srckey="bbc world" data-cat="world" data-sent="0" data-ts="1787509057000" data-slug="news articles c4g3g36z7p6o">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Guinea rubbish landfill collapse kills 30 — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-23T18:17:37.000Z">2:17 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Guinea rubbish landfill collapse kills 30</h3>
+	<p class="snippet">A mound of rubbish at a major waste site buried several homes in the capital, the government says.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/e9ee/live/c5473e70-9f1b-11f1-b2a2-8945a27a2843.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e9ee/live/c5473e70-9f1b-11f1-b2a2-8945a27a2843.jpg 240w, https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/e9ee/live/c5473e70-9f1b-11f1-b2a2-8945a27a2843.jpg 340w, https://ichef.bbci.co.uk/ace/standard/510/cpsprodpb/e9ee/live/c5473e70-9f1b-11f1-b2a2-8945a27a2843.jpg 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Guinea rubbish landfill collapse kills 30</h3>
+	<p class="about">A mound of rubbish at a major waste site buried several homes in the capital, the government says.</p>
+	
+	
+	<a class="more" href="https://www.bbc.co.uk/news/articles/c4g3g36z7p6o" target="_blank" rel="noopener noreferrer">BBC World &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -3019,6 +3341,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://kotaku.com/viral-chinese-cow-cartoon-becomes-one-of-the-most-profitable-movies-ever-made-2000727246" target="_blank" rel="noopener noreferrer">Kotaku &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/ek0aqp" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1787502779000" data-slug="carlton archive its your thing">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="It&#39;s OK. Do Your Thing — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-23T16:32:59.000Z">12:32 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">It&#39;s OK. Do Your Thing</h3>
+	<p class="snippet">Some (reluctant) thought on our AI moment</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://image-generator.buttondown.email/api/emphasize-subject?subject=It%27s%20OK.%20Do%20Your%20Thing.&amp;amp;author=The%20Stack%20Report&amp;amp;date=2026-08-08&amp;amp;img=https%3A//assets.buttondown.email/images/f41738cf-6335-4e51-a9da-56dd48b5a15f.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">It&#39;s OK. Do Your Thing</h3>
+	<p class="about">Some (reluctant) thought on our AI moment</p>
+	
+	
+	<a class="more" href="https://buttondown.com/carlton/archive/its-ok-do-your-thing/" target="_blank" rel="noopener noreferrer">Lobsters &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -11499,7 +11844,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2534 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2518 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://dev.to/kavin_k_5b0b0c5a2e4bbf880/java-script-c-2-variables-5bji" data-cat="dev" data-sent="0" data-slug="kavin 5b0b0c5a2e4bbf880 java script variables 5bji" hidden="until-found"><span class="ameta">DEV.TO &middot; Aug 21 &middot; Dev</span><a href="https://dev.to/kavin_k_5b0b0c5a2e4bbf880/java-script-c-2-variables-5bji" target="_blank" rel="noopener noreferrer">Java script c-2 variables</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c62xpre63j2o#1" data-cat="world" data-sent="0" data-slug="news articles c62xpre63j2o" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 21 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/c62xpre63j2o" target="_blank" rel="noopener noreferrer">Lindsay Clancy suffering &#39;command hallucination&#39; when she killed children, court hears</a></li>
@@ -14019,22 +14364,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/special-effect-big-football-match-charity-50000" data-cat="games" data-sent="0" data-slug="special effect big football match charity" hidden="until-found"><span class="ameta">EUROGAMER &middot; Aug 14 &middot; Games</span><a href="https://www.eurogamer.net/special-effect-big-football-match-charity-50000" target="_blank" rel="noopener noreferrer">UK video game industry charity football match raises over £63,000 for physically disabled gamers</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/compulsion-games-south-of-midnight-publisher-xbox-restructuring" data-cat="games" data-sent="0" data-slug="compulsion games south midnight publisher xbox restructuring" hidden="until-found"><span class="ameta">EUROGAMER &middot; Aug 14 &middot; Games</span><a href="https://www.eurogamer.net/compulsion-games-south-of-midnight-publisher-xbox-restructuring" target="_blank" rel="noopener noreferrer">Compulsion Games becomes publisher of South of Midnight on Steam, suggesting departure from Xbox amid major restructuring is now complete</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240540" data-cat="entertainment" data-sent="0" data-slug="news naver webtoon cooperates with korea mcst interpol take down english manga piracy sites" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 14 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/news/2026-08-14/naver-webtoon-cooperates-with-korea-mcst-interpol-to-take-down-3-english-webtoon-manga-piracy-sites/.240540" target="_blank" rel="noopener noreferrer">Naver WEBTOON Cooperates With Korea&#39;s MCST, Interpol to Take Down 3 English Webtoon, Manga Piracy Sites</a></li>
-<li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/markets/jpmorgan-crypto-etf-moves-risk-not-bullish-bet-analyst" data-cat="markets" data-sent="0" data-slug="markets jpmorgan crypto etf moves risk not bullish bet analyst" hidden="until-found"><span class="ameta">COINTELEGRAPH &middot; Aug 14 &middot; Markets</span><a href="https://cointelegraph.com/markets/jpmorgan-crypto-etf-moves-risk-not-bullish-bet-analyst" target="_blank" rel="noopener noreferrer">JPMorgan boosts Bitcoin, Ether ETF positions in Q2 filing</a></li>
-<li class="arow" data-count="1" data-id="rss:WP-MKTW-0005178582" data-cat="markets" data-sent="0" data-slug="story congress changed the rules around charitable giving earlier year save money 392e5de3" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 14 &middot; Markets</span><a href="https://www.marketwatch.com/story/congress-changed-the-rules-around-charitable-giving-do-it-earlier-in-the-year-to-save-money-392e5de3?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Congress changed the rules around charitable giving. You’ll now save more money if you donate earlier in the year.</a></li>
-<li class="arow" data-count="1" data-id="rss:WP-MKTW-0005148255" data-cat="markets" data-sent="0" data-slug="story didnt know what else patients take their health insurance battles facebook and linkedin 500bda58" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 14 &middot; Markets</span><a href="https://www.marketwatch.com/story/i-didnt-know-what-else-to-do-patients-take-their-health-insurance-battles-to-facebook-and-linkedin-500bda58?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">‘I didn’t know what else to do’: Patients take their health-insurance battles to Facebook and LinkedIn</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.xxlmag.com/?p=1086198" data-cat="music" data-sent="0" data-slug="joey badass docuseries time will tell" hidden="until-found"><span class="ameta">XXL &middot; Aug 14 &middot; Music</span><a href="https://www.xxlmag.com/joey-badass-docuseries-time-will-tell/" target="_blank" rel="noopener noreferrer">Joey Badass Gets Candid in New Docuseries Time Will Tell</a></li>
-<li class="arow" data-count="1" data-id="rss:0ae5beef-7b64-4460-82c8-564ed31e4720" data-cat="markets" data-sent="0" data-slug="markets strategy says msci should measure not dictate corporate assets" hidden="until-found"><span class="ameta">COINDESK &middot; Aug 14 &middot; Markets</span><a href="https://www.coindesk.com/markets/2026/08/14/strategy-says-msci-should-measure-markets-not-dictate-corporate-assets" target="_blank" rel="noopener noreferrer">Strategy says MSCI should measure markets, not dictate corporate assets</a></li>
-<li class="arow" data-count="1" data-id="rss:99e2ab5f-8cb9-403b-a56d-eb6be56afd9b" data-cat="sports" data-sent="0" data-slug="college football news big ten sec preseason conference power rankings" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 14 &middot; Sports</span><a href="https://www.cbssports.com/college-football/news/big-ten-sec-2026-preseason-college-football-conference-power-rankings/" target="_blank" rel="noopener noreferrer">Big Ten tops SEC in 2026 preseason college football conference power rankings</a></li>
-<li class="arow" data-count="1" data-id="rss:https://nurb.dev/" data-cat="tech" data-sent="0" hidden="until-found"><span class="ameta">HACKER NEWS &middot; Aug 14 &middot; Tech</span><a href="https://nurb.dev/" target="_blank" rel="noopener noreferrer">Design 3D-printable parts by talking</a></li>
-<li class="arow" data-count="1" data-id="rss:2a6a1293-936f-4416-af17-262c40614e44" data-cat="sports" data-sent="0" data-slug="soccer news chelseas premier league xabi alonso blues" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 14 &middot; Sports</span><a href="https://www.cbssports.com/soccer/news/chelseas-premier-league-xabi-alonso-blues/" target="_blank" rel="noopener noreferrer">Chelsea&#39;s Premier League season: Everything to know as Xabi Alonso attempts to lead Blues bounce-back campaign</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.healthcaredive.com/news/patient-rights-advocate-sues-ama-cpt-billing-codes-copyright/827830/" data-cat="healthcare" data-sent="0" data-slug="news patient rights advocate sues ama cpt billing codes copyright" hidden="until-found"><span class="ameta">HEALTHCARE DIVE &middot; Aug 14 &middot; Healthcare</span><a href="https://www.healthcaredive.com/news/patient-rights-advocate-sues-ama-cpt-billing-codes-copyright/827830/" target="_blank" rel="noopener noreferrer">Health advocacy group sues AMA to make billing codes public</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235608218" data-cat="music" data-sent="0" data-slug="music features phoebe bridgers lost weekend easter eggs lyrics" hidden="until-found"><span class="ameta">ROLLING STONE MUSIC &middot; Aug 14 &middot; Music</span><a href="https://www.rollingstone.com/music/music-features/phoebe-bridgers-lost-weekend-easter-eggs-lyrics-music-1235608218/" target="_blank" rel="noopener noreferrer">All the Easter Eggs We Found on Phoebe Bridgers’ ‘Lost Weekend’</a></li>
-<li class="arow" data-count="1" data-id="rss:ce0d7069-245c-4eb2-acf5-4c2a6e0449d2" data-cat="games" data-sent="0" data-slug="articles project revenant unique precision aiming sidescroller announces public playtest" hidden="until-found"><span class="ameta">IGN &middot; Aug 14 &middot; Games</span><a href="https://www.ign.com/articles/project-revenant-a-unique-precision-aiming-2d-sidescroller-announces-public-playtest" target="_blank" rel="noopener noreferrer">Project Revenant, a Unique Precision-Aiming 2D Sidescroller, Announces Public Playtest</a></li>
-<li class="arow" data-count="1" data-id="rss:afb7a779-576d-4a54-9902-568042aea2e2" data-cat="games" data-sent="0" data-slug="articles grand theft auto the legacy review" hidden="until-found"><span class="ameta">IGN &middot; Aug 14 &middot; Games</span><a href="https://www.ign.com/articles/grand-theft-auto-2-the-legacy-review" target="_blank" rel="noopener noreferrer">Grand Theft Auto 2 – The Legacy Review</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240468" data-cat="entertainment" data-sent="0" data-slug="this week games lots leftover battle bikinis" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 14 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/this-week-in-games/2026-08-14/lots-of-leftover-battle-bikinis/.240468" target="_blank" rel="noopener noreferrer">This Week in Games - Lots of Leftover Battle Bikinis</a></li>
-<li class="arow" data-count="1" data-id="rss:03ef3330-dafb-4336-ad90-9612bc5518b5" data-cat="markets" data-sent="0" data-slug="markets israel largest bank partners with galaxy for crypto trading" hidden="until-found"><span class="ameta">COINDESK &middot; Aug 14 &middot; Markets</span><a href="https://www.coindesk.com/markets/2026/08/14/israel-s-largest-bank-partners-with-galaxy-for-crypto-trading" target="_blank" rel="noopener noreferrer">Israel’s largest bank to offer crypto trading with Galaxy</a></li>
-<li class="arow" data-count="1" data-id="rss:785faef9-bf10-4b3c-8f7b-9593c9d4e00c" data-cat="sports" data-sent="0" data-slug="betting news free mlb home run picks august blue jays vladimir guerrero among experts best bets" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 14 &middot; Sports</span><a href="https://www.cbssports.com/betting/news/free-mlb-home-run-picks-august-14-blue-jays-vladimir-guerrero-jr-among-experts-best-bets-for-friday/" target="_blank" rel="noopener noreferrer">Free MLB home run picks August 14: Blue Jays&#39; Vladimir Guerrero Jr. among expert&#39;s best bets for Friday</a></li>
-<li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236833854" data-cat="entertainment" data-sent="0" data-slug="film reviews objet review" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 14 &middot; Entertainment</span><a href="https://variety.com/2026/film/reviews/objet-a-review-1236833854/" target="_blank" rel="noopener noreferrer">‘Objet a’ Review: Ann Oren’s Wickedly Kinky Curiosity Eroticizes Everything From Mushrooms to Mushroom Cuts</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
