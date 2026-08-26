@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-26T11:13:15.275Z">
+<meta name="sf-version" content="2026-08-26T11:27:55.255Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -672,10 +672,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 7:13 AM &middot; 150 TODAY</p>
+	<p class="stats">UPDATED 7:27 AM &middot; 150 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">151</span><span class="sr-only"> — 151 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">89</span><span class="sr-only"> — 89 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">253</span><span class="sr-only"> — 253 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">387</span><span class="sr-only"> — 387 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">328</span><span class="sr-only"> — 328 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">449</span><span class="sr-only"> — 449 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">171</span><span class="sr-only"> — 171 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">492</span><span class="sr-only"> — 492 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">139</span><span class="sr-only"> — 139 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">21</span><span class="sr-only"> — 21 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">520</span><span class="sr-only"> — 520 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">154</span><span class="sr-only"> — 154 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">89</span><span class="sr-only"> — 89 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">252</span><span class="sr-only"> — 252 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">386</span><span class="sr-only"> — 386 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">328</span><span class="sr-only"> — 328 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">449</span><span class="sr-only"> — 449 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">171</span><span class="sr-only"> — 171 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">491</span><span class="sr-only"> — 491 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">139</span><span class="sr-only"> — 139 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">21</span><span class="sr-only"> — 21 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">520</span><span class="sr-only"> — 520 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -885,7 +885,53 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <main id="feed">
-<section class="day">
+<section class="trending" aria-label="Trending stories">
+<h2><span class="date">TRENDING STORIES</span><span class="rel">WHAT THE INTERNET IS SEARCHING</span><span class="rule" aria-hidden="true"></span></h2>
+<ol class="trend-list">
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">1</span>
+	<div class="trend-body">
+		<a class="trend-title" href="https://weather.com/2026/08/26/storms/hurricane/hurricane-season-maps-tracker-atlantic-pacific" target="_blank" rel="noopener noreferrer">2026 hurricane season maps tracker: Current storms, forecast</a>
+		<p class="trend-meta"><span class="src">THE WEATHER CHANNEL</span><span class="sep" aria-hidden="true">&middot;</span>"hurricane tracker" &middot; 200+ searches</p>
+	</div>
+</li>
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">2</span>
+	<div class="trend-body">
+		<a class="trend-title" href="https://www.10tv.com/article/news/nation-world/eligible-kroger-17-million-pharmacy-settlement/507-c8303f1a-5007-4dc6-8e3e-b5fd9ec41216" target="_blank" rel="noopener noreferrer">Here&#39;s how to find out if you&#39;re eligible for Kroger&#39;s $17M pharmacy settlement</a>
+		<p class="trend-meta"><span class="src">10TV.COM</span><span class="sep" aria-hidden="true">&middot;</span>"kroger pharmacy settlement eligibility" &middot; 100+ searches</p>
+	</div>
+</li>
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">3</span>
+	<div class="trend-body">
+		<a class="trend-title" href="https://www.nytimes.com/live/2026/08/26/world/nepal-floods" target="_blank" rel="noopener noreferrer">Nepal Floods Live Updates: Rescuers Look for Missing as Floodwater Sweeps Away Villages</a>
+		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"nepal" &middot; 200+ searches</p>
+	</div>
+</li>
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">4</span>
+	<div class="trend-body">
+		<a class="trend-title" href="https://themosh.net/bad-wolves-kicked-off-skillet-tour-onlyfans/" target="_blank" rel="noopener noreferrer">Bad Wolves Kicked Off Skillet Tour Over Frontwoman’s OnlyFans Account</a>
+		<p class="trend-meta"><span class="src">THE MOSH NETWORK</span><span class="sep" aria-hidden="true">&middot;</span>"sara skinner" &middot; 200+ searches</p>
+	</div>
+</li>
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">5</span>
+	<div class="trend-body">
+		<a class="trend-title" href="https://www.tvinsider.com/1283371/brytni-sarpy-joins-days-of-our-lives/" target="_blank" rel="noopener noreferrer">‘General Hospital’ &amp; ‘Y&amp;R’ Alum Brytni Sarpy Joins ‘Days of Our Lives’ — Who Will She Play?</a>
+		<p class="trend-meta"><span class="src">TV INSIDER</span><span class="sep" aria-hidden="true">&middot;</span>"brytni sarpy" &middot; 100+ searches</p>
+	</div>
+</li>
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">6</span>
+	<div class="trend-body">
+		<a class="trend-title" href="https://www.dailystar.co.uk/showbiz/davina-mccalls-husband-michael-douglas-37588127" target="_blank" rel="noopener noreferrer">Davina McCall&#39;s husband Michael Douglas reveals terrifying fear over TV star&#39;s health</a>
+		<p class="trend-meta"><span class="src">DAILY STAR</span><span class="sep" aria-hidden="true">&middot;</span>"michael douglas" &middot; 100+ searches</p>
+	</div>
+</li>
+</ol>
+</section><section class="day">
 <h2><span class="date">WED, AUG 26, 2026</span><span class="rel">TODAY</span><span class="rule" aria-hidden="true"></span></h2>
 <div class="grid">
 <article class="card lead has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://kotaku.com/?p=2000727940" data-srckey="kotaku" data-cat="games" data-sent="0" data-ts="1787742047000" data-slug="mega man dual override preview gamescom capcom boss">
@@ -957,14 +1003,14 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/c65ab2cc-a3c9-4d94-bd21-7f5fb020827a" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1787742787618" data-slug="regulatory alabama awards rhtp grants totaling over 144m">
+<article class="card compact has-thumb" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/c65ab2cc-a3c9-4d94-bd21-7f5fb020827a" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1787742787618" data-slug="regulatory alabama awards rhtp grants totaling over 144m">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Alabama awards 138 RHTP grants totaling over $144M — flip for details">
 	<div class="meta"><span class="src" style="color:#7dd3fc">FIERCE HEALTHCARE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-26T11:13:07.618Z">7:13 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#7dd3fc">Healthcare</span></div>
 	<h3 class="title">Alabama awards 138 RHTP grants totaling over $144M</h3>
 	<p class="snippet">Grants cover five of 11 planned initiatives from the state’s RHTP, including rural health, rural workforce and collaborative EHR, IT and cybersecurity.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://qtxasset.com/quartz/qcloud5/media/image/Featured%20Images%20-%20Fierce%20Healthcare%20-%202025-05-13T165101.106.jpg?VersionId=aoRzU6LV8JwEiS36hTDa4QkKwRje1IOV" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Alabama awards 138 RHTP grants totaling over $144M</h3>
@@ -1026,14 +1072,14 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact h2" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/2f5f26e0-359c-44d5-9275-b964c34349c8" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1787742787584" data-slug="payers moodys look diverging paths aca markets">
+<article class="card compact h2 has-thumb" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/2f5f26e0-359c-44d5-9275-b964c34349c8" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1787742787584" data-slug="payers moodys look diverging paths aca markets">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Moody&#39;s: A look at payers&#39; &#39;diverging&#39; paths for MA, ACA markets — flip for details">
 	<div class="meta"><span class="src" style="color:#7dd3fc">FIERCE HEALTHCARE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-26T11:13:07.584Z">7:13 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#7dd3fc">Healthcare</span></div>
 	<h3 class="title">Moody&#39;s: A look at payers&#39; &#39;diverging&#39; paths for MA, ACA markets</h3>
 	<p class="snippet">Major health insurers saw positive signs in the second quarter, but the pressures they&#39;ve faced over the past year haven&#39;t evaporated, according to a new report from analysts at Moody&#39;s.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://qtxasset.com/quartz/qcloud5/media/image/GettyImages-1256967886.jpg?VersionId=aMYJ_Yq0Sz_av3WOkeFo8dWSlnLbE4ns" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Moody&#39;s: A look at payers&#39; &#39;diverging&#39; paths for MA, ACA markets</h3>
@@ -8805,6 +8851,52 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact h2 has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://the-decoder.com/?p=39412" data-srckey="the decoder" data-cat="ai" data-sent="0" data-ts="1787660877000" data-slug="nvidia says its groq lpx four times faster than cerebras but the math more complicated">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Nvidia says its Groq 3 LPX is four times faster than Cerebras, but the math is more complicated — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(45 55% 72%)">THE DECODER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-25T12:27:57.000Z">8:27 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Nvidia says its Groq 3 LPX is four times faster than Cerebras, but the math is more complicated</h3>
+	<p class="snippet">Nvidia is moving its Groq 3 LPX inference chip into full production and reports 3,400 tokens per second on Gemma 4 31B, four times faster than Cerebras. But the numbers don&#39;t tell the whole story. Nvidia needs at least 64 accelerators to get there, while Cerebras needs only one or two, according to The Register. How well the architecture scales with large MoE models remains an open question. The…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://the-decoder.com/wp-content/uploads/2025/09/NVIDIA-Vera-Rubin-NVL144-with-Tray.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Nvidia says its Groq 3 LPX is four times faster than Cerebras, but the math is more complicated</h3>
+	<p class="about">Nvidia is moving its Groq 3 LPX inference chip into full production and reports 3,400 tokens per second on Gemma 4 31B, four times faster than Cerebras. But the numbers don&#39;t tell the whole story. Nvidia needs at least 64 accelerators to get there, while Cerebras needs only one or two, according to The Register. How well the architecture scales with large MoE models remains an open question. The…</p>
+	<p class="why"><span class="whylabel">matched</span> <span class="whykey">Nvidia</span> <span class="whystrength" title="How strongly this matched your interest (decayed frequency: 2.0)">match</span></p>
+	
+	<a class="more" href="https://the-decoder.com/nvidia-says-its-groq-3-lpx-is-four-times-faster-than-cerebras-but-the-math-is-more-complicated/" target="_blank" rel="noopener noreferrer">The Decoder &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#a78bfa" data-count="1" data-id="rss:https://the-decoder.com/?p=39405" data-srckey="the decoder" data-cat="ai" data-sent="0" data-ts="1787660201000" data-slug="ukraine opens its massive labeled battlefield dataset british firms landmark weapons partnership">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Ukraine opens its massive labeled battlefield dataset to British firms in a landmark AI weapons partnership — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(45 55% 72%)">THE DECODER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-25T12:16:41.000Z">8:16 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Ukraine opens its massive labeled battlefield dataset to British firms in a landmark AI weapons partnership</h3>
+	<p class="snippet">The UK becomes the first country to get access to Avengers Labs, Ukraine&#39;s platform holding roughly five million annotated combat images for training military AI. Three British startups are already working on pilot projects. The deal shows how real war data is systematically becoming the currency for building out autonomous weapons tech. The article Ukraine opens its massive labeled battlefield…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Ukraine opens its massive labeled battlefield dataset to British firms in a landmark AI weapons partnership</h3>
+	<p class="about">The UK becomes the first country to get access to Avengers Labs, Ukraine&#39;s platform holding roughly five million annotated combat images for training military AI. Three British startups are already working on pilot projects. The deal shows how real war data is systematically becoming the currency for building out autonomous weapons tech. The article Ukraine opens its massive labeled battlefield…</p>
+	
+	
+	<a class="more" href="https://the-decoder.com/ukraine-opens-its-massive-labeled-battlefield-dataset-to-british-firms-in-a-landmark-ai-weapons-partnership/" target="_blank" rel="noopener noreferrer">The Decoder &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49682968" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1787659984000" data-slug="nfl story denver broncos quarterback nix year improvement slow dropbacks progressions">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The key to Bo Nix blossoming in Year 3? Slowing down his dropbacks and progressions — flip for details">
@@ -9150,6 +9242,29 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact" style="--rail:#a78bfa" data-count="1" data-id="rss:https://the-decoder.com/?p=39407" data-srckey="the decoder" data-cat="ai" data-sent="0" data-ts="1787653453000" data-slug="alabama investigating openai following uncontrolled agent hack">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Alabama AG probes OpenAI after its AI agent went rogue and hacked into external systems — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(45 55% 72%)">THE DECODER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-25T10:24:13.000Z">6:24 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Alabama AG probes OpenAI after its AI agent went rogue and hacked into external systems</h3>
+	<p class="snippet">Alabama Attorney General Steve Marshall is investigating OpenAI over what he calls an &quot;AI lab leak.&quot; The probe follows the July 2026 Hugging Face incident, where an OpenAI agent broke out of a test environment and gained internet access on its own. Whether that happened because of advanced AI capabilities or sloppy cybersecurity is still unclear. The article Alabama AG probes OpenAI after its AI…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Alabama AG probes OpenAI after its AI agent went rogue and hacked into external systems</h3>
+	<p class="about">Alabama Attorney General Steve Marshall is investigating OpenAI over what he calls an &quot;AI lab leak.&quot; The probe follows the July 2026 Hugging Face incident, where an OpenAI agent broke out of a test environment and gained internet access on its own. Whether that happened because of advanced AI capabilities or sloppy cybersecurity is still unclear. The article Alabama AG probes OpenAI after its AI…</p>
+	
+	
+	<a class="more" href="https://the-decoder.com/alabama-is-investigating-openai-following-an-uncontrolled-ai-agent-hack/" target="_blank" rel="noopener noreferrer">The Decoder &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:https://cointelegraph.com/news/thailand-bitcoin-ether-etfs-draft-rules" data-srckey="cointelegraph" data-cat="markets" data-sent="0" data-ts="1787653214000" data-slug="news thailand bitcoin ether etfs draft rules">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Thailand moves closer to Bitcoin, Ether ETFs with draft rules — flip for details">
@@ -9383,7 +9498,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2624 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2621 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.xxlmag.com/?p=1086589" data-cat="music" data-sent="0" data-slug="lil durk cooperating witnesses otf jam murder trial" hidden="until-found"><span class="ameta">XXL &middot; Aug 24 &middot; Music</span><a href="https://www.xxlmag.com/lil-durk-cooperating-witnesses-otf-jam-murder-trial/" target="_blank" rel="noopener noreferrer">Cooperating Witnesses Include OTF Jam in Lil Durk&#39;s Trial</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/cg59814gvj9o#15" data-cat="sports" data-sent="0" data-slug="sport football articles cg59814gvj9o" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 24 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/football/articles/cg59814gvj9o" target="_blank" rel="noopener noreferrer">Who has made Troy&#39;s Premier League team of the week?</a></li>
@@ -12006,9 +12121,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236835653" data-cat="entertainment" data-sent="0" data-slug="news lanterns premiere how does hal die" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 16 &middot; Entertainment</span><a href="https://variety.com/2026/tv/news/lanterns-premiere-how-does-hal-die-1236835653/" target="_blank" rel="noopener noreferrer">‘Lanterns’ Premiere Shocker: Stars Kyle Chandler, Aaron Pierre and Show Creators Break Down That Time Jump and Cliffhanger</a></li>
 <li class="arow" data-count="1" data-id="rss:5b6fceed-87e7-4c7f-8f0c-fecb470703f9" data-cat="sports" data-sent="0" data-slug="nfl news von miller sign with cowboys" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 16 &middot; Sports</span><a href="https://www.cbssports.com/nfl/news/von-miller-to-sign-with-cowboys/" target="_blank" rel="noopener noreferrer">Von Miller to sign with Cowboys: Dallas continues EDGE overhaul with addition of eight-time Pro Bowler</a></li>
 <li class="arow" data-count="1" data-id="rss:09addd8f-ad24-4ac8-ba52-5476e04d8add" data-cat="sports" data-sent="0" data-slug="wnba news caitlin clark fever dream angel reese overtime" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 16 &middot; Sports</span><a href="https://www.cbssports.com/wnba/news/caitlin-clark-fever-dream-angel-reese-overtime/" target="_blank" rel="noopener noreferrer">Caitlin Clark leads Fever past Dream in overtime thriller with major playoff seeding implications</a></li>
-<li class="arow" data-count="1" data-id="rss:546cd6f6-4af5-4185-97f9-352cd1f51ba1" data-cat="sports" data-sent="0" data-slug="nfl news free agency tracker best unsigned agents" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 16 &middot; Sports</span><a href="https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-best-unsigned-free-agents-2026/" target="_blank" rel="noopener noreferrer">2026 NFL free agency tracker: Von Miller to join Cowboys; four of top 100 free agents still unsigned</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240624" data-cat="entertainment" data-sent="0" data-slug="news comic market draws attendees across days" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 16 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/news/2026-08-16/comic-market-108-draws-260000-attendees-across-2-days/.240624" target="_blank" rel="noopener noreferrer">Comic Market 108 Draws 260,000 Attendees Across 2 Days</a></li>
-<li class="arow" data-count="1" data-id="rss:https://dev.to/chaimabouchareb/unit-testing-example-251k" data-cat="dev" data-sent="0" data-slug="chaimabouchareb unit testing example 251k" hidden="until-found"><span class="ameta">DEV.TO &middot; Aug 16 &middot; Dev</span><a href="https://dev.to/chaimabouchareb/unit-testing-example-251k" target="_blank" rel="noopener noreferrer">Unit testing example</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
