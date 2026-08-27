@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-26T23:30:49.672Z">
+<meta name="sf-version" content="2026-08-27T00:17:01.234Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -532,9 +532,10 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
+:root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
-:root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
 :root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
@@ -543,7 +544,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
-:root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
@@ -672,10 +672,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 7:30 PM &middot; 294 TODAY</p>
+	<p class="stats">UPDATED 8:17 PM &middot; 296 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">157</span><span class="sr-only"> — 157 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">95</span><span class="sr-only"> — 95 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">248</span><span class="sr-only"> — 248 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">395</span><span class="sr-only"> — 395 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">322</span><span class="sr-only"> — 322 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">434</span><span class="sr-only"> — 434 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">183</span><span class="sr-only"> — 183 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">480</span><span class="sr-only"> — 480 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">136</span><span class="sr-only"> — 136 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">23</span><span class="sr-only"> — 23 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">527</span><span class="sr-only"> — 527 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">158</span><span class="sr-only"> — 158 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">95</span><span class="sr-only"> — 95 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">247</span><span class="sr-only"> — 247 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">395</span><span class="sr-only"> — 395 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">321</span><span class="sr-only"> — 321 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">434</span><span class="sr-only"> — 434 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">184</span><span class="sr-only"> — 184 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">480</span><span class="sr-only"> — 480 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">136</span><span class="sr-only"> — 136 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">23</span><span class="sr-only"> — 23 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">527</span><span class="sr-only"> — 527 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -891,43 +891,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.mlb.com/news/adrian-houser-placed-on-injured-list-with-right-forearm-strain" target="_blank" rel="noopener noreferrer">Houser (forearm strain) becomes latest Giants pitcher placed on IL</a>
-		<p class="trend-meta"><span class="src">MLB.COM</span><span class="sep" aria-hidden="true">&middot;</span>"sf giants" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://www.wsj.com/sports/tennis/monfils-svitolina-mixed-doubles-us-open-400cfd37" target="_blank" rel="noopener noreferrer">The Husband and Wife Team Making a Mixed Doubles Run at the U.S. Open</a>
+		<p class="trend-meta"><span class="src">WSJ</span><span class="sep" aria-hidden="true">&middot;</span>"monfils" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/wnba/story/_/id/49735947/sources-dewanna-bonner-signing-dream-mercury-buyout" target="_blank" rel="noopener noreferrer">Sources: DeWanna Bonner signing with Dream after Mercury buyout</a>
-		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"dewanna bonner" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.espn.com/espn/story/_/id/49726512/alabama-kinley-rasmus-sets-little-league-world-series-hits-record" target="_blank" rel="noopener noreferrer">Alabama&#39;s Kinley Rasmus sets Little League World Series hits record</a>
+		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"case rasmus" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.mlb.com/news/tony-vitello-ejected-in-first-inning-against-reds" target="_blank" rel="noopener noreferrer">Vitello ejected in first inning after arguing check-swing call</a>
-		<p class="trend-meta"><span class="src">MLB.COM</span><span class="sep" aria-hidden="true">&middot;</span>"san francisco giants" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.brewcrewball.com/milwaukee-brewers-discussions/88649/game-discussion-milwaukee-brewers-81-51-new-york-mets-60-72" target="_blank" rel="noopener noreferrer">Game Discussion: Milwaukee Brewers (81-51) @ New York Mets (60-72)</a>
+		<p class="trend-meta"><span class="src">BREW CREW BALL</span><span class="sep" aria-hidden="true">&middot;</span>"dustin may" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.thedailybeast.com/cbs-maga-coded-anchor-tony-dokoupil-suffers-another-ratings-mess/" target="_blank" rel="noopener noreferrer">CBS MAGA-Coded Anchor Suffers Another Ratings Mess</a>
-		<p class="trend-meta"><span class="src">THE DAILY BEAST</span><span class="sep" aria-hidden="true">&middot;</span>"tony dokoupil" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.espn.com/nba/story/_/id/49681800/sources-stad-reaches-deal-controlling-stake-t-wolves-lynx" target="_blank" rel="noopener noreferrer">Stad takes controlling stake in NBA&#39;s Timberwolves, WNBA&#39;s Lynx</a>
+		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"mn timberwolves" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://espndeportes.espn.com/futbol/colombia/nota/_/id/17163436/america-vs-junior-liga-betplay-equipo-fecha-hora-tv-en-vivo" target="_blank" rel="noopener noreferrer">When do América de Cali vs. Junior play in Liga BetPlay: team, date, time and live TV</a>
-		<p class="trend-meta"><span class="src">ESPN DEPORTES</span><span class="sep" aria-hidden="true">&middot;</span>"américa de cali vs junior" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.postingandtoasting.com/knicks-features-profiles/88899/on-this-date-in-knicks-history-julius-randle-re-commits-to-new-york" target="_blank" rel="noopener noreferrer">On This Date in Knicks History: Julius Randle re-commits to New York</a>
+		<p class="trend-meta"><span class="src">POSTING AND TOASTING</span><span class="sep" aria-hidden="true">&middot;</span>"julius randle" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.skysports.com/tennis/watch/6165626804643429112/winston-salem-open-2026" target="_blank" rel="noopener noreferrer">Sports News, Transfers, Scores | Watch Live Sport</a>
-		<p class="trend-meta"><span class="src">SKY SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"stefanos tsitsipas" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://mynews4.com/news/local/amber-alert-missing-one-year-old-out-of-modesto-could-be-in-reno-or-las-vegas" target="_blank" rel="noopener noreferrer">AMBER ALERT: Missing one-year-old out of Modesto could be in Reno or Las Vegas</a>
+		<p class="trend-meta"><span class="src">KRXI2</span><span class="sep" aria-hidden="true">&middot;</span>"amber alert las vegas" &middot; 200+ searches</p>
 	</div>
 </li>
 </ol>
@@ -949,6 +949,52 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://kotaku.com/mega-man-dual-override-preview-gamescom-capcom-boss-2000727940" target="_blank" rel="noopener noreferrer">Kotaku &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235616456" data-srckey="rolling stone music" data-cat="music" data-sent="0" data-ts="1787788662000" data-slug="music country dolly parton biopic docuseries musical development">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Dolly Parton’s Team Shares Video of the Icon Building Her Empire Over the Past Two Years — flip for details">
+	<div class="meta"><span class="src" style="color:#fb7185">ROLLING STONE MUSIC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-26T23:57:42.000Z">7:57 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
+	<h3 class="title">Dolly Parton’s Team Shares Video of the Icon Building Her Empire Over the Past Two Years</h3>
+	<p class="snippet">A Dolly biopic, docuseries, musical, scripted series, and more are in the works</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Dolly Parton’s Team Shares Video of the Icon Building Her Empire Over the Past Two Years</h3>
+	<p class="about">A Dolly biopic, docuseries, musical, scripted series, and more are in the works</p>
+	
+	
+	<a class="more" href="https://www.rollingstone.com/music/music-country/dolly-parton-biopic-docuseries-musical-in-development-1235616456/" target="_blank" rel="noopener noreferrer">Rolling Stone Music &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#a78bfa" data-count="1" data-id="rss:https://techcrunch.com/?p=3157431" data-srckey="techcrunch" data-cat="ai" data-sent="0" data-ts="1787788038000" data-slug="amazon just tripled its order nvidia chips over surging demand">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Amazon just tripled its order of Nvidia chips over ‘surging demand’ — flip for details">
+	<div class="meta"><span class="src" style="color:#34d399">TECHCRUNCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-26T23:47:18.000Z">7:47 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Amazon just tripled its order of Nvidia chips over ‘surging demand’</h3>
+	<p class="snippet">Amazon is adding another 2 million Nvidia GPU chips to its data centers over the next two years. But this extended partnerships stretches beyond buying more chips.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Amazon just tripled its order of Nvidia chips over ‘surging demand’</h3>
+	<p class="about">Amazon is adding another 2 million Nvidia GPU chips to its data centers over the next two years. But this extended partnerships stretches beyond buying more chips.</p>
+	<p class="why"><span class="whylabel">matched</span> <span class="whykey">Nvidia</span> <span class="whystrength" title="How strongly this matched your interest (decayed frequency: 2.0)">match</span></p>
+	
+	<a class="more" href="https://techcrunch.com/2026/08/26/amazon-just-tripled-its-order-of-nvidia-chips-over-surging-demand/" target="_blank" rel="noopener noreferrer">TechCrunch &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -12833,7 +12879,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2477 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2475 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.xxlmag.com/?p=1086589" data-cat="music" data-sent="0" data-slug="lil durk cooperating witnesses otf jam murder trial" hidden="until-found"><span class="ameta">XXL &middot; Aug 24 &middot; Music</span><a href="https://www.xxlmag.com/lil-durk-cooperating-witnesses-otf-jam-murder-trial/" target="_blank" rel="noopener noreferrer">Cooperating Witnesses Include OTF Jam in Lil Durk&#39;s Trial</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/cg59814gvj9o#15" data-cat="sports" data-sent="0" data-slug="sport football articles cg59814gvj9o" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 24 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/football/articles/cg59814gvj9o" target="_blank" rel="noopener noreferrer">Who has made Troy&#39;s Premier League team of the week?</a></li>
@@ -15310,8 +15356,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.fiercehealthcare.com/e8f74d83-87c3-4d63-a105-94a1d3f99260" data-cat="healthcare" data-sent="0" data-slug="finance pwc report claims womens oncology will grow 65b 75b today 100b 110b recommends" hidden="until-found"><span class="ameta">FIERCE HEALTHCARE &middot; Aug 17 &middot; Healthcare</span><a href="https://www.fiercehealthcare.com/finance/pwc-report-claims-womens-oncology-will-grow-65b-75b-today-100b-110b-2030-recommends" target="_blank" rel="noopener noreferrer">Women&#39;s oncology market will reach $110B by 2030 across therapeutics, diagnostics and care delivery</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240607" data-cat="entertainment" data-sent="0" data-slug="review ascendance bookworm part adopted daughter archduke episode" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 17 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/review/ascendance-of-a-bookworm-part-3-adopted-daughter-of-an-archduke/episode-18/.240607" target="_blank" rel="noopener noreferrer">Ascendance of a Bookworm Part 3: Adopted Daughter of an Archduke ‒ Episode 18</a></li>
 <li class="arow" data-count="1" data-id="rss:WP-MKTW-0005182544" data-cat="markets" data-sent="0" data-slug="story stanley druckenmiller ditched these chip plays before the selloff heres how hes playing tech sector" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 17 &middot; Markets</span><a href="https://www.marketwatch.com/story/stanley-druckenmiller-ditched-these-chip-plays-before-the-selloff-heres-how-hes-playing-the-tech-sector-now-9115c06f?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Stanley Druckenmiller ditched these chip plays before the selloff. Here’s how he’s playing the tech sector now.</a></li>
-<li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000724969" data-cat="games" data-sent="0" data-slug="kingdom hearts release date late confirmed tetsuya nomura" hidden="until-found"><span class="ameta">KOTAKU &middot; Aug 17 &middot; Games</span><a href="https://kotaku.com/kingdom-hearts-4-release-date-late-2027-confirmed-tetsuya-nomura-2000724969" target="_blank" rel="noopener noreferrer">Don’t Worry About Delays, Kingdom Hearts 4 Directors Say Late 2027 Release Date Is ‘A 100-Percent Thing’</a></li>
-<li class="arow" data-count="1" data-id="rss:https://dev.to/davidjrpereira/iniciando-minha-jornada-em-ads-configurando-o-ambiente-com-git-vs-code-e-github-2hdh" data-cat="dev" data-sent="0" data-slug="davidjrpereira iniciando minha jornada ads configurando ambiente com git code github 2hdh" hidden="until-found"><span class="ameta">DEV.TO &middot; Aug 17 &middot; Dev</span><a href="https://dev.to/davidjrpereira/iniciando-minha-jornada-em-ads-configurando-o-ambiente-com-git-vs-code-e-github-2hdh" target="_blank" rel="noopener noreferrer">Iniciando minha jornada em ADS: Configurando o ambiente com Git, VS Code e GitHub</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
