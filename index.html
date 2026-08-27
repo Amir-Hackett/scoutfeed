@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-27T01:13:56.020Z">
+<meta name="sf-version" content="2026-08-27T02:14:26.219Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -532,13 +532,13 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
 :root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
-:root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(183 55% 72%)"] { color: #186a6e !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
@@ -672,10 +672,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 9:13 PM &middot; 298 TODAY</p>
+	<p class="stats">UPDATED 10:14 PM &middot; 299 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">158</span><span class="sr-only"> — 158 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">95</span><span class="sr-only"> — 95 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">247</span><span class="sr-only"> — 247 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">395</span><span class="sr-only"> — 395 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">322</span><span class="sr-only"> — 322 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">433</span><span class="sr-only"> — 433 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">183</span><span class="sr-only"> — 183 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">480</span><span class="sr-only"> — 480 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">136</span><span class="sr-only"> — 136 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">23</span><span class="sr-only"> — 23 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">528</span><span class="sr-only"> — 528 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">158</span><span class="sr-only"> — 158 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">94</span><span class="sr-only"> — 94 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">247</span><span class="sr-only"> — 247 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">395</span><span class="sr-only"> — 395 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">322</span><span class="sr-only"> — 322 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">433</span><span class="sr-only"> — 433 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">183</span><span class="sr-only"> — 183 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">480</span><span class="sr-only"> — 480 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">136</span><span class="sr-only"> — 136 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">23</span><span class="sr-only"> — 23 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">529</span><span class="sr-only"> — 529 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -891,43 +891,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://tennishead.net/andrey-rublev-gives-his-verdict-on-mirra-andreevas-performance-in-their-us-open-mixed-doubles-pairing/" target="_blank" rel="noopener noreferrer">Andrey Rublev gives his verdict on Mirra Andreeva&#39;s performance in their US Open mixed doubles pairing</a>
-		<p class="trend-meta"><span class="src">TENNISHEAD</span><span class="sep" aria-hidden="true">&middot;</span>"mirra andreeva" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.foxnews.com/outkick-sports/ex-espn-host-cindy-brunson-embarrasses-herself-trying-discredit-caitlin-clark" target="_blank" rel="noopener noreferrer">Ex-ESPN host Cindy Brunson embarrasses herself trying to discredit Caitlin Clark</a>
+		<p class="trend-meta"><span class="src">FOX NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"cindy brunson" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.usopen.org/en_US/news/articles/2026-08-25/andreeva-rublev_defeat_shnaider-ruud_in_2026_us_open_mixed_doubles.html" target="_blank" rel="noopener noreferrer">Andreeva/Rublev defeat Shnaider/Ruud in 2026 US Open Mixed Doubles</a>
-		<p class="trend-meta"><span class="src">US OPEN TENNIS</span><span class="sep" aria-hidden="true">&middot;</span>"rublev" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.yahoo.com/entertainment/celebrity/articles/jodie-sweetin-says-john-stamos-002507551.html" target="_blank" rel="noopener noreferrer">Jodie Sweetin says John Stamos walked around Disney World yelling ‘Have mercy’</a>
+		<p class="trend-meta"><span class="src">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"jodie sweetin" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.fantasypros.com/mlb/news/604303/tommy-edman-swipes-bag-scores-twice-narrow-loss.php" target="_blank" rel="noopener noreferrer">Tommy Edman swipes bag, scores twice in narrow loss</a>
-		<p class="trend-meta"><span class="src">FANTASYPROS</span><span class="sep" aria-hidden="true">&middot;</span>"tommy edman" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://online-bookmakers.com/sports-betting/jerome-kym-v-colton-smith-2026-08-26/" target="_blank" rel="noopener noreferrer">Jerome Kym vs. Colton Smith 26 August 2026 | H2H, Betting Tips &amp; Odds</a>
+		<p class="trend-meta"><span class="src">ONLINE-BOOKMAKERS.COM</span><span class="sep" aria-hidden="true">&middot;</span>"colton smith" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://meteofrance.com/actualites/meteo-forts-orages-sur-louest-du-pays-ce-mercredi" target="_blank" rel="noopener noreferrer">Weather: severe thunderstorms across the west of the country on Wednesday</a>
-		<p class="trend-meta"><span class="src">METEO FRANCE</span><span class="sep" aria-hidden="true">&middot;</span>"météo demain" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.nytimes.com/athletic/7541080/2026/08/26/how-to-watch-tempo-vs-storm-tv-channel-and-streaming-options-for-august-26/" target="_blank" rel="noopener noreferrer">How to watch Tempo vs. Storm: TV channel and streaming options for August 26</a>
+		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"tempo vs storm" &middot; 5000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.cnbc.com/video/2026/08/25/europes-support-for-ukrainian-deep-strike-capabilities-send-important-message-to-putin--analyst.html" target="_blank" rel="noopener noreferrer">Europe&#39;s support for Ukraine deep strikes sends Putin message: analyst</a>
-		<p class="trend-meta"><span class="src">CNBC</span><span class="sep" aria-hidden="true">&middot;</span>"independence day" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://espndeportes.espn.com/futbol/colombia/nota/_/id/17168061/nacional-vs-deportivo-cali-liga-betplay-equipo-fecha-hora-tv-en-vivo" target="_blank" rel="noopener noreferrer">LIVE! Atlético Nacional vs. Deportivo Cali on matchday 7 of the Liga BetPlay</a>
+		<p class="trend-meta"><span class="src">ESPN DEPORTES</span><span class="sep" aria-hidden="true">&middot;</span>"atlético nacional - deportivo cali" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://people.com/stockard-channing-makes-first-red-carpet-appearance-in-2-years-12069105" target="_blank" rel="noopener noreferrer">Stockard Channing Walks First Red Carpet in 2 Years After Revealing She’s Been Living as a ‘Recluse’</a>
-		<p class="trend-meta"><span class="src">PEOPLE.COM</span><span class="sep" aria-hidden="true">&middot;</span>"stockard channing" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.thepopverse.com/comics-catwoman-dc-sean-murphy-black-label/" target="_blank" rel="noopener noreferrer">Sean Murphy is working on a Catwoman comic for DC Black Label</a>
+		<p class="trend-meta"><span class="src">POPVERSE</span><span class="sep" aria-hidden="true">&middot;</span>"sean murphy" &middot; 500+ searches</p>
 	</div>
 </li>
 </ol>
@@ -949,6 +949,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://kotaku.com/mega-man-dual-override-preview-gamescom-capcom-boss-2000727940" target="_blank" rel="noopener noreferrer">Kotaku &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 h2" style="--rail:#34d399" data-count="1" data-id="rss:https://arxiv.org/abs/2608.21560" data-srckey="hacker news" data-cat="tech" data-sent="0" data-ts="1787793985000" data-slug="abs">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="High-Resolution Imaging for Statistical Validation of TESS Planet Candidates — flip for details">
+	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-27T01:26:25.000Z">9:26 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">High-Resolution Imaging for Statistical Validation of TESS Planet Candidates</h3>
+	<p class="snippet">High-resolution imaging is widely used to constrain false-positive scenarios in exoplanet validation, but it is a finite follow-up resource that reaches only a subset of candidates, and its population</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">High-Resolution Imaging for Statistical Validation of TESS Planet Candidates</h3>
+	<p class="about">High-resolution imaging is widely used to constrain false-positive scenarios in exoplanet validation, but it is a finite follow-up resource that reaches only a subset of candidates, and its population</p>
+	
+	
+	<a class="more" href="https://arxiv.org/abs/2608.21560" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -12925,7 +12948,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2473 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2472 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.xxlmag.com/?p=1086589" data-cat="music" data-sent="0" data-slug="lil durk cooperating witnesses otf jam murder trial" hidden="until-found"><span class="ameta">XXL &middot; Aug 24 &middot; Music</span><a href="https://www.xxlmag.com/lil-durk-cooperating-witnesses-otf-jam-murder-trial/" target="_blank" rel="noopener noreferrer">Cooperating Witnesses Include OTF Jam in Lil Durk&#39;s Trial</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/cg59814gvj9o#15" data-cat="sports" data-sent="0" data-slug="sport football articles cg59814gvj9o" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 24 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/football/articles/cg59814gvj9o" target="_blank" rel="noopener noreferrer">Who has made Troy&#39;s Premier League team of the week?</a></li>
@@ -15399,7 +15422,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/skip-and-loafer-season-2-release-date-announced/" data-cat="entertainment" data-sent="0" data-slug="skip and loafer season release date announced" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 17 &middot; Entertainment</span><a href="https://www.polygon.com/skip-and-loafer-season-2-release-date-announced/" target="_blank" rel="noopener noreferrer">&#39;Skip and Loafer&#39; Season 2 Anime Finally Coming in 2027</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theverge.com/gadgets/980916/wiim-sound-speaker-lite-airpods-max-2-deal-sale" data-cat="tech" data-sent="0" data-slug="gadgets wiim sound speaker lite airpods max deal sale" hidden="until-found"><span class="ameta">THE VERGE &middot; Aug 17 &middot; Tech</span><a href="https://www.theverge.com/gadgets/980916/wiim-sound-speaker-lite-airpods-max-2-deal-sale" target="_blank" rel="noopener noreferrer">WiiM’s capable HomePod-esque smart speaker is almost $50 off</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.fiercehealthcare.com/ca089f93-ef63-43dd-be34-95cc8c5e4ff6" data-cat="healthcare" data-sent="0" data-slug="regulatory appeals court tosses methodology calculating nsa qualifying payment amounts" hidden="until-found"><span class="ameta">FIERCE HEALTHCARE &middot; Aug 17 &middot; Healthcare</span><a href="https://www.fiercehealthcare.com/regulatory/appeals-court-tosses-methodology-calculating-nsa-qualifying-payment-amounts" target="_blank" rel="noopener noreferrer">Appeals court tosses methodology for calculating NSA qualifying payment amounts</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.fiercehealthcare.com/e8f74d83-87c3-4d63-a105-94a1d3f99260" data-cat="healthcare" data-sent="0" data-slug="finance pwc report claims womens oncology will grow 65b 75b today 100b 110b recommends" hidden="until-found"><span class="ameta">FIERCE HEALTHCARE &middot; Aug 17 &middot; Healthcare</span><a href="https://www.fiercehealthcare.com/finance/pwc-report-claims-womens-oncology-will-grow-65b-75b-today-100b-110b-2030-recommends" target="_blank" rel="noopener noreferrer">Women&#39;s oncology market will reach $110B by 2030 across therapeutics, diagnostics and care delivery</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
