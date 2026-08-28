@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-28T03:22:10.801Z">
+<meta name="sf-version" content="2026-08-28T04:25:15.531Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -532,13 +532,15 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
+:root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
-:root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
+:root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
@@ -546,14 +548,12 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
-:root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
 :root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
-:root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] .meta [style*="hsl(183 55% 72%)"] { color: #186a6e !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(111 55% 72%)"] { color: #2f6e23 !important; }
@@ -672,10 +672,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 11:22 PM &middot; 306 TODAY</p>
+	<p class="stats">UPDATED 12:25 AM &middot; 1 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">172</span><span class="sr-only"> — 172 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">86</span><span class="sr-only"> — 86 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">237</span><span class="sr-only"> — 237 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">397</span><span class="sr-only"> — 397 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">322</span><span class="sr-only"> — 322 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">433</span><span class="sr-only"> — 433 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">183</span><span class="sr-only"> — 183 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">489</span><span class="sr-only"> — 489 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">134</span><span class="sr-only"> — 134 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">23</span><span class="sr-only"> — 23 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">524</span><span class="sr-only"> — 524 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">170</span><span class="sr-only"> — 170 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">84</span><span class="sr-only"> — 84 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">237</span><span class="sr-only"> — 237 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">398</span><span class="sr-only"> — 398 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">330</span><span class="sr-only"> — 330 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">432</span><span class="sr-only"> — 432 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">182</span><span class="sr-only"> — 182 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">485</span><span class="sr-only"> — 485 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">134</span><span class="sr-only"> — 134 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">23</span><span class="sr-only"> — 23 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">525</span><span class="sr-only"> — 525 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -891,48 +891,77 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nytimes.com/athletic/7541124/2026/08/27/49ers-roster-battle-left-guard-carver-willis/" target="_blank" rel="noopener noreferrer">Why is 49ers’ Carver Willis getting another start at LG? The rookie needs the reps</a>
-		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"49ers score" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.chargers.com/news/trey-lance-dj-uiagalelei-mike-mcdaniel-offense" target="_blank" rel="noopener noreferrer">How Trey Lance &amp; DJ Uiagalelei Are Approaching Chargers Preseason Finale</a>
+		<p class="trend-meta"><span class="src">LOS ANGELES CHARGERS</span><span class="sep" aria-hidden="true">&middot;</span>"dj uiagalelei" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.infobae.com/america/ciencia-america/2026/08/27/eclipse-lunar-2026-como-y-donde-ver-el-ultimo-gran-espectaculo-celeste-del-ano/" target="_blank" rel="noopener noreferrer">2026 Lunar Eclipse, live: the last great astronomical spectacle of the year has begun</a>
-		<p class="trend-meta"><span class="src">INFOBAE</span><span class="sep" aria-hidden="true">&middot;</span>"eclipse hoy" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://inmusicblog.com/rap/young-thug-slime-language-3-release/" target="_blank" rel="noopener noreferrer">Young Thug Announces New Album ‘Slime Language 3’: Here’s When It Drops</a>
+		<p class="trend-meta"><span class="src">INMUSIC BLOG</span><span class="sep" aria-hidden="true">&middot;</span>"slime language 3" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.tvline.com/2245179/quote-of-the-day-theo-james-love/" target="_blank" rel="noopener noreferrer">Quote Of The Day By Theo James: &#39;Everybody Has A Bit Of Body Armor They Wear To Protect Themselves, And Love Is About Trying To Break It Down...&#39;</a>
-		<p class="trend-meta"><span class="src">TVLINE</span><span class="sep" aria-hidden="true">&middot;</span>"theo james" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.morningstar.com/news/pr-newswire/20260827sf34860/introducing-siiiba-a-new-wellness-and-hygiene-brand-made-for-growing-bodies" target="_blank" rel="noopener noreferrer">INTRODUCING SIIIBA: A NEW WELLNESS AND HYGIENE BRAND MADE FOR GROWING BODIES</a>
+		<p class="trend-meta"><span class="src">MORNINGSTAR</span><span class="sep" aria-hidden="true">&middot;</span>"tween" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nfl.com/videos/49ers-lead-for-first-time-with-pineiro-s-59-yard-fg" target="_blank" rel="noopener noreferrer">49ers lead for first time with Piñeiro&#39;s 59-yard FG</a>
-		<p class="trend-meta"><span class="src">NFL.COM</span><span class="sep" aria-hidden="true">&middot;</span>"eddy pineiro" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://cbsaustin.com/news/local/usda-recalls-30000-pounds-of-argentine-beef-sold-in-texas-and-florida" target="_blank" rel="noopener noreferrer">USDA recalls 30,000 pounds of Argentine beef sold in Texas and Florida</a>
+		<p class="trend-meta"><span class="src">KEYE</span><span class="sep" aria-hidden="true">&middot;</span>"beef recalled" &middot; 5000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://theconversation.com/nasa-is-gearing-up-to-launch-its-next-flagship-space-telescope-combining-spy-technology-with-sophisticated-infrared-detectors-290040" target="_blank" rel="noopener noreferrer">NASA is gearing up to launch its next flagship space telescope – combining spy technology with sophisticated infrared detectors</a>
-		<p class="trend-meta"><span class="src">THE CONVERSATION</span><span class="sep" aria-hidden="true">&middot;</span>"nasa" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.worldjournal.com/wj/story/121617/9716956?zh-cn" target="_blank" rel="noopener noreferrer">New York to See Near-Total Blood Moon Starting 9 p.m. This Friday</a>
+		<p class="trend-meta"><span class="src">世界新聞網</span><span class="sep" aria-hidden="true">&middot;</span>"月食" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.kktv.com/2026/08/27/el-paso-county-commissioners-hear-buc-ees-zoning-appeal-thursday/" target="_blank" rel="noopener noreferrer">El Paso County commissioners approve Buc-ee’s zoning appeal</a>
-		<p class="trend-meta"><span class="src">KKTV</span><span class="sep" aria-hidden="true">&middot;</span>"buc ee&#39;s" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://sports.yahoo.com/articles/watch-louisiana-christian-vs-northwestern-223000843.html" target="_blank" rel="noopener noreferrer">How to watch Louisiana Christian vs Northwestern State: Live stream College Football, NCAA, TV channel</a>
+		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"northwestern state football" &middot; 200+ searches</p>
 	</div>
 </li>
 </ol>
 </section><section class="day">
-<h2><span class="date">THU, AUG 27, 2026</span><span class="rel">TODAY</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">FRI, AUG 28, 2026</span><span class="rel">TODAY</span><span class="rule" aria-hidden="true"></span></h2>
+<div class="grid">
+<article class="card lead has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.polygon.com/new-tv-shows-streaming-this-weekend-netflix-apple-tv-august-28-30/" data-srckey="polygon" data-cat="entertainment" data-sent="0" data-ts="1787889619000" data-slug="new shows streaming this weekend netflix apple august">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="8 New TV Shows to Watch This Weekend on Netflix, Apple TV, and Hulu (August 28-30) — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T04:00:19.000Z">12:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">8 New TV Shows to Watch This Weekend on Netflix, Apple TV, and Hulu (August 28-30)</h3>
+	<p class="snippet">This week&#39;s TV column features a beloved Gen-Z sitcom, a twisty sci-fi thriller, and more shows made newly available on the biggest streamers.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/dark-matter-1.jpg?w=680" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/dark-matter-1.jpg?w=340 340w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/dark-matter-1.jpg?w=680 680w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/dark-matter-1.jpg?w=1020 1020w" sizes="(max-width: 640px) 88vw, min(42vw, 340px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">8 New TV Shows to Watch This Weekend on Netflix, Apple TV, and Hulu (August 28-30)</h3>
+	<p class="about">This week&#39;s TV column features a beloved Gen-Z sitcom, a twisty sci-fi thriller, and more shows made newly available on the biggest streamers.</p>
+	
+	
+	<a class="more" href="https://www.polygon.com/new-tv-shows-streaming-this-weekend-netflix-apple-tv-august-28-30/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+
+</div>
+</section>
+<section class="day">
+<h2><span class="date">THU, AUG 27, 2026</span><span class="rel">YESTERDAY</span><span class="rule" aria-hidden="true"></span></h2>
 <div class="grid">
 <article class="card lead has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/report/985187/samsung-galaxy-s26-fe-hands-on-preview-specs-features-design" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1787832000000" data-slug="report samsung galaxy s26 hands preview specs features design">
 <div class="inner">
@@ -949,6 +978,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.theverge.com/report/985187/samsung-galaxy-s26-fe-hands-on-preview-specs-features-design" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241040" data-srckey="anime news network" data-cat="entertainment" data-sent="0" data-ts="1787889540000" data-slug="interest newspaper france theme park project lacks approval from dragon ball rights holders">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Newspaper: France&#39;s Theme Park Project Lacks Approval From Dragon Ball&#39;s Rights Holders — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(269 55% 72%)">ANIME NEWS NETWORK</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T03:59:00.000Z">11:59 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Newspaper: France&#39;s Theme Park Project Lacks Approval From Dragon Ball&#39;s Rights Holders</h3>
+	<p class="snippet">Le Monde: Saudi Arabia&#39;s Qiddiya Investment Company has not secured license for planned park</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.animenewsnetwork.com/thumbnails/crop600x315gII/cms/news.8/226592/n250713001-2.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Newspaper: France&#39;s Theme Park Project Lacks Approval From Dragon Ball&#39;s Rights Holders</h3>
+	<p class="about">Le Monde: Saudi Arabia&#39;s Qiddiya Investment Company has not secured license for planned park</p>
+	
+	
+	<a class="more" href="https://www.animenewsnetwork.com/interest/2026-08-27/newspaper-france-theme-park-project-lacks-approval-from-dragon-ball-rights-holders/.241040" target="_blank" rel="noopener noreferrer">Anime News Network &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1133,6 +1185,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.rollingstone.com/music/music-news/zara-larsson-best-new-artist-grammy-eligible-1235617035/" target="_blank" rel="noopener noreferrer">Rolling Stone Music &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/games/985891/grand-theft-auto-vi-gta-6-netflix-youtube-extended-look-game-movie" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1787872800000" data-slug="games grand theft auto gta netflix youtube extended look game movie">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The biggest video game of all time looks like a movie — flip for details">
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-27T23:20:00.000Z">7:20 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">The biggest video game of all time looks like a movie</h3>
+	<p class="snippet">I think I know why Rockstar Games debuted its &quot;extended look&quot; of Grand Theft Auto VI on Netflix instead of immediately dropping it for free on YouTube. Unlike most video game trailers, the almost 27-minute preview of GTA VI felt more like a slice of a prestige crime drama than any video game trailer that I&#39;ve ever seen. To make a new game that lasts another decade or more and potentially rivals…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">The biggest video game of all time looks like a movie</h3>
+	<p class="about">I think I know why Rockstar Games debuted its &quot;extended look&quot; of Grand Theft Auto VI on Netflix instead of immediately dropping it for free on YouTube. Unlike most video game trailers, the almost 27-minute preview of GTA VI felt more like a slice of a prestige crime drama than any video game trailer that I&#39;ve ever seen. To make a new game that lasts another decade or more and potentially rivals…</p>
+	
+	
+	<a class="more" href="https://www.theverge.com/games/985891/grand-theft-auto-vi-gta-6-netflix-youtube-extended-look-game-movie" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1785,6 +1860,29 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.eurogamer.net/gta-6-map-size-length-how-big-revealed" data-srckey="eurogamer" data-cat="games" data-sent="0" data-ts="1787866639000" data-slug="gta map size length how big revealed">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="GTA 6&#39;s map is so massive, you could fit two GTA 5s in it - and we know roughly how long it&#39;ll take to beat too — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">EUROGAMER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-27T21:37:19.000Z">5:37 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">GTA 6&#39;s map is so massive, you could fit two GTA 5s in it - and we know roughly how long it&#39;ll take to beat too</h3>
+	<p class="snippet">As part of its massive GTA 6 info blowout, Rockstar has been talking sizes - both of the map kind and length kind - confirming its latest open-world epic unfolds across a world that&#39;s twice as big as that of GTA 5, and should take around 80 hours to complete. Read more</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assetsio.gnwcdn.com/GTA-6-Extended-Look-Sky-Diving.png?width=340&amp;quality=85&amp;format=jpg&amp;auto=webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://assetsio.gnwcdn.com/GTA-6-Extended-Look-Sky-Diving.png?width=240&amp;quality=85&amp;format=jpg&amp;auto=webp 240w, https://assetsio.gnwcdn.com/GTA-6-Extended-Look-Sky-Diving.png?width=340&amp;quality=85&amp;format=jpg&amp;auto=webp 340w, https://assetsio.gnwcdn.com/GTA-6-Extended-Look-Sky-Diving.png?width=510&amp;quality=85&amp;format=jpg&amp;auto=webp 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">GTA 6&#39;s map is so massive, you could fit two GTA 5s in it - and we know roughly how long it&#39;ll take to beat too</h3>
+	<p class="about">As part of its massive GTA 6 info blowout, Rockstar has been talking sizes - both of the map kind and length kind - confirming its latest open-world epic unfolds across a world that&#39;s twice as big as that of GTA 5, and should take around 80 hours to complete. Read more</p>
+	
+	
+	<a class="more" href="https://www.eurogamer.net/gta-6-map-size-length-how-big-revealed" target="_blank" rel="noopener noreferrer">Eurogamer &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.polygon.com/gta-6-satire-trump-covid-pandemic-rockstar-games/" data-srckey="polygon" data-cat="games" data-sent="0" data-ts="1787866215000" data-slug="gta satire trump covid pandemic rockstar games">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="&#39;GTA 6&#39; Won&#39;t Parody Trump or COVID, Rockstar Says — flip for details">
@@ -1938,6 +2036,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://variety.com/2026/tv/news/scooby-doo-netflix-series-cast-andre-3000-cathy-moriarty-1236845596/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.eurogamer.net/twitch-down-outage-grand-theft-auto-6" data-srckey="eurogamer" data-cat="games" data-sent="0" data-ts="1787865045000" data-slug="twitch down outage grand theft auto">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Twitch suffers major outage following Grand Theft Auto 6&#39;s extended look gameplay trailer premiere — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">EUROGAMER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-27T21:10:45.000Z">5:10 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">Twitch suffers major outage following Grand Theft Auto 6&#39;s extended look gameplay trailer premiere</h3>
+	<p class="snippet">Popular livestreaming platform Twitch suffered a major outage soon after the premiere of the Grand Theft Auto 6 extended look on Netflix. Read more</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assetsio.gnwcdn.com/grand-theft-auto-6-man-holding-phone-near-lucia.png?width=1080&amp;quality=85&amp;format=jpg&amp;auto=webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://assetsio.gnwcdn.com/grand-theft-auto-6-man-holding-phone-near-lucia.png?width=600&amp;quality=85&amp;format=jpg&amp;auto=webp 600w, https://assetsio.gnwcdn.com/grand-theft-auto-6-man-holding-phone-near-lucia.png?width=1080&amp;quality=85&amp;format=jpg&amp;auto=webp 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Twitch suffers major outage following Grand Theft Auto 6&#39;s extended look gameplay trailer premiere</h3>
+	<p class="about">Popular livestreaming platform Twitch suffered a major outage soon after the premiere of the Grand Theft Auto 6 extended look on Netflix. Read more</p>
+	
+	
+	<a class="more" href="https://www.eurogamer.net/twitch-down-outage-grand-theft-auto-6" target="_blank" rel="noopener noreferrer">Eurogamer &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -2728,6 +2849,29 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact w2 has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.eurogamer.net/gta-6-activities-things-to-do-spotted-so-far" data-srckey="eurogamer" data-cat="games" data-sent="0" data-ts="1787859960000" data-slug="gta activities things spotted far">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Every activity we&#39;ve spotted in GTA 6&#39;s extended look trailer and previews so far — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">EUROGAMER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-27T19:46:00.000Z">3:46 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">Every activity we&#39;ve spotted in GTA 6&#39;s extended look trailer and previews so far</h3>
+	<p class="snippet">Anyone who played a Grand Theft Auto game before will tell you that a lot of the fun comes from everything you can do outside of scripted story sequences. GTA 6 looks to offer a wide range of things to do in Leonida that don&#39;t include shooting people or driving recklessly. Read more</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assetsio.gnwcdn.com/grand-theft-auto-6-lucia-lifting-weights.png?width=340&amp;quality=85&amp;format=jpg&amp;auto=webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://assetsio.gnwcdn.com/grand-theft-auto-6-lucia-lifting-weights.png?width=240&amp;quality=85&amp;format=jpg&amp;auto=webp 240w, https://assetsio.gnwcdn.com/grand-theft-auto-6-lucia-lifting-weights.png?width=340&amp;quality=85&amp;format=jpg&amp;auto=webp 340w, https://assetsio.gnwcdn.com/grand-theft-auto-6-lucia-lifting-weights.png?width=510&amp;quality=85&amp;format=jpg&amp;auto=webp 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Every activity we&#39;ve spotted in GTA 6&#39;s extended look trailer and previews so far</h3>
+	<p class="about">Anyone who played a Grand Theft Auto game before will tell you that a lot of the fun comes from everything you can do outside of scripted story sequences. GTA 6 looks to offer a wide range of things to do in Leonida that don&#39;t include shooting people or driving recklessly. Read more</p>
+	
+	
+	<a class="more" href="https://www.eurogamer.net/gta-6-activities-things-to-do-spotted-so-far" target="_blank" rel="noopener noreferrer">Eurogamer &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:fcfbf143-8e38-47a3-9413-f1ed49931846" data-srckey="ign" data-cat="games" data-sent="0" data-ts="1787859506000" data-slug="articles heres every song featured rockstars gta extended look">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Here&#39;s Every Song Featured in Rockstar&#39;s GTA 6 Extended Look — flip for details">
@@ -2812,6 +2956,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://variety.com/2026/tv/news/gta-6-netflix-trailer-extended-look-release-1236845475/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.eurogamer.net/gta-6-leaker-cashes-out--cyberleek-crypto-scheme" data-srckey="eurogamer" data-cat="games" data-sent="0" data-ts="1787857967000" data-slug="gta leaker cashes out cyberleek crypto scheme">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The massive GTA 6 leaks might be done for good as Cyberleek cashes out nearly £200,000 from their crypto scheme — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">EUROGAMER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-27T19:12:47.000Z">3:12 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">The massive GTA 6 leaks might be done for good as Cyberleek cashes out nearly £200,000 from their crypto scheme</h3>
+	<p class="snippet">Mere hours before Rockstar Games revealed GTA 6 footage on its own terms, the hacker - or hacking group - behind the open-world game&#39;s massive leaks has pulled about $270,000 (or almost £200,000) out of their crypto scheme. Read more</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assetsio.gnwcdn.com/gta-6-oceanview.jpg?width=340&amp;quality=85&amp;format=jpg&amp;auto=webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://assetsio.gnwcdn.com/gta-6-oceanview.jpg?width=240&amp;quality=85&amp;format=jpg&amp;auto=webp 240w, https://assetsio.gnwcdn.com/gta-6-oceanview.jpg?width=340&amp;quality=85&amp;format=jpg&amp;auto=webp 340w, https://assetsio.gnwcdn.com/gta-6-oceanview.jpg?width=510&amp;quality=85&amp;format=jpg&amp;auto=webp 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">The massive GTA 6 leaks might be done for good as Cyberleek cashes out nearly £200,000 from their crypto scheme</h3>
+	<p class="about">Mere hours before Rockstar Games revealed GTA 6 footage on its own terms, the hacker - or hacking group - behind the open-world game&#39;s massive leaks has pulled about $270,000 (or almost £200,000) out of their crypto scheme. Read more</p>
+	
+	
+	<a class="more" href="https://www.eurogamer.net/gta-6-leaker-cashes-out--cyberleek-crypto-scheme" target="_blank" rel="noopener noreferrer">Eurogamer &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -3456,6 +3623,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://the-decoder.com/openais-rogue-ai-collective-was-smart-enough-to-break-out-of-sandboxes-but-dumb-enough-to-fight-a-ghost/" target="_blank" rel="noopener noreferrer">The Decoder &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/gadgets/985650/speedo-iq-vanquisher-goggles-module" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1787847531000" data-slug="gadgets speedo vanquisher goggles module">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Speedo’s new smart goggles module can track all four swim strokes — flip for details">
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-27T16:18:51.000Z">12:18 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Speedo’s new smart goggles module can track all four swim strokes</h3>
+	<p class="snippet">You can pair Speedo’s Vanquisher goggles with its iQ module. | Image: Speedo Speedo is launching a removable smart module for its Vanquisher goggles that can analyze a swimmer&#39;s performance across all four swim strokes: freestyle, backstroke, breaststroke, and butterfly. The new Speedo iQ system uses swim-specific sensors to analyze head movement in the water, time breaths, and track distance per…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/8-E000235012-B1.webp?quality=90&amp;strip=all&amp;crop=0%2C23.821989528796%2C100%2C52.356020942408&amp;w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/8-E000235012-B1.webp?quality=90&amp;strip=all&amp;crop=0%2C23.821989528796%2C100%2C52.356020942408&amp;w=600 600w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/8-E000235012-B1.webp?quality=90&amp;strip=all&amp;crop=0%2C23.821989528796%2C100%2C52.356020942408&amp;w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Speedo’s new smart goggles module can track all four swim strokes</h3>
+	<p class="about">You can pair Speedo’s Vanquisher goggles with its iQ module. | Image: Speedo Speedo is launching a removable smart module for its Vanquisher goggles that can analyze a swimmer&#39;s performance across all four swim strokes: freestyle, backstroke, breaststroke, and butterfly. The new Speedo iQ system uses swim-specific sensors to analyze head movement in the water, time breaths, and track distance per…</p>
+	
+	
+	<a class="more" href="https://www.theverge.com/gadgets/985650/speedo-iq-vanquisher-goggles-module" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -7975,7 +8165,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2686 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2678 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240742" data-cat="entertainment" data-sent="0" data-slug="interest christian metal band demon hunter sues over kpop hunters trademark" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 26 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/interest/2026-08-26/christian-metal-band-demon-hunter-sues-over-kpop-demon-hunters-trademark/.240742" target="_blank" rel="noopener noreferrer">Christian Metal Band Demon Hunter Sues Over KPop Demon Hunters Trademark</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/zt8abs" data-cat="dev" data-sent="0" data-slug="cant release that html" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 26 &middot; Dev</span><a href="https://notes.highlysuspect.agency/cant-release-that.html" target="_blank" rel="noopener noreferrer">If I release it, you won’t get the same experience I get</a></li>
@@ -8598,6 +8788,8 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:ebf64e72-cad8-44e2-87f6-da823d70bfd6" data-cat="markets" data-sent="0" data-slug="policy chainalysis run sting targets child exploitation networks with aid binance coinbase" hidden="until-found"><span class="ameta">COINDESK &middot; Aug 25 &middot; Markets</span><a href="https://www.coindesk.com/policy/2026/08/24/chainalysis-run-sting-targets-child-exploitation-networks-with-aid-of-binance-coinbase" target="_blank" rel="noopener noreferrer">Chainalysis-run sting targets child exploitation networks with aid of Binance, Coinbase</a></li>
 <li class="arow" data-count="1" data-id="rss:db33bed8-7f74-4e6f-9c29-94f1ef663d64" data-cat="markets" data-sent="0" data-slug="opinion mica revolutionised european crypto and left poland licking its wounds" hidden="until-found"><span class="ameta">COINDESK &middot; Aug 25 &middot; Markets</span><a href="https://www.coindesk.com/opinion/2026/08/24/mica-revolutionised-european-crypto-and-left-poland-licking-its-wounds" target="_blank" rel="noopener noreferrer">MiCA revolutionised European crypto, and left Poland licking its wounds</a></li>
 <li class="arow" data-count="1" data-id="rss:US-EN-49715273" data-cat="sports" data-sent="0" data-slug="nfl story dallas cowboys shiyazh pete brian schottenheimer postgame speech" hidden="until-found"><span class="ameta">ESPN &middot; Aug 25 &middot; Sports</span><a href="https://www.espn.com/nfl/story/_/id/49715273/dallas-cowboys-shiyazh-pete-brian-schottenheimer-postgame-speech" target="_blank" rel="noopener noreferrer">Schottenheimer, Pete reflect on undrafted rookie OL&#39;s viral postgame speech</a></li>
+<li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/the-witcher-4-release-date-sony-disc-controversy" data-cat="games" data-sent="0" data-slug="the witcher release date sony disc controversy" hidden="until-found"><span class="ameta">EUROGAMER &middot; Aug 25 &middot; Games</span><a href="https://www.eurogamer.net/the-witcher-4-release-date-sony-disc-controversy" target="_blank" rel="noopener noreferrer">The Witcher 4&#39;s 2028 release date sparks PS5 physical release concerns, but is there anything CD Projekt Red can do to avoid Sony&#39;s decision?</a></li>
+<li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/iron-man-avalanche-studios-gameplay-leak" data-cat="games" data-sent="0" data-slug="iron man avalanche studios gameplay leak" hidden="until-found"><span class="ameta">EUROGAMER &middot; Aug 25 &middot; Games</span><a href="https://www.eurogamer.net/iron-man-avalanche-studios-gameplay-leak" target="_blank" rel="noopener noreferrer">Open-world Iron Man game footage leaks, showing an hour of Just Cause dev Avalanche&#39;s cancelled Marvel game</a></li>
 <li class="arow" data-count="1" data-id="rss:https://the-decoder.com/?p=39412" data-cat="ai" data-sent="0" data-slug="nvidia says its groq lpx four times faster than cerebras but the math more complicated" hidden="until-found"><span class="ameta">THE DECODER &middot; Aug 25 &middot; AI</span><a href="https://the-decoder.com/nvidia-says-its-groq-3-lpx-is-four-times-faster-than-cerebras-but-the-math-is-more-complicated/" target="_blank" rel="noopener noreferrer">Nvidia says its Groq 3 LPX is four times faster than Cerebras, but the math is more complicated</a></li>
 <li class="arow" data-count="1" data-id="rss:https://the-decoder.com/?p=39405" data-cat="ai" data-sent="0" data-slug="ukraine opens its massive labeled battlefield dataset british firms landmark weapons partnership" hidden="until-found"><span class="ameta">THE DECODER &middot; Aug 25 &middot; AI</span><a href="https://the-decoder.com/ukraine-opens-its-massive-labeled-battlefield-dataset-to-british-firms-in-a-landmark-ai-weapons-partnership/" target="_blank" rel="noopener noreferrer">Ukraine opens its massive labeled battlefield dataset to British firms in a landmark AI weapons partnership</a></li>
 <li class="arow" data-count="1" data-id="rss:US-EN-49682968" data-cat="sports" data-sent="0" data-slug="nfl story denver broncos quarterback nix year improvement slow dropbacks progressions" hidden="until-found"><span class="ameta">ESPN &middot; Aug 25 &middot; Sports</span><a href="https://www.espn.com/nfl/story/_/id/49682968/denver-broncos-quarterback-bo-nix-year-3-improvement-slow-dropbacks-progressions" target="_blank" rel="noopener noreferrer">The key to Bo Nix blossoming in Year 3? Slowing down his dropbacks and progressions</a></li>
@@ -9701,6 +9893,7 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:0eb1c808-9bfc-4786-8438-75bef1145201" data-cat="world" data-sent="0" data-slug="more flexible response needed curb deadly ebola outbreak drc" hidden="until-found"><span class="ameta">MSF &middot; Aug 21 &middot; World</span><a href="https://www.msf.org/more-flexible-response-needed-curb-deadly-ebola-outbreak-drc" target="_blank" rel="noopener noreferrer">More flexible response needed to curb deadly Ebola outbreak in DRC</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/dxjbaj" data-cat="dev" data-sent="0" data-slug="bazzites biggest update deck has launched happy birthday universal blue" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 21 &middot; Dev</span><a href="https://universal-blue.discourse.group/t/bazzites-biggest-update-deck-44-has-launched-happy-birthday-to-universal-blue/12373" target="_blank" rel="noopener noreferrer">Bazzite Deck 44 Launches Today</a></li>
 <li class="arow" data-count="1" data-id="rss:108352063" data-cat="markets" data-sent="0" data-slug="new york san francisco tech talent cbre html" hidden="until-found"><span class="ameta">CNBC &middot; Aug 21 &middot; Markets</span><a href="https://www.cnbc.com/2026/08/21/new-york-san-francisco-tech-talent-cbre.html" target="_blank" rel="noopener noreferrer">New York unseats San Francisco as the top market for tech talent, CBRE reports</a></li>
+<li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/dave-bautista-kratos-god-of-war-amazon-live-action-series" data-cat="entertainment" data-sent="0" data-slug="dave bautista kratos god war amazon live action series" hidden="until-found"><span class="ameta">EUROGAMER &middot; Aug 21 &middot; Entertainment</span><a href="https://www.eurogamer.net/dave-bautista-kratos-god-of-war-amazon-live-action-series" target="_blank" rel="noopener noreferrer">Following rumoured talks, Guardians of the Galaxy&#39;s Dave Bautista has reportedly now signed as Kratos in Amazon&#39;s God of War</a></li>
 <li class="arow" data-count="1" data-id="rss:698b6dd7946803254653e9ad" data-cat="tech" data-sent="0" data-slug="story the best electric toothbrush for healthier teeth and gums" hidden="until-found"><span class="ameta">WIRED &middot; Aug 21 &middot; Tech</span><a href="https://www.wired.com/story/the-best-electric-toothbrush-for-healthier-teeth-and-gums/" target="_blank" rel="noopener noreferrer">5 Best Electric Toothbrushes (2026): Philips, Oral-B, Quip, More</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/gta-6-leaks-cyberleek-crypto-scheme/" data-cat="games" data-sent="0" data-slug="gta leaks cyberleek crypto scheme" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 21 &middot; Games</span><a href="https://www.polygon.com/gta-6-leaks-cyberleek-crypto-scheme/" target="_blank" rel="noopener noreferrer">GTA 6 Leaks Could Be Part of a Big Crypto Scheme</a></li>
 <li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/news/coldcard-upgrade-strengthen-seed-phrase-generation" data-cat="markets" data-sent="0" data-slug="news coldcard upgrade strengthen seed phrase generation" hidden="until-found"><span class="ameta">COINTELEGRAPH &middot; Aug 21 &middot; Markets</span><a href="https://cointelegraph.com/news/coldcard-upgrade-strengthen-seed-phrase-generation" target="_blank" rel="noopener noreferrer">Coldcard strengthens seed generation with firmware update</a></li>
@@ -9709,6 +9902,7 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://the-decoder.com/?p=39274" data-cat="ai" data-sent="0" data-slug="anthropic changes data retention policy after enterprise pushback" hidden="until-found"><span class="ameta">THE DECODER &middot; Aug 21 &middot; AI</span><a href="https://the-decoder.com/anthropic-changes-data-retention-policy-after-enterprise-pushback/" target="_blank" rel="noopener noreferrer">Anthropic changes data retention policy after enterprise pushback</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cj9dmw8183wo#0" data-cat="world" data-sent="0" data-slug="news articles cj9dmw8183wo" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 21 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/cj9dmw8183wo" target="_blank" rel="noopener noreferrer">Eight killed in plane crash at remote Alaskan military site, air force says</a></li>
 <li class="arow" data-count="1" data-id="rss:6a849878eab23e58b199cad6" data-cat="tech" data-sent="0" data-slug="story early tech labor day sales" hidden="until-found"><span class="ameta">WIRED &middot; Aug 21 &middot; Tech</span><a href="https://www.wired.com/story/early-tech-labor-day-sales-2026/" target="_blank" rel="noopener noreferrer">Best Early Tech Labor Day Sales I’d Shop Myself (2026): AirTags, Dyson, and More</a></li>
+<li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/mortal-shell-2-review" data-cat="games" data-sent="0" data-slug="mortal shell review" hidden="until-found"><span class="ameta">EUROGAMER &middot; Aug 21 &middot; Games</span><a href="https://www.eurogamer.net/mortal-shell-2-review" target="_blank" rel="noopener noreferrer">Mortal Shell 2 review</a></li>
 <li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236838548" data-cat="entertainment" data-sent="0" data-slug="film global woody harrelson jason bateman martin mcdonagh coen brothers" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 21 &middot; Entertainment</span><a href="https://variety.com/2026/film/global/woody-harrelson-jason-bateman-martin-mcdonagh-coen-brothers-1236838548/" target="_blank" rel="noopener noreferrer">Woody Harrelson Ready to Direct Another Live Film, Compares Jason Bateman’s ‘The Cackling of the Dodos’ to Martin McDonagh and the Coen Brothers</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/metal-gear-solid-master-collection-vol-2-review-roundup/" data-cat="games" data-sent="0" data-slug="metal gear solid master collection vol review roundup" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 21 &middot; Games</span><a href="https://www.polygon.com/metal-gear-solid-master-collection-vol-2-review-roundup/" target="_blank" rel="noopener noreferrer">Metal Gear Solid: Master Collection Vol. 2 Review Roundup: All Hail the Return of MGS4</a></li>
 <li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236839812" data-cat="entertainment" data-sent="0" data-slug="film news sriram raghavan johnny gaddaar thriller matchbox shots" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 21 &middot; Entertainment</span><a href="https://variety.com/2026/film/news/sriram-raghavan-johnny-gaddaar-thriller-matchbox-shots-1236839812/" target="_blank" rel="noopener noreferrer">Sriram Raghavan Developing New Thriller in the ‘Johnny Gaddaar’ Zone for India’s Matchbox Shots as ‘Operation Safed Sagar’ Soars on Netflix Charts (EXCLUSIVE)</a></li>
@@ -9927,6 +10121,8 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:WP-MKTW-0005190212" data-cat="markets" data-sent="0" data-slug="story treasury rout restarts one day after bessents beefed buyback plan 972766a1" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 20 &middot; Markets</span><a href="https://www.marketwatch.com/story/treasury-rout-restarts-one-day-after-bessents-beefed-up-buyback-plan-972766a1?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">U.S. bond yields are already surging again a day after Bessent’s debt-buyback plan</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/star-trek-strange-new-worlds-puppet-episode-interview/" data-cat="entertainment" data-sent="0" data-slug="star trek strange new worlds puppet episode interview" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 20 &middot; Entertainment</span><a href="https://www.polygon.com/star-trek-strange-new-worlds-puppet-episode-interview/" target="_blank" rel="noopener noreferrer">The Best Star Trek Episode of 2026 Takes the Sci-Fi Series to Chaotic New Heights</a></li>
 <li class="arow" data-count="1" data-id="rss:108352189" data-cat="markets" data-sent="0" data-slug="bessent says treasury buyback operation could more than billion html" hidden="until-found"><span class="ameta">CNBC &middot; Aug 20 &middot; Markets</span><a href="https://www.cnbc.com/2026/08/20/bessent-says-treasury-buyback-operation-could-be-more-than-4-billion.html" target="_blank" rel="noopener noreferrer">Bessent says Treasury buyback operation could be more than $4 billion</a></li>
+<li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/james-bond-007-first-light-sales" data-cat="games" data-sent="0" data-slug="james bond first light sales" hidden="until-found"><span class="ameta">EUROGAMER &middot; Aug 20 &middot; Games</span><a href="https://www.eurogamer.net/james-bond-007-first-light-sales" target="_blank" rel="noopener noreferrer">IO Interactive announces new sales milestone for James Bond game 007 First Light</a></li>
+<li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/the-duskbloods-release-date-nintendo-denied" data-cat="games" data-sent="0" data-slug="the duskbloods release date nintendo denied" hidden="until-found"><span class="ameta">EUROGAMER &middot; Aug 20 &middot; Games</span><a href="https://www.eurogamer.net/the-duskbloods-release-date-nintendo-denied" target="_blank" rel="noopener noreferrer">No, The Duskbloods isn&#39;t releasing on 24th September, according to Nintendo</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2240331/crunchyroll-appning-by-forvia-stream-on-car-infotainment-system/" data-cat="tech" data-sent="0" data-slug="crunchyroll appning forvia stream car infotainment system" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 20 &middot; Tech</span><a href="https://www.engadget.com/2240331/crunchyroll-appning-by-forvia-stream-on-car-infotainment-system/" target="_blank" rel="noopener noreferrer">You can soon stream Crunchyroll on your car&#39;s infotainment system</a></li>
 <li class="arow" data-count="1" data-id="rss:https://github.com/runvendo/vendo" data-cat="tech" data-sent="0" data-slug="runvendo vendo" hidden="until-found"><span class="ameta">HACKER NEWS &middot; Aug 20 &middot; Tech</span><a href="https://github.com/runvendo/vendo" target="_blank" rel="noopener noreferrer">Launch HN: Vendo (YC S26) – Let users build features on top of your product</a></li>
 <li class="arow" data-count="1" data-id="rss:9a61ab1f-2a32-4357-afd1-e1f506bd766b" data-cat="world" data-sent="0" data-slug="statement israeli military decision deny criminal investigation msf killings and injuries" hidden="until-found"><span class="ameta">MSF &middot; Aug 20 &middot; World</span><a href="https://www.msf.org/statement-israeli-military-decision-deny-criminal-investigation-msf-killings-and-injuries" target="_blank" rel="noopener noreferrer">Statement on Israeli military decision to deny a criminal investigation into MSF killings and injuries</a></li>
@@ -10649,20 +10845,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.theverge.com/tech/981562/sony-playstation-pulse-elevate-wireless-gaming-speakers-launch-date-preorder" data-cat="tech" data-sent="0" data-slug="tech sony playstation pulse elevate wireless gaming speakers launch date preorder" hidden="until-found"><span class="ameta">THE VERGE &middot; Aug 18 &middot; Tech</span><a href="https://www.theverge.com/tech/981562/sony-playstation-pulse-elevate-wireless-gaming-speakers-launch-date-preorder" target="_blank" rel="noopener noreferrer">PlayStation’s wireless gaming speakers launch in November</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cdx755dyy1yo#0" data-cat="world" data-sent="0" data-slug="news articles cdx755dyy1yo" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 18 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/cdx755dyy1yo" target="_blank" rel="noopener noreferrer">Earthquake rocks Spain&#39;s historic Granada, injuring three</a></li>
 <li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236837338" data-cat="entertainment" data-sent="0" data-slug="film global phyllida law dead emma thompson" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 18 &middot; Entertainment</span><a href="https://variety.com/2026/film/global/phyllida-law-dead-emma-thompson-1236837338/" target="_blank" rel="noopener noreferrer">Phyllida Law, Scottish Actress and Mother of Emma and Sophie Thompson, Dies at 94</a></li>
-<li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000725388" data-cat="games" data-sent="0" data-slug="tips know before you start playing mortal shell" hidden="until-found"><span class="ameta">KOTAKU &middot; Aug 18 &middot; Games</span><a href="https://kotaku.com/12-tips-to-know-before-you-start-playing-mortal-shell-2-2000725388" target="_blank" rel="noopener noreferrer">12 Tips To Know Before You Start Playing Mortal Shell 2</a></li>
-<li class="arow" data-count="1" data-id="rss:https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion" data-cat="ai" data-sent="0" data-slug="articles claude code may august weekly limits promotion" hidden="until-found"><span class="ameta">HACKER NEWS &middot; Aug 18 &middot; AI</span><a href="https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion" target="_blank" rel="noopener noreferrer">Claude Code weekly limits reduce by a third tomorrow</a></li>
-<li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236837236" data-cat="entertainment" data-sent="0" data-slug="news hidden heroes descendants story cast darren criss" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 18 &middot; Entertainment</span><a href="https://variety.com/2026/tv/news/hidden-heroes-a-descendants-story-cast-darren-criss-1236837236/" target="_blank" rel="noopener noreferrer">‘Hidden Heroes: A Descendants Story’ Adds 6 to Cast, Including Darren Criss as Jiminy Cricket and Sherry Cola as Yzma From ‘Emperor’s New Groove’</a></li>
-<li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236836647" data-cat="entertainment" data-sent="0" data-slug="gaming news sims mean girls clueless roundup week august" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 18 &middot; Entertainment</span><a href="https://variety.com/2026/gaming/news/sims-mean-girls-clueless-gaming-news-roundup-week-august-17-1236836647/" target="_blank" rel="noopener noreferrer">‘The Sims 4’ Sets In-Game Crossover With ‘Clueless’ and ‘Mean Girls’ (Gaming News Roundup)</a></li>
-<li class="arow" data-count="1" data-id="rss:f57a700c-13f2-481f-a6cd-b1f15bca1577" data-cat="sports" data-sent="0" data-slug="golf news amateur jack whaley champion college" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 18 &middot; Sports</span><a href="https://www.cbssports.com/golf/news/us-amateur-golf-jack-whaley-champion-college/" target="_blank" rel="noopener noreferrer">U.S. Amateur champion Jack Whaley describes most memorable moment from victorious week at Merion Golf Club</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/c2k7w3vwv5yo#0" data-cat="sports" data-sent="0" data-slug="sport football articles c2k7w3vwv5yo" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 18 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/football/articles/c2k7w3vwv5yo" target="_blank" rel="noopener noreferrer">Barcelona sign Rodri from Man City in £65m deal</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.xxlmag.com/?p=1086316" data-cat="music" data-sent="0" data-slug="eminem slim shady jordan auction" hidden="until-found"><span class="ameta">XXL &middot; Aug 18 &middot; Music</span><a href="https://www.xxlmag.com/eminem-slim-shady-jordan-3-auction/" target="_blank" rel="noopener noreferrer">45 Pairs of Eminem&#39;s &#39;Slim Shady&#39; Jordan 3s Up for Auction</a></li>
-<li class="arow" data-count="1" data-id="rss:WP-MKTW-0005185131" data-cat="healthcare" data-sent="0" data-slug="story soon you can buy medicare advantage plans costco what need know 34e03242" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 18 &middot; Healthcare</span><a href="https://www.marketwatch.com/story/soon-you-can-buy-medicare-advantage-plans-at-costco-what-you-need-to-know-34e03242?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Soon you can buy Medicare Advantage plans at Costco. What you need to know.</a></li>
-<li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/news/us-prosecutors-celsius-ceo-alex-mashinsky-motion-vacate-deny" data-cat="markets" data-sent="0" data-slug="news prosecutors celsius ceo alex mashinsky motion vacate deny" hidden="until-found"><span class="ameta">COINTELEGRAPH &middot; Aug 18 &middot; Markets</span><a href="https://cointelegraph.com/news/us-prosecutors-celsius-ceo-alex-mashinsky-motion-vacate-deny" target="_blank" rel="noopener noreferrer">Federal prosecutors blast ex-Celsius CEO’s motion to vacate as ‘without merit’</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.theverge.com/tech/981504/apple-app-store-eu-rules-core-technology-commission" data-cat="tech" data-sent="0" data-slug="tech apple app store rules core technology commission" hidden="until-found"><span class="ameta">THE VERGE &middot; Aug 18 &middot; Tech</span><a href="https://www.theverge.com/tech/981504/apple-app-store-eu-rules-core-technology-commission" target="_blank" rel="noopener noreferrer">Apple squashes EU beef with new App Store rules</a></li>
-<li class="arow" data-count="1" data-id="rss:WP-MKTW-0005184614" data-cat="ai" data-sent="0" data-slug="story chip stocks were riding high heres why micron and others are now pulling back cb4fd5af" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 18 &middot; AI</span><a href="https://www.marketwatch.com/story/ai-chip-stocks-were-riding-high-heres-why-micron-and-others-are-now-pulling-back-cb4fd5af?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">AI chip stocks were riding high. Here’s why Micron and others are now pulling back.</a></li>
-<li class="arow" data-count="1" data-id="rss:US-EN-49641437" data-cat="sports" data-sent="0" data-slug="racing story bold predictions rest returns summer break" hidden="until-found"><span class="ameta">ESPN &middot; Aug 18 &middot; Sports</span><a href="https://www.espn.com/racing/f1/story/_/id/49641437/bold-predictions-rest-2026-f1-returns-summer-break" target="_blank" rel="noopener noreferrer">Bold predictions for the rest of 2026 as F1 returns from summer break</a></li>
-<li class="arow" data-count="1" data-id="rss:US-EN-49649281" data-cat="sports" data-sent="0" data-slug="espn story founder bill rasmussen dies" hidden="until-found"><span class="ameta">ESPN &middot; Aug 18 &middot; Sports</span><a href="https://www.espn.com/espn/story/_/id/49649281/espn-founder-bill-rasmussen-dies-93" target="_blank" rel="noopener noreferrer">Bill Rasmussen, founder of ESPN, dies at 93</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.fiercehealthcare.com/5160024d-fa45-47fc-b697-2f33e5892589" data-cat="healthcare" data-sent="0" data-slug="payers former exec alleges alignment healthcare leaders juiced profits boost bonuses" hidden="until-found"><span class="ameta">FIERCE HEALTHCARE &middot; Aug 18 &middot; Healthcare</span><a href="https://www.fiercehealthcare.com/payers/former-exec-alleges-alignment-healthcare-leaders-juiced-profits-boost-bonuses" target="_blank" rel="noopener noreferrer">Alignment Health seeks to have former exec&#39;s whistleblower suit tossed</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
