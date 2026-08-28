@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-28T06:15:55.978Z">
+<meta name="sf-version" content="2026-08-28T07:20:01.732Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -532,14 +532,15 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
+:root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
+:root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
-:root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
-:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
@@ -547,7 +548,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
-:root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
@@ -672,10 +672,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 2:15 AM &middot; 6 TODAY</p>
+	<p class="stats">UPDATED 3:20 AM &middot; 9 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">169</span><span class="sr-only"> — 169 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">84</span><span class="sr-only"> — 84 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">239</span><span class="sr-only"> — 239 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">397</span><span class="sr-only"> — 397 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">329</span><span class="sr-only"> — 329 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">434</span><span class="sr-only"> — 434 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">183</span><span class="sr-only"> — 183 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">485</span><span class="sr-only"> — 485 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">133</span><span class="sr-only"> — 133 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">23</span><span class="sr-only"> — 23 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">524</span><span class="sr-only"> — 524 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">169</span><span class="sr-only"> — 169 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">84</span><span class="sr-only"> — 84 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">240</span><span class="sr-only"> — 240 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">398</span><span class="sr-only"> — 398 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">329</span><span class="sr-only"> — 329 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">435</span><span class="sr-only"> — 435 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">182</span><span class="sr-only"> — 182 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">484</span><span class="sr-only"> — 484 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">133</span><span class="sr-only"> — 133 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">23</span><span class="sr-only"> — 23 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">523</span><span class="sr-only"> — 523 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -891,43 +891,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.cbr.com/harry-potter-movie-moments-not-in-the-books-list/" target="_blank" rel="noopener noreferrer">8 Powerful Harry Potter Movie Moments That Aren’t In The Books</a>
-		<p class="trend-meta"><span class="src">CBR</span><span class="sep" aria-hidden="true">&middot;</span>"harry potter movies" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.cbssports.com/betting/news/draftkings-promo-code-claim-200-in-bonus-bets-steelers-bills-nfl-week-0-college-football-thursday/" target="_blank" rel="noopener noreferrer">DraftKings promo code: Claim $200 in bonus bets for Steelers-Bills, NFL, Week 0 college football, on Thursday</a>
+		<p class="trend-meta"><span class="src">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"draftkings promo code" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.pcgamer.com/games/action/hoyoverses-nodusfall-is-free-to-play-but-isnt-a-typical-gacha-game-characters-are-not-obtained-through-random-draws/" target="_blank" rel="noopener noreferrer">HoYoverse&#39;s Nodusfall is free to play but isn&#39;t a typical gacha game: &#39;Characters are not obtained through random draws&#39;</a>
-		<p class="trend-meta"><span class="src">PC GAMER</span><span class="sep" aria-hidden="true">&middot;</span>"nodusfall" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://m.sohu.com/a/1068634856_121953459?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334" target="_blank" rel="noopener noreferrer">Men&#39;s table tennis team misses the quarterfinals in all three events — what responsibility should Liu Guoliang bear?</a>
+		<p class="trend-meta"><span class="src">搜狐网</span><span class="sep" aria-hidden="true">&middot;</span>"刘国梁" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.justjared.com/2026/08/26/is-fernando-lindez-single-or-married-all-about-the-last-sunrise-actors-real-life-girlfriend/" target="_blank" rel="noopener noreferrer">Is Fernando Lindez Single or Married? All About the &#39;Last Sunrise&#39; Actor&#39;s Real-Life Girlfriend!</a>
-		<p class="trend-meta"><span class="src">JUST JARED</span><span class="sep" aria-hidden="true">&middot;</span>"fernando lindez" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.nytimes.com/2026/08/26/technology/bill-gates-ai-risks.html" target="_blank" rel="noopener noreferrer">Bill Gates Is Warning That A.I. Is More Dangerous Than Big Tech Will Admit</a>
+		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"gate" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.imdb.com/news/ni65989942/?ref_=nmnw_art_perm" target="_blank" rel="noopener noreferrer">‘Beauty in Black’ Season 3 Episode 2 Release Date and Time</a>
-		<p class="trend-meta"><span class="src">IMDB</span><span class="sep" aria-hidden="true">&middot;</span>"beauty in black season 4" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.cbssports.com/betting/news/betmgm-bonus-code-cbssports-get-1500-in-bonus-bets-raiders-49ers-nfl-preseason-mlb-games-thursday/" target="_blank" rel="noopener noreferrer">BetMGM bonus code CBSSPORTS: Get $1,500 in bonus bets for Raiders-49ers, NFL preseason, MLB games on Thursday</a>
+		<p class="trend-meta"><span class="src">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"betmgm" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://parade.com/living/nyt-strands-hints-answers-today-spangram-thursday-august-27-2026" target="_blank" rel="noopener noreferrer">Today’s NYT ‘Strands’ Hints, Spangram and Answers for Thursday, August 27, 2026</a>
-		<p class="trend-meta"><span class="src">PARADE MAGAZINE</span><span class="sep" aria-hidden="true">&middot;</span>"august 28, 1963" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://apnews.com/article/rfk-jr-kennedy-samoa-vaccines-mmr-ba6ad3ffadca48599b1c178a392fb37b" target="_blank" rel="noopener noreferrer">Exclusive: RFK Jr. said a Samoa trip had nothing to do with vaccines. New documents refute that</a>
+		<p class="trend-meta"><span class="src">AP NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"rfk jr" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/nba/story/_/id/49726223/sources-warriors-sign-georges-niang-completing-roster" target="_blank" rel="noopener noreferrer">Sources: Warriors to sign Georges Niang, completing roster</a>
-		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"dalen terry" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.wenxuecity.com/news/2026/08/27/ent-292984.html" target="_blank" rel="noopener noreferrer">Zhang Jike&#39;s livestream collides with Jing Tian and Justin Sun trending topic; calmly munching corn, he says it has nothing to do with him</a>
+		<p class="trend-meta"><span class="src">文学城</span><span class="sep" aria-hidden="true">&middot;</span>"张继科" &middot; 100+ searches</p>
 	</div>
 </li>
 </ol>
@@ -949,6 +949,75 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.billboard.com/music/music-news/jelly-roll-completes-kimmel-hosting-rousing-monologue-1236327091/" target="_blank" rel="noopener noreferrer">Billboard &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236845750" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1787900340000" data-slug="film reviews the whisper man review robert niro adam scott">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘The Whisper Man’ Review: Diverting Netflix Serial Killer Chiller Doesn’t Demand Much of Robert De Niro — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T06:59:00.000Z">2:59 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">‘The Whisper Man’ Review: Diverting Netflix Serial Killer Chiller Doesn’t Demand Much of Robert De Niro</h3>
+	<p class="snippet">“The Whisper Man” is the first — and surely not the last — film to be adapted from the airport oeuvre of British crime novelist Steve Mosby, who since 2019 has written four books (including the source text here) under the pseudonym Alex North. If he didn’t choose that nom de plume to evoke Alex […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/07/MCDWHMA_ZX002.jpg?w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/07/MCDWHMA_ZX002.jpg?w=600 600w, https://variety.com/wp-content/uploads/2026/07/MCDWHMA_ZX002.jpg?w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">‘The Whisper Man’ Review: Diverting Netflix Serial Killer Chiller Doesn’t Demand Much of Robert De Niro</h3>
+	<p class="about">“The Whisper Man” is the first — and surely not the last — film to be adapted from the airport oeuvre of British crime novelist Steve Mosby, who since 2019 has written four books (including the source text here) under the pseudonym Alex North. If he didn’t choose that nom de plume to evoke Alex […]</p>
+	
+	
+	<a class="more" href="https://variety.com/2026/film/reviews/the-whisper-man-review-robert-de-niro-adam-scott-1236845750/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/iqtechsolutions/gate-new-actions-keep-recovery-open-266h" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1787900010000" data-slug="iqtechsolutions gate new actions keep recovery open 266h">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Gate New Actions, Keep Recovery Open — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T06:53:30.000Z">2:53 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">Gate New Actions, Keep Recovery Open</h3>
+	<p class="snippet">Liquid syntax error: &#39;raw&#39; tag was never closed</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Gate New Actions, Keep Recovery Open</h3>
+	<p class="about">Liquid syntax error: &#39;raw&#39; tag was never closed</p>
+	
+	
+	<a class="more" href="https://dev.to/iqtechsolutions/gate-new-actions-keep-recovery-open-266h" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:180a76c4-66c5-47ba-b93a-776e3ae5c6c9" data-srckey="coindesk" data-cat="markets" data-sent="0" data-ts="1787898130000" data-slug="tech solana faster supply cuts lead vote while usd800 daily burn plan trails">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Solana’s faster disinflation plan leads vote as $800K burn proposal trails — flip for details">
+	<div class="meta"><span class="src" style="color:#fbbf24">COINDESK</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T06:22:10.000Z">2:22 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Solana’s faster disinflation plan leads vote as $800K burn proposal trails</h3>
+	<p class="snippet">All three proposals have cleared quorum, but a plan to slow new SOL creation is only narrowly passing while a separate vote to sharply increase token burns remains below the two-thirds support needed.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://cdn.sanity.io/images/s3y3vcno/production/2e14ef9e0ece47068da06c0d0405ba1e13c15bd8-3904x2196.jpg?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://cdn.sanity.io/images/s3y3vcno/production/2e14ef9e0ece47068da06c0d0405ba1e13c15bd8-3904x2196.jpg?fm=jpg&amp;w=240&amp;h=135&amp;crop=focalpoint&amp;fit=clip 240w, https://cdn.sanity.io/images/s3y3vcno/production/2e14ef9e0ece47068da06c0d0405ba1e13c15bd8-3904x2196.jpg?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip 340w, https://cdn.sanity.io/images/s3y3vcno/production/2e14ef9e0ece47068da06c0d0405ba1e13c15bd8-3904x2196.jpg?fm=jpg&amp;w=510&amp;h=287&amp;crop=focalpoint&amp;fit=clip 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Solana’s faster disinflation plan leads vote as $800K burn proposal trails</h3>
+	<p class="about">All three proposals have cleared quorum, but a plan to slow new SOL creation is only narrowly passing while a separate vote to sharply increase token burns remains below the two-thirds support needed.</p>
+	
+	
+	<a class="more" href="https://www.coindesk.com/tech/2026/08/28/solana-s-faster-supply-cuts-lead-vote-while-usd800-000-daily-burn-plan-trails" target="_blank" rel="noopener noreferrer">CoinDesk &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1307,14 +1376,14 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact h2" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/games/985891/grand-theft-auto-vi-gta-6-netflix-youtube-extended-look-game-movie" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1787872800000" data-slug="games grand theft auto gta netflix youtube extended look game movie">
+<article class="card compact h2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/games/985891/grand-theft-auto-vi-gta-6-netflix-youtube-extended-look-game-movie" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1787872800000" data-slug="games grand theft auto gta netflix youtube extended look game movie">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The biggest video game of all time looks like a movie — flip for details">
 	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-27T23:20:00.000Z">7:20 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
 	<h3 class="title">The biggest video game of all time looks like a movie</h3>
 	<p class="snippet">I think I know why Rockstar Games debuted its &quot;extended look&quot; of Grand Theft Auto VI on Netflix instead of immediately dropping it for free on YouTube. Unlike most video game trailers, the almost 27-minute preview of GTA VI felt more like a slice of a prestige crime drama than any video game trailer that I&#39;ve ever seen. To make a new game that lasts another decade or more and potentially rivals…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/Screenshot-2026-08-27-at-4.13.31-PM.png?quality=90&amp;strip=all&amp;crop=0%2C3.3036486111791%2C100%2C93.392702777642&amp;w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/Screenshot-2026-08-27-at-4.13.31-PM.png?quality=90&amp;strip=all&amp;crop=0%2C3.3036486111791%2C100%2C93.392702777642&amp;w=600 600w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/Screenshot-2026-08-27-at-4.13.31-PM.png?quality=90&amp;strip=all&amp;crop=0%2C3.3036486111791%2C100%2C93.392702777642&amp;w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">The biggest video game of all time looks like a movie</h3>
@@ -8279,7 +8348,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2673 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2670 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240742" data-cat="entertainment" data-sent="0" data-slug="interest christian metal band demon hunter sues over kpop hunters trademark" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 26 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/interest/2026-08-26/christian-metal-band-demon-hunter-sues-over-kpop-demon-hunters-trademark/.240742" target="_blank" rel="noopener noreferrer">Christian Metal Band Demon Hunter Sues Over KPop Demon Hunters Trademark</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/zt8abs" data-cat="dev" data-sent="0" data-slug="cant release that html" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 26 &middot; Dev</span><a href="https://notes.highlysuspect.agency/cant-release-that.html" target="_blank" rel="noopener noreferrer">If I release it, you won’t get the same experience I get</a></li>
@@ -10951,9 +11020,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236837383" data-cat="entertainment" data-sent="0" data-slug="film news kevin hart henry cavill netflix movie jason isaacs justine lupe" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 18 &middot; Entertainment</span><a href="https://variety.com/2026/film/news/kevin-hart-henry-cavill-netflix-movie-jason-isaacs-justine-lupe-1236837383/" target="_blank" rel="noopener noreferrer">Kevin Hart and Henry Cavill’s Netflix Spy Comedy Adds Jason Isaacs, Justine Lupe and Aja Naomi King (EXCLUSIVE)</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2238788/heres-why-think-twice-storing-electronics-in-garage/" data-cat="tech" data-sent="0" data-slug="heres why think twice storing electronics garage" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 18 &middot; Tech</span><a href="https://www.engadget.com/2238788/heres-why-think-twice-storing-electronics-in-garage/" target="_blank" rel="noopener noreferrer">Here&#39;s why you should think twice before storing your electronics in the garage</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.xxlmag.com/?p=1086324" data-cat="music" data-sent="0" data-slug="young thug fame more important than money" hidden="until-found"><span class="ameta">XXL &middot; Aug 18 &middot; Music</span><a href="https://www.xxlmag.com/young-thug-fame-more-important-than-money/" target="_blank" rel="noopener noreferrer">Young Thug Sparks Debate for Telling Students Fame Over Money</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235610845" data-cat="music" data-sent="0" data-slug="music news allman betts family revival tour 10th anniversary dates" hidden="until-found"><span class="ameta">ROLLING STONE MUSIC &middot; Aug 18 &middot; Music</span><a href="https://www.rollingstone.com/music/music-news/allman-betts-family-revival-tour-10th-anniversary-dates-1235610845/" target="_blank" rel="noopener noreferrer">Allman Betts Family Revival Tour to Mark 10th Anniversary With Robert Randolph, Sierra Hull</a></li>
-<li class="arow" data-count="1" data-id="rss:bc76a2ad-c4e4-47a3-a61b-980754eb9b2f" data-cat="sports" data-sent="0" data-slug="golf news bryson dechambeau gary player world tour liv uncertainty" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 18 &middot; Sports</span><a href="https://www.cbssports.com/golf/news/bryson-dechambeau-gary-player-dp-world-tour-liv-golf-uncertainty/" target="_blank" rel="noopener noreferrer">Bryson DeChambeau to play in Gary Player&#39;s DP World Tour event in South Africa amid LIV Golf uncertainty</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2239300/playstations-dollar220-pulse-elevate-wireless-speakers-arrive-november-12/" data-cat="tech" data-sent="0" data-slug="playstations dollar220 pulse elevate wireless speakers arrive november" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 18 &middot; Tech</span><a href="https://www.engadget.com/2239300/playstations-dollar220-pulse-elevate-wireless-speakers-arrive-november-12/" target="_blank" rel="noopener noreferrer">PlayStation&#39;s $220 Pulse Elevate wireless speakers arrive November 12</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
