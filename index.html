@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-28T10:16:00.039Z">
+<meta name="sf-version" content="2026-08-28T11:19:58.747Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -532,11 +532,13 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
-:root[data-theme="light"] .meta [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
+:root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
-:root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
+:root[data-theme="light"] .meta [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
+:root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
@@ -544,14 +546,12 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
-:root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
-:root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
 :root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
@@ -672,10 +672,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 6:16 AM &middot; 18 TODAY</p>
+	<p class="stats">UPDATED 7:19 AM &middot; 24 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">171</span><span class="sr-only"> — 171 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">84</span><span class="sr-only"> — 84 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">240</span><span class="sr-only"> — 240 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">398</span><span class="sr-only"> — 398 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">327</span><span class="sr-only"> — 327 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">439</span><span class="sr-only"> — 439 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">180</span><span class="sr-only"> — 180 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">482</span><span class="sr-only"> — 482 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">133</span><span class="sr-only"> — 133 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">24</span><span class="sr-only"> — 24 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">522</span><span class="sr-only"> — 522 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">172</span><span class="sr-only"> — 172 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">85</span><span class="sr-only"> — 85 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">239</span><span class="sr-only"> — 239 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">399</span><span class="sr-only"> — 399 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">327</span><span class="sr-only"> — 327 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">439</span><span class="sr-only"> — 439 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">180</span><span class="sr-only"> — 180 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">477</span><span class="sr-only"> — 477 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">134</span><span class="sr-only"> — 134 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">24</span><span class="sr-only"> — 24 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">524</span><span class="sr-only"> — 524 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -744,29 +744,6 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact rail-art has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:fc2f8fd5-d663-407b-aff2-f637921d8d72" data-srckey="ign" data-cat="games" data-sent="0" data-ts="1787769301000" data-slug="articles the duskbloods feels like nintendo party game bloody wrapper">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The Duskbloods Feels Like a Nintendo Party Game in a Bloody Wrapper — flip for details">
-	<div class="meta"><span class="src" style="color:#f87171">IGN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-26T18:35:01.000Z">2:35 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
-	<h3 class="title">The Duskbloods Feels Like a Nintendo Party Game in a Bloody Wrapper</h3>
-	<p class="snippet">Once you go beneath the surface of its wonderfully grotesque, unwelcoming exterior that’s right in line with FromSoftware’s house style, The Duskbloods plays so much like a classic multiplayer Nintendo game.</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://assets-prd.ignimgs.com/2026/08/26/wnzyrfiwlt-t80ttkxvnskn4mrykb-fbwpiwr8nztpi-1787768931367.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-</div>
-<div class="face back" inert>
-	<h3 class="title">The Duskbloods Feels Like a Nintendo Party Game in a Bloody Wrapper</h3>
-	<p class="about">Once you go beneath the surface of its wonderfully grotesque, unwelcoming exterior that’s right in line with FromSoftware’s house style, The Duskbloods plays so much like a classic multiplayer Nintendo game.</p>
-	
-	
-	<a class="more" href="https://www.ign.com/articles/the-duskbloods-feels-like-a-nintendo-party-game-in-a-bloody-wrapper" target="_blank" rel="noopener noreferrer">IGN &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
 <article class="card compact rail-art" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.billboard.com/?p=1236325107" data-srckey="billboard" data-cat="music" data-sent="0" data-ts="1787764512000" data-slug="music news miley cyrus dolly parton honor">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Miley Cyrus Mourns Her Godmother Dolly Parton: ‘I Have an Angel by My Side’ — flip for details">
@@ -813,44 +790,21 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact rail-art has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/devio_3007/the-free-tier-fallacy-five-myths-about-coding-agents-debunked-with-a-token-budget-123d" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1787742718000" data-slug="devio the free tier fallacy five myths about coding agents debunked with token budget 123d">
+<article class="card compact rail-art has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:3f614f7b-07cb-489b-943b-c06f475928ed" data-srckey="ign" data-cat="games" data-sent="0" data-ts="1787857237000" data-slug="articles gta satire humor rockstar comments">
 <div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The Free-Tier Fallacy: Five Myths About Coding Agents, Debunked with a Token Budget — flip for details">
-	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-26T11:11:58.000Z">7:11 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
-	<h3 class="title">The Free-Tier Fallacy: Five Myths About Coding Agents, Debunked with a Token Budget</h3>
-	<p class="snippet">Picture a developer with a deadline and a repository that needs a mechanical refactor. They have heard that open-source coding agents exist, but every tutorial starts with Docker, a GPU, and a model download. They abandon the idea before running a single prompt, and that scenario repeats constantly in agent-tooling discussions. The economics of coding agents changed while those myths were…</p>
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘We Have To Be Careful’ — Rockstar on GTA 6’s Approach to Satire — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">IGN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-27T19:00:37.000Z">3:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">‘We Have To Be Careful’ — Rockstar on GTA 6’s Approach to Satire</h3>
+	<p class="snippet">Rockstar is still dedicated to making Grand Theft Auto a funny satire of modern America, but it’s being careful with its references to ensure GTA 6 doesn’t feel dated before it launches.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=640,height=334,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fkbs0r3zyzbdnxs60iuaf.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=320,height=167,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fkbs0r3zyzbdnxs60iuaf.png 320w, https://media2.dev.to/dynamic/image/width=640,height=334,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fkbs0r3zyzbdnxs60iuaf.png 640w, https://media2.dev.to/dynamic/image/width=960,height=502,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fkbs0r3zyzbdnxs60iuaf.png 960w" sizes="(max-width: 640px) 78vw, 320px">
+	<img class="thumb" src="https://assets-prd.ignimgs.com/2026/08/27/gta6-satire-news-1787848953836.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
-	<h3 class="title">The Free-Tier Fallacy: Five Myths About Coding Agents, Debunked with a Token Budget</h3>
-	<p class="about">Picture a developer with a deadline and a repository that needs a mechanical refactor. They have heard that open-source coding agents exist, but every tutorial starts with Docker, a GPU, and a model download. They abandon the idea before running a single prompt, and that scenario repeats constantly in agent-tooling discussions. The economics of coding agents changed while those myths were…</p>
+	<h3 class="title">‘We Have To Be Careful’ — Rockstar on GTA 6’s Approach to Satire</h3>
+	<p class="about">Rockstar is still dedicated to making Grand Theft Auto a funny satire of modern America, but it’s being careful with its references to ensure GTA 6 doesn’t feel dated before it launches.</p>
 	
 	
-	<a class="more" href="https://dev.to/devio_3007/the-free-tier-fallacy-five-myths-about-coding-agents-debunked-with-a-token-budget-123d" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
-<article class="card compact rail-art has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:WP-MKTW-0005204666" data-srckey="marketwatch" data-cat="markets" data-sent="0" data-ts="1787908800000" data-slug="story contractor handed pool upgrade subcontractor had already rejected what can dce41b2b">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="My contractor handed my $42,000 pool upgrade to a subcontractor I had already rejected. What can I do? — flip for details">
-	<div class="meta"><span class="src" style="color:#34d399">MARKETWATCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T09:20:00.000Z">5:20 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
-	<h3 class="title">My contractor handed my $42,000 pool upgrade to a subcontractor I had already rejected. What can I do?</h3>
-	<p class="snippet">“I specifically rejected Contractor A because of his reputation and chose Contractor B because of his reputation.”</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://images.mktw.net/im-79771522?width=640" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://images.mktw.net/im-79771522?width=320 320w, https://images.mktw.net/im-79771522?width=640 640w, https://images.mktw.net/im-79771522?width=960 960w" sizes="(max-width: 640px) 78vw, 320px">
-</div>
-<div class="face back" inert>
-	<h3 class="title">My contractor handed my $42,000 pool upgrade to a subcontractor I had already rejected. What can I do?</h3>
-	<p class="about">“I specifically rejected Contractor A because of his reputation and chose Contractor B because of his reputation.”</p>
-	
-	
-	<a class="more" href="https://www.marketwatch.com/story/my-contractor-handed-my-42-000-pool-upgrade-to-a-subcontractor-i-had-already-rejected-what-can-i-do-dce41b2b?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">MarketWatch &#8599;</a>
+	<a class="more" href="https://www.ign.com/articles/gta-6-satire-humor-rockstar-comments" target="_blank" rel="noopener noreferrer">IGN &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -882,6 +836,52 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact rail-art has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:https://cointelegraph.com/ecosystem/protocol-upgrade-decouples-consensus-from-execution-to-solve-scaling-bottlenecks" data-srckey="cointelegraph" data-cat="markets" data-sent="0" data-ts="1787756672000" data-slug="ecosystem protocol upgrade decouples consensus from execution solve scaling bottlenecks">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Protocol upgrade decouples consensus from execution to solve scaling bottlenecks — flip for details">
+	<div class="meta"><span class="src" style="color:#a78bfa">COINTELEGRAPH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-26T15:04:32.000Z">11:04 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Protocol upgrade decouples consensus from execution to solve scaling bottlenecks</h3>
+	<p class="snippet">CTDG Dev Hub participant’s protocol upgrade decouples consensus from execution, allowing network nodes to reach agreement on blocks before transaction execution completes.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://s3-images.ctmedia.io/media/article-covers/cover-multiversx-v1-1.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Protocol upgrade decouples consensus from execution to solve scaling bottlenecks</h3>
+	<p class="about">CTDG Dev Hub participant’s protocol upgrade decouples consensus from execution, allowing network nodes to reach agreement on blocks before transaction execution completes.</p>
+	
+	
+	<a class="more" href="https://cointelegraph.com/ecosystem/protocol-upgrade-decouples-consensus-from-execution-to-solve-scaling-bottlenecks" target="_blank" rel="noopener noreferrer">Cointelegraph &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact rail-art has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/perufitlife/a-user-spent-a-day-confirming-an-email-that-was-already-confirmed-pea" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1787832145000" data-slug="perufitlife user spent day confirming email that was already confirmed pea">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="A user spent a day confirming an email that was already confirmed — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-27T12:02:25.000Z">8:02 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">A user spent a day confirming an email that was already confirmed</h3>
+	<p class="snippet">A user spent a day confirming an email address that was already confirmed, because my API kept telling him to. He was right and my error message was wrong. Here is the shape of the bug, because I think it is common and almost invisible. He found me on LinkedIn — not through support, because my support address bounced, which is a second bug I will get to. My account is connected, but the API keeps…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=640,height=334,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6n5nbce2pdmg1oupah5u.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=320,height=167,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6n5nbce2pdmg1oupah5u.png 320w, https://media2.dev.to/dynamic/image/width=640,height=334,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6n5nbce2pdmg1oupah5u.png 640w, https://media2.dev.to/dynamic/image/width=960,height=502,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6n5nbce2pdmg1oupah5u.png 960w" sizes="(max-width: 640px) 78vw, 320px">
+</div>
+<div class="face back" inert>
+	<h3 class="title">A user spent a day confirming an email that was already confirmed</h3>
+	<p class="about">A user spent a day confirming an email address that was already confirmed, because my API kept telling him to. He was right and my error message was wrong. Here is the shape of the bug, because I think it is common and almost invisible. He found me on LinkedIn — not through support, because my support address bounced, which is a second bug I will get to. My account is connected, but the API keeps…</p>
+	
+	
+	<a class="more" href="https://dev.to/perufitlife/a-user-spent-a-day-confirming-an-email-that-was-already-confirmed-pea" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 </div>
 </section>
 <main id="feed">
@@ -891,43 +891,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://mashable.com/entertainment/nyt-connections-hints-meanings-august-28-2026" target="_blank" rel="noopener noreferrer">NYT Connections hints today: Meanings for each word for Aug. 28, 2026</a>
-		<p class="trend-meta"><span class="src">MASHABLE</span><span class="sep" aria-hidden="true">&middot;</span>"maxxing coded era" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.cnn.com/2026/08/27/politics/judge-pauses-usps-plan-restrict-mail-voting" target="_blank" rel="noopener noreferrer">Judge pauses US Postal Service plan to implement Trump’s new mail voting restrictions</a>
+		<p class="trend-meta"><span class="src">CNN</span><span class="sep" aria-hidden="true">&middot;</span>"indira talwani" &middot; 10000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/news/articles/c9v9nndjznvo" target="_blank" rel="noopener noreferrer">Tate brothers condemn US jail conditions as they await possible UK extradition</a>
-		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"tate brothers" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.reuters.com/world/newsmaker-mette-marit-norways-embattled-new-queen-2026-08-28/" target="_blank" rel="noopener noreferrer">Mette-Marit, Norway&#39;s embattled new queen</a>
+		<p class="trend-meta"><span class="src">REUTERS</span><span class="sep" aria-hidden="true">&middot;</span>"mette-marit" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://kstp.com/kstp-news/top-news/hcmc-doctor-reflects-on-treating-kids-after-annunciation-shooting/" target="_blank" rel="noopener noreferrer">HCMC doctor reflects on treating kids after Annunciation shooting</a>
-		<p class="trend-meta"><span class="src">5 EYEWITNESS NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"harper and fletcher" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.yahoo.com/entertainment/tv/articles/general-hospital-legend-speaks-show-175242693.html" target="_blank" rel="noopener noreferrer">‘General Hospital’ Legend Speaks Out on Show’s Major Creative Pivots</a>
+		<p class="trend-meta"><span class="src">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"maurice benard" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://people.com/where-are-married-at-first-sight-season-20-couples-now-12069360" target="_blank" rel="noopener noreferrer">Which Married at First Sight Season 20 Couples Are Still Together? All About Their Lives Now</a>
-		<p class="trend-meta"><span class="src">PEOPLE.COM</span><span class="sep" aria-hidden="true">&middot;</span>"married at first sight season 20" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.cnn.com/2026/08/27/us/laguardia-airport-crash-air-traffic-controllers" target="_blank" rel="noopener noreferrer">2 air traffic controllers left work early the night an Air Canada jet collided with a fire truck at LaGuardia, source says</a>
+		<p class="trend-meta"><span class="src">CNN</span><span class="sep" aria-hidden="true">&middot;</span>"air canada" &middot; 5000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.click2houston.com/weather/2026/08/27/keep-the-umbrellas-handy-scattered-storms-are-back-in-the-forecast/" target="_blank" rel="noopener noreferrer">Keep the umbrellas handy! Scattered storms are back in the forecast for Houston Friday</a>
-		<p class="trend-meta"><span class="src">CLICK2HOUSTON</span><span class="sep" aria-hidden="true">&middot;</span>"houston weather" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.nbcphiladelphia.com/weather/stories-weather/live-updates-flash-flooding-tornado-risk-thursday-philadelphia-pennsylvania-suburbs/4454255/" target="_blank" rel="noopener noreferrer">Storm brings flash flooding, heavy rain in Philly region</a>
+		<p class="trend-meta"><span class="src">NBC10 PHILADELPHIA</span><span class="sep" aria-hidden="true">&middot;</span>"weather philadelphia" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.wistv.com/2026/08/26/columbia-woman-sentenced-federal-prison-stealing-over-250k-local-business/" target="_blank" rel="noopener noreferrer">Columbia woman sentenced to federal prison for stealing over $250K from business</a>
-		<p class="trend-meta"><span class="src">WIS NEWS 10</span><span class="sep" aria-hidden="true">&middot;</span>"isha yumakia warr embezzlement" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://mashable.com/entertainment/nyt-connections-hints-meanings-august-28-2026" target="_blank" rel="noopener noreferrer">NYT Connections hints today: Meanings for each word for Aug. 28, 2026</a>
+		<p class="trend-meta"><span class="src">MASHABLE</span><span class="sep" aria-hidden="true">&middot;</span>"connections hint today" &middot; 2000+ searches</p>
 	</div>
 </li>
 </ol>
@@ -949,6 +949,75 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.marketwatch.com/story/my-contractor-handed-my-42-000-pool-upgrade-to-a-subcontractor-i-had-already-rejected-what-can-i-do-dce41b2b?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">MarketWatch &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/4a7ec9ad-bbfd-476b-80ed-e10df7d7b1d7" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1787915766760" data-slug="providers chutes ladders hires departures firings retirements ceo executives healthcare">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Chutes &amp; Ladders—Elevance Health taps new behavioral health leader; Providence names new CFO — flip for details">
+	<div class="meta"><span class="src" style="color:#7dd3fc">FIERCE HEALTHCARE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T11:16:06.760Z">7:16 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#7dd3fc">Healthcare</span></div>
+	<h3 class="title">Chutes &amp; Ladders—Elevance Health taps new behavioral health leader; Providence names new CFO</h3>
+	<p class="snippet">Welcome to this week&#39;s Chutes &amp; Ladders, our roundup of hirings, firings and retirings throughout the industry. Please submit the good news—or the bad—from your shop, and we will feature it here at the end of each week.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Chutes &amp; Ladders—Elevance Health taps new behavioral health leader; Providence names new CFO</h3>
+	<p class="about">Welcome to this week&#39;s Chutes &amp; Ladders, our roundup of hirings, firings and retirings throughout the industry. Please submit the good news—or the bad—from your shop, and we will feature it here at the end of each week.</p>
+	
+	
+	<a class="more" href="https://www.fiercehealthcare.com/providers/chutes-ladders-2026-hires-departures-firings-retirements-ceo-executives-healthcare" target="_blank" rel="noopener noreferrer">Fierce Healthcare &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:WP-MKTW-0005203136" data-srckey="marketwatch" data-cat="ai" data-sent="0" data-ts="1787912940000" data-slug="story anthropic worth trillion heres how the company trading new tokenized market 390bc152">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Is Anthropic worth $2 trillion? Here’s how the company is trading in a new tokenized market. — flip for details">
+	<div class="meta"><span class="src" style="color:#34d399">MARKETWATCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T10:29:00.000Z">6:29 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Is Anthropic worth $2 trillion? Here’s how the company is trading in a new tokenized market.</h3>
+	<p class="snippet">Not all fund managers are convinced by the valuation but perpetual futures are already pricing Anthropic</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://images.mktw.net/im-80668997?width=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://images.mktw.net/im-80668997?width=600 600w, https://images.mktw.net/im-80668997?width=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Is Anthropic worth $2 trillion? Here’s how the company is trading in a new tokenized market.</h3>
+	<p class="about">Not all fund managers are convinced by the valuation but perpetual futures are already pricing Anthropic</p>
+	<p class="why"><span class="whylabel">matched</span> <span class="whykey">Anthropic</span> <span class="whystrength" title="How strongly this matched your interest (decayed frequency: 2.0)">match</span></p>
+	
+	<a class="more" href="https://www.marketwatch.com/story/is-anthropic-worth-2-trillion-heres-how-the-company-is-trading-in-a-new-tokenized-market-390bc152?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">MarketWatch &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:6a8f41215aebce3d0ac3831e" data-srckey="wired" data-cat="tech" data-sent="0" data-ts="1787912100000" data-slug="story demanded data from over companies deletion notices started arriving instead">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="I Asked 100 Companies for My Data. I Got Deletion Notices Instead — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(207 55% 72%)">WIRED</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T10:15:00.000Z">6:15 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">I Asked 100 Companies for My Data. I Got Deletion Notices Instead</h3>
+	<p class="snippet">California residents have a legal right to access the data that companies collect about them. Actually exercising that right is a burdensome nightmare.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media.wired.com/photos/6a905ea04534ff9dbe4c0ba5/master/pass/DataRequest.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">I Asked 100 Companies for My Data. I Got Deletion Notices Instead</h3>
+	<p class="about">California residents have a legal right to access the data that companies collect about them. Actually exercising that right is a burdensome nightmare.</p>
+	
+	
+	<a class="more" href="https://www.wired.com/story/i-demanded-my-data-from-over-100-companies-deletion-notices-started-arriving-instead/" target="_blank" rel="noopener noreferrer">Wired &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -980,6 +1049,52 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact h2 has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c70d41g40njo#2" data-srckey="bbc world" data-cat="world" data-sent="0" data-ts="1787909502000" data-slug="news articles c70d41g40njo">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="This Indian pilgrim was about to enter Tibet for her dream tour - then her WhatsApp messages stopped — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T09:31:42.000Z">5:31 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">This Indian pilgrim was about to enter Tibet for her dream tour - then her WhatsApp messages stopped</h3>
+	<p class="snippet">Her family is among hundreds anxiously waiting for news after the deadly flash floods.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/01ad/live/9696afa0-a2c9-11f1-a291-b542ee92de7c.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/600/cpsprodpb/01ad/live/9696afa0-a2c9-11f1-a291-b542ee92de7c.jpg 600w, https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/01ad/live/9696afa0-a2c9-11f1-a291-b542ee92de7c.jpg 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">This Indian pilgrim was about to enter Tibet for her dream tour - then her WhatsApp messages stopped</h3>
+	<p class="about">Her family is among hundreds anxiously waiting for news after the deadly flash floods.</p>
+	
+	
+	<a class="more" href="https://www.bbc.co.uk/news/articles/c70d41g40njo" target="_blank" rel="noopener noreferrer">BBC World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:6a90673a7c6f6af27c8826af" data-srckey="wired" data-cat="tech" data-sent="0" data-ts="1787909400000" data-slug="story there are many conspiracy theories about dolly parton and vaccines">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="There Are So Many Conspiracy Theories About Dolly Parton and Vaccines — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(207 55% 72%)">WIRED</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T09:30:00.000Z">5:30 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">There Are So Many Conspiracy Theories About Dolly Parton and Vaccines</h3>
+	<p class="snippet">Influential right-wing conspiracy theorists and MAGA-aligned pundits are falsely claiming that the Covid vaccine killed Dolly Parton, the vaccination advocate and philanthropist.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media.wired.com/photos/6a90c233c9ef4da778ca0aa1/master/pass/Dolly-Parton-Vaccine-Conspiracy-Politics-156123505.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">There Are So Many Conspiracy Theories About Dolly Parton and Vaccines</h3>
+	<p class="about">Influential right-wing conspiracy theorists and MAGA-aligned pundits are falsely claiming that the Covid vaccine killed Dolly Parton, the vaccination advocate and philanthropist.</p>
+	
+	
+	<a class="more" href="https://www.wired.com/story/there-are-so-many-conspiracy-theories-about-dolly-parton-and-vaccines/" target="_blank" rel="noopener noreferrer">Wired &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:WP-MKTW-0005204823" data-srckey="marketwatch" data-cat="markets" data-sent="0" data-ts="1787909280000" data-slug="story the six month anniversary iran war divisions appear wall street over trajectory for oil prices">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="On the six-month anniversary of the Iran war, divisions appear on Wall Street over the trajectory for oil prices — flip for details">
@@ -995,6 +1110,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.marketwatch.com/story/on-the-six-month-anniversary-of-the-iran-war-divisions-appear-on-wall-street-over-the-trajectory-for-oil-prices-c27c07aa?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">MarketWatch &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:https://cointelegraph.com/news/bitgo-nydig-trading-arm-acquisition" data-srckey="cointelegraph" data-cat="markets" data-sent="0" data-ts="1787908904000" data-slug="news bitgo nydig trading arm acquisition">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="BitGo buys NYDIG trading arm to deepen institutional crypto push — flip for details">
+	<div class="meta"><span class="src" style="color:#a78bfa">COINTELEGRAPH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T09:21:44.000Z">5:21 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">BitGo buys NYDIG trading arm to deepen institutional crypto push</h3>
+	<p class="snippet">BitGo completed its acquisition of NYDIG’s institutional trading business, adding about 30 employees and expanding its derivatives and financing capabilities.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://s3-images.ctmedia.io/media/article-covers/car-exchange-smartphone-blockchain-bitgo.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">BitGo buys NYDIG trading arm to deepen institutional crypto push</h3>
+	<p class="about">BitGo completed its acquisition of NYDIG’s institutional trading business, adding about 30 employees and expanding its derivatives and financing capabilities.</p>
+	
+	
+	<a class="more" href="https://cointelegraph.com/news/bitgo-nydig-trading-arm-acquisition" target="_blank" rel="noopener noreferrer">Cointelegraph &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -8555,7 +8693,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2661 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2655 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240742" data-cat="entertainment" data-sent="0" data-slug="interest christian metal band demon hunter sues over kpop hunters trademark" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 26 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/interest/2026-08-26/christian-metal-band-demon-hunter-sues-over-kpop-demon-hunters-trademark/.240742" target="_blank" rel="noopener noreferrer">Christian Metal Band Demon Hunter Sues Over KPop Demon Hunters Trademark</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/zt8abs" data-cat="dev" data-sent="0" data-slug="cant release that html" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 26 &middot; Dev</span><a href="https://notes.highlysuspect.agency/cant-release-that.html" target="_blank" rel="noopener noreferrer">If I release it, you won’t get the same experience I get</a></li>
@@ -10237,6 +10375,7 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236839881" data-cat="entertainment" data-sent="0" data-slug="news rfk cnn erin burnett trump derangement syndrome affordable meal cost" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 21 &middot; Entertainment</span><a href="https://variety.com/2026/tv/news/rfk-jr-cnn-erin-burnett-trump-derangement-syndrome-affordable-meal-cost-1236839881/" target="_blank" rel="noopener noreferrer">RFK Jr. Blasts CNN’s Erin Burnett as Having ‘Trump Derangement Syndrome’ Over Report Finding His ‘Affordable’ Family Meal Costs 3.6 Times What Health Secretary Claimed</a></li>
 <li class="arow" data-count="1" data-id="rss:0c5a62e5-3a2f-4be6-90b3-4f12baef9b75" data-cat="sports" data-sent="0" data-slug="fantasy baseball news week preview top sleeper pitchers" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 21 &middot; Sports</span><a href="https://www.cbssports.com/fantasy/baseball/news/fantasy-baseball-week-23-preview-top-10-sleeper-pitchers/" target="_blank" rel="noopener noreferrer">Fantasy Baseball Week 23 Preview: Top 10 sleeper pitchers feature Kade Anderson, Tyler Mahle</a></li>
 <li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000726612" data-cat="games" data-sent="0" data-slug="fromsoftware gives duskbloods network test" hidden="until-found"><span class="ameta">KOTAKU &middot; Aug 21 &middot; Games</span><a href="https://kotaku.com/fromsoftware-gives-up-duskbloods-network-test-2000726612" target="_blank" rel="noopener noreferrer">FromSoftware Gives Up On Today’s The Duskbloods Network Test After Two Hours Of Failed Logins</a></li>
+<li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240776" data-cat="entertainment" data-sent="0" data-slug="review saga tanya the evil episode" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 21 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/review/saga-of-tanya-the-evil-ii/episode-7/.240776" target="_blank" rel="noopener noreferrer">Saga of Tanya the Evil II ‒ Episode 7</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/no-mans-sky-players-building-utopia-optimism-week" data-cat="games" data-sent="0" data-slug="mans sky players building utopia optimism week" hidden="until-found"><span class="ameta">EUROGAMER &middot; Aug 21 &middot; Games</span><a href="https://www.eurogamer.net/no-mans-sky-players-building-utopia-optimism-week" target="_blank" rel="noopener noreferrer">The No Man&#39;s Sky players building utopia at the end of the universe</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.technologyreview.com/?p=1142762" data-cat="tech" data-sent="0" data-slug="the download space mirrors threats designed drugs credit" hidden="until-found"><span class="ameta">MIT TECH REVIEW &middot; Aug 21 &middot; Tech</span><a href="https://www.technologyreview.com/2026/08/21/1142762/the-download-space-mirrors-threats-ai-designed-drugs-credit/" target="_blank" rel="noopener noreferrer">The Download: threats from space mirrors and credit for AI drugs</a></li>
 <li class="arow" data-count="1" data-id="rss:US-EN-49672418" data-cat="sports" data-sent="0" data-slug="mlb story little league classic braves brewers best youth baseball advice" hidden="until-found"><span class="ameta">ESPN &middot; Aug 21 &middot; Sports</span><a href="https://www.espn.com/mlb/story/_/id/49672418/mlb-2026-little-league-classic-braves-brewers-best-youth-baseball-advice" target="_blank" rel="noopener noreferrer">Have fun! Don&#39;t dig holes in the outfield! MLB players give their Little League advice</a></li>
@@ -11211,13 +11350,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/tmlrxs" data-cat="dev" data-sent="0" data-slug="post hyper customized one off software" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 18 &middot; Dev</span><a href="https://blog.gnoack.org/post/hyper-customized-one-off-software" target="_blank" rel="noopener noreferrer">Hyper-Customized One-Off Software for Cheap</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/cqlxwnz71qgo#2" data-cat="sports" data-sent="0" data-slug="sport football articles cqlxwnz71qgo" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 18 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/football/articles/cqlxwnz71qgo" target="_blank" rel="noopener noreferrer">Fifa sacking &#39;deeply troubling&#39; - Uefa executive</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theverge.com/gadgets/981525/galaxy-buds-3-pro-dji-pocket-deal-sale" data-cat="tech" data-sent="0" data-slug="gadgets galaxy buds pro dji pocket deal sale" hidden="until-found"><span class="ameta">THE VERGE &middot; Aug 18 &middot; Tech</span><a href="https://www.theverge.com/gadgets/981525/galaxy-buds-3-pro-dji-pocket-deal-sale" target="_blank" rel="noopener noreferrer">Samsung’s Galaxy Buds 3 Pro are almost half off today</a></li>
-<li class="arow" data-count="1" data-id="rss:da461e06-50c0-49c2-8c43-34747de9c72f" data-cat="sports" data-sent="0" data-slug="soccer news does matter usmnt players play the premier league" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 18 &middot; Sports</span><a href="https://www.cbssports.com/soccer/news/does-it-matter-if-usmnt-players-play-in-the-premier-league/" target="_blank" rel="noopener noreferrer">Does it matter if USMNT players play in the Premier League? History says it helps, but not always</a></li>
-<li class="arow" data-count="1" data-id="rss:US-EN-49649816" data-cat="sports" data-sent="0" data-slug="college football story texas puts players preseason all america team" hidden="until-found"><span class="ameta">ESPN &middot; Aug 18 &middot; Sports</span><a href="https://www.espn.com/college-football/story/_/id/49649816/texas-puts-4-players-preseason-ap-all-america-team" target="_blank" rel="noopener noreferrer">Texas, SEC top preseason AP All-America team</a></li>
-<li class="arow" data-count="1" data-id="rss:US-EN-49598191" data-cat="sports" data-sent="0" data-slug="soccer story rodri seals transfer barcelona seven year stint man city" hidden="until-found"><span class="ameta">ESPN &middot; Aug 18 &middot; Sports</span><a href="https://www.espn.com/soccer/story/_/id/49598191/rodri-seals-transfer-barcelona-seven-year-stint-man-city" target="_blank" rel="noopener noreferrer">Barça officially sign WC star Rodri from Man City</a></li>
-<li class="arow" data-count="1" data-id="rss:US-EN-49649996" data-cat="sports" data-sent="0" data-slug="nfl story sources seahawks plan signing terrion arnold" hidden="until-found"><span class="ameta">ESPN &middot; Aug 18 &middot; Sports</span><a href="https://www.espn.com/nfl/story/_/id/49649996/sources-seahawks-plan-signing-terrion-arnold" target="_blank" rel="noopener noreferrer">Sources: Seahawks still plan on signing CB Arnold</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/hockey/articles/czek237r51po#0" data-cat="sports" data-sent="0" data-slug="sport hockey articles czek237r51po" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 18 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/hockey/articles/czek237r51po" target="_blank" rel="noopener noreferrer">Even the Queen could not watch - 10 years since Olympic hockey gold</a></li>
-<li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/vbaang" data-cat="dev" data-sent="0" data-slug="littledivy dgit" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 18 &middot; Dev</span><a href="https://github.com/littledivy/dgit" target="_blank" rel="noopener noreferrer">dgit: Git forge on Durable Objects</a></li>
-<li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/news/krakens-krak-launches-us-debit-card-as-payward-broadens-financial-services-push" data-cat="markets" data-sent="0" data-slug="news krakens krak launches debit card payward broadens financial services push" hidden="until-found"><span class="ameta">COINTELEGRAPH &middot; Aug 18 &middot; Markets</span><a href="https://cointelegraph.com/news/krakens-krak-launches-us-debit-card-as-payward-broadens-financial-services-push" target="_blank" rel="noopener noreferrer">Kraken’s Krak debuts US debit card as Payward broadens financial services push</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
