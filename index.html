@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-28T07:20:01.732Z">
+<meta name="sf-version" content="2026-08-28T08:24:39.534Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -532,13 +532,15 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
+:root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
+:root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
-:root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
@@ -553,8 +555,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
-:root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
-:root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="hsl(183 55% 72%)"] { color: #186a6e !important; }
 :root[data-theme="light"] .meta [style*="hsl(111 55% 72%)"] { color: #2f6e23 !important; }
 :root[data-theme="light"] .meta [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
@@ -672,10 +672,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 3:20 AM &middot; 9 TODAY</p>
+	<p class="stats">UPDATED 4:24 AM &middot; 12 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">169</span><span class="sr-only"> — 169 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">84</span><span class="sr-only"> — 84 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">240</span><span class="sr-only"> — 240 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">398</span><span class="sr-only"> — 398 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">329</span><span class="sr-only"> — 329 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">435</span><span class="sr-only"> — 435 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">182</span><span class="sr-only"> — 182 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">484</span><span class="sr-only"> — 484 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">133</span><span class="sr-only"> — 133 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">23</span><span class="sr-only"> — 23 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">523</span><span class="sr-only"> — 523 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">170</span><span class="sr-only"> — 170 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">84</span><span class="sr-only"> — 84 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">240</span><span class="sr-only"> — 240 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">398</span><span class="sr-only"> — 398 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">329</span><span class="sr-only"> — 329 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">436</span><span class="sr-only"> — 436 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">181</span><span class="sr-only"> — 181 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">484</span><span class="sr-only"> — 484 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">133</span><span class="sr-only"> — 133 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">23</span><span class="sr-only"> — 23 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">522</span><span class="sr-only"> — 522 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -891,43 +891,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.cbssports.com/betting/news/draftkings-promo-code-claim-200-in-bonus-bets-steelers-bills-nfl-week-0-college-football-thursday/" target="_blank" rel="noopener noreferrer">DraftKings promo code: Claim $200 in bonus bets for Steelers-Bills, NFL, Week 0 college football, on Thursday</a>
-		<p class="trend-meta"><span class="src">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"draftkings promo code" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.nytimes.com/2026/08/26/technology/bill-gates-ai-risks.html" target="_blank" rel="noopener noreferrer">Bill Gates Is Warning That A.I. Is More Dangerous Than Big Tech Will Admit</a>
+		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"jobs" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://m.sohu.com/a/1068634856_121953459?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334" target="_blank" rel="noopener noreferrer">Men&#39;s table tennis team misses the quarterfinals in all three events — what responsibility should Liu Guoliang bear?</a>
-		<p class="trend-meta"><span class="src">搜狐网</span><span class="sep" aria-hidden="true">&middot;</span>"刘国梁" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.fool.com/investing/2026/08/27/thinking-of-buying-spacex-stock-just-buy-nvidia-in/" target="_blank" rel="noopener noreferrer">Thinking of Buying SpaceX? Just Buy This Market-Thumping Stock Instead.</a>
+		<p class="trend-meta"><span class="src">THE MOTLEY FOOL</span><span class="sep" aria-hidden="true">&middot;</span>"fool.com" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nytimes.com/2026/08/26/technology/bill-gates-ai-risks.html" target="_blank" rel="noopener noreferrer">Bill Gates Is Warning That A.I. Is More Dangerous Than Big Tech Will Admit</a>
-		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"gate" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.theguardian.com/sport/2026/aug/27/tadej-pogacar-stage-six-vuelta-a-espana-enric-mas" target="_blank" rel="noopener noreferrer">Tadej Pogacar battles back from scare on descent to win stage six of Vuelta a España</a>
+		<p class="trend-meta"><span class="src">THE GUARDIAN</span><span class="sep" aria-hidden="true">&middot;</span>"cycling" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.cbssports.com/betting/news/betmgm-bonus-code-cbssports-get-1500-in-bonus-bets-raiders-49ers-nfl-preseason-mlb-games-thursday/" target="_blank" rel="noopener noreferrer">BetMGM bonus code CBSSPORTS: Get $1,500 in bonus bets for Raiders-49ers, NFL preseason, MLB games on Thursday</a>
-		<p class="trend-meta"><span class="src">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"betmgm" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.nytimes.com/athletic/7539369/2026/08/26/the-athletic-football-show-previews-the-2026-los-angeles-chargers/" target="_blank" rel="noopener noreferrer">‘The Athletic Football Show’ previews the 2026 Los Angeles Chargers</a>
+		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"draftkings odds" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://apnews.com/article/rfk-jr-kennedy-samoa-vaccines-mmr-ba6ad3ffadca48599b1c178a392fb37b" target="_blank" rel="noopener noreferrer">Exclusive: RFK Jr. said a Samoa trip had nothing to do with vaccines. New documents refute that</a>
-		<p class="trend-meta"><span class="src">AP NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"rfk jr" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://www.espn.com/nfl/story/_/id/49740505/nfl-renews-draftkings-fanduel-deals-adds-fanatics" target="_blank" rel="noopener noreferrer">NFL renews DraftKings, FanDuel deals, adds Fanatics</a>
+		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"draftkings vs fanduel" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.wenxuecity.com/news/2026/08/27/ent-292984.html" target="_blank" rel="noopener noreferrer">Zhang Jike&#39;s livestream collides with Jing Tian and Justin Sun trending topic; calmly munching corn, he says it has nothing to do with him</a>
-		<p class="trend-meta"><span class="src">文学城</span><span class="sep" aria-hidden="true">&middot;</span>"张继科" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.si.com/betting-promo/fanduel-promo-code-get-up-to-350-bonus-bets-for-rams-vs-chargers-01m11xygr309" target="_blank" rel="noopener noreferrer">FanDuel Promo Code: Get up to $350 Bonus Bets for Rams vs. Chargers</a>
+		<p class="trend-meta"><span class="src">SPORTS ILLUSTRATED</span><span class="sep" aria-hidden="true">&middot;</span>"fanduel free bet" &middot; 200+ searches</p>
 	</div>
 </li>
 </ol>
@@ -949,6 +949,75 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.billboard.com/music/music-news/jelly-roll-completes-kimmel-hosting-rousing-monologue-1236327091/" target="_blank" rel="noopener noreferrer">Billboard &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://the-decoder.com/?p=39518" data-srckey="the decoder" data-cat="ai" data-sent="0" data-ts="1787904202000" data-slug="always and self starting agents might openais next big play">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Always-on and self-starting AI agents might be OpenAI&#39;s next big play — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(45 55% 72%)">THE DECODER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T08:03:22.000Z">4:03 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Always-on and self-starting AI agents might be OpenAI&#39;s next big play</h3>
+	<p class="snippet">OpenAI is building a &quot;Persistent Mode&quot; for its AI agent Codex that stays active indefinitely and generates its own follow-up tasks. WIRED found the relevant code, and OpenAI confirmed the tests. The feature comes with risks, though. With GPT-5.6 Sol, persistent behavior already led to unwanted actions, like deleting user data. The article Always-on and self-starting AI agents might be OpenAI&#39;s…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://the-decoder.com/wp-content/uploads/2026/07/openai_logo_large_right.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Always-on and self-starting AI agents might be OpenAI&#39;s next big play</h3>
+	<p class="about">OpenAI is building a &quot;Persistent Mode&quot; for its AI agent Codex that stays active indefinitely and generates its own follow-up tasks. WIRED found the relevant code, and OpenAI confirmed the tests. The feature comes with risks, though. With GPT-5.6 Sol, persistent behavior already led to unwanted actions, like deleting user data. The article Always-on and self-starting AI agents might be OpenAI&#39;s…</p>
+	
+	
+	<a class="more" href="https://the-decoder.com/always-on-and-self-starting-ai-agents-might-be-openais-next-big-play/" target="_blank" rel="noopener noreferrer">The Decoder &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:https://cointelegraph.com/news/visa-dunamu-stablecoin-payments-ai-commerce" data-srckey="cointelegraph" data-cat="markets" data-sent="0" data-ts="1787902875000" data-slug="news visa dunamu stablecoin payments commerce">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Visa works with Upbit parent on stablecoin payments, AI commerce — flip for details">
+	<div class="meta"><span class="src" style="color:#a78bfa">COINTELEGRAPH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T07:41:15.000Z">3:41 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Visa works with Upbit parent on stablecoin payments, AI commerce</h3>
+	<p class="snippet">Visa and Dunamu will explore stablecoin payments and remittances, with Open Standard’s proposed OUSD among several projects under review.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://s3-images.ctmedia.io/media/article-covers/hi-could-those-who-left-visa-come-back-stablecoin.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Visa works with Upbit parent on stablecoin payments, AI commerce</h3>
+	<p class="about">Visa and Dunamu will explore stablecoin payments and remittances, with Open Standard’s proposed OUSD among several projects under review.</p>
+	
+	
+	<a class="more" href="https://cointelegraph.com/news/visa-dunamu-stablecoin-payments-ai-commerce" target="_blank" rel="noopener noreferrer">Cointelegraph &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241072" data-srckey="anime news network" data-cat="entertainment" data-sent="0" data-ts="1787902018000" data-slug="news arc system works donutal alien immigration simulation game reveals september debut trailer">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Arc System Works&#39; Donutal Alien Immigration Simulation Game Reveals September 3 Debut in Trailer — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(269 55% 72%)">ANIME NEWS NETWORK</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T07:26:58.000Z">3:26 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Arc System Works&#39; Donutal Alien Immigration Simulation Game Reveals September 3 Debut in Trailer</h3>
+	<p class="snippet">Game will launch on PC via Steam</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.animenewsnetwork.com/thumbnails/crop600x315gYD/youtube/cYslLKnq_40.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Arc System Works&#39; Donutal Alien Immigration Simulation Game Reveals September 3 Debut in Trailer</h3>
+	<p class="about">Game will launch on PC via Steam</p>
+	
+	
+	<a class="more" href="https://www.animenewsnetwork.com/news/2026-08-28/arc-system-works-donutal-alien-immigration-simulation-game-reveals-september-3-debut-in-trailer/.241072" target="_blank" rel="noopener noreferrer">Anime News Network &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -980,14 +1049,14 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/iqtechsolutions/gate-new-actions-keep-recovery-open-266h" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1787900010000" data-slug="iqtechsolutions gate new actions keep recovery open 266h">
+<article class="card compact has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/iqtechsolutions/gate-new-actions-keep-recovery-open-266h" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1787900010000" data-slug="iqtechsolutions gate new actions keep recovery open 266h">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Gate New Actions, Keep Recovery Open — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T06:53:30.000Z">2:53 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
 	<h3 class="title">Gate New Actions, Keep Recovery Open</h3>
 	<p class="snippet">Liquid syntax error: &#39;raw&#39; tag was never closed</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fkos8hr8bislaqb5obyi2.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=240,height=125,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fkos8hr8bislaqb5obyi2.png 240w, https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fkos8hr8bislaqb5obyi2.png 340w, https://media2.dev.to/dynamic/image/width=510,height=266,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fkos8hr8bislaqb5obyi2.png 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Gate New Actions, Keep Recovery Open</h3>
@@ -8348,7 +8417,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2670 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2667 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240742" data-cat="entertainment" data-sent="0" data-slug="interest christian metal band demon hunter sues over kpop hunters trademark" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 26 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/interest/2026-08-26/christian-metal-band-demon-hunter-sues-over-kpop-demon-hunters-trademark/.240742" target="_blank" rel="noopener noreferrer">Christian Metal Band Demon Hunter Sues Over KPop Demon Hunters Trademark</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/zt8abs" data-cat="dev" data-sent="0" data-slug="cant release that html" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 26 &middot; Dev</span><a href="https://notes.highlysuspect.agency/cant-release-that.html" target="_blank" rel="noopener noreferrer">If I release it, you won’t get the same experience I get</a></li>
@@ -11017,9 +11086,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000725380" data-cat="tech" data-sent="0" data-slug="gpu gtx wuhan police esports hotel theft heist" hidden="until-found"><span class="ameta">KOTAKU &middot; Aug 18 &middot; Tech</span><a href="https://kotaku.com/gpu-gtx-5080-3060-wuhan-police-esports-hotel-theft-heist-2000725380" target="_blank" rel="noopener noreferrer">Thieves Discover A Completely Unique Way To Steal High-End GPUs</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/tennis/articles/ckgew7881lno#2" data-cat="sports" data-sent="0" data-slug="sport tennis articles ckgew7881lno" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 18 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/tennis/articles/ckgew7881lno" target="_blank" rel="noopener noreferrer">Venus Williams given US Open singles wildcard - will Serena join her?</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/ritual-of-raven-farming-sim-tarot-cards/" data-cat="games" data-sent="0" data-slug="ritual raven farming sim tarot cards" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 18 &middot; Games</span><a href="https://www.polygon.com/ritual-of-raven-farming-sim-tarot-cards/" target="_blank" rel="noopener noreferrer">New Steam Farming Sim Ritual of Raven is Coming for Stardew Valley&#39;s Crown</a></li>
-<li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236837383" data-cat="entertainment" data-sent="0" data-slug="film news kevin hart henry cavill netflix movie jason isaacs justine lupe" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 18 &middot; Entertainment</span><a href="https://variety.com/2026/film/news/kevin-hart-henry-cavill-netflix-movie-jason-isaacs-justine-lupe-1236837383/" target="_blank" rel="noopener noreferrer">Kevin Hart and Henry Cavill’s Netflix Spy Comedy Adds Jason Isaacs, Justine Lupe and Aja Naomi King (EXCLUSIVE)</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2238788/heres-why-think-twice-storing-electronics-in-garage/" data-cat="tech" data-sent="0" data-slug="heres why think twice storing electronics garage" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 18 &middot; Tech</span><a href="https://www.engadget.com/2238788/heres-why-think-twice-storing-electronics-in-garage/" target="_blank" rel="noopener noreferrer">Here&#39;s why you should think twice before storing your electronics in the garage</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.xxlmag.com/?p=1086324" data-cat="music" data-sent="0" data-slug="young thug fame more important than money" hidden="until-found"><span class="ameta">XXL &middot; Aug 18 &middot; Music</span><a href="https://www.xxlmag.com/young-thug-fame-more-important-than-money/" target="_blank" rel="noopener noreferrer">Young Thug Sparks Debate for Telling Students Fame Over Money</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
