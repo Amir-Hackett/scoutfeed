@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-28T04:25:15.531Z">
+<meta name="sf-version" content="2026-08-28T05:27:19.518Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -532,6 +532,7 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
@@ -555,7 +556,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="hsl(183 55% 72%)"] { color: #186a6e !important; }
-:root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(111 55% 72%)"] { color: #2f6e23 !important; }
 :root[data-theme="light"] .meta [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] .meta [style*="#5eead4"] { color: #007362 !important; }
@@ -672,10 +672,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 12:25 AM &middot; 1 TODAY</p>
+	<p class="stats">UPDATED 1:27 AM &middot; 3 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">170</span><span class="sr-only"> — 170 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">84</span><span class="sr-only"> — 84 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">237</span><span class="sr-only"> — 237 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">398</span><span class="sr-only"> — 398 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">330</span><span class="sr-only"> — 330 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">432</span><span class="sr-only"> — 432 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">182</span><span class="sr-only"> — 182 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">485</span><span class="sr-only"> — 485 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">134</span><span class="sr-only"> — 134 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">23</span><span class="sr-only"> — 23 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">525</span><span class="sr-only"> — 525 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">170</span><span class="sr-only"> — 170 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">84</span><span class="sr-only"> — 84 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">237</span><span class="sr-only"> — 237 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">397</span><span class="sr-only"> — 397 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">330</span><span class="sr-only"> — 330 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">434</span><span class="sr-only"> — 434 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">182</span><span class="sr-only"> — 182 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">485</span><span class="sr-only"> — 485 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">133</span><span class="sr-only"> — 133 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">23</span><span class="sr-only"> — 23 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">525</span><span class="sr-only"> — 525 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -891,57 +891,103 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.chargers.com/news/trey-lance-dj-uiagalelei-mike-mcdaniel-offense" target="_blank" rel="noopener noreferrer">How Trey Lance &amp; DJ Uiagalelei Are Approaching Chargers Preseason Finale</a>
-		<p class="trend-meta"><span class="src">LOS ANGELES CHARGERS</span><span class="sep" aria-hidden="true">&middot;</span>"dj uiagalelei" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://parade.com/living/nyt-strands-hints-answers-today-spangram-thursday-august-27-2026" target="_blank" rel="noopener noreferrer">Today’s NYT ‘Strands’ Hints, Spangram and Answers for Thursday, August 27, 2026</a>
+		<p class="trend-meta"><span class="src">PARADE MAGAZINE</span><span class="sep" aria-hidden="true">&middot;</span>"august 28, 1963" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://inmusicblog.com/rap/young-thug-slime-language-3-release/" target="_blank" rel="noopener noreferrer">Young Thug Announces New Album ‘Slime Language 3’: Here’s When It Drops</a>
-		<p class="trend-meta"><span class="src">INMUSIC BLOG</span><span class="sep" aria-hidden="true">&middot;</span>"slime language 3" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.imdb.com/news/ni65989942/?ref_=nmnw_art_perm" target="_blank" rel="noopener noreferrer">‘Beauty in Black’ Season 3 Episode 2 Release Date and Time</a>
+		<p class="trend-meta"><span class="src">IMDB</span><span class="sep" aria-hidden="true">&middot;</span>"beauty in black season 4" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.morningstar.com/news/pr-newswire/20260827sf34860/introducing-siiiba-a-new-wellness-and-hygiene-brand-made-for-growing-bodies" target="_blank" rel="noopener noreferrer">INTRODUCING SIIIBA: A NEW WELLNESS AND HYGIENE BRAND MADE FOR GROWING BODIES</a>
-		<p class="trend-meta"><span class="src">MORNINGSTAR</span><span class="sep" aria-hidden="true">&middot;</span>"tween" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.nfl.com/videos/germie-bernard-bounces-off-of-bills-defenders-for-a-13-yard-td" target="_blank" rel="noopener noreferrer">Germie Bernard bounces off of Bills&#39; defenders for a 13-yard TD</a>
+		<p class="trend-meta"><span class="src">NFL.COM</span><span class="sep" aria-hidden="true">&middot;</span>"gregory desrosiers" &middot; 10000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://cbsaustin.com/news/local/usda-recalls-30000-pounds-of-argentine-beef-sold-in-texas-and-florida" target="_blank" rel="noopener noreferrer">USDA recalls 30,000 pounds of Argentine beef sold in Texas and Florida</a>
-		<p class="trend-meta"><span class="src">KEYE</span><span class="sep" aria-hidden="true">&middot;</span>"beef recalled" &middot; 5000+ searches</p>
+		<a class="trend-title" href="https://sports.yahoo.com/articles/dalen-terry-joins-warriors-034959297.html" target="_blank" rel="noopener noreferrer">Dalen Terry joins Warriors</a>
+		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"dalen terry" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.worldjournal.com/wj/story/121617/9716956?zh-cn" target="_blank" rel="noopener noreferrer">New York to See Near-Total Blood Moon Starting 9 p.m. This Friday</a>
-		<p class="trend-meta"><span class="src">世界新聞網</span><span class="sep" aria-hidden="true">&middot;</span>"月食" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.wmagazine.com/fashion/george-amal-clooney-lake-como-fashion" target="_blank" rel="noopener noreferrer">George and Amal Clooney Match in Summer Whites During Their Latest Lake Como Outing</a>
+		<p class="trend-meta"><span class="src">W MAGAZINE</span><span class="sep" aria-hidden="true">&middot;</span>"george and amal clooney lake como" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sports.yahoo.com/articles/watch-louisiana-christian-vs-northwestern-223000843.html" target="_blank" rel="noopener noreferrer">How to watch Louisiana Christian vs Northwestern State: Live stream College Football, NCAA, TV channel</a>
-		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"northwestern state football" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.nbcbayarea.com/news/local/san-francisco-pokemon-world-championships/4133989/" target="_blank" rel="noopener noreferrer">‘San Francisco, I choose you!&#39;: Businesses prepare for world&#39;s largest Pokémon competition</a>
+		<p class="trend-meta"><span class="src">NBC BAY AREA</span><span class="sep" aria-hidden="true">&middot;</span>"pokemon worlds 2026" &middot; 200+ searches</p>
 	</div>
 </li>
 </ol>
 </section><section class="day">
 <h2><span class="date">FRI, AUG 28, 2026</span><span class="rel">TODAY</span><span class="rule" aria-hidden="true"></span></h2>
 <div class="grid">
-<article class="card lead has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.polygon.com/new-tv-shows-streaming-this-weekend-netflix-apple-tv-august-28-30/" data-srckey="polygon" data-cat="entertainment" data-sent="0" data-ts="1787889619000" data-slug="new shows streaming this weekend netflix apple august">
+<article class="card lead has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:a3334c1c-c47b-4860-bbbc-c74e455d30af" data-srckey="coindesk" data-cat="markets" data-sent="0" data-ts="1787890882000" data-slug="markets xrp treasury company backed ripple shareholder vote away from nasdaq">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="An XRP treasury company backed by Ripple is a shareholder vote away from Nasdaq — flip for details">
+	<div class="meta"><span class="src" style="color:#fbbf24">COINDESK</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T04:21:22.000Z">12:21 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">An XRP treasury company backed by Ripple is a shareholder vote away from Nasdaq</h3>
+	<p class="snippet">The SEC cleared the paperwork for Evernorth&#39;s merger with a shell company, setting up a Sept. 30 vote and a listing under the ticker XRPN.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://cdn.sanity.io/images/s3y3vcno/production/b870a99b3666942b2ac0a5c20219248585e42b45-6016x4016.jpg?fm=jpg&amp;w=680&amp;h=383&amp;crop=focalpoint&amp;fit=clip" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://cdn.sanity.io/images/s3y3vcno/production/b870a99b3666942b2ac0a5c20219248585e42b45-6016x4016.jpg?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip 340w, https://cdn.sanity.io/images/s3y3vcno/production/b870a99b3666942b2ac0a5c20219248585e42b45-6016x4016.jpg?fm=jpg&amp;w=680&amp;h=383&amp;crop=focalpoint&amp;fit=clip 680w, https://cdn.sanity.io/images/s3y3vcno/production/b870a99b3666942b2ac0a5c20219248585e42b45-6016x4016.jpg?fm=jpg&amp;w=1020&amp;h=574&amp;crop=focalpoint&amp;fit=clip 1020w" sizes="(max-width: 640px) 88vw, min(42vw, 340px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">An XRP treasury company backed by Ripple is a shareholder vote away from Nasdaq</h3>
+	<p class="about">The SEC cleared the paperwork for Evernorth&#39;s merger with a shell company, setting up a Sept. 30 vote and a listing under the ticker XRPN.</p>
+	
+	
+	<a class="more" href="https://www.coindesk.com/markets/2026/08/28/an-xrp-treasury-company-backed-by-ripple-is-a-shareholder-vote-away-from-nasdaq" target="_blank" rel="noopener noreferrer">CoinDesk &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:6a8f837e-75ba-4b2b-86d8-8c41e4825812" data-srckey="coindesk" data-cat="markets" data-sent="0" data-ts="1787892052000" data-slug="markets bitcoin holds usd80 solana leads majors higher before warsh jackson hole debut">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Bitcoin under $80,000, solana leads majors higher before Warsh&#39;s Jackson Hole debut — flip for details">
+	<div class="meta"><span class="src" style="color:#fbbf24">COINDESK</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T04:40:52.000Z">12:40 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Bitcoin under $80,000, solana leads majors higher before Warsh&#39;s Jackson Hole debut</h3>
+	<p class="snippet">Every major but HYPE gained over 24 hours, capping a week that added 9% to bitcoin and 20% to solana.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://cdn.sanity.io/images/s3y3vcno/production/ab86a50845d3c0057248691a587f84732f2fc7b5-1498x840.png?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://cdn.sanity.io/images/s3y3vcno/production/ab86a50845d3c0057248691a587f84732f2fc7b5-1498x840.png?fm=jpg&amp;w=240&amp;h=135&amp;crop=focalpoint&amp;fit=clip 240w, https://cdn.sanity.io/images/s3y3vcno/production/ab86a50845d3c0057248691a587f84732f2fc7b5-1498x840.png?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip 340w, https://cdn.sanity.io/images/s3y3vcno/production/ab86a50845d3c0057248691a587f84732f2fc7b5-1498x840.png?fm=jpg&amp;w=510&amp;h=287&amp;crop=focalpoint&amp;fit=clip 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Bitcoin under $80,000, solana leads majors higher before Warsh&#39;s Jackson Hole debut</h3>
+	<p class="about">Every major but HYPE gained over 24 hours, capping a week that added 9% to bitcoin and 20% to solana.</p>
+	
+	
+	<a class="more" href="https://www.coindesk.com/markets/2026/08/28/bitcoin-holds-usd80-000-solana-leads-majors-higher-before-warsh-s-jackson-hole-debut" target="_blank" rel="noopener noreferrer">CoinDesk &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.polygon.com/new-tv-shows-streaming-this-weekend-netflix-apple-tv-august-28-30/" data-srckey="polygon" data-cat="entertainment" data-sent="0" data-ts="1787889619000" data-slug="new shows streaming this weekend netflix apple august">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="8 New TV Shows to Watch This Weekend on Netflix, Apple TV, and Hulu (August 28-30) — flip for details">
 	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T04:00:19.000Z">12:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
 	<h3 class="title">8 New TV Shows to Watch This Weekend on Netflix, Apple TV, and Hulu (August 28-30)</h3>
 	<p class="snippet">This week&#39;s TV column features a beloved Gen-Z sitcom, a twisty sci-fi thriller, and more shows made newly available on the biggest streamers.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/dark-matter-1.jpg?w=680" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/dark-matter-1.jpg?w=340 340w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/dark-matter-1.jpg?w=680 680w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/dark-matter-1.jpg?w=1020 1020w" sizes="(max-width: 640px) 88vw, min(42vw, 340px)">
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/dark-matter-1.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/dark-matter-1.jpg?w=240 240w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/dark-matter-1.jpg?w=340 340w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/dark-matter-1.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">8 New TV Shows to Watch This Weekend on Netflix, Apple TV, and Hulu (August 28-30)</h3>
@@ -957,7 +1003,6 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-
 </div>
 </section>
 <section class="day">
@@ -8165,7 +8210,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2678 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2676 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240742" data-cat="entertainment" data-sent="0" data-slug="interest christian metal band demon hunter sues over kpop hunters trademark" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 26 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/interest/2026-08-26/christian-metal-band-demon-hunter-sues-over-kpop-demon-hunters-trademark/.240742" target="_blank" rel="noopener noreferrer">Christian Metal Band Demon Hunter Sues Over KPop Demon Hunters Trademark</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/zt8abs" data-cat="dev" data-sent="0" data-slug="cant release that html" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 26 &middot; Dev</span><a href="https://notes.highlysuspect.agency/cant-release-that.html" target="_blank" rel="noopener noreferrer">If I release it, you won’t get the same experience I get</a></li>
@@ -10843,8 +10888,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/elden-ring-switch-2-tarnished-edition-gameplay-video/" data-cat="games" data-sent="0" data-slug="elden ring switch tarnished edition gameplay video" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 18 &middot; Games</span><a href="https://www.polygon.com/elden-ring-switch-2-tarnished-edition-gameplay-video/" target="_blank" rel="noopener noreferrer">Elden Ring: Tarnished Edition Gameplay Shows Off Switch 2 Version</a></li>
 <li class="arow" data-count="1" data-id="rss:WP-MKTW-0005184930" data-cat="ai" data-sent="0" data-slug="story heres the case for nvidias stock climb from here according bofa f5483409" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 18 &middot; AI</span><a href="https://www.marketwatch.com/story/heres-the-case-for-nvidias-stock-to-climb-55-from-here-according-to-bofa-f5483409?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Here’s the case for Nvidia’s stock to climb 55%, according to BofA</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theverge.com/tech/981562/sony-playstation-pulse-elevate-wireless-gaming-speakers-launch-date-preorder" data-cat="tech" data-sent="0" data-slug="tech sony playstation pulse elevate wireless gaming speakers launch date preorder" hidden="until-found"><span class="ameta">THE VERGE &middot; Aug 18 &middot; Tech</span><a href="https://www.theverge.com/tech/981562/sony-playstation-pulse-elevate-wireless-gaming-speakers-launch-date-preorder" target="_blank" rel="noopener noreferrer">PlayStation’s wireless gaming speakers launch in November</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cdx755dyy1yo#0" data-cat="world" data-sent="0" data-slug="news articles cdx755dyy1yo" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 18 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/cdx755dyy1yo" target="_blank" rel="noopener noreferrer">Earthquake rocks Spain&#39;s historic Granada, injuring three</a></li>
-<li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236837338" data-cat="entertainment" data-sent="0" data-slug="film global phyllida law dead emma thompson" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 18 &middot; Entertainment</span><a href="https://variety.com/2026/film/global/phyllida-law-dead-emma-thompson-1236837338/" target="_blank" rel="noopener noreferrer">Phyllida Law, Scottish Actress and Mother of Emma and Sophie Thompson, Dies at 94</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
