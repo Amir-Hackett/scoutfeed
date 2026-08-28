@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-28T21:23:01.306Z">
+<meta name="sf-version" content="2026-08-28T22:09:29.696Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -532,11 +532,11 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
-:root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
@@ -672,10 +672,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 5:23 PM &middot; 271 TODAY</p>
+	<p class="stats">UPDATED 6:09 PM &middot; 272 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">165</span><span class="sr-only"> — 165 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">78</span><span class="sr-only"> — 78 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">238</span><span class="sr-only"> — 238 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">391</span><span class="sr-only"> — 391 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">434</span><span class="sr-only"> — 434 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">183</span><span class="sr-only"> — 183 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">492</span><span class="sr-only"> — 492 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">135</span><span class="sr-only"> — 135 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">22</span><span class="sr-only"> — 22 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">528</span><span class="sr-only"> — 528 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">165</span><span class="sr-only"> — 165 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">79</span><span class="sr-only"> — 79 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">238</span><span class="sr-only"> — 238 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">390</span><span class="sr-only"> — 390 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">434</span><span class="sr-only"> — 434 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">183</span><span class="sr-only"> — 183 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">492</span><span class="sr-only"> — 492 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">135</span><span class="sr-only"> — 135 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">22</span><span class="sr-only"> — 22 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">528</span><span class="sr-only"> — 528 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -790,21 +790,21 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact rail-art has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:6a8df7928c96a14e203f76a8" data-srckey="wired" data-cat="tech" data-sent="0" data-ts="1787835600000" data-slug="review alienware aw3926qw gaming monitor">
+<article class="card compact rail-art has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/report/985187/samsung-galaxy-s26-fe-hands-on-preview-specs-features-design" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1787832000000" data-slug="report samsung galaxy s26 hands preview specs features design">
 <div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Alienware AW3926QW Review: 39 Inches of Gaming Glory — flip for details">
-	<div class="meta"><span class="src" style="color:hsl(207 55% 72%)">WIRED</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-27T13:00:00.000Z">9:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
-	<h3 class="title">Alienware AW3926QW Review: 39 Inches of Gaming Glory</h3>
-	<p class="snippet">Alienware’s latest gaming monitor explores a new size and resolution for ultrawide monitors, and I have a feeling PC gamers are going to love it.</p>
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Samsung’s Galaxy S26 FE pairs last year’s hardware with last month’s software — flip for details">
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-27T12:00:00.000Z">8:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Samsung’s Galaxy S26 FE pairs last year’s hardware with last month’s software</h3>
+	<p class="snippet">The Galaxy S26 FE holds few surprises. The Fan Edition phones are rarely Samsung&#39;s most exciting launches of the year, but the new Galaxy S26 FE feels especially familiar. Hardware-wise, little has changed since the S25 FE launched 12 months ago, and the upgrades have mostly come in the form of software tricks which themselves were already seen on this year&#39;s previous Samsung flagships. At its…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://media.wired.com/photos/6a8fae4843f0eb43b71996fc/master/pass/Review--Alienware-5K-OLED-Ultrawide-Gaming-Monitor.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/samsung-galaxy-s26-fe-18.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.741906587151%2C100%2C78.516186825698&amp;w=640" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/samsung-galaxy-s26-fe-18.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.741906587151%2C100%2C78.516186825698&amp;w=320 320w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/samsung-galaxy-s26-fe-18.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.741906587151%2C100%2C78.516186825698&amp;w=640 640w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/samsung-galaxy-s26-fe-18.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.741906587151%2C100%2C78.516186825698&amp;w=960 960w" sizes="(max-width: 640px) 78vw, 320px">
 </div>
 <div class="face back" inert>
-	<h3 class="title">Alienware AW3926QW Review: 39 Inches of Gaming Glory</h3>
-	<p class="about">Alienware’s latest gaming monitor explores a new size and resolution for ultrawide monitors, and I have a feeling PC gamers are going to love it.</p>
+	<h3 class="title">Samsung’s Galaxy S26 FE pairs last year’s hardware with last month’s software</h3>
+	<p class="about">The Galaxy S26 FE holds few surprises. The Fan Edition phones are rarely Samsung&#39;s most exciting launches of the year, but the new Galaxy S26 FE feels especially familiar. Hardware-wise, little has changed since the S25 FE launched 12 months ago, and the upgrades have mostly come in the form of software tricks which themselves were already seen on this year&#39;s previous Samsung flagships. At its…</p>
 	
 	
-	<a class="more" href="https://www.wired.com/review/alienware-aw3926qw-gaming-monitor/" target="_blank" rel="noopener noreferrer">Wired &#8599;</a>
+	<a class="more" href="https://www.theverge.com/report/985187/samsung-galaxy-s26-fe-hands-on-preview-specs-features-design" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -891,43 +891,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/soccer/story/_/id/49743980/player-development-key-real-salt-lake-departure-zavier-gozo" target="_blank" rel="noopener noreferrer">Player development key for Real Salt Lake despite departure of Zavier Gozo</a>
-		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"zavier gozo" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.denverpost.com/2026/08/27/cale-makar-contract-avs-stanley-cup/" target="_blank" rel="noopener noreferrer">Renck: Avs’ Cale Makar worth every cent, but new contract brings weight of delivering Stanley Cup</a>
+		<p class="trend-meta"><span class="src">THE DENVER POST</span><span class="sep" aria-hidden="true">&middot;</span>"cale makar" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://rmcsport.bfmtv.com/football/ligue-1/direct-lille-psg-suivez-le-match-d-ouverture-de-la-deuxieme-journee-de-ligue-1-entre-le-losc-et-paris-en-live_LS-202608280570.html" target="_blank" rel="noopener noreferrer">LIVE. Lille-PSG: Parisians close the gap in stoppage time</a>
-		<p class="trend-meta"><span class="src">RMC SPORT</span><span class="sep" aria-hidden="true">&middot;</span>"lille vs psg" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.businessreport.com/article/cyclospora-outbreak-exposes-vulnerabilities-of-a-consolidated-food-supply" target="_blank" rel="noopener noreferrer">Cyclospora outbreak exposes vulnerabilities of a consolidated food supply</a>
+		<p class="trend-meta"><span class="src">BATON ROUGE BUSINESS REPORT</span><span class="sep" aria-hidden="true">&middot;</span>"cyclosporiasis cases lettuce outbreak" &middot; 10000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.cleveland.com/sports/2026/08/former-red-sox-tigers-catcher-dies-at-62.html" target="_blank" rel="noopener noreferrer">Former Red Sox, Tigers catcher dies at 62</a>
-		<p class="trend-meta"><span class="src">CLEVELAND.COM</span><span class="sep" aria-hidden="true">&middot;</span>"rich rowland former mlb catcher" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.infobae.com/america/ciencia-america/2026/08/28/cientificos-observaron-como-la-corteza-terrestre-se-rompe-en-pedazos-el-hallazgo-que-reescribe-el-mapa-sismico-del-pacifico-y-sus-efectos-para-los-terremotos/" target="_blank" rel="noopener noreferrer">Scientists observed how Earth&#39;s crust breaks apart: the discovery that rewrites the Pacific&#39;s seismic map and its implications for earthquakes</a>
+		<p class="trend-meta"><span class="src">INFOBAE</span><span class="sep" aria-hidden="true">&middot;</span>"corteza terrestre" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.yahoo.com/entertainment/celebrity/articles/youll-kick-harry-kane-katie-120000524.html" target="_blank" rel="noopener noreferrer">You&#39;ll Get a Kick Out of Harry Kane &amp; Katie Goodland&#39;s Love Story</a>
-		<p class="trend-meta"><span class="src">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"harry kane" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.mlb.com/cubs/video/michael-busch-homers-17-on-a-fly-ball-to-right-field-seiya-suzuki-scores" target="_blank" rel="noopener noreferrer">Michael Busch&#39;s two-run homer (17)</a>
+		<p class="trend-meta"><span class="src">MLB.COM</span><span class="sep" aria-hidden="true">&middot;</span>"elly de la cruz" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.ufc.com/news/julia-polastri-fight-no-one-watching-ufc-shanghai" target="_blank" rel="noopener noreferrer">Julia Polastri | Fight Like No One’s Watching</a>
-		<p class="trend-meta"><span class="src">UFC.COM</span><span class="sep" aria-hidden="true">&middot;</span>"julia polastri" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.commanders.com/news/commanders-announce-41-players-will-not-participate-vs-ravens" target="_blank" rel="noopener noreferrer">Commanders announce 41 players will not participate vs. Ravens</a>
+		<p class="trend-meta"><span class="src">WASHINGTON COMMANDERS</span><span class="sep" aria-hidden="true">&middot;</span>"ravens vs commanders" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.vanityfair.com/photos/best-dressed-2026-duos" target="_blank" rel="noopener noreferrer">Zendaya and Law Roach, Mary-Kate and Ashley Olsen, Emmanuel and Brigitte Macron—The Best-Dressed Duos of 2026</a>
-		<p class="trend-meta"><span class="src">VANITY FAIR</span><span class="sep" aria-hidden="true">&middot;</span>"law roach" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.nytimes.com/2026/08/28/movies/new-movies-this-week-critics.html" target="_blank" rel="noopener noreferrer">9 New Movies Our Critics Are Talking About This Week</a>
+		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"the dog stars movie" &middot; 10000+ searches</p>
 	</div>
 </li>
 </ol>
@@ -949,6 +949,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.bbc.co.uk/sport/football/articles/ce9egy1xzepo" target="_blank" rel="noopener noreferrer">BBC Sport &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/3b55645e-b66e-4381-9a9e-ed151d51aecd" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1787954964640" data-slug="payers maryland sues optum over defective computer system">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Maryland sues Optum over &#39;defective&#39; computer system — flip for details">
+	<div class="meta"><span class="src" style="color:#7dd3fc">FIERCE HEALTHCARE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T22:09:24.640Z">6:09 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#7dd3fc">Healthcare</span></div>
+	<h3 class="title">Maryland sues Optum over &#39;defective&#39; computer system</h3>
+	<p class="snippet">Maryland has filed a lawsuit against UnitedHealth Group, alleging that its Optum unit defrauded the state&#39;s Medicaid program by providing a faulty computer system.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Maryland sues Optum over &#39;defective&#39; computer system</h3>
+	<p class="about">Maryland has filed a lawsuit against UnitedHealth Group, alleging that its Optum unit defrauded the state&#39;s Medicaid program by providing a faulty computer system.</p>
+	
+	
+	<a class="more" href="https://www.fiercehealthcare.com/payers/maryland-sues-optum-over-defective-computer-system" target="_blank" rel="noopener noreferrer">Fierce Healthcare &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1026,14 +1049,14 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2" style="--rail:#a78bfa" data-count="1" data-id="rss:https://techcrunch.com/?p=3158531" data-srckey="techcrunch" data-cat="ai" data-sent="0" data-ts="1787948651000" data-slug="neocloud lambda secures debt buy more chips">
+<article class="card compact w2 has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://techcrunch.com/?p=3158531" data-srckey="techcrunch" data-cat="ai" data-sent="0" data-ts="1787948651000" data-slug="neocloud lambda secures debt buy more chips">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Neocloud Lambda secures $1B in debt to buy more chips — flip for details">
 	<div class="meta"><span class="src" style="color:#34d399">TECHCRUNCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T20:24:11.000Z">4:24 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
 	<h3 class="title">Neocloud Lambda secures $1B in debt to buy more chips</h3>
 	<p class="snippet">Neocloud Lambda has raised $1B in private debt to buy Nvidia AI chips and lease them to Microsoft. It&#39;s the latest in a string of loans, underscoring the high cost of the AI boom.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://techcrunch.com/wp-content/uploads/2026/06/Chip-chips-dollar-signs-money.png?resize=1200,960" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Neocloud Lambda secures $1B in debt to buy more chips</h3>
@@ -7170,7 +7193,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2722 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2721 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241040" data-cat="entertainment" data-sent="0" data-slug="interest newspaper france theme park project lacks approval from dragon ball rights holders" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 27 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/interest/2026-08-27/newspaper-france-theme-park-project-lacks-approval-from-dragon-ball-rights-holders/.241040" target="_blank" rel="noopener noreferrer">Newspaper: France&#39;s Theme Park Project Lacks Approval From Dragon Ball&#39;s Rights Holders</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/kvlafj" data-cat="dev" data-sent="0" data-slug="blog announcing flatpak sta" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 27 &middot; Dev</span><a href="https://modal.cx/blog/announcing-flatpak-sta/" target="_blank" rel="noopener noreferrer">Announcing Sovereign Tech Agency Investment in Flatpak</a></li>
@@ -9893,7 +9916,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:US-EN-49659019" data-cat="sports" data-sent="0" data-slug="nfl story sources giants agree trade daniel faalele jaguars" hidden="until-found"><span class="ameta">ESPN &middot; Aug 19 &middot; Sports</span><a href="https://www.espn.com/nfl/story/_/id/49659019/sources-giants-agree-trade-daniel-faalele-jaguars" target="_blank" rel="noopener noreferrer">Sources: Giants trade Faalele to OL-needy Jags</a></li>
 <li class="arow" data-count="1" data-id="rss:108351544" data-cat="ai" data-sent="0" data-slug="marvell google chips html" hidden="until-found"><span class="ameta">CNBC &middot; Aug 19 &middot; AI</span><a href="https://www.cnbc.com/2026/08/19/marvell-google-ai-chips.html" target="_blank" rel="noopener noreferrer">Marvell pops 6% on AI chip deal that lets Google buy up to $12.2 billion in shares</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/wardogs-beta-start-end-time-edt-pdt/" data-cat="games" data-sent="0" data-slug="wardogs beta start end time edt pdt" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 19 &middot; Games</span><a href="https://www.polygon.com/wardogs-beta-start-end-time-edt-pdt/" target="_blank" rel="noopener noreferrer">Wardogs Beta Start Times and How to Play Explained</a></li>
-<li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236838207" data-cat="entertainment" data-sent="0" data-slug="digital news odyssey entertainment originals creators kosinski kasper" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 19 &middot; Entertainment</span><a href="https://variety.com/2026/digital/news/odyssey-entertainment-originals-creators-kosinski-kasper-1236838207/" target="_blank" rel="noopener noreferrer">Odyssey Entertainment Group Launches Original Content Division to Collaborate With Creators</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
