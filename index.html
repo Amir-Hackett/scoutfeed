@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-28T14:19:58.737Z">
+<meta name="sf-version" content="2026-08-28T15:08:20.871Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -532,15 +532,16 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
+:root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
-:root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
+:root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
-:root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
@@ -551,13 +552,12 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
+:root[data-theme="light"] .meta [style*="hsl(111 55% 72%)"] { color: #2f6e23 !important; }
 :root[data-theme="light"] .meta [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
-:root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
 :root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
 :root[data-theme="light"] .meta [style*="hsl(183 55% 72%)"] { color: #186a6e !important; }
-:root[data-theme="light"] .meta [style*="hsl(111 55% 72%)"] { color: #2f6e23 !important; }
 :root[data-theme="light"] .meta [style*="#5eead4"] { color: #007362 !important; }
 .meta .sep { opacity: 0.5; }
 .meta .cat { letter-spacing: 0.08em; }
@@ -672,10 +672,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 10:19 AM &middot; 201 TODAY</p>
+	<p class="stats">UPDATED 11:08 AM &middot; 205 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">168</span><span class="sr-only"> — 168 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">78</span><span class="sr-only"> — 78 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">236</span><span class="sr-only"> — 236 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">395</span><span class="sr-only"> — 395 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">335</span><span class="sr-only"> — 335 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">441</span><span class="sr-only"> — 441 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">176</span><span class="sr-only"> — 176 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">497</span><span class="sr-only"> — 497 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">135</span><span class="sr-only"> — 135 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">21</span><span class="sr-only"> — 21 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">518</span><span class="sr-only"> — 518 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">168</span><span class="sr-only"> — 168 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">78</span><span class="sr-only"> — 78 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">236</span><span class="sr-only"> — 236 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">395</span><span class="sr-only"> — 395 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">336</span><span class="sr-only"> — 336 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">440</span><span class="sr-only"> — 440 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">176</span><span class="sr-only"> — 176 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">497</span><span class="sr-only"> — 497 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">135</span><span class="sr-only"> — 135 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">21</span><span class="sr-only"> — 21 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">518</span><span class="sr-only"> — 518 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -891,43 +891,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.yahoo.com/entertainment/movies/articles/elle-fanning-barely-recognised-co-120214234.html" target="_blank" rel="noopener noreferrer">Elle Fanning barely recognised co-star Glenn Close after Hunger Games transformation</a>
-		<p class="trend-meta"><span class="src">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"elle fanning" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.bbc.com/mediacentre/2026/ru-pauls-drag-race-uk-series-8-celebrity-guest-judges-special-guests" target="_blank" rel="noopener noreferrer">RuPaul&#39;s Drag Race UK Series 8 celebrity judges and special guests revealed</a>
+		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"rupaul" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.kcci.com/article/waukee-high-school-report-armed-person-outside-school-police/73553184" target="_blank" rel="noopener noreferrer">Large emergency response after report of armed person outside Waukee High School</a>
-		<p class="trend-meta"><span class="src">KCCI</span><span class="sep" aria-hidden="true">&middot;</span>"kcci" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.reuters.com/business/healthcare-pharmaceuticals/us-fda-approves-lillys-mounjaro-reduce-cardiovascular-risk-2026-08-28/" target="_blank" rel="noopener noreferrer">US FDA approves Lilly&#39;s Mounjaro to reduce cardiovascular risk</a>
+		<p class="trend-meta"><span class="src">REUTERS</span><span class="sep" aria-hidden="true">&middot;</span>"eli lilly mounjaro cardiovascular approval" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.tahlequahdailypress.com/sports/tahlequah-dominates-del-city-in-17-0-win/article_85026f97-88d3-4888-b154-c8496121d2e2.html" target="_blank" rel="noopener noreferrer">Tahlequah dominates Del City in 17-0 win</a>
-		<p class="trend-meta"><span class="src">TAHLEQUAH DAILY PRESS</span><span class="sep" aria-hidden="true">&middot;</span>"17-0" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://blog.youtube/news-and-events/ken-burns-pbs-learningmedia-youtube-courses/" target="_blank" rel="noopener noreferrer">&#39;Ken Burns in the Classroom&#39; arrives on YouTube</a>
+		<p class="trend-meta"><span class="src">YOUTUBE OFFICIAL BLOG</span><span class="sep" aria-hidden="true">&middot;</span>"pbs" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.insidehighered.com/news/quick-takes/2026/08/26/234-colleges-participate-common-app-direct-admissions" target="_blank" rel="noopener noreferrer">234 Colleges to Participate in Common App Direct Admissions</a>
-		<p class="trend-meta"><span class="src">INSIDE HIGHER ED</span><span class="sep" aria-hidden="true">&middot;</span>"common app" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.bloomberg.com/news/articles/2026-08-28/us-job-growth-marked-down-79-000-in-preliminary-estimate" target="_blank" rel="noopener noreferrer">US Job Growth Marked Down 79,000 in Preliminary Estimate</a>
+		<p class="trend-meta"><span class="src">BLOOMBERG.COM</span><span class="sep" aria-hidden="true">&middot;</span>"forex factory" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.yahoo.com/entertainment/celebrity/articles/fans-stunned-tiger-woods-look-130652604.html" target="_blank" rel="noopener noreferrer">Fans Stunned by Tiger Woods’ Look After Rare Public Appearance</a>
-		<p class="trend-meta"><span class="src">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"tiger" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.instyle.com/look-of-the-day-2026-08-25-12067718" target="_blank" rel="noopener noreferrer">Dakota Fanning’s Rich-Girl Outfit Looks Straight Out of a ‘90s Catalog, and It’s Her Minidress I’m Buying</a>
+		<p class="trend-meta"><span class="src">INSTYLE</span><span class="sep" aria-hidden="true">&middot;</span>"dakota fanning" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.courttv.com/news/i-dont-believe-youre-sorry-judge-shows-no-mercy-for-killer-who-admitted-smashing-toddlers-head-into-wall/" target="_blank" rel="noopener noreferrer">&#39;I was stupid&#39;: Defendant apologizes for Matthew Maison&#39;s murder</a>
-		<p class="trend-meta"><span class="src">COURT TV</span><span class="sep" aria-hidden="true">&middot;</span>"court tv live" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.wsj.com/finance/currencies/japan-spent-record-98-7-billion-to-prop-up-yen-in-past-month-ddb03c64" target="_blank" rel="noopener noreferrer">Japan Spent Record $98.7 Billion to Prop Up Yen in Joint Move With U.S.</a>
+		<p class="trend-meta"><span class="src">WSJ</span><span class="sep" aria-hidden="true">&middot;</span>"japan" &middot; 500+ searches</p>
 	</div>
 </li>
 </ol>
@@ -957,6 +957,52 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact w2 h2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:6a909639933ab0cdef3062ed" data-srckey="wired" data-cat="tech" data-sent="0" data-ts="1787929200000" data-slug="story has human doctors asking whats left for">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="AI Has Human Doctors Asking: What’s Left for Us? — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(207 55% 72%)">WIRED</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T15:00:00.000Z">11:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">AI Has Human Doctors Asking: What’s Left for Us?</h3>
+	<p class="snippet">A recent paper argues that AI is often better at doctoring than doctors. Guess who isn&#39;t thrilled.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media.wired.com/photos/6a909d466b1fcc4b68700cd4/master/pass/Backchannel-AI-Doctors-Business-1267508918.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">AI Has Human Doctors Asking: What’s Left for Us?</h3>
+	<p class="about">A recent paper argues that AI is often better at doctoring than doctors. Guess who isn&#39;t thrilled.</p>
+	
+	
+	<a class="more" href="https://www.wired.com/story/ai-has-human-doctors-asking-whats-left-for-us/" target="_blank" rel="noopener noreferrer">Wired &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.billboard.com/?p=1236326939" data-srckey="billboard" data-cat="music" data-sent="0" data-ts="1787929200000" data-slug="music news malachi barton song stay for the credits disney interview">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Malachi Barton Is Ready to Introduce Fans to ‘Who I Am as a Person’ Outside Disney Roles With Debut Song ‘Stay for the Credits’: ‘It’s My Own Thing’ — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">BILLBOARD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T15:00:00.000Z">11:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
+	<h3 class="title">Malachi Barton Is Ready to Introduce Fans to ‘Who I Am as a Person’ Outside Disney Roles With Debut Song ‘Stay for the Credits’: ‘It’s My Own Thing’</h3>
+	<p class="snippet">&quot;I just hope that people can use the song as an escape,&quot; the ZOMBIES 4 &amp; Camp Rock 3 singer/actor tells Billboard.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Malachi Barton Is Ready to Introduce Fans to ‘Who I Am as a Person’ Outside Disney Roles With Debut Song ‘Stay for the Credits’: ‘It’s My Own Thing’</h3>
+	<p class="about">&quot;I just hope that people can use the song as an escape,&quot; the ZOMBIES 4 &amp; Camp Rock 3 singer/actor tells Billboard.</p>
+	
+	
+	<a class="more" href="https://www.billboard.com/music/music-news/malachi-barton-song-stay-for-the-credits-disney-interview-1236326939/" target="_blank" rel="noopener noreferrer">Billboard &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/7779c8f6-f0be-4ca6-8ee4-b684f7984c88" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1787926566389" data-slug="health tech weekly rundown ecri expands reporting network include errors american nurses">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Weekly Rundown: ECRI expands reporting network to include AI errors; ANE awarded $5M for AI training in rural communities — flip for details">
@@ -972,6 +1018,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.fiercehealthcare.com/health-tech/weekly-rundown-ecri-expands-reporting-network-include-ai-errors-american-nurses" target="_blank" rel="noopener noreferrer">Fierce Healthcare &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb no-snippet" style="--rail:#a3e635" data-count="1" data-id="rss:bdc9f68f-22fb-4b5a-a654-9564ab6cea56" data-srckey="ign" data-cat="games" data-sent="0" data-ts="1787925660000" data-slug="articles nba 2k27 making major upgrades both ends the court">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="NBA 2K27 Is Making Major Upgrades to Both Ends of the Court — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">IGN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T14:01:00.000Z">10:01 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">NBA 2K27 Is Making Major Upgrades to Both Ends of the Court</h3>
+	
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assets-prd.ignimgs.com/2026/08/18/nbathumbmycareer-1787076223072.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">NBA 2K27 Is Making Major Upgrades to Both Ends of the Court</h3>
+	<p class="about">No summary in this feed — follow the link for the story.</p>
+	
+	
+	<a class="more" href="https://www.ign.com/articles/nba-2k27-is-making-major-upgrades-to-both-ends-of-the-court" target="_blank" rel="noopener noreferrer">IGN &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -2053,6 +2122,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://dev.to/fecarrico/a11ymd-20-what-shipped-when-the-numbers-not-the-author-decided-12no" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.healthcaredive.com/news/physicians-say-they-should-benefit-financially-from-ais-time-savings-doximity/829046/" data-srckey="healthcare dive" data-cat="healthcare" data-sent="0" data-ts="1787921270000" data-slug="news physicians say they should benefit financially from ais time savings doximity">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Physicians want compensation boost from AI productivity gains: survey — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(111 55% 72%)">HEALTHCARE DIVE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T12:47:50.000Z">8:47 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#7dd3fc">Healthcare</span></div>
+	<h3 class="title">Physicians want compensation boost from AI productivity gains: survey</h3>
+	<p class="snippet">More than 65% of physicians use AI daily or weekly for clinical or administrative work — and some believe they should be paid more if the tech increases their efficiency, according to a Doximity report.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://imgproxy.divecdn.com/SHRJDJ_KI6aTeYOGaNJNoQofOyaZFttyU4UHuUYzbcQ/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xMzYzMDY4MzEwLmpwZw==.webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Physicians want compensation boost from AI productivity gains: survey</h3>
+	<p class="about">More than 65% of physicians use AI daily or weekly for clinical or administrative work — and some believe they should be paid more if the tech increases their efficiency, according to a Doximity report.</p>
+	
+	
+	<a class="more" href="https://www.healthcaredive.com/news/physicians-say-they-should-benefit-financially-from-ais-time-savings-doximity/829046/" target="_blank" rel="noopener noreferrer">Healthcare Dive &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -13960,7 +14052,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2426 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2422 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240742" data-cat="entertainment" data-sent="0" data-slug="interest christian metal band demon hunter sues over kpop hunters trademark" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 26 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/interest/2026-08-26/christian-metal-band-demon-hunter-sues-over-kpop-demon-hunters-trademark/.240742" target="_blank" rel="noopener noreferrer">Christian Metal Band Demon Hunter Sues Over KPop Demon Hunters Trademark</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/zt8abs" data-cat="dev" data-sent="0" data-slug="cant release that html" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 26 &middot; Dev</span><a href="https://notes.highlysuspect.agency/cant-release-that.html" target="_blank" rel="noopener noreferrer">If I release it, you won’t get the same experience I get</a></li>
@@ -16384,10 +16476,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240667" data-cat="entertainment" data-sent="0" data-slug="review the world dancing episode" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 19 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/review/the-world-is-dancing/episode-8/.240667" target="_blank" rel="noopener noreferrer">The World Is Dancing ‒ Episode 8</a></li>
 <li class="arow" data-count="1" data-id="rss:US-EN-49647443" data-cat="sports" data-sent="0" data-slug="boxing story women pound rankings claressa shields keep top spot dina thorslund makes" hidden="until-found"><span class="ameta">ESPN &middot; Aug 19 &middot; Sports</span><a href="https://www.espn.com/boxing/story/_/id/49647443/women-boxing-pound-pound-rankings-claressa-shields-keep-top-spot-dina-thorslund-makes-top-10" target="_blank" rel="noopener noreferrer">Women&#39;s pound-for-pound rankings: Shields keeps top spot, Thorslund makes top 10</a></li>
 <li class="arow" data-count="1" data-id="rss:US-EN-49611029" data-cat="sports" data-sent="0" data-slug="fantasy football story rankings breakouts drumbeat players" hidden="until-found"><span class="ameta">ESPN &middot; Aug 19 &middot; Sports</span><a href="https://www.espn.com/fantasy/football/story/_/id/49611029/2026-fantasy-football-rankings-breakouts-drumbeat-players" target="_blank" rel="noopener noreferrer">The six &#39;drumbeat&#39; players generating buzz you shouldn&#39;t ignore in drafts</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.fiercehealthcare.com/c16060c0-57cd-4ef0-8a46-bce5aaa2cb96" data-cat="healthcare" data-sent="1" data-slug="health tech epic expands ambitions agent platform cosmos powered predictions and deeper workflow" hidden="until-found"><span class="ameta">FIERCE HEALTHCARE &middot; Aug 19 &middot; Healthcare &middot; texted</span><a href="https://www.fiercehealthcare.com/health-tech/epic-expands-ai-ambitions-agent-platform-cosmos-powered-predictions-and-deeper-workflow" target="_blank" rel="noopener noreferrer">Epic expands AI ambitions with agent platform, Cosmos-powered predictions and workflow automation</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.billboard.com/?p=1236319756" data-cat="music" data-sent="0" data-slug="music news jamie release date ghosts days album" hidden="until-found"><span class="ameta">BILLBOARD &middot; Aug 19 &middot; Music</span><a href="https://www.billboard.com/music/music-news/jamie-t-release-date-ghosts-100-days-album-1236319756/" target="_blank" rel="noopener noreferrer">Jamie T Shares Nostalgic New Single ‘3310’ &amp; Upcoming Album Release Date: Here’s When It Arrives</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.technologyreview.com/?p=1140195" data-cat="tech" data-sent="0" data-slug="the download recursive self improvement problem heatwave causes" hidden="until-found"><span class="ameta">MIT TECH REVIEW &middot; Aug 19 &middot; Tech</span><a href="https://www.technologyreview.com/2026/08/19/1140195/the-download-ai-recursive-self-improvement-problem-heatwave-causes/" target="_blank" rel="noopener noreferrer">The Download: AI’s self-improvement problem, and what’s driving the heat</a></li>
-<li class="arow" data-count="1" data-id="rss:0eabec58-0fb7-4a12-8cec-6bbb0e773db4" data-cat="markets" data-sent="0" data-slug="tech year after losing usd1 billion bybit says helped save usd700 million" hidden="until-found"><span class="ameta">COINDESK &middot; Aug 19 &middot; Markets</span><a href="https://www.coindesk.com/tech/2026/08/19/a-year-after-losing-usd1-46-billion-bybit-says-ai-helped-it-save-usd700-million" target="_blank" rel="noopener noreferrer">A year after losing $1.46 billion, Bybit says AI helped it save $700 million</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
