@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-28T02:17:33.861Z">
+<meta name="sf-version" content="2026-08-28T03:22:10.801Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -532,10 +532,11 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
+:root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
-:root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
@@ -547,7 +548,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
-:root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
@@ -672,10 +672,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 10:17 PM &middot; 304 TODAY</p>
+	<p class="stats">UPDATED 11:22 PM &middot; 306 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">170</span><span class="sr-only"> — 170 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">86</span><span class="sr-only"> — 86 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">237</span><span class="sr-only"> — 237 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">397</span><span class="sr-only"> — 397 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">323</span><span class="sr-only"> — 323 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">433</span><span class="sr-only"> — 433 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">183</span><span class="sr-only"> — 183 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">489</span><span class="sr-only"> — 489 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">134</span><span class="sr-only"> — 134 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">23</span><span class="sr-only"> — 23 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">525</span><span class="sr-only"> — 525 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">172</span><span class="sr-only"> — 172 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">86</span><span class="sr-only"> — 86 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">237</span><span class="sr-only"> — 237 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">397</span><span class="sr-only"> — 397 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">322</span><span class="sr-only"> — 322 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">433</span><span class="sr-only"> — 433 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">183</span><span class="sr-only"> — 183 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">489</span><span class="sr-only"> — 489 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">134</span><span class="sr-only"> — 134 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">23</span><span class="sr-only"> — 23 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">524</span><span class="sr-only"> — 524 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -698,6 +698,75 @@ footer a { color: var(--text-faint); }
 <h2><span class="date">FOR YOU</span><span class="rel">RANKED BY YOUR INTERESTS</span><span class="rule" aria-hidden="true"></span></h2>
 
 <div class="rail-row">
+<article class="card compact rail-art has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:3f614f7b-07cb-489b-943b-c06f475928ed" data-srckey="ign" data-cat="games" data-sent="0" data-ts="1787857237000" data-slug="articles gta satire humor rockstar comments">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘We Have To Be Careful’ — Rockstar on GTA 6’s Approach to Satire — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">IGN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-27T19:00:37.000Z">3:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">‘We Have To Be Careful’ — Rockstar on GTA 6’s Approach to Satire</h3>
+	<p class="snippet">Rockstar is still dedicated to making Grand Theft Auto a funny satire of modern America, but it’s being careful with its references to ensure GTA 6 doesn’t feel dated before it launches.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assets-prd.ignimgs.com/2026/08/27/gta6-satire-news-1787848953836.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">‘We Have To Be Careful’ — Rockstar on GTA 6’s Approach to Satire</h3>
+	<p class="about">Rockstar is still dedicated to making Grand Theft Auto a funny satire of modern America, but it’s being careful with its references to ensure GTA 6 doesn’t feel dated before it launches.</p>
+	
+	
+	<a class="more" href="https://www.ign.com/articles/gta-6-satire-humor-rockstar-comments" target="_blank" rel="noopener noreferrer">IGN &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact rail-art has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49737553" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1787846546000" data-slug="nfl story dealing players returning college football eligibility ncaa sec big ten lsu cluster">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="&#39;I feel like I took a freakin&#39; gummy&#39;: Inside the chaos of NFL players returning to college football — flip for details">
+	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-27T16:02:26.000Z">12:02 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">&#39;I feel like I took a freakin&#39; gummy&#39;: Inside the chaos of NFL players returning to college football</h3>
+	<p class="snippet">NFL coaches, execs and agents tell ESPN they&#39;re sifting through questions and implications of a new reality, which seems to change by the hour.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0827%2Fr1707475_1296x729_16-9.jpg&amp;w=640" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0827%2Fr1707475_1296x729_16-9.jpg&amp;w=320 320w, https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0827%2Fr1707475_1296x729_16-9.jpg&amp;w=640 640w, https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0827%2Fr1707475_1296x729_16-9.jpg&amp;w=960 960w" sizes="(max-width: 640px) 78vw, 320px">
+</div>
+<div class="face back" inert>
+	<h3 class="title">&#39;I feel like I took a freakin&#39; gummy&#39;: Inside the chaos of NFL players returning to college football</h3>
+	<p class="about">NFL coaches, execs and agents tell ESPN they&#39;re sifting through questions and implications of a new reality, which seems to change by the hour.</p>
+	
+	
+	<a class="more" href="https://www.espn.com/nfl/story/_/id/49737553/nfl-dealing-players-returning-college-football-eligibility-ncaa-sec-big-ten-big-12-lsu-cluster" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact rail-art has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240642" data-srckey="anime news network" data-cat="entertainment" data-sent="0" data-ts="1787846400000" data-slug="review blue box volumes manga">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Blue Box Volumes 5-8 Manga Review — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(269 55% 72%)">ANIME NEWS NETWORK</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-27T16:00:00.000Z">12:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Blue Box Volumes 5-8 Manga Review</h3>
+	<p class="snippet">Taiki makes it clear multiple times that his feelings will not waver, and the problem is that I believe him.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.animenewsnetwork.com/thumbnails/crop600x315gI8/herald/200594/blue-box-5.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Blue Box Volumes 5-8 Manga Review</h3>
+	<p class="about">Taiki makes it clear multiple times that his feelings will not waver, and the problem is that I believe him.</p>
+	
+	
+	<a class="more" href="https://www.animenewsnetwork.com/review/blue-box-volumes-5-8/manga/.240642" target="_blank" rel="noopener noreferrer">Anime News Network &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact rail-art has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/report/985187/samsung-galaxy-s26-fe-hands-on-preview-specs-features-design" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1787832000000" data-slug="report samsung galaxy s26 hands preview specs features design">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Samsung’s Galaxy S26 FE pairs last year’s hardware with last month’s software — flip for details">
@@ -767,29 +836,6 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact rail-art has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240997" data-srckey="anime news network" data-cat="entertainment" data-sent="0" data-ts="1787758141000" data-slug="feature capcom continues make the old feel new again">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Capcom Continues to Make The Old Feel New Again — flip for details">
-	<div class="meta"><span class="src" style="color:hsl(269 55% 72%)">ANIME NEWS NETWORK</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-26T15:29:01.000Z">11:29 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
-	<h3 class="title">Capcom Continues to Make The Old Feel New Again</h3>
-	<p class="snippet">Capcom&#39;s recent trend of reviving and revitalizing older franchises is on a roll.</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://www.animenewsnetwork.com/thumbnails/crop600x315gGF/cms/feature/240997/mm2.png.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-</div>
-<div class="face back" inert>
-	<h3 class="title">Capcom Continues to Make The Old Feel New Again</h3>
-	<p class="about">Capcom&#39;s recent trend of reviving and revitalizing older franchises is on a roll.</p>
-	
-	
-	<a class="more" href="https://www.animenewsnetwork.com/feature/2026-08-26/capcom-continues-to-make-the-old-feel-new-again/.240997" target="_blank" rel="noopener noreferrer">Anime News Network &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
 <article class="card compact rail-art has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/devio_3007/the-free-tier-fallacy-five-myths-about-coding-agents-debunked-with-a-token-budget-123d" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1787742718000" data-slug="devio the free tier fallacy five myths about coding agents debunked with token budget 123d">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The Free-Tier Fallacy: Five Myths About Coding Agents, Debunked with a Token Budget — flip for details">
@@ -805,52 +851,6 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://dev.to/devio_3007/the-free-tier-fallacy-five-myths-about-coding-agents-debunked-with-a-token-budget-123d" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
-<article class="card compact rail-art has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://kotaku.com/?p=2000727940" data-srckey="kotaku" data-cat="games" data-sent="0" data-ts="1787742047000" data-slug="mega man dual override preview gamescom capcom boss">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Mega Man: Dual Override Feels Like Everything You Hope And Fear It Will Be — flip for details">
-	<div class="meta"><span class="src" style="color:#a3e635">KOTAKU</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-26T11:00:47.000Z">7:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
-	<h3 class="title">Mega Man: Dual Override Feels Like Everything You Hope And Fear It Will Be</h3>
-	<p class="snippet">Capcom’s return to the Blue Bomber isn’t pulling punches</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://kotaku.com/app/uploads/2026/08/megaman-1280x720.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-</div>
-<div class="face back" inert>
-	<h3 class="title">Mega Man: Dual Override Feels Like Everything You Hope And Fear It Will Be</h3>
-	<p class="about">Capcom’s return to the Blue Bomber isn’t pulling punches</p>
-	
-	
-	<a class="more" href="https://kotaku.com/mega-man-dual-override-preview-gamescom-capcom-boss-2000727940" target="_blank" rel="noopener noreferrer">Kotaku &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
-<article class="card compact rail-art has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49737553" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1787846546000" data-slug="nfl story dealing players returning college football eligibility ncaa sec big ten lsu cluster">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="&#39;I feel like I took a freakin&#39; gummy&#39;: Inside the chaos of NFL players returning to college football — flip for details">
-	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-27T16:02:26.000Z">12:02 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
-	<h3 class="title">&#39;I feel like I took a freakin&#39; gummy&#39;: Inside the chaos of NFL players returning to college football</h3>
-	<p class="snippet">NFL coaches, execs and agents tell ESPN they&#39;re sifting through questions and implications of a new reality, which seems to change by the hour.</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0827%2Fr1707475_1296x729_16-9.jpg&amp;w=640" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0827%2Fr1707475_1296x729_16-9.jpg&amp;w=320 320w, https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0827%2Fr1707475_1296x729_16-9.jpg&amp;w=640 640w, https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0827%2Fr1707475_1296x729_16-9.jpg&amp;w=960 960w" sizes="(max-width: 640px) 78vw, 320px">
-</div>
-<div class="face back" inert>
-	<h3 class="title">&#39;I feel like I took a freakin&#39; gummy&#39;: Inside the chaos of NFL players returning to college football</h3>
-	<p class="about">NFL coaches, execs and agents tell ESPN they&#39;re sifting through questions and implications of a new reality, which seems to change by the hour.</p>
-	
-	
-	<a class="more" href="https://www.espn.com/nfl/story/_/id/49737553/nfl-dealing-players-returning-college-football-eligibility-ncaa-sec-big-ten-big-12-lsu-cluster" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -891,43 +891,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.mccoveychronicles.com/san-francisco-giants-game-information/110833/mlb-2026-san-francisco-giants-cincinnati-reds-how-to-watch-logan-webb-nick-lodolo" target="_blank" rel="noopener noreferrer">How to watch San Francisco Giants vs. Cincinnati Reds</a>
-		<p class="trend-meta"><span class="src">MCCOVEY CHRONICLES</span><span class="sep" aria-hidden="true">&middot;</span>"drew gilbert" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.nytimes.com/athletic/7541124/2026/08/27/49ers-roster-battle-left-guard-carver-willis/" target="_blank" rel="noopener noreferrer">Why is 49ers’ Carver Willis getting another start at LG? The rookie needs the reps</a>
+		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"49ers score" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.thezoereport.com/culture/lindsay-lohan-vacation-outfit" target="_blank" rel="noopener noreferrer">Shop Lindsay Lohan&#39;s White Minidress Before Booking Your Next Vacation</a>
-		<p class="trend-meta"><span class="src">THE ZOE REPORT</span><span class="sep" aria-hidden="true">&middot;</span>"lindsay lohan" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.infobae.com/america/ciencia-america/2026/08/27/eclipse-lunar-2026-como-y-donde-ver-el-ultimo-gran-espectaculo-celeste-del-ano/" target="_blank" rel="noopener noreferrer">2026 Lunar Eclipse, live: the last great astronomical spectacle of the year has begun</a>
+		<p class="trend-meta"><span class="src">INFOBAE</span><span class="sep" aria-hidden="true">&middot;</span>"eclipse hoy" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.usatoday.com/story/news/nation/2026/08/27/doctor-wakes-up-to-find-bat-in-mouth/91492723007/" target="_blank" rel="noopener noreferrer">Doctor wakes up to bat in her mouth: &#39;I thought I was still dreaming&#39;</a>
-		<p class="trend-meta"><span class="src">USA TODAY</span><span class="sep" aria-hidden="true">&middot;</span>"krista edelman bat encounter virginia" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.tvline.com/2245179/quote-of-the-day-theo-james-love/" target="_blank" rel="noopener noreferrer">Quote Of The Day By Theo James: &#39;Everybody Has A Bit Of Body Armor They Wear To Protect Themselves, And Love Is About Trying To Break It Down...&#39;</a>
+		<p class="trend-meta"><span class="src">TVLINE</span><span class="sep" aria-hidden="true">&middot;</span>"theo james" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nytimes.com/athletic/7537991/2026/08/26/bills-bubble-watch-preseason-mecole-hardman/" target="_blank" rel="noopener noreferrer">Who’s on the Bills’ roster bubble? 14 players fighting for the final 4 or 5 spots</a>
-		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"dante pettis" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.nfl.com/videos/49ers-lead-for-first-time-with-pineiro-s-59-yard-fg" target="_blank" rel="noopener noreferrer">49ers lead for first time with Piñeiro&#39;s 59-yard FG</a>
+		<p class="trend-meta"><span class="src">NFL.COM</span><span class="sep" aria-hidden="true">&middot;</span>"eddy pineiro" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sports.yahoo.com/articles/royals-vs-blue-jays-prediction-150000265.html" target="_blank" rel="noopener noreferrer">Royals vs Blue Jays Prediction, Odds &amp; Home Run Pick for Today&#39;s MLB Game</a>
-		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"kc royals" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://theconversation.com/nasa-is-gearing-up-to-launch-its-next-flagship-space-telescope-combining-spy-technology-with-sophisticated-infrared-detectors-290040" target="_blank" rel="noopener noreferrer">NASA is gearing up to launch its next flagship space telescope – combining spy technology with sophisticated infrared detectors</a>
+		<p class="trend-meta"><span class="src">THE CONVERSATION</span><span class="sep" aria-hidden="true">&middot;</span>"nasa" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://apnews.com/video/cctv-footage-show-floodwaters-and-debris-overtaking-gyirong-port-e59106e8dc2b45289a8c12ce7d4a0c5a" target="_blank" rel="noopener noreferrer">CCTV footage show floodwaters and debris overtaking Gyirong Port</a>
-		<p class="trend-meta"><span class="src">AP NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"ryan fitzpatrick" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://www.kktv.com/2026/08/27/el-paso-county-commissioners-hear-buc-ees-zoning-appeal-thursday/" target="_blank" rel="noopener noreferrer">El Paso County commissioners approve Buc-ee’s zoning appeal</a>
+		<p class="trend-meta"><span class="src">KKTV</span><span class="sep" aria-hidden="true">&middot;</span>"buc ee&#39;s" &middot; 500+ searches</p>
 	</div>
 </li>
 </ol>
@@ -949,6 +949,52 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.theverge.com/report/985187/samsung-galaxy-s26-fe-hands-on-preview-specs-features-design" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:6a90f09b06c510ef6758e955" data-srckey="wired" data-cat="ai" data-sent="0" data-ts="1787886254000" data-slug="story judge has blocked the pentagons attempt blacklist anthropic">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="A Judge Has Blocked the Pentagon’s Attempt to Blacklist Anthropic — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(207 55% 72%)">WIRED</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T03:04:14.000Z">11:04 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">A Judge Has Blocked the Pentagon’s Attempt to Blacklist Anthropic</h3>
+	<p class="snippet">A federal judge has called the Department of Defense’s designation of Anthropic as a national security supply-chain risk “illegal and baseless.”</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media.wired.com/photos/6a90f2d127d3f5cec6f46d70/master/pass/2261854833" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">A Judge Has Blocked the Pentagon’s Attempt to Blacklist Anthropic</h3>
+	<p class="about">A federal judge has called the Department of Defense’s designation of Anthropic as a national security supply-chain risk “illegal and baseless.”</p>
+	<p class="why"><span class="whylabel">matched</span> <span class="whykey">Anthropic</span> <span class="whystrength" title="How strongly this matched your interest (decayed frequency: 2.0)">match</span></p>
+	
+	<a class="more" href="https://www.wired.com/story/a-judge-has-blocked-the-pentagons-attempt-to-blacklist-anthropic/" target="_blank" rel="noopener noreferrer">Wired &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact no-snippet" style="--rail:#a78bfa" data-count="1" data-id="rss:https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html" data-srckey="hacker news" data-cat="ai" data-sent="0" data-ts="1787882618000" data-slug="technology anthropic government blacklisting ruling html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Judge Rules Trump Administration’s Blacklisting of Anthropic Was Illegal — flip for details">
+	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T02:03:38.000Z">10:03 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Judge Rules Trump Administration’s Blacklisting of Anthropic Was Illegal</h3>
+	
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Judge Rules Trump Administration’s Blacklisting of Anthropic Was Illegal</h3>
+	<p class="about">No summary in this feed — follow the link for the story.</p>
+	<p class="why"><span class="whylabel">matched</span> <span class="whykey">Anthropic</span> <span class="whystrength" title="How strongly this matched your interest (decayed frequency: 2.0)">match</span></p>
+	
+	<a class="more" href="https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1118,14 +1164,14 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2" style="--rail:#a78bfa" data-count="1" data-id="rss:https://techcrunch.com/?p=3147648" data-srckey="techcrunch" data-cat="ai" data-sent="1" data-ts="1787872605000" data-slug="anthropic and openai are joining the stage techcrunch disrupt">
+<article class="card compact w2 h2 has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://techcrunch.com/?p=3147648" data-srckey="techcrunch" data-cat="ai" data-sent="1" data-ts="1787872605000" data-slug="anthropic and openai are joining the stage techcrunch disrupt">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Anthropic and OpenAI are joining the AI stage at TechCrunch Disrupt 2026 — flip for details">
 	<div class="meta"><span class="src" style="color:#34d399">TECHCRUNCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-27T23:16:45.000Z">7:16 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span><span class="sent" title="This one was texted to you"><svg viewBox="0 0 16 16" width="10" height="10" aria-hidden="true"><path fill="currentColor" d="M6.1 11.6 2.9 8.4l-1 1 4.2 4.2 8-8-1-1z"/></svg>texted</span></div>
 	<h3 class="title">Anthropic and OpenAI are joining the AI stage at TechCrunch Disrupt 2026</h3>
 	<p class="snippet">At TechCrunch Disrupt 2026, the AI Stage is back to dig into the single hottest topic in the community for the past few years, presented by Google for Startups.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://techcrunch.com/wp-content/uploads/2026/07/techcrunch-disrupt-2026-ai-stage.jpg?w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://techcrunch.com/wp-content/uploads/2026/07/techcrunch-disrupt-2026-ai-stage.jpg?w=600 600w, https://techcrunch.com/wp-content/uploads/2026/07/techcrunch-disrupt-2026-ai-stage.jpg?w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Anthropic and OpenAI are joining the AI stage at TechCrunch Disrupt 2026</h3>
@@ -7929,7 +7975,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2688 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2686 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240742" data-cat="entertainment" data-sent="0" data-slug="interest christian metal band demon hunter sues over kpop hunters trademark" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 26 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/interest/2026-08-26/christian-metal-band-demon-hunter-sues-over-kpop-demon-hunters-trademark/.240742" target="_blank" rel="noopener noreferrer">Christian Metal Band Demon Hunter Sues Over KPop Demon Hunters Trademark</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/zt8abs" data-cat="dev" data-sent="0" data-slug="cant release that html" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 26 &middot; Dev</span><a href="https://notes.highlysuspect.agency/cant-release-that.html" target="_blank" rel="noopener noreferrer">If I release it, you won’t get the same experience I get</a></li>
@@ -10617,8 +10663,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:US-EN-49641437" data-cat="sports" data-sent="0" data-slug="racing story bold predictions rest returns summer break" hidden="until-found"><span class="ameta">ESPN &middot; Aug 18 &middot; Sports</span><a href="https://www.espn.com/racing/f1/story/_/id/49641437/bold-predictions-rest-2026-f1-returns-summer-break" target="_blank" rel="noopener noreferrer">Bold predictions for the rest of 2026 as F1 returns from summer break</a></li>
 <li class="arow" data-count="1" data-id="rss:US-EN-49649281" data-cat="sports" data-sent="0" data-slug="espn story founder bill rasmussen dies" hidden="until-found"><span class="ameta">ESPN &middot; Aug 18 &middot; Sports</span><a href="https://www.espn.com/espn/story/_/id/49649281/espn-founder-bill-rasmussen-dies-93" target="_blank" rel="noopener noreferrer">Bill Rasmussen, founder of ESPN, dies at 93</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.fiercehealthcare.com/5160024d-fa45-47fc-b697-2f33e5892589" data-cat="healthcare" data-sent="0" data-slug="payers former exec alleges alignment healthcare leaders juiced profits boost bonuses" hidden="until-found"><span class="ameta">FIERCE HEALTHCARE &middot; Aug 18 &middot; Healthcare</span><a href="https://www.fiercehealthcare.com/payers/former-exec-alleges-alignment-healthcare-leaders-juiced-profits-boost-bonuses" target="_blank" rel="noopener noreferrer">Alignment Health seeks to have former exec&#39;s whistleblower suit tossed</a></li>
-<li class="arow" data-count="1" data-id="rss:https://arstechnica.com/gadgets/2026/08/peacock-raises-prices-by-18-percent-after-becoming-profitable/" data-cat="tech" data-sent="0" data-slug="gadgets peacock raises prices percent after becoming profitable" hidden="until-found"><span class="ameta">ARS TECHNICA &middot; Aug 18 &middot; Tech</span><a href="https://arstechnica.com/gadgets/2026/08/peacock-raises-prices-by-18-percent-after-becoming-profitable/" target="_blank" rel="noopener noreferrer">Peacock raises prices by 18 percent after becoming profitable</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.polygon.com/survey-gamers-more-comfortable-ai/" data-cat="games" data-sent="0" data-slug="survey gamers more comfortable" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 18 &middot; Games</span><a href="https://www.polygon.com/survey-gamers-more-comfortable-ai/" target="_blank" rel="noopener noreferrer">Generative AI in Games is Being Embraced by More Players, New Study Says</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
