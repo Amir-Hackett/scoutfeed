@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-29T00:43:07.223Z">
+<meta name="sf-version" content="2026-08-29T01:12:30.273Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -532,8 +532,9 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
-:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
+:root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
+:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
@@ -552,7 +553,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
-:root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(111 55% 72%)"] { color: #2f6e23 !important; }
 :root[data-theme="light"] .meta [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
@@ -672,10 +672,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 8:43 PM &middot; 318 TODAY</p>
+	<p class="stats">UPDATED 9:12 PM &middot; 320 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">162</span><span class="sr-only"> — 162 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">76</span><span class="sr-only"> — 76 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">239</span><span class="sr-only"> — 239 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">401</span><span class="sr-only"> — 401 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">333</span><span class="sr-only"> — 333 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">435</span><span class="sr-only"> — 435 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">183</span><span class="sr-only"> — 183 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">485</span><span class="sr-only"> — 485 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">137</span><span class="sr-only"> — 137 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">22</span><span class="sr-only"> — 22 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">527</span><span class="sr-only"> — 527 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">163</span><span class="sr-only"> — 163 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">76</span><span class="sr-only"> — 76 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">239</span><span class="sr-only"> — 239 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">401</span><span class="sr-only"> — 401 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">332</span><span class="sr-only"> — 332 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">435</span><span class="sr-only"> — 435 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">183</span><span class="sr-only"> — 183 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">485</span><span class="sr-only"> — 485 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">138</span><span class="sr-only"> — 138 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">22</span><span class="sr-only"> — 22 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">526</span><span class="sr-only"> — 526 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -891,43 +891,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.oregonlive.com/highschoolsports/2026/08/oregon-high-school-football-300-top-players-to-know-for-2026-season-nos-20-1.html" target="_blank" rel="noopener noreferrer">Oregon high school football: 300 top players to know for 2026 season (Nos. 20-1)</a>
-		<p class="trend-meta"><span class="src">OREGONLIVE.COM</span><span class="sep" aria-hidden="true">&middot;</span>"high school football scores" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.maxpreps.com/news/Tv5Oo7VfjEudFzhK4Ky9UQ/maxpreps-top-25-high-school-football-scores-no-10-duncanville-opens-season-at-no-16-allen-in-maxpreps-game-of-the-week.htm" target="_blank" rel="noopener noreferrer">MaxPreps Top 25 high school football scores: No. 10 Duncanville opens season at No. 16 Allen in MaxPreps Game of the Week</a>
+		<p class="trend-meta"><span class="src">MAXPREPS</span><span class="sep" aria-hidden="true">&middot;</span>"maxpreps" &middot; 10000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sports.yahoo.com/nfl/article/as-eagles-adopt-more-aggressive-offense-jalen-hurts-not-afraid-of-making-mistakes-055450162.html" target="_blank" rel="noopener noreferrer">As Eagles adopt more aggressive offense, Jalen Hurts ‘not afraid of making mistakes’</a>
-		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"jalen hurts" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.camdenchat.com/baltimore-orioles-history/70031/orioles-athletics-series-preview-late-night-baseball" target="_blank" rel="noopener noreferrer">Orioles-Athletics series preview: Late night baseball</a>
+		<p class="trend-meta"><span class="src">CAMDEN CHAT</span><span class="sep" aria-hidden="true">&middot;</span>"orioles vs athletics" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nfl.com/news/nfl-offensive-rookies-best-and-worst-case-for-17-players-in-2026" target="_blank" rel="noopener noreferrer">NFL offensive rookies: Best and worst case for 17 players in 2026</a>
-		<p class="trend-meta"><span class="src">NFL.COM</span><span class="sep" aria-hidden="true">&middot;</span>"first nfl game 2026" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.acmepackingcompany.com/general/85166/tyrod-taylor-vs-kyle-mccord-the-case-against-each-packers-qb" target="_blank" rel="noopener noreferrer">Tyrod Taylor vs. Kyle McCord: The Case Against Each Packers QB</a>
+		<p class="trend-meta"><span class="src">ACME PACKING COMPANY</span><span class="sep" aria-hidden="true">&middot;</span>"kyle mccord" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://simplywall.st/stocks/us/media/nyse-fubo/fubotv/news/has-fubotv-fubo-fallen-below-fair-value-after-its-sports-exp" target="_blank" rel="noopener noreferrer">Has FuboTV (FUBO) Fallen Below Fair Value After Its Sports Expansion?</a>
-		<p class="trend-meta"><span class="src">SIMPLY WALL STREET</span><span class="sep" aria-hidden="true">&middot;</span>"fubotv" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://sports.yahoo.com/articles/joe-burrow-bengals-teammates-eat-204442367.html" target="_blank" rel="noopener noreferrer">Joe Burrow, Bengals teammates eat Del Rossi&#39;s Cheesesteak pregame meal</a>
+		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"joe burrow" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://heavy.com/sports/nfl/washington-commanders/slammed-stefon-diggs-adam-peters-issue/" target="_blank" rel="noopener noreferrer">Commanders Slammed for Stefon Diggs Move, Amid Bigger Problem</a>
-		<p class="trend-meta"><span class="src">HEAVY.COM</span><span class="sep" aria-hidden="true">&middot;</span>"stefon diggs" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.nbcsportsphiladelphia.com/mlb/philadelphia-phillies/world-series-champion-larry-christenson-larry-bowa/748613/" target="_blank" rel="noopener noreferrer">Former Phillies World Series Champion Larry Christenson dies at 72</a>
+		<p class="trend-meta"><span class="src">NBC SPORTS PHILADELPHIA</span><span class="sep" aria-hidden="true">&middot;</span>"larry christenson" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nytimes.com/athletic/7544125/2026/08/28/bengals-2026-training-camp-takeaways/" target="_blank" rel="noopener noreferrer">What I learned over 4 weeks at Cincinnati Bengals training camp</a>
-		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"dohnte meyers" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://bleacherreport.com/articles/25488867-kenneth-walker-iiis-ankle-injury-caused-shoe-issue-chiefs-andy-reid-says" target="_blank" rel="noopener noreferrer">Kenneth Walker III&#39;s Ankle Injury Caused by Shoe Issue, Chiefs&#39; Andy Reid Says</a>
+		<p class="trend-meta"><span class="src">BLEACHER REPORT</span><span class="sep" aria-hidden="true">&middot;</span>"kenneth walker" &middot; 500+ searches</p>
 	</div>
 </li>
 </ol>
@@ -949,6 +949,52 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://dev.to/surfiniaburger/my-spidey-sense-on-ai-883" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cn45vdxyvvlo#0" data-srckey="bbc world" data-cat="world" data-sent="0" data-ts="1787964979000" data-slug="news articles cn45vdxyvvlo">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Close race as Iceland votes on whether to restart talks on joining EU — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T00:56:19.000Z">8:56 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Close race as Iceland votes on whether to restart talks on joining EU</h3>
+	<p class="snippet">Turbulent international affairs have brought the vote forward, but the campaign has focused more on Iceland&#39;s vital fishing industry.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/1ad8/live/d86c20a0-a31d-11f1-8937-ebc435db1160.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1ad8/live/d86c20a0-a31d-11f1-8937-ebc435db1160.jpg 240w, https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/1ad8/live/d86c20a0-a31d-11f1-8937-ebc435db1160.jpg 340w, https://ichef.bbci.co.uk/ace/standard/510/cpsprodpb/1ad8/live/d86c20a0-a31d-11f1-8937-ebc435db1160.jpg 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Close race as Iceland votes on whether to restart talks on joining EU</h3>
+	<p class="about">Turbulent international affairs have brought the vote forward, but the campaign has focused more on Iceland&#39;s vital fishing industry.</p>
+	
+	
+	<a class="more" href="https://www.bbc.co.uk/news/articles/cn45vdxyvvlo" target="_blank" rel="noopener noreferrer">BBC World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://lobste.rs/s/a32ogw" data-srckey="lobsters" data-cat="ai" data-sent="0" data-ts="1787964929000">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Every week, an AI digs into the week&#39;s AI news and turns it into art — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T00:55:29.000Z">8:55 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Every week, an AI digs into the week&#39;s AI news and turns it into art</h3>
+	<p class="snippet">Every week this pulls headlines from ~15 AI-industry RSS feeds, has Gemini research the actual stories behind them with live search, then generates one image plus a written rationale for the reaction. Source: https://github.com/skavanagh/Render Site: https://renderweekly.art Comments</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://renderweekly.art/assets/og-image.png?v=render-site-00013-dhl" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Every week, an AI digs into the week&#39;s AI news and turns it into art</h3>
+	<p class="about">Every week this pulls headlines from ~15 AI-industry RSS feeds, has Gemini research the actual stories behind them with live search, then generates one image plus a written rationale for the reaction. Source: https://github.com/skavanagh/Render Site: https://renderweekly.art Comments</p>
+	<p class="why"><span class="whylabel">matched</span> <span class="whykey">Gemini</span> <span class="whystrength" title="How strongly this matched your interest (decayed frequency: 2.0)">match</span></p>
+	
+	<a class="more" href="https://renderweekly.art/" target="_blank" rel="noopener noreferrer">Lobsters &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -8251,7 +8297,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2675 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2673 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241040" data-cat="entertainment" data-sent="0" data-slug="interest newspaper france theme park project lacks approval from dragon ball rights holders" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 27 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/interest/2026-08-27/newspaper-france-theme-park-project-lacks-approval-from-dragon-ball-rights-holders/.241040" target="_blank" rel="noopener noreferrer">Newspaper: France&#39;s Theme Park Project Lacks Approval From Dragon Ball&#39;s Rights Holders</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/kvlafj" data-cat="dev" data-sent="0" data-slug="blog announcing flatpak sta" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 27 &middot; Dev</span><a href="https://modal.cx/blog/announcing-flatpak-sta/" target="_blank" rel="noopener noreferrer">Announcing Sovereign Tech Agency Investment in Flatpak</a></li>
@@ -10926,8 +10972,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2240154/meta-ai-now-has-a-dedicated-desktop-app-for-mac/" data-cat="ai" data-sent="0" data-slug="meta now has dedicated desktop app for mac" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 19 &middot; AI</span><a href="https://www.engadget.com/2240154/meta-ai-now-has-a-dedicated-desktop-app-for-mac/" target="_blank" rel="noopener noreferrer">Meta AI now has a dedicated desktop app for Mac</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theverge.com/ai-artificial-intelligence/982323/openai-hit-brakes-voluntary-pacing-ai" data-cat="tech" data-sent="0" data-slug="artificial intelligence openai hit brakes voluntary pacing" hidden="until-found"><span class="ameta">THE VERGE &middot; Aug 19 &middot; Tech</span><a href="https://www.theverge.com/ai-artificial-intelligence/982323/openai-hit-brakes-voluntary-pacing-ai" target="_blank" rel="noopener noreferrer">OpenAI hit the brakes. Now what?</a></li>
 <li class="arow" data-count="1" data-id="rss:https://demo.frugaltokens.com/" data-cat="tech" data-sent="0" hidden="until-found"><span class="ameta">HACKER NEWS &middot; Aug 19 &middot; Tech</span><a href="https://demo.frugaltokens.com/" target="_blank" rel="noopener noreferrer">Show HN: Frugal Tokens – explore costs and usage across coding agents</a></li>
-<li class="arow" data-count="1" data-id="rss:https://arstechnica.com/culture/2026/08/a-fantastical-journey-unfolds-in-gorgeous-wildwood-trailer/" data-cat="tech" data-sent="0" data-slug="culture fantastical journey unfolds gorgeous wildwood trailer" hidden="until-found"><span class="ameta">ARS TECHNICA &middot; Aug 19 &middot; Tech</span><a href="https://arstechnica.com/culture/2026/08/a-fantastical-journey-unfolds-in-gorgeous-wildwood-trailer/" target="_blank" rel="noopener noreferrer">A fantastical journey unfolds in gorgeous Wildwood trailer</a></li>
-<li class="arow" data-count="1" data-id="rss:b54f42a9-b168-4768-8c41-8545b43034ef" data-cat="games" data-sent="0" data-slug="articles call duty modern warfare beta will fix issues that have plagued the series for better" hidden="until-found"><span class="ameta">IGN &middot; Aug 19 &middot; Games</span><a href="https://www.ign.com/articles/call-of-duty-modern-warfare-4-beta-will-fix-issues-that-have-plagued-the-series-for-the-better-part-of-a-decade" target="_blank" rel="noopener noreferrer">Call of Duty: Modern Warfare 4 Beta Will Fix Issues That Have Plagued the Series for the Better Part of a Decade</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
