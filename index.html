@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-29T17:04:06.681Z">
+<meta name="sf-version" content="2026-08-29T17:07:25.909Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -352,6 +352,8 @@ h1 .tld { color: var(--accent); }
 /* Breaking strip shares the trending list chrome; the label reads red. */
 .breaking .date { color: #d93a3a; }
 .breaking .rank { color: #d93a3a; }
+.breaking-empty { margin: 0; font-size: 13.5px; line-height: 1.5; color: var(--text-dim); }
+.breaking-empty strong { color: #d93a3a; font-weight: 700; letter-spacing: 0.04em; }
 .trending .rule { flex: 1; height: 1px; background: var(--border); }
 .trend-list {
 	list-style: none; display: grid;
@@ -536,6 +538,7 @@ h1 .tld { color: var(--accent); }
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
+:root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
@@ -545,7 +548,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
-:root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
@@ -683,10 +685,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 1:04 PM &middot; 146 TODAY</p>
+	<p class="stats">UPDATED 1:07 PM &middot; 147 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">157</span><span class="sr-only"> — 157 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">70</span><span class="sr-only"> — 70 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">245</span><span class="sr-only"> — 245 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">410</span><span class="sr-only"> — 410 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">344</span><span class="sr-only"> — 344 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">446</span><span class="sr-only"> — 446 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">179</span><span class="sr-only"> — 179 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">492</span><span class="sr-only"> — 492 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">138</span><span class="sr-only"> — 138 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">18</span><span class="sr-only"> — 18 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">501</span><span class="sr-only"> — 501 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">157</span><span class="sr-only"> — 157 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">70</span><span class="sr-only"> — 70 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">245</span><span class="sr-only"> — 245 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">410</span><span class="sr-only"> — 410 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">344</span><span class="sr-only"> — 344 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">446</span><span class="sr-only"> — 446 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">179</span><span class="sr-only"> — 179 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">493</span><span class="sr-only"> — 493 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">137</span><span class="sr-only"> — 137 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">18</span><span class="sr-only"> — 18 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">501</span><span class="sr-only"> — 501 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -896,7 +898,10 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <main id="feed">
-<section class="trending" aria-label="Trending stories">
+<section class="trending breaking" aria-label="Breaking news">
+<h2><span class="date">BREAKING</span><span class="rel">FLAGGED BY THE BREAKING LANE &middot; LAST 48 HOURS</span><span class="rule" aria-hidden="true"></span></h2>
+<p class="breaking-empty">Nothing breaking in the last 48 hours. Stories with a <strong>BREAKING</strong> / <strong>JUST IN</strong> headline, or top-percentile news stories, land here the moment they match &mdash; texted or not.</p>
+</section><section class="trending" aria-label="Trending stories">
 <h2><span class="date">TRENDING STORIES</span><span class="rel">WHAT THE INTERNET IS SEARCHING</span><span class="rule" aria-hidden="true"></span></h2>
 <ol class="trend-list">
 <li class="trend-item">
@@ -924,7 +929,7 @@ footer a { color: var(--text-faint); }
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
 		<a class="trend-title" href="https://www.espn.com/mlb/story/_/id/49763386/mets-activate-juan-soto-calf-strain-injured-list" target="_blank" rel="noopener noreferrer">Mets activate Juan Soto (calf strain) from injured list</a>
-		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"juan soto" &middot; 2000+ searches</p>
+		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"juan soto" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
@@ -983,6 +988,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://variety.com/2026/film/news/anne-hathaway-tom-cruise-days-of-thunder-sequel-1236839347/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/videos/cy0znyel8d2o#3" data-srckey="bbc sport" data-cat="sports" data-sent="0" data-ts="1788022316000" data-slug="sport football videos cy0znyel8d2o">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Moyes &#39;disappointed&#39; with Everton performance — flip for details">
+	<div class="meta"><span class="src" style="color:#facc15">BBC SPORT</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T16:51:56.000Z">12:51 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Moyes &#39;disappointed&#39; with Everton performance</h3>
+	<p class="snippet">Everton manager David Moyes praises his side&#39;s second-half resilience after James Tarkowski&#39;s injury-time equaliser rescues a point for The Toffees away to Bournemouth. Moyes admitted that it looked like his team &quot;were never going to score&quot; before the 91st minute breakthrough cancels out Alex Scott&#39;s first-half opener.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/5a41/live/7122d190-a3c8-11f1-a291-b542ee92de7c.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5a41/live/7122d190-a3c8-11f1-a291-b542ee92de7c.jpg 240w, https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/5a41/live/7122d190-a3c8-11f1-a291-b542ee92de7c.jpg 340w, https://ichef.bbci.co.uk/ace/standard/510/cpsprodpb/5a41/live/7122d190-a3c8-11f1-a291-b542ee92de7c.jpg 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Moyes &#39;disappointed&#39; with Everton performance</h3>
+	<p class="about">Everton manager David Moyes praises his side&#39;s second-half resilience after James Tarkowski&#39;s injury-time equaliser rescues a point for The Toffees away to Bournemouth. Moyes admitted that it looked like his team &quot;were never going to score&quot; before the 91st minute breakthrough cancels out Alex Scott&#39;s first-half opener.</p>
+	
+	
+	<a class="more" href="https://www.bbc.co.uk/sport/football/videos/cy0znyel8d2o" target="_blank" rel="noopener noreferrer">BBC Sport &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -13235,7 +13263,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2458 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2457 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241040" data-cat="entertainment" data-sent="0" data-slug="interest newspaper france theme park project lacks approval from dragon ball rights holders" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 27 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/interest/2026-08-27/newspaper-france-theme-park-project-lacks-approval-from-dragon-ball-rights-holders/.241040" target="_blank" rel="noopener noreferrer">Newspaper: France&#39;s Theme Park Project Lacks Approval From Dragon Ball&#39;s Rights Holders</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/kvlafj" data-cat="dev" data-sent="0" data-slug="blog announcing flatpak sta" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 27 &middot; Dev</span><a href="https://modal.cx/blog/announcing-flatpak-sta/" target="_blank" rel="noopener noreferrer">Announcing Sovereign Tech Agency Investment in Flatpak</a></li>
@@ -15694,7 +15722,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:WP-MKTW-0005189843" data-cat="markets" data-sent="0" data-slug="story why bessents treasury operations have breathed life back into the gold trade d0a8419e" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 20 &middot; Markets</span><a href="https://www.marketwatch.com/story/why-bessents-treasury-operations-have-breathed-life-back-into-the-gold-trade-d0a8419e?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Why Bessent’s Treasury operations have breathed life back into the gold trade</a></li>
 <li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236838833" data-cat="entertainment" data-sent="0" data-slug="digital global goalhanger hires tom miceli and film expansion" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 20 &middot; Entertainment</span><a href="https://variety.com/2026/digital/global/goalhanger-hires-tom-miceli-tv-and-film-expansion-1236838833/" target="_blank" rel="noopener noreferrer">Podcast Giant Goalhanger Hires Tom Miceli to Lead TV and Film Expansion (EXCLUSIVE)</a></li>
 <li class="arow" data-count="1" data-id="rss:WP-MKTW-0005189609" data-cat="markets" data-sent="0" data-slug="story there considerable tension grandmother wants cut mother out her will should intervene 5e8f408e" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 20 &middot; Markets</span><a href="https://www.marketwatch.com/story/there-is-considerable-tension-my-grandmother-99-wants-to-cut-my-mother-out-of-her-will-should-i-intervene-5e8f408e?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">‘There is considerable tension’: My grandmother, 99, wants to cut my mother out of her will. Should I intervene?</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c4g616gvxr0o#0" data-cat="world" data-sent="0" data-slug="news articles c4g616gvxr0o" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 20 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/c4g616gvxr0o" target="_blank" rel="noopener noreferrer">Belgian car salesman becomes prince after royal parentage confirmed</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
