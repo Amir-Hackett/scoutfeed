@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-29T17:07:25.909Z">
+<meta name="sf-version" content="2026-08-29T17:11:52.705Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -685,7 +685,7 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 1:07 PM &middot; 147 TODAY</p>
+	<p class="stats">UPDATED 1:11 PM &middot; 147 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
 	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">157</span><span class="sr-only"> — 157 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">70</span><span class="sr-only"> — 70 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">245</span><span class="sr-only"> — 245 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">410</span><span class="sr-only"> — 410 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">344</span><span class="sr-only"> — 344 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">446</span><span class="sr-only"> — 446 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">179</span><span class="sr-only"> — 179 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">493</span><span class="sr-only"> — 493 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">137</span><span class="sr-only"> — 137 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">18</span><span class="sr-only"> — 18 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">501</span><span class="sr-only"> — 501 stories</span></button>
@@ -900,7 +900,36 @@ footer a { color: var(--text-faint); }
 <main id="feed">
 <section class="trending breaking" aria-label="Breaking news">
 <h2><span class="date">BREAKING</span><span class="rel">FLAGGED BY THE BREAKING LANE &middot; LAST 48 HOURS</span><span class="rule" aria-hidden="true"></span></h2>
-<p class="breaking-empty">Nothing breaking in the last 48 hours. Stories with a <strong>BREAKING</strong> / <strong>JUST IN</strong> headline, or top-percentile news stories, land here the moment they match &mdash; texted or not.</p>
+<ol class="trend-list">
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">1</span>
+	<div class="trend-body">
+		<a class="trend-title" href="https://www.bbc.co.uk/news/videos/cy8z979y9e4o" target="_blank" rel="noopener noreferrer">Deadly strike on Kyiv warehouse prompts evacuations</a>
+		<p class="trend-meta"><span class="src">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span>Sat 9:55 AM</p>
+	</div>
+</li>
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">2</span>
+	<div class="trend-body">
+		<a class="trend-title" href="https://www.bbc.co.uk/news/articles/c86xwqez4npo" target="_blank" rel="noopener noreferrer">At least 27 dead and hundreds evacuated after strike on Kyiv warehouse</a>
+		<p class="trend-meta"><span class="src">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span>Sat 6:28 AM</p>
+	</div>
+</li>
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">3</span>
+	<div class="trend-body">
+		<a class="trend-title" href="https://www.bbc.co.uk/news/articles/cx2z415w2gpo" target="_blank" rel="noopener noreferrer">Footage of Tibet floods isn&#39;t being shown in China - and we know little about victims there</a>
+		<p class="trend-meta"><span class="src">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span>Fri 11:54 PM</p>
+	</div>
+</li>
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">4</span>
+	<div class="trend-body">
+		<a class="trend-title" href="https://www.bbc.co.uk/news/videos/cj06j16vpr5o" target="_blank" rel="noopener noreferrer">Watch: Why rescuers fear new barrier lake could cause another Nepal-Tibet flood</a>
+		<p class="trend-meta"><span class="src">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span>Fri 6:35 AM</p>
+	</div>
+</li>
+</ol>
 </section><section class="trending" aria-label="Trending stories">
 <h2><span class="date">TRENDING STORIES</span><span class="rel">WHAT THE INTERNET IS SEARCHING</span><span class="rule" aria-hidden="true"></span></h2>
 <ol class="trend-list">
