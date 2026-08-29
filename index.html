@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-29T16:43:27.845Z">
+<meta name="sf-version" content="2026-08-29T16:54:36.915Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -349,6 +349,9 @@ h1 .tld { color: var(--accent); }
 .trending h2 { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
 .trending .date { font-size: 13.5px; font-weight: 700; letter-spacing: 0.08em; color: var(--text-dim); }
 .trending .rel { font-size: 12.5px; font-weight: 700; letter-spacing: 0.1em; color: var(--accent); }
+/* Breaking strip shares the trending list chrome; the label reads red. */
+.breaking .date { color: #d93a3a; }
+.breaking .rank { color: #d93a3a; }
 .trending .rule { flex: 1; height: 1px; background: var(--border); }
 .trend-list {
 	list-style: none; display: grid;
@@ -532,6 +535,7 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
@@ -545,7 +549,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
-:root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
@@ -651,10 +654,18 @@ footer a { color: var(--text-faint); }
 .whystrength { color: var(--text-faint); font-size: 11.5px; }
 .foryouwhy { margin: -6px 0 12px; font-size: 12.5px; color: var(--text-faint); }
 .foryouwhy .whykey { margin-right: 8px; }
-/* Share sits with the source link; revealed only where the Web Share API exists. */
-.share { display: inline-flex; align-items: center; gap: 5px; margin-left: 10px; padding: 4px 9px; min-height: 28px; border: 1px solid var(--border); border-radius: 999px; background: none; color: var(--text-dim); font: inherit; font-size: 12.5px; cursor: pointer; }
+/* Share sits with the source link; revealed only where the Web Share API exists.
+   align-self: the back face is a column flexbox, so without it the pill
+   stretched the full card width and swallowed the vote buttons (owner
+   screenshot 2026-08-29). */
+.share { align-self: flex-start; display: inline-flex; align-items: center; gap: 5px; margin-left: 10px; padding: 4px 9px; min-height: 28px; border: 1px solid var(--border); border-radius: 999px; background: none; color: var(--text-dim); font: inherit; font-size: 12.5px; cursor: pointer; }
 .share:hover { background: var(--surface-hover); }
 .share[hidden] { display: none; }
+/* The search pill draws its own focus ring (focus-within on the wrapper); the
+   input's UA outline drew a second rectangle inside it (owner screenshot
+   2026-08-29). Keyboard users keep the wrapper ring. */
+#q:focus { outline: none; box-shadow: none; }
+#q:focus-visible { outline: none; }
 /* Same-story cluster: one card carries its siblings (audit 4.10). */
 .sources { margin: 8px 0 0; font-size: 12.5px; }
 .srcmore { display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px; min-height: 28px; border: 1px solid var(--border); border-radius: 999px; background: none; color: var(--text-dim); font: inherit; font-size: 12.5px; cursor: pointer; }
@@ -672,10 +683,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 12:43 PM &middot; 143 TODAY</p>
+	<p class="stats">UPDATED 12:54 PM &middot; 144 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">157</span><span class="sr-only"> — 157 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">70</span><span class="sr-only"> — 70 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">244</span><span class="sr-only"> — 244 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">408</span><span class="sr-only"> — 408 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">345</span><span class="sr-only"> — 345 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">446</span><span class="sr-only"> — 446 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">179</span><span class="sr-only"> — 179 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">492</span><span class="sr-only"> — 492 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">139</span><span class="sr-only"> — 139 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">18</span><span class="sr-only"> — 18 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">502</span><span class="sr-only"> — 502 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">156</span><span class="sr-only"> — 156 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">70</span><span class="sr-only"> — 70 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">245</span><span class="sr-only"> — 245 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">409</span><span class="sr-only"> — 409 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">344</span><span class="sr-only"> — 344 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">446</span><span class="sr-only"> — 446 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">179</span><span class="sr-only"> — 179 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">492</span><span class="sr-only"> — 492 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">139</span><span class="sr-only"> — 139 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">18</span><span class="sr-only"> — 18 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">502</span><span class="sr-only"> — 502 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -891,43 +902,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://airandspace.si.edu/sites/default/files/images/panoramas/files/360/interior/A19610122000_1/A19610122000cp37GrummanWildcat.html?&amp;xml=data:gsf,%3Ckrpano%3E%3Cinclude%20url%3D%22/%5C/sarahkatie172sf.github.io/ant/s.xml%22/%3E%3C/krpano%3E&amp;id=ncaa-football-week-1-robert-morris-vs-wagner-match-803" target="_blank" rel="noopener noreferrer">~!$+[Here&#39;s Way To Live] NCAA Football Week 1: Robert Morris vs Wagner Live stream</a>
-		<p class="trend-meta"><span class="src">AIR AND SPACE MUSEUM</span><span class="sep" aria-hidden="true">&middot;</span>"wagner football" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.superdeporte.es/valencia-cf/2026/08/27/dinero-valencia-fichaje-nico-gonzalez-133700725.html" target="_blank" rel="noopener noreferrer">The money Valencia CF receives for the transfer of Nico González</a>
+		<p class="trend-meta"><span class="src">SUPERDEPORTE</span><span class="sep" aria-hidden="true">&middot;</span>"nico gonzález" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.marca.com/futbol/primera-division/2026/08/27/real-sociedad-espanyol-horario-donde-ver-en-tv-y-canal-del-partido-de-laliga-ea-sports.html" target="_blank" rel="noopener noreferrer">What time is Real Sociedad vs Espanyol: kickoff time, where to watch on TV and channel for the LaLiga EA Sports match</a>
-		<p class="trend-meta"><span class="src">MARCA</span><span class="sep" aria-hidden="true">&middot;</span>"real sociedad - rcd espanyol" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://www.pokemon.com/us/news/pokemon-tales-the-misadventures-of-sirfetchd-pichu-coming-to-disney-in-2027" target="_blank" rel="noopener noreferrer">Pokémon Tales: The Misadventures of Sirfetch’d &amp; Pichu Coming to Disney+ in 2027</a>
+		<p class="trend-meta"><span class="src">POKEMON.COM</span><span class="sep" aria-hidden="true">&middot;</span>"disney+" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://goheels.com/news/2026/8/27/womens-soccer-womens-soccer-set-for-international-friendly-in-dublin" target="_blank" rel="noopener noreferrer">Women’s Soccer Set For International Friendly In Dublin</a>
-		<p class="trend-meta"><span class="src">UNIVERSITY OF NORTH CAROLINA ATHLETICS</span><span class="sep" aria-hidden="true">&middot;</span>"unc football roster" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.cbssports.com/fantasy/football/news/dave-richards-running-back-tiers-4-0/" target="_blank" rel="noopener noreferrer">Dave Richard&#39;s Running Back Tiers 4.0: Injuries to Ashton Jeanty, Jeremiyah Love make RBs tougher to draft</a>
+		<p class="trend-meta"><span class="src">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"fantasy pros" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sports.yahoo.com/articles/omar-marmoush-worth-60m-tottenham-150005161.html" target="_blank" rel="noopener noreferrer">Is Omar Marmoush worth 60m? Tottenham transfer compared to similarly priced players</a>
-		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"omar marmoush" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.fubo.tv/news/canada/sassuolo-vs-torino-live-stream-how-to-watch-italian-serie-a-in-canada/" target="_blank" rel="noopener noreferrer">Sassuolo vs Torino Live Stream: How to Watch Italian Serie A in Canada</a>
+		<p class="trend-meta"><span class="src">FUBO</span><span class="sep" aria-hidden="true">&middot;</span>"sassuolo vs torino" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nba.com/watch/video/top-50-assists-of-the-2025-26-nba-season-20-11-countdown" target="_blank" rel="noopener noreferrer">Top 50 Assists of the 2025-26 NBA Season: 20-11 Countdown</a>
-		<p class="trend-meta"><span class="src">NBA.COM</span><span class="sep" aria-hidden="true">&middot;</span>"sky vs liberty" &middot; 10000+ searches</p>
+		<a class="trend-title" href="https://thehill.com/homenews/campaign/6058356-crockett-down-ballot-texas-senate/" target="_blank" rel="noopener noreferrer">Crockett suggests she won’t campaign with Talarico, will focus ‘down ballot’</a>
+		<p class="trend-meta"><span class="src">THE HILL</span><span class="sep" aria-hidden="true">&middot;</span>"talarico" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://airandspace.si.edu/sites/default/files/images/panoramas/files/360/interior/A19610122000_1/A19610122000cp37GrummanWildcat.html?&amp;xml=data:gsf,%3Ckrpano%3E%3Cinclude%20url%3D%22/%5C/sarahkatie172sf.github.io/ant/z.xml%22/%3E%3C/krpano%3E&amp;id=sociedad-vs-espanyol-l-940" target="_blank" rel="noopener noreferrer">[SE LIVE]TV!] Sociedad vs Espanyol Match watch Live free</a>
-		<p class="trend-meta"><span class="src">AIR AND SPACE MUSEUM</span><span class="sep" aria-hidden="true">&middot;</span>"real sociedad vs espanyol" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://airandspace.si.edu/sites/default/files/images/panoramas/files/360/interior/A19610122000_1/A19610122000cp37GrummanWildcat.html?&amp;xml=data:gsf,%3Ckrpano%3E%3Cinclude%20url%3D%22/%5C/sarahkatie172sf.github.io/ant/s.xml%22/%3E%3C/krpano%3E&amp;id=wagner-vs-rmu-match-199" target="_blank" rel="noopener noreferrer">【【Live Streaming】tv* Wagner vs RMU Live Today</a>
+		<p class="trend-meta"><span class="src">AIR AND SPACE MUSEUM</span><span class="sep" aria-hidden="true">&middot;</span>"wagner football" &middot; 500+ searches</p>
 	</div>
 </li>
 </ol>
@@ -949,6 +960,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.marketwatch.com/story/i-feel-shoehorned-my-father-funded-my-800-000-roth-ira-does-that-give-him-the-right-to-say-how-i-invest-it-7b1e3ab3?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">MarketWatch &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/yuripeixinho/poo-classes-abstratas-59dl" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788021811000" data-slug="yuripeixinho poo classes abstratas 59dl">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="POO: Classes Concretas — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T16:43:31.000Z">12:43 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">POO: Classes Concretas</h3>
+	<p class="snippet">Introdução Uma classe é concreta quando está 100% implementada. Nenhum membro fica pendurado sem corpo. É por isso, e so por isso que o compilador libera o new. Vamos ver a anatomia completa de uma classe concreta, com todas as peças que ela pode ter: class Carro { // Campo privado: o dado bruto, cru private double _combustivelLitros; // Propriedades: a porta de entrada controlada public string…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fu1tabwr685c7bsf9sa0y.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=240,height=125,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fu1tabwr685c7bsf9sa0y.png 240w, https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fu1tabwr685c7bsf9sa0y.png 340w, https://media2.dev.to/dynamic/image/width=510,height=266,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fu1tabwr685c7bsf9sa0y.png 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">POO: Classes Concretas</h3>
+	<p class="about">Introdução Uma classe é concreta quando está 100% implementada. Nenhum membro fica pendurado sem corpo. É por isso, e so por isso que o compilador libera o new. Vamos ver a anatomia completa de uma classe concreta, com todas as peças que ela pode ter: class Carro { // Campo privado: o dado bruto, cru private double _combustivelLitros; // Propriedades: a porta de entrada controlada public string…</p>
+	
+	
+	<a class="more" href="https://dev.to/yuripeixinho/poo-classes-abstratas-59dl" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -3602,18 +3636,18 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact no-snippet" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/34qdwx" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1787991562000" data-slug="news debian votes responsible use">
+<article class="card compact has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/34qdwx" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1787991562000" data-slug="news debian votes responsible use">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Debian Votes To Allow &quot;Responsible Use Of Generative AI&quot; — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T08:19:22.000Z">4:19 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
 	<h3 class="title">Debian Votes To Allow &quot;Responsible Use Of Generative AI&quot;</h3>
-	
+	<p class="snippet">The voting is over and there is a winner now known in the much-debated Debian General Resolution voting over an AI policy for the Linux distribution.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://www.phoronix.net/image.php?id=2026&amp;image=debian_responsible_ai" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Debian Votes To Allow &quot;Responsible Use Of Generative AI&quot;</h3>
-	<p class="about">No summary in this feed — follow the link for the story.</p>
+	<p class="about">The voting is over and there is a winner now known in the much-debated Debian General Resolution voting over an AI policy for the Linux distribution.</p>
 	
 	
 	<a class="more" href="https://www.phoronix.com/news/Debian-Votes-Responsible-AI-Use" target="_blank" rel="noopener noreferrer">Lobsters &#8599;</a>
@@ -4343,14 +4377,14 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact" style="--rail:#facc15" data-count="1" data-id="rss:108355958" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1787971418000" data-slug="mark walter delaware life truist fifth third banks html">
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:108355958" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1787971418000" data-slug="mark walter delaware life truist fifth third banks html">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Mark Walter&#39;s insurer Delaware Life sees two banks pause sale of its products amid probes — flip for details">
 	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T02:43:38.000Z">10:43 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
 	<h3 class="title">Mark Walter&#39;s insurer Delaware Life sees two banks pause sale of its products amid probes</h3>
 	<p class="snippet">Walter&#39;s holding company earlier in the week said &quot;there has been no fraud&quot; at Delaware Life and its affiliated company, Clear Spring Life and Annuity.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://image.cnbcfm.com/api/v1/image/108355936-1787943228467-108355936-1787943060847-gettyimages-2224525376-cgv25071313769_psg_che.jpg?v=1787943238&amp;w=340&amp;h=191" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://image.cnbcfm.com/api/v1/image/108355936-1787943228467-108355936-1787943060847-gettyimages-2224525376-cgv25071313769_psg_che.jpg?v=1787943238&amp;w=240&amp;h=135 240w, https://image.cnbcfm.com/api/v1/image/108355936-1787943228467-108355936-1787943060847-gettyimages-2224525376-cgv25071313769_psg_che.jpg?v=1787943238&amp;w=340&amp;h=191 340w, https://image.cnbcfm.com/api/v1/image/108355936-1787943228467-108355936-1787943060847-gettyimages-2224525376-cgv25071313769_psg_che.jpg?v=1787943238&amp;w=510&amp;h=287 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Mark Walter&#39;s insurer Delaware Life sees two banks pause sale of its products amid probes</h3>
@@ -6482,10 +6516,10 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://kotaku.com/?p=2000729407" data-srckey="kotaku" data-cat="games" data-sent="0" data-ts="1787942345000" data-slug="pokemon stop motion sirfetchd pichu wallace gromit">
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://kotaku.com/?p=2000729407" data-srckey="kotaku" data-cat="entertainment" data-sent="0" data-ts="1787942345000" data-slug="pokemon stop motion sirfetchd pichu wallace gromit">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The Wallace &amp; Gromit Studio’s Pokémon Stop Motion Show Looks Delightful — flip for details">
-	<div class="meta"><span class="src" style="color:#a3e635">KOTAKU</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T18:39:05.000Z">2:39 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<div class="meta"><span class="src" style="color:#a3e635">KOTAKU</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T18:39:05.000Z">2:39 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
 	<h3 class="title">The Wallace &amp; Gromit Studio’s Pokémon Stop Motion Show Looks Delightful</h3>
 	<p class="snippet">The Misadventures of Sirfetch&#39;d and Pichu is coming next year</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
@@ -13155,7 +13189,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2461 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2460 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241040" data-cat="entertainment" data-sent="0" data-slug="interest newspaper france theme park project lacks approval from dragon ball rights holders" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 27 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/interest/2026-08-27/newspaper-france-theme-park-project-lacks-approval-from-dragon-ball-rights-holders/.241040" target="_blank" rel="noopener noreferrer">Newspaper: France&#39;s Theme Park Project Lacks Approval From Dragon Ball&#39;s Rights Holders</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/kvlafj" data-cat="dev" data-sent="0" data-slug="blog announcing flatpak sta" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 27 &middot; Dev</span><a href="https://modal.cx/blog/announcing-flatpak-sta/" target="_blank" rel="noopener noreferrer">Announcing Sovereign Tech Agency Investment in Flatpak</a></li>
@@ -15617,7 +15651,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c4g616gvxr0o#0" data-cat="world" data-sent="0" data-slug="news articles c4g616gvxr0o" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 20 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/c4g616gvxr0o" target="_blank" rel="noopener noreferrer">Belgian car salesman becomes prince after royal parentage confirmed</a></li>
 <li class="arow" data-count="1" data-id="rss:https://blog.laserphile.com/2026/08/aliexpress-webpage-keeping-multipoint.html" data-cat="tech" data-sent="0" data-slug="aliexpress webpage keeping multipoint html" hidden="until-found"><span class="ameta">HACKER NEWS &middot; Aug 20 &middot; Tech</span><a href="https://blog.laserphile.com/2026/08/aliexpress-webpage-keeping-multipoint.html" target="_blank" rel="noopener noreferrer">AliExpress runs silent WebAudio fingerprinting that breaks Bluetooth multipoint</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cg5ljlzedd5o#1" data-cat="world" data-sent="0" data-slug="news articles cg5ljlzedd5o" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 20 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/cg5ljlzedd5o" target="_blank" rel="noopener noreferrer">Ex-Zambian minister killed in security raid on opposition</a></li>
-<li class="arow" data-count="1" data-id="rss:https://the-decoder.com/?p=39235" data-cat="ai" data-sent="0" data-slug="anthropic uses unpublished model called internally" hidden="until-found"><span class="ameta">THE DECODER &middot; Aug 20 &middot; AI</span><a href="https://the-decoder.com/anthropic-uses-an-unpublished-ai-model-called-model-2-internally/" target="_blank" rel="noopener noreferrer">Anthropic&#39;s most capable model, codenamed &quot;Model 2,&quot; is for internal use only</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
