@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-29T22:37:23.116Z">
+<meta name="sf-version" content="2026-08-29T23:28:53.075Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,6 +537,9 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
+:root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
+:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
@@ -545,20 +548,17 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
 :root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] .meta [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
-:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
-:root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
+:root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
-:root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] .meta [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
-:root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
@@ -692,10 +692,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 6:37 PM &middot; 233 TODAY</p>
+	<p class="stats">UPDATED 7:28 PM &middot; 245 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">149</span><span class="sr-only"> — 149 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">66</span><span class="sr-only"> — 66 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">243</span><span class="sr-only"> — 243 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">396</span><span class="sr-only"> — 396 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">321</span><span class="sr-only"> — 321 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">415</span><span class="sr-only"> — 415 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">173</span><span class="sr-only"> — 173 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">490</span><span class="sr-only"> — 490 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">249</span><span class="sr-only"> — 249 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">19</span><span class="sr-only"> — 19 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">479</span><span class="sr-only"> — 479 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">146</span><span class="sr-only"> — 146 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">66</span><span class="sr-only"> — 66 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">242</span><span class="sr-only"> — 242 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">401</span><span class="sr-only"> — 401 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">320</span><span class="sr-only"> — 320 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">415</span><span class="sr-only"> — 415 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">173</span><span class="sr-only"> — 173 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">487</span><span class="sr-only"> — 487 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">248</span><span class="sr-only"> — 248 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">19</span><span class="sr-only"> — 19 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">483</span><span class="sr-only"> — 483 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -957,43 +957,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/fantasy/football/story/_/id/49734267/2026-fantasy-football-sleepers-cheat-sheet-adam-schefter" target="_blank" rel="noopener noreferrer">Adam Schefter&#39;s fantasy football cheat sheet: Value picks and sleepers to target</a>
-		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"espn fantasy football" &middot; 5000+ searches</p>
+		<a class="trend-title" href="https://www.nhl.com/news/2026-2027-national-tv-schedule-announced" target="_blank" rel="noopener noreferrer">NHL national television schedule announced for 2026-27 season</a>
+		<p class="trend-meta"><span class="src">NHL.COM</span><span class="sep" aria-hidden="true">&middot;</span>"espn+" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.batterypower.com/atlanta-braves-game-information/138952/start-of-braves-rockies-delayed-due-to-rain" target="_blank" rel="noopener noreferrer">Start of Braves-Rockies delayed due to rain</a>
-		<p class="trend-meta"><span class="src">BATTERY POWER</span><span class="sep" aria-hidden="true">&middot;</span>"braves game" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.jpost.com/international/article-906956" target="_blank" rel="noopener noreferrer">Gal Gadot wishes the best to next Wonder Woman actress as she steps down from the role - report</a>
+		<p class="trend-meta"><span class="src">THE JERUSALEM POST</span><span class="sep" aria-hidden="true">&middot;</span>"gal gadot" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.tvline.com/2243591/ted-lasso-season-4-coach-beard-what-happened-baby-jane-explained/" target="_blank" rel="noopener noreferrer">Ted Lasso EP Brendan Hunt On Coach Beard&#39;s Post-Jane Spiral — And What He Knows Upon Seeing That Poster In Episode 4</a>
-		<p class="trend-meta"><span class="src">TVLINE</span><span class="sep" aria-hidden="true">&middot;</span>"ted lasso - season 4" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://den.mercer.edu/4-things-to-know-about-mercer-vs-east-texas-am-football-game-day-aug-29-2026/" target="_blank" rel="noopener noreferrer">4 things to know about Mercer vs. East Texas A&amp;M football game day: Aug. 29, 2026</a>
+		<p class="trend-meta"><span class="src">MERCER UNIVERSITY</span><span class="sep" aria-hidden="true">&middot;</span>"mercer football" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/nfl/story/_/id/49732615/tennessee-titans-high-rookie-wr-carnell-tate" target="_blank" rel="noopener noreferrer">Titans still high on Carnell Tate despite lack of preseason production</a>
-		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"carnell tate" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://kutv.com/news/local/severe-thunderstorm-warning-issued-for-multiple-northern-utah-counties" target="_blank" rel="noopener noreferrer">Weather warnings issued as thunderstorms move across northern, central Utah</a>
+		<p class="trend-meta"><span class="src">KUTV</span><span class="sep" aria-hidden="true">&middot;</span>"thunderstorm" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://nypost.com/2026/08/27/sports/mary-carillo-talks-to-the-post-about-upcoming-hall-of-fame-induction/" target="_blank" rel="noopener noreferrer">Mary Carillo talks to The Post about upcoming Hall of Fame induction, plus some US Open predictions</a>
-		<p class="trend-meta"><span class="src">NEW YORK POST</span><span class="sep" aria-hidden="true">&middot;</span>"mary carillo" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.koreadaily.com/article/20260829134124342" target="_blank" rel="noopener noreferrer">Silent in 6 official matches, Son Heung-min returns after a full week of rest... can he rescue LAFC, winless in 4?</a>
+		<p class="trend-meta"><span class="src">미주중앙일보</span><span class="sep" aria-hidden="true">&middot;</span>"엘에이 fc 대 dc 유나이티드" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.tudn.com/futbol/liga-mx/a-que-hora-y-donde-ver-el-partido-pachuca-vs-chivas-de-la-liga-mx-apertura-2026" target="_blank" rel="noopener noreferrer">What time and where to watch Pachuca vs. Chivas in the Apertura 2026</a>
-		<p class="trend-meta"><span class="src">TUDN</span><span class="sep" aria-hidden="true">&middot;</span>"pachuca vs guadalajara" &middot; 5000+ searches</p>
+		<a class="trend-title" href="https://www.federalbaseball.com/washington-nationals-discussions/93835/washington-nationals-vs-miami-marlins-game-thread" target="_blank" rel="noopener noreferrer">Washington Nationals vs Miami Marlins Game Thread</a>
+		<p class="trend-meta"><span class="src">FEDERAL BASEBALL</span><span class="sep" aria-hidden="true">&middot;</span>"nationals" &middot; 1000+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1015,6 +1015,121 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.marketwatch.com/story/i-feel-shoehorned-my-father-funded-my-800-000-roth-ira-does-that-give-him-the-right-to-say-how-i-invest-it-7b1e3ab3?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">MarketWatch &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/rikinptl/human-aligned-decision-transformers-for-satellite-anomaly-response-operations-for-extreme-data-40o6" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788044757000" data-slug="rikinptl human aligned decision transformers for satellite anomaly response operations extreme data 40o6">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Human-Aligned Decision Transformers for satellite anomaly response operations for extreme data sparsity scenarios — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T23:05:57.000Z">7:05 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">Human-Aligned Decision Transformers for satellite anomaly response operations for extreme data sparsity scenarios</h3>
+	<p class="snippet">Human-Aligned Decision Transformers for satellite anomaly response operations for extreme data sparsity scenarios The Moment the Satellite Went Silent It was 3:47 AM on a Tuesday when the telemetry stream from the GEO-7 communications satellite dropped to zero. I was testing a reinforcement learning agent I&#39;d been developing for autonomous satellite operations, and I watched in real-time as my…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Ffzp7gx8wu3upzzevvdnt.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=240,height=125,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Ffzp7gx8wu3upzzevvdnt.png 240w, https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Ffzp7gx8wu3upzzevvdnt.png 340w, https://media2.dev.to/dynamic/image/width=510,height=266,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Ffzp7gx8wu3upzzevvdnt.png 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Human-Aligned Decision Transformers for satellite anomaly response operations for extreme data sparsity scenarios</h3>
+	<p class="about">Human-Aligned Decision Transformers for satellite anomaly response operations for extreme data sparsity scenarios The Moment the Satellite Went Silent It was 3:47 AM on a Tuesday when the telemetry stream from the GEO-7 communications satellite dropped to zero. I was testing a reinforcement learning agent I&#39;d been developing for autonomous satellite operations, and I watched in real-time as my…</p>
+	
+	
+	<a class="more" href="https://dev.to/rikinptl/human-aligned-decision-transformers-for-satellite-anomaly-response-operations-for-extreme-data-40o6" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.engadget.com/2246399/how-to-save-money-phone-bill-with-mvno/" data-srckey="engadget" data-cat="tech" data-sent="0" data-ts="1788044400000" data-slug="how save money phone bill with mvno">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="How to save money on your phone bill with an MVNO — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(229 55% 72%)">ENGADGET</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T23:00:00.000Z">7:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">How to save money on your phone bill with an MVNO</h3>
+	<p class="snippet">There are wireless providers offering plans at a fraction of the cost you&#39;ll find at major carriers like AT&amp;T, T-Mobile and Verizon.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.engadget.com/img/gallery/how-to-save-money-on-your-phone-bill-with-an-mvno/l-intro-1787851564.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">How to save money on your phone bill with an MVNO</h3>
+	<p class="about">There are wireless providers offering plans at a fraction of the cost you&#39;ll find at major carriers like AT&amp;T, T-Mobile and Verizon.</p>
+	
+	
+	<a class="more" href="https://www.engadget.com/2246399/how-to-save-money-phone-bill-with-mvno/" target="_blank" rel="noopener noreferrer">Engadget &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236846730" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788044067000" data-slug="news owner heated rivalry cabin some soul searching season">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Owner of ‘Heated Rivalry’ Cabin Needed to Do Some ‘Soul Searching’ Before Inviting the Show Back for Season 2 — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T22:54:27.000Z">6:54 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Owner of ‘Heated Rivalry’ Cabin Needed to Do Some ‘Soul Searching’ Before Inviting the Show Back for Season 2</h3>
+	<p class="snippet">Michael Kutryk, the owner of the now-famous cabin featured in “Heated Rivalry” Season 1, said he needed to do some “soul searching” before allowing the HBO production to come back for Season 2. “I did a little bit of soul searching about allowing them to come back,” Kutryk told HGTV. “I know they need it, […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2025/12/Heated_Rivalry_-_106-28-1.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2025/12/Heated_Rivalry_-_106-28-1.jpg?w=240 240w, https://variety.com/wp-content/uploads/2025/12/Heated_Rivalry_-_106-28-1.jpg?w=340 340w, https://variety.com/wp-content/uploads/2025/12/Heated_Rivalry_-_106-28-1.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Owner of ‘Heated Rivalry’ Cabin Needed to Do Some ‘Soul Searching’ Before Inviting the Show Back for Season 2</h3>
+	<p class="about">Michael Kutryk, the owner of the now-famous cabin featured in “Heated Rivalry” Season 1, said he needed to do some “soul searching” before allowing the HBO production to come back for Season 2. “I did a little bit of soul searching about allowing them to come back,” Kutryk told HGTV. “I know they need it, […]</p>
+	
+	
+	<a class="more" href="https://variety.com/2026/tv/news/owner-heated-rivalry-cabin-some-soul-searching-season-2-1236846730/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.engadget.com/2246918/video-games-rival-gta-6-budget/" data-srckey="engadget" data-cat="tech" data-sent="0" data-ts="1788042600000" data-slug="video games rival gta budget">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The wildest video game budgets can&#39;t hold a candle to GTA 6 — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(229 55% 72%)">ENGADGET</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T22:30:00.000Z">6:30 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">The wildest video game budgets can&#39;t hold a candle to GTA 6</h3>
+	<p class="snippet">GTA 6 is thought to be the most expensive entertainment product ever made, eclipsing Hollywood movies and other video games by hundreds of millions of dollars.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.engadget.com/img/gallery/the-wildest-video-game-budgets-cant-hold-a-candle-to-gta-6/l-intro-1787978932.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">The wildest video game budgets can&#39;t hold a candle to GTA 6</h3>
+	<p class="about">GTA 6 is thought to be the most expensive entertainment product ever made, eclipsing Hollywood movies and other video games by hundreds of millions of dollars.</p>
+	
+	
+	<a class="more" href="https://www.engadget.com/2246918/video-games-rival-gta-6-budget/" target="_blank" rel="noopener noreferrer">Engadget &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.engadget.com/2242764/why-does-your-kindle-even-have-bluetooth/" data-srckey="engadget" data-cat="tech" data-sent="0" data-ts="1788040800000" data-slug="why does your kindle even have bluetooth">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Why does your Kindle even have Bluetooth? — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(229 55% 72%)">ENGADGET</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T22:00:00.000Z">6:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Why does your Kindle even have Bluetooth?</h3>
+	<p class="snippet">Why does your Kindle even have Bluetooth?</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.engadget.com/img/gallery/why-does-your-kindle-even-have-bluetooth/l-intro-1787161033.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Why does your Kindle even have Bluetooth?</h3>
+	<p class="about">Why does your Kindle even have Bluetooth?</p>
+	
+	
+	<a class="more" href="https://www.engadget.com/2242764/why-does-your-kindle-even-have-bluetooth/" target="_blank" rel="noopener noreferrer">Engadget &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1084,6 +1199,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.espn.com/mlb/story/_/id/49765489/crow-armstrong-bolsters-nl-mvp-case-1st-career-3-hr-game" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 h2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236843724" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788039402000" data-slug="film news borges and review">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘Borges and Me’ Review: Gentle, Nostalgic Literary Road Movie Is More Perky Than Poetic — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T21:36:42.000Z">5:36 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">‘Borges and Me’ Review: Gentle, Nostalgic Literary Road Movie Is More Perky Than Poetic</h3>
+	<p class="snippet">American author Jay Parini’s 2020 memoir “Borges and Me: An Encounter” read as a charming extension of an anecdote any writer would dine out on for the rest of their life: the tale of how Parini, as a college student in the 1970s, was somehow partnered on a winding road trip through the Scottish Highlands […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/08/borges-and-me.webp?w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/08/borges-and-me.webp?w=600 600w, https://variety.com/wp-content/uploads/2026/08/borges-and-me.webp?w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">‘Borges and Me’ Review: Gentle, Nostalgic Literary Road Movie Is More Perky Than Poetic</h3>
+	<p class="about">American author Jay Parini’s 2020 memoir “Borges and Me: An Encounter” read as a charming extension of an anecdote any writer would dine out on for the rest of their life: the tale of how Parini, as a college student in the 1970s, was somehow partnered on a winding road trip through the Scottish Highlands […]</p>
+	
+	
+	<a class="more" href="https://variety.com/2026/film/news/borges-and-me-review-1236843724/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1299,6 +1437,52 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact w2 h2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236846693" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788036305000" data-slug="film news chris hansen robert pattinson primetime overly dramatic">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Chris Hansen Says Robert Pattinson’s ‘Primetime’ Performance Is ‘Overly Dramatic,’ But His Wife and Kids Think It’s a ‘Pretty Good Imitation’ — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T20:45:05.000Z">4:45 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Chris Hansen Says Robert Pattinson’s ‘Primetime’ Performance Is ‘Overly Dramatic,’ But His Wife and Kids Think It’s a ‘Pretty Good Imitation’</h3>
+	<p class="snippet">Chris Hansen recently gave his reaction to Robert Pattinson’s impression of him in the upcoming A24 drama-thriller “Primetime,” which chronicles Hansen’s stint as host of Dateline NBC’s “To Catch a Predator.” “I mean, obviously he has practiced imitating me, and while I think it’s overly dramatic, I think there is a pretty good imitation there […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/08/MixCollage-29-Aug-2026-01-31-PM-4288.jpg?w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/08/MixCollage-29-Aug-2026-01-31-PM-4288.jpg?w=600 600w, https://variety.com/wp-content/uploads/2026/08/MixCollage-29-Aug-2026-01-31-PM-4288.jpg?w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Chris Hansen Says Robert Pattinson’s ‘Primetime’ Performance Is ‘Overly Dramatic,’ But His Wife and Kids Think It’s a ‘Pretty Good Imitation’</h3>
+	<p class="about">Chris Hansen recently gave his reaction to Robert Pattinson’s impression of him in the upcoming A24 drama-thriller “Primetime,” which chronicles Hansen’s stint as host of Dateline NBC’s “To Catch a Predator.” “I mean, obviously he has practiced imitating me, and while I think it’s overly dramatic, I think there is a pretty good imitation there […]</p>
+	
+	
+	<a class="more" href="https://variety.com/2026/film/news/chris-hansen-robert-pattinson-primetime-overly-dramatic-1236846693/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://kotaku.com/?p=2000729601" data-srckey="kotaku" data-cat="entertainment" data-sent="0" data-ts="1788035991000" data-slug="phil collins returns vice city with ominous song choice for jason and lucia">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Phil Collins Returns To Vice City With An Ominous Song Choice For Jason And Lucia — flip for details">
+	<div class="meta"><span class="src" style="color:#a3e635">KOTAKU</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T20:39:51.000Z">4:39 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Phil Collins Returns To Vice City With An Ominous Song Choice For Jason And Lucia</h3>
+	<p class="snippet">On top of an extended glimpse at what the upcoming Grand Theft Auto VI will look like, Netflix gave a hint at what your crime spree playlist will sound like too</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://kotaku.com/app/uploads/2026/08/philcollins.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Phil Collins Returns To Vice City With An Ominous Song Choice For Jason And Lucia</h3>
+	<p class="about">On top of an extended glimpse at what the upcoming Grand Theft Auto VI will look like, Netflix gave a hint at what your crime spree playlist will sound like too</p>
+	
+	
+	<a class="more" href="https://kotaku.com/phil-collins-returns-to-vice-city-with-an-ominous-song-choice-for-jason-and-lucia-2000729601" target="_blank" rel="noopener noreferrer">Kotaku &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.polygon.com/petit-planet-gamescom-2026-preview/" data-srckey="polygon" data-cat="games" data-sent="0" data-ts="1788035414000" data-slug="petit planet gamescom preview">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Animal Crossing Gets Its First Serious Competition In Years — flip for details">
@@ -1498,6 +1682,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.nytimes.com/2026/08/29/world/europe/diamond-necklace-theft-vienna.html" target="_blank" rel="noopener noreferrer">NYT World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236846620" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788032938000" data-slug="film global venice festival jury press conference canceled">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Venice Film Festival Jury Press Conference ‘Probably Not’ Happening Due to Scheduling, Will Replace Event With Welcome Cocktails for Journalists — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T19:48:58.000Z">3:48 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Venice Film Festival Jury Press Conference ‘Probably Not’ Happening Due to Scheduling, Will Replace Event With Welcome Cocktails for Journalists</h3>
+	<p class="snippet">The Venice Film Festival is weighing scrapping its traditional opening jury press conference on the Lido. The festival, which kicks off Sept. 2 with the world premiere of Danny Boyle’s “Ink,” told Variety that the presser will “probably not” take place, citing a scheduling conflict, and said a welcome cocktail hour with the press will […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/08/GettyImages-2234018453.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/08/GettyImages-2234018453.jpg?w=240 240w, https://variety.com/wp-content/uploads/2026/08/GettyImages-2234018453.jpg?w=340 340w, https://variety.com/wp-content/uploads/2026/08/GettyImages-2234018453.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Venice Film Festival Jury Press Conference ‘Probably Not’ Happening Due to Scheduling, Will Replace Event With Welcome Cocktails for Journalists</h3>
+	<p class="about">The Venice Film Festival is weighing scrapping its traditional opening jury press conference on the Lido. The festival, which kicks off Sept. 2 with the world premiere of Danny Boyle’s “Ink,” told Variety that the presser will “probably not” take place, citing a scheduling conflict, and said a welcome cocktail hour with the press will […]</p>
+	
+	
+	<a class="more" href="https://variety.com/2026/film/global/venice-film-festival-jury-press-conference-canceled-1236846620/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1759,6 +1966,29 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact w2 h2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.engadget.com/2242774/most-expensive-whoop-membership-life-why-pay/" data-srckey="engadget" data-cat="tech" data-sent="0" data-ts="1788028200000" data-slug="most expensive whoop membership life why pay">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Why would you pay $359 for the most expensive Whoop membership? — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(229 55% 72%)">ENGADGET</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T18:30:00.000Z">2:30 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Why would you pay $359 for the most expensive Whoop membership?</h3>
+	<p class="snippet">Whoop Life is the highest tier of membership to the Whoop platform, and it does offer more data than the less expensive levels.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.engadget.com/img/gallery/why-would-you-pay-359-for-the-most-expensive-whoop-membership/l-intro-1787317096.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Why would you pay $359 for the most expensive Whoop membership?</h3>
+	<p class="about">Whoop Life is the highest tier of membership to the Whoop platform, and it does offer more data than the less expensive levels.</p>
+	
+	
+	<a class="more" href="https://www.engadget.com/2242774/most-expensive-whoop-membership-life-why-pay/" target="_blank" rel="noopener noreferrer">Engadget &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact w2 has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:108356090" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1788027709000" data-slug="trump yosemite land swap kingsbarn html">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Trump administration weighs Yosemite land swap for private developer’s access road — flip for details">
@@ -1797,6 +2027,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.bbc.co.uk/sport/golf/articles/cq63297y624o" target="_blank" rel="noopener noreferrer">BBC Sport &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.polygon.com/days-of-thunder-sequel/" data-srckey="polygon" data-cat="entertainment" data-sent="0" data-ts="1788027241000" data-slug="days thunder sequel">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Tom Cruise&#39;s Next Movie Is Not One You&#39;d Expect — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T18:14:01.000Z">2:14 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Tom Cruise&#39;s Next Movie Is Not One You&#39;d Expect</h3>
+	<p class="snippet">Tom Cruise and Paramount will revive Days of Thunder in 2028, as the pair unveiled a new movie that also stars Anne Hathaway</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/days-of-thunder.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/days-of-thunder.jpg?w=240 240w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/days-of-thunder.jpg?w=340 340w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/days-of-thunder.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Tom Cruise&#39;s Next Movie Is Not One You&#39;d Expect</h3>
+	<p class="about">Tom Cruise and Paramount will revive Days of Thunder in 2028, as the pair unveiled a new movie that also stars Anne Hathaway</p>
+	
+	
+	<a class="more" href="https://www.polygon.com/days-of-thunder-sequel/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1935,6 +2188,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.nytimes.com/2026/08/29/world/asia/nepal-flood-rescue.html" target="_blank" rel="noopener noreferrer">NYT World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.polygon.com/goodbye-lara-captures-what-makes-old-school-anime-so-special/" data-srckey="polygon" data-cat="entertainment" data-sent="0" data-ts="1788022814000" data-slug="goodbye lara captures what makes old school anime special">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘Frieren’ Meets ‘The Little Mermaid’ in Crunchyroll’s Near-Perfect 12-Part Fantasy Series — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T17:00:14.000Z">1:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">‘Frieren’ Meets ‘The Little Mermaid’ in Crunchyroll’s Near-Perfect 12-Part Fantasy Series</h3>
+	<p class="snippet">How Kinema Citrus’s Goodbye, Lara reimagines The Little Mermaid, using digital techniques to capture the tactile, human soul of classic anime.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/3olkcdg.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/3olkcdg.jpg?w=240 240w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/3olkcdg.jpg?w=340 340w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/3olkcdg.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">‘Frieren’ Meets ‘The Little Mermaid’ in Crunchyroll’s Near-Perfect 12-Part Fantasy Series</h3>
+	<p class="about">How Kinema Citrus’s Goodbye, Lara reimagines The Little Mermaid, using digital techniques to capture the tactile, human soul of classic anime.</p>
+	
+	
+	<a class="more" href="https://www.polygon.com/goodbye-lara-captures-what-makes-old-school-anime-so-special/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -6362,7 +6638,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2757 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2745 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cx2z415w2gpo#0" data-cat="world" data-sent="0" data-slug="news articles cx2z415w2gpo" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 28 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/cx2z415w2gpo" target="_blank" rel="noopener noreferrer">Footage of Tibet floods isn&#39;t being shown in China - and we know little about victims there</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" data-cat="world" data-sent="0" data-slug="world live aug nepal tibet flash floods hundreds dead missing day three updates" hidden="until-found"><span class="ameta">GUARDIAN WORLD &middot; Aug 28 &middot; World</span><a href="https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" target="_blank" rel="noopener noreferrer">Search continues as number missing in Nepal-Tibet floods rises to 2,478 – as it happened</a></li>
@@ -6565,6 +6841,7 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.theverge.com/tech/986130/apple-tv-plus-price-hike" data-cat="tech" data-sent="0" data-slug="tech apple plus price hike" hidden="until-found"><span class="ameta">THE VERGE &middot; Aug 28 &middot; Tech</span><a href="https://www.theverge.com/tech/986130/apple-tv-plus-price-hike" target="_blank" rel="noopener noreferrer">Apple TV now costs $14.99 a month after its fourth price hike in four years</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c9w4r7e7z4ko#1" data-cat="world" data-sent="0" data-slug="news articles c9w4r7e7z4ko" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 28 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/c9w4r7e7z4ko" target="_blank" rel="noopener noreferrer">Shootings surge as drug gangs torment Brussels</a></li>
 <li class="arow" data-count="1" data-id="rss:8ecff842-1642-4fa9-8be3-c1bb80bc5f5b" data-cat="sports" data-sent="0" data-slug="fantasy football news dave richards running back tiers" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 28 &middot; Sports</span><a href="https://www.cbssports.com/fantasy/football/news/dave-richards-running-back-tiers-4-0/" target="_blank" rel="noopener noreferrer">Dave Richard&#39;s Running Back Tiers 4.0: Injuries to Ashton Jeanty, Jeremiyah Love make RBs tougher to draft</a></li>
+<li class="arow" data-count="1" data-id="rss:https://github.com/YuriKovalov22/the-finn" data-cat="tech" data-sent="0" data-slug="yurikovalov22 the finn" hidden="until-found"><span class="ameta">HACKER NEWS &middot; Aug 28 &middot; Tech</span><a href="https://github.com/YuriKovalov22/the-finn" target="_blank" rel="noopener noreferrer">The Finn – an agent that lives in my router and complains about it</a></li>
 <li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000729289" data-cat="games" data-sent="0" data-slug="experimental build nvidias dlss slop filter leaks and makes beloved video game characters look like complete" hidden="until-found"><span class="ameta">KOTAKU &middot; Aug 28 &middot; Games</span><a href="https://kotaku.com/experimental-build-of-nvidias-dlss-5-ai-slop-filter-leaks-and-makes-beloved-video-game-characters-look-like-complete-weirdos-2000729289" target="_blank" rel="noopener noreferrer">Experimental Build Of Nvidia’s DLSS 5 AI Slop Filter Leaks And Turns Beloved Video Game Characters Into Uncanny Valley Weirdos</a></li>
 <li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/magazine/who-is-legally-liable-when-an-ai-agent-goes-rogue" data-cat="markets" data-sent="0" data-slug="magazine who legally liable when agent goes rogue" hidden="until-found"><span class="ameta">COINTELEGRAPH &middot; Aug 28 &middot; Markets</span><a href="https://cointelegraph.com/magazine/who-is-legally-liable-when-an-ai-agent-goes-rogue" target="_blank" rel="noopener noreferrer">Who is legally liable when an AI agent goes rogue?</a></li>
 <li class="arow" data-count="1" data-id="rss:5744ebbb-d79a-47ac-ad49-7b52262d1839" data-cat="sports" data-sent="0" data-slug="fantasy football news dave richards quarterback tiers" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 28 &middot; Sports</span><a href="https://www.cbssports.com/fantasy/football/news/dave-richards-quarterback-tiers-4-0/" target="_blank" rel="noopener noreferrer">Dave Richard&#39;s Quarterback Tiers 4.0: Knowing how many QBs you can trust is the key to a smart Fantasy draft</a></li>
@@ -9108,19 +9385,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:WP-MKTW-0005191194" data-cat="markets" data-sent="0" data-slug="story rising rates were enough end bull market wed have entered bear long ago 0c6790a0" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 20 &middot; Markets</span><a href="https://www.marketwatch.com/story/if-rising-rates-were-enough-to-end-a-bull-market-wed-have-entered-a-bear-market-long-ago-0c6790a0?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">If rising rates were enough to end a bull market, we’d have entered a bear market long ago</a></li>
 <li class="arow" data-count="1" data-id="rss:US-EN-49671926" data-cat="sports" data-sent="0" data-slug="nba story lakers minority owner patrick soon shiong not selling stake" hidden="until-found"><span class="ameta">ESPN &middot; Aug 20 &middot; Sports</span><a href="https://www.espn.com/nba/story/_/id/49671926/lakers-minority-owner-dr-patrick-soon-shiong-not-selling-4-stake" target="_blank" rel="noopener noreferrer">Lakers minority owner not selling his 4% stake</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/tennis/articles/c70g2zx0rp5o#0" data-cat="sports" data-sent="0" data-slug="sport tennis articles c70g2zx0rp5o" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 20 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/tennis/articles/c70g2zx0rp5o" target="_blank" rel="noopener noreferrer">US Open offers biggest prize fund in Grand Slam history</a></li>
-<li class="arow" data-count="1" data-id="rss:6a390d52-e77d-483c-83b6-eec88b3f3e38" data-cat="sports" data-sent="0" data-slug="college football news utah lawsuit freddie whittingham michigan kyle" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 20 &middot; Sports</span><a href="https://www.cbssports.com/college-football/news/utah-lawsuit-freddie-whittingham-michigan-kyle-whittingham/" target="_blank" rel="noopener noreferrer">Utah files lawsuit against Freddie Whittingham over move to brother&#39;s Michigan staff</a></li>
-<li class="arow" data-count="1" data-id="rss:d12ca579-c9b1-45f0-9c6b-e960a703b69b" data-cat="sports" data-sent="0" data-slug="nfl news aaron donald return history rams" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 20 &middot; Sports</span><a href="https://www.cbssports.com/nfl/news/aaron-donald-return-nfl-history-rams/" target="_blank" rel="noopener noreferrer">Will Aaron Donald unretire? What Sean McVay&#39;s reaction and NFL history have to say about possible return</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240760" data-cat="entertainment" data-sent="0" data-slug="news newspapers japanese government abolish cool japan fund" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 20 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/news/2026-08-20/newspapers-japanese-government-to-abolish-cool-japan-fund/.240760" target="_blank" rel="noopener noreferrer">Newspapers: Japanese Government to Abolish Cool Japan Fund</a></li>
-<li class="arow" data-count="1" data-id="rss:https://the-decoder.com/?p=39251" data-cat="ai" data-sent="0" data-slug="llms could write like humans but post training guardrails make their text detectable" hidden="until-found"><span class="ameta">THE DECODER &middot; Aug 20 &middot; AI</span><a href="https://the-decoder.com/llms-could-write-like-humans-but-post-training-guardrails-make-their-text-detectable/" target="_blank" rel="noopener noreferrer">LLMs could write like humans but post-training guardrails make their text detectable</a></li>
-<li class="arow" data-count="1" data-id="rss:https://techcrunch.com/?p=3154977" data-cat="ai" data-sent="0" data-slug="grok keeps sending gibberish responses users" hidden="until-found"><span class="ameta">TECHCRUNCH &middot; Aug 20 &middot; AI</span><a href="https://techcrunch.com/2026/08/20/grok-keeps-sending-gibberish-responses-to-users/" target="_blank" rel="noopener noreferrer">Grok keeps sending gibberish responses to users</a></li>
-<li class="arow" data-count="1" data-id="rss:8405a23c-50dc-4ef1-b5a7-59562e1ed0ad" data-cat="games" data-sent="0" data-slug="articles bet many you would not like halo creator says make series darker made new game" hidden="until-found"><span class="ameta">IGN &middot; Aug 20 &middot; Games</span><a href="https://www.ign.com/articles/i-bet-many-of-you-would-not-like-it-halo-co-creator-says-he-would-make-series-darker-if-he-made-a-new-game" target="_blank" rel="noopener noreferrer">&#39;I Bet Many of You Would Not Like It&#39; — Halo Co-Creator Says He Would Make Series &#39;Darker&#39; if He Made a New Game</a></li>
-<li class="arow" data-count="1" data-id="rss:https://techcrunch.com/?p=3154941" data-cat="ai" data-sent="0" data-slug="third webpages published since chatgpts launch show signs authorship study finds" hidden="until-found"><span class="ameta">TECHCRUNCH &middot; Aug 20 &middot; AI</span><a href="https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/" target="_blank" rel="noopener noreferrer">A third of web pages published since ChatGPT’s launch show signs of AI authorship, study finds</a></li>
-<li class="arow" data-count="1" data-id="rss:https://arstechnica.com/tech-policy/2026/08/weak-roblox-safeguards-failed-to-stop-adults-contacting-kids-regulator-says/" data-cat="tech" data-sent="0" data-slug="tech policy weak roblox safeguards failed stop adults contacting kids regulator says" hidden="until-found"><span class="ameta">ARS TECHNICA &middot; Aug 20 &middot; Tech</span><a href="https://arstechnica.com/tech-policy/2026/08/weak-roblox-safeguards-failed-to-stop-adults-contacting-kids-regulator-says/" target="_blank" rel="noopener noreferrer">Roblox must make changes after failing to block adults creeping on kids</a></li>
-<li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/ikhwaz" data-cat="dev" data-sent="0" data-slug="emacs mirror blob 062dcd2aead00c3b47c14ff5b6c40313f7a775f5 etc history" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 20 &middot; Dev</span><a href="https://github.com/emacs-mirror/emacs/blob/062dcd2aead00c3b47c14ff5b6c40313f7a775f5/etc/HISTORY#L246" target="_blank" rel="noopener noreferrer">Emacs 31.1 will release on 8/24</a></li>
-<li class="arow" data-count="1" data-id="rss:https://dev.to/ptzivras/argos-v001-is-live-a-digital-twin-of-kefalonia-3i38" data-cat="dev" data-sent="0" data-slug="ptzivras argos v001 live digital twin kefalonia 3i38" hidden="until-found"><span class="ameta">DEV.TO &middot; Aug 20 &middot; Dev</span><a href="https://dev.to/ptzivras/argos-v001-is-live-a-digital-twin-of-kefalonia-3i38" target="_blank" rel="noopener noreferrer">ARGOS v0.0.1 is live: a digital twin of Kefalonia</a></li>
-<li class="arow" data-count="1" data-id="rss:6b705dab-2548-4b1b-9c9e-7d88eae68a01" data-cat="sports" data-sent="0" data-slug="nfl news everyone hot seat plus the top players and over predicting 2026s final undefeated team" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 20 &middot; Sports</span><a href="https://www.cbssports.com/nfl/news/everyone-on-nfl-hot-seat-plus-the-top-30-players-30-and-over-and-predicting-2026s-final-undefeated-team/" target="_blank" rel="noopener noreferrer">Everyone on NFL hot seat, plus the top 30 players 30 and over and predicting 2026&#39;s final undefeated team</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cn8n077vxd7o#0" data-cat="world" data-sent="0" data-slug="news articles cn8n077vxd7o" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 20 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/cn8n077vxd7o" target="_blank" rel="noopener noreferrer">Como mayor bans &#39;beasts&#39; in city centre after being hit by bike</a></li>
-<li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236838976" data-cat="entertainment" data-sent="0" data-slug="film box office the odyssey biggest rated movie all time deadpool wolverine" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 20 &middot; Entertainment</span><a href="https://variety.com/2026/film/box-office/the-odyssey-biggest-r-rated-movie-all-time-deadpool-wolverine-1236838976/" target="_blank" rel="noopener noreferrer">‘The Odyssey’ Beats ‘Deadpool &amp; Wolverine’ as Biggest R-Rated Movie of All Time With $1.35 Billion</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
