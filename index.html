@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-29T21:51:09.734Z">
+<meta name="sf-version" content="2026-08-29T22:31:46.360Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,8 +537,9 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
-:root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
+:root[data-theme="light"] .meta [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
+:root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] .meta [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
@@ -547,7 +548,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
-:root[data-theme="light"] .meta [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
@@ -692,10 +692,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 5:51 PM &middot; 231 TODAY</p>
+	<p class="stats">UPDATED 6:31 PM &middot; 233 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">149</span><span class="sr-only"> — 149 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">66</span><span class="sr-only"> — 66 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">243</span><span class="sr-only"> — 243 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">396</span><span class="sr-only"> — 396 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">322</span><span class="sr-only"> — 322 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">416</span><span class="sr-only"> — 416 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">173</span><span class="sr-only"> — 173 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">489</span><span class="sr-only"> — 489 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">248</span><span class="sr-only"> — 248 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">19</span><span class="sr-only"> — 19 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">479</span><span class="sr-only"> — 479 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">149</span><span class="sr-only"> — 149 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">66</span><span class="sr-only"> — 66 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">243</span><span class="sr-only"> — 243 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">396</span><span class="sr-only"> — 396 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">321</span><span class="sr-only"> — 321 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">415</span><span class="sr-only"> — 415 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">173</span><span class="sr-only"> — 173 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">490</span><span class="sr-only"> — 490 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">249</span><span class="sr-only"> — 249 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">19</span><span class="sr-only"> — 19 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">479</span><span class="sr-only"> — 479 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -911,43 +911,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
+		<a class="trend-title" href="https://www.npr.org/2026/08/29/nx-s1-5948125/getting-help-to-nepals-flood-survivors-is-proving-difficult" target="_blank" rel="noopener noreferrer">Getting help to Nepal&#39;s flood survivors is proving difficult</a>
+		<p class="trend-meta"><span class="src">NPR WORLD</span><span class="sep" aria-hidden="true">&middot;</span>Sat 5:14 PM</p>
+	</div>
+</li>
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">2</span>
+	<div class="trend-body">
+		<a class="trend-title" href="https://www.npr.org/2026/08/29/nx-s1-5948040/rescuers-race-to-find-thousands-missing-after-deadly-himalayan-floods" target="_blank" rel="noopener noreferrer">Rescuers race to find thousands missing after deadly Himalayan floods</a>
+		<p class="trend-meta"><span class="src">NPR WORLD</span><span class="sep" aria-hidden="true">&middot;</span>Sat 5:14 PM</p>
+	</div>
+</li>
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">3</span>
+	<div class="trend-body">
 		<a class="trend-title" href="https://www.aljazeera.com/video/newsfeed/2026/8/29/anger-mounts-in-nepal-over-the-governments-response-to-flash-flood?traffic_source=rss" target="_blank" rel="noopener noreferrer">Anger mounts in Nepal over the government’s response to flash flood</a>
 		<p class="trend-meta"><span class="src">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span>Sat 4:58 PM</p>
 	</div>
 </li>
 <li class="trend-item">
-	<span class="rank" aria-hidden="true">2</span>
+	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
 		<a class="trend-title" href="https://www.nytimes.com/2026/08/29/world/asia/nepal-flood-hydropower-tunnels-rescue-missing-workers.html" target="_blank" rel="noopener noreferrer">Nepal Rescuers Bore Through Tunnels to Try to Reach 900 Workers Missing After Floods</a>
 		<p class="trend-meta"><span class="src">NYT WORLD</span><span class="sep" aria-hidden="true">&middot;</span>Sat 4:07 PM</p>
 	</div>
 </li>
 <li class="trend-item">
-	<span class="rank" aria-hidden="true">3</span>
+	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
 		<a class="trend-title" href="https://www.nytimes.com/2026/08/29/world/asia/nepal-flood-rescue.html" target="_blank" rel="noopener noreferrer">Search Continues for 2,400 Missing in Nepal Floods Amid ‘Immense’ Devastation</a>
 		<p class="trend-meta"><span class="src">NYT WORLD</span><span class="sep" aria-hidden="true">&middot;</span>Sat 1:04 PM</p>
 	</div>
 </li>
 <li class="trend-item">
-	<span class="rank" aria-hidden="true">4</span>
+	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
 		<a class="trend-title" href="https://www.nytimes.com/2026/08/29/world/europe/russia-ukraine-strike-kyiv-drones.html" target="_blank" rel="noopener noreferrer">37 Killed After Russian Strike on Weapons Depot as Ukraine Blames Negligence</a>
 		<p class="trend-meta"><span class="src">NYT WORLD</span><span class="sep" aria-hidden="true">&middot;</span>Sat 10:40 AM</p>
-	</div>
-</li>
-<li class="trend-item">
-	<span class="rank" aria-hidden="true">5</span>
-	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.co.uk/news/videos/cy8z979y9e4o" target="_blank" rel="noopener noreferrer">Deadly strike on Kyiv warehouse prompts evacuations</a>
-		<p class="trend-meta"><span class="src">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span>Sat 9:55 AM</p>
-	</div>
-</li>
-<li class="trend-item">
-	<span class="rank" aria-hidden="true">6</span>
-	<div class="trend-body">
-		<a class="trend-title" href="https://www.france24.com/en/several-killed-in-israeli-strikes-on-gaza-and-west-bank" target="_blank" rel="noopener noreferrer">Several killed in Israeli strikes on Gaza and West Bank</a>
-		<p class="trend-meta"><span class="src">FRANCE 24</span><span class="sep" aria-hidden="true">&middot;</span>Sat 6:34 AM</p>
 	</div>
 </li>
 </ol>
@@ -957,43 +957,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://espndeportes.espn.com/futbol/colombia/nota/_/id/17177803/jaguares-vs-america-fecha-8-liga-betplay-equipo-fecha-hora-y-tv-en-vivo" target="_blank" rel="noopener noreferrer">When do Jaguares vs América play on matchday 8 of Liga BetPlay: squad, date, time and live TV</a>
-		<p class="trend-meta"><span class="src">ESPN DEPORTES</span><span class="sep" aria-hidden="true">&middot;</span>"jaguares - américa" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://steelersdepot.com/2026/08/kozora-pittsburgh-steelers-trade-ideas-ahead-of-roster-cutdowns/" target="_blank" rel="noopener noreferrer">Kozora: Pittsburgh Steelers Trade Ideas Ahead Of Roster Cutdowns</a>
+		<p class="trend-meta"><span class="src">STEELERS DEPOT</span><span class="sep" aria-hidden="true">&middot;</span>"steelers trade" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nascar.com/videos/franchise/all-videos/in-car-camera-what-led-to-herbsts-late-wreck-at-loudon/" target="_blank" rel="noopener noreferrer">In-car camera: What led to Herbst’s late wreck at Loudon</a>
-		<p class="trend-meta"><span class="src">NASCAR.COM</span><span class="sep" aria-hidden="true">&middot;</span>"riley herbst" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.nccourage.com/news/starting-xi-notes-courage-take-on-kansas-city-current" target="_blank" rel="noopener noreferrer">STARTING XI NOTES: COURAGE TAKE ON KANSAS CITY CURRENT</a>
+		<p class="trend-meta"><span class="src">NC COURAGE</span><span class="sep" aria-hidden="true">&middot;</span>"north carolina courage vs kc current" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sports.yahoo.com/articles/tiger-woods-unrecognizable-breaks-cover-230704431.html" target="_blank" rel="noopener noreferrer">Tiger Woods is unrecognizable as he breaks cover 5 months after major crash</a>
-		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"notah begay" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.mlb.com/news/jared-young-has-exceeded-expectations-with-mets-in-2026" target="_blank" rel="noopener noreferrer">From KBO to Queens, Young continues to be unlikely hero of &#39;26 Mets</a>
+		<p class="trend-meta"><span class="src">MLB.COM</span><span class="sep" aria-hidden="true">&middot;</span>"jared young" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://cnnespanol.cnn.com/2026/08/29/eeuu/trump-corte-prohibicion-transgenero-fuerzas-armadas-trax" target="_blank" rel="noopener noreferrer">Trump asks the Supreme Court to uphold the ban on transgender people serving in the Armed Forces</a>
-		<p class="trend-meta"><span class="src">CNN EN ESPAÑOL</span><span class="sep" aria-hidden="true">&middot;</span>"corte suprema" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.mlb.com/news/mets-rookie-nolan-mclean-succeeding-without-sweeper" target="_blank" rel="noopener noreferrer">Where did Nolan McLean&#39;s sweeper go?</a>
+		<p class="trend-meta"><span class="src">MLB.COM</span><span class="sep" aria-hidden="true">&middot;</span>"nolan mclean" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://espndeportes.espn.com/futbol/italia/nota/_/id/17175663/juventus-vs-parma-serie-a-liga-equipo-fecha-hora-y-tv-en-vivo" target="_blank" rel="noopener noreferrer">When do Juventus vs. Parma play in Serie A: squad, date, time and live TV</a>
-		<p class="trend-meta"><span class="src">ESPN DEPORTES</span><span class="sep" aria-hidden="true">&middot;</span>"nicolás gonzález" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://triblive.com/sports/after-inspiring-return-from-injury-broderick-jones-content-if-asked-to-fill-backup-role-for-steelers/" target="_blank" rel="noopener noreferrer">After ‘inspiring’ return from injury, Broderick Jones content if asked to fill backup role for Steelers</a>
+		<p class="trend-meta"><span class="src">TRIBLIVE.COM</span><span class="sep" aria-hidden="true">&middot;</span>"broderick jones" &middot; 10000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dolphins-trade-qb-quinn-ewers-to-jaguars" target="_blank" rel="noopener noreferrer">Dolphins trade QB Quinn Ewers to Jaguars</a>
-		<p class="trend-meta"><span class="src">NBC SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"quinn ewers" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/steelers-trade-broderick-jones-to-cowboys" target="_blank" rel="noopener noreferrer">Steelers trade Broderick Jones to Cowboys</a>
+		<p class="trend-meta"><span class="src">NBC SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"broderick jones trade" &middot; 1000+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1015,6 +1015,52 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.marketwatch.com/story/i-feel-shoehorned-my-father-funded-my-800-000-roth-ira-does-that-give-him-the-right-to-say-how-i-invest-it-7b1e3ab3?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">MarketWatch &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:a63da037-e4ce-4754-9618-1659975cfc4d" data-srckey="cbs sports" data-cat="sports" data-sent="0" data-ts="1788040583000" data-slug="nfl news raiders starting kirk cousins fernando mendoza">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Raiders expected to name Kirk Cousins Week 1 starter over No. 1 pick Fernando Mendoza — flip for details">
+	<div class="meta"><span class="src" style="color:#3b82f6">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T21:56:23.000Z">5:56 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Raiders expected to name Kirk Cousins Week 1 starter over No. 1 pick Fernando Mendoza</h3>
+	<p class="snippet">The Raiders plan to open the season with the 38-year-old Cousins under center while Mendoza begins his NFL career as a backup</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://sportshub.cbsistatic.com/i/2026/08/14/ec5eb32b-fab3-4922-9cfa-56f5760854bf/getty-kirk-cousins-raiders.jpg?width=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://sportshub.cbsistatic.com/i/2026/08/14/ec5eb32b-fab3-4922-9cfa-56f5760854bf/getty-kirk-cousins-raiders.jpg?width=240 240w, https://sportshub.cbsistatic.com/i/2026/08/14/ec5eb32b-fab3-4922-9cfa-56f5760854bf/getty-kirk-cousins-raiders.jpg?width=340 340w, https://sportshub.cbsistatic.com/i/2026/08/14/ec5eb32b-fab3-4922-9cfa-56f5760854bf/getty-kirk-cousins-raiders.jpg?width=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Raiders expected to name Kirk Cousins Week 1 starter over No. 1 pick Fernando Mendoza</h3>
+	<p class="about">The Raiders plan to open the season with the 38-year-old Cousins under center while Mendoza begins his NFL career as a backup</p>
+	
+	
+	<a class="more" href="https://www.cbssports.com/nfl/news/raiders-starting-qb-kirk-cousins-fernando-mendoza/" target="_blank" rel="noopener noreferrer">CBS Sports &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.nytimes.com/2026/08/29/world/middleeast/israel-settlers-west-bank-attacks-netanyahu-rebuke.html" data-srckey="nyt world" data-cat="world" data-sent="0" data-ts="1788040489000" data-slug="world middleeast israel settlers west bank attacks netanyahu rebuke html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Israeli Settlers Attack Palestinians, Drawing Sharp Rebukes — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(147 55% 72%)">NYT WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T21:54:49.000Z">5:54 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Israeli Settlers Attack Palestinians, Drawing Sharp Rebukes</h3>
+	<p class="snippet">The ferocity of Saturday’s assault prompted condemnations from Benjamin Netanyahu and other officials.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static01.nyt.com/images/2026/08/29/multimedia/29int-westbank-qusra-tqwg/29int-westbank-qusra-tqwg-mediumSquareAt3X.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Israeli Settlers Attack Palestinians, Drawing Sharp Rebukes</h3>
+	<p class="about">The ferocity of Saturday’s assault prompted condemnations from Benjamin Netanyahu and other officials.</p>
+	
+	
+	<a class="more" href="https://www.nytimes.com/2026/08/29/world/middleeast/israel-settlers-west-bank-attacks-netanyahu-rebuke.html" target="_blank" rel="noopener noreferrer">NYT World &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -6316,7 +6362,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2759 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2757 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cx2z415w2gpo#0" data-cat="world" data-sent="0" data-slug="news articles cx2z415w2gpo" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 28 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/cx2z415w2gpo" target="_blank" rel="noopener noreferrer">Footage of Tibet floods isn&#39;t being shown in China - and we know little about victims there</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" data-cat="world" data-sent="0" data-slug="world live aug nepal tibet flash floods hundreds dead missing day three updates" hidden="until-found"><span class="ameta">GUARDIAN WORLD &middot; Aug 28 &middot; World</span><a href="https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" target="_blank" rel="noopener noreferrer">Search continues as number missing in Nepal-Tibet floods rises to 2,478 – as it happened</a></li>
@@ -9075,8 +9121,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:6b705dab-2548-4b1b-9c9e-7d88eae68a01" data-cat="sports" data-sent="0" data-slug="nfl news everyone hot seat plus the top players and over predicting 2026s final undefeated team" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 20 &middot; Sports</span><a href="https://www.cbssports.com/nfl/news/everyone-on-nfl-hot-seat-plus-the-top-30-players-30-and-over-and-predicting-2026s-final-undefeated-team/" target="_blank" rel="noopener noreferrer">Everyone on NFL hot seat, plus the top 30 players 30 and over and predicting 2026&#39;s final undefeated team</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cn8n077vxd7o#0" data-cat="world" data-sent="0" data-slug="news articles cn8n077vxd7o" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 20 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/cn8n077vxd7o" target="_blank" rel="noopener noreferrer">Como mayor bans &#39;beasts&#39; in city centre after being hit by bike</a></li>
 <li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236838976" data-cat="entertainment" data-sent="0" data-slug="film box office the odyssey biggest rated movie all time deadpool wolverine" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 20 &middot; Entertainment</span><a href="https://variety.com/2026/film/box-office/the-odyssey-biggest-r-rated-movie-all-time-deadpool-wolverine-1236838976/" target="_blank" rel="noopener noreferrer">‘The Odyssey’ Beats ‘Deadpool &amp; Wolverine’ as Biggest R-Rated Movie of All Time With $1.35 Billion</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/hidetaka-miyazaki-fromsoftware-single-player-games" data-cat="games" data-sent="0" data-slug="hidetaka miyazaki fromsoftware single player games" hidden="until-found"><span class="ameta">EUROGAMER &middot; Aug 20 &middot; Games</span><a href="https://www.eurogamer.net/hidetaka-miyazaki-fromsoftware-single-player-games" target="_blank" rel="noopener noreferrer">Miyazaki suggests FromSoftware is keen to return to single-player games after The Duskbloods and Elden Ring: Nightreign</a></li>
-<li class="arow" data-count="1" data-id="rss:WP-MKTW-0005189346" data-cat="markets" data-sent="0" data-slug="story ghost offices and long wait times social security workers demand billion hires ac975af0" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 20 &middot; Markets</span><a href="https://www.marketwatch.com/story/ghost-offices-and-long-wait-times-social-security-workers-demand-3-billion-and-20-000-hires-ac975af0?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">‘Ghost offices’ and long wait times: Social Security workers demand $3 billion and 20,000 hires</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
