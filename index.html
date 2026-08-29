@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-29T00:15:53.005Z">
+<meta name="sf-version" content="2026-08-29T00:34:58.945Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -533,6 +533,7 @@ h1 .tld { color: var(--accent); }
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
+:root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
@@ -546,7 +547,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
-:root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
@@ -672,10 +672,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 8:15 PM &middot; 314 TODAY</p>
+	<p class="stats">UPDATED 8:34 PM &middot; 317 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">162</span><span class="sr-only"> — 162 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">76</span><span class="sr-only"> — 76 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">239</span><span class="sr-only"> — 239 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">401</span><span class="sr-only"> — 401 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">435</span><span class="sr-only"> — 435 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">183</span><span class="sr-only"> — 183 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">485</span><span class="sr-only"> — 485 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">135</span><span class="sr-only"> — 135 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">22</span><span class="sr-only"> — 22 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">528</span><span class="sr-only"> — 528 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">162</span><span class="sr-only"> — 162 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">76</span><span class="sr-only"> — 76 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">239</span><span class="sr-only"> — 239 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">401</span><span class="sr-only"> — 401 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">333</span><span class="sr-only"> — 333 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">435</span><span class="sr-only"> — 435 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">183</span><span class="sr-only"> — 183 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">485</span><span class="sr-only"> — 485 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">136</span><span class="sr-only"> — 136 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">22</span><span class="sr-only"> — 22 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">528</span><span class="sr-only"> — 528 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -891,43 +891,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sports.yahoo.com/articles/eagles-vs-bengals-preseason-game-232306343.html" target="_blank" rel="noopener noreferrer">Eagles vs. Bengals preseason game updates</a>
-		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"eagles game" &middot; 10000+ searches</p>
+		<a class="trend-title" href="https://www.oregonlive.com/highschoolsports/2026/08/oregon-high-school-football-300-top-players-to-know-for-2026-season-nos-20-1.html" target="_blank" rel="noopener noreferrer">Oregon high school football: 300 top players to know for 2026 season (Nos. 20-1)</a>
+		<p class="trend-meta"><span class="src">OREGONLIVE.COM</span><span class="sep" aria-hidden="true">&middot;</span>"high school football scores" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.usatoday.com/story/sports/high-school/football/2026/08/27/inside-allens-80-million-texas-high-school-football-stadium/91464219007/" target="_blank" rel="noopener noreferrer">Inside the $60 million high school football stadium hosting No. 16 Duncanville vs. Allen</a>
-		<p class="trend-meta"><span class="src">USA TODAY</span><span class="sep" aria-hidden="true">&middot;</span>"max preps" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://www.nfl.com/news/2026-nfl-preseason-week-3-what-we-learned-from-thursday-s-games" target="_blank" rel="noopener noreferrer">2026 NFL Preseason, Week 3: What We Learned from Thursday&#39;s games</a>
+		<p class="trend-meta"><span class="src">NFL.COM</span><span class="sep" aria-hidden="true">&middot;</span>"when does nfl season start" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.washingtonpost.com/opinions/2026/08/27/cbs-wants-an-andy-rooney-60-minutes-what-made-him-great/" target="_blank" rel="noopener noreferrer">Opinion | CBS wants a new Andy Rooney. It should study the original first.</a>
-		<p class="trend-meta"><span class="src">THE WASHINGTON POST</span><span class="sep" aria-hidden="true">&middot;</span>"cbs" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://sports.yahoo.com/nfl/article/as-eagles-adopt-more-aggressive-offense-jalen-hurts-not-afraid-of-making-mistakes-055450162.html" target="_blank" rel="noopener noreferrer">As Eagles adopt more aggressive offense, Jalen Hurts ‘not afraid of making mistakes’</a>
+		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"jalen hurts" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/nfl/story/_/id/49676377/2026-nfl-season-new-york-giants-final-roster-projection-depth-chart" target="_blank" rel="noopener noreferrer">2026 New York Giants: Projecting final 53-man roster</a>
-		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"braxton berrios" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.nfl.com/news/nfl-offensive-rookies-best-and-worst-case-for-17-players-in-2026" target="_blank" rel="noopener noreferrer">NFL offensive rookies: Best and worst case for 17 players in 2026</a>
+		<p class="trend-meta"><span class="src">NFL.COM</span><span class="sep" aria-hidden="true">&middot;</span>"first nfl game 2026" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/college-football/story/_/id/49753638/ruling-sec-sanction-teams-using-players-nfl-ties" target="_blank" rel="noopener noreferrer">Ruling: SEC can&#39;t sanction teams using players with NFL ties</a>
-		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"espn nfl" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://simplywall.st/stocks/us/media/nyse-fubo/fubotv/news/has-fubotv-fubo-fallen-below-fair-value-after-its-sports-exp" target="_blank" rel="noopener noreferrer">Has FuboTV (FUBO) Fallen Below Fair Value After Its Sports Expansion?</a>
+		<p class="trend-meta"><span class="src">SIMPLY WALL STREET</span><span class="sep" aria-hidden="true">&middot;</span>"fubotv" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.wsj.com/politics/policy/cia-chiefs-surprise-moscow-trip-was-to-warn-russia-not-to-attack-nato-c2d997f3" target="_blank" rel="noopener noreferrer">Exclusive | CIA Chief’s Surprise Moscow Trip Was to Warn Russia Not to Attack NATO</a>
-		<p class="trend-meta"><span class="src">WSJ</span><span class="sep" aria-hidden="true">&middot;</span>"vladimir putin" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://heavy.com/sports/nfl/washington-commanders/slammed-stefon-diggs-adam-peters-issue/" target="_blank" rel="noopener noreferrer">Commanders Slammed for Stefon Diggs Move, Amid Bigger Problem</a>
+		<p class="trend-meta"><span class="src">HEAVY.COM</span><span class="sep" aria-hidden="true">&middot;</span>"stefon diggs" &middot; 500+ searches</p>
 	</div>
 </li>
 </ol>
@@ -949,6 +949,52 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://dev.to/surfiniaburger/my-spidey-sense-on-ai-883" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236845354" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1787963571000" data-slug="film news california partial carveout tax credit cap">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="California Lawmakers Settle on Partial Film Carveout From Tax Credit Cap — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T00:32:51.000Z">8:32 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">California Lawmakers Settle on Partial Film Carveout From Tax Credit Cap</h3>
+	<p class="snippet">California lawmakers have agreed on a partial carveout for the film and TV industry from a state cap on tax credits. The bill, AB 186, was unveiled on Friday evening. It addresses concerns raised in June by the Motion Picture Association and a coalition of entertainment unions, who argued that the cap threatened to undermine […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2016/08/california-state-capitol-e1471542323414.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2016/08/california-state-capitol-e1471542323414.jpg?w=240 240w, https://variety.com/wp-content/uploads/2016/08/california-state-capitol-e1471542323414.jpg?w=340 340w, https://variety.com/wp-content/uploads/2016/08/california-state-capitol-e1471542323414.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">California Lawmakers Settle on Partial Film Carveout From Tax Credit Cap</h3>
+	<p class="about">California lawmakers have agreed on a partial carveout for the film and TV industry from a state cap on tax credits. The bill, AB 186, was unveiled on Friday evening. It addresses concerns raised in June by the Motion Picture Association and a coalition of entertainment unions, who argued that the cap threatened to undermine […]</p>
+	
+	
+	<a class="more" href="https://variety.com/2026/film/news/california-partial-film-carveout-tax-credit-cap-1236845354/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cx2z4dv6vn2o#2" data-srckey="bbc world" data-cat="world" data-sent="0" data-ts="1787962519000" data-slug="news articles cx2z4dv6vn2o">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="What tariffs will really cost Canadians and Americans — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T00:15:19.000Z">8:15 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">What tariffs will really cost Canadians and Americans</h3>
+	<p class="snippet">Households and businesses have become used to tariffs impacting the cost of living for more than year now, so what will change now?</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/3575/live/40950170-a24b-11f1-b3a6-2bc501807fe4.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/600/cpsprodpb/3575/live/40950170-a24b-11f1-b3a6-2bc501807fe4.jpg 600w, https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/3575/live/40950170-a24b-11f1-b3a6-2bc501807fe4.jpg 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">What tariffs will really cost Canadians and Americans</h3>
+	<p class="about">Households and businesses have become used to tariffs impacting the cost of living for more than year now, so what will change now?</p>
+	
+	
+	<a class="more" href="https://www.bbc.co.uk/news/articles/cx2z4dv6vn2o" target="_blank" rel="noopener noreferrer">BBC World &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1386,6 +1432,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://arstechnica.com/tech-policy/2026/08/cities-terminate-flock-contracts-at-record-pace-in-august/" target="_blank" rel="noopener noreferrer">Ars Technica &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:WP-MKTW-0005184082" data-srckey="marketwatch" data-cat="markets" data-sent="0" data-ts="1787952660000" data-slug="story are hurt our son and daughter law cut off contact with over politics should change">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘We are committed Christians’: Our son and daughter-in-law cut us off over politics. Should we change our $3 million will? — flip for details">
+	<div class="meta"><span class="src" style="color:#34d399">MARKETWATCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T21:31:00.000Z">5:31 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">‘We are committed Christians’: Our son and daughter-in-law cut us off over politics. Should we change our $3 million will?</h3>
+	<p class="snippet">“We are hurt and confused, but we have also tried to respect the boundaries they have established.”</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://images.mktw.net/im-01814240?width=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://images.mktw.net/im-01814240?width=240 240w, https://images.mktw.net/im-01814240?width=340 340w, https://images.mktw.net/im-01814240?width=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">‘We are committed Christians’: Our son and daughter-in-law cut us off over politics. Should we change our $3 million will?</h3>
+	<p class="about">“We are hurt and confused, but we have also tried to respect the boundaries they have established.”</p>
+	
+	
+	<a class="more" href="https://www.marketwatch.com/story/we-are-hurt-our-son-and-daughter-in-law-cut-off-contact-with-us-over-politics-should-we-change-our-3-million-will-f763b761?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">MarketWatch &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -8159,7 +8228,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2679 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2676 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241040" data-cat="entertainment" data-sent="0" data-slug="interest newspaper france theme park project lacks approval from dragon ball rights holders" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 27 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/interest/2026-08-27/newspaper-france-theme-park-project-lacks-approval-from-dragon-ball-rights-holders/.241040" target="_blank" rel="noopener noreferrer">Newspaper: France&#39;s Theme Park Project Lacks Approval From Dragon Ball&#39;s Rights Holders</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/kvlafj" data-cat="dev" data-sent="0" data-slug="blog announcing flatpak sta" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 27 &middot; Dev</span><a href="https://modal.cx/blog/announcing-flatpak-sta/" target="_blank" rel="noopener noreferrer">Announcing Sovereign Tech Agency Investment in Flatpak</a></li>
@@ -10837,9 +10906,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://arstechnica.com/culture/2026/08/a-fantastical-journey-unfolds-in-gorgeous-wildwood-trailer/" data-cat="tech" data-sent="0" data-slug="culture fantastical journey unfolds gorgeous wildwood trailer" hidden="until-found"><span class="ameta">ARS TECHNICA &middot; Aug 19 &middot; Tech</span><a href="https://arstechnica.com/culture/2026/08/a-fantastical-journey-unfolds-in-gorgeous-wildwood-trailer/" target="_blank" rel="noopener noreferrer">A fantastical journey unfolds in gorgeous Wildwood trailer</a></li>
 <li class="arow" data-count="1" data-id="rss:b54f42a9-b168-4768-8c41-8545b43034ef" data-cat="games" data-sent="0" data-slug="articles call duty modern warfare beta will fix issues that have plagued the series for better" hidden="until-found"><span class="ameta">IGN &middot; Aug 19 &middot; Games</span><a href="https://www.ign.com/articles/call-of-duty-modern-warfare-4-beta-will-fix-issues-that-have-plagued-the-series-for-the-better-part-of-a-decade" target="_blank" rel="noopener noreferrer">Call of Duty: Modern Warfare 4 Beta Will Fix Issues That Have Plagued the Series for the Better Part of a Decade</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theverge.com/games/982338/grand-theft-auto-vi-gta-leaks-videos" data-cat="tech" data-sent="0" data-slug="games grand theft auto gta leaks videos" hidden="until-found"><span class="ameta">THE VERGE &middot; Aug 19 &middot; Tech</span><a href="https://www.theverge.com/games/982338/grand-theft-auto-vi-gta-leaks-videos" target="_blank" rel="noopener noreferrer">GTA VI keeps leaking ahead of its gameplay premiere</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.polygon.com/best-star-trek-spock-quote/" data-cat="entertainment" data-sent="0" data-slug="best star trek spock quote" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 19 &middot; Entertainment</span><a href="https://www.polygon.com/best-star-trek-spock-quote/" target="_blank" rel="noopener noreferrer">Star Trek&#39;s Best Spock Quote Perfectly Explains Why Sci-Fi Series Has Lasted Nearly 60 Years</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.polygon.com/valheim-early-access-full-release-date/" data-cat="games" data-sent="0" data-slug="valheim early access full release date" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 19 &middot; Games</span><a href="https://www.polygon.com/valheim-early-access-full-release-date/" target="_blank" rel="noopener noreferrer">Minecraft&#39;s Biggest Replacement, Valheim, Officially Returns in 3 Weeks</a></li>
-<li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/news/occ-head-jonathan-gould-genius-rules-november" data-cat="markets" data-sent="0" data-slug="news occ head jonathan gould genius rules november" hidden="until-found"><span class="ameta">COINTELEGRAPH &middot; Aug 19 &middot; Markets</span><a href="https://cointelegraph.com/news/occ-head-jonathan-gould-genius-rules-november" target="_blank" rel="noopener noreferrer">OCC head promises final GENIUS rules by November</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
