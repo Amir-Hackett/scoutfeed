@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-29T05:25:09.990Z">
+<meta name="sf-version" content="2026-08-29T06:33:47.363Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -532,11 +532,11 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
-:root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
@@ -672,10 +672,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 1:25 AM &middot; 3 TODAY</p>
+	<p class="stats">UPDATED 2:33 AM &middot; 4 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">162</span><span class="sr-only"> — 162 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">76</span><span class="sr-only"> — 76 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">239</span><span class="sr-only"> — 239 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">403</span><span class="sr-only"> — 403 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">337</span><span class="sr-only"> — 337 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">436</span><span class="sr-only"> — 436 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">182</span><span class="sr-only"> — 182 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">484</span><span class="sr-only"> — 484 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">137</span><span class="sr-only"> — 137 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">22</span><span class="sr-only"> — 22 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">522</span><span class="sr-only"> — 522 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">162</span><span class="sr-only"> — 162 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">76</span><span class="sr-only"> — 76 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">240</span><span class="sr-only"> — 240 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">403</span><span class="sr-only"> — 403 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">337</span><span class="sr-only"> — 337 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">436</span><span class="sr-only"> — 436 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">181</span><span class="sr-only"> — 181 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">484</span><span class="sr-only"> — 484 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">137</span><span class="sr-only"> — 137 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">22</span><span class="sr-only"> — 22 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">522</span><span class="sr-only"> — 522 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -713,6 +713,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://dev.to/surfiniaburger/my-spidey-sense-on-ai-883" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact rail-art has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/report/985187/samsung-galaxy-s26-fe-hands-on-preview-specs-features-design" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1787832000000" data-slug="report samsung galaxy s26 hands preview specs features design">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Samsung’s Galaxy S26 FE pairs last year’s hardware with last month’s software — flip for details">
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-27T12:00:00.000Z">8:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Samsung’s Galaxy S26 FE pairs last year’s hardware with last month’s software</h3>
+	<p class="snippet">The Galaxy S26 FE holds few surprises. The Fan Edition phones are rarely Samsung&#39;s most exciting launches of the year, but the new Galaxy S26 FE feels especially familiar. Hardware-wise, little has changed since the S25 FE launched 12 months ago, and the upgrades have mostly come in the form of software tricks which themselves were already seen on this year&#39;s previous Samsung flagships. At its…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/samsung-galaxy-s26-fe-18.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.741906587151%2C100%2C78.516186825698&amp;w=640" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/samsung-galaxy-s26-fe-18.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.741906587151%2C100%2C78.516186825698&amp;w=320 320w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/samsung-galaxy-s26-fe-18.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.741906587151%2C100%2C78.516186825698&amp;w=640 640w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/samsung-galaxy-s26-fe-18.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.741906587151%2C100%2C78.516186825698&amp;w=960 960w" sizes="(max-width: 640px) 78vw, 320px">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Samsung’s Galaxy S26 FE pairs last year’s hardware with last month’s software</h3>
+	<p class="about">The Galaxy S26 FE holds few surprises. The Fan Edition phones are rarely Samsung&#39;s most exciting launches of the year, but the new Galaxy S26 FE feels especially familiar. Hardware-wise, little has changed since the S25 FE launched 12 months ago, and the upgrades have mostly come in the form of software tricks which themselves were already seen on this year&#39;s previous Samsung flagships. At its…</p>
+	
+	
+	<a class="more" href="https://www.theverge.com/report/985187/samsung-galaxy-s26-fe-hands-on-preview-specs-features-design" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -782,29 +805,6 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://kotaku.com/woodo-cozy-diorama-puzzle-game-2000728893" target="_blank" rel="noopener noreferrer">Kotaku &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
-<article class="card compact rail-art has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/report/985187/samsung-galaxy-s26-fe-hands-on-preview-specs-features-design" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1787832000000" data-slug="report samsung galaxy s26 hands preview specs features design">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Samsung’s Galaxy S26 FE pairs last year’s hardware with last month’s software — flip for details">
-	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-27T12:00:00.000Z">8:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
-	<h3 class="title">Samsung’s Galaxy S26 FE pairs last year’s hardware with last month’s software</h3>
-	<p class="snippet">The Galaxy S26 FE holds few surprises. The Fan Edition phones are rarely Samsung&#39;s most exciting launches of the year, but the new Galaxy S26 FE feels especially familiar. Hardware-wise, little has changed since the S25 FE launched 12 months ago, and the upgrades have mostly come in the form of software tricks which themselves were already seen on this year&#39;s previous Samsung flagships. At its…</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/samsung-galaxy-s26-fe-18.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.741906587151%2C100%2C78.516186825698&amp;w=640" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/samsung-galaxy-s26-fe-18.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.741906587151%2C100%2C78.516186825698&amp;w=320 320w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/samsung-galaxy-s26-fe-18.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.741906587151%2C100%2C78.516186825698&amp;w=640 640w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/samsung-galaxy-s26-fe-18.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.741906587151%2C100%2C78.516186825698&amp;w=960 960w" sizes="(max-width: 640px) 78vw, 320px">
-</div>
-<div class="face back" inert>
-	<h3 class="title">Samsung’s Galaxy S26 FE pairs last year’s hardware with last month’s software</h3>
-	<p class="about">The Galaxy S26 FE holds few surprises. The Fan Edition phones are rarely Samsung&#39;s most exciting launches of the year, but the new Galaxy S26 FE feels especially familiar. Hardware-wise, little has changed since the S25 FE launched 12 months ago, and the upgrades have mostly come in the form of software tricks which themselves were already seen on this year&#39;s previous Samsung flagships. At its…</p>
-	
-	
-	<a class="more" href="https://www.theverge.com/report/985187/samsung-galaxy-s26-fe-hands-on-preview-specs-features-design" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -891,43 +891,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://bleacherreport.com/articles/25493269-ben-simmons-fantastic-kings-workout-detailed-new-nba-rumors-amid-comeback-bid" target="_blank" rel="noopener noreferrer">Ben Simmons&#39; &#39;Fantastic&#39; Kings Workout Detailed in New NBA Rumors amid Comeback Bid</a>
-		<p class="trend-meta"><span class="src">BLEACHER REPORT</span><span class="sep" aria-hidden="true">&middot;</span>"ben simmons" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://deadline.com/2026/08/jamie-dornan-joins-megan-park-apple-movie-1237060997/" target="_blank" rel="noopener noreferrer">Jamie Dornan Joins Zoë Kravitz In Megan Park’s Mystery Apple Film</a>
+		<p class="trend-meta"><span class="src">DEADLINE</span><span class="sep" aria-hidden="true">&middot;</span>"megan park" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.yahoo.com/news/us/articles/faith-leaders-immigrant-families-gather-013252049.html" target="_blank" rel="noopener noreferrer">Faith leaders, immigrant families gather to demand protection ahead of Katrina anniversary</a>
-		<p class="trend-meta"><span class="src">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"hurricane katrina" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://variety.com/2026/film/news/shailene-woodley-amazing-spider-man-2-mary-jane-cut-a-year-after-filming-1236846453/" target="_blank" rel="noopener noreferrer">Shailene Woodley Found Out Her &#39;Amazing Spider-Man 2&#39; Mary Jane Scenes Were Cut a Year After Filming</a>
+		<p class="trend-meta"><span class="src">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span>"shailene woodley" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sports.yahoo.com/articles/feel-jhoan-duran-workload-130000251.html" target="_blank" rel="noopener noreferrer">How do you feel about Jhoan Duran’s workload?</a>
-		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"jhoan duran" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://sports.yahoo.com/articles/hector-santiago-debuts-ufc-shanghai-200000670.html" target="_blank" rel="noopener noreferrer">Hector Santiago debuts at UFC Shanghai hoping to once again share card with Alex Pereira</a>
+		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"lawrence lui" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.centraloregondaily.com/sports/alex-perez-vs-su-mudaerji-prediction-pick-for-ufc-fight-night-286/article_523c9a2d-7270-53a4-a2e1-f24aa9b441c4.html" target="_blank" rel="noopener noreferrer">Alex Perez vs. Su Mudaerji prediction, pick for UFC Fight Night 286</a>
-		<p class="trend-meta"><span class="src">CENTRAL OREGON DAILY</span><span class="sep" aria-hidden="true">&middot;</span>"alex perez" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://sports.yahoo.com/articles/knicks-land-zion-williamson-blockbuster-172106748.html" target="_blank" rel="noopener noreferrer">Knicks Land Zion Williamson In Blockbuster Trade Proposal That Actually Makes Sense</a>
+		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"zion williamson" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.thegoodphight.com/phillies-discussion/86673/gamethread-8-28-phillies-at-angels" target="_blank" rel="noopener noreferrer">Gamethread 8/28: Phillies at Angels</a>
-		<p class="trend-meta"><span class="src">THE GOOD PHIGHT</span><span class="sep" aria-hidden="true">&middot;</span>"phillies" &middot; 5000+ searches</p>
+		<a class="trend-title" href="https://www.espn.com/boxing/story/_/id/49752541/moses-itauma-flip-hrgovic-trade-push-stage-attempted-slap-heated-weigh-in" target="_blank" rel="noopener noreferrer">Moses Itauma, Filip Hrgović involved in heated scuffle during title fight weigh-in</a>
+		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"mike tyson" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.camdenchat.com/baltimore-orioles-discussion/70057/orioles-vs-athletics-discussion" target="_blank" rel="noopener noreferrer">Orioles vs. Athletics discussion</a>
-		<p class="trend-meta"><span class="src">CAMDEN CHAT</span><span class="sep" aria-hidden="true">&middot;</span>"baltimore orioles" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://variety.com/2026/tv/news/married-at-first-sight-season-20-peacock-changes-1236842709/" target="_blank" rel="noopener noreferrer">&#39;Married at First Sight&#39; Season 20: How Peacock&#39;s Changes Led to Success</a>
+		<p class="trend-meta"><span class="src">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span>"married at first sight" &middot; 2000+ searches</p>
 	</div>
 </li>
 </ol>
@@ -949,6 +949,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.polygon.com/best-netflix-original-anime-everyone-needs-to-watch-stream/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 h2 has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/5lz0zd" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1787983878000" data-slug="naively tried vibe coding memory">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="I naively tried vibe-coding a memory tool for agents and stared into the abyss of unsolved problems in philosophy — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T06:11:18.000Z">2:11 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">I naively tried vibe-coding a memory tool for agents and stared into the abyss of unsolved problems in philosophy</h3>
+	<p class="snippet">or, cheap code does not translate into systems design prowess</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://substackcdn.com/image/fetch/$s_!APpU!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Farbustoemchamas.substack.com%2Ftwitter%2Fsubscribe-card.jpg%3Fv%3D-961020344%26version%3D9" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">I naively tried vibe-coding a memory tool for agents and stared into the abyss of unsolved problems in philosophy</h3>
+	<p class="about">or, cheap code does not translate into systems design prowess</p>
+	
+	
+	<a class="more" href="https://arbustoemchamas.substack.com/p/i-naively-tried-vibe-coding-a-memory" target="_blank" rel="noopener noreferrer">Lobsters &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -8555,7 +8578,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2662 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2661 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241040" data-cat="entertainment" data-sent="0" data-slug="interest newspaper france theme park project lacks approval from dragon ball rights holders" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 27 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/interest/2026-08-27/newspaper-france-theme-park-project-lacks-approval-from-dragon-ball-rights-holders/.241040" target="_blank" rel="noopener noreferrer">Newspaper: France&#39;s Theme Park Project Lacks Approval From Dragon Ball&#39;s Rights Holders</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/kvlafj" data-cat="dev" data-sent="0" data-slug="blog announcing flatpak sta" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 27 &middot; Dev</span><a href="https://modal.cx/blog/announcing-flatpak-sta/" target="_blank" rel="noopener noreferrer">Announcing Sovereign Tech Agency Investment in Flatpak</a></li>
@@ -11218,7 +11241,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2240196/ikea-is-teasing-some-xbox-things/" data-cat="tech" data-sent="0" data-slug="ikea teasing some xbox things" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 19 &middot; Tech</span><a href="https://www.engadget.com/2240196/ikea-is-teasing-some-xbox-things/" target="_blank" rel="noopener noreferrer">IKEA is teasing some Xbox... things</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/gta-6-leaks-unmoderated-cyberleek-stop-killing-games/" data-cat="games" data-sent="0" data-slug="gta leaks unmoderated cyberleek stop killing games" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 19 &middot; Games</span><a href="https://www.polygon.com/gta-6-leaks-unmoderated-cyberleek-stop-killing-games/" target="_blank" rel="noopener noreferrer">GTA 6&#39;s Newest Gameplay Leak Drama Has Turned Ugly</a></li>
 <li class="arow" data-count="1" data-id="rss:6878fce6-29f7-44d3-bc48-45fb3a8cc934" data-cat="sports" data-sent="0" data-slug="wnba news nneka ogwumike retires legendary career" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 19 &middot; Sports</span><a href="https://www.cbssports.com/wnba/news/nneka-ogwumike-retires-legendary-wnba-career/" target="_blank" rel="noopener noreferrer">Nneka Ogwumike retires: Legendary WNBA player to call it a career after 15th season</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235611525" data-cat="music" data-sent="0" data-slug="music news cher conservatorship elijah blue allman wife seeks control" hidden="until-found"><span class="ameta">ROLLING STONE MUSIC &middot; Aug 19 &middot; Music</span><a href="https://www.rollingstone.com/music/music-news/cher-conservatorship-elijah-blue-allman-wife-seeks-control-1235611525/" target="_blank" rel="noopener noreferrer">Cher’s Conservatorship Bid Over Elijah Blue Allman Heats Up as Son’s Wife Seeks Control Instead</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
