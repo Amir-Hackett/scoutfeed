@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-29T12:00:19.388Z">
+<meta name="sf-version" content="2026-08-29T13:04:06.478Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -532,16 +532,17 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
-:root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
-:root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
+:root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
+:root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
+:root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
+:root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
+:root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
-:root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
-:root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
@@ -552,7 +553,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
 :root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
-:root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
 :root[data-theme="light"] .meta [style*="hsl(111 55% 72%)"] { color: #2f6e23 !important; }
 :root[data-theme="light"] .meta [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
@@ -672,10 +672,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 8:00 AM &middot; 29 TODAY</p>
+	<p class="stats">UPDATED 9:04 AM &middot; 39 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">163</span><span class="sr-only"> — 163 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">76</span><span class="sr-only"> — 76 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">241</span><span class="sr-only"> — 241 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">406</span><span class="sr-only"> — 406 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">339</span><span class="sr-only"> — 339 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">434</span><span class="sr-only"> — 434 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">181</span><span class="sr-only"> — 181 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">482</span><span class="sr-only"> — 482 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">138</span><span class="sr-only"> — 138 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">22</span><span class="sr-only"> — 22 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">518</span><span class="sr-only"> — 518 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">162</span><span class="sr-only"> — 162 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">75</span><span class="sr-only"> — 75 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">241</span><span class="sr-only"> — 241 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">407</span><span class="sr-only"> — 407 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">338</span><span class="sr-only"> — 338 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">439</span><span class="sr-only"> — 439 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">181</span><span class="sr-only"> — 181 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">483</span><span class="sr-only"> — 483 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">137</span><span class="sr-only"> — 137 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">22</span><span class="sr-only"> — 22 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">515</span><span class="sr-only"> — 515 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -713,6 +713,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://dev.to/surfiniaburger/my-spidey-sense-on-ai-883" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact rail-art" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/entertainment/985866/h4rris-nihil-young-edm-suno-ai" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1788004800000" data-slug="entertainment h4rris nihil young edm suno">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Musicians-turned-detectives are hunting for AI grifters — flip for details">
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T12:00:00.000Z">8:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Musicians-turned-detectives are hunting for AI grifters</h3>
+	<p class="snippet">As audio-focused generative tools and platforms have gotten more sophisticated, the internet has become increasingly filled with AI-generated music whose melodies and vocals are algorithmically derived from the work of human artists. While some of the people pumping out this kind of content immediately own up to using AI, others have denied using the technology until increasing public scrutiny…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Musicians-turned-detectives are hunting for AI grifters</h3>
+	<p class="about">As audio-focused generative tools and platforms have gotten more sophisticated, the internet has become increasingly filled with AI-generated music whose melodies and vocals are algorithmically derived from the work of human artists. While some of the people pumping out this kind of content immediately own up to using AI, others have denied using the technology until increasing public scrutiny…</p>
+	
+	
+	<a class="more" href="https://www.theverge.com/entertainment/985866/h4rris-nihil-young-edm-suno-ai" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -813,44 +836,21 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact rail-art has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.engadget.com/2245477/how-long-new-fire-tv-stick-last-lifespan/" data-srckey="engadget" data-cat="tech" data-sent="0" data-ts="1787941800000" data-slug="how long new fire stick last lifespan">
+<article class="card compact rail-art has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://the-decoder.com/?p=39567" data-srckey="the decoder" data-cat="ai" data-sent="0" data-ts="1788007884000" data-slug="google gives agents their own wiki they can learn from mistakes and successes">
 <div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="How long is a new Fire TV Stick actually supposed to last? — flip for details">
-	<div class="meta"><span class="src" style="color:hsl(229 55% 72%)">ENGADGET</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T18:30:00.000Z">2:30 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
-	<h3 class="title">How long is a new Fire TV Stick actually supposed to last?</h3>
-	<p class="snippet">Fire TV Sticks can last for years, but how many? Here&#39;s how to know when support ends for your device and when to upgrade.</p>
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Google gives AI agents their own wiki so they can learn from mistakes and successes — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(45 55% 72%)">THE DECODER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T12:51:24.000Z">8:51 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Google gives AI agents their own wiki so they can learn from mistakes and successes</h3>
+	<p class="snippet">Google Research has introduced WikiSkill, a framework that gives AI agents a persistent knowledge base. Instead of discarding what they learned after each run, agents document both failures and successes in a wiki-like structure and use that knowledge to get better over time. Larger models benefit more, but smaller models with WikiSkill can match the performance of larger ones without it. The…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://www.engadget.com/img/gallery/how-long-is-a-new-fire-tv-stick-actually-supposed-to-last/l-intro-1787772119.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+	<img class="thumb" src="https://the-decoder.com/wp-content/uploads/2026/08/aigent_skills_generation.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
-	<h3 class="title">How long is a new Fire TV Stick actually supposed to last?</h3>
-	<p class="about">Fire TV Sticks can last for years, but how many? Here&#39;s how to know when support ends for your device and when to upgrade.</p>
+	<h3 class="title">Google gives AI agents their own wiki so they can learn from mistakes and successes</h3>
+	<p class="about">Google Research has introduced WikiSkill, a framework that gives AI agents a persistent knowledge base. Instead of discarding what they learned after each run, agents document both failures and successes in a wiki-like structure and use that knowledge to get better over time. Larger models benefit more, but smaller models with WikiSkill can match the performance of larger ones without it. The…</p>
 	
 	
-	<a class="more" href="https://www.engadget.com/2245477/how-long-new-fire-tv-stick-last-lifespan/" target="_blank" rel="noopener noreferrer">Engadget &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
-<article class="card compact rail-art has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://the-decoder.com/?p=39562" data-srckey="the decoder" data-cat="ai" data-sent="0" data-ts="1787996208000" data-slug="laion drops massive open video dataset with million hours footage for research">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="LAION drops massive open video dataset with 10 million hours of footage for AI research — flip for details">
-	<div class="meta"><span class="src" style="color:hsl(45 55% 72%)">THE DECODER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T09:36:48.000Z">5:36 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
-	<h3 class="title">LAION drops massive open video dataset with 10 million hours of footage for AI research</h3>
-	<p class="snippet">LAION&#39;s Big Video Dataset (BVD) is one of the largest open video datasets for AI research, with 80 million videos, 10 million hours of runtime, and 55 million auto-described clips. Models trained on BVD beat the previous benchmark, InternVid, by up to 2.1 percentage points. Legally, LAION can likely point to a 2024 Hamburg court ruling that allows collecting copyrighted content for non-commercial…</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://the-decoder.com/wp-content/uploads/2024/08/images_database_ai_generated_data_files_online_storage-1-1200x673.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-</div>
-<div class="face back" inert>
-	<h3 class="title">LAION drops massive open video dataset with 10 million hours of footage for AI research</h3>
-	<p class="about">LAION&#39;s Big Video Dataset (BVD) is one of the largest open video datasets for AI research, with 80 million videos, 10 million hours of runtime, and 55 million auto-described clips. Models trained on BVD beat the previous benchmark, InternVid, by up to 2.1 percentage points. Legally, LAION can likely point to a 2024 Hamburg court ruling that allows collecting copyrighted content for non-commercial…</p>
-	
-	
-	<a class="more" href="https://the-decoder.com/laion-drops-massive-open-video-dataset-with-10-million-hours-of-footage-for-ai-research/" target="_blank" rel="noopener noreferrer">The Decoder &#8599;</a>
+	<a class="more" href="https://the-decoder.com/google-gives-ai-agents-their-own-wiki-so-they-can-learn-from-mistakes-and-successes/" target="_blank" rel="noopener noreferrer">The Decoder &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -891,43 +891,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nytimes.com/athletic/7537395/2026/08/28/premier-league-predictions-gw2/" target="_blank" rel="noopener noreferrer">Premier League predictions: Aston Villa vs Arsenal, Spurs vs Newcastle and the rest of GW2 - The Athletic</a>
-		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"epl" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://www.gainesville.com/story/sports/college/football/2026/08/27/three-games-that-will-define-florida-footballs-first-season-under-jon-sumrall/91491174007/" target="_blank" rel="noopener noreferrer">Three games that will define the Florida football 2026 season</a>
+		<p class="trend-meta"><span class="src">GAINESVILLE SUN</span><span class="sep" aria-hidden="true">&middot;</span>"florida gators football" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.foxbusiness.com/video/6404083697112" target="_blank" rel="noopener noreferrer">Mamdani grilled on why second-home luxury tax notices were &#39;wildly overestimated&#39;</a>
-		<p class="trend-meta"><span class="src">FOX BUSINESS</span><span class="sep" aria-hidden="true">&middot;</span>"mayor of nyc" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.nytimes.com/2026/08/27/arts/grand-theft-auto-vi-trailer-extended-look-rockstar.html" target="_blank" rel="noopener noreferrer">Grand Theft Auto VI Has a New Trailer and Grand Ambitions</a>
+		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"gta vi rockstar" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sports.yahoo.com/article/2026-little-league-world-series-curacao-and-japan-play-for-international-championship-mountain-and-great-lakes-compete-for-us-title-153446496.html" target="_blank" rel="noopener noreferrer">2026 Little League World Series: Curaçao and Japan play for international championship, Mountain and Great Lakes compete for U.S. title</a>
-		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"llws games today" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.on3.com/teams/texas-longhorns/news/five-things-we-know-about-texas-football-in-2026-at-the-end-of-fall-camp/" target="_blank" rel="noopener noreferrer">Five things we know about Texas football in 2026 at the end of fall camp</a>
+		<p class="trend-meta"><span class="src">ON3</span><span class="sep" aria-hidden="true">&middot;</span>"texas longhorns football" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.sfchronicle.com/sports/warriors/article/new-extension-steph-curry-determine-warriors-22407032.php" target="_blank" rel="noopener noreferrer">How a new contract extension for Steph Curry could determine Warriors’ future</a>
-		<p class="trend-meta"><span class="src">SAN FRANCISCO CHRONICLE</span><span class="sep" aria-hidden="true">&middot;</span>"stephen curry" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.kten.com/weather/video/web-weather/video_426fe1d4-6580-5b32-abef-39d3263856ca.html" target="_blank" rel="noopener noreferrer">Web Weather</a>
+		<p class="trend-meta"><span class="src">KTEN</span><span class="sep" aria-hidden="true">&middot;</span>"atlanta weather" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nytimes.com/2026/08/27/us/politics/nigeria-trump-troops-terror-attacks.html" target="_blank" rel="noopener noreferrer">U.S. to Withdraw 200 Troops Sent to Nigeria Under Trump</a>
-		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"nigeria" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.usatoday.com/story/money/lottery/2026/08/28/mega-millions-drawing-aug-28-winning-numbers/91515517007/" target="_blank" rel="noopener noreferrer">Mega Millions winning numbers for $145M jackpot. Check your ticket</a>
+		<p class="trend-meta"><span class="src">USA TODAY</span><span class="sep" aria-hidden="true">&middot;</span>"mega millions winning numbers" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://worldathletics.org/competitions/world-athletics-label-road-races/news/jepchirchir-simbu-2026-sydney-marathon" target="_blank" rel="noopener noreferrer">World champions Jepchirchir and Simbu lead strong fields for Sydney Marathon | PREVIEWS</a>
-		<p class="trend-meta"><span class="src">WORLDATHLETICS.ORG</span><span class="sep" aria-hidden="true">&middot;</span>"sydney marathon 2026" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.espn.com/tennis/story/_/page/w2w4*/us-open-2026-storylines-carlos-alcaraz-coco-gauff-aryna-sabalenka-novak-djokovic" target="_blank" rel="noopener noreferrer">US Open 2026: How will Alcaraz fare? And is the women&#39;s title wide open?</a>
+		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"us open tennis 2026" &middot; 1000+ searches</p>
 	</div>
 </li>
 </ol>
@@ -949,6 +949,236 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.marketwatch.com/story/i-feel-shoehorned-my-father-funded-my-800-000-roth-ira-does-that-give-him-the-right-to-say-how-i-invest-it-7b1e3ab3?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">MarketWatch &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://the-decoder.com/?p=39567" data-srckey="the decoder" data-cat="ai" data-sent="0" data-ts="1788007884000" data-slug="google gives agents their own wiki they can learn from mistakes and successes">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Google gives AI agents their own wiki so they can learn from mistakes and successes — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(45 55% 72%)">THE DECODER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T12:51:24.000Z">8:51 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Google gives AI agents their own wiki so they can learn from mistakes and successes</h3>
+	<p class="snippet">Google Research has introduced WikiSkill, a framework that gives AI agents a persistent knowledge base. Instead of discarding what they learned after each run, agents document both failures and successes in a wiki-like structure and use that knowledge to get better over time. Larger models benefit more, but smaller models with WikiSkill can match the performance of larger ones without it. The…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://the-decoder.com/wp-content/uploads/2026/08/aigent_skills_generation.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Google gives AI agents their own wiki so they can learn from mistakes and successes</h3>
+	<p class="about">Google Research has introduced WikiSkill, a framework that gives AI agents a persistent knowledge base. Instead of discarding what they learned after each run, agents document both failures and successes in a wiki-like structure and use that knowledge to get better over time. Larger models benefit more, but smaller models with WikiSkill can match the performance of larger ones without it. The…</p>
+	
+	
+	<a class="more" href="https://the-decoder.com/google-gives-ai-agents-their-own-wiki-so-they-can-learn-from-mistakes-and-successes/" target="_blank" rel="noopener noreferrer">The Decoder &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.polygon.com/arnold-schwarzenegger-raw-deal-full-movie-free-to-watch-youtube/" data-srckey="polygon" data-cat="entertainment" data-sent="0" data-ts="1788006614000" data-slug="arnold schwarzenegger raw deal full movie free watch youtube">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Arnold Schwarzenegger&#39;s 105-Minute One-Man-Army Action Flop Is Officially Free to Watch — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T12:30:14.000Z">8:30 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Arnold Schwarzenegger&#39;s 105-Minute One-Man-Army Action Flop Is Officially Free to Watch</h3>
+	<p class="snippet">1986&#39;s Raw Deal might not be the best Arnold Schwarzenegger movie, but it still boasts some impressive writing credits.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/msdrade_fe001.jpeg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/msdrade_fe001.jpeg?w=240 240w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/msdrade_fe001.jpeg?w=340 340w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/msdrade_fe001.jpeg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Arnold Schwarzenegger&#39;s 105-Minute One-Man-Army Action Flop Is Officially Free to Watch</h3>
+	<p class="about">1986&#39;s Raw Deal might not be the best Arnold Schwarzenegger movie, but it still boasts some impressive writing credits.</p>
+	
+	
+	<a class="more" href="https://www.polygon.com/arnold-schwarzenegger-raw-deal-full-movie-free-to-watch-youtube/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:WP-MKTW-0005182012" data-srckey="marketwatch" data-cat="markets" data-sent="0" data-ts="1788006600000" data-slug="story tim cook wasnt product guy engineered apple instead 03ca53f4">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Tim Cook wasn’t a ‘product guy’ — so he re-engineered Apple instead — flip for details">
+	<div class="meta"><span class="src" style="color:#34d399">MARKETWATCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T12:30:00.000Z">8:30 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Tim Cook wasn’t a ‘product guy’ — so he re-engineered Apple instead</h3>
+	<p class="snippet">Dismissed as “not a product guy,” the outgoing CEO proved that supply-chain mastery could take Apple to new heights.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://images.mktw.net/im-40700898?width=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://images.mktw.net/im-40700898?width=240 240w, https://images.mktw.net/im-40700898?width=340 340w, https://images.mktw.net/im-40700898?width=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Tim Cook wasn’t a ‘product guy’ — so he re-engineered Apple instead</h3>
+	<p class="about">Dismissed as “not a product guy,” the outgoing CEO proved that supply-chain mastery could take Apple to new heights.</p>
+	
+	
+	<a class="more" href="https://www.marketwatch.com/story/tim-cook-wasnt-a-product-guy-so-he-re-engineered-apple-instead-03ca53f4?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">MarketWatch &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:26be73b1-0109-427a-b501-7064b2ee6554" data-srckey="cbs sports" data-cat="sports" data-sent="0" data-ts="1788006598000" data-slug="betting news memphis unlv prediction odds time week college football picks bets">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Memphis vs. UNLV prediction, odds, time: 2026 Week 0 college football picks by proven model — flip for details">
+	<div class="meta"><span class="src" style="color:#3b82f6">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T12:29:58.000Z">8:29 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Memphis vs. UNLV prediction, odds, time: 2026 Week 0 college football picks by proven model</h3>
+	<p class="snippet">The SportsLine Projection Model has revealed its best bets for Memphis Tigers and UNLV Rebels as Jackson Arnold will start for the Rebels</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://sportshub.cbsistatic.com/i/2026/08/29/6e686079-3e0e-40de-a740-e6805437df0f/jaiden-thomas-unlv-rebels-imagn-images.jpg?width=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://sportshub.cbsistatic.com/i/2026/08/29/6e686079-3e0e-40de-a740-e6805437df0f/jaiden-thomas-unlv-rebels-imagn-images.jpg?width=240 240w, https://sportshub.cbsistatic.com/i/2026/08/29/6e686079-3e0e-40de-a740-e6805437df0f/jaiden-thomas-unlv-rebels-imagn-images.jpg?width=340 340w, https://sportshub.cbsistatic.com/i/2026/08/29/6e686079-3e0e-40de-a740-e6805437df0f/jaiden-thomas-unlv-rebels-imagn-images.jpg?width=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Memphis vs. UNLV prediction, odds, time: 2026 Week 0 college football picks by proven model</h3>
+	<p class="about">The SportsLine Projection Model has revealed its best bets for Memphis Tigers and UNLV Rebels as Jackson Arnold will start for the Rebels</p>
+	
+	
+	<a class="more" href="https://www.cbssports.com/betting/news/memphis-unlv-prediction-odds-time-2026-week-0-college-football-picks-bets/" target="_blank" rel="noopener noreferrer">CBS Sports &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:108356071" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1788005288000" data-slug="iran trade sanctions dollar oil exports html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Iran trade falls as Supreme Leader Khamenei urges less reliance on the U.S. dollar — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T12:08:08.000Z">8:08 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Iran trade falls as Supreme Leader Khamenei urges less reliance on the U.S. dollar</h3>
+	<p class="snippet">Iran&#39;s president says sanctions are hitting imports and exports, as its supreme leader urges less reliance on the U.S. dollar.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://image.cnbcfm.com/api/v1/image/108276688-1773242790689-AP26070525672326.jpg?v=1773245237&amp;w=340&amp;h=191" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://image.cnbcfm.com/api/v1/image/108276688-1773242790689-AP26070525672326.jpg?v=1773245237&amp;w=240&amp;h=135 240w, https://image.cnbcfm.com/api/v1/image/108276688-1773242790689-AP26070525672326.jpg?v=1773245237&amp;w=340&amp;h=191 340w, https://image.cnbcfm.com/api/v1/image/108276688-1773242790689-AP26070525672326.jpg?v=1773245237&amp;w=510&amp;h=287 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Iran trade falls as Supreme Leader Khamenei urges less reliance on the U.S. dollar</h3>
+	<p class="about">Iran&#39;s president says sanctions are hitting imports and exports, as its supreme leader urges less reliance on the U.S. dollar.</p>
+	
+	
+	<a class="more" href="https://www.cnbc.com/2026/08/29/iran-trade-sanctions-dollar-oil-exports.html" target="_blank" rel="noopener noreferrer">CNBC &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.polygon.com/star-wars-zero-company-anakin-skywalker-mission/" data-srckey="polygon" data-cat="games" data-sent="0" data-ts="1788004816000" data-slug="star wars zero company anakin skywalker mission">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Star Wars Zero Company Uses Anakin Skywalker for So Much More than a Cameo — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T12:00:16.000Z">8:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">Star Wars Zero Company Uses Anakin Skywalker for So Much More than a Cameo</h3>
+	<p class="snippet">Star Wars Zero Company features great tactical gameplay. During one mission, the game turns into a Jedi power fantasy when Anakin Skywalker pops up.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/anakin-star-wars-zero-company.png?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/anakin-star-wars-zero-company.png?w=240 240w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/anakin-star-wars-zero-company.png?w=340 340w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/anakin-star-wars-zero-company.png?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Star Wars Zero Company Uses Anakin Skywalker for So Much More than a Cameo</h3>
+	<p class="about">Star Wars Zero Company features great tactical gameplay. During one mission, the game turns into a Jedi power fantasy when Anakin Skywalker pops up.</p>
+	
+	
+	<a class="more" href="https://www.polygon.com/star-wars-zero-company-anakin-skywalker-mission/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:108354732" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1788004801000" data-slug="goodyear turnaround cash debt html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Goodyear burning rubber and cash as turnaround plan continues — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T12:00:01.000Z">8:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Goodyear burning rubber and cash as turnaround plan continues</h3>
+	<p class="snippet">The tire maker has an ongoing turnaround plan as the company tries to restructure its business, refinance and pay down years of debt.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://image.cnbcfm.com/api/v1/image/108354733-1787771978074-MOTOR-CITY-STORE-Exterior.jpg?v=1787838180&amp;w=340&amp;h=191" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://image.cnbcfm.com/api/v1/image/108354733-1787771978074-MOTOR-CITY-STORE-Exterior.jpg?v=1787838180&amp;w=240&amp;h=135 240w, https://image.cnbcfm.com/api/v1/image/108354733-1787771978074-MOTOR-CITY-STORE-Exterior.jpg?v=1787838180&amp;w=340&amp;h=191 340w, https://image.cnbcfm.com/api/v1/image/108354733-1787771978074-MOTOR-CITY-STORE-Exterior.jpg?v=1787838180&amp;w=510&amp;h=287 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Goodyear burning rubber and cash as turnaround plan continues</h3>
+	<p class="about">The tire maker has an ongoing turnaround plan as the company tries to restructure its business, refinance and pay down years of debt.</p>
+	
+	
+	<a class="more" href="https://www.cnbc.com/2026/08/29/goodyear-turnaround-cash-debt.html" target="_blank" rel="noopener noreferrer">CNBC &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/entertainment/985866/h4rris-nihil-young-edm-suno-ai" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1788004800000" data-slug="entertainment h4rris nihil young edm suno">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Musicians-turned-detectives are hunting for AI grifters — flip for details">
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T12:00:00.000Z">8:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Musicians-turned-detectives are hunting for AI grifters</h3>
+	<p class="snippet">As audio-focused generative tools and platforms have gotten more sophisticated, the internet has become increasingly filled with AI-generated music whose melodies and vocals are algorithmically derived from the work of human artists. While some of the people pumping out this kind of content immediately own up to using AI, others have denied using the technology until increasing public scrutiny…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Musicians-turned-detectives are hunting for AI grifters</h3>
+	<p class="about">As audio-focused generative tools and platforms have gotten more sophisticated, the internet has become increasingly filled with AI-generated music whose melodies and vocals are algorithmically derived from the work of human artists. While some of the people pumping out this kind of content immediately own up to using AI, others have denied using the technology until increasing public scrutiny…</p>
+	
+	
+	<a class="more" href="https://www.theverge.com/entertainment/985866/h4rris-nihil-young-edm-suno-ai" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:WP-MKTW-0005205696" data-srckey="marketwatch" data-cat="markets" data-sent="0" data-ts="1788004800000" data-slug="story managing pathological liar who never does her work how deal with e3c06081">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="I’m managing a pathological liar who never does her work. How do I deal with her? — flip for details">
+	<div class="meta"><span class="src" style="color:#34d399">MARKETWATCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T12:00:00.000Z">8:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">I’m managing a pathological liar who never does her work. How do I deal with her?</h3>
+	<p class="snippet">“I want to send the message that she’d better keep my name out of her mouth.”</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://images.mktw.net/im-89770129?width=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://images.mktw.net/im-89770129?width=240 240w, https://images.mktw.net/im-89770129?width=340 340w, https://images.mktw.net/im-89770129?width=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">I’m managing a pathological liar who never does her work. How do I deal with her?</h3>
+	<p class="about">“I want to send the message that she’d better keep my name out of her mouth.”</p>
+	
+	
+	<a class="more" href="https://www.marketwatch.com/story/im-managing-a-pathological-liar-who-never-does-her-work-how-do-i-deal-with-her-e3c06081?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">MarketWatch &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:WP-MKTW-0005204100" data-srckey="marketwatch" data-cat="markets" data-sent="0" data-ts="1788004800000" data-slug="story where are all the new jobs hiring slows again and probably wont speed soon 66920f1d">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Where are all the new jobs? Hiring slows again — and it probably won’t speed up soon. — flip for details">
+	<div class="meta"><span class="src" style="color:#34d399">MARKETWATCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T12:00:00.000Z">8:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Where are all the new jobs? Hiring slows again — and it probably won’t speed up soon.</h3>
+	<p class="snippet">The U.S. labor market seemed to be on upswing after a surge in new employment early this year — but a summer slowdown in hiring and fewer help-wanted ads suggest it won’t get any easier to find a job.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://images.mktw.net/im-04504407?width=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://images.mktw.net/im-04504407?width=240 240w, https://images.mktw.net/im-04504407?width=340 340w, https://images.mktw.net/im-04504407?width=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Where are all the new jobs? Hiring slows again — and it probably won’t speed up soon.</h3>
+	<p class="about">The U.S. labor market seemed to be on upswing after a surge in new employment early this year — but a summer slowdown in hiring and fewer help-wanted ads suggest it won’t get any easier to find a job.</p>
+	
+	
+	<a class="more" href="https://www.marketwatch.com/story/where-are-all-the-new-jobs-hiring-slows-again-and-it-probably-wont-speed-up-soon-66920f1d?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">MarketWatch &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -9176,7 +9406,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2635 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2625 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241040" data-cat="entertainment" data-sent="0" data-slug="interest newspaper france theme park project lacks approval from dragon ball rights holders" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 27 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/interest/2026-08-27/newspaper-france-theme-park-project-lacks-approval-from-dragon-ball-rights-holders/.241040" target="_blank" rel="noopener noreferrer">Newspaper: France&#39;s Theme Park Project Lacks Approval From Dragon Ball&#39;s Rights Holders</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/kvlafj" data-cat="dev" data-sent="0" data-slug="blog announcing flatpak sta" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 27 &middot; Dev</span><a href="https://modal.cx/blog/announcing-flatpak-sta/" target="_blank" rel="noopener noreferrer">Announcing Sovereign Tech Agency Investment in Flatpak</a></li>
@@ -11803,16 +12033,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:b5df3bd8-764a-4ab7-affe-64345e4af9ce" data-cat="games" data-sent="0" data-slug="articles the witcher npcs kept dropping their babies due unintended side effect cut mechanic" hidden="until-found"><span class="ameta">IGN &middot; Aug 19 &middot; Games</span><a href="https://www.ign.com/articles/the-witcher-3-npcs-kept-dropping-their-babies-due-to-an-unintended-side-effect-of-a-cut-mechanic" target="_blank" rel="noopener noreferrer">The Witcher 3 NPCs Kept Dropping Their Babies Due to an Unintended Side Effect of a Cut Mechanic</a></li>
 <li class="arow" data-count="1" data-id="rss:https://techcrunch.com/?p=3154433" data-cat="tech" data-sent="0" data-slug="was supposed win people over now hasnt" hidden="until-found"><span class="ameta">TECHCRUNCH &middot; Aug 19 &middot; Tech</span><a href="https://techcrunch.com/2026/08/19/ai-was-supposed-to-win-people-over-by-now-it-hasnt/" target="_blank" rel="noopener noreferrer">AI was supposed to win people over by now — it hasn’t</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235611575" data-cat="music" data-sent="0" data-slug="music news camp flog gnaw tyler the creator steve lacy turnstile" hidden="until-found"><span class="ameta">ROLLING STONE MUSIC &middot; Aug 19 &middot; Music</span><a href="https://www.rollingstone.com/music/music-news/camp-flog-gnaw-2026-tyler-the-creator-steve-lacy-turnstile-1235611575/" target="_blank" rel="noopener noreferrer">Tyler, the Creator’s Camp Flog Gnaw Returns With Future, Don Toliver, Steve Lacy, Turnstile</a></li>
-<li class="arow" data-count="1" data-id="rss:https://techcrunch.com/?p=3154456" data-cat="tech" data-sent="0" data-slug="google launches new study tools for students across search and gemini" hidden="until-found"><span class="ameta">TECHCRUNCH &middot; Aug 19 &middot; Tech</span><a href="https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini/" target="_blank" rel="noopener noreferrer">Google packs Search and Gemini with new AI study tools</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2240161/google-is-offering-college-students-a-year-of-ai-pro-for-free/" data-cat="tech" data-sent="0" data-slug="google offering college students year pro for free" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 19 &middot; Tech</span><a href="https://www.engadget.com/2240161/google-is-offering-college-students-a-year-of-ai-pro-for-free/" target="_blank" rel="noopener noreferrer">Google is offering college students a year of its AI Pro plan for free</a></li>
-<li class="arow" data-count="1" data-id="rss:108351751" data-cat="ai" data-sent="0" data-slug="where stand broadcom shares dip googles deal with marvell html" hidden="until-found"><span class="ameta">CNBC &middot; Aug 19 &middot; AI</span><a href="https://www.cnbc.com/2026/08/19/where-we-stand-on-broadcom-as-shares-dip-on-googles-deal-with-marvell.html" target="_blank" rel="noopener noreferrer">Where we stand on Broadcom after Marvell muscles in on its key customer Google</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.healthcaredive.com/news/providence-names-new-cfo-financial-turnaround-kevin-smith/828305/" data-cat="healthcare" data-sent="0" data-slug="news providence names new cfo financial turnaround kevin smith" hidden="until-found"><span class="ameta">HEALTHCARE DIVE &middot; Aug 19 &middot; Healthcare</span><a href="https://www.healthcaredive.com/news/providence-names-new-cfo-financial-turnaround-kevin-smith/828305/" target="_blank" rel="noopener noreferrer">Providence names new CFO amid financial turnaround</a></li>
-<li class="arow" data-count="1" data-id="rss:https://the-decoder.com/?p=39217" data-cat="ai" data-sent="0" data-slug="attackers are using build exploits for industrial control systems agencies warn" hidden="until-found"><span class="ameta">THE DECODER &middot; Aug 19 &middot; AI</span><a href="https://the-decoder.com/attackers-are-using-ai-to-build-exploits-for-industrial-control-systems-u-s-agencies-warn/" target="_blank" rel="noopener noreferrer">Attackers are using AI to build exploits for industrial control systems, U.S. agencies warn</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.polygon.com/xbox-mattel-brick-shop-set-announced/" data-cat="games" data-sent="0" data-slug="xbox mattel brick shop set announced" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 19 &middot; Games</span><a href="https://www.polygon.com/xbox-mattel-brick-shop-set-announced/" target="_blank" rel="noopener noreferrer">Original Xbox Returns in Brick Form With $324 Mattel Set</a></li>
-<li class="arow" data-count="1" data-id="rss:https://techcrunch.com/?p=3154497" data-cat="tech" data-sent="0" data-slug="researchers complain that openai revoked their access limited cyber program" hidden="until-found"><span class="ameta">TECHCRUNCH &middot; Aug 19 &middot; Tech</span><a href="https://techcrunch.com/2026/08/19/researchers-complain-that-openai-revoked-their-access-to-limited-cyber-program/" target="_blank" rel="noopener noreferrer">Researchers say OpenAI revoked their access to limited cyber program</a></li>
-<li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000725914" data-cat="games" data-sent="0" data-slug="dire forecast predicts million fewer consoles sold ps6 and xbox helix are" hidden="until-found"><span class="ameta">KOTAKU &middot; Aug 19 &middot; Games</span><a href="https://kotaku.com/dire-forecast-predicts-39-million-fewer-consoles-sold-if-ps6-and-xbox-helix-are-1000-2000725914" target="_blank" rel="noopener noreferrer">Dire Forecast Predicts 39 Million Fewer Consoles Sold If PS6 And Xbox Helix Are $1,000</a></li>
-<li class="arow" data-count="1" data-id="rss:https://arstechnica.com/space/2026/08/the-floodgates-are-open-after-another-chinese-company-lands-a-reusable-rocket/" data-cat="tech" data-sent="0" data-slug="space the floodgates are open after another chinese company lands reusable rocket" hidden="until-found"><span class="ameta">ARS TECHNICA &middot; Aug 19 &middot; Tech</span><a href="https://arstechnica.com/space/2026/08/the-floodgates-are-open-after-another-chinese-company-lands-a-reusable-rocket/" target="_blank" rel="noopener noreferrer">The floodgates are open after another Chinese company lands a reusable rocket</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cq89n5j9npdo#1" data-cat="world" data-sent="0" data-slug="news articles cq89n5j9npdo" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 19 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/cq89n5j9npdo" target="_blank" rel="noopener noreferrer">81-year-old confesses to German cold case murder of US tourist in 1994</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
