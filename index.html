@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-29T07:45:14.503Z">
+<meta name="sf-version" content="2026-08-29T08:48:26.717Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -532,12 +532,14 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
+:root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
+:root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
+:root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
-:root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
-:root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
@@ -545,13 +547,11 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
-:root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
 :root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
 :root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
-:root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
 :root[data-theme="light"] .meta [style*="hsl(111 55% 72%)"] { color: #2f6e23 !important; }
@@ -672,10 +672,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 3:45 AM &middot; 9 TODAY</p>
+	<p class="stats">UPDATED 4:48 AM &middot; 14 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">162</span><span class="sr-only"> — 162 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">76</span><span class="sr-only"> — 76 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">241</span><span class="sr-only"> — 241 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">403</span><span class="sr-only"> — 403 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">337</span><span class="sr-only"> — 337 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">435</span><span class="sr-only"> — 435 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">181</span><span class="sr-only"> — 181 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">484</span><span class="sr-only"> — 484 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">138</span><span class="sr-only"> — 138 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">22</span><span class="sr-only"> — 22 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">521</span><span class="sr-only"> — 521 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="chipn" aria-hidden="true">3000</span><span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">162</span><span class="sr-only"> — 162 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">76</span><span class="sr-only"> — 76 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">242</span><span class="sr-only"> — 242 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">405</span><span class="sr-only"> — 405 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">337</span><span class="sr-only"> — 337 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">434</span><span class="sr-only"> — 434 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">181</span><span class="sr-only"> — 181 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">484</span><span class="sr-only"> — 484 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">137</span><span class="sr-only"> — 137 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">22</span><span class="sr-only"> — 22 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">520</span><span class="sr-only"> — 520 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -859,21 +859,21 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact rail-art" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.billboard.com/?p=1236327091" data-srckey="billboard" data-cat="music" data-sent="0" data-ts="1787893642000" data-slug="music news jelly roll completes kimmel hosting rousing monologue">
+<article class="card compact rail-art has-thumb" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235617322" data-srckey="rolling stone music" data-cat="music" data-sent="0" data-ts="1787929935000" data-slug="music news elton john turnstiles seein stars">
 <div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Jelly Roll Finally Addresses His Silence After the Grammys During a Rousing ‘Kimmel’ Monologue: ‘I Had a Microphone and Didn’t Use It the Right Way’: — flip for details">
-	<div class="meta"><span class="src" style="color:#60a5fa">BILLBOARD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T05:07:22.000Z">1:07 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
-	<h3 class="title">Jelly Roll Finally Addresses His Silence After the Grammys During a Rousing ‘Kimmel’ Monologue: ‘I Had a Microphone and Didn’t Use It the Right Way’:</h3>
-	<p class="snippet">On his final night hosting, Jelly Roll used his platform to reveal the political beliefs he had vowed to declare after the February Awards show.</p>
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Hear Elton John Give a Pop Sheen to Turnstile’s ‘Seein’ Stars’ — flip for details">
+	<div class="meta"><span class="src" style="color:#fb7185">ROLLING STONE MUSIC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-28T15:12:15.000Z">11:12 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
+	<h3 class="title">Hear Elton John Give a Pop Sheen to Turnstile’s ‘Seein’ Stars’</h3>
+	<p class="snippet">Band&#39;s Never Enough: Versions, out now, also features Hayley Williams, Slayyyter, Panda Bear, Faye Webster and many more</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://www.rollingstone.com/wp-content/uploads/2026/08/GettyImages-2245766372.jpg?w=640#038;h=900&amp;#038;crop=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://www.rollingstone.com/wp-content/uploads/2026/08/GettyImages-2245766372.jpg?w=320#038;h=900&amp;#038;crop=1 320w, https://www.rollingstone.com/wp-content/uploads/2026/08/GettyImages-2245766372.jpg?w=640#038;h=900&amp;#038;crop=1 640w, https://www.rollingstone.com/wp-content/uploads/2026/08/GettyImages-2245766372.jpg?w=960#038;h=900&amp;#038;crop=1 960w" sizes="(max-width: 640px) 78vw, 320px">
 </div>
 <div class="face back" inert>
-	<h3 class="title">Jelly Roll Finally Addresses His Silence After the Grammys During a Rousing ‘Kimmel’ Monologue: ‘I Had a Microphone and Didn’t Use It the Right Way’:</h3>
-	<p class="about">On his final night hosting, Jelly Roll used his platform to reveal the political beliefs he had vowed to declare after the February Awards show.</p>
+	<h3 class="title">Hear Elton John Give a Pop Sheen to Turnstile’s ‘Seein’ Stars’</h3>
+	<p class="about">Band&#39;s Never Enough: Versions, out now, also features Hayley Williams, Slayyyter, Panda Bear, Faye Webster and many more</p>
 	
 	
-	<a class="more" href="https://www.billboard.com/music/music-news/jelly-roll-completes-kimmel-hosting-rousing-monologue-1236327091/" target="_blank" rel="noopener noreferrer">Billboard &#8599;</a>
+	<a class="more" href="https://www.rollingstone.com/music/music-news/elton-john-turnstiles-seein-stars-1235617322/" target="_blank" rel="noopener noreferrer">Rolling Stone Music &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -891,43 +891,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.si.com/betting-promo/draftkings-promo-code-get-200-in-bonus-bets-for-college-football-week-0-01m14cdeb3ge" target="_blank" rel="noopener noreferrer">DraftKings Promo Code: Get $200 in Bonus Bets for College Football Week 0</a>
-		<p class="trend-meta"><span class="src">SPORTS ILLUSTRATED</span><span class="sep" aria-hidden="true">&middot;</span>"draftkings free bet" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.yahoo.com/lifestyle/articles/m-ms-limited-edition-flavor-213000051.html" target="_blank" rel="noopener noreferrer">M&amp;M&#39;s New Limited-Edition Flavor Is So Good, I&#39;m Keeping 2 Packs on My Desk at All Times</a>
+		<p class="trend-meta"><span class="src">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"m&amp;m mint" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://eciks.org/23871-motley-fool-stock-advisor-964-percent-return" target="_blank" rel="noopener noreferrer">Motley Fool Stock Advisor hits 964% return since 2002 launch</a>
-		<p class="trend-meta"><span class="src">ECIKS.ORG</span><span class="sep" aria-hidden="true">&middot;</span>"motley fool advisor" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.fanduel.com/research/mlb/player-news/game-recaps/ildemaro-vargas-goes-1-for-4-in-win-over-giants-aug-29-2026-2026" target="_blank" rel="noopener noreferrer">Ildemaro Vargas Goes 1 for 4 In Win Over Giants</a>
+		<p class="trend-meta"><span class="src">FANDUEL</span><span class="sep" aria-hidden="true">&middot;</span>"fan duel" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.si.com/betting-promo/fanduel-promo-code-claim-up-to-350-in-bonus-bets-for-college-football-week-0-01m14c6x9hak" target="_blank" rel="noopener noreferrer">FanDuel Promo Code: Claim Up to $350 in Bonus Bets for College Football Week 0</a>
-		<p class="trend-meta"><span class="src">SPORTS ILLUSTRATED</span><span class="sep" aria-hidden="true">&middot;</span>"fanduel free bet" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://finance.yahoo.com/markets/stocks/articles/prediction-1-000-investment-micron-215301679.html" target="_blank" rel="noopener noreferrer">Prediction: This Is What a $1,000 Investment in Micron Stock Will Be Worth by 2030</a>
+		<p class="trend-meta"><span class="src">YAHOO FINANCE</span><span class="sep" aria-hidden="true">&middot;</span>"themotleyfool" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.cbssports.com/betting/news/betmgm-bonus-code-cbssports-get-1500-bonus-bets-giants-jets-nfl-red-sox-yankees-mlb-friday/" target="_blank" rel="noopener noreferrer">BetMGM bonus code CBSSPORTS: Get $1,500 in bonus bets for Giants-Jets, NFL, Red Sox-Yankees, MLB on Friday</a>
-		<p class="trend-meta"><span class="src">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"bet 365" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.winknews.com/news/1-dead-5-trauma-alerted-after-crash-on-cemetery-road-in-fort-myers/article_5c936eb6-79d9-4a3d-bd96-6837ae4160ee.html" target="_blank" rel="noopener noreferrer">1 dead, 5 trauma-alerted after crash on Cemetery Road in Fort Myers</a>
+		<p class="trend-meta"><span class="src">WINK NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"car accident lawyer" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/nfl/story/_/id/49740505/nfl-renews-draftkings-fanduel-deals-adds-fanatics" target="_blank" rel="noopener noreferrer">NFL renews DraftKings, FanDuel deals, adds Fanatics</a>
-		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"fanduel vs draftkings" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.sportinglife.com/football/news/football-accumulator-tips-this-weeks-acca-from-sporting-life-for-saturday-29826/233966" target="_blank" rel="noopener noreferrer">Football accumulator tips: This Weeks Acca from Sporting Life for Saturday 29/8/26</a>
+		<p class="trend-meta"><span class="src">SPORTING LIFE</span><span class="sep" aria-hidden="true">&middot;</span>"draft kings" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://abc7.com/post/1-dead-violent-2-car-crash-koreatown-police-say/19751054/" target="_blank" rel="noopener noreferrer">1 dead after violent 2-car crash in Koreatown; driver of Mercedes Maybach SUV taken into custody</a>
-		<p class="trend-meta"><span class="src">ABC7 LOS ANGELES</span><span class="sep" aria-hidden="true">&middot;</span>"accident lawyer" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.espn.com/nfl/story/_/id/49740505/nfl-renews-draftkings-fanduel-deals-adds-fanatics" target="_blank" rel="noopener noreferrer">NFL renews DraftKings, FanDuel deals, adds Fanatics</a>
+		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"draftkings vs fanduel" &middot; 200+ searches</p>
 	</div>
 </li>
 </ol>
@@ -949,6 +949,121 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.bbc.co.uk/news/articles/c4gj2dl4x52o" target="_blank" rel="noopener noreferrer">BBC World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 h2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.polygon.com/about-time-movie-streaming-netflix-september-2026/" data-srckey="polygon" data-cat="entertainment" data-sent="0" data-ts="1787992214000" data-slug="about time movie streaming netflix september">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Rachel McAdams&#39; 10/10 Time-Travel Movie Is Officially Coming to Streaming Next Week — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T08:30:14.000Z">4:30 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Rachel McAdams&#39; 10/10 Time-Travel Movie Is Officially Coming to Streaming Next Week</h3>
+	<p class="snippet">Rachel McAdams is weirdly good at falling in love with time travelers</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/01/rachel-mcadams-in-about-time.jpg?w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/01/rachel-mcadams-in-about-time.jpg?w=600 600w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/01/rachel-mcadams-in-about-time.jpg?w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Rachel McAdams&#39; 10/10 Time-Travel Movie Is Officially Coming to Streaming Next Week</h3>
+	<p class="about">Rachel McAdams is weirdly good at falling in love with time travelers</p>
+	
+	
+	<a class="more" href="https://www.polygon.com/about-time-movie-streaming-netflix-september-2026/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/mroowi" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1787991862000" data-slug="essays kicked out">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Being kicked out of the tech industry - Jacky Alciné — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T08:24:22.000Z">4:24 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">Being kicked out of the tech industry - Jacky Alciné</h3>
+	<p class="snippet">After 250 job applications in four months, I&#39;m giving up.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Being kicked out of the tech industry - Jacky Alciné</h3>
+	<p class="about">After 250 job applications in four months, I&#39;m giving up.</p>
+	
+	
+	<a class="more" href="https://www.jacky.wtf/essays/2026/kicked-out/" target="_blank" rel="noopener noreferrer">Lobsters &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://the-decoder.com/?p=39553" data-srckey="the decoder" data-cat="ai" data-sent="0" data-ts="1787991335000" data-slug="openai cuts off cursor after spacex acquisition citing musks history breaking contracts">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="OpenAI cuts off Cursor after SpaceX acquisition, citing Musk&#39;s history of breaking contracts — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(45 55% 72%)">THE DECODER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T08:15:35.000Z">4:15 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">OpenAI cuts off Cursor after SpaceX acquisition, citing Musk&#39;s history of breaking contracts</h3>
+	<p class="snippet">OpenAI is cutting off the AI coding tool Cursor after SpaceX acquired the company, citing Elon Musk&#39;s track record of breaking contracts. Cursor co-founder Michael Truell downplays the move, saying OpenAI models account for just five percent of the tool&#39;s AI traffic. The article OpenAI cuts off Cursor after SpaceX acquisition, citing Musk&#39;s history of breaking contracts appeared first on The…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://the-decoder.com/wp-content/uploads/2026/06/openai_logo_background_dark.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">OpenAI cuts off Cursor after SpaceX acquisition, citing Musk&#39;s history of breaking contracts</h3>
+	<p class="about">OpenAI is cutting off the AI coding tool Cursor after SpaceX acquired the company, citing Elon Musk&#39;s track record of breaking contracts. Cursor co-founder Michael Truell downplays the move, saying OpenAI models account for just five percent of the tool&#39;s AI traffic. The article OpenAI cuts off Cursor after SpaceX acquisition, citing Musk&#39;s history of breaking contracts appeared first on The…</p>
+	<p class="why"><span class="whylabel">matched</span> <span class="whykey">OpenAI</span> <span class="whystrength" title="How strongly this matched your interest (decayed frequency: 2.0)">match</span></p>
+	
+	<a class="more" href="https://the-decoder.com/openai-cuts-off-cursor-after-spacex-acquisition-citing-musks-history-of-breaking-contracts/" target="_blank" rel="noopener noreferrer">The Decoder &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.polygon.com/best-shonen-anime-perfect-no-notes/" data-srckey="polygon" data-cat="entertainment" data-sent="0" data-ts="1787990415000" data-slug="best shonen anime perfect notes">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="5 Shonen Anime That Are 10/10 Perfect Masterpieces, No Notes — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T08:00:15.000Z">4:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">5 Shonen Anime That Are 10/10 Perfect Masterpieces, No Notes</h3>
+	<p class="snippet">From tactical action to dark fantasy, shonen comes in many flavors.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/76a8bf9a0319b76f003b395eabbc69bc-1-1.png?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/76a8bf9a0319b76f003b395eabbc69bc-1-1.png?w=240 240w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/76a8bf9a0319b76f003b395eabbc69bc-1-1.png?w=340 340w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/76a8bf9a0319b76f003b395eabbc69bc-1-1.png?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">5 Shonen Anime That Are 10/10 Perfect Masterpieces, No Notes</h3>
+	<p class="about">From tactical action to dark fantasy, shonen comes in many flavors.</p>
+	
+	
+	<a class="more" href="https://www.polygon.com/best-shonen-anime-perfect-no-notes/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/niamtokik/qd-dartflutter-analyze-and-linter-2ank" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1787990400000" data-slug="niamtokik dartflutter analyze and linter 2ank">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Q&amp;D: Dart/Flutter Formatter, Linter and Analyzer — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T08:00:00.000Z">4:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">Q&amp;D: Dart/Flutter Formatter, Linter and Analyzer</h3>
+	<p class="snippet">A clean project following conventions is way better than a crappy project containing yolo code. In Dart and Flutter, everything is already available to make your life easier. A formatter is already present with the Dart SDK. The command dart format will do the job. If one wants to see only the modification without applying them: $ dart format show The dart format is a shortcut for dart format…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=1080,height=564,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6g54z2l6wxnv4slhz9k1.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=600,height=314,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6g54z2l6wxnv4slhz9k1.jpg 600w, https://media2.dev.to/dynamic/image/width=1080,height=564,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6g54z2l6wxnv4slhz9k1.jpg 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Q&amp;D: Dart/Flutter Formatter, Linter and Analyzer</h3>
+	<p class="about">A clean project following conventions is way better than a crappy project containing yolo code. In Dart and Flutter, everything is already available to make your life easier. A formatter is already present with the Dart SDK. The command dart format will do the job. If one wants to see only the modification without applying them: $ dart format show The dart format is a shortcut for dart format…</p>
+	
+	
+	<a class="more" href="https://dev.to/niamtokik/qd-dartflutter-analyze-and-linter-2ank" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -8716,7 +8831,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2655 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2650 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241040" data-cat="entertainment" data-sent="0" data-slug="interest newspaper france theme park project lacks approval from dragon ball rights holders" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 27 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/interest/2026-08-27/newspaper-france-theme-park-project-lacks-approval-from-dragon-ball-rights-holders/.241040" target="_blank" rel="noopener noreferrer">Newspaper: France&#39;s Theme Park Project Lacks Approval From Dragon Ball&#39;s Rights Holders</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/kvlafj" data-cat="dev" data-sent="0" data-slug="blog announcing flatpak sta" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 27 &middot; Dev</span><a href="https://modal.cx/blog/announcing-flatpak-sta/" target="_blank" rel="noopener noreferrer">Announcing Sovereign Tech Agency Investment in Flatpak</a></li>
@@ -11368,11 +11483,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:WP-MKTW-0005187974" data-cat="markets" data-sent="0" data-slug="story fed minutes reveal growing support for rate hikes 84fc9afa" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 19 &middot; Markets</span><a href="https://www.marketwatch.com/story/fed-minutes-reveal-growing-support-for-rate-hikes-84fc9afa?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Fed minutes reveal growing support for rate hikes</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/gta-leak-6-soundtrack-wishlist/" data-cat="games" data-sent="0" data-slug="gta leak soundtrack wishlist" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 19 &middot; Games</span><a href="https://www.polygon.com/gta-leak-6-soundtrack-wishlist/" target="_blank" rel="noopener noreferrer">GTA 6 Leaks Gave Fans a Soundtrack Tease, But We Want More</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theverge.com/column/982359/optimizer-wearable-future-google-ai" data-cat="tech" data-sent="0" data-slug="column optimizer wearable future google" hidden="until-found"><span class="ameta">THE VERGE &middot; Aug 19 &middot; Tech</span><a href="https://www.theverge.com/column/982359/optimizer-wearable-future-google-ai" target="_blank" rel="noopener noreferrer">The wearable future is stuck in weird, experimental, existential limbo</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.theverge.com/gadgets/982242/ipad-air-m4-garmin-inreach-deal-sale" data-cat="tech" data-sent="0" data-slug="gadgets ipad air garmin inreach deal sale" hidden="until-found"><span class="ameta">THE VERGE &middot; Aug 19 &middot; Tech</span><a href="https://www.theverge.com/gadgets/982242/ipad-air-m4-garmin-inreach-deal-sale" target="_blank" rel="noopener noreferrer">Grab an iPad Air M4 for its lowest price since the June increase</a></li>
-<li class="arow" data-count="1" data-id="rss:https://github.blog/?p=98348" data-cat="dev" data-sent="0" data-slug="and github copilot app for beginners managing your work" hidden="until-found"><span class="ameta">GITHUB BLOG &middot; Aug 19 &middot; Dev</span><a href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-managing-your-work/" target="_blank" rel="noopener noreferrer">GitHub Copilot app for Beginners: Managing your work</a></li>
-<li class="arow" data-count="1" data-id="rss:WP-MKTW-0005185368" data-cat="markets" data-sent="0" data-slug="story treasury market reprieve could fleeting with deluge corporate bond issuance due september 33cfaacd" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 19 &middot; Markets</span><a href="https://www.marketwatch.com/story/treasury-market-reprieve-could-be-fleeting-with-deluge-of-corporate-bond-issuance-due-in-september-33cfaacd?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Treasury-market reprieve could be fleeting with deluge of corporate-bond issuance due in September</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c3ekl74jnk5o#0" data-cat="world" data-sent="0" data-slug="news articles c3ekl74jnk5o" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 19 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/c3ekl74jnk5o" target="_blank" rel="noopener noreferrer">Canada and US say they are finalising a trade deal, but details remain murky</a></li>
-<li class="arow" data-count="1" data-id="rss:https://grapheneos.social/@GrapheneOS/117057099753905023" data-cat="ai" data-sent="0" data-slug="grapheneos" hidden="until-found"><span class="ameta">HACKER NEWS &middot; Aug 19 &middot; AI</span><a href="https://grapheneos.social/@GrapheneOS/117057099753905023" target="_blank" rel="noopener noreferrer">Google replaced Git tags for certain source code with obtaining via Google Drive</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
