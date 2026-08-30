@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-30T16:15:31.218Z">
+<meta name="sf-version" content="2026-08-30T16:30:32.381Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -538,18 +538,20 @@ h1 .tld { color: var(--accent); }
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
+:root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
+:root[data-theme="light"] .meta [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
+:root[data-theme="light"] .meta [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
+:root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
+:root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
+:root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
-:root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
-:root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
-:root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
-:root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] .meta [style*="hsl(156 55% 72%)"] { color: #176e52 !important; }
 :root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
@@ -567,8 +569,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
 :root[data-theme="light"] .meta [style*="hsl(336 55% 72%)"] { color: #894262 !important; }
-:root[data-theme="light"] .meta [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
-:root[data-theme="light"] .meta [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] .meta [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
 :root[data-theme="light"] .meta [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] .meta [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
@@ -707,10 +707,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 12:15 PM &middot; 152 TODAY</p>
+	<p class="stats">UPDATED 12:30 PM &middot; 160 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">165</span><span class="sr-only"> — 165 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">245</span><span class="sr-only"> — 245 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">388</span><span class="sr-only"> — 388 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">297</span><span class="sr-only"> — 297 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">381</span><span class="sr-only"> — 381 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">146</span><span class="sr-only"> — 146 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">460</span><span class="sr-only"> — 460 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">256</span><span class="sr-only"> — 256 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">118</span><span class="sr-only"> — 118 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">437</span><span class="sr-only"> — 437 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">245</span><span class="sr-only"> — 245 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">388</span><span class="sr-only"> — 388 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">297</span><span class="sr-only"> — 297 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">381</span><span class="sr-only"> — 381 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">146</span><span class="sr-only"> — 146 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">460</span><span class="sr-only"> — 460 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">257</span><span class="sr-only"> — 257 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">119</span><span class="sr-only"> — 119 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">436</span><span class="sr-only"> — 436 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1061,6 +1061,98 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:b905813e-fd39-4edb-bfe3-d1e1d3a4a5dc" data-srckey="cbs sports" data-cat="sports" data-sent="0" data-ts="1788106134000" data-slug="college football news former tcu jacob fields aggravated assault locker room altercation">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Former TCU S Jacob Fields charged with aggravated assault following alleged locker room altercation — flip for details">
+	<div class="meta"><span class="src" style="color:#3b82f6">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T16:08:54.000Z">12:08 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Former TCU S Jacob Fields charged with aggravated assault following alleged locker room altercation</h3>
+	<p class="snippet">Fields was dismissed from the team on Aug. 15 for a violation of team rules. He turned himself in to Tarrant County authorities on Sunday</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://sportshub.cbsistatic.com/i/2026/08/30/eb3a0634-1b9f-438a-9af9-b491e6437f16/gettyimages-2253767859-2.jpg?width=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://sportshub.cbsistatic.com/i/2026/08/30/eb3a0634-1b9f-438a-9af9-b491e6437f16/gettyimages-2253767859-2.jpg?width=240 240w, https://sportshub.cbsistatic.com/i/2026/08/30/eb3a0634-1b9f-438a-9af9-b491e6437f16/gettyimages-2253767859-2.jpg?width=340 340w, https://sportshub.cbsistatic.com/i/2026/08/30/eb3a0634-1b9f-438a-9af9-b491e6437f16/gettyimages-2253767859-2.jpg?width=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Former TCU S Jacob Fields charged with aggravated assault following alleged locker room altercation</h3>
+	<p class="about">Fields was dismissed from the team on Aug. 15 for a violation of team rules. He turned himself in to Tarrant County authorities on Sunday</p>
+	
+	
+	<a class="more" href="https://www.cbssports.com/college-football/news/former-tcu-s-jacob-fields-aggravated-assault-locker-room-altercation/" target="_blank" rel="noopener noreferrer">CBS Sports &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://deadline.com/?p=1237062780" data-srckey="deadline" data-cat="entertainment" data-sent="0" data-ts="1788106030000" data-slug="guy pearce priscilla queen the desert filming update">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Guy Pearce Gives ‘Priscilla, Queen of the Desert 2’ Filming Update — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(288 55% 72%)">DEADLINE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T16:07:10.000Z">12:07 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Guy Pearce Gives ‘Priscilla, Queen of the Desert 2’ Filming Update</h3>
+	<p class="snippet">A year after the loss of their Bernadette Bassenger, Priscilla is tuning up for another fabulous adventure across the Australian Outback. Guy Pearce recently gave an update on the production timeline for the sequel to 1994’s The Adventures of Priscilla, Queen of the Desert, following co-star Terence Stamp’s death at age 87 last August. “Well, […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://deadline.com/wp-content/uploads/2026/08/MSDPRQU_EC003.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Guy Pearce Gives ‘Priscilla, Queen of the Desert 2’ Filming Update</h3>
+	<p class="about">A year after the loss of their Bernadette Bassenger, Priscilla is tuning up for another fabulous adventure across the Australian Outback. Guy Pearce recently gave an update on the production timeline for the sequel to 1994’s The Adventures of Priscilla, Queen of the Desert, following co-star Terence Stamp’s death at age 87 last August. “Well, […]</p>
+	
+	
+	<a class="more" href="https://deadline.com/2026/08/guy-pearce-priscilla-queen-of-the-desert-2-filming-update-1237062780/" target="_blank" rel="noopener noreferrer">Deadline &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 h2" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236685104" data-srckey="hollywood reporter" data-cat="entertainment" data-sent="0" data-ts="1788105825000" data-slug="movies movie news coyote acme box office spider man titanic dog stars">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘Coyote vs. Acme’ Snags No. 2 With $15.4M as ‘Spider-Man’ Nears ‘Avatar 2’; ‘Dog Stars’ Put to Sleep — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(18 55% 72%)">HOLLYWOOD REPORTER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T16:03:45.000Z">12:03 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">‘Coyote vs. Acme’ Snags No. 2 With $15.4M as ‘Spider-Man’ Nears ‘Avatar 2’; ‘Dog Stars’ Put to Sleep</h3>
+	<p class="snippet">Jacob Elordi&#39;s thriller from director Ridley Scott settled for box office scraps, while Tom Holland&#39;s &#39;Brand New Day&#39; topped &#39;Titanic&#39; and &#39;Ne Zha 2&#39; to hit No. 4 on the all-time global chart.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">‘Coyote vs. Acme’ Snags No. 2 With $15.4M as ‘Spider-Man’ Nears ‘Avatar 2’; ‘Dog Stars’ Put to Sleep</h3>
+	<p class="about">Jacob Elordi&#39;s thriller from director Ridley Scott settled for box office scraps, while Tom Holland&#39;s &#39;Brand New Day&#39; topped &#39;Titanic&#39; and &#39;Ne Zha 2&#39; to hit No. 4 on the all-time global chart.</p>
+	<p class="why"><span class="whylabel">matched</span> <span class="whykey">Spider-Man</span> <span class="whystrength" title="How strongly this matched your interest (decayed frequency: 2.0)">match</span></p>
+	
+	<a class="more" href="https://www.hollywoodreporter.com/movies/movie-news/coyote-vs-acme-box-office-spider-man-titanic-dog-stars-1236685104/" target="_blank" rel="noopener noreferrer">Hollywood Reporter &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://deadline.com/?p=1237062773" data-srckey="deadline" data-cat="entertainment" data-sent="0" data-ts="1788105791000" data-slug="trump kristen welker nbc fcc">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="In Latest Threat Of Regulatory Retaliation, Donald Trump Says He’ll Report NBC News’ Kristen Welker To FCC For “Rebuke Or Punishment” — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(288 55% 72%)">DEADLINE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T16:03:11.000Z">12:03 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">In Latest Threat Of Regulatory Retaliation, Donald Trump Says He’ll Report NBC News’ Kristen Welker To FCC For “Rebuke Or Punishment”</h3>
+	<p class="snippet">Donald Trump went off on NBC News’ Meet the Press moderator Kristen Welker on Sunday, vowing to report her to the FCC for “rebuke or punishment,” even as the agency is defending itself in a lawsuit brought by ABC alleging regulatory retaliation. The issue: A comment Welker made about the president’s endorsement record. On Truth […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://deadline.com/wp-content/uploads/2026/07/Brandon-Carr-Donald-Trump.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">In Latest Threat Of Regulatory Retaliation, Donald Trump Says He’ll Report NBC News’ Kristen Welker To FCC For “Rebuke Or Punishment”</h3>
+	<p class="about">Donald Trump went off on NBC News’ Meet the Press moderator Kristen Welker on Sunday, vowing to report her to the FCC for “rebuke or punishment,” even as the agency is defending itself in a lawsuit brought by ABC alleging regulatory retaliation. The issue: A comment Welker made about the president’s endorsement record. On Truth […]</p>
+	
+	
+	<a class="more" href="https://deadline.com/2026/08/trump-kristen-welker-nbc-fcc-1237062773/" target="_blank" rel="noopener noreferrer">Deadline &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.polygon.com/patch-notes-gta-6-the-witcher-3-gamescom/" data-srckey="polygon" data-cat="games" data-sent="0" data-ts="1788105614000" data-slug="patch notes gta the witcher gamescom">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Maybe It&#39;s a Good Thing AAA Games Take 13 Years to Make — flip for details">
@@ -1076,6 +1168,75 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.polygon.com/patch-notes-gta-6-the-witcher-3-gamescom/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:d65b8af4-a484-11f1-857f-0fcbf878534f" data-srckey="france 24" data-cat="world" data-sent="0" data-ts="1788104510000" data-slug="france french lgbtq activist hospitalised after despicable homophobic attack paris">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="French LGBTQ rights leader hospitalised after ‘despicable homophobic attack’ in Paris — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(279 55% 72%)">FRANCE 24</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T15:41:50.000Z">11:41 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">French LGBTQ rights leader hospitalised after ‘despicable homophobic attack’ in Paris</h3>
+	<p class="snippet">Pierre Picave, a French police officer and head of an LGBTQ rights association, was hospitalised after a nighttime attack in the Marais district in central Paris, prosecutors said Sunday. Paris Mayor Emmanuel Grégoire denounced the &quot;despicable homophobic attack&quot;.The suspected attacker has been taken into custody.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://s.france24.com/media/display/524b5370-a47f-11f1-abf0-005056a97e36/w:1024/p:16x9/Police-Marais.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">French LGBTQ rights leader hospitalised after ‘despicable homophobic attack’ in Paris</h3>
+	<p class="about">Pierre Picave, a French police officer and head of an LGBTQ rights association, was hospitalised after a nighttime attack in the Marais district in central Paris, prosecutors said Sunday. Paris Mayor Emmanuel Grégoire denounced the &quot;despicable homophobic attack&quot;.The suspected attacker has been taken into custody.</p>
+	
+	
+	<a class="more" href="https://www.france24.com/en/france/20260830-french-lgbtq-activist-hospitalised-after-despicable-homophobic-attack-in-paris" target="_blank" rel="noopener noreferrer">France 24 &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:badaab49-10fc-4905-8abd-8643ec38af0c" data-srckey="coindesk" data-cat="markets" data-sent="0" data-ts="1788104395000" data-slug="markets bitcoin nears usd79 michael saylor hints first purchase two months">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Michael Saylor hints at first bitcoin purchase in two months as bitcoin nears $79,000 — flip for details">
+	<div class="meta"><span class="src" style="color:#fbbf24">COINDESK</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T15:39:55.000Z">11:39 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Michael Saylor hints at first bitcoin purchase in two months as bitcoin nears $79,000</h3>
+	<p class="snippet">Bitcoin rebounds from Friday’s low as Strategy’s valuation expands and bitcoin dominance climbs above 60%.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://cdn.sanity.io/images/s3y3vcno/production/dd98498dbda09f933fbeac48aac3591d14c0deee-3018x1697.jpg?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://cdn.sanity.io/images/s3y3vcno/production/dd98498dbda09f933fbeac48aac3591d14c0deee-3018x1697.jpg?fm=jpg&amp;w=240&amp;h=135&amp;crop=focalpoint&amp;fit=clip 240w, https://cdn.sanity.io/images/s3y3vcno/production/dd98498dbda09f933fbeac48aac3591d14c0deee-3018x1697.jpg?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip 340w, https://cdn.sanity.io/images/s3y3vcno/production/dd98498dbda09f933fbeac48aac3591d14c0deee-3018x1697.jpg?fm=jpg&amp;w=510&amp;h=287&amp;crop=focalpoint&amp;fit=clip 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Michael Saylor hints at first bitcoin purchase in two months as bitcoin nears $79,000</h3>
+	<p class="about">Bitcoin rebounds from Friday’s low as Strategy’s valuation expands and bitcoin dominance climbs above 60%.</p>
+	
+	
+	<a class="more" href="https://www.coindesk.com/markets/2026/08/30/bitcoin-nears-usd79-000-as-michael-saylor-hints-at-first-bitcoin-purchase-in-two-months" target="_blank" rel="noopener noreferrer">CoinDesk &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.engadget.com/2242779/how-4k-tv-got-its-name/" data-srckey="engadget" data-cat="tech" data-sent="0" data-ts="1788103800000" data-slug="how got its name">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Is 4K just marketing? Here&#39;s where the name really came from — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(229 55% 72%)">ENGADGET</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T15:30:00.000Z">11:30 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Is 4K just marketing? Here&#39;s where the name really came from</h3>
+	<p class="snippet">4K is a catchier marketing term than 2160p, but the resolution also has this name for a reason.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.engadget.com/img/gallery/is-4k-just-marketing-heres-where-the-name-really-came-from/l-intro-1786133597.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Is 4K just marketing? Here&#39;s where the name really came from</h3>
+	<p class="about">4K is a catchier marketing term than 2160p, but the resolution also has this name for a reason.</p>
+	
+	
+	<a class="more" href="https://www.engadget.com/2242779/how-4k-tv-got-its-name/" target="_blank" rel="noopener noreferrer">Engadget &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1145,6 +1306,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.polygon.com/the-witcher-4-physical-release/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 h2 has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:55d44460-eaca-4c25-96ed-4dbf3767a9de" data-srckey="cbs sports" data-cat="sports" data-sent="0" data-ts="1788103499000" data-slug="college football news memphis playoff win unlv">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Memphis announced itself as a legit College Football Playoff contender with statement win over UNLV — flip for details">
+	<div class="meta"><span class="src" style="color:#3b82f6">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T15:24:59.000Z">11:24 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Memphis announced itself as a legit College Football Playoff contender with statement win over UNLV</h3>
+	<p class="snippet">The Tigers rallied on the road with 13 unanswered points after trailing in the third quarter</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://sportshub.cbsistatic.com/i/2026/08/30/cad4395c-7e02-4f87-8f98-25ce368fa637/memphis.png?width=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://sportshub.cbsistatic.com/i/2026/08/30/cad4395c-7e02-4f87-8f98-25ce368fa637/memphis.png?width=600 600w, https://sportshub.cbsistatic.com/i/2026/08/30/cad4395c-7e02-4f87-8f98-25ce368fa637/memphis.png?width=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Memphis announced itself as a legit College Football Playoff contender with statement win over UNLV</h3>
+	<p class="about">The Tigers rallied on the road with 13 unanswered points after trailing in the third quarter</p>
+	
+	
+	<a class="more" href="https://www.cbssports.com/college-football/news/memphis-college-football-playoff-win-unlv/" target="_blank" rel="noopener noreferrer">CBS Sports &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -12500,7 +12684,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2493 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2485 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cx2z415w2gpo#0" data-cat="world" data-sent="0" data-slug="news articles cx2z415w2gpo" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 28 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/cx2z415w2gpo" target="_blank" rel="noopener noreferrer">Footage of Tibet floods isn&#39;t being shown in China - and we know little about victims there</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" data-cat="world" data-sent="0" data-slug="world live aug nepal tibet flash floods hundreds dead missing day three updates" hidden="until-found"><span class="ameta">GUARDIAN WORLD &middot; Aug 28 &middot; World</span><a href="https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" target="_blank" rel="noopener noreferrer">Search continues as number missing in Nepal-Tibet floods rises to 2,478 – as it happened</a></li>
@@ -12603,6 +12787,7 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://dev.to/serguey_shinder_4ab9b87b1/spokii-pid-chas-zboiu-tsie-riezultat-pidghotovki-il0" data-cat="dev" data-sent="0" data-slug="serguey shinder 4ab9b87b1 spokii pid chas zboiu tsie riezultat pidghotovki il0" hidden="until-found"><span class="ameta">DEV.TO &middot; Aug 28 &middot; Dev</span><a href="https://dev.to/serguey_shinder_4ab9b87b1/spokii-pid-chas-zboiu-tsie-riezultat-pidghotovki-il0" target="_blank" rel="noopener noreferrer">Спокій під час збою — це результат підготовки</a></li>
 <li class="arow" data-count="1" data-id="rss:https://dev.to/serguey_shinder_4ab9b87b1/tsiennieie-stanovitsia-tot-kto-sviazyvaiet-sistiemy-a-nie-tot-kto-znaiet-odin-instrumient-2m2i" data-cat="dev" data-sent="0" data-slug="serguey shinder 4ab9b87b1 tsiennieie stanovitsia tot kto sviazyvaiet sistiemy nie znaiet odin instrumient 2m2i" hidden="until-found"><span class="ameta">DEV.TO &middot; Aug 28 &middot; Dev</span><a href="https://dev.to/serguey_shinder_4ab9b87b1/tsiennieie-stanovitsia-tot-kto-sviazyvaiet-sistiemy-a-nie-tot-kto-znaiet-odin-instrumient-2m2i" target="_blank" rel="noopener noreferrer">Ценнее становится тот, кто связывает системы, а не тот, кто знает один инструмент</a></li>
 <li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/news/solana-validators-approve-proposal-to-accelerate-sol-disinflation" data-cat="markets" data-sent="0" data-slug="news solana validators approve proposal accelerate sol disinflation" hidden="until-found"><span class="ameta">COINTELEGRAPH &middot; Aug 28 &middot; Markets</span><a href="https://cointelegraph.com/news/solana-validators-approve-proposal-to-accelerate-sol-disinflation" target="_blank" rel="noopener noreferrer">Solana validators approve proposal to accelerate SOL disinflation</a></li>
+<li class="arow" data-count="1" data-id="rss:https://www.npr.org/2026/08/28/nx-s1-5945714/how-president-trumps-efforts-to-change-voting-laws-may-playout-in-the-midterms" data-cat="politics" data-sent="0" data-slug="how president trumps efforts change voting laws may playout the midterms" hidden="until-found"><span class="ameta">NPR POLITICS &middot; Aug 28 &middot; Politics</span><a href="https://www.npr.org/2026/08/28/nx-s1-5945714/how-president-trumps-efforts-to-change-voting-laws-may-playout-in-the-midterms" target="_blank" rel="noopener noreferrer">How President Trump&#39;s efforts to change voting laws may play out in the midterms</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.statnews.com/?p=1515530" data-cat="healthcare" data-sent="0" data-slug="juul fda clearance updated ecigarette age gating technology" hidden="until-found"><span class="ameta">STAT NEWS &middot; Aug 28 &middot; Healthcare</span><a href="https://www.statnews.com/2026/08/28/juul-fda-clearance-updated-ecigarette-age-gating-technology/" target="_blank" rel="noopener noreferrer">Juul gets OK to sell updated vaping device with age-gating technology</a></li>
 <li class="arow" data-count="1" data-id="rss:https://dev.to/serguey_shinder_4ab9b87b1/it-kotoryi-ghovorit-proighryvaiet-tomu-kto-ghovorit--51bp" data-cat="dev" data-sent="0" data-slug="serguey shinder 4ab9b87b1 kotoryi ghovorit proighryvaiet tomu kto 51bp" hidden="until-found"><span class="ameta">DEV.TO &middot; Aug 28 &middot; Dev</span><a href="https://dev.to/serguey_shinder_4ab9b87b1/it-kotoryi-ghovorit-proighryvaiet-tomu-kto-ghovorit--51bp" target="_blank" rel="noopener noreferrer">IT, который говорит «нет», проигрывает тому, кто говорит «как»</a></li>
 <li class="arow" data-count="1" data-id="rss:https://abcnews.com/Politics/wireStory/wyoming-governor-requests-investigation-activity-justice-department-monitors-136040978" data-cat="politics" data-sent="0" data-slug="politics wirestory wyoming governor requests investigation activity justice department monitors" hidden="until-found"><span class="ameta">ABC NEWS POLITICS &middot; Aug 28 &middot; Politics</span><a href="https://abcnews.com/Politics/wireStory/wyoming-governor-requests-investigation-activity-justice-department-monitors-136040978" target="_blank" rel="noopener noreferrer">Wyoming governor requests investigation into activity of DOJ monitors during primary</a></li>
@@ -14986,15 +15171,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/dc-jimmy-olsen-show-people-v-gorilla-grodd-hbo-max/" data-cat="entertainment" data-sent="0" data-slug="jimmy olsen show people gorilla grodd hbo max" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 21 &middot; Entertainment</span><a href="https://www.polygon.com/dc-jimmy-olsen-show-people-v-gorilla-grodd-hbo-max/" target="_blank" rel="noopener noreferrer">HBO and James Gunn Confirm New 8-Part True-Crime Series Spinoff</a></li>
 <li class="arow" data-count="1" data-id="rss:https://the-decoder.com/?p=39315" data-cat="ai" data-sent="0" data-slug="deepseek releases experimental flash vision model that rivals opus agent benchmarks" hidden="until-found"><span class="ameta">THE DECODER &middot; Aug 21 &middot; AI</span><a href="https://the-decoder.com/deepseek-releases-experimental-flash-vision-model-that-rivals-opus-4-8-on-agent-benchmarks/" target="_blank" rel="noopener noreferrer">Deepseek releases experimental Flash vision model that rivals Opus 4.8 on agent benchmarks</a></li>
 <li class="arow" data-count="1" data-id="rss:https://arstechnica.com/tech-policy/2026/08/lawsuit-demands-logitech-hand-tariff-refunds-over-to-customers/" data-cat="tech" data-sent="0" data-slug="tech policy lawsuit demands logitech hand tariff refunds over customers" hidden="until-found"><span class="ameta">ARS TECHNICA &middot; Aug 21 &middot; Tech</span><a href="https://arstechnica.com/tech-policy/2026/08/lawsuit-demands-logitech-hand-tariff-refunds-over-to-customers/" target="_blank" rel="noopener noreferrer">Lawsuit demands Logitech hand tariff refunds over to customers</a></li>
-<li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236840301" data-cat="entertainment" data-sent="0" data-slug="film news mark ruffalo paramount warner bros merger david ellison" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 21 &middot; Entertainment</span><a href="https://variety.com/2026/film/news/mark-ruffalo-paramount-warner-bros-merger-david-ellison-1236840301/" target="_blank" rel="noopener noreferrer">Mark Ruffalo Goes Scorched-Earth on Paramount-Warner Bros. Merger, Calling Out the Ellison Family’s Complicity in Palestinian ‘Genocide’</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/cricket/articles/cy07xqzv220o#6" data-cat="sports" data-sent="0" data-slug="sport cricket articles cy07xqzv220o" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 21 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/cricket/articles/cy07xqzv220o" target="_blank" rel="noopener noreferrer">Stokes shines as Durham get on top at Derby</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/athletics/articles/c8dnvl1mqleo#0" data-cat="sports" data-sent="0" data-slug="sport athletics articles c8dnvl1mqleo" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 21 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/athletics/articles/c8dnvl1mqleo" target="_blank" rel="noopener noreferrer">Hunt second in Diamond League 200m as White wins</a></li>
-<li class="arow" data-count="1" data-id="rss:309d6b73-c8d5-4705-9f0c-6ac345b048ff" data-cat="markets" data-sent="0" data-slug="opinion pass the clarity act" hidden="until-found"><span class="ameta">COINDESK &middot; Aug 21 &middot; Markets</span><a href="https://www.coindesk.com/opinion/2026/08/21/pass-the-clarity-act" target="_blank" rel="noopener noreferrer">Pass the Clarity Act</a></li>
-<li class="arow" data-count="1" data-id="rss:108352898" data-cat="ai" data-sent="0" data-slug="overlooked winner taps new cfo street awaits nvidia html" hidden="until-found"><span class="ameta">CNBC &middot; Aug 21 &middot; AI</span><a href="https://www.cnbc.com/2026/08/21/an-overlooked-ai-winner-taps-new-cfo-as-street-awaits-nvidia.html" target="_blank" rel="noopener noreferrer">An overlooked AI winner names a new CFO — plus, Nvidia&#39;s key earnings loom</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.polygon.com/mark-wahlberg-the-family-plan-streaming-success-apple-tv-august-2026/" data-cat="entertainment" data-sent="0" data-slug="mark wahlberg the family plan streaming success apple august" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 21 &middot; Entertainment</span><a href="https://www.polygon.com/mark-wahlberg-the-family-plan-streaming-success-apple-tv-august-2026/" target="_blank" rel="noopener noreferrer">3 Years Later, Mark Wahlberg&#39;s Suburban Action Film Is Still Dominating Streaming</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2241834/season-two-of-netflixs-cyberpunk-2077-anime-streams-october-20/" data-cat="tech" data-sent="0" data-slug="season two netflixs cyberpunk anime streams october" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 21 &middot; Tech</span><a href="https://www.engadget.com/2241834/season-two-of-netflixs-cyberpunk-2077-anime-streams-october-20/" target="_blank" rel="noopener noreferrer">Season two of Netflix&#39;s Cyberpunk 2077 anime streams October 20</a></li>
-<li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236840149" data-cat="entertainment" data-sent="0" data-slug="news novak djokovic the wolf winter documentary" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 21 &middot; Entertainment</span><a href="https://variety.com/2026/tv/news/novak-djokovic-the-wolf-in-winter-documentary-1236840149/" target="_blank" rel="noopener noreferrer">‘Novak Djokovic: The Wolf in Winter’ Doc Director Unpacks the Tennis Champ’s Resilience and His Retirement</a></li>
-<li class="arow" data-count="1" data-id="rss:https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders" data-cat="tech" data-sent="0" data-slug="blog bringing claude mythos more defenders" hidden="until-found"><span class="ameta">HACKER NEWS &middot; Aug 21 &middot; Tech</span><a href="https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders" target="_blank" rel="noopener noreferrer">Bringing the cybersecurity capabilities of Claude Mythos 5 to more defenders</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
