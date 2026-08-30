@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-30T22:03:06.434Z">
+<meta name="sf-version" content="2026-08-30T22:17:46.426Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,12 +537,13 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
+:root[data-theme="light"] .meta [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
+:root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] .meta [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
 :root[data-theme="light"] .meta [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] .meta [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
-:root[data-theme="light"] .meta [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
-:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
@@ -560,7 +561,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
 :root[data-theme="light"] .meta [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
-:root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] .meta [style*="hsl(156 55% 72%)"] { color: #176e52 !important; }
@@ -707,10 +707,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 6:03 PM &middot; 279 TODAY</p>
+	<p class="stats">UPDATED 6:17 PM &middot; 283 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">156</span><span class="sr-only"> — 156 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">106</span><span class="sr-only"> — 106 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">224</span><span class="sr-only"> — 224 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">381</span><span class="sr-only"> — 381 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">293</span><span class="sr-only"> — 293 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">374</span><span class="sr-only"> — 374 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">147</span><span class="sr-only"> — 147 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">447</span><span class="sr-only"> — 447 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">326</span><span class="sr-only"> — 326 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">120</span><span class="sr-only"> — 120 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">426</span><span class="sr-only"> — 426 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">157</span><span class="sr-only"> — 157 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">106</span><span class="sr-only"> — 106 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">224</span><span class="sr-only"> — 224 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">382</span><span class="sr-only"> — 382 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">293</span><span class="sr-only"> — 293 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">372</span><span class="sr-only"> — 372 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">147</span><span class="sr-only"> — 147 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">447</span><span class="sr-only"> — 447 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">326</span><span class="sr-only"> — 326 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">120</span><span class="sr-only"> — 120 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">426</span><span class="sr-only"> — 426 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1030,6 +1030,75 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.foxnews.com/politics/republicans-tighten-screws-sherrill-noncitizen-voter-probe-enters-new-phase" target="_blank" rel="noopener noreferrer">Fox News Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236846995" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788126338000" data-slug="music news enhypen land first dolly parton returns albums chart">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Enhypen Lands First No. 1, Dolly Parton Reenters Top Five on Albums Chart — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T21:45:38.000Z">5:45 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Enhypen Lands First No. 1, Dolly Parton Reenters Top Five on Albums Chart</h3>
+	<p class="snippet">Enhypen has scored its first No. 1 on the Billboard 200 with “The Sin : Bliss,” while Dolly Parton reentered the top 5 with “Ultimate Dolly Parton” following news of her death earlier this week. K-pop group Enhypen moved 98,000 equivalent album units in their first week with “The Sin : Bliss,” marking their seventh […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/08/%E2%98%85MAIN_ENHYPEN-THE-SIN-_-BLISS-Official-Photo-1-Courtesy-of-BELIFT-LABHYBE.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/08/%E2%98%85MAIN_ENHYPEN-THE-SIN-_-BLISS-Official-Photo-1-Courtesy-of-BELIFT-LABHYBE.jpg?w=240 240w, https://variety.com/wp-content/uploads/2026/08/%E2%98%85MAIN_ENHYPEN-THE-SIN-_-BLISS-Official-Photo-1-Courtesy-of-BELIFT-LABHYBE.jpg?w=340 340w, https://variety.com/wp-content/uploads/2026/08/%E2%98%85MAIN_ENHYPEN-THE-SIN-_-BLISS-Official-Photo-1-Courtesy-of-BELIFT-LABHYBE.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Enhypen Lands First No. 1, Dolly Parton Reenters Top Five on Albums Chart</h3>
+	<p class="about">Enhypen has scored its first No. 1 on the Billboard 200 with “The Sin : Bliss,” while Dolly Parton reentered the top 5 with “Ultimate Dolly Parton” following news of her death earlier this week. K-pop group Enhypen moved 98,000 equivalent album units in their first week with “The Sin : Bliss,” marking their seventh […]</p>
+	
+	
+	<a class="more" href="https://variety.com/2026/music/news/enhypen-land-first-no-1-dolly-parton-returns-albums-chart-1236846995/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://www.marktechpost.com/?p=81967" data-srckey="marktechpost" data-cat="ai" data-sent="0" data-ts="1788125078000" data-slug="lowest latency inference apis for voice and realtime agents time first token ttft benchmark">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Lowest-Latency Inference APIs for Voice and Realtime Agents: A Time to First Token TTFT-First Benchmark — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(323 55% 72%)">MARKTECHPOST</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T21:24:38.000Z">5:24 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Lowest-Latency Inference APIs for Voice and Realtime Agents: A Time to First Token TTFT-First Benchmark</h3>
+	<p class="snippet">Voice agents fail on latency long before they fail on intelligence. Time to first token is the metric most teams use to choose an inference API, and it is the right starting point and the wrong stopping point. This benchmark works through every layer of the voice stack — LLM, speech-to-text, text-to-speech, and speech-to-speech — using figures verified against primary sources on August 30, 2026…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.marktechpost.com/wp-content/uploads/2026/08/blog2211.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Lowest-Latency Inference APIs for Voice and Realtime Agents: A Time to First Token TTFT-First Benchmark</h3>
+	<p class="about">Voice agents fail on latency long before they fail on intelligence. Time to first token is the metric most teams use to choose an inference API, and it is the right starting point and the wrong stopping point. This benchmark works through every layer of the voice stack — LLM, speech-to-text, text-to-speech, and speech-to-speech — using figures verified against primary sources on August 30, 2026…</p>
+	
+	
+	<a class="more" href="https://www.marktechpost.com/2026/08/30/lowest-latency-inference-apis-for-voice-and-realtime-agents-a-time-to-first-token-ttft-first-benchmark/" target="_blank" rel="noopener noreferrer">MarkTechPost &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/entertainment/986564/professor-murder-rides-the-subway-dance-punk-perfection-review" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1788124739000" data-slug="entertainment professor murder rides the subway dance punk perfection review">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Professor Murder Rides the Subway is a forgotten slice of dance punk perfection — flip for details">
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T21:18:59.000Z">5:18 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Professor Murder Rides the Subway is a forgotten slice of dance punk perfection</h3>
+	<p class="snippet">I recently dug out my CDs and started reripping them all. I&#39;ve found a few forgotten gems in there, but few hit harder for me than the beautifully concise Professor Murder Rides the Subway EP. There was a period of time in the mid-aughts in NYC where it seemed like every indie band wanted you to let loose, dance like no one was watching, and just have some damn fun. Few embodied that as much as…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/a0163061049_10.jpg?quality=90&amp;strip=all&amp;crop=0%2C23.821989528796%2C100%2C52.356020942408&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/a0163061049_10.jpg?quality=90&amp;strip=all&amp;crop=0%2C23.821989528796%2C100%2C52.356020942408&amp;w=240 240w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/a0163061049_10.jpg?quality=90&amp;strip=all&amp;crop=0%2C23.821989528796%2C100%2C52.356020942408&amp;w=340 340w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/a0163061049_10.jpg?quality=90&amp;strip=all&amp;crop=0%2C23.821989528796%2C100%2C52.356020942408&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Professor Murder Rides the Subway is a forgotten slice of dance punk perfection</h3>
+	<p class="about">I recently dug out my CDs and started reripping them all. I&#39;ve found a few forgotten gems in there, but few hit harder for me than the beautifully concise Professor Murder Rides the Subway EP. There was a period of time in the mid-aughts in NYC where it seemed like every indie band wanted you to let loose, dance like no one was watching, and just have some damn fun. Few embodied that as much as…</p>
+	
+	
+	<a class="more" href="https://www.theverge.com/entertainment/986564/professor-murder-rides-the-subway-dance-punk-perfection-review" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -2548,6 +2617,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.engadget.com/2242783/free-gifts-birthday-xbox/" target="_blank" rel="noopener noreferrer">Engadget &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/videos/c0lrgrzjnpxo#6" data-srckey="bbc sport" data-cat="sports" data-sent="0" data-ts="1788107396000" data-slug="sport football videos c0lrgrzjnpxo">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Chelsea had the &#39;quality to punish us&#39; - Hurzeler — flip for details">
+	<div class="meta"><span class="src" style="color:#facc15">BBC SPORT</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T16:29:56.000Z">12:29 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Chelsea had the &#39;quality to punish us&#39; - Hurzeler</h3>
+	<p class="snippet">Brighton manager Fabian Hurzeler admits Chelsea had the &quot;quality to punish us&quot; but praised his side&#39;s attitude to &quot;go for it&quot; during a thrilling 4-3 defeat at Stamford Bridge.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/738a/live/68eedcd0-a48b-11f1-b109-879e35c24276.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/600/cpsprodpb/738a/live/68eedcd0-a48b-11f1-b109-879e35c24276.jpg 600w, https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/738a/live/68eedcd0-a48b-11f1-b109-879e35c24276.jpg 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Chelsea had the &#39;quality to punish us&#39; - Hurzeler</h3>
+	<p class="about">Brighton manager Fabian Hurzeler admits Chelsea had the &quot;quality to punish us&quot; but praised his side&#39;s attitude to &quot;go for it&quot; during a thrilling 4-3 defeat at Stamford Bridge.</p>
+	
+	
+	<a class="more" href="https://www.bbc.co.uk/sport/football/videos/c0lrgrzjnpxo" target="_blank" rel="noopener noreferrer">BBC Sport &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -7435,7 +7527,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2713 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2709 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/9y9jo6" data-cat="dev" data-sent="0" data-slug="blog such thing just tool" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 29 &middot; Dev</span><a href="https://deadsimpletech.com/blog/no-such-thing-as-just-a-tool" target="_blank" rel="noopener noreferrer">There&#39;s no such thing as Just a Tool</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236685010" data-cat="entertainment" data-sent="0" data-slug="news where watch open tennis streaming free schedule" hidden="until-found"><span class="ameta">HOLLYWOOD REPORTER &middot; Aug 29 &middot; Entertainment</span><a href="https://www.hollywoodreporter.com/tv/tv-news/where-to-watch-us-open-tennis-2026-streaming-free-schedule-1236685010/" target="_blank" rel="noopener noreferrer">Where to Watch the 2026 U.S. Open Tennis Tournament Online</a></li>
@@ -10146,10 +10238,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://arstechnica.com/science/2026/08/dismantling-the-roadless-rule-threatens-to-disrupt-wildlife-and-water-in-us/" data-cat="tech" data-sent="0" data-slug="science dismantling the roadless rule threatens disrupt wildlife and water" hidden="until-found"><span class="ameta">ARS TECHNICA &middot; Aug 22 &middot; Tech</span><a href="https://arstechnica.com/science/2026/08/dismantling-the-roadless-rule-threatens-to-disrupt-wildlife-and-water-in-us/" target="_blank" rel="noopener noreferrer">Dismantling the Roadless Rule threatens to disrupt wildlife and water in US</a></li>
 <li class="arow" data-count="1" data-id="rss:69278b76ca35020b3a07c60e" data-cat="tech" data-sent="0" data-slug="gallery best monitor arms" hidden="until-found"><span class="ameta">WIRED &middot; Aug 22 &middot; Tech</span><a href="https://www.wired.com/gallery/best-monitor-arms/" target="_blank" rel="noopener noreferrer">The 4 Best Monitor Arms to Clear Up Your Desk Space (2026)</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/switchboard-snes-personal-history-super-mario-world-kart/" data-cat="games" data-sent="0" data-slug="switchboard snes personal history super mario world kart" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 22 &middot; Games</span><a href="https://www.polygon.com/switchboard-snes-personal-history-super-mario-world-kart/" target="_blank" rel="noopener noreferrer">30 Years Ago, One Console and Two Games Changed My Life</a></li>
-<li class="arow" data-count="1" data-id="rss:WP-MKTW-0005193250" data-cat="markets" data-sent="0" data-slug="story massive corporate welfare program underway and consumers want bigger cut 0ff06d67" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 22 &middot; Markets</span><a href="https://www.marketwatch.com/story/a-massive-corporate-welfare-program-is-underway-and-consumers-want-a-bigger-cut-of-it-0ff06d67?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">A massive ‘corporate welfare’ program is underway — and consumers want a bigger cut of it</a></li>
-<li class="arow" data-count="1" data-id="rss:6a87423d69d906b2a99999a7" data-cat="tech" data-sent="0" data-slug="story set separate work profile your android phone" hidden="until-found"><span class="ameta">WIRED &middot; Aug 22 &middot; Tech</span><a href="https://www.wired.com/story/set-up-a-separate-work-profile-on-your-android-phone/" target="_blank" rel="noopener noreferrer">Set Up a Separate Work Profile on Your Android Phone</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/formula1/articles/cn0n03rn711o#2" data-cat="sports" data-sent="0" data-slug="sport formula1 articles cn0n03rn711o" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 22 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/formula1/articles/cn0n03rn711o" target="_blank" rel="noopener noreferrer">Mercedes&#39; Russell secures Zandvoort sprint victory</a></li>
-<li class="arow" data-count="1" data-id="rss:108353029" data-cat="markets" data-sent="0" data-slug="iran criticizes sanctions extraterritorial sovereignty html" hidden="until-found"><span class="ameta">CNBC &middot; Aug 22 &middot; Markets</span><a href="https://www.cnbc.com/2026/08/22/iran-criticizes-us-sanctions-extraterritorial-sovereignty.html" target="_blank" rel="noopener noreferrer">Ahead of tough new U.S. sanctions, Iran criticizes &#39;extraterritorial sovereignty&#39;</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
