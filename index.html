@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-30T00:34:14.538Z">
+<meta name="sf-version" content="2026-08-30T00:45:53.544Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,11 +537,11 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
-:root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
@@ -692,10 +692,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 8:34 PM &middot; 255 TODAY</p>
+	<p class="stats">UPDATED 8:45 PM &middot; 256 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">146</span><span class="sr-only"> — 146 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">66</span><span class="sr-only"> — 66 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">243</span><span class="sr-only"> — 243 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">400</span><span class="sr-only"> — 400 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">320</span><span class="sr-only"> — 320 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">414</span><span class="sr-only"> — 414 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">171</span><span class="sr-only"> — 171 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">486</span><span class="sr-only"> — 486 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">252</span><span class="sr-only"> — 252 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">19</span><span class="sr-only"> — 19 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">483</span><span class="sr-only"> — 483 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">146</span><span class="sr-only"> — 146 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">66</span><span class="sr-only"> — 66 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">244</span><span class="sr-only"> — 244 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">400</span><span class="sr-only"> — 400 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">320</span><span class="sr-only"> — 320 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">414</span><span class="sr-only"> — 414 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">171</span><span class="sr-only"> — 171 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">485</span><span class="sr-only"> — 485 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">252</span><span class="sr-only"> — 252 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">19</span><span class="sr-only"> — 19 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">483</span><span class="sr-only"> — 483 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -787,21 +787,21 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact rail-art has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/entertainment/985866/h4rris-nihil-young-edm-suno-ai" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1788004800000" data-slug="entertainment h4rris nihil young edm suno">
+<article class="card compact rail-art has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/tech/986033/samsung-galaxy-z-flip-8-review" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1788008400000" data-slug="tech samsung galaxy flip review">
 <div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Musicians-turned-detectives are hunting for AI grifters — flip for details">
-	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T12:00:00.000Z">8:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
-	<h3 class="title">Musicians-turned-detectives are hunting for AI grifters</h3>
-	<p class="snippet">As audio-focused generative tools and platforms have gotten more sophisticated, the internet has become increasingly filled with AI-generated music whose melodies and vocals are algorithmically derived from the work of human artists. While some of the people pumping out this kind of content immediately own up to using AI, others have denied using the technology until increasing public scrutiny…</p>
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The Galaxy Z Flip 8 is at its best when there’s friction — flip for details">
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T13:00:00.000Z">9:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">The Galaxy Z Flip 8 is at its best when there’s friction</h3>
+	<p class="snippet">The Z Flip 8 is designed to be used shut more than ever before. | Photo: Dominic Preston / The Verge What do you want from a flip phone when it&#39;s closed? A simple interface, perhaps notifications and a widget or two, for handling the basics? Or a fully fledged Android experience shrunk down for the Flip form factor? For years, Samsung has insisted on the former, even as some fans - and Razr rival…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/268714_finding_and_shaming_AI_grifters_CVirginia.jpg?quality=90&amp;strip=all&amp;crop=0%2C11.150136769481%2C85.33125%2C67.014037093516&amp;w=640" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/268714_finding_and_shaming_AI_grifters_CVirginia.jpg?quality=90&amp;strip=all&amp;crop=0%2C11.150136769481%2C85.33125%2C67.014037093516&amp;w=320 320w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/268714_finding_and_shaming_AI_grifters_CVirginia.jpg?quality=90&amp;strip=all&amp;crop=0%2C11.150136769481%2C85.33125%2C67.014037093516&amp;w=640 640w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/268714_finding_and_shaming_AI_grifters_CVirginia.jpg?quality=90&amp;strip=all&amp;crop=0%2C11.150136769481%2C85.33125%2C67.014037093516&amp;w=960 960w" sizes="(max-width: 640px) 78vw, 320px">
+	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/samsung-galaxy-z-flip-8-review-13.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=640" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/samsung-galaxy-z-flip-8-review-13.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=320 320w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/samsung-galaxy-z-flip-8-review-13.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=640 640w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/samsung-galaxy-z-flip-8-review-13.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=960 960w" sizes="(max-width: 640px) 78vw, 320px">
 </div>
 <div class="face back" inert>
-	<h3 class="title">Musicians-turned-detectives are hunting for AI grifters</h3>
-	<p class="about">As audio-focused generative tools and platforms have gotten more sophisticated, the internet has become increasingly filled with AI-generated music whose melodies and vocals are algorithmically derived from the work of human artists. While some of the people pumping out this kind of content immediately own up to using AI, others have denied using the technology until increasing public scrutiny…</p>
+	<h3 class="title">The Galaxy Z Flip 8 is at its best when there’s friction</h3>
+	<p class="about">The Z Flip 8 is designed to be used shut more than ever before. | Photo: Dominic Preston / The Verge What do you want from a flip phone when it&#39;s closed? A simple interface, perhaps notifications and a widget or two, for handling the basics? Or a fully fledged Android experience shrunk down for the Flip form factor? For years, Samsung has insisted on the former, even as some fans - and Razr rival…</p>
 	
 	
-	<a class="more" href="https://www.theverge.com/entertainment/985866/h4rris-nihil-young-edm-suno-ai" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
+	<a class="more" href="https://www.theverge.com/tech/986033/samsung-galaxy-z-flip-8-review" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -957,36 +957,36 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.montanasports.com/college/montana-grizzlies/roll-em-out-no-2-montana-ready-to-open-season-welcomes-southern-utah-back-to-big-sky" target="_blank" rel="noopener noreferrer">Roll &#39;em out: No. 2 Montana ready to open season, welcome Southern Utah back to Big Sky</a>
-		<p class="trend-meta"><span class="src">MONTANASPORTS.COM</span><span class="sep" aria-hidden="true">&middot;</span>"southern utah vs montana" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.foxsports.com/stories/mlb/how-to-watch-boston-red-sox-vs-new-york-yankees-tv-channel-live-stream-august-29-2026" target="_blank" rel="noopener noreferrer">How to Watch Red Sox vs. Yankees: TV Channel, Live Stream, Time</a>
+		<p class="trend-meta"><span class="src">FOX SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"yankees" &middot; 5000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.mlb.com/redsox/video/ranger-suarez-against-the-yankees-x9203" target="_blank" rel="noopener noreferrer">Ranger Suarez against the Yankees</a>
-		<p class="trend-meta"><span class="src">MLB.COM</span><span class="sep" aria-hidden="true">&middot;</span>"ben rice" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://www.univision.com/noticias/america-latina/seis-meses-despues-revelan-que-empresario-fue-asesinado-por-error-en-bogota-los-sicarios-buscaban-a-otro-hombre" target="_blank" rel="noopener noreferrer">This Businessman Went to the Gym and Was Shot Dead on His Way Out: It Was a Mistake, the Hitmen Confused Him With Someone Who Looked Like Him</a>
+		<p class="trend-meta"><span class="src">UNIVISION</span><span class="sep" aria-hidden="true">&middot;</span>"sicario" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.mlbtraderumors.com/2026/08/mlb-mailbag-cardinals-chourio-cavalli.html" target="_blank" rel="noopener noreferrer">MLB Mailbag: Cardinals, Chourio, Cavalli</a>
-		<p class="trend-meta"><span class="src">MLB TRADE RUMORS</span><span class="sep" aria-hidden="true">&middot;</span>"jackson chourio" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.wdsu.com/article/tracking-remnants-dolly-gulf-development-atlantic-tropics-low-development-new-orleans-louisiana/73559440" target="_blank" rel="noopener noreferrer">Tropics Watch: Two areas of interest being watch, one in the Gulf this weekend</a>
+		<p class="trend-meta"><span class="src">WDSU</span><span class="sep" aria-hidden="true">&middot;</span>"national hurricane center dolly" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.wsj.com/real-estate/luxury-homes/chestertown-maryland-farm-war-of-1812-0d3c2010" target="_blank" rel="noopener noreferrer">Historic Homes: A Maryland Farm that Became a War of 1812 Battlefield</a>
-		<p class="trend-meta"><span class="src">WSJ</span><span class="sep" aria-hidden="true">&middot;</span>"war of 1812" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://espndeportes.espn.com/futbol/mexico/nota/_/id/17181676/america-vs-puebla-alineaciones-probabilidades-victoria-apertura-2026" target="_blank" rel="noopener noreferrer">América vs Puebla: possible lineups and odds</a>
+		<p class="trend-meta"><span class="src">ESPN DEPORTES</span><span class="sep" aria-hidden="true">&middot;</span>"américa - puebla" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.mlssoccer.com/news/if-audi-2026-mls-cup-playoffs-started-today-matchups-scenarios-teams-qualified" target="_blank" rel="noopener noreferrer">If the Audi 2026 MLS Cup Playoffs started today: Matchday 23</a>
-		<p class="trend-meta"><span class="src">MLSSOCCER.COM</span><span class="sep" aria-hidden="true">&middot;</span>"mls schedule" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.nascar.com/videos/franchise/oreilly-auto-parts-series-post-race-reactions/hill-rallies-from-spin-to-runner-up-finish-at-daytona/" target="_blank" rel="noopener noreferrer">Hill rallies from spin to runner-up finish at Daytona</a>
+		<p class="trend-meta"><span class="src">NASCAR.COM</span><span class="sep" aria-hidden="true">&middot;</span>"austin hill" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
@@ -1015,6 +1015,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.marketwatch.com/story/i-feel-shoehorned-my-father-funded-my-800-000-roth-ira-does-that-give-him-the-right-to-say-how-i-invest-it-7b1e3ab3?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">MarketWatch &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/igor_526d4146b8c390548aa0/do-zero-ao-soc-por-que-a-logica-de-programacao-e-o-primeiro-passo-na-ciberseguranca-12p1" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788050127000" data-slug="igor 526d4146b8c390548aa0 zero soc por que logica programacao primeiro passo ciberseguranca 12p1">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Do Zero ao SOC: Por Que a Lógica de Programação é o Primeiro Passo na Cibersegurança? — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T00:35:27.000Z">8:35 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">Do Zero ao SOC: Por Que a Lógica de Programação é o Primeiro Passo na Cibersegurança?</h3>
+	<p class="snippet">A área de Cibersegurança atrai profissionais devido à complexidade das ameaças e à necessidade de proteção de infraestruturas críticas. No entanto, iniciantes costumam se perguntar por onde começar. A resposta estratégica envolve dominar a lógica de programação, o funcionamento de redes de computadores e os fundamentos dos sistemas operacionais. Compreender linguagens de programação…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6267k90ctru3ios04voh.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=240,height=125,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6267k90ctru3ios04voh.png 240w, https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6267k90ctru3ios04voh.png 340w, https://media2.dev.to/dynamic/image/width=510,height=266,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6267k90ctru3ios04voh.png 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Do Zero ao SOC: Por Que a Lógica de Programação é o Primeiro Passo na Cibersegurança?</h3>
+	<p class="about">A área de Cibersegurança atrai profissionais devido à complexidade das ameaças e à necessidade de proteção de infraestruturas críticas. No entanto, iniciantes costumam se perguntar por onde começar. A resposta estratégica envolve dominar a lógica de programação, o funcionamento de redes de computadores e os fundamentos dos sistemas operacionais. Compreender linguagens de programação…</p>
+	
+	
+	<a class="more" href="https://dev.to/igor_526d4146b8c390548aa0/do-zero-ao-soc-por-que-a-logica-de-programacao-e-o-primeiro-passo-na-ciberseguranca-12p1" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -6868,7 +6891,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2735 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2734 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cx2z415w2gpo#0" data-cat="world" data-sent="0" data-slug="news articles cx2z415w2gpo" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 28 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/cx2z415w2gpo" target="_blank" rel="noopener noreferrer">Footage of Tibet floods isn&#39;t being shown in China - and we know little about victims there</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" data-cat="world" data-sent="0" data-slug="world live aug nepal tibet flash floods hundreds dead missing day three updates" hidden="until-found"><span class="ameta">GUARDIAN WORLD &middot; Aug 28 &middot; World</span><a href="https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" target="_blank" rel="noopener noreferrer">Search continues as number missing in Nepal-Tibet floods rises to 2,478 – as it happened</a></li>
@@ -9604,7 +9627,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236839004" data-cat="entertainment" data-sent="0" data-slug="global news prince harry meghan markle move means royal family" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 20 &middot; Entertainment</span><a href="https://variety.com/2026/global/news/prince-harry-meghan-markle-uk-move-means-royal-family-1236839004/" target="_blank" rel="noopener noreferrer">What Does Prince Harry and Meghan Markle’s Move Back to the U.K. Mean for the Royal Family?</a></li>
 <li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236839318" data-cat="entertainment" data-sent="0" data-slug="film news charles melton naruto movie kakashi" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 20 &middot; Entertainment</span><a href="https://variety.com/2026/film/news/charles-melton-naruto-movie-kakashi-1236839318/" target="_blank" rel="noopener noreferrer">Charles Melton in Talks for ‘Naruto’ Movie as Kakashi</a></li>
 <li class="arow" data-count="1" data-id="rss:4f665bc3-8ec9-4268-9ca3-ce3188332f7c" data-cat="sports" data-sent="0" data-slug="wnba news rookie rankings olivia miles mvp case azzi fudd out" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 20 &middot; Sports</span><a href="https://www.cbssports.com/wnba/news/wnba-rookie-rankings-olivia-miles-mvp-case-azzi-fudd-out/" target="_blank" rel="noopener noreferrer">WNBA Rookie Rankings: Olivia Miles makes a case for MVP, Azzi Fudd exits after season-ending surgery</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/cricket/videos/crk5gd3xeleo#0" data-cat="sports" data-sent="0" data-slug="sport cricket videos crk5gd3xeleo" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 20 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/cricket/videos/crk5gd3xeleo" target="_blank" rel="noopener noreferrer">&#39;Hometown boy delivering once again&#39; - best of Brook&#39;s 91</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
