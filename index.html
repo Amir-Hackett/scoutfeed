@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-30T12:48:46.064Z">
+<meta name="sf-version" content="2026-08-30T13:48:46.167Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,28 +537,29 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
-:root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
-:root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
-:root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
+:root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
+:root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
+:root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
+:root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
+:root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
+:root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
+:root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
+:root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
+:root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="hsl(273 55% 72%)"] { color: #724890 !important; }
 :root[data-theme="light"] .meta [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
 :root[data-theme="light"] .meta [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
-:root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
-:root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
 :root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
-:root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
-:root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="hsl(89 55% 72%)"] { color: #49691b !important; }
 :root[data-theme="light"] .meta [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="hsl(336 55% 72%)"] { color: #894262 !important; }
-:root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
@@ -566,7 +567,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
-:root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] .meta [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
@@ -707,10 +707,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 8:48 AM &middot; 67 TODAY</p>
+	<p class="stats">UPDATED 9:48 AM &middot; 76 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">169</span><span class="sr-only"> — 169 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">114</span><span class="sr-only"> — 114 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">227</span><span class="sr-only"> — 227 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">387</span><span class="sr-only"> — 387 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">303</span><span class="sr-only"> — 303 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">381</span><span class="sr-only"> — 381 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">158</span><span class="sr-only"> — 158 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">448</span><span class="sr-only"> — 448 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">249</span><span class="sr-only"> — 249 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">113</span><span class="sr-only"> — 113 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">451</span><span class="sr-only"> — 451 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">169</span><span class="sr-only"> — 169 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">114</span><span class="sr-only"> — 114 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">228</span><span class="sr-only"> — 228 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">385</span><span class="sr-only"> — 385 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">303</span><span class="sr-only"> — 303 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">382</span><span class="sr-only"> — 382 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">158</span><span class="sr-only"> — 158 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">446</span><span class="sr-only"> — 446 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">249</span><span class="sr-only"> — 249 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">115</span><span class="sr-only"> — 115 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">451</span><span class="sr-only"> — 451 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -733,6 +733,29 @@ footer a { color: var(--text-faint); }
 <h2><span class="date">FOR YOU</span><span class="rel">RANKED BY YOUR INTERESTS</span><span class="rule" aria-hidden="true"></span></h2>
 
 <div class="rail-row">
+<article class="card compact rail-art has-thumb" style="--rail:#fb923c" data-count="1" data-id="rss:https://www.foxnews.com/politics/republicans-tighten-screws-sherrill-noncitizen-voter-probe-enters-new-phase" data-srckey="fox news politics" data-cat="politics" data-sent="0" data-ts="1788094850000" data-slug="politics republicans tighten screws sherrill noncitizen voter probe enters new phase">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Republicans tighten screws on Sherrill as noncitizen voter probe enters new phase — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(101 55% 72%)">FOX NEWS POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T13:00:50.000Z">9:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">Republicans tighten screws on Sherrill as noncitizen voter probe enters new phase</h3>
+	<p class="snippet">New Jersey Gov. Mikie Sherrill&#39;s reply to a voter-roll inquiry drew fire from Jeff Van Drew, who calls it &quot;snarky&quot; and signals possible subpoenas.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/08/931/523/governor-mikie-sherrill-001.jpg?ve=1&amp;tl=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Republicans tighten screws on Sherrill as noncitizen voter probe enters new phase</h3>
+	<p class="about">New Jersey Gov. Mikie Sherrill&#39;s reply to a voter-roll inquiry drew fire from Jeff Van Drew, who calls it &quot;snarky&quot; and signals possible subpoenas.</p>
+	
+	
+	<a class="more" href="https://www.foxnews.com/politics/republicans-tighten-screws-sherrill-noncitizen-voter-probe-enters-new-phase" target="_blank" rel="noopener noreferrer">Fox News Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact rail-art has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/surfiniaburger/my-spidey-sense-on-ai-883" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1787957268000" data-slug="surfiniaburger spidey sense">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="My spidey sense on AI — flip for details">
@@ -894,29 +917,6 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact rail-art has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:e72e673a-a44c-11f1-9d4e-75564c8cf08f" data-srckey="france 24" data-cat="world" data-sent="0" data-ts="1788080113000" data-slug="french presidential campaign heats">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="French Presidential campaign heats up — flip for details">
-	<div class="meta"><span class="src" style="color:hsl(279 55% 72%)">FRANCE 24</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T08:55:13.000Z">4:55 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
-	<h3 class="title">French Presidential campaign heats up</h3>
-	<p class="snippet">There are just eight months to go before France’s presidential election, with the first round scheduled for April 18. The campaign is slowly heating up, with several political gatherings taking place this weekend. The Socialist Party wrapped up a two-day gathering on Saturday with a speech from party leader Olivier Faure, who has yet to officially announce his candidacy. Meanwhile, far-right…</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://s.france24.com/media/display/5bf85d84-a450-11f1-8d69-005056bf30b7/w:1024/p:16x9/france-debat.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-</div>
-<div class="face back" inert>
-	<h3 class="title">French Presidential campaign heats up</h3>
-	<p class="about">There are just eight months to go before France’s presidential election, with the first round scheduled for April 18. The campaign is slowly heating up, with several political gatherings taking place this weekend. The Socialist Party wrapped up a two-day gathering on Saturday with a speech from party leader Olivier Faure, who has yet to officially announce his candidacy. Meanwhile, far-right…</p>
-	
-	
-	<a class="more" href="https://www.france24.com/en/french-presidential-campaign-heats-up" target="_blank" rel="noopener noreferrer">France 24 &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
 </div>
 </section>
 <main id="feed">
@@ -972,64 +972,248 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://bleacherreport.com/articles/25485591-new-nfl-rumors-reveal-bears-trade-candidate-ahead-2026-season" target="_blank" rel="noopener noreferrer">New NFL Rumors Reveal Bears Trade Candidate Ahead of 2026 Season</a>
-		<p class="trend-meta"><span class="src">BLEACHER REPORT</span><span class="sep" aria-hidden="true">&middot;</span>"gervon dexter" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.nytimes.com/athletic/7548196/2026/08/30/premier-league-forum-transfers-manchester-city-liverpool-spurs-talking-points/" target="_blank" rel="noopener noreferrer">Premier League Forum: Who still needs reinforcements? Which signings have impressed?</a>
+		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"epl" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.washingtonpost.com/national-security/2026/08/30/military-leaders-warn-hegseth-against-extending-iran-war-operations/" target="_blank" rel="noopener noreferrer">Military leaders warn Hegseth against extending Iran war operations</a>
-		<p class="trend-meta"><span class="src">THE WASHINGTON POST</span><span class="sep" aria-hidden="true">&middot;</span>"military operation" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.theatlantic.com/science/2026/08/el-nino-effects/688429/" target="_blank" rel="noopener noreferrer">El Niño Has Become a Doom Loop</a>
+		<p class="trend-meta"><span class="src">THE ATLANTIC</span><span class="sep" aria-hidden="true">&middot;</span>"el niño" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nytimes.com/interactive/2026/08/28/us/politics/billionaire-midterms-donors.html" target="_blank" rel="noopener noreferrer">Meet the Megadonors Who Have Poured $1.2 Billion Into the Midterms</a>
-		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"midterm election" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.expressnews.com/sports/article/chelsea-ficha-al-dibu-emiliano-mart-nez-de-22409803.php" target="_blank" rel="noopener noreferrer">Chelsea sign Dibu Martínez from Aston Villa on a 3-year deal</a>
+		<p class="trend-meta"><span class="src">SAN ANTONIO EXPRESS-NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"xabi alonso" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nytimes.com/athletic/7546802/2026/08/29/connor-hellebuyck-trade-targets-nhl-jets/" target="_blank" rel="noopener noreferrer">Connor Hellebuyck trade fits: 8 teams that could make a deal with the Jets - The Athletic</a>
-		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"nhl" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.usatoday.com/story/sports/ncaaf/2026/08/30/college-football-week-0-winners-losers-bill-belichick/91533597007/" target="_blank" rel="noopener noreferrer">Bill Belichick, USC, NC State lead college football Week 0 winners, losers</a>
+		<p class="trend-meta"><span class="src">USA TODAY</span><span class="sep" aria-hidden="true">&middot;</span>"football games today" &middot; 10000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/sport/football/live/cq8e3lw3rk3pt" target="_blank" rel="noopener noreferrer">Sunderland vs Fulham: Premier League preview, team news, stats &amp; head-to-head</a>
-		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"sunderland vs fulham" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.chelseafc.com/en/news/article/chelsea-football-club-announces-circle-internet-group-as-principal-partner" target="_blank" rel="noopener noreferrer">Chelsea Football Club announces Circle Internet Group as Principal Partner | News | Official Site</a>
+		<p class="trend-meta"><span class="src">CHELSEA FOOTBALL CLUB</span><span class="sep" aria-hidden="true">&middot;</span>"usdc by circle" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/sport/football/articles/cd08gr3g3n7o" target="_blank" rel="noopener noreferrer">Leeds United vs Brentford predictions: Chris Sutton on Premier League game</a>
-		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"leeds vs brentford" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.cnn.com/2026/08/30/europe/cyprus-boat-capsizes-turkey-intl" target="_blank" rel="noopener noreferrer">Rescue underway after Turkish ferry carrying hundreds of people capsizes off Cyprus</a>
+		<p class="trend-meta"><span class="src">CNN</span><span class="sep" aria-hidden="true">&middot;</span>"northern cyprus passenger ship rescue" &middot; 500+ searches</p>
 	</div>
 </li>
 </ol>
 </section><section class="day">
 <h2><span class="date">SUN, AUG 30, 2026</span><span class="rel">TODAY</span><span class="rule" aria-hidden="true"></span></h2>
 <div class="grid">
-<article class="card lead has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236846790" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788084836000" data-slug="film reviews review">
+<article class="card lead has-thumb" style="--rail:#fb923c" data-count="1" data-id="rss:https://www.foxnews.com/politics/republicans-tighten-screws-sherrill-noncitizen-voter-probe-enters-new-phase" data-srckey="fox news politics" data-cat="politics" data-sent="0" data-ts="1788094850000" data-slug="politics republicans tighten screws sherrill noncitizen voter probe enters new phase">
 <div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="’17’ Review: Harrowing Teen Pregnancy Drama from Macedonia Could Be the Feel-Bad Movie of the Year — flip for details">
-	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T10:13:56.000Z">6:13 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
-	<h3 class="title">’17’ Review: Harrowing Teen Pregnancy Drama from Macedonia Could Be the Feel-Bad Movie of the Year</h3>
-	<p class="snippet">From the first frame, Kosara Mitić’s “17” refuses to pull any punches, plunging us immediately into the traumatic moment when a hookup between high-school student Sara (Eva Kostić) and two boys takes a violent turn. From here, this nervy teen drama from Macedonia picks up several months later and follows the withdrawn Sara over the […]</p>
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Republicans tighten screws on Sherrill as noncitizen voter probe enters new phase — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(101 55% 72%)">FOX NEWS POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T13:00:50.000Z">9:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">Republicans tighten screws on Sherrill as noncitizen voter probe enters new phase</h3>
+	<p class="snippet">New Jersey Gov. Mikie Sherrill&#39;s reply to a voter-roll inquiry drew fire from Jeff Van Drew, who calls it &quot;snarky&quot; and signals possible subpoenas.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/08/202615475_1_RWD_1380.jpg?w=680" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/08/202615475_1_RWD_1380.jpg?w=340 340w, https://variety.com/wp-content/uploads/2026/08/202615475_1_RWD_1380.jpg?w=680 680w, https://variety.com/wp-content/uploads/2026/08/202615475_1_RWD_1380.jpg?w=1020 1020w" sizes="(max-width: 640px) 88vw, min(42vw, 340px)">
+	<img class="thumb" src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/08/931/523/governor-mikie-sherrill-001.jpg?ve=1&amp;tl=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
-	<h3 class="title">’17’ Review: Harrowing Teen Pregnancy Drama from Macedonia Could Be the Feel-Bad Movie of the Year</h3>
-	<p class="about">From the first frame, Kosara Mitić’s “17” refuses to pull any punches, plunging us immediately into the traumatic moment when a hookup between high-school student Sara (Eva Kostić) and two boys takes a violent turn. From here, this nervy teen drama from Macedonia picks up several months later and follows the withdrawn Sara over the […]</p>
+	<h3 class="title">Republicans tighten screws on Sherrill as noncitizen voter probe enters new phase</h3>
+	<p class="about">New Jersey Gov. Mikie Sherrill&#39;s reply to a voter-roll inquiry drew fire from Jeff Van Drew, who calls it &quot;snarky&quot; and signals possible subpoenas.</p>
 	
 	
-	<a class="more" href="https://variety.com/2026/film/reviews/17-review-1236846790/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<a class="more" href="https://www.foxnews.com/politics/republicans-tighten-screws-sherrill-noncitizen-voter-probe-enters-new-phase" target="_blank" rel="noopener noreferrer">Fox News Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.engadget.com/2242776/improve-android-auto-experience-doing-simple-things/" data-srckey="engadget" data-cat="tech" data-sent="0" data-ts="1788096600000" data-slug="improve android auto experience doing simple things">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Improve your Android Auto experience by doing these simple things — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(229 55% 72%)">ENGADGET</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T13:30:00.000Z">9:30 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Improve your Android Auto experience by doing these simple things</h3>
+	<p class="snippet">Android Auto has several essential features enabled by default, but you may be surprised at how much it can really do.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.engadget.com/img/gallery/improve-your-android-auto-experience-by-doing-these-simple-things/l-intro-1787319995.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Improve your Android Auto experience by doing these simple things</h3>
+	<p class="about">Android Auto has several essential features enabled by default, but you may be surprised at how much it can really do.</p>
+	
+	
+	<a class="more" href="https://www.engadget.com/2242776/improve-android-auto-experience-doing-simple-things/" target="_blank" rel="noopener noreferrer">Engadget &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.eurogamer.net/valve-steam2-leak-12tb-portal-2-half-life-episode-three" data-srckey="eurogamer" data-cat="games" data-sent="0" data-ts="1788096402000" data-slug="valve steam2 leak 12tb portal half life episode three">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="12TB Valve archive leak includes early Portal 2 builds and hints of Half-Life 2: Episode Three — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">EUROGAMER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T13:26:42.000Z">9:26 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">12TB Valve archive leak includes early Portal 2 builds and hints of Half-Life 2: Episode Three</h3>
+	<p class="snippet">A leaked archive said to contain around 12TB of old Valve development files, dated between 2003 and 2013, has surfaced online, and fans are already combing through it for any trace of the long-cancelled Half-Life 2: Episode Three. Read more</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assetsio.gnwcdn.com/HQ6xhIdWcAAMhTL.jpeg?width=340&amp;quality=85&amp;format=jpg&amp;auto=webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://assetsio.gnwcdn.com/HQ6xhIdWcAAMhTL.jpeg?width=240&amp;quality=85&amp;format=jpg&amp;auto=webp 240w, https://assetsio.gnwcdn.com/HQ6xhIdWcAAMhTL.jpeg?width=340&amp;quality=85&amp;format=jpg&amp;auto=webp 340w, https://assetsio.gnwcdn.com/HQ6xhIdWcAAMhTL.jpeg?width=510&amp;quality=85&amp;format=jpg&amp;auto=webp 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">12TB Valve archive leak includes early Portal 2 builds and hints of Half-Life 2: Episode Three</h3>
+	<p class="about">A leaked archive said to contain around 12TB of old Valve development files, dated between 2003 and 2013, has surfaced online, and fans are already combing through it for any trace of the long-cancelled Half-Life 2: Episode Three. Read more</p>
+	
+	
+	<a class="more" href="https://www.eurogamer.net/valve-steam2-leak-12tb-portal-2-half-life-episode-three" target="_blank" rel="noopener noreferrer">Eurogamer &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/zaavff" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1788096285000" data-slug="blog openwrt monitor your ipv6 status">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="OpenWrt: Monitor your IPv6 Status — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T13:24:45.000Z">9:24 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">OpenWrt: Monitor your IPv6 Status</h3>
+	<p class="snippet">I recently had a full outage of IPv6 on my Deutsche Glasfaser fibre-based internet line that lasted for more than 3.5 months. I only found out by chance, which I found very frustrating. If it happens</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://bergs.biz/blog/wp-content/uploads/2026/08/ipv6.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">OpenWrt: Monitor your IPv6 Status</h3>
+	<p class="about">I recently had a full outage of IPv6 on my Deutsche Glasfaser fibre-based internet line that lasted for more than 3.5 months. I only found out by chance, which I found very frustrating. If it happens</p>
+	
+	
+	<a class="more" href="https://bergs.biz/blog/2026/08/30/openwrt-monitor-your-ipv6-status/" target="_blank" rel="noopener noreferrer">Lobsters &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://the-decoder.com/?p=39594" data-srckey="the decoder" data-cat="ai" data-sent="0" data-ts="1788095539000" data-slug="sentiment turning sour employee reviews reveal growing frustration across the workforce">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="AI sentiment is turning sour as employee reviews reveal growing frustration across the workforce — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(45 55% 72%)">THE DECODER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T13:12:19.000Z">9:12 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">AI sentiment is turning sour as employee reviews reveal growing frustration across the workforce</h3>
+	<p class="snippet">An analysis of Glassdoor reviews shows that positive AI comments have dropped from 81 to 43 percent since 2019. Executives rate AI mostly positive, while insurance claims workers rate it almost entirely negative. Fear of job loss is just one complaint among many. Forced adoption, surveillance, and unrealistic productivity expectations weigh just as heavily. The article AI sentiment is turning…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://the-decoder.com/wp-content/uploads/2026/08/chatgpt_office_woman-1200x670.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">AI sentiment is turning sour as employee reviews reveal growing frustration across the workforce</h3>
+	<p class="about">An analysis of Glassdoor reviews shows that positive AI comments have dropped from 81 to 43 percent since 2019. Executives rate AI mostly positive, while insurance claims workers rate it almost entirely negative. Fear of job loss is just one complaint among many. Forced adoption, surveillance, and unrealistic productivity expectations weigh just as heavily. The article AI sentiment is turning…</p>
+	
+	
+	<a class="more" href="https://the-decoder.com/ai-sentiment-is-turning-sour-as-employee-reviews-reveal-growing-frustration-across-the-workforce/" target="_blank" rel="noopener noreferrer">The Decoder &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#fb923c" data-count="1" data-id="rss:https://www.foxnews.com/politics/roy-cooper-changes-tune-data-centers-rising-power-costs-collide-senate-campaign" data-srckey="fox news politics" data-cat="politics" data-sent="0" data-ts="1788094844000" data-slug="politics roy cooper changes tune data centers rising power costs collide senate campaign">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Dem Senate hopeful pivots on data centers as rising power costs collide with campaign — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(101 55% 72%)">FOX NEWS POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T13:00:44.000Z">9:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">Dem Senate hopeful pivots on data centers as rising power costs collide with campaign</h3>
+	<p class="snippet">Roy Cooper celebrated data center growth as North Carolina governor, but his Senate campaign now targets their energy use as a rate hike driver.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2025/11/931/523/michael-whatley-and-roy-cooper.png?ve=1&amp;tl=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Dem Senate hopeful pivots on data centers as rising power costs collide with campaign</h3>
+	<p class="about">Roy Cooper celebrated data center growth as North Carolina governor, but his Senate campaign now targets their energy use as a rate hike driver.</p>
+	
+	
+	<a class="more" href="https://www.foxnews.com/politics/roy-cooper-changes-tune-data-centers-rising-power-costs-collide-senate-campaign" target="_blank" rel="noopener noreferrer">Fox News Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:WP-MKTW-0005202903" data-srckey="marketwatch" data-cat="markets" data-sent="0" data-ts="1788094800000" data-slug="story these charts show how leverage happy investors are transforming the stock market d4e350c3">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="These charts show how leverage-happy investors are transforming the stock market — flip for details">
+	<div class="meta"><span class="src" style="color:#34d399">MARKETWATCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T13:00:00.000Z">9:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">These charts show how leverage-happy investors are transforming the stock market</h3>
+	<p class="snippet">A rush of retail investors and quant funds has caused a shift toward more borrowed money and more short-term trading.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://images.mktw.net/im-83810242?width=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://images.mktw.net/im-83810242?width=240 240w, https://images.mktw.net/im-83810242?width=340 340w, https://images.mktw.net/im-83810242?width=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">These charts show how leverage-happy investors are transforming the stock market</h3>
+	<p class="about">A rush of retail investors and quant funds has caused a shift toward more borrowed money and more short-term trading.</p>
+	
+	
+	<a class="more" href="https://www.marketwatch.com/story/these-charts-show-how-leverage-happy-investors-are-transforming-the-stock-market-d4e350c3?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">MarketWatch &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/games/986302/chess-poker-expansion-gambit" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1788094800000" data-slug="games chess poker expansion gambit">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Chess.com launched a poker site and is planning even more classic games — flip for details">
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T13:00:00.000Z">9:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Chess.com launched a poker site and is planning even more classic games</h3>
+	<p class="snippet">Chess.com has done one thing, and one thing very well, for almost 20 years, but now it&#39;s going beyond its domain name. The biggest name in online chess quietly launched its first companion site in beta back in May: Gambit, a free online poker website where players can learn the game without risking any real money. Now Gambit&#39;s ready to really get the ball rolling with its first livestreamed event…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/chess-com-gambit-launch-bot-match.png?quality=90&amp;strip=all&amp;crop=0%2C1.4388257843755%2C100%2C97.122348431249&amp;w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/chess-com-gambit-launch-bot-match.png?quality=90&amp;strip=all&amp;crop=0%2C1.4388257843755%2C100%2C97.122348431249&amp;w=600 600w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/chess-com-gambit-launch-bot-match.png?quality=90&amp;strip=all&amp;crop=0%2C1.4388257843755%2C100%2C97.122348431249&amp;w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Chess.com launched a poker site and is planning even more classic games</h3>
+	<p class="about">Chess.com has done one thing, and one thing very well, for almost 20 years, but now it&#39;s going beyond its domain name. The biggest name in online chess quietly launched its first companion site in beta back in May: Gambit, a free online poker website where players can learn the game without risking any real money. Now Gambit&#39;s ready to really get the ball rolling with its first livestreamed event…</p>
+	
+	
+	<a class="more" href="https://www.theverge.com/games/986302/chess-poker-expansion-gambit" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://github.com/anthropics/claude-code/issues/66504" data-srckey="hacker news" data-cat="tech" data-sent="0" data-ts="1788094254000" data-slug="anthropics claude code issues">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Claude Session URL appended to commit messages and PR descriptions by default — flip for details">
+	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T12:50:54.000Z">8:50 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Claude Session URL appended to commit messages and PR descriptions by default</h3>
+	<p class="snippet">Preflight Checklist I have searched existing requests and this feature hasn&#39;t been requested yet This is a single feature request (not multiple features) Problem Statement Every commit message and ...</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://opengraph.githubassets.com/2f65f288ecef9b7abbbc45a8b013c193607a99804c62fd8348a82563f639ca95/anthropics/claude-code/issues/66504" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Claude Session URL appended to commit messages and PR descriptions by default</h3>
+	<p class="about">Preflight Checklist I have searched existing requests and this feature hasn&#39;t been requested yet This is a single feature request (not multiple features) Problem Statement Every commit message and ...</p>
+	
+	
+	<a class="more" href="https://github.com/anthropics/claude-code/issues/66504" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1697,6 +1881,29 @@ footer a { color: var(--text-faint); }
 	<p class="why"><span class="whylabel">matched</span> <span class="whykey">ChatGPT</span> <span class="whystrength" title="How strongly this matched your interest (decayed frequency: 2.0)">match</span></p>
 	
 	<a class="more" href="https://community.webminal.org/t/my-fat-loss-experiments-with-chatgpt-and-water-fasting/8846" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236846790" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788084836000" data-slug="film reviews review">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="’17’ Review: Harrowing Teen Pregnancy Drama from Macedonia Could Be the Feel-Bad Movie of the Year — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T10:13:56.000Z">6:13 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">’17’ Review: Harrowing Teen Pregnancy Drama from Macedonia Could Be the Feel-Bad Movie of the Year</h3>
+	<p class="snippet">From the first frame, Kosara Mitić’s “17” refuses to pull any punches, plunging us immediately into the traumatic moment when a hookup between high-school student Sara (Eva Kostić) and two boys takes a violent turn. From here, this nervy teen drama from Macedonia picks up several months later and follows the withdrawn Sara over the […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/08/202615475_1_RWD_1380.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/08/202615475_1_RWD_1380.jpg?w=240 240w, https://variety.com/wp-content/uploads/2026/08/202615475_1_RWD_1380.jpg?w=340 340w, https://variety.com/wp-content/uploads/2026/08/202615475_1_RWD_1380.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">’17’ Review: Harrowing Teen Pregnancy Drama from Macedonia Could Be the Feel-Bad Movie of the Year</h3>
+	<p class="about">From the first frame, Kosara Mitić’s “17” refuses to pull any punches, plunging us immediately into the traumatic moment when a hookup between high-school student Sara (Eva Kostić) and two boys takes a violent turn. From here, this nervy teen drama from Macedonia picks up several months later and follows the withdrawn Sara over the […]</p>
+	
+	
+	<a class="more" href="https://variety.com/2026/film/reviews/17-review-1236846790/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -9786,7 +9993,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2611 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2602 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cx2z415w2gpo#0" data-cat="world" data-sent="0" data-slug="news articles cx2z415w2gpo" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 28 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/cx2z415w2gpo" target="_blank" rel="noopener noreferrer">Footage of Tibet floods isn&#39;t being shown in China - and we know little about victims there</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" data-cat="world" data-sent="0" data-slug="world live aug nepal tibet flash floods hundreds dead missing day three updates" hidden="until-found"><span class="ameta">GUARDIAN WORLD &middot; Aug 28 &middot; World</span><a href="https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" target="_blank" rel="noopener noreferrer">Search continues as number missing in Nepal-Tibet floods rises to 2,478 – as it happened</a></li>
@@ -12390,15 +12597,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/news/solana-cuts-blockchain-slot-time-350-milliseconds" data-cat="markets" data-sent="0" data-slug="news solana cuts blockchain slot time milliseconds" hidden="until-found"><span class="ameta">COINTELEGRAPH &middot; Aug 21 &middot; Markets</span><a href="https://cointelegraph.com/news/solana-cuts-blockchain-slot-time-350-milliseconds" target="_blank" rel="noopener noreferrer">Solana cuts blockchain slot time to 350 milliseconds</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/czxe9n0vxzdo#0" data-cat="world" data-sent="0" data-slug="news articles czxe9n0vxzdo" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 21 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/czxe9n0vxzdo" target="_blank" rel="noopener noreferrer">Ebola vaccine trial to start in DR Congo as warning issued over speed of infections</a></li>
 <li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000726633" data-cat="games" data-sent="0" data-slug="take two subpoenas microsoft and discord records related spread gta leaks" hidden="until-found"><span class="ameta">KOTAKU &middot; Aug 21 &middot; Games</span><a href="https://kotaku.com/take-two-subpoenas-microsoft-and-discord-records-related-to-spread-of-gta-6-leaks-2000726633" target="_blank" rel="noopener noreferrer">Take-Two Subpoenas Trove Of Records From Microsoft And Discord As It Hunts For GTA 6 Leaker</a></li>
-<li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000726617" data-cat="tech" data-sent="0" data-slug="the gorgeous translucent green anniversary xbox will reportedly cost" hidden="until-found"><span class="ameta">KOTAKU &middot; Aug 21 &middot; Tech</span><a href="https://kotaku.com/the-gorgeous-translucent-green-anniversary-xbox-will-reportedly-cost-900-2000726617" target="_blank" rel="noopener noreferrer">The Gorgeous Translucent Green Anniversary Xbox Will Reportedly Cost $900</a></li>
-<li class="arow" data-count="1" data-id="rss:040e3ee7-335c-480d-b936-786730f30a8e" data-cat="sports" data-sent="0" data-slug="college football news best coaching matchups marcus freeman mario cristobal" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 21 &middot; Sports</span><a href="https://www.cbssports.com/college-football/news/college-football-best-coaching-matchups-2026-marcus-freeman-mario-cristobal/" target="_blank" rel="noopener noreferrer">College football&#39;s best coaching matchups of 2026: Marcus Freeman vs. Mario Cristobal leads top 10</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.theverge.com/ai-artificial-intelligence/983181/matti-haapoja-sam-kold-kolder-higgsfield-seedance-backlash" data-cat="tech" data-sent="0" data-slug="artificial intelligence matti haapoja sam kold kolder higgsfield seedance backlash" hidden="until-found"><span class="ameta">THE VERGE &middot; Aug 21 &middot; Tech</span><a href="https://www.theverge.com/ai-artificial-intelligence/983181/matti-haapoja-sam-kold-kolder-higgsfield-seedance-backlash" target="_blank" rel="noopener noreferrer">Major YouTube creators are facing backlash for accepting AI money</a></li>
-<li class="arow" data-count="1" data-id="rss:https://techcrunch.com/?p=3155391" data-cat="ai" data-sent="0" data-slug="private equity firm apollo confirms data breach amid hacking wave targeting financial giants" hidden="until-found"><span class="ameta">TECHCRUNCH &middot; Aug 21 &middot; AI</span><a href="https://techcrunch.com/2026/08/21/private-equity-firm-apollo-confirms-data-breach-amid-hacking-wave-targeting-financial-giants/" target="_blank" rel="noopener noreferrer">Private equity firm Apollo confirms data breach amid hacking wave targeting financial giants</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240802" data-cat="entertainment" data-sent="0" data-slug="news returner magic should special 2nd season anime 1st promo video streamed" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 21 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/news/2026-08-21/a-returner-magic-should-be-special-2nd-season-anime-1st-promo-video-streamed/.240802" target="_blank" rel="noopener noreferrer">A Returner&#39;s Magic Should Be Special 2nd Season Anime&#39;s 1st Promo Video Streamed</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240782" data-cat="entertainment" data-sent="0" data-slug="review zero starting life another world season episode" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 21 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/review/re-zero-starting-life-in-another-world-season-4/episode-13/.240782" target="_blank" rel="noopener noreferrer">Re:ZERO -Starting Life in Another World- Season 4 ‒ Episode 13</a></li>
-<li class="arow" data-count="1" data-id="rss:423c6c2d-a6c0-4589-b4e6-890f103812b2" data-cat="sports" data-sent="0" data-slug="betting news braves brewers friday mlb picks chris sale faces jacob misiorowski stellar matinee pitching matchup" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 21 &middot; Sports</span><a href="https://www.cbssports.com/betting/news/braves-vs-brewers-friday-mlb-picks-chris-sale-faces-jacob-misiorowski-in-stellar-matinee-pitching-matchup/" target="_blank" rel="noopener noreferrer">Braves vs. Brewers Friday MLB picks: Chris Sale faces Jacob Misiorowski in stellar matinee pitching matchup</a></li>
-<li class="arow" data-count="1" data-id="rss:https://twitter.com/NVIDIAAI/status/2090786258981466231" data-cat="tech" data-sent="0" data-slug="nvidiaai status" hidden="until-found"><span class="ameta">HACKER NEWS &middot; Aug 21 &middot; Tech</span><a href="https://twitter.com/NVIDIAAI/status/2090786258981466231" target="_blank" rel="noopener noreferrer">Nvidia AVO scores 100% on the ARC-AGI-3 interactive reasoning benchmark</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/limited-edition-retro-green-xbox-series-x-date-price" data-cat="games" data-sent="0" data-slug="limited edition retro green xbox series date price" hidden="until-found"><span class="ameta">EUROGAMER &middot; Aug 21 &middot; Games</span><a href="https://www.eurogamer.net/limited-edition-retro-green-xbox-series-x-date-price" target="_blank" rel="noopener noreferrer">That limited edition green see-through Xbox Series X reportedly costs as much as a PS5 Pro, and releases on Black Friday</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
