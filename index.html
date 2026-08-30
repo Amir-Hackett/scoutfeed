@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-30T16:30:32.381Z">
+<meta name="sf-version" content="2026-08-30T17:18:07.380Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,11 +537,14 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
+:root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
+:root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
+:root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] .meta [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
-:root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
@@ -549,7 +552,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
-:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
@@ -557,9 +559,7 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
-:root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
-:root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="hsl(273 55% 72%)"] { color: #724890 !important; }
 :root[data-theme="light"] .meta [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
 :root[data-theme="light"] .meta [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
@@ -707,10 +707,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 12:30 PM &middot; 160 TODAY</p>
+	<p class="stats">UPDATED 1:18 PM &middot; 166 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">245</span><span class="sr-only"> — 245 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">388</span><span class="sr-only"> — 388 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">297</span><span class="sr-only"> — 297 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">381</span><span class="sr-only"> — 381 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">146</span><span class="sr-only"> — 146 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">460</span><span class="sr-only"> — 460 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">257</span><span class="sr-only"> — 257 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">119</span><span class="sr-only"> — 119 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">436</span><span class="sr-only"> — 436 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">163</span><span class="sr-only"> — 163 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">245</span><span class="sr-only"> — 245 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">391</span><span class="sr-only"> — 391 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">297</span><span class="sr-only"> — 297 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">380</span><span class="sr-only"> — 380 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">146</span><span class="sr-only"> — 146 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">460</span><span class="sr-only"> — 460 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">258</span><span class="sr-only"> — 258 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">119</span><span class="sr-only"> — 119 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">434</span><span class="sr-only"> — 434 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -972,43 +972,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.autoblog.com/news/winter-weather-warning-issued-for-8-inches-of-snow-and-40-mph-gusts-through-tuesday-morning" target="_blank" rel="noopener noreferrer">Winter Weather Warning Issued For 8 Inches Of Snow And 40 MPH Gusts Through Tuesday Morning</a>
-		<p class="trend-meta"><span class="src">AUTOBLOG</span><span class="sep" aria-hidden="true">&middot;</span>"snow" &middot; 5000+ searches</p>
+		<a class="trend-title" href="https://www.jsonline.com/story/sports/college/uw/2026/08/28/watch-wisconsin-volleyball-vs-stanford-pittsburgh/91484378007/" target="_blank" rel="noopener noreferrer">What channel is Wisconsin volleyball on tonight? TV, streaming, time</a>
+		<p class="trend-meta"><span class="src">MILWAUKEE JOURNAL SENTINEL</span><span class="sep" aria-hidden="true">&middot;</span>"wisconsin volleyball" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.fotmob.com/es/news/jlv7spgyq4v1oc2wtmk274u7_es-allegri-asegura-que-no-tiene-ningun-problema-con-fabregas" target="_blank" rel="noopener noreferrer">Allegri insists he has no problem with Fàbregas</a>
-		<p class="trend-meta"><span class="src">FOTMOB</span><span class="sep" aria-hidden="true">&middot;</span>"napoli - como" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.gazzetta.it/Calcio/Serie-A/Napoli/30-08-2026/napoli-como-live-risultato-e-gol-in-diretta-serie-a.shtml" target="_blank" rel="noopener noreferrer">LIVE At 6:30 PM Napoli-Como, the official lineups: Allegri with Lang, Fabregas picks Baturina</a>
+		<p class="trend-meta"><span class="src">LA GAZZETTA DELLO SPORT</span><span class="sep" aria-hidden="true">&middot;</span>"napoli" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://news.xbox.com/en-us/2026/08/26/state-of-decay-3-closed-beta-playtests/" target="_blank" rel="noopener noreferrer">State of Decay 3: Closed Beta Playtests Will Open the Game to Even More Players This Year</a>
-		<p class="trend-meta"><span class="src">XBOX WIRE</span><span class="sep" aria-hidden="true">&middot;</span>"state of decay 3 closed beta" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://sports.yahoo.com/articles/ex-panthers-draft-bust-released-150054683.html" target="_blank" rel="noopener noreferrer">Ex-Panthers draft bust released by Dolphins</a>
+		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"fantasy footballers" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://vsin.com/tennis/us-open-picks-tennis-best-bets-and-predictions-for-sunday-august-30/" target="_blank" rel="noopener noreferrer">US Open Picks: Tennis best bets and predictions for Sunday, August 30</a>
-		<p class="trend-meta"><span class="src">VSIN</span><span class="sep" aria-hidden="true">&middot;</span>"sho shimabukuro" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.economist.com/britain/2026/08/27/harry-and-meghan-are-ghastly-and-back-in-britain-good" target="_blank" rel="noopener noreferrer">Harry and Meghan are ghastly and back in Britain. Good</a>
+		<p class="trend-meta"><span class="src">THE ECONOMIST</span><span class="sep" aria-hidden="true">&middot;</span>"prince harry, duke of sussex" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://futbolme.com/resultados-directo/partido/sd-huesca-b-cd-subiza-cendea-de-galar/1368995/enfrentamientos" target="_blank" rel="noopener noreferrer">Huesca B vs CD Subiza from 301-THIRD FEDERATION CLUBS - Friendlies</a>
-		<p class="trend-meta"><span class="src">FUTBOLME</span><span class="sep" aria-hidden="true">&middot;</span>"alfonso herrero" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.cagesideseats.com/aew/471922/britt-baker-aew-return-all-in-responds-fan" target="_blank" rel="noopener noreferrer">Britt Baker gives a familiar answer about appearing at AEW’s All In</a>
+		<p class="trend-meta"><span class="src">CAGESIDE SEATS</span><span class="sep" aria-hidden="true">&middot;</span>"britt baker" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/sport/football/live/c6n8my5mlxx0t" target="_blank" rel="noopener noreferrer">Mansfield Town vs Luton Town: League One stats &amp; head-to-head</a>
-		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"mansfield town vs luton town" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.mlb.com/stories/game/824230" target="_blank" rel="noopener noreferrer">Los Angeles Dodgers at Detroit Tigers Game Story, Scores/Highlights - 08/29/2026</a>
+		<p class="trend-meta"><span class="src">MLB</span><span class="sep" aria-hidden="true">&middot;</span>"tigers game today" &middot; 500+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1030,6 +1030,144 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.foxnews.com/politics/republicans-tighten-screws-sherrill-noncitizen-voter-probe-enters-new-phase" target="_blank" rel="noopener noreferrer">Fox News Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236846911" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788109608000" data-slug="music news katseyes sophia sit european leg wildworld tour">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Katseye’s Sophia to Sit Out European Leg of ‘Wildworld’ Tour to ‘Focus on Her Well-Being’ — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T17:06:48.000Z">1:06 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Katseye’s Sophia to Sit Out European Leg of ‘Wildworld’ Tour to ‘Focus on Her Well-Being’</h3>
+	<p class="snippet">Katseye member Sophia Laforteza will not be joining the group for the U.K. and European dates of their upcoming “Wildworld” tour, which is scheduled to launch on Tuesday. In a statement posted to social media, Katseye’s label said that Laforteza is committed to “focusing on her well-being” after announcing her temporary hiatus from the group […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/06/SA100755_2.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/06/SA100755_2.jpg?w=240 240w, https://variety.com/wp-content/uploads/2026/06/SA100755_2.jpg?w=340 340w, https://variety.com/wp-content/uploads/2026/06/SA100755_2.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Katseye’s Sophia to Sit Out European Leg of ‘Wildworld’ Tour to ‘Focus on Her Well-Being’</h3>
+	<p class="about">Katseye member Sophia Laforteza will not be joining the group for the U.K. and European dates of their upcoming “Wildworld” tour, which is scheduled to launch on Tuesday. In a statement posted to social media, Katseye’s label said that Laforteza is committed to “focusing on her well-being” after announcing her temporary hiatus from the group […]</p>
+	
+	
+	<a class="more" href="https://variety.com/2026/music/news/katseyes-sophia-sit-european-leg-wildworld-tour-1236846911/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.polygon.com/worst-video-game-foods-nastiest-gross-menu-items/" data-srckey="polygon" data-cat="games" data-sent="0" data-ts="1788109214000" data-slug="worst video game foods nastiest gross menu items">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The 10 Nastiest Video Game Foods That&#39;ll Ruin Your Appetite — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T17:00:14.000Z">1:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">The 10 Nastiest Video Game Foods That&#39;ll Ruin Your Appetite</h3>
+	<p class="snippet">From Fallout&#39;s roasted radroaches to a cult&#39;s minced-follower-meat casserole, these are the 10 nastiest and weirdest video game foods</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/02/link-just-eat-a-rock-roast-0-23-screenshot.png?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/02/link-just-eat-a-rock-roast-0-23-screenshot.png?w=240 240w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/02/link-just-eat-a-rock-roast-0-23-screenshot.png?w=340 340w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/02/link-just-eat-a-rock-roast-0-23-screenshot.png?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">The 10 Nastiest Video Game Foods That&#39;ll Ruin Your Appetite</h3>
+	<p class="about">From Fallout&#39;s roasted radroaches to a cult&#39;s minced-follower-meat casserole, these are the 10 nastiest and weirdest video game foods</p>
+	
+	
+	<a class="more" href="https://www.polygon.com/worst-video-game-foods-nastiest-gross-menu-items/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 h2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.polygon.com/coyote-vs-acme-box-office/" data-srckey="polygon" data-cat="entertainment" data-sent="0" data-ts="1788108234000" data-slug="coyote acme box office">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="&#39;Coyote Vs. ACME&#39; Beat &#39;The Odyssey&#39; And Ridley Scott At The Box Office This Weekend — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T16:43:54.000Z">12:43 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">&#39;Coyote Vs. ACME&#39; Beat &#39;The Odyssey&#39; And Ridley Scott At The Box Office This Weekend</h3>
+	<p class="snippet">A modest but respectable opening for Coyote Vs. ACME, a movie abandoned by Warner Bros and eventually released in theaters by Ketchup Entertainment</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/04/screen-shot-2026-04-22-at-10-47-32-am.jpg?w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/04/screen-shot-2026-04-22-at-10-47-32-am.jpg?w=600 600w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/04/screen-shot-2026-04-22-at-10-47-32-am.jpg?w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">&#39;Coyote Vs. ACME&#39; Beat &#39;The Odyssey&#39; And Ridley Scott At The Box Office This Weekend</h3>
+	<p class="about">A modest but respectable opening for Coyote Vs. ACME, a movie abandoned by Warner Bros and eventually released in theaters by Ketchup Entertainment</p>
+	
+	
+	<a class="more" href="https://www.polygon.com/coyote-vs-acme-box-office/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/science/986544/nancy-grace-roman-space-telescope-launch" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1788107799000" data-slug="science nancy grace roman space telescope launch">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The Nancy Grace Roman Space Telescope launches to study dark matter and dark energy — flip for details">
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T16:36:39.000Z">12:36 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">The Nancy Grace Roman Space Telescope launches to study dark matter and dark energy</h3>
+	<p class="snippet">NASA’s Nancy Grace Roman Telescope blasts off. | Photo: NASA / John Kraus After funding struggles and a name change, the Nancy Grace Roman Space Telescope has been successfully launched. It will now make a three-month, one-million-mile journey to its orbit at the second Sun-Earth Lagrange point (L2) beyond the Moon. From this vantage point, Roman will conduct an unprecedented survey of the…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/NHQ20260830_admin_0002large.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.70228295175%2C100%2C78.5954340965&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/NHQ20260830_admin_0002large.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.70228295175%2C100%2C78.5954340965&amp;w=240 240w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/NHQ20260830_admin_0002large.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.70228295175%2C100%2C78.5954340965&amp;w=340 340w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/NHQ20260830_admin_0002large.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.70228295175%2C100%2C78.5954340965&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">The Nancy Grace Roman Space Telescope launches to study dark matter and dark energy</h3>
+	<p class="about">NASA’s Nancy Grace Roman Telescope blasts off. | Photo: NASA / John Kraus After funding struggles and a name change, the Nancy Grace Roman Space Telescope has been successfully launched. It will now make a three-month, one-million-mile journey to its orbit at the second Sun-Earth Lagrange point (L2) beyond the Moon. From this vantage point, Roman will conduct an unprecedented survey of the…</p>
+	
+	
+	<a class="more" href="https://www.theverge.com/science/986544/nancy-grace-roman-space-telescope-launch" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c5ye8egg596o#0" data-srckey="bbc world" data-cat="world" data-sent="0" data-ts="1788107597000" data-slug="news articles c5ye8egg596o">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Russia says it helped to repel Niger attempted coup — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T16:33:17.000Z">12:33 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Russia says it helped to repel Niger attempted coup</h3>
+	<p class="snippet">Soldiers tried to attack a key military base early on Saturday morning, authorities say, but were thwarted.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/ace6/live/c0f2a130-a488-11f1-8395-fb1eae51ae18.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ace6/live/c0f2a130-a488-11f1-8395-fb1eae51ae18.jpg 240w, https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/ace6/live/c0f2a130-a488-11f1-8395-fb1eae51ae18.jpg 340w, https://ichef.bbci.co.uk/ace/standard/510/cpsprodpb/ace6/live/c0f2a130-a488-11f1-8395-fb1eae51ae18.jpg 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Russia says it helped to repel Niger attempted coup</h3>
+	<p class="about">Soldiers tried to attack a key military base early on Saturday morning, authorities say, but were thwarted.</p>
+	
+	
+	<a class="more" href="https://www.bbc.co.uk/news/articles/c5ye8egg596o" target="_blank" rel="noopener noreferrer">BBC World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236846879" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788106630000" data-slug="film box office the dog stars bombs spider man brand new day">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Box Office: ‘The Dog Stars’ Bombs With $8 Million; ‘Spider-Man’ Continues Reign in Fifth Weekend — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T16:17:10.000Z">12:17 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Box Office: ‘The Dog Stars’ Bombs With $8 Million; ‘Spider-Man’ Continues Reign in Fifth Weekend</h3>
+	<p class="snippet">“The Dog Stars” couldn’t beat the heat during the dog days of summer and melted down over its opening weekend. Disney and 20th Century’s “The Dog Stars” opened to just $8 million domestically from 3,330 locations for a fifth-place finish. The post-apocalyptic thriller, which cost more than $80 million to produce, has not sat well […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/08/MCDDOST_H3015_65486d.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/08/MCDDOST_H3015_65486d.jpg?w=240 240w, https://variety.com/wp-content/uploads/2026/08/MCDDOST_H3015_65486d.jpg?w=340 340w, https://variety.com/wp-content/uploads/2026/08/MCDDOST_H3015_65486d.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Box Office: ‘The Dog Stars’ Bombs With $8 Million; ‘Spider-Man’ Continues Reign in Fifth Weekend</h3>
+	<p class="about">“The Dog Stars” couldn’t beat the heat during the dog days of summer and melted down over its opening weekend. Disney and 20th Century’s “The Dog Stars” opened to just $8 million domestically from 3,330 locations for a fifth-place finish. The post-apocalyptic thriller, which cost more than $80 million to produce, has not sat well […]</p>
+	<p class="why"><span class="whylabel">matched</span> <span class="whykey">Spider-Man</span> <span class="whystrength" title="How strongly this matched your interest (decayed frequency: 2.0)">match</span></p>
+	
+	<a class="more" href="https://variety.com/2026/film/box-office/box-office-the-dog-stars-bombs-spider-man-brand-new-day-1236846879/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1268,10 +1406,10 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://kotaku.com/?p=2000729656" data-srckey="kotaku" data-cat="games" data-sent="0" data-ts="1788103524000" data-slug="the abominations ate cne this year">
+<article class="card compact w2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://kotaku.com/?p=2000729656" data-srckey="kotaku" data-cat="entertainment" data-sent="0" data-ts="1788103524000" data-slug="the abominations ate cne this year">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The Abominations I Ate At The CNE This Year — flip for details">
-	<div class="meta"><span class="src" style="color:#a3e635">KOTAKU</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T15:25:24.000Z">11:25 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<div class="meta"><span class="src" style="color:#a3e635">KOTAKU</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T15:25:24.000Z">11:25 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
 	<h3 class="title">The Abominations I Ate At The CNE This Year</h3>
 	<p class="snippet">As the annual carnival overlooks the failures of Ontario leadership, the most upsetting news is regarding the ice cream s’more Oreo crusted fried chicken sandwich</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
@@ -12684,7 +12822,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2485 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2479 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cx2z415w2gpo#0" data-cat="world" data-sent="0" data-slug="news articles cx2z415w2gpo" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 28 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/cx2z415w2gpo" target="_blank" rel="noopener noreferrer">Footage of Tibet floods isn&#39;t being shown in China - and we know little about victims there</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" data-cat="world" data-sent="0" data-slug="world live aug nepal tibet flash floods hundreds dead missing day three updates" hidden="until-found"><span class="ameta">GUARDIAN WORLD &middot; Aug 28 &middot; World</span><a href="https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" target="_blank" rel="noopener noreferrer">Search continues as number missing in Nepal-Tibet floods rises to 2,478 – as it happened</a></li>
@@ -15165,12 +15303,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://arstechnica.com/gadgets/2026/08/motorolas-grapheneos-phones-will-launch-in-2027-priced-higher-than-pixels/" data-cat="tech" data-sent="0" data-slug="gadgets motorolas grapheneos phones will launch priced higher than pixels" hidden="until-found"><span class="ameta">ARS TECHNICA &middot; Aug 21 &middot; Tech</span><a href="https://arstechnica.com/gadgets/2026/08/motorolas-grapheneos-phones-will-launch-in-2027-priced-higher-than-pixels/" target="_blank" rel="noopener noreferrer">Motorola&#39;s GrapheneOS phones will launch in 2027 priced higher than Pixels</a></li>
 <li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236840308" data-cat="entertainment" data-sent="0" data-slug="film news shaquille neal marvel turned down avengers" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 21 &middot; Entertainment</span><a href="https://variety.com/2026/film/news/shaquille-o-neal-marvel-turned-me-down-avengers-1236840308/" target="_blank" rel="noopener noreferrer">Shaquille O’Neal: Marvel Turned Me Down for the ‘Avengers’ (EXCLUSIVE)</a></li>
 <li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/news/on-chain-in-court-crypto-legal-news5" data-cat="markets" data-sent="0" data-slug="news chain court crypto legal news5" hidden="until-found"><span class="ameta">COINTELEGRAPH &middot; Aug 21 &middot; Markets</span><a href="https://cointelegraph.com/news/on-chain-in-court-crypto-legal-news5" target="_blank" rel="noopener noreferrer">Onchain, in court: What happened in crypto legal news this week</a></li>
-<li class="arow" data-count="1" data-id="rss:https://techcrunch.com/?p=3153590" data-cat="tech" data-sent="0" data-slug="last chance save your techcrunch disrupt ticket today" hidden="until-found"><span class="ameta">TECHCRUNCH &middot; Aug 21 &middot; Tech</span><a href="https://techcrunch.com/2026/08/21/last-chance-save-up-to-300-on-your-techcrunch-disrupt-2026-ticket-today/" target="_blank" rel="noopener noreferrer">Last chance: Save up to $300 on your TechCrunch Disrupt 2026 ticket today</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2241857/linkedin-says-its-ai-slop-button-is-working/" data-cat="tech" data-sent="0" data-slug="linkedin says its slop button working" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 21 &middot; Tech</span><a href="https://www.engadget.com/2241857/linkedin-says-its-ai-slop-button-is-working/" target="_blank" rel="noopener noreferrer">LinkedIn says its AI slop button is working</a></li>
-<li class="arow" data-count="1" data-id="rss:WP-MKTW-0005193491" data-cat="markets" data-sent="0" data-slug="story former jpmorgan exec takes social security advisory role d0cf6e4f" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 21 &middot; Markets</span><a href="https://www.marketwatch.com/story/former-jpmorgan-exec-takes-on-social-security-advisory-role-d0cf6e4f?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Former JPMorgan exec takes on Social Security advisory role</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.polygon.com/dc-jimmy-olsen-show-people-v-gorilla-grodd-hbo-max/" data-cat="entertainment" data-sent="0" data-slug="jimmy olsen show people gorilla grodd hbo max" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 21 &middot; Entertainment</span><a href="https://www.polygon.com/dc-jimmy-olsen-show-people-v-gorilla-grodd-hbo-max/" target="_blank" rel="noopener noreferrer">HBO and James Gunn Confirm New 8-Part True-Crime Series Spinoff</a></li>
-<li class="arow" data-count="1" data-id="rss:https://the-decoder.com/?p=39315" data-cat="ai" data-sent="0" data-slug="deepseek releases experimental flash vision model that rivals opus agent benchmarks" hidden="until-found"><span class="ameta">THE DECODER &middot; Aug 21 &middot; AI</span><a href="https://the-decoder.com/deepseek-releases-experimental-flash-vision-model-that-rivals-opus-4-8-on-agent-benchmarks/" target="_blank" rel="noopener noreferrer">Deepseek releases experimental Flash vision model that rivals Opus 4.8 on agent benchmarks</a></li>
-<li class="arow" data-count="1" data-id="rss:https://arstechnica.com/tech-policy/2026/08/lawsuit-demands-logitech-hand-tariff-refunds-over-to-customers/" data-cat="tech" data-sent="0" data-slug="tech policy lawsuit demands logitech hand tariff refunds over customers" hidden="until-found"><span class="ameta">ARS TECHNICA &middot; Aug 21 &middot; Tech</span><a href="https://arstechnica.com/tech-policy/2026/08/lawsuit-demands-logitech-hand-tariff-refunds-over-to-customers/" target="_blank" rel="noopener noreferrer">Lawsuit demands Logitech hand tariff refunds over to customers</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
