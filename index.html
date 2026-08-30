@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-30T14:53:19.172Z">
+<meta name="sf-version" content="2026-08-30T15:27:39.998Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,17 +537,19 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
+:root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
+:root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
+:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
+:root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
+:root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
-:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
-:root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="hsl(156 55% 72%)"] { color: #176e52 !important; }
-:root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
-:root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
@@ -555,11 +557,9 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
-:root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] .meta [style*="hsl(273 55% 72%)"] { color: #724890 !important; }
 :root[data-theme="light"] .meta [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
 :root[data-theme="light"] .meta [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
-:root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] .meta [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
 :root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
@@ -707,10 +707,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 10:53 AM &middot; 141 TODAY</p>
+	<p class="stats">UPDATED 11:27 AM &middot; 147 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">166</span><span class="sr-only"> — 166 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">109</span><span class="sr-only"> — 109 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">245</span><span class="sr-only"> — 245 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">387</span><span class="sr-only"> — 387 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">295</span><span class="sr-only"> — 295 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">381</span><span class="sr-only"> — 381 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">147</span><span class="sr-only"> — 147 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">460</span><span class="sr-only"> — 460 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">255</span><span class="sr-only"> — 255 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">118</span><span class="sr-only"> — 118 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">437</span><span class="sr-only"> — 437 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">165</span><span class="sr-only"> — 165 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">109</span><span class="sr-only"> — 109 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">245</span><span class="sr-only"> — 245 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">387</span><span class="sr-only"> — 387 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">294</span><span class="sr-only"> — 294 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">382</span><span class="sr-only"> — 382 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">147</span><span class="sr-only"> — 147 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">460</span><span class="sr-only"> — 460 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">256</span><span class="sr-only"> — 256 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">118</span><span class="sr-only"> — 118 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">437</span><span class="sr-only"> — 437 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -972,43 +972,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://weather.com/2026/08/30/storms/hurricane/remnants-tropical-storm-dolly-caribbean-rain-gulf-development" target="_blank" rel="noopener noreferrer">Remnants of TS Dolly to bring drought relief, then find new life?</a>
-		<p class="trend-meta"><span class="src">THE WEATHER CHANNEL</span><span class="sep" aria-hidden="true">&middot;</span>"hurricane tracker" &middot; 10000+ searches</p>
+		<a class="trend-title" href="https://bleacherreport.com/articles/25494016-curacao-vs-nevada-championship-set-2026-little-league-world-series-bracket" target="_blank" rel="noopener noreferrer">Curacao vs. Nevada Championship Set for 2026 Little League World Series Bracket</a>
+		<p class="trend-meta"><span class="src">BLEACHER REPORT</span><span class="sep" aria-hidden="true">&middot;</span>"little league world series games today" &middot; 5000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/soccer/story/_/id/49740823/uefa-champions-league-draw-reaction-analysis-liverpool-barcelona-psg-man-city-arsenal-real-madrid" target="_blank" rel="noopener noreferrer">Champions League draw: Good games for Liverpool, bad for Barcelona</a>
-		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"real madrid schedule" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.minutouno.com/deportes/hostilidad-londres-la-reprobacion-del-publico-valentin-barco-su-debut-chelsea-n6315623" target="_blank" rel="noopener noreferrer">Hostility in London: Crowd Jeers Valentín Barco on His Chelsea Debut</a>
+		<p class="trend-meta"><span class="src">MINUTOUNO</span><span class="sep" aria-hidden="true">&middot;</span>"barco chelsea" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nbcnews.com/meet-the-press/video/ted-cruz-says-there-will-be-a-time-to-make-a-decision-on-a-2028-run-for-president-269067334000" target="_blank" rel="noopener noreferrer">Ted Cruz says ‘there will be a time’ to make a decision on a 2028 run for president</a>
-		<p class="trend-meta"><span class="src">NBC NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"ted cruz" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.bbc.com/sport/football/live/ckn9wdgn90xgt" target="_blank" rel="noopener noreferrer">Telstar vs Ajax: Dutch Eredivisie stats &amp; head-to-head</a>
+		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"telstar vs ajax" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://timesofindia.indiatimes.com/entertainment/kannada/movies/news/toxic-box-office-collections-day-4-yash-starrer-records-9-9-drop-worldwide-gross-reaches-rs-254-75-crores/articleshow/133621681.cms" target="_blank" rel="noopener noreferrer">&#39;Toxic&#39; box office collections day 4: Yash, Nayanthara, Kiara Advani starrer records 9.9% drop; worldwide</a>
-		<p class="trend-meta"><span class="src">THE TIMES OF INDIA</span><span class="sep" aria-hidden="true">&middot;</span>"prem" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://nfltraderumors.co/trade-jaguars-trading-te-hunter-long-to-cardinals/" target="_blank" rel="noopener noreferrer">TRADE: Jaguars Trading TE Hunter Long To Cardinals</a>
+		<p class="trend-meta"><span class="src">NFLTRADERUMORS.CO</span><span class="sep" aria-hidden="true">&middot;</span>"hunter long" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://as.com/futbol/primera/real-madrid-malaga-hoy-en-directo-ultima-hora-de-laliga-ea-sports-en-vivo-f202608-d/" target="_blank" rel="noopener noreferrer">Real Madrid - Málaga, live: LaLiga EA Sports match today, latest updates</a>
-		<p class="trend-meta"><span class="src">DIARIO AS</span><span class="sep" aria-hidden="true">&middot;</span>"real madrid vs málaga" &middot; 20000+ searches</p>
+		<a class="trend-title" href="https://www.profootballrumors.com/2026/08/bills-to-release-s-geno-stone" target="_blank" rel="noopener noreferrer">Bills To Release S Geno Stone</a>
+		<p class="trend-meta"><span class="src">NFL RUMORS - PROFOOTBALLRUMORS.COM</span><span class="sep" aria-hidden="true">&middot;</span>"geno stone" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/nfl/story/_/id/49772519/source-bucs-tab-undrafted-rookie-jalon-daniels-backup-qb" target="_blank" rel="noopener noreferrer">Source: Bucs tab undrafted rookie Jalon Daniels as backup QB</a>
-		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"jalon daniels" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.n-tv.de/leute/Fall-Collien-Fernandes-und-Christian-Ulmen-New-York-Times-enthuellt-neue-Details-id31227987.html" target="_blank" rel="noopener noreferrer">New York Times Reveals New Details in the Ulmen Case</a>
+		<p class="trend-meta"><span class="src">N-TV.DE</span><span class="sep" aria-hidden="true">&middot;</span>"collien fernandes" &middot; 200+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1030,6 +1030,144 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.foxnews.com/politics/republicans-tighten-screws-sherrill-noncitizen-voter-probe-enters-new-phase" target="_blank" rel="noopener noreferrer">Fox News Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/3ccvfi" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1788102835000" data-slug="interviews interview with oofoe">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Interview with oofoe about REBOL, Forth, Decker, Janet and the VFx Industry — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T15:13:55.000Z">11:13 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">Interview with oofoe about REBOL, Forth, Decker, Janet and the VFx Industry</h3>
+	<p class="snippet">Oofoe (sourcehut) is a REBOL-refugee comes from animation and now works on precision instrument software. He makes puzzles in Decker and games in Janet (using his Janet-&gt;JavaScript transpiler) and Racket and Racket and, again, Racket and Racket and even visual novels. In this interview, we discuss: DSL design exotic languages (REBOL, Forth, Janet) Decker industrial domains (VFx) Do you know of…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Interview with oofoe about REBOL, Forth, Decker, Janet and the VFx Industry</h3>
+	<p class="about">Oofoe (sourcehut) is a REBOL-refugee comes from animation and now works on precision instrument software. He makes puzzles in Decker and games in Janet (using his Janet-&gt;JavaScript transpiler) and Racket and Racket and, again, Racket and Racket and even visual novels. In this interview, we discuss: DSL design exotic languages (REBOL, Forth, Janet) Decker industrial domains (VFx) Do you know of…</p>
+	
+	
+	<a class="more" href="https://alexalejandre.com/interviews/interview-with-oofoe/" target="_blank" rel="noopener noreferrer">Lobsters &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235617854" data-srckey="rolling stone music" data-cat="music" data-sent="0" data-ts="1788102200000" data-slug="music country grand ole opry dedicate performance dolly parton">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="See Grand Ole Opry Dedicate Entire Performance to Dolly Parton’s Music — flip for details">
+	<div class="meta"><span class="src" style="color:#fb7185">ROLLING STONE MUSIC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T15:03:20.000Z">11:03 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
+	<h3 class="title">See Grand Ole Opry Dedicate Entire Performance to Dolly Parton’s Music</h3>
+	<p class="snippet">Carly Pearce, Jelly Roll, and more pay tribute to country legend and longtime Opry member</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.rollingstone.com/wp-content/uploads/2026/08/Cast-Watches-Dolly-Perform-I-WIll-Always-Love-You.jpeg?w=340#038;h=900&amp;#038;crop=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://www.rollingstone.com/wp-content/uploads/2026/08/Cast-Watches-Dolly-Perform-I-WIll-Always-Love-You.jpeg?w=240#038;h=900&amp;#038;crop=1 240w, https://www.rollingstone.com/wp-content/uploads/2026/08/Cast-Watches-Dolly-Perform-I-WIll-Always-Love-You.jpeg?w=340#038;h=900&amp;#038;crop=1 340w, https://www.rollingstone.com/wp-content/uploads/2026/08/Cast-Watches-Dolly-Perform-I-WIll-Always-Love-You.jpeg?w=510#038;h=900&amp;#038;crop=1 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">See Grand Ole Opry Dedicate Entire Performance to Dolly Parton’s Music</h3>
+	<p class="about">Carly Pearce, Jelly Roll, and more pay tribute to country legend and longtime Opry member</p>
+	
+	
+	<a class="more" href="https://www.rollingstone.com/music/music-country/grand-ole-opry-dedicate-performance-dolly-parton-music-1235617854/" target="_blank" rel="noopener noreferrer">Rolling Stone Music &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:4370612f-a5cb-4cdc-8262-8722eccd5826" data-srckey="coindesk" data-cat="markets" data-sent="0" data-ts="1788102000000" data-slug="business from hawala swift inside the year battle move money safely">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="From Hawala to Swift: Inside the 1,000-year battle to move money safely — flip for details">
+	<div class="meta"><span class="src" style="color:#fbbf24">COINDESK</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T15:00:00.000Z">11:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">From Hawala to Swift: Inside the 1,000-year battle to move money safely</h3>
+	<p class="snippet">Finance has spent centuries decoupling wealth from physical transport, but constantly erasing friction creates vectors for increasingly high-tech exploits.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://cdn.sanity.io/images/s3y3vcno/production/9783d7b206819da6e468694efca72dd18e27ac27-1186x667.jpg?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://cdn.sanity.io/images/s3y3vcno/production/9783d7b206819da6e468694efca72dd18e27ac27-1186x667.jpg?fm=jpg&amp;w=240&amp;h=135&amp;crop=focalpoint&amp;fit=clip 240w, https://cdn.sanity.io/images/s3y3vcno/production/9783d7b206819da6e468694efca72dd18e27ac27-1186x667.jpg?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip 340w, https://cdn.sanity.io/images/s3y3vcno/production/9783d7b206819da6e468694efca72dd18e27ac27-1186x667.jpg?fm=jpg&amp;w=510&amp;h=287&amp;crop=focalpoint&amp;fit=clip 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">From Hawala to Swift: Inside the 1,000-year battle to move money safely</h3>
+	<p class="about">Finance has spent centuries decoupling wealth from physical transport, but constantly erasing friction creates vectors for increasingly high-tech exploits.</p>
+	
+	
+	<a class="more" href="https://www.coindesk.com/business/2026/08/30/from-hawala-to-swift-inside-the-1-000-year-battle-to-move-money-safely" target="_blank" rel="noopener noreferrer">CoinDesk &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236846824" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788101883000" data-slug="film news call agent the movie review">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘Call My Agent! The Movie’ Review: Love-Hate Energy Keeps the Gang Together in a Fast, Funny Feature-Length Return — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T14:58:03.000Z">10:58 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">‘Call My Agent! The Movie’ Review: Love-Hate Energy Keeps the Gang Together in a Fast, Funny Feature-Length Return</h3>
+	<p class="snippet">The rare reboot pitch that that can actually be greeted with “this again!” rather than “this again?,” “Call My Agent! The Movie” makes sense of its rote title in two ways. First, and most obviously, it’s a feature-length spinoff of the hit French comedy series, which wittily satirized the national showbiz industry from the perspective […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/08/call-.jpeg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/08/call-.jpeg?w=240 240w, https://variety.com/wp-content/uploads/2026/08/call-.jpeg?w=340 340w, https://variety.com/wp-content/uploads/2026/08/call-.jpeg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">‘Call My Agent! The Movie’ Review: Love-Hate Energy Keeps the Gang Together in a Fast, Funny Feature-Length Return</h3>
+	<p class="about">The rare reboot pitch that that can actually be greeted with “this again!” rather than “this again?,” “Call My Agent! The Movie” makes sense of its rote title in two ways. First, and most obviously, it’s a feature-length spinoff of the hit French comedy series, which wittily satirized the national showbiz industry from the perspective […]</p>
+	
+	
+	<a class="more" href="https://variety.com/2026/film/news/call-my-agent-the-movie-review-1236846824/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:108355396" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1788101689000" data-slug="here are the big things were watching stock market week ahead html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Here are the 3 big things we&#39;re watching in the stock market in the week ahead — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T14:54:49.000Z">10:54 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Here are the 3 big things we&#39;re watching in the stock market in the week ahead</h3>
+	<p class="snippet">Broadcom and Palo Alto Networks report. Plus, it&#39;s jobs week.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://image.cnbcfm.com/api/v1/image/108272992-1772565871862-gettyimages-1243214774-tang-notitle220913_npgjE.jpeg?v=1776201301&amp;w=1080&amp;h=608" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://image.cnbcfm.com/api/v1/image/108272992-1772565871862-gettyimages-1243214774-tang-notitle220913_npgjE.jpeg?v=1776201301&amp;w=600&amp;h=338 600w, https://image.cnbcfm.com/api/v1/image/108272992-1772565871862-gettyimages-1243214774-tang-notitle220913_npgjE.jpeg?v=1776201301&amp;w=1080&amp;h=608 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Here are the 3 big things we&#39;re watching in the stock market in the week ahead</h3>
+	<p class="about">Broadcom and Palo Alto Networks report. Plus, it&#39;s jobs week.</p>
+	
+	
+	<a class="more" href="https://www.cnbc.com/2026/08/30/here-are-the-3-big-things-were-watching-in-the-stock-market-in-the-week-ahead.html" target="_blank" rel="noopener noreferrer">CNBC &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:10ca7f12-a479-11f1-be8a-21aa33126e34" data-srckey="france 24" data-cat="world" data-sent="0" data-ts="1788101078000" data-slug="france far right and left lead polls">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="France: Far-right and far-left lead polls — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(279 55% 72%)">FRANCE 24</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T14:44:38.000Z">10:44 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">France: Far-right and far-left lead polls</h3>
+	<p class="snippet">On April 18 and May 2 next year, France will vote to elect a new president to replace Emmanuel Macron. The outgoing president, who has served two terms, cannot run again, while the latest opinion polls are predicting a victory for Marine Le Pen of the far-right National Rally. Although the election is still more than seven months away, several potential candidates have already thrown their hats…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://s.france24.com/media/display/0ba6ef2a-a479-11f1-9b81-005056bfb2b6/w:1024/p:16x9/EN-20260830-150854-151326-CS.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">France: Far-right and far-left lead polls</h3>
+	<p class="about">On April 18 and May 2 next year, France will vote to elect a new president to replace Emmanuel Macron. The outgoing president, who has served two terms, cannot run again, while the latest opinion polls are predicting a victory for Marine Le Pen of the far-right National Rally. Although the election is still more than seven months away, several potential candidates have already thrown their hats…</p>
+	
+	
+	<a class="more" href="https://www.france24.com/en/france-far-right-and-far-left-lead-polls" target="_blank" rel="noopener noreferrer">France 24 &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -12247,7 +12385,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2504 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2498 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cx2z415w2gpo#0" data-cat="world" data-sent="0" data-slug="news articles cx2z415w2gpo" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 28 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/cx2z415w2gpo" target="_blank" rel="noopener noreferrer">Footage of Tibet floods isn&#39;t being shown in China - and we know little about victims there</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" data-cat="world" data-sent="0" data-slug="world live aug nepal tibet flash floods hundreds dead missing day three updates" hidden="until-found"><span class="ameta">GUARDIAN WORLD &middot; Aug 28 &middot; World</span><a href="https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" target="_blank" rel="noopener noreferrer">Search continues as number missing in Nepal-Tibet floods rises to 2,478 – as it happened</a></li>
@@ -14747,12 +14885,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.fiercehealthcare.com/f784e0cb-542f-42cb-89b5-52bd0054b588" data-cat="healthcare" data-sent="0" data-slug="payers look inside expanded partnership between scan and costco" hidden="until-found"><span class="ameta">FIERCE HEALTHCARE &middot; Aug 21 &middot; Healthcare</span><a href="https://www.fiercehealthcare.com/payers/look-inside-expanded-partnership-between-scan-and-costco" target="_blank" rel="noopener noreferrer">A look inside the expanded partnership between SCAN and Costco</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.fiercehealthcare.com/b16c91a4-1681-493f-8905-5fa12dea31ae" data-cat="healthcare" data-sent="0" data-slug="payers employers brace another year healthcare cost increases" hidden="until-found"><span class="ameta">FIERCE HEALTHCARE &middot; Aug 21 &middot; Healthcare</span><a href="https://www.fiercehealthcare.com/payers/employers-brace-another-year-healthcare-cost-increases" target="_blank" rel="noopener noreferrer">Employers brace for another year of healthcare cost increases</a></li>
 <li class="arow" data-count="1" data-id="rss:108352899" data-cat="markets" data-sent="0" data-slug="supreme court trump white house ballroom html" hidden="until-found"><span class="ameta">CNBC &middot; Aug 21 &middot; Markets</span><a href="https://www.cnbc.com/2026/08/21/supreme-court-trump-white-house-ballroom.html" target="_blank" rel="noopener noreferrer">Supreme Court allows Trump to continue White House ballroom construction for now</a></li>
-<li class="arow" data-count="1" data-id="rss:WP-MKTW-0005192974" data-cat="markets" data-sent="0" data-slug="story trump vance and bessent try calm the bond market with alternative facts 8e424378" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 21 &middot; Markets</span><a href="https://www.marketwatch.com/story/trump-vance-and-bessent-try-to-calm-the-bond-market-with-alternative-facts-8e424378?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Trump, Vance and Bessent try to calm the bond market with ‘alternative facts’</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.billboard.com/?p=1236322108" data-cat="music" data-sent="0" data-slug="music news city pop waves london recap masayoshi takanaka junko yagami" hidden="until-found"><span class="ameta">BILLBOARD &middot; Aug 21 &middot; Music</span><a href="https://www.billboard.com/music/music-news/city-pop-waves-london-recap-masayoshi-takanaka-junko-yagami-1236322108/" target="_blank" rel="noopener noreferrer">City Pop Waves Proves Japan’s Retro Sound Is Still Making New Fans in London</a></li>
-<li class="arow" data-count="1" data-id="rss:https://the-decoder.com/?p=39301" data-cat="ai" data-sent="0" data-slug="data center opposition surged from percent just one year survey finds" hidden="until-found"><span class="ameta">THE DECODER &middot; Aug 21 &middot; AI</span><a href="https://the-decoder.com/data-center-opposition-surged-from-42-to-75-percent-in-just-one-year-survey-finds/" target="_blank" rel="noopener noreferrer">Data center opposition surged from 42 to 75 percent in just one year, survey finds</a></li>
-<li class="arow" data-count="1" data-id="rss:https://dev.to/isazajuancarlos/cifrado-hibrido-por-que-combinar-criptografia-clasica-y-post-cuantica-3k69" data-cat="dev" data-sent="0" data-slug="isazajuancarlos cifrado hibrido por que combinar criptografia clasica post cuantica 3k69" hidden="until-found"><span class="ameta">DEV.TO &middot; Aug 21 &middot; Dev</span><a href="https://dev.to/isazajuancarlos/cifrado-hibrido-por-que-combinar-criptografia-clasica-y-post-cuantica-3k69" target="_blank" rel="noopener noreferrer">Cifrado híbrido: por qué combinar criptografía clásica y post-cuántica</a></li>
-<li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000726704" data-cat="games" data-sent="0" data-slug="double fine live game jam kickstarter" hidden="until-found"><span class="ameta">KOTAKU &middot; Aug 21 &middot; Games</span><a href="https://kotaku.com/double-fine-live-game-jam-kickstarter-2000726704" target="_blank" rel="noopener noreferrer">Double Fine Is Bringing Back Its Beloved Game Jam As A Kickstarter So Fans Can Vote On Its Next Project</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.billboard.com/?p=1236322097" data-cat="entertainment" data-sent="0" data-slug="music news keigo higashino eien kioku billboard japan book hot" hidden="until-found"><span class="ameta">BILLBOARD &middot; Aug 21 &middot; Entertainment</span><a href="https://www.billboard.com/music/music-news/keigo-higashino-eien-no-kioku-billboard-japan-book-hot-100-1236322097/" target="_blank" rel="noopener noreferrer">Keigo Higashino’s Posthumous ‘Eien no Kioku’ Tops Billboard Japan Book Hot 100 With Record Points for a Novel</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
