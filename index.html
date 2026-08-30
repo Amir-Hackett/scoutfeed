@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-30T12:22:50.075Z">
+<meta name="sf-version" content="2026-08-30T12:34:06.076Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -539,6 +539,7 @@ h1 .tld { color: var(--accent); }
    .sent keeps the --sent token, which is already 4.81:1 in light. */
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
+:root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
@@ -549,7 +550,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
-:root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
@@ -692,10 +692,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 8:22 AM &middot; 40 TODAY</p>
+	<p class="stats">UPDATED 8:34 AM &middot; 42 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">149</span><span class="sr-only"> — 149 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">65</span><span class="sr-only"> — 65 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">248</span><span class="sr-only"> — 248 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">400</span><span class="sr-only"> — 400 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">320</span><span class="sr-only"> — 320 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">414</span><span class="sr-only"> — 414 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">167</span><span class="sr-only"> — 167 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">480</span><span class="sr-only"> — 480 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">257</span><span class="sr-only"> — 257 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">18</span><span class="sr-only"> — 18 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">482</span><span class="sr-only"> — 482 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">149</span><span class="sr-only"> — 149 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">65</span><span class="sr-only"> — 65 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">248</span><span class="sr-only"> — 248 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">400</span><span class="sr-only"> — 400 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">320</span><span class="sr-only"> — 320 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">413</span><span class="sr-only"> — 413 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">167</span><span class="sr-only"> — 167 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">479</span><span class="sr-only"> — 479 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">259</span><span class="sr-only"> — 259 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">18</span><span class="sr-only"> — 18 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">482</span><span class="sr-only"> — 482 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -957,43 +957,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.hollywoodreporter.com/tv/tv-news/furious-renewed-season-2-hulu-1236683341/" target="_blank" rel="noopener noreferrer">‘Furious’ Renewed for Second Season at Hulu</a>
-		<p class="trend-meta"><span class="src">THE HOLLYWOOD REPORTER</span><span class="sep" aria-hidden="true">&middot;</span>"emmy rossum" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://bleacherreport.com/articles/25485591-new-nfl-rumors-reveal-bears-trade-candidate-ahead-2026-season" target="_blank" rel="noopener noreferrer">New NFL Rumors Reveal Bears Trade Candidate Ahead of 2026 Season</a>
+		<p class="trend-meta"><span class="src">BLEACHER REPORT</span><span class="sep" aria-hidden="true">&middot;</span>"gervon dexter" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.yahoo.com/entertainment/celebrity/articles/brittany-mahomes-rocks-denim-look-003914966.html" target="_blank" rel="noopener noreferrer">Brittany Mahomes rocks denim look for Patrick Mahomes&#39; 2026 Chiefs preseason game</a>
-		<p class="trend-meta"><span class="src">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"brittany mahomes denim outfit chiefs game" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.washingtonpost.com/national-security/2026/08/30/military-leaders-warn-hegseth-against-extending-iran-war-operations/" target="_blank" rel="noopener noreferrer">Military leaders warn Hegseth against extending Iran war operations</a>
+		<p class="trend-meta"><span class="src">THE WASHINGTON POST</span><span class="sep" aria-hidden="true">&middot;</span>"military operation" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://cowboystatedaily.com/2026/08/25/young-yellowstone-wolf-keeps-following-tourist-even-after-two-bear-spray-blasts/" target="_blank" rel="noopener noreferrer">&quot;It&#39;s Like His Dog!&quot;: Wolf Keeps Following Tourist Even After Two Bear Spray Blasts</a>
-		<p class="trend-meta"><span class="src">COWBOY STATE DAILY</span><span class="sep" aria-hidden="true">&middot;</span>"yellowstone wolf approaching hiker video" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.nytimes.com/interactive/2026/08/28/us/politics/billionaire-midterms-donors.html" target="_blank" rel="noopener noreferrer">Meet the Megadonors Who Have Poured $1.2 Billion Into the Midterms</a>
+		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"midterm election" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://timesofindia.indiatimes.com/sports/international-sports/sophie-cunninghams-nsfw-gesture-on-court-goes-viral-amid-indiana-fevers-plea-for-stunning-wnba-award/articleshow/133581274.cms" target="_blank" rel="noopener noreferrer">Sophie Cunningham’s NSFW gesture on court goes viral amid Indiana Fever’s plea for stunning WNBA award</a>
-		<p class="trend-meta"><span class="src">THE TIMES OF INDIA</span><span class="sep" aria-hidden="true">&middot;</span>"sophie cunningham pregame look wnba" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.nytimes.com/athletic/7546802/2026/08/29/connor-hellebuyck-trade-targets-nhl-jets/" target="_blank" rel="noopener noreferrer">Connor Hellebuyck trade fits: 8 teams that could make a deal with the Jets - The Athletic</a>
+		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"nhl" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sports.yahoo.com/articles/emi-martinez-makes-premier-league-112500944.html" target="_blank" rel="noopener noreferrer">Emi Martinez makes Premier League switch from Villa to Chelsea</a>
-		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"emi martinez" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.bbc.com/sport/football/live/cq8e3lw3rk3pt" target="_blank" rel="noopener noreferrer">Sunderland vs Fulham: Premier League preview, team news, stats &amp; head-to-head</a>
+		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"sunderland vs fulham" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.wistv.com/2026/08/29/watch-cpd-gives-details-after-officer-involved-shooting-near-garners-ferry-road/" target="_blank" rel="noopener noreferrer">Officer killed, another injured in Columbia shooting; SLED investigating</a>
-		<p class="trend-meta"><span class="src">WIS NEWS 10</span><span class="sep" aria-hidden="true">&middot;</span>"chris delong columbia sc" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.bbc.com/sport/football/articles/cd08gr3g3n7o" target="_blank" rel="noopener noreferrer">Leeds United vs Brentford predictions: Chris Sutton on Premier League game</a>
+		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"leeds vs brentford" &middot; 1000+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1061,6 +1061,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://dev.to/ragibcs/ddkaarphaail-bildder-bhetrer-jaadu-inttaarmiddiyyett-leyyaar-o-kyaashin-mekaanijm-building-magic-behind-159c" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:1b37d1b2-a469-11f1-b2de-6f9a81a1cdb5" data-srckey="france 24" data-cat="world" data-sent="0" data-ts="1788091717000" data-slug="europe ferry carrying more than passengers capsizes off northern cyprus">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Ferry carrying more than 250 passengers capsizes off northern Cyprus — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(279 55% 72%)">FRANCE 24</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T12:08:37.000Z">8:08 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Ferry carrying more than 250 passengers capsizes off northern Cyprus</h3>
+	<p class="snippet">A ferry carrying more than 250 passengers capsized off the coast of northern Cyprus on Sunday after taking on water, Turkish media reported. Rescue crews were dispatched to the scene, with footage showing passengers in life jackets in the water around the overturned vessel. Turkish media reported &quot;some fatalities&quot;, but no details were provided.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://s.france24.com/media/display/cf997f02-a469-11f1-b184-005056a97e36/w:1024/p:16x9/Kyrenia-Wikimedia-Commons.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Ferry carrying more than 250 passengers capsizes off northern Cyprus</h3>
+	<p class="about">A ferry carrying more than 250 passengers capsized off the coast of northern Cyprus on Sunday after taking on water, Turkish media reported. Rescue crews were dispatched to the scene, with footage showing passengers in life jackets in the water around the overturned vessel. Turkish media reported &quot;some fatalities&quot;, but no details were provided.</p>
+	
+	
+	<a class="more" href="https://www.france24.com/en/europe/20260830-ferry-carrying-more-than-250-passengers-capsizes-off-northern-cyprus" target="_blank" rel="noopener noreferrer">France 24 &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1406,6 +1429,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://cointelegraph.com/news/russia-sber-bank-bitcoin-ether-usdt-crypto-loans" target="_blank" rel="noopener noreferrer">Cointelegraph &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:4ebb89a6-a447-11f1-a901-75564c8cf08f" data-srckey="france 24" data-cat="world" data-sent="0" data-ts="1788082257000" data-slug="europe iceland rejects restarting accession talks referendum">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Iceland rejects restarting EU accession talks in referendum — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(279 55% 72%)">FRANCE 24</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T09:30:57.000Z">5:30 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Iceland rejects restarting EU accession talks in referendum</h3>
+	<p class="snippet">Icelanders voted to reject reopening EU membership talks, official results showed Sunday, dealing a blow to the government&#39;s push to join the bloc and handing a win to those who argued the country&#39;s prized fishing waters were too important to risk. The results will disappoint Brussels, which had hoped to welcome the Nordic country as a new member.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://s.france24.com/media/display/4688a00c-a447-11f1-90f2-005056a97e36/w:1024/p:16x9/2026-08-29T185525Z-1431504769-RC2H8NA5PMLX-RTRMADP-3-ICELAND-EU.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Iceland rejects restarting EU accession talks in referendum</h3>
+	<p class="about">Icelanders voted to reject reopening EU membership talks, official results showed Sunday, dealing a blow to the government&#39;s push to join the bloc and handing a win to those who argued the country&#39;s prized fishing waters were too important to risk. The results will disappoint Brussels, which had hoped to welcome the Nordic country as a new member.</p>
+	
+	
+	<a class="more" href="https://www.france24.com/en/europe/20260830-iceland-rejects-restarting-eu-accession-talks-in-referendum" target="_blank" rel="noopener noreferrer">France 24 &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -8023,7 +8069,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2686 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2684 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cx2z415w2gpo#0" data-cat="world" data-sent="0" data-slug="news articles cx2z415w2gpo" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 28 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/cx2z415w2gpo" target="_blank" rel="noopener noreferrer">Footage of Tibet floods isn&#39;t being shown in China - and we know little about victims there</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" data-cat="world" data-sent="0" data-slug="world live aug nepal tibet flash floods hundreds dead missing day three updates" hidden="until-found"><span class="ameta">GUARDIAN WORLD &middot; Aug 28 &middot; World</span><a href="https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" target="_blank" rel="noopener noreferrer">Search continues as number missing in Nepal-Tibet floods rises to 2,478 – as it happened</a></li>
@@ -10709,8 +10755,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://arstechnica.com/culture/2026/08/new-9-11-documentary-finds-hope-in-the-horror/" data-cat="tech" data-sent="0" data-slug="culture new documentary finds hope the horror" hidden="until-found"><span class="ameta">ARS TECHNICA &middot; Aug 20 &middot; Tech</span><a href="https://arstechnica.com/culture/2026/08/new-9-11-documentary-finds-hope-in-the-horror/" target="_blank" rel="noopener noreferrer">They survived 9/11; 25 years later, their bonds remain unbroken</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240674" data-cat="entertainment" data-sent="0" data-slug="news samurai harem asu yoichi manga gets new shot" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 20 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/news/2026-08-20/samurai-harem-asu-no-yoichi-manga-gets-new-1-shot/.240674" target="_blank" rel="noopener noreferrer">Samurai Harem: Asu no Yoichi Manga Gets New 1-Shot</a></li>
 <li class="arow" data-count="1" data-id="rss:e6b51de4-19e4-4e62-b493-aa1f8a4eb9b3" data-cat="games" data-sent="0" data-slug="articles malware disguised leaked gta copies are popping piracy sites" hidden="until-found"><span class="ameta">IGN &middot; Aug 20 &middot; Games</span><a href="https://www.ign.com/articles/malware-disguised-as-leaked-gta-6-copies-are-popping-up-on-piracy-sites" target="_blank" rel="noopener noreferrer">Malware Disguised as Leaked GTA 6 Copies Are Popping Up on Piracy Sites</a></li>
-<li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/markets/bitcoin-breaks-200-day-moving-average" data-cat="markets" data-sent="0" data-slug="markets bitcoin breaks day moving average" hidden="until-found"><span class="ameta">COINTELEGRAPH &middot; Aug 20 &middot; Markets</span><a href="https://cointelegraph.com/markets/bitcoin-breaks-200-day-moving-average" target="_blank" rel="noopener noreferrer">Bitcoin breaks above 200-day moving average for first time since November</a></li>
-<li class="arow" data-count="1" data-id="rss:US-EN-49673504" data-cat="sports" data-sent="0" data-slug="nfl story jets owner woody johnson buys stake aston martin team" hidden="until-found"><span class="ameta">ESPN &middot; Aug 20 &middot; Sports</span><a href="https://www.espn.com/nfl/story/_/id/49673504/jets-owner-woody-johnson-buys-stake-aston-martin-f1-team" target="_blank" rel="noopener noreferrer">Jets&#39; Johnson buys stake in Aston Martin F1 team</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
