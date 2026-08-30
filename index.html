@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-30T15:27:39.998Z">
+<meta name="sf-version" content="2026-08-30T16:15:31.218Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,20 +537,21 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
+:root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
+:root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
+:root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
-:root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
-:root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="hsl(156 55% 72%)"] { color: #176e52 !important; }
-:root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
@@ -560,7 +561,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(273 55% 72%)"] { color: #724890 !important; }
 :root[data-theme="light"] .meta [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
 :root[data-theme="light"] .meta [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
-:root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] .meta [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
 :root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
 :root[data-theme="light"] .meta [style*="hsl(89 55% 72%)"] { color: #49691b !important; }
@@ -707,10 +707,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 11:27 AM &middot; 147 TODAY</p>
+	<p class="stats">UPDATED 12:15 PM &middot; 152 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">165</span><span class="sr-only"> — 165 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">109</span><span class="sr-only"> — 109 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">245</span><span class="sr-only"> — 245 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">387</span><span class="sr-only"> — 387 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">294</span><span class="sr-only"> — 294 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">382</span><span class="sr-only"> — 382 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">147</span><span class="sr-only"> — 147 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">460</span><span class="sr-only"> — 460 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">256</span><span class="sr-only"> — 256 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">118</span><span class="sr-only"> — 118 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">437</span><span class="sr-only"> — 437 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">165</span><span class="sr-only"> — 165 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">245</span><span class="sr-only"> — 245 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">388</span><span class="sr-only"> — 388 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">297</span><span class="sr-only"> — 297 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">381</span><span class="sr-only"> — 381 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">146</span><span class="sr-only"> — 146 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">460</span><span class="sr-only"> — 460 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">256</span><span class="sr-only"> — 256 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">118</span><span class="sr-only"> — 118 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">437</span><span class="sr-only"> — 437 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -972,43 +972,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://bleacherreport.com/articles/25494016-curacao-vs-nevada-championship-set-2026-little-league-world-series-bracket" target="_blank" rel="noopener noreferrer">Curacao vs. Nevada Championship Set for 2026 Little League World Series Bracket</a>
-		<p class="trend-meta"><span class="src">BLEACHER REPORT</span><span class="sep" aria-hidden="true">&middot;</span>"little league world series games today" &middot; 5000+ searches</p>
+		<a class="trend-title" href="https://www.autoblog.com/news/winter-weather-warning-issued-for-8-inches-of-snow-and-40-mph-gusts-through-tuesday-morning" target="_blank" rel="noopener noreferrer">Winter Weather Warning Issued For 8 Inches Of Snow And 40 MPH Gusts Through Tuesday Morning</a>
+		<p class="trend-meta"><span class="src">AUTOBLOG</span><span class="sep" aria-hidden="true">&middot;</span>"snow" &middot; 5000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.minutouno.com/deportes/hostilidad-londres-la-reprobacion-del-publico-valentin-barco-su-debut-chelsea-n6315623" target="_blank" rel="noopener noreferrer">Hostility in London: Crowd Jeers Valentín Barco on His Chelsea Debut</a>
-		<p class="trend-meta"><span class="src">MINUTOUNO</span><span class="sep" aria-hidden="true">&middot;</span>"barco chelsea" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.fotmob.com/es/news/jlv7spgyq4v1oc2wtmk274u7_es-allegri-asegura-que-no-tiene-ningun-problema-con-fabregas" target="_blank" rel="noopener noreferrer">Allegri insists he has no problem with Fàbregas</a>
+		<p class="trend-meta"><span class="src">FOTMOB</span><span class="sep" aria-hidden="true">&middot;</span>"napoli - como" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/sport/football/live/ckn9wdgn90xgt" target="_blank" rel="noopener noreferrer">Telstar vs Ajax: Dutch Eredivisie stats &amp; head-to-head</a>
-		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"telstar vs ajax" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://news.xbox.com/en-us/2026/08/26/state-of-decay-3-closed-beta-playtests/" target="_blank" rel="noopener noreferrer">State of Decay 3: Closed Beta Playtests Will Open the Game to Even More Players This Year</a>
+		<p class="trend-meta"><span class="src">XBOX WIRE</span><span class="sep" aria-hidden="true">&middot;</span>"state of decay 3 closed beta" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://nfltraderumors.co/trade-jaguars-trading-te-hunter-long-to-cardinals/" target="_blank" rel="noopener noreferrer">TRADE: Jaguars Trading TE Hunter Long To Cardinals</a>
-		<p class="trend-meta"><span class="src">NFLTRADERUMORS.CO</span><span class="sep" aria-hidden="true">&middot;</span>"hunter long" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://vsin.com/tennis/us-open-picks-tennis-best-bets-and-predictions-for-sunday-august-30/" target="_blank" rel="noopener noreferrer">US Open Picks: Tennis best bets and predictions for Sunday, August 30</a>
+		<p class="trend-meta"><span class="src">VSIN</span><span class="sep" aria-hidden="true">&middot;</span>"sho shimabukuro" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.profootballrumors.com/2026/08/bills-to-release-s-geno-stone" target="_blank" rel="noopener noreferrer">Bills To Release S Geno Stone</a>
-		<p class="trend-meta"><span class="src">NFL RUMORS - PROFOOTBALLRUMORS.COM</span><span class="sep" aria-hidden="true">&middot;</span>"geno stone" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://futbolme.com/resultados-directo/partido/sd-huesca-b-cd-subiza-cendea-de-galar/1368995/enfrentamientos" target="_blank" rel="noopener noreferrer">Huesca B vs CD Subiza from 301-THIRD FEDERATION CLUBS - Friendlies</a>
+		<p class="trend-meta"><span class="src">FUTBOLME</span><span class="sep" aria-hidden="true">&middot;</span>"alfonso herrero" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.n-tv.de/leute/Fall-Collien-Fernandes-und-Christian-Ulmen-New-York-Times-enthuellt-neue-Details-id31227987.html" target="_blank" rel="noopener noreferrer">New York Times Reveals New Details in the Ulmen Case</a>
-		<p class="trend-meta"><span class="src">N-TV.DE</span><span class="sep" aria-hidden="true">&middot;</span>"collien fernandes" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.bbc.com/sport/football/live/c6n8my5mlxx0t" target="_blank" rel="noopener noreferrer">Mansfield Town vs Luton Town: League One stats &amp; head-to-head</a>
+		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"mansfield town vs luton town" &middot; 200+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1030,6 +1030,121 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.foxnews.com/politics/republicans-tighten-screws-sherrill-noncitizen-voter-probe-enters-new-phase" target="_blank" rel="noopener noreferrer">Fox News Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-picks*" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788106526103" data-slug="tennis story page picks open expert alcaraz sabalenka gauff">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="US Open experts&#39; picks: Who will win? — flip for details">
+	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T16:15:26.103Z">12:15 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">US Open experts&#39; picks: Who will win?</h3>
+	<p class="snippet">Americans are hoping to seize the opportunity at the US Open, with Coco Gauff, Jessica Pegula, Ben Shelton and others all in title contention.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0830%2Fr1708771_1296x729_16-9.jpg&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0830%2Fr1708771_1296x729_16-9.jpg&amp;w=240 240w, https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0830%2Fr1708771_1296x729_16-9.jpg&amp;w=340 340w, https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0830%2Fr1708771_1296x729_16-9.jpg&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">US Open experts&#39; picks: Who will win?</h3>
+	<p class="about">Americans are hoping to seize the opportunity at the US Open, with Coco Gauff, Jessica Pegula, Ben Shelton and others all in title contention.</p>
+	
+	
+	<a class="more" href="https://www.espn.com/tennis/story/_/page/picks*/us-open-2026-expert-picks-alcaraz-sabalenka-gauff" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.polygon.com/patch-notes-gta-6-the-witcher-3-gamescom/" data-srckey="polygon" data-cat="games" data-sent="0" data-ts="1788105614000" data-slug="patch notes gta the witcher gamescom">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Maybe It&#39;s a Good Thing AAA Games Take 13 Years to Make — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T16:00:14.000Z">12:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">Maybe It&#39;s a Good Thing AAA Games Take 13 Years to Make</h3>
+	<p class="snippet">Gamescom may have been overshadowed by GTA 6, but The Witcher 3 shows the other side of the blockbuster coin</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/the-witcher-3-songs-of-the-past-key-art-cropped.png?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/the-witcher-3-songs-of-the-past-key-art-cropped.png?w=240 240w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/the-witcher-3-songs-of-the-past-key-art-cropped.png?w=340 340w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/the-witcher-3-songs-of-the-past-key-art-cropped.png?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Maybe It&#39;s a Good Thing AAA Games Take 13 Years to Make</h3>
+	<p class="about">Gamescom may have been overshadowed by GTA 6, but The Witcher 3 shows the other side of the blockbuster coin</p>
+	
+	
+	<a class="more" href="https://www.polygon.com/patch-notes-gta-6-the-witcher-3-gamescom/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241134" data-srckey="anime news network" data-cat="entertainment" data-sent="0" data-ts="1788103547000" data-slug="news medalist anime film teaser reveals february opening">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Medalist Anime Film&#39;s Teaser Reveals February 19 Opening — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(269 55% 72%)">ANIME NEWS NETWORK</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T15:25:47.000Z">11:25 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Medalist Anime Film&#39;s Teaser Reveals February 19 Opening</h3>
+	<p class="snippet">Film takes place after TV anime&#39;s 2nd season</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.animenewsnetwork.com/thumbnails/crop600x315gFP/youtube/FacTE-pO9dI.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Medalist Anime Film&#39;s Teaser Reveals February 19 Opening</h3>
+	<p class="about">Film takes place after TV anime&#39;s 2nd season</p>
+	
+	
+	<a class="more" href="https://www.animenewsnetwork.com/news/2026-08-30/medalist-anime-film-teaser-reveals-february-19-opening/.241134" target="_blank" rel="noopener noreferrer">Anime News Network &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://kotaku.com/?p=2000729656" data-srckey="kotaku" data-cat="games" data-sent="0" data-ts="1788103524000" data-slug="the abominations ate cne this year">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The Abominations I Ate At The CNE This Year — flip for details">
+	<div class="meta"><span class="src" style="color:#a3e635">KOTAKU</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T15:25:24.000Z">11:25 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">The Abominations I Ate At The CNE This Year</h3>
+	<p class="snippet">As the annual carnival overlooks the failures of Ontario leadership, the most upsetting news is regarding the ice cream s’more Oreo crusted fried chicken sandwich</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://kotaku.com/app/uploads/2026/08/CNEMario-1280x833.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">The Abominations I Ate At The CNE This Year</h3>
+	<p class="about">As the annual carnival overlooks the failures of Ontario leadership, the most upsetting news is regarding the ice cream s’more Oreo crusted fried chicken sandwich</p>
+	
+	
+	<a class="more" href="https://kotaku.com/the-abominations-i-ate-at-the-cne-this-year-2000729656" target="_blank" rel="noopener noreferrer">Kotaku &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.polygon.com/the-witcher-4-physical-release/" data-srckey="polygon" data-cat="games" data-sent="0" data-ts="1788103513000" data-slug="the witcher physical release">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The Witcher 4 Will Still Get A Physical Release, Even Though It&#39;s Launching In 2028 — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T15:25:13.000Z">11:25 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">The Witcher 4 Will Still Get A Physical Release, Even Though It&#39;s Launching In 2028</h3>
+	<p class="snippet">CD Projekt is planning a The Witcher 4 physical release, even though it admits it has &quot;no influence&quot; over PS5 and Xbox disc production</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/ciri-witcher-4.png?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/ciri-witcher-4.png?w=240 240w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/ciri-witcher-4.png?w=340 340w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/ciri-witcher-4.png?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">The Witcher 4 Will Still Get A Physical Release, Even Though It&#39;s Launching In 2028</h3>
+	<p class="about">CD Projekt is planning a The Witcher 4 physical release, even though it admits it has &quot;no influence&quot; over PS5 and Xbox disc production</p>
+	
+	
+	<a class="more" href="https://www.polygon.com/the-witcher-4-physical-release/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -12385,7 +12500,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2498 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2493 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cx2z415w2gpo#0" data-cat="world" data-sent="0" data-slug="news articles cx2z415w2gpo" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 28 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/cx2z415w2gpo" target="_blank" rel="noopener noreferrer">Footage of Tibet floods isn&#39;t being shown in China - and we know little about victims there</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" data-cat="world" data-sent="0" data-slug="world live aug nepal tibet flash floods hundreds dead missing day three updates" hidden="until-found"><span class="ameta">GUARDIAN WORLD &middot; Aug 28 &middot; World</span><a href="https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" target="_blank" rel="noopener noreferrer">Search continues as number missing in Nepal-Tibet floods rises to 2,478 – as it happened</a></li>
@@ -14880,11 +14995,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2241834/season-two-of-netflixs-cyberpunk-2077-anime-streams-october-20/" data-cat="tech" data-sent="0" data-slug="season two netflixs cyberpunk anime streams october" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 21 &middot; Tech</span><a href="https://www.engadget.com/2241834/season-two-of-netflixs-cyberpunk-2077-anime-streams-october-20/" target="_blank" rel="noopener noreferrer">Season two of Netflix&#39;s Cyberpunk 2077 anime streams October 20</a></li>
 <li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236840149" data-cat="entertainment" data-sent="0" data-slug="news novak djokovic the wolf winter documentary" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 21 &middot; Entertainment</span><a href="https://variety.com/2026/tv/news/novak-djokovic-the-wolf-in-winter-documentary-1236840149/" target="_blank" rel="noopener noreferrer">‘Novak Djokovic: The Wolf in Winter’ Doc Director Unpacks the Tennis Champ’s Resilience and His Retirement</a></li>
 <li class="arow" data-count="1" data-id="rss:https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders" data-cat="tech" data-sent="0" data-slug="blog bringing claude mythos more defenders" hidden="until-found"><span class="ameta">HACKER NEWS &middot; Aug 21 &middot; Tech</span><a href="https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders" target="_blank" rel="noopener noreferrer">Bringing the cybersecurity capabilities of Claude Mythos 5 to more defenders</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/czdm9pjd0ero#1" data-cat="sports" data-sent="0" data-slug="sport football articles czdm9pjd0ero" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 21 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/football/articles/czdm9pjd0ero" target="_blank" rel="noopener noreferrer">Inter complete £30m deal for Liverpool&#39;s Jones</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.xxlmag.com/?p=1086508" data-cat="music" data-sent="0" data-slug="cops foolio killer sean gathright interrogation video" hidden="until-found"><span class="ameta">XXL &middot; Aug 21 &middot; Music</span><a href="https://www.xxlmag.com/cops-foolio-killer-sean-gathright-interrogation-video/" target="_blank" rel="noopener noreferrer">Cops Throw Foolio Killer Sean Gathright on the Floor in Footage</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.fiercehealthcare.com/f784e0cb-542f-42cb-89b5-52bd0054b588" data-cat="healthcare" data-sent="0" data-slug="payers look inside expanded partnership between scan and costco" hidden="until-found"><span class="ameta">FIERCE HEALTHCARE &middot; Aug 21 &middot; Healthcare</span><a href="https://www.fiercehealthcare.com/payers/look-inside-expanded-partnership-between-scan-and-costco" target="_blank" rel="noopener noreferrer">A look inside the expanded partnership between SCAN and Costco</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.fiercehealthcare.com/b16c91a4-1681-493f-8905-5fa12dea31ae" data-cat="healthcare" data-sent="0" data-slug="payers employers brace another year healthcare cost increases" hidden="until-found"><span class="ameta">FIERCE HEALTHCARE &middot; Aug 21 &middot; Healthcare</span><a href="https://www.fiercehealthcare.com/payers/employers-brace-another-year-healthcare-cost-increases" target="_blank" rel="noopener noreferrer">Employers brace for another year of healthcare cost increases</a></li>
-<li class="arow" data-count="1" data-id="rss:108352899" data-cat="markets" data-sent="0" data-slug="supreme court trump white house ballroom html" hidden="until-found"><span class="ameta">CNBC &middot; Aug 21 &middot; Markets</span><a href="https://www.cnbc.com/2026/08/21/supreme-court-trump-white-house-ballroom.html" target="_blank" rel="noopener noreferrer">Supreme Court allows Trump to continue White House ballroom construction for now</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
