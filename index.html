@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-30T08:41:31.827Z">
+<meta name="sf-version" content="2026-08-30T09:37:48.608Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,11 +537,15 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
+:root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
+:root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
+:root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
+:root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
+:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
-:root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
-:root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
@@ -549,18 +553,14 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
-:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] .meta [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
 :root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
-:root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
-:root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
-:root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
 :root[data-theme="light"] .meta [style*="hsl(243 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
@@ -692,10 +692,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 4:41 AM &middot; 10 TODAY</p>
+	<p class="stats">UPDATED 5:37 AM &middot; 16 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">146</span><span class="sr-only"> — 146 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">65</span><span class="sr-only"> — 65 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">246</span><span class="sr-only"> — 246 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">400</span><span class="sr-only"> — 400 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">321</span><span class="sr-only"> — 321 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">413</span><span class="sr-only"> — 413 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">171</span><span class="sr-only"> — 171 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">484</span><span class="sr-only"> — 484 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">255</span><span class="sr-only"> — 255 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">19</span><span class="sr-only"> — 19 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">480</span><span class="sr-only"> — 480 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">147</span><span class="sr-only"> — 147 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">65</span><span class="sr-only"> — 65 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">247</span><span class="sr-only"> — 247 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">401</span><span class="sr-only"> — 401 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">321</span><span class="sr-only"> — 321 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">412</span><span class="sr-only"> — 412 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">170</span><span class="sr-only"> — 170 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">482</span><span class="sr-only"> — 482 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">256</span><span class="sr-only"> — 256 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">19</span><span class="sr-only"> — 19 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">480</span><span class="sr-only"> — 480 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -879,21 +879,21 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact rail-art has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788022162" data-srckey="al jazeera" data-cat="world" data-sent="0" data-ts="1788029779000" data-slug="news judge rules against trumps effort deport pro palestinian students">
+<article class="card compact rail-art has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:e72e673a-a44c-11f1-9d4e-75564c8cf08f" data-srckey="france 24" data-cat="world" data-sent="0" data-ts="1788080113000" data-slug="french presidential campaign heats">
 <div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="US judge rules against Trump’s effort to deport pro-Palestinian students — flip for details">
-	<div class="meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T18:56:19.000Z">2:56 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
-	<h3 class="title">US judge rules against Trump’s effort to deport pro-Palestinian students</h3>
-	<p class="snippet">A federal judge criticised the Trump government for attempting to infringe upon foreign students&#39; rights to free speech.</p>
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="French Presidential campaign heats up — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(279 55% 72%)">FRANCE 24</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T08:55:13.000Z">4:55 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">French Presidential campaign heats up</h3>
+	<p class="snippet">There are just eight months to go before France’s presidential election, with the first round scheduled for April 18. The campaign is slowly heating up, with several political gatherings taking place this weekend. The Socialist Party wrapped up a two-day gathering on Saturday with a speech from party leader Olivier Faure, who has yet to officially announce his candidacy. Meanwhile, far-right…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://www.aljazeera.com/wp-content/uploads/2026/05/AP25294539860856-1778876196.jpg?resize=1920%2C1440" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+	<img class="thumb" src="https://s.france24.com/media/display/5bf85d84-a450-11f1-8d69-005056bf30b7/w:1024/p:16x9/france-debat.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
-	<h3 class="title">US judge rules against Trump’s effort to deport pro-Palestinian students</h3>
-	<p class="about">A federal judge criticised the Trump government for attempting to infringe upon foreign students&#39; rights to free speech.</p>
+	<h3 class="title">French Presidential campaign heats up</h3>
+	<p class="about">There are just eight months to go before France’s presidential election, with the first round scheduled for April 18. The campaign is slowly heating up, with several political gatherings taking place this weekend. The Socialist Party wrapped up a two-day gathering on Saturday with a speech from party leader Olivier Faure, who has yet to officially announce his candidacy. Meanwhile, far-right…</p>
 	
 	
-	<a class="more" href="https://www.aljazeera.com/news/2026/8/29/us-judge-rules-against-trumps-effort-to-deport-pro-palestinian-students?traffic_source=rss" target="_blank" rel="noopener noreferrer">Al Jazeera &#8599;</a>
+	<a class="more" href="https://www.france24.com/en/french-presidential-campaign-heats-up" target="_blank" rel="noopener noreferrer">France 24 &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -957,43 +957,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.si.com/betting-promo/fanduel-promo-code-get-up-to-350-bonus-for-memphis-vs-unlv-cfb-kickoff-01m1709bsgnt" target="_blank" rel="noopener noreferrer">FanDuel Promo Code: Get up to $350 Bonus for Memphis vs. UNLV, CFB Kickoff</a>
-		<p class="trend-meta"><span class="src">SPORTS ILLUSTRATED</span><span class="sep" aria-hidden="true">&middot;</span>"fanduel" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.nytimes.com/athletic/7535408/2026/08/27/us-open-bracket-2026-analysis/" target="_blank" rel="noopener noreferrer">U.S. Open bracket analysis: Carlos Alcaraz gets a nightmare start, Aryna Sabalenka faces odyssey</a>
+		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"draftkings odds" &middot; 10000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.rotowire.com/news/alberta-betting-apps-are-now-live-download-the-best-alberta-betting-apps-130727" target="_blank" rel="noopener noreferrer">Best Alberta Betting Apps: Betting Apps Now Live in Alberta</a>
-		<p class="trend-meta"><span class="src">ROTOWIRE</span><span class="sep" aria-hidden="true">&middot;</span>"draftkings sportsbook" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.espn.com/nfl/story/_/id/49740505/nfl-renews-draftkings-fanduel-deals-adds-fanatics" target="_blank" rel="noopener noreferrer">NFL renews DraftKings, FanDuel deals, adds Fanatics</a>
+		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"fanduel vs draftkings" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.fool.com/investing/2026/08/30/the-most-active-stocks-today-include-tesla-nvidia/" target="_blank" rel="noopener noreferrer">The Most Active Stocks Today Include Tesla, Nvidia, and Apple: Here&#39;s My Contrarian Take on All Three</a>
-		<p class="trend-meta"><span class="src">THE MOTLEY FOOL</span><span class="sep" aria-hidden="true">&middot;</span>"themotleyfool" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.si.com/betting-promo/fanduel-promo-code-get-up-to-350-bonus-for-memphis-vs-unlv-cfb-kickoff-01m1709bsgnt" target="_blank" rel="noopener noreferrer">FanDuel Promo Code: Get up to $350 Bonus for Memphis vs. UNLV, CFB Kickoff</a>
+		<p class="trend-meta"><span class="src">SPORTS ILLUSTRATED</span><span class="sep" aria-hidden="true">&middot;</span>"fanduel bonus code" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.foxsports.com/stories/betting/draftkings-promo-code-bet-5-get-200-college-football-week-0-win-lose" target="_blank" rel="noopener noreferrer">DraftKings Promo Code: Bet $5, Get $200 on College Football Week 0 Win or Lose</a>
-		<p class="trend-meta"><span class="src">FOX SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"draftkings promo code" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.silverandblackpride.com/las-vegas-raiders-news/137566/raiders-news-tight-ends-brock-bowers-michael-mayer-top-position" target="_blank" rel="noopener noreferrer">Raiders news: Tight ends get love, not so much for DTs</a>
+		<p class="trend-meta"><span class="src">SILVER AND BLACK PRIDE</span><span class="sep" aria-hidden="true">&middot;</span>"draftkings fantasy" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.si.com/betting-promo/bet365-bonus-code-get-365-in-bonus-bets-for-memphis-vs-unlv-on-saturday-01m170j8nxkf" target="_blank" rel="noopener noreferrer">bet365 Bonus Code: Get $365 in Bonus Bets for Memphis vs. UNLV on Saturday</a>
-		<p class="trend-meta"><span class="src">SPORTS ILLUSTRATED</span><span class="sep" aria-hidden="true">&middot;</span>"bet 365" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.cbssports.com/betting/news/betmgm-bonus-code-cbssports-get-1500-in-bonus-bets-for-week-0-college-football-unlv-memphis-on-saturday/" target="_blank" rel="noopener noreferrer">BetMGM bonus code CBSSPORTS: Get $1,500 in bonus bets for Week 0 college football, UNLV-Memphis on Saturday</a>
+		<p class="trend-meta"><span class="src">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"bet mgm" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/news/articles/c70le8ed1plo" target="_blank" rel="noopener noreferrer">Iceland EU referendum on a knife edge as counting continues</a>
-		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"iceland" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.rotowire.com/news/alberta-betting-apps-are-now-live-download-the-best-alberta-betting-apps-130727" target="_blank" rel="noopener noreferrer">Best Alberta Betting Apps: Betting Apps Now Live in Alberta</a>
+		<p class="trend-meta"><span class="src">ROTOWIRE</span><span class="sep" aria-hidden="true">&middot;</span>"betmgm sportsbook" &middot; 200+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1015,6 +1015,144 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.polygon.com/anno-117-hippodrome-dlc/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://the-decoder.com/?p=39586" data-srckey="the decoder" data-cat="ai" data-sent="0" data-ts="1788080719000" data-slug="anthropics claude code limit change raise paper but cut practice">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Anthropic&#39;s Claude Code limit change is a raise on paper but a cut in practice — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(45 55% 72%)">THE DECODER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T09:05:19.000Z">5:05 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Anthropic&#39;s Claude Code limit change is a raise on paper but a cut in practice</h3>
+	<p class="snippet">Anthropic is effectively cutting Claude Code&#39;s weekly usage limits by 17 percent. A temporary 50 percent boost expires on September 14 and will be replaced by a permanent 25 percent increase. Anthropic promises more control and transparency over usage in return. The article Anthropic&#39;s Claude Code limit change is a raise on paper but a cut in practice appeared first on The Decoder.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://the-decoder.com/wp-content/uploads/2026/08/anthropic_claude.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Anthropic&#39;s Claude Code limit change is a raise on paper but a cut in practice</h3>
+	<p class="about">Anthropic is effectively cutting Claude Code&#39;s weekly usage limits by 17 percent. A temporary 50 percent boost expires on September 14 and will be replaced by a permanent 25 percent increase. Anthropic promises more control and transparency over usage in return. The article Anthropic&#39;s Claude Code limit change is a raise on paper but a cut in practice appeared first on The Decoder.</p>
+	
+	
+	<a class="more" href="https://the-decoder.com/anthropics-claude-code-limit-change-is-a-raise-on-paper-but-a-cut-in-practice/" target="_blank" rel="noopener noreferrer">The Decoder &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 h2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:6a91cdac3a017c65cc370966" data-srckey="wired" data-cat="tech" data-sent="0" data-ts="1788080400000" data-slug="story scientists create littlest big bang study universe origins">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Scientists Create the Littlest Big Bang to Study the Universe&#39;s Origins — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(207 55% 72%)">WIRED</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T09:00:00.000Z">5:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Scientists Create the Littlest Big Bang to Study the Universe&#39;s Origins</h3>
+	<p class="snippet">The discovery redefines how large atoms need to be to produce the extreme state of matter found in the early universe.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media.wired.com/photos/6a91cdabbb3a85e785f50a72/master/pass/2191305242" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Scientists Create the Littlest Big Bang to Study the Universe&#39;s Origins</h3>
+	<p class="about">The discovery redefines how large atoms need to be to produce the extreme state of matter found in the early universe.</p>
+	
+	
+	<a class="more" href="https://www.wired.com/story/scientists-create-littlest-big-bang-to-study-universe-origins/" target="_blank" rel="noopener noreferrer">Wired &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 h2 has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:e72e673a-a44c-11f1-9d4e-75564c8cf08f" data-srckey="france 24" data-cat="world" data-sent="0" data-ts="1788080113000" data-slug="french presidential campaign heats">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="French Presidential campaign heats up — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(279 55% 72%)">FRANCE 24</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T08:55:13.000Z">4:55 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">French Presidential campaign heats up</h3>
+	<p class="snippet">There are just eight months to go before France’s presidential election, with the first round scheduled for April 18. The campaign is slowly heating up, with several political gatherings taking place this weekend. The Socialist Party wrapped up a two-day gathering on Saturday with a speech from party leader Olivier Faure, who has yet to officially announce his candidacy. Meanwhile, far-right…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://s.france24.com/media/display/5bf85d84-a450-11f1-8d69-005056bf30b7/w:1024/p:16x9/france-debat.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">French Presidential campaign heats up</h3>
+	<p class="about">There are just eight months to go before France’s presidential election, with the first round scheduled for April 18. The campaign is slowly heating up, with several political gatherings taking place this weekend. The Socialist Party wrapped up a two-day gathering on Saturday with a speech from party leader Olivier Faure, who has yet to officially announce his candidacy. Meanwhile, far-right…</p>
+	
+	
+	<a class="more" href="https://www.france24.com/en/french-presidential-campaign-heats-up" target="_blank" rel="noopener noreferrer">France 24 &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/rr2irk" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1788079836000" data-slug="posts release">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Gram Editor 3.3.0 Released — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T08:50:36.000Z">4:50 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">Gram Editor 3.3.0 Released</h3>
+	<p class="snippet">Gram release 3.3.0</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Gram Editor 3.3.0 Released</h3>
+	<p class="about">Gram release 3.3.0</p>
+	
+	
+	<a class="more" href="https://gram-editor.com/posts/release-3.3.0/" target="_blank" rel="noopener noreferrer">Lobsters &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235614614" data-srckey="rolling stone music" data-cat="music" data-sent="0" data-ts="1788079698000" data-slug="music news olivia rodrigo stevie nicks sarah mclachlan alanis perform">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Olivia Rodrigo Delivers Magic With Stevie Nicks, Sarah McLachlan, Alanis Morissette at Daisy Chain — flip for details">
+	<div class="meta"><span class="src" style="color:#fb7185">ROLLING STONE MUSIC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T08:48:18.000Z">4:48 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
+	<h3 class="title">Olivia Rodrigo Delivers Magic With Stevie Nicks, Sarah McLachlan, Alanis Morissette at Daisy Chain</h3>
+	<p class="snippet">Rodrigo capped her inaugural all-women festival with a stunning headlining set — and invited her heroes to the stage</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Olivia Rodrigo Delivers Magic With Stevie Nicks, Sarah McLachlan, Alanis Morissette at Daisy Chain</h3>
+	<p class="about">Rodrigo capped her inaugural all-women festival with a stunning headlining set — and invited her heroes to the stage</p>
+	
+	
+	<a class="more" href="https://www.rollingstone.com/music/music-news/olivia-rodrigo-stevie-nicks-sarah-mclachlan-alanis-perform-1235614614/" target="_blank" rel="noopener noreferrer">Rolling Stone Music &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236846714" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788078715000" data-slug="film news sea glass review">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘Sea of Glass’ Review: A Widow’s Coastal Healing Retreat Turns Into a Stately, Moody Greek Tragedy — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T08:31:55.000Z">4:31 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">‘Sea of Glass’ Review: A Widow’s Coastal Healing Retreat Turns Into a Stately, Moody Greek Tragedy</h3>
+	<p class="snippet">There are Greek waves aplenty lapping at the forlorn beachside setting of “Sea of Glass,” though they’re not especially weird ones. Amid a national cinema that has become internationally recognized for perverse plotting and deadpan absurdism, writer-director Alexis Alexiou’s third feature stands out for its stark storytelling and earnest emotional intensity. There is more than […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/06/Sea-of-Glass-THINGS-GO-BAD-16_9.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/06/Sea-of-Glass-THINGS-GO-BAD-16_9.jpg?w=240 240w, https://variety.com/wp-content/uploads/2026/06/Sea-of-Glass-THINGS-GO-BAD-16_9.jpg?w=340 340w, https://variety.com/wp-content/uploads/2026/06/Sea-of-Glass-THINGS-GO-BAD-16_9.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">‘Sea of Glass’ Review: A Widow’s Coastal Healing Retreat Turns Into a Stately, Moody Greek Tragedy</h3>
+	<p class="about">There are Greek waves aplenty lapping at the forlorn beachside setting of “Sea of Glass,” though they’re not especially weird ones. Amid a national cinema that has become internationally recognized for perverse plotting and deadpan absurdism, writer-director Alexis Alexiou’s third feature stands out for its stark storytelling and earnest emotional intensity. There is more than […]</p>
+	
+	
+	<a class="more" href="https://variety.com/2026/film/news/sea-of-glass-review-1236846714/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1534,18 +1672,18 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact no-snippet" style="--rail:#34d399" data-count="1" data-id="rss:https://www.dwarkesh.com/p/openai-huggingface" data-srckey="hacker news" data-cat="tech" data-sent="0" data-ts="1788047004000" data-slug="openai huggingface">
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.dwarkesh.com/p/openai-huggingface" data-srckey="hacker news" data-cat="tech" data-sent="0" data-ts="1788047004000" data-slug="openai huggingface">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The Rise and Fall of Agent Civilizations — flip for details">
 	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T23:43:24.000Z">7:43 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
 	<h3 class="title">The Rise and Fall of Agent Civilizations</h3>
-	
+	<p class="snippet">The whole OpenAI/Hugging Face story in plain English</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://substackcdn.com/image/fetch/$s_!UZLs!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F30186662-5010-4c83-a672-e33c53deeaa3_1080x669.webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">The Rise and Fall of Agent Civilizations</h3>
-	<p class="about">No summary in this feed — follow the link for the story.</p>
+	<p class="about">The whole OpenAI/Hugging Face story in plain English</p>
 	
 	
 	<a class="more" href="https://www.dwarkesh.com/p/openai-huggingface" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
@@ -7264,7 +7402,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2718 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2712 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cx2z415w2gpo#0" data-cat="world" data-sent="0" data-slug="news articles cx2z415w2gpo" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 28 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/cx2z415w2gpo" target="_blank" rel="noopener noreferrer">Footage of Tibet floods isn&#39;t being shown in China - and we know little about victims there</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" data-cat="world" data-sent="0" data-slug="world live aug nepal tibet flash floods hundreds dead missing day three updates" hidden="until-found"><span class="ameta">GUARDIAN WORLD &middot; Aug 28 &middot; World</span><a href="https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" target="_blank" rel="noopener noreferrer">Search continues as number missing in Nepal-Tibet floods rises to 2,478 – as it happened</a></li>
@@ -9978,12 +10116,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://lithub.com/how-orchids-inspired-the-groundbreaking-work-of-charles-darwin/" data-cat="tech" data-sent="0" data-slug="how orchids inspired the groundbreaking work charles darwin" hidden="until-found"><span class="ameta">HACKER NEWS &middot; Aug 20 &middot; Tech</span><a href="https://lithub.com/how-orchids-inspired-the-groundbreaking-work-of-charles-darwin/" target="_blank" rel="noopener noreferrer">How orchids inspired the work of Charles Darwin</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235611936" data-cat="music" data-sent="0" data-slug="music features songs titled after band names wednesday townies" hidden="until-found"><span class="ameta">ROLLING STONE MUSIC &middot; Aug 20 &middot; Music</span><a href="https://www.rollingstone.com/music/music-features/songs-titled-after-band-names-wednesday-townies-1235611936/" target="_blank" rel="noopener noreferrer">Wednesday Have a Song Called ‘Townies.’ Townies Have One Called ‘Wednesday.’ This Is a Thing</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/cricket/videos/c62xjkyd7dzo#0" data-cat="sports" data-sent="0" data-slug="sport cricket videos c62xjkyd7dzo" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 20 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/cricket/videos/c62xjkyd7dzo" target="_blank" rel="noopener noreferrer">Brook shines as England take control against Pakistan</a></li>
-<li class="arow" data-count="1" data-id="rss:https://techcrunch.com/?p=3155082" data-cat="tech" data-sent="0" data-slug="google gives publishers new way fight driven traffic losses" hidden="until-found"><span class="ameta">TECHCRUNCH &middot; Aug 20 &middot; Tech</span><a href="https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/" target="_blank" rel="noopener noreferrer">Google gives publishers a new way to fight AI-driven traffic losses</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.xxlmag.com/?p=1086457" data-cat="music" data-sent="0" data-slug="blueface nearly knocked street brawl" hidden="until-found"><span class="ameta">XXL &middot; Aug 20 &middot; Music</span><a href="https://www.xxlmag.com/blueface-nearly-knocked-street-brawl/" target="_blank" rel="noopener noreferrer">Blueface Nearly Gets Knocked Out in Wild Street Brawl</a></li>
-<li class="arow" data-count="1" data-id="rss:WP-MKTW-0005191032" data-cat="markets" data-sent="0" data-slug="story sports betting build wealth becoming the new american dream 1e29b728" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 20 &middot; Markets</span><a href="https://www.marketwatch.com/story/sports-betting-to-build-wealth-is-becoming-the-new-american-dream-1e29b728?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Sports betting to build wealth is becoming the new American dream</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.billboard.com/?p=1236321116" data-cat="music" data-sent="0" data-slug="music news bunnie baddie summer after jelly roll divorce" hidden="until-found"><span class="ameta">BILLBOARD &middot; Aug 20 &middot; Music</span><a href="https://www.billboard.com/music/music-news/bunnie-xo-baddie-bunnie-summer-after-jelly-roll-divorce-1236321116/" target="_blank" rel="noopener noreferrer">Bunnie Xo Is Having a ‘Baddie Bunnie Summer’ After Jelly Roll Divorce: ‘I’m Just Thriving’</a></li>
-<li class="arow" data-count="1" data-id="rss:US-EN-49672671" data-cat="sports" data-sent="0" data-slug="nfl story players pulled fight filled giants dolphins practice" hidden="until-found"><span class="ameta">ESPN &middot; Aug 20 &middot; Sports</span><a href="https://www.espn.com/nfl/story/_/id/49672671/players-pulled-fight-filled-giants-dolphins-practice" target="_blank" rel="noopener noreferrer">Players pulled from fight-filled Giants-Fins practice</a></li>
-<li class="arow" data-count="1" data-id="rss:US-EN-49672773" data-cat="sports" data-sent="0" data-slug="college football story sources oklahoma brent venables agree new year contract" hidden="until-found"><span class="ameta">ESPN &middot; Aug 20 &middot; Sports</span><a href="https://www.espn.com/college-football/story/_/id/49672773/sources-oklahoma-brent-venables-agree-new-6-year-contract" target="_blank" rel="noopener noreferrer">Sources: OU, Venables reach new 6-year contract</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
