@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-30T03:23:48.332Z">
+<meta name="sf-version" content="2026-08-30T05:22:20.449Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,6 +537,7 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
@@ -547,7 +548,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
-:root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] .meta [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
 :root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
@@ -692,10 +692,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 11:23 PM &middot; 261 TODAY</p>
+	<p class="stats">UPDATED 1:22 AM &middot; 2 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">146</span><span class="sr-only"> — 146 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">66</span><span class="sr-only"> — 66 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">245</span><span class="sr-only"> — 245 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">399</span><span class="sr-only"> — 399 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">321</span><span class="sr-only"> — 321 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">414</span><span class="sr-only"> — 414 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">171</span><span class="sr-only"> — 171 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">485</span><span class="sr-only"> — 485 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">252</span><span class="sr-only"> — 252 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">19</span><span class="sr-only"> — 19 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">482</span><span class="sr-only"> — 482 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">146</span><span class="sr-only"> — 146 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">66</span><span class="sr-only"> — 66 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">244</span><span class="sr-only"> — 244 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">400</span><span class="sr-only"> — 400 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">321</span><span class="sr-only"> — 321 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">414</span><span class="sr-only"> — 414 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">171</span><span class="sr-only"> — 171 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">485</span><span class="sr-only"> — 485 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">252</span><span class="sr-only"> — 252 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">19</span><span class="sr-only"> — 19 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">482</span><span class="sr-only"> — 482 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -879,21 +879,21 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact rail-art has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://the-decoder.com/?p=39562" data-srckey="the decoder" data-cat="ai" data-sent="0" data-ts="1787996208000" data-slug="laion drops massive open video dataset with million hours footage for research">
+<article class="card compact rail-art has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788022162" data-srckey="al jazeera" data-cat="world" data-sent="0" data-ts="1788029779000" data-slug="news judge rules against trumps effort deport pro palestinian students">
 <div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="LAION drops massive open video dataset with 10 million hours of footage for AI research — flip for details">
-	<div class="meta"><span class="src" style="color:hsl(45 55% 72%)">THE DECODER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T09:36:48.000Z">5:36 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
-	<h3 class="title">LAION drops massive open video dataset with 10 million hours of footage for AI research</h3>
-	<p class="snippet">LAION&#39;s Big Video Dataset (BVD) is one of the largest open video datasets for AI research, with 80 million videos, 10 million hours of runtime, and 55 million auto-described clips. Models trained on BVD beat the previous benchmark, InternVid, by up to 2.1 percentage points. Legally, LAION can likely point to a 2024 Hamburg court ruling that allows collecting copyrighted content for non-commercial…</p>
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="US judge rules against Trump’s effort to deport pro-Palestinian students — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T18:56:19.000Z">2:56 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">US judge rules against Trump’s effort to deport pro-Palestinian students</h3>
+	<p class="snippet">A federal judge criticised the Trump government for attempting to infringe upon foreign students&#39; rights to free speech.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://the-decoder.com/wp-content/uploads/2024/08/images_database_ai_generated_data_files_online_storage-1-1200x673.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+	<img class="thumb" src="https://www.aljazeera.com/wp-content/uploads/2026/05/AP25294539860856-1778876196.jpg?resize=1920%2C1440" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
-	<h3 class="title">LAION drops massive open video dataset with 10 million hours of footage for AI research</h3>
-	<p class="about">LAION&#39;s Big Video Dataset (BVD) is one of the largest open video datasets for AI research, with 80 million videos, 10 million hours of runtime, and 55 million auto-described clips. Models trained on BVD beat the previous benchmark, InternVid, by up to 2.1 percentage points. Legally, LAION can likely point to a 2024 Hamburg court ruling that allows collecting copyrighted content for non-commercial…</p>
+	<h3 class="title">US judge rules against Trump’s effort to deport pro-Palestinian students</h3>
+	<p class="about">A federal judge criticised the Trump government for attempting to infringe upon foreign students&#39; rights to free speech.</p>
 	
 	
-	<a class="more" href="https://the-decoder.com/laion-drops-massive-open-video-dataset-with-10-million-hours-of-footage-for-ai-research/" target="_blank" rel="noopener noreferrer">The Decoder &#8599;</a>
+	<a class="more" href="https://www.aljazeera.com/news/2026/8/29/us-judge-rules-against-trumps-effort-to-deport-pro-palestinian-students?traffic_source=rss" target="_blank" rel="noopener noreferrer">Al Jazeera &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -957,48 +957,99 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://espndeportes.espn.com/futbol/mexico/nota/_/id/17183784/america-negociacion-sebastian-caceres-celta-vigo-laliga-versiones" target="_blank" rel="noopener noreferrer">What we know about the negotiation between América and Celta for Cáceres</a>
-		<p class="trend-meta"><span class="src">ESPN DEPORTES</span><span class="sep" aria-hidden="true">&middot;</span>"brian rodríguez" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.nbcnews.com/news/us-news/lindsay-clancy-trial-timeline-sought-help-killed-children-rcna594970" target="_blank" rel="noopener noreferrer">How Lindsay Clancy sought help before she killed her three children</a>
+		<p class="trend-meta"><span class="src">NBC NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"lindsay clancy final results" &middot; 5000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nytimes.com/athletic/7536746/2026/08/26/vancouver-canucks-elias-pettersson-forward-thoughts/" target="_blank" rel="noopener noreferrer">Can Elias Pettersson find his game again? 5 summer thoughts on Canucks forwards - The Athletic</a>
-		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"ryan johnson" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://es.mlssoccer.com/competencias/mls-regular-season/noticias/eeeeeel-chucky-lozano-vuelve-a-san-diego-de-galactico" target="_blank" rel="noopener noreferrer">Iiiiit&#39;s Chucky Lozano! Back in San Diego as a galáctico</a>
+		<p class="trend-meta"><span class="src">MLS ESPAÑOL</span><span class="sep" aria-hidden="true">&middot;</span>"hirving lozano" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.yahoo.com/entertainment/music/articles/kesha-her-first-lingerie-campaign-130000934.html" target="_blank" rel="noopener noreferrer">Kesha on Her First Lingerie Campaign as an Independent Artist: ‘My Whole Body Is Finally All Mine’</a>
-		<p class="trend-meta"><span class="src">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"kesha" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.mallorca-services.es/gesetz-zur-beschraenkung-des-fahrzeugzugangs-nach-mallorca-kommt/" target="_blank" rel="noopener noreferrer">Law limiting vehicle access to Mallorca on the way?</a>
+		<p class="trend-meta"><span class="src">MALLORCA-SERVICES.ES</span><span class="sep" aria-hidden="true">&middot;</span>"mallorca" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://speedwaydigest.com/index.php/news/nascar-cup-series-news/891908-against-the-odds-shane-van-gisbergen-has-made-a-statement-on-oval-tracks/" target="_blank" rel="noopener noreferrer">Against the odds, Shane van Gisbergen has made a statement on oval tracks</a>
-		<p class="trend-meta"><span class="src">SPEEDWAY DIGEST</span><span class="sep" aria-hidden="true">&middot;</span>"nascar chase standings" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.netflix.com/tudum/articles/beauty-in-black-first-few-minutes-season-3" target="_blank" rel="noopener noreferrer">Watch the Turbulent First 5 Minutes of Tyler Perry’s Beauty in Black Season 3</a>
+		<p class="trend-meta"><span class="src">NETFLIX</span><span class="sep" aria-hidden="true">&middot;</span>"tyler perry" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/wnba/story/_/id/49758999/wnba-rescinds-dream-angel-reese-8th-technical-foul-no-suspension" target="_blank" rel="noopener noreferrer">Dream&#39;s Angel Reese won&#39;t be suspended after WNBA rescinds tech</a>
-		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"alyssa thomas" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.azfamily.com/2026/08/29/heat-sticks-around-today-monsoon-moisture-brings-storm-chances-phoenix/" target="_blank" rel="noopener noreferrer">Dust storm advisory in effect for Phoenix, Scottsdale areas</a>
+		<p class="trend-meta"><span class="src">AZ FAMILY</span><span class="sep" aria-hidden="true">&middot;</span>"dust advisory" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.ndtv.com/entertainment/aaron-paul-death-rumours-explained-breaking-bad-actor-celebrates-47th-birthday-as-social-media-posts-leave-fans-worried-11971213" target="_blank" rel="noopener noreferrer">Aaron Paul Is Alive: Why Breaking Bad Actor&#39;s 47th Birthday Posts Sparked Death Rumours</a>
-		<p class="trend-meta"><span class="src">NDTV</span><span class="sep" aria-hidden="true">&middot;</span>"aaron paul death" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.tomshardware.com/tech-industry/semiconductors/intel-14a-defect-density-is-dropping-faster-than-the-company-expected-we-have-not-seen-this-performance-since-22nm-says-cfo" target="_blank" rel="noopener noreferrer">Intel 14A defect density is dropping faster than the company expected — &#39;we have not seen this performance since 22nm,&#39; says CFO</a>
+		<p class="trend-meta"><span class="src">TOM&#39;S HARDWARE</span><span class="sep" aria-hidden="true">&middot;</span>"intel" &middot; 200+ searches</p>
 	</div>
 </li>
 </ol>
 </section><section class="day">
-<h2><span class="date">SAT, AUG 29, 2026</span><span class="rel">TODAY</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">SUN, AUG 30, 2026</span><span class="rel">TODAY</span><span class="rule" aria-hidden="true"></span></h2>
+<div class="grid">
+<article class="card lead" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49769298" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788066385956" data-slug="mlb story brewers chourio joins elite club another homer year">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Brewers&#39; Chourio joins elite club after 20-HR year — flip for details">
+	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T05:06:25.956Z">1:06 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Brewers&#39; Chourio joins elite club after 20-HR year</h3>
+	<p class="snippet">Brewers outfielder Jackson Chourio reached 20 homers in his third straight season Saturday night, joining an elite list of players to accomplish the feat before turning 23.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Brewers&#39; Chourio joins elite club after 20-HR year</h3>
+	<p class="about">Brewers outfielder Jackson Chourio reached 20 homers in his third straight season Saturday night, joining an elite list of players to accomplish the feat before turning 23.</p>
+	
+	
+	<a class="more" href="https://www.espn.com/mlb/story/_/id/49769298/brewers-chourio-joins-elite-club-another-20-homer-year" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.polygon.com/orphan-black-leaving-netflix-september-2026/" data-srckey="polygon" data-cat="entertainment" data-sent="0" data-ts="1788066014000" data-slug="orphan black leaving netflix september">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Netflix Is About to Lose a 10/10 Sci-Fi Series That&#39;s Perfect From Start to Finish — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T05:00:14.000Z">1:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Netflix Is About to Lose a 10/10 Sci-Fi Series That&#39;s Perfect From Start to Finish</h3>
+	<p class="snippet">It’s been over a decade, and Orphan Black remains a rare example of biopunk TV</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/orphan-black.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/orphan-black.jpg?w=240 240w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/orphan-black.jpg?w=340 340w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/orphan-black.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Netflix Is About to Lose a 10/10 Sci-Fi Series That&#39;s Perfect From Start to Finish</h3>
+	<p class="about">It’s been over a decade, and Orphan Black remains a rare example of biopunk TV</p>
+	
+	
+	<a class="more" href="https://www.polygon.com/orphan-black-leaving-netflix-september-2026/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section class="day">
+<h2><span class="date">SAT, AUG 29, 2026</span><span class="rel">YESTERDAY</span><span class="rule" aria-hidden="true"></span></h2>
 <div class="grid">
 <article class="card lead has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:WP-MKTW-0005206862" data-srckey="marketwatch" data-cat="markets" data-sent="0" data-ts="1788001200000" data-slug="story feel shoehorned father funded roth ira does that give him the right say how invest">
 <div class="inner">
@@ -7006,7 +7057,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2729 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2727 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cx2z415w2gpo#0" data-cat="world" data-sent="0" data-slug="news articles cx2z415w2gpo" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 28 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/cx2z415w2gpo" target="_blank" rel="noopener noreferrer">Footage of Tibet floods isn&#39;t being shown in China - and we know little about victims there</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" data-cat="world" data-sent="0" data-slug="world live aug nepal tibet flash floods hundreds dead missing day three updates" hidden="until-found"><span class="ameta">GUARDIAN WORLD &middot; Aug 28 &middot; World</span><a href="https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" target="_blank" rel="noopener noreferrer">Search continues as number missing in Nepal-Tibet floods rises to 2,478 – as it happened</a></li>
@@ -9735,8 +9786,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2241085/how-to-watch-gamescom-opening-night-live-showcase/" data-cat="tech" data-sent="0" data-slug="how watch gamescom opening night live showcase" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 20 &middot; Tech</span><a href="https://www.engadget.com/2241085/how-to-watch-gamescom-opening-night-live-showcase/" target="_blank" rel="noopener noreferrer">How to watch Gamescom&#39;s Opening Night Live showcase</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c87n90eg0p2o#0" data-cat="world" data-sent="0" data-slug="news articles c87n90eg0p2o" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 20 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/c87n90eg0p2o" target="_blank" rel="noopener noreferrer">Bessent urges US partners to back plans to &#39;squash&#39; Iran economy</a></li>
 <li class="arow" data-count="1" data-id="rss:https://github.blog/?p=98377" data-cat="dev" data-sent="0" data-slug="news insights company the august outage and work ahead" hidden="until-found"><span class="ameta">GITHUB BLOG &middot; Aug 20 &middot; Dev</span><a href="https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/" target="_blank" rel="noopener noreferrer">The August 17 outage, and the work ahead</a></li>
-<li class="arow" data-count="1" data-id="rss:https://dev.to/shogu123/book-38db" data-cat="dev" data-sent="0" data-slug="shogu123 book 38db" hidden="until-found"><span class="ameta">DEV.TO &middot; Aug 20 &middot; Dev</span><a href="https://dev.to/shogu123/book-38db" target="_blank" rel="noopener noreferrer">Book</a></li>
-<li class="arow" data-count="1" data-id="rss:626f7b42-17ed-44da-8b40-399bb3d38b04" data-cat="sports" data-sent="0" data-slug="college football news brent venables contract oklahoma head coach extension" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 20 &middot; Sports</span><a href="https://www.cbssports.com/college-football/news/brent-venables-contract-oklahoma-head-coach-extension/" target="_blank" rel="noopener noreferrer">Oklahoma signs Brent Venables to six-year deal as Sooners eye return to CFP in 2026 season</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
