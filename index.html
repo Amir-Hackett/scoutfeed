@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-30T05:22:20.449Z">
+<meta name="sf-version" content="2026-08-30T06:13:02.892Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,11 +537,13 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
+:root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
+:root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
-:root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
-:root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
+:root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
@@ -552,13 +554,11 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
 :root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
-:root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] .meta [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
-:root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
@@ -692,10 +692,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 1:22 AM &middot; 2 TODAY</p>
+	<p class="stats">UPDATED 2:13 AM &middot; 8 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">146</span><span class="sr-only"> — 146 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">66</span><span class="sr-only"> — 66 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">244</span><span class="sr-only"> — 244 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">400</span><span class="sr-only"> — 400 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">321</span><span class="sr-only"> — 321 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">414</span><span class="sr-only"> — 414 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">171</span><span class="sr-only"> — 171 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">485</span><span class="sr-only"> — 485 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">252</span><span class="sr-only"> — 252 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">19</span><span class="sr-only"> — 19 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">482</span><span class="sr-only"> — 482 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">146</span><span class="sr-only"> — 146 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">66</span><span class="sr-only"> — 66 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">246</span><span class="sr-only"> — 246 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">400</span><span class="sr-only"> — 400 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">320</span><span class="sr-only"> — 320 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">413</span><span class="sr-only"> — 413 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">171</span><span class="sr-only"> — 171 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">485</span><span class="sr-only"> — 485 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">254</span><span class="sr-only"> — 254 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">19</span><span class="sr-only"> — 19 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">480</span><span class="sr-only"> — 480 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -957,57 +957,172 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nbcnews.com/news/us-news/lindsay-clancy-trial-timeline-sought-help-killed-children-rcna594970" target="_blank" rel="noopener noreferrer">How Lindsay Clancy sought help before she killed her three children</a>
-		<p class="trend-meta"><span class="src">NBC NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"lindsay clancy final results" &middot; 5000+ searches</p>
+		<a class="trend-title" href="https://www.nytimes.com/athletic/7542046/2026/08/27/ted-lasso-soccer-cliques-uswnt/" target="_blank" rel="noopener noreferrer">‘Ted Lasso’ discovers soccer’s clique problem, one that the USWNT has mastered</a>
+		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"ted" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://es.mlssoccer.com/competencias/mls-regular-season/noticias/eeeeeel-chucky-lozano-vuelve-a-san-diego-de-galactico" target="_blank" rel="noopener noreferrer">Iiiiit&#39;s Chucky Lozano! Back in San Diego as a galáctico</a>
-		<p class="trend-meta"><span class="src">MLS ESPAÑOL</span><span class="sep" aria-hidden="true">&middot;</span>"hirving lozano" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://sportscar365.com/sro/gt4-america/muniz-first-win-couldnt-have-come-at-a-better-time/" target="_blank" rel="noopener noreferrer">Muniz: First Pro Win “Couldn’t Have Come at a Better Time”</a>
+		<p class="trend-meta"><span class="src">SPORTSCAR365</span><span class="sep" aria-hidden="true">&middot;</span>"frankie muniz" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.mallorca-services.es/gesetz-zur-beschraenkung-des-fahrzeugzugangs-nach-mallorca-kommt/" target="_blank" rel="noopener noreferrer">Law limiting vehicle access to Mallorca on the way?</a>
-		<p class="trend-meta"><span class="src">MALLORCA-SERVICES.ES</span><span class="sep" aria-hidden="true">&middot;</span>"mallorca" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.architecturaldigest.com/story/amanda-seyfried-lists-hollywood-hills-home" target="_blank" rel="noopener noreferrer">Amanda Seyfried Lists Hollywood Hills Home for $3.2 Million</a>
+		<p class="trend-meta"><span class="src">ARCHITECTURAL DIGEST</span><span class="sep" aria-hidden="true">&middot;</span>"amanda seyfried" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.netflix.com/tudum/articles/beauty-in-black-first-few-minutes-season-3" target="_blank" rel="noopener noreferrer">Watch the Turbulent First 5 Minutes of Tyler Perry’s Beauty in Black Season 3</a>
-		<p class="trend-meta"><span class="src">NETFLIX</span><span class="sep" aria-hidden="true">&middot;</span>"tyler perry" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.nbcnews.com/news/us-news/lindsay-clancy-trial-timeline-sought-help-killed-children-rcna594970" target="_blank" rel="noopener noreferrer">How Lindsay Clancy sought help before she killed her three children</a>
+		<p class="trend-meta"><span class="src">NBC NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"lindsay clancy final results" &middot; 5000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.azfamily.com/2026/08/29/heat-sticks-around-today-monsoon-moisture-brings-storm-chances-phoenix/" target="_blank" rel="noopener noreferrer">Dust storm advisory in effect for Phoenix, Scottsdale areas</a>
-		<p class="trend-meta"><span class="src">AZ FAMILY</span><span class="sep" aria-hidden="true">&middot;</span>"dust advisory" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.netflix.com/tudum/articles/beauty-in-black-first-few-minutes-season-3" target="_blank" rel="noopener noreferrer">Watch the Turbulent First 5 Minutes of Tyler Perry’s Beauty in Black Season 3</a>
+		<p class="trend-meta"><span class="src">NETFLIX</span><span class="sep" aria-hidden="true">&middot;</span>"tyler perry" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.tomshardware.com/tech-industry/semiconductors/intel-14a-defect-density-is-dropping-faster-than-the-company-expected-we-have-not-seen-this-performance-since-22nm-says-cfo" target="_blank" rel="noopener noreferrer">Intel 14A defect density is dropping faster than the company expected — &#39;we have not seen this performance since 22nm,&#39; says CFO</a>
-		<p class="trend-meta"><span class="src">TOM&#39;S HARDWARE</span><span class="sep" aria-hidden="true">&middot;</span>"intel" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.mallorca-services.es/gesetz-zur-beschraenkung-des-fahrzeugzugangs-nach-mallorca-kommt/" target="_blank" rel="noopener noreferrer">Law limiting vehicle access to Mallorca on the way?</a>
+		<p class="trend-meta"><span class="src">MALLORCA-SERVICES.ES</span><span class="sep" aria-hidden="true">&middot;</span>"mallorca" &middot; 200+ searches</p>
 	</div>
 </li>
 </ol>
 </section><section class="day">
 <h2><span class="date">SUN, AUG 30, 2026</span><span class="rel">TODAY</span><span class="rule" aria-hidden="true"></span></h2>
 <div class="grid">
-<article class="card lead" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49769298" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788066385956" data-slug="mlb story brewers chourio joins elite club another homer year">
+<article class="card lead has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/ktbweg" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1788068211000" data-slug="blog posts breaking claude code opus and automode">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Prompt Injection in Claude Code Opus 5 Auto Mode — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T05:36:51.000Z">1:36 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">Prompt Injection in Claude Code Opus 5 Auto Mode</h3>
+	<p class="snippet">In this post, we explore how a simple website summary request hijacks Claude Code Opus 5 in Auto Mode and achieves code execution with 60-80% attack success …</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://embracethered.com/blog/images/2026/claude-automode/claude-auto-mode-rce.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Prompt Injection in Claude Code Opus 5 Auto Mode</h3>
+	<p class="about">In this post, we explore how a simple website summary request hijacks Claude Code Opus 5 in Auto Mode and achieves code execution with 60-80% attack success …</p>
+	
+	
+	<a class="more" href="https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/" target="_blank" rel="noopener noreferrer">Lobsters &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:bda6ad80-a435-11f1-9783-ed09ccae7966" data-srckey="france 24" data-cat="world" data-sent="0" data-ts="1788069113000" data-slug="asia pacific putin set for central summit russia china seek counter western influence">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Putin, Xi set for Central Asia summit as Russia, China seek to counter Western influence — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(279 55% 72%)">FRANCE 24</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T05:51:53.000Z">1:51 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Putin, Xi set for Central Asia summit as Russia, China seek to counter Western influence</h3>
+	<p class="snippet">Russian President Vladimir Putin and Chinese President Xi Jinping are due in Kyrgyzstan on Monday for a two-day summit, joined by the leaders of Iran and India. The gathering comes as several members face war, sanctions and trade tensions with the West, underlining the bloc’s growing geopolitical weight.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://s.france24.com/media/display/32f6bdfa-a436-11f1-a03d-005056a97e36/w:1024/p:16x9/AP26140554039627.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Putin, Xi set for Central Asia summit as Russia, China seek to counter Western influence</h3>
+	<p class="about">Russian President Vladimir Putin and Chinese President Xi Jinping are due in Kyrgyzstan on Monday for a two-day summit, joined by the leaders of Iran and India. The gathering comes as several members face war, sanctions and trade tensions with the West, underlining the bloc’s growing geopolitical weight.</p>
+	
+	
+	<a class="more" href="https://www.france24.com/en/asia-pacific/20260830-putin-xi-set-for-central-asia-summit-as-russia-china-seek-to-counter-western-influence" target="_blank" rel="noopener noreferrer">France 24 &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/highcenburg/what-do-you-think-is-better-a-free-period-or-a-freemium-5026" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788068841000" data-slug="highcenburg what you think better free period freemium">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="What do you think is better, a free period or a freemium? — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T05:47:21.000Z">1:47 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">What do you think is better, a free period or a freemium?</h3>
+	<p class="snippet">A post by Vicente G. Reyes</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fo0bpxulnk0e1mlt2zhsr.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=240,height=125,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fo0bpxulnk0e1mlt2zhsr.png 240w, https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fo0bpxulnk0e1mlt2zhsr.png 340w, https://media2.dev.to/dynamic/image/width=510,height=266,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fo0bpxulnk0e1mlt2zhsr.png 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">What do you think is better, a free period or a freemium?</h3>
+	<p class="about">A post by Vicente G. Reyes</p>
+	
+	
+	<a class="more" href="https://dev.to/highcenburg/what-do-you-think-is-better-a-free-period-or-a-freemium-5026" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 h2" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/ax0r/i-building-small-auditable-ai-tools-for-defensive-security-i5c" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788068031000" data-slug="ax0r building small auditable tools for defensive security i5c">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Building Small, Auditable AI Tools for Defensive Security — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T05:33:51.000Z">1:33 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">Building Small, Auditable AI Tools for Defensive Security</h3>
+	<p class="snippet">A practical look at three open-source tools for security findings, AI-assisted triage, and log anomaly detection SentinelMesh AI Security Report LLM-based Log Anomaly Detector Documentation Hub Ax0r</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Building Small, Auditable AI Tools for Defensive Security</h3>
+	<p class="about">A practical look at three open-source tools for security findings, AI-assisted triage, and log anomaly detection SentinelMesh AI Security Report LLM-based Log Anomaly Detector Documentation Hub Ax0r</p>
+	
+	
+	<a class="more" href="https://dev.to/ax0r/i-building-small-auditable-ai-tools-for-defensive-security-i5c" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:c9561506-a432-11f1-a91a-574a0623f441" data-srckey="france 24" data-cat="world" data-sent="0" data-ts="1788067567000" data-slug="americas nasa set launch roman telescope map the universe">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="NASA set to launch Roman telescope to map the universe — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(279 55% 72%)">FRANCE 24</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T05:26:07.000Z">1:26 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">NASA set to launch Roman telescope to map the universe</h3>
+	<p class="snippet">NASA is preparing to launch its Roman Space Telescope on Sunday aboard a SpaceX Falcon Heavy rocket, beginning a multi-year mission to create a vast new map of the cosmos. With a field of view far wider than Hubble’s, Roman will search for exoplanets and supernovae while probing the nature of dark matter and dark energy.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://s.france24.com/media/display/54b1beee-a432-11f1-8b6d-005056bfb2b6/w:1024/p:16x9/2026-08-29T195602Z-94810877-RC2I8NAYVGKF-RTRMADP-3-SPACE-NASA-TELESCOPE.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">NASA set to launch Roman telescope to map the universe</h3>
+	<p class="about">NASA is preparing to launch its Roman Space Telescope on Sunday aboard a SpaceX Falcon Heavy rocket, beginning a multi-year mission to create a vast new map of the cosmos. With a field of view far wider than Hubble’s, Roman will search for exoplanets and supernovae while probing the nature of dark matter and dark energy.</p>
+	
+	
+	<a class="more" href="https://www.france24.com/en/americas/20260830-nasa-set-to-launch-roman-telescope-to-map-the-universe" target="_blank" rel="noopener noreferrer">France 24 &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49769298" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788066385956" data-slug="mlb story brewers chourio joins elite club another homer year">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Brewers&#39; Chourio joins elite club after 20-HR year — flip for details">
 	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T05:06:25.956Z">1:06 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
 	<h3 class="title">Brewers&#39; Chourio joins elite club after 20-HR year</h3>
 	<p class="snippet">Brewers outfielder Jackson Chourio reached 20 homers in his third straight season Saturday night, joining an elite list of players to accomplish the feat before turning 23.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0830%2Fr1708858_1024x576_16-9.jpg&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0830%2Fr1708858_1024x576_16-9.jpg&amp;w=240 240w, https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0830%2Fr1708858_1024x576_16-9.jpg&amp;w=340 340w, https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0830%2Fr1708858_1024x576_16-9.jpg&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Brewers&#39; Chourio joins elite club after 20-HR year</h3>
@@ -1038,6 +1153,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.polygon.com/orphan-black-leaving-netflix-september-2026/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cgk57lg7566o#0" data-srckey="bbc world" data-cat="world" data-sent="0" data-ts="1788065996000" data-slug="news articles cgk57lg7566o">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="WhatsApp chat used to send cash for crime and extremism — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T04:59:56.000Z">12:59 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">WhatsApp chat used to send cash for crime and extremism</h3>
+	<p class="snippet">The WhatsApp money launderers arranged cash transfers in the UK and around the world with no paper trail.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/4e7b/live/835e38f0-a2fa-11f1-b109-879e35c24276.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4e7b/live/835e38f0-a2fa-11f1-b109-879e35c24276.png 240w, https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/4e7b/live/835e38f0-a2fa-11f1-b109-879e35c24276.png 340w, https://ichef.bbci.co.uk/ace/standard/510/cpsprodpb/4e7b/live/835e38f0-a2fa-11f1-b109-879e35c24276.png 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">WhatsApp chat used to send cash for crime and extremism</h3>
+	<p class="about">The WhatsApp money launderers arranged cash transfers in the UK and around the world with no paper trail.</p>
+	
+	
+	<a class="more" href="https://www.bbc.co.uk/news/articles/cgk57lg7566o" target="_blank" rel="noopener noreferrer">BBC World &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1342,6 +1480,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.coindesk.com/web3/2026/08/29/a-usd1-1-million-crypto-card-hack-crashed-a-neobank-s-token-49" target="_blank" rel="noopener noreferrer">CoinDesk &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact no-snippet" style="--rail:#34d399" data-count="1" data-id="rss:https://www.dwarkesh.com/p/openai-huggingface" data-srckey="hacker news" data-cat="tech" data-sent="0" data-ts="1788047004000" data-slug="openai huggingface">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The Rise and Fall of Agent Civilizations — flip for details">
+	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-29T23:43:24.000Z">7:43 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">The Rise and Fall of Agent Civilizations</h3>
+	
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">The Rise and Fall of Agent Civilizations</h3>
+	<p class="about">No summary in this feed — follow the link for the story.</p>
+	
+	
+	<a class="more" href="https://www.dwarkesh.com/p/openai-huggingface" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -7057,7 +7218,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2727 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2720 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cx2z415w2gpo#0" data-cat="world" data-sent="0" data-slug="news articles cx2z415w2gpo" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 28 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/cx2z415w2gpo" target="_blank" rel="noopener noreferrer">Footage of Tibet floods isn&#39;t being shown in China - and we know little about victims there</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" data-cat="world" data-sent="0" data-slug="world live aug nepal tibet flash floods hundreds dead missing day three updates" hidden="until-found"><span class="ameta">GUARDIAN WORLD &middot; Aug 28 &middot; World</span><a href="https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" target="_blank" rel="noopener noreferrer">Search continues as number missing in Nepal-Tibet floods rises to 2,478 – as it happened</a></li>
@@ -9779,13 +9940,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:US-EN-49672773" data-cat="sports" data-sent="0" data-slug="college football story sources oklahoma brent venables agree new year contract" hidden="until-found"><span class="ameta">ESPN &middot; Aug 20 &middot; Sports</span><a href="https://www.espn.com/college-football/story/_/id/49672773/sources-oklahoma-brent-venables-agree-new-6-year-contract" target="_blank" rel="noopener noreferrer">Sources: OU, Venables reach new 6-year contract</a></li>
 <li class="arow" data-count="1" data-id="rss:US-EN-49672789" data-cat="sports" data-sent="0" data-slug="college sports story greg sankey filing speaks pros returning ncaa" hidden="until-found"><span class="ameta">ESPN &middot; Aug 20 &middot; Sports</span><a href="https://www.espn.com/college-sports/story/_/id/49672789/greg-sankey-filing-speaks-pros-returning-ncaa" target="_blank" rel="noopener noreferrer">Sankey: Pros returning to school &#39;fuels disruption&#39;</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.fiercehealthcare.com/49a04a59-3ef6-4978-a5ce-f7fd5ecaed03" data-cat="healthcare" data-sent="0" data-slug="health tech cityblock acquires homeward move rural healthcare lands 116m funding round" hidden="until-found"><span class="ameta">FIERCE HEALTHCARE &middot; Aug 20 &middot; Healthcare</span><a href="https://www.fiercehealthcare.com/health-tech/cityblock-acquires-homeward-health-move-rural-healthcare-lands-116m-funding-round" target="_blank" rel="noopener noreferrer">Cityblock inks deal to acquire Homeward Health to move into rural healthcare, lands $116M funding round</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.polygon.com/baldurs-gate-3-astarion-mod-dream-of-silence/" data-cat="games" data-sent="0" data-slug="baldurs gate astarion mod dream silence" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 20 &middot; Games</span><a href="https://www.polygon.com/baldurs-gate-3-astarion-mod-dream-of-silence/" target="_blank" rel="noopener noreferrer">BG3&#39;s Best New Mod Adds an Entire 3-Part Campaign About Astarion</a></li>
-<li class="arow" data-count="1" data-id="rss:fe29c8e3-8d8b-41ee-a526-3cb5aa0e4f43" data-cat="markets" data-sent="0" data-slug="policy cftc chief puts staff notice create crypto regulations clarity act fails" hidden="until-found"><span class="ameta">COINDESK &middot; Aug 20 &middot; Markets</span><a href="https://www.coindesk.com/policy/2026/08/20/u-s-cftc-chief-puts-staff-on-notice-to-create-crypto-regulations-if-clarity-act-fails" target="_blank" rel="noopener noreferrer">U.S. CFTC chief puts staff on notice to create crypto regulations if Clarity Act fails</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.theverge.com/tech/982955/meta-mark-zuckerberg-strancally-castle-ireland" data-cat="tech" data-sent="0" data-slug="tech meta mark zuckerberg strancally castle ireland" hidden="until-found"><span class="ameta">THE VERGE &middot; Aug 20 &middot; Tech</span><a href="https://www.theverge.com/tech/982955/meta-mark-zuckerberg-strancally-castle-ireland" target="_blank" rel="noopener noreferrer">Mark Zuckerberg bought an Irish castle</a></li>
-<li class="arow" data-count="1" data-id="rss:6a85dd109e48c15857d19bad" data-cat="tech" data-sent="0" data-slug="story silicon valley doesnt get why you hate" hidden="until-found"><span class="ameta">WIRED &middot; Aug 20 &middot; Tech</span><a href="https://www.wired.com/story/silicon-valley-doesnt-get-why-you-hate-ai/" target="_blank" rel="noopener noreferrer">Silicon Valley Doesn&#39;t Get Why You Hate AI</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2241085/how-to-watch-gamescom-opening-night-live-showcase/" data-cat="tech" data-sent="0" data-slug="how watch gamescom opening night live showcase" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 20 &middot; Tech</span><a href="https://www.engadget.com/2241085/how-to-watch-gamescom-opening-night-live-showcase/" target="_blank" rel="noopener noreferrer">How to watch Gamescom&#39;s Opening Night Live showcase</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c87n90eg0p2o#0" data-cat="world" data-sent="0" data-slug="news articles c87n90eg0p2o" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 20 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/c87n90eg0p2o" target="_blank" rel="noopener noreferrer">Bessent urges US partners to back plans to &#39;squash&#39; Iran economy</a></li>
-<li class="arow" data-count="1" data-id="rss:https://github.blog/?p=98377" data-cat="dev" data-sent="0" data-slug="news insights company the august outage and work ahead" hidden="until-found"><span class="ameta">GITHUB BLOG &middot; Aug 20 &middot; Dev</span><a href="https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/" target="_blank" rel="noopener noreferrer">The August 17 outage, and the work ahead</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
