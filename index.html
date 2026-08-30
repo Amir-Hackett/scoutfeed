@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-30T07:16:08.743Z">
+<meta name="sf-version" content="2026-08-30T08:26:31.836Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,12 +537,12 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
 :root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
-:root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
@@ -692,10 +692,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 3:16 AM &middot; 9 TODAY</p>
+	<p class="stats">UPDATED 4:26 AM &middot; 10 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">146</span><span class="sr-only"> — 146 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">65</span><span class="sr-only"> — 65 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">246</span><span class="sr-only"> — 246 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">400</span><span class="sr-only"> — 400 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">320</span><span class="sr-only"> — 320 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">413</span><span class="sr-only"> — 413 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">171</span><span class="sr-only"> — 171 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">485</span><span class="sr-only"> — 485 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">255</span><span class="sr-only"> — 255 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">19</span><span class="sr-only"> — 19 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">480</span><span class="sr-only"> — 480 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">146</span><span class="sr-only"> — 146 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">65</span><span class="sr-only"> — 65 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">246</span><span class="sr-only"> — 246 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">400</span><span class="sr-only"> — 400 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">321</span><span class="sr-only"> — 321 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">413</span><span class="sr-only"> — 413 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">171</span><span class="sr-only"> — 171 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">484</span><span class="sr-only"> — 484 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">255</span><span class="sr-only"> — 255 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">19</span><span class="sr-only"> — 19 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">480</span><span class="sr-only"> — 480 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -957,64 +957,64 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.netflix.com/tudum/articles/beauty-in-black-first-few-minutes-season-3" target="_blank" rel="noopener noreferrer">Watch the Turbulent First 5 Minutes of Tyler Perry’s Beauty in Black Season 3</a>
-		<p class="trend-meta"><span class="src">NETFLIX</span><span class="sep" aria-hidden="true">&middot;</span>"beauty in black season 4" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.si.com/betting-promo/fanduel-promo-code-get-up-to-350-bonus-for-memphis-vs-unlv-cfb-kickoff-01m1709bsgnt" target="_blank" rel="noopener noreferrer">FanDuel Promo Code: Get up to $350 Bonus for Memphis vs. UNLV, CFB Kickoff</a>
+		<p class="trend-meta"><span class="src">SPORTS ILLUSTRATED</span><span class="sep" aria-hidden="true">&middot;</span>"fanduel" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/news/articles/c70le8ed1plo" target="_blank" rel="noopener noreferrer">Iceland EU referendum on a knife edge as counting continues</a>
-		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"iceland eu referendum" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.rotowire.com/news/alberta-betting-apps-are-now-live-download-the-best-alberta-betting-apps-130727" target="_blank" rel="noopener noreferrer">Best Alberta Betting Apps: Betting Apps Now Live in Alberta</a>
+		<p class="trend-meta"><span class="src">ROTOWIRE</span><span class="sep" aria-hidden="true">&middot;</span>"draftkings sportsbook" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.newsweek.com/clarence-thomas-supreme-court-case-locke-bethany-hall-overturn-12384554" target="_blank" rel="noopener noreferrer">Clarence Thomas May Get to Overturn Case He Opposed 22 Years Ago</a>
-		<p class="trend-meta"><span class="src">NEWSWEEK</span><span class="sep" aria-hidden="true">&middot;</span>"clarence thomas" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.fool.com/investing/2026/08/30/the-most-active-stocks-today-include-tesla-nvidia/" target="_blank" rel="noopener noreferrer">The Most Active Stocks Today Include Tesla, Nvidia, and Apple: Here&#39;s My Contrarian Take on All Three</a>
+		<p class="trend-meta"><span class="src">THE MOTLEY FOOL</span><span class="sep" aria-hidden="true">&middot;</span>"themotleyfool" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://biz.chosun.com/en/en-entertainment/2026/08/30/5Z7SXCNJ2FFWLOEE6P7PWK3N4Y/" target="_blank" rel="noopener noreferrer">Colleagues mourn Lee Yongju as funeral held after sudden cardiac arrest - CHOSUNBIZ</a>
-		<p class="trend-meta"><span class="src">CHOSUNBIZ</span><span class="sep" aria-hidden="true">&middot;</span>"lee yong joo" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://www.foxsports.com/stories/betting/draftkings-promo-code-bet-5-get-200-college-football-week-0-win-lose" target="_blank" rel="noopener noreferrer">DraftKings Promo Code: Bet $5, Get $200 on College Football Week 0 Win or Lose</a>
+		<p class="trend-meta"><span class="src">FOX SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"draftkings promo code" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nbclosangeles.com/entertainment/olivia-rodrigo-daisy-chain-fields-festival-irvine/3935271/" target="_blank" rel="noopener noreferrer">What to know about Olivia Rodrigo&#39;s Daisy Chain Fields Festival in Irvine</a>
-		<p class="trend-meta"><span class="src">NBC LOS ANGELES</span><span class="sep" aria-hidden="true">&middot;</span>"daisy chain" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.si.com/betting-promo/bet365-bonus-code-get-365-in-bonus-bets-for-memphis-vs-unlv-on-saturday-01m170j8nxkf" target="_blank" rel="noopener noreferrer">bet365 Bonus Code: Get $365 in Bonus Bets for Memphis vs. UNLV on Saturday</a>
+		<p class="trend-meta"><span class="src">SPORTS ILLUSTRATED</span><span class="sep" aria-hidden="true">&middot;</span>"bet 365" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://nypost.com/2026/08/29/opinion/inside-the-14b-los-angeles-governance-failure/" target="_blank" rel="noopener noreferrer">Socialists offer more of the same decay while LA crumbles in the dark</a>
-		<p class="trend-meta"><span class="src">NEW YORK POST</span><span class="sep" aria-hidden="true">&middot;</span>"los angeles" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.bbc.com/news/articles/c70le8ed1plo" target="_blank" rel="noopener noreferrer">Iceland EU referendum on a knife edge as counting continues</a>
+		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"iceland" &middot; 200+ searches</p>
 	</div>
 </li>
 </ol>
 </section><section class="day">
 <h2><span class="date">SUN, AUG 30, 2026</span><span class="rel">TODAY</span><span class="rule" aria-hidden="true"></span></h2>
 <div class="grid">
-<article class="card lead has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/ktbweg" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1788068211000" data-slug="blog posts breaking claude code opus and automode">
+<article class="card lead has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.polygon.com/anno-117-hippodrome-dlc/" data-srckey="polygon" data-cat="games" data-sent="0" data-ts="1788076814000" data-slug="anno hippodrome dlc">
 <div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Prompt Injection in Claude Code Opus 5 Auto Mode — flip for details">
-	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T05:36:51.000Z">1:36 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
-	<h3 class="title">Prompt Injection in Claude Code Opus 5 Auto Mode</h3>
-	<p class="snippet">In this post, we explore how a simple website summary request hijacks Claude Code Opus 5 in Auto Mode and achieves code execution with 60-80% attack success …</p>
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Anno 117&#39;s New Hippodrome DLC Is More Fun Than It Has Any Right to Be — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T08:00:14.000Z">4:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">Anno 117&#39;s New Hippodrome DLC Is More Fun Than It Has Any Right to Be</h3>
+	<p class="snippet">Anno 117&#39;s new DLC adds the Hippodrome and some much-needed late-game purpose, along with a welcome new use for prestige thanks to Heroic specialists</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://embracethered.com/blog/images/2026/claude-automode/claude-auto-mode-rce.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/anno-117-hippodrome-dlc.jpg?w=680" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/anno-117-hippodrome-dlc.jpg?w=340 340w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/anno-117-hippodrome-dlc.jpg?w=680 680w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/anno-117-hippodrome-dlc.jpg?w=1020 1020w" sizes="(max-width: 640px) 88vw, min(42vw, 340px)">
 </div>
 <div class="face back" inert>
-	<h3 class="title">Prompt Injection in Claude Code Opus 5 Auto Mode</h3>
-	<p class="about">In this post, we explore how a simple website summary request hijacks Claude Code Opus 5 in Auto Mode and achieves code execution with 60-80% attack success …</p>
+	<h3 class="title">Anno 117&#39;s New Hippodrome DLC Is More Fun Than It Has Any Right to Be</h3>
+	<p class="about">Anno 117&#39;s new DLC adds the Hippodrome and some much-needed late-game purpose, along with a welcome new use for prestige thanks to Heroic specialists</p>
 	
 	
-	<a class="more" href="https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/" target="_blank" rel="noopener noreferrer">Lobsters &#8599;</a>
+	<a class="more" href="https://www.polygon.com/anno-117-hippodrome-dlc/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1084,6 +1084,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://dev.to/highcenburg/what-do-you-think-is-better-a-free-period-or-a-freemium-5026" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/ktbweg" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1788068211000" data-slug="blog posts breaking claude code opus and automode">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Prompt Injection in Claude Code Opus 5 Auto Mode — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T05:36:51.000Z">1:36 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">Prompt Injection in Claude Code Opus 5 Auto Mode</h3>
+	<p class="snippet">In this post, we explore how a simple website summary request hijacks Claude Code Opus 5 in Auto Mode and achieves code execution with 60-80% attack success …</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://embracethered.com/blog/images/2026/claude-automode/claude-auto-mode-rce.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Prompt Injection in Claude Code Opus 5 Auto Mode</h3>
+	<p class="about">In this post, we explore how a simple website summary request hijacks Claude Code Opus 5 in Auto Mode and achieves code execution with 60-80% attack success …</p>
+	
+	
+	<a class="more" href="https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/" target="_blank" rel="noopener noreferrer">Lobsters &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -7241,7 +7264,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2719 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2718 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cx2z415w2gpo#0" data-cat="world" data-sent="0" data-slug="news articles cx2z415w2gpo" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 28 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/cx2z415w2gpo" target="_blank" rel="noopener noreferrer">Footage of Tibet floods isn&#39;t being shown in China - and we know little about victims there</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" data-cat="world" data-sent="0" data-slug="world live aug nepal tibet flash floods hundreds dead missing day three updates" hidden="until-found"><span class="ameta">GUARDIAN WORLD &middot; Aug 28 &middot; World</span><a href="https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates" target="_blank" rel="noopener noreferrer">Search continues as number missing in Nepal-Tibet floods rises to 2,478 – as it happened</a></li>
@@ -9961,7 +9984,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.billboard.com/?p=1236321116" data-cat="music" data-sent="0" data-slug="music news bunnie baddie summer after jelly roll divorce" hidden="until-found"><span class="ameta">BILLBOARD &middot; Aug 20 &middot; Music</span><a href="https://www.billboard.com/music/music-news/bunnie-xo-baddie-bunnie-summer-after-jelly-roll-divorce-1236321116/" target="_blank" rel="noopener noreferrer">Bunnie Xo Is Having a ‘Baddie Bunnie Summer’ After Jelly Roll Divorce: ‘I’m Just Thriving’</a></li>
 <li class="arow" data-count="1" data-id="rss:US-EN-49672671" data-cat="sports" data-sent="0" data-slug="nfl story players pulled fight filled giants dolphins practice" hidden="until-found"><span class="ameta">ESPN &middot; Aug 20 &middot; Sports</span><a href="https://www.espn.com/nfl/story/_/id/49672671/players-pulled-fight-filled-giants-dolphins-practice" target="_blank" rel="noopener noreferrer">Players pulled from fight-filled Giants-Fins practice</a></li>
 <li class="arow" data-count="1" data-id="rss:US-EN-49672773" data-cat="sports" data-sent="0" data-slug="college football story sources oklahoma brent venables agree new year contract" hidden="until-found"><span class="ameta">ESPN &middot; Aug 20 &middot; Sports</span><a href="https://www.espn.com/college-football/story/_/id/49672773/sources-oklahoma-brent-venables-agree-new-6-year-contract" target="_blank" rel="noopener noreferrer">Sources: OU, Venables reach new 6-year contract</a></li>
-<li class="arow" data-count="1" data-id="rss:US-EN-49672789" data-cat="sports" data-sent="0" data-slug="college sports story greg sankey filing speaks pros returning ncaa" hidden="until-found"><span class="ameta">ESPN &middot; Aug 20 &middot; Sports</span><a href="https://www.espn.com/college-sports/story/_/id/49672789/greg-sankey-filing-speaks-pros-returning-ncaa" target="_blank" rel="noopener noreferrer">Sankey: Pros returning to school &#39;fuels disruption&#39;</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
