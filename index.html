@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-30T22:48:48.589Z">
+<meta name="sf-version" content="2026-08-30T22:52:57.238Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,6 +537,10 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
+:root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
+:root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
+:root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
 :root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
@@ -548,16 +552,13 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
-:root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="hsl(243 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
-:root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
-:root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
 :root[data-theme="light"] .meta [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
@@ -567,7 +568,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
 :root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
-:root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] .meta [style*="hsl(273 55% 72%)"] { color: #724890 !important; }
 :root[data-theme="light"] .meta [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
 :root[data-theme="light"] .meta [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
@@ -707,10 +707,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 6:48 PM &middot; 283 TODAY</p>
+	<p class="stats">UPDATED 6:52 PM &middot; 287 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">157</span><span class="sr-only"> — 157 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">106</span><span class="sr-only"> — 106 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">224</span><span class="sr-only"> — 224 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">382</span><span class="sr-only"> — 382 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">293</span><span class="sr-only"> — 293 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">372</span><span class="sr-only"> — 372 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">147</span><span class="sr-only"> — 147 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">447</span><span class="sr-only"> — 447 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">326</span><span class="sr-only"> — 326 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">120</span><span class="sr-only"> — 120 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">426</span><span class="sr-only"> — 426 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">157</span><span class="sr-only"> — 157 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">106</span><span class="sr-only"> — 106 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">224</span><span class="sr-only"> — 224 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">382</span><span class="sr-only"> — 382 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">294</span><span class="sr-only"> — 294 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">373</span><span class="sr-only"> — 373 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">147</span><span class="sr-only"> — 147 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">447</span><span class="sr-only"> — 447 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">326</span><span class="sr-only"> — 326 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">120</span><span class="sr-only"> — 120 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">424</span><span class="sr-only"> — 424 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1030,6 +1030,98 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.foxnews.com/politics/republicans-tighten-screws-sherrill-noncitizen-voter-probe-enters-new-phase" target="_blank" rel="noopener noreferrer">Fox News Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:WP-MKTW-0005207048" data-srckey="marketwatch" data-cat="markets" data-sent="0" data-ts="1788129900000" data-slug="story stock futures flat chances rate hike rise after warshs jackson hole comments 1f5287f2">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="U.S. stock futures flat as chances of rate hike rise after Warsh’s Jackson Hole comments — flip for details">
+	<div class="meta"><span class="src" style="color:#34d399">MARKETWATCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T22:45:00.000Z">6:45 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">U.S. stock futures flat as chances of rate hike rise after Warsh’s Jackson Hole comments</h3>
+	<p class="snippet">U.S. stock-index futures were little changed on Sunday, as investors ponder the likelihood of a fresh interest-rate hike and look ahead to fresh labor data and tech earnings this week.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://images.mktw.net/im-06485284?width=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://images.mktw.net/im-06485284?width=240 240w, https://images.mktw.net/im-06485284?width=340 340w, https://images.mktw.net/im-06485284?width=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">U.S. stock futures flat as chances of rate hike rise after Warsh’s Jackson Hole comments</h3>
+	<p class="about">U.S. stock-index futures were little changed on Sunday, as investors ponder the likelihood of a fresh interest-rate hike and look ahead to fresh labor data and tech earnings this week.</p>
+	
+	
+	<a class="more" href="https://www.marketwatch.com/story/u-s-stock-futures-flat-as-chances-of-rate-hike-rise-after-warshs-jackson-hole-comments-1f5287f2?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">MarketWatch &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.polygon.com/nodusfall-preview-gamescom-2026/" data-srckey="polygon" data-cat="games" data-sent="0" data-ts="1788129827000" data-slug="nodusfall preview gamescom">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="HoYoverse&#39;s &#39;Elden Ring Meets Monster Hunter&#39; Actually Plays More Like Final Fantasy 16 — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T22:43:47.000Z">6:43 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">HoYoverse&#39;s &#39;Elden Ring Meets Monster Hunter&#39; Actually Plays More Like Final Fantasy 16</h3>
+	<p class="snippet">Nodusfall, a new monster-hunting action game from the makers of Genshin Impact, share a lot in common with FF16, according to a recent preview.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/nodusfall-dragons.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/nodusfall-dragons.jpg?w=240 240w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/nodusfall-dragons.jpg?w=340 340w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/nodusfall-dragons.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">HoYoverse&#39;s &#39;Elden Ring Meets Monster Hunter&#39; Actually Plays More Like Final Fantasy 16</h3>
+	<p class="about">Nodusfall, a new monster-hunting action game from the makers of Genshin Impact, share a lot in common with FF16, according to a recent preview.</p>
+	<p class="why"><span class="whylabel">matched</span> <span class="whykey">Elden Ring</span> <span class="whystrength" title="How strongly this matched your interest (decayed frequency: 2.0)">match</span></p>
+	
+	<a class="more" href="https://www.polygon.com/nodusfall-preview-gamescom-2026/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://kotaku.com/?p=2000729699" data-srckey="kotaku" data-cat="entertainment" data-sent="0" data-ts="1788128027000" data-slug="larptubers recreating bygone youtubers dredge conflicting memories for original creators">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘LARPtubers’ Recreating Bygone YouTubers Dredge Up Conflicting Memories For Original Creators — flip for details">
+	<div class="meta"><span class="src" style="color:#a3e635">KOTAKU</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T22:13:47.000Z">6:13 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">‘LARPtubers’ Recreating Bygone YouTubers Dredge Up Conflicting Memories For Original Creators</h3>
+	<p class="snippet">A new deep dive from Steven Asarch explores the world of nostalgic content creators impersonating decade old videos, humiliating and hurting in the process</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://kotaku.com/app/uploads/2026/08/larptuber.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">‘LARPtubers’ Recreating Bygone YouTubers Dredge Up Conflicting Memories For Original Creators</h3>
+	<p class="about">A new deep dive from Steven Asarch explores the world of nostalgic content creators impersonating decade old videos, humiliating and hurting in the process</p>
+	
+	
+	<a class="more" href="https://kotaku.com/larptubers-recreating-bygone-youtubers-dredge-up-conflicting-memories-for-original-creators-2000729699" target="_blank" rel="noopener noreferrer">Kotaku &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 h2 has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:ba5431da-25d7-4c68-8ab6-459fad27a405" data-srckey="ign" data-cat="games" data-sent="0" data-ts="1788127693000" data-slug="articles gta michael actor defends after doubters say rockstars games look too similar">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="GTA 5&#39;s Michael Actor Defends GTA 6 After Doubters Say Rockstar&#39;s Games Look Too Similar — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">IGN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T22:08:13.000Z">6:08 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">GTA 5&#39;s Michael Actor Defends GTA 6 After Doubters Say Rockstar&#39;s Games Look Too Similar</h3>
+	<p class="snippet">Ned Luke, the actor behind Grand Theft Auto 5&#39;s Michael De Santa, said people who think Grand Theft Auto 6 looks too much like GTA 5 are &quot;out of their minds.&quot;</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assets-prd.ignimgs.com/2026/08/30/gta-5-michael-gta-6-1788126987774.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">GTA 5&#39;s Michael Actor Defends GTA 6 After Doubters Say Rockstar&#39;s Games Look Too Similar</h3>
+	<p class="about">Ned Luke, the actor behind Grand Theft Auto 5&#39;s Michael De Santa, said people who think Grand Theft Auto 6 looks too much like GTA 5 are &quot;out of their minds.&quot;</p>
+	
+	
+	<a class="more" href="https://www.ign.com/articles/gta-5s-michael-actor-defends-gta-6-after-doubters-say-rockstars-games-look-too-similar" target="_blank" rel="noopener noreferrer">IGN &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -7527,7 +7619,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2709 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2705 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/9y9jo6" data-cat="dev" data-sent="0" data-slug="blog such thing just tool" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 29 &middot; Dev</span><a href="https://deadsimpletech.com/blog/no-such-thing-as-just-a-tool" target="_blank" rel="noopener noreferrer">There&#39;s no such thing as Just a Tool</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236685010" data-cat="entertainment" data-sent="0" data-slug="news where watch open tennis streaming free schedule" hidden="until-found"><span class="ameta">HOLLYWOOD REPORTER &middot; Aug 29 &middot; Entertainment</span><a href="https://www.hollywoodreporter.com/tv/tv-news/where-to-watch-us-open-tennis-2026-streaming-free-schedule-1236685010/" target="_blank" rel="noopener noreferrer">Where to Watch the 2026 U.S. Open Tennis Tournament Online</a></li>
@@ -10234,10 +10326,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:US-EN-49689130" data-cat="sports" data-sent="0" data-slug="soccer story transfer rumors news liverpool eye endrick case minteh deal fails" hidden="until-found"><span class="ameta">ESPN &middot; Aug 22 &middot; Sports</span><a href="https://www.espn.com/soccer/story/_/id/49689130/transfer-rumors-news-liverpool-eye-endrick-case-minteh-deal-fails" target="_blank" rel="noopener noreferrer">Transfer rumors, news: Liverpool eye Endrick in case Minteh deal fails</a></li>
 <li class="arow" data-count="1" data-id="rss:https://arstechnica.com/science/2026/08/memories-stick-around-even-after-half-the-synapses-are-gone/" data-cat="tech" data-sent="0" data-slug="science memories stick around even after half the synapses are gone" hidden="until-found"><span class="ameta">ARS TECHNICA &middot; Aug 22 &middot; Tech</span><a href="https://arstechnica.com/science/2026/08/memories-stick-around-even-after-half-the-synapses-are-gone/" target="_blank" rel="noopener noreferrer">Putting mice into hibernation causes a major loss of synapses</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/gta-6-cyberleek-website-down" data-cat="games" data-sent="0" data-slug="gta cyberleek website down" hidden="until-found"><span class="ameta">EUROGAMER &middot; Aug 22 &middot; Games</span><a href="https://www.eurogamer.net/gta-6-cyberleek-website-down" target="_blank" rel="noopener noreferrer">Is this the end of the GTA 6 leaks? Take-Two&#39;s legal crusade appears to shut down the hubs behind them</a></li>
-<li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236840725" data-cat="entertainment" data-sent="0" data-slug="film global emily watson dune prophecy season" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 22 &middot; Entertainment</span><a href="https://variety.com/2026/film/global/emily-watson-dune-prophecy-season-2-1236840725/" target="_blank" rel="noopener noreferrer">Emily Watson Says ‘Dune: Prophecy’ Season 2 Will Have ‘Lots of New Elements,’ Led Her on ‘A Quest in a Way Actors Always Get to Do and Actresses Don’t’</a></li>
-<li class="arow" data-count="1" data-id="rss:https://arstechnica.com/science/2026/08/dismantling-the-roadless-rule-threatens-to-disrupt-wildlife-and-water-in-us/" data-cat="tech" data-sent="0" data-slug="science dismantling the roadless rule threatens disrupt wildlife and water" hidden="until-found"><span class="ameta">ARS TECHNICA &middot; Aug 22 &middot; Tech</span><a href="https://arstechnica.com/science/2026/08/dismantling-the-roadless-rule-threatens-to-disrupt-wildlife-and-water-in-us/" target="_blank" rel="noopener noreferrer">Dismantling the Roadless Rule threatens to disrupt wildlife and water in US</a></li>
-<li class="arow" data-count="1" data-id="rss:69278b76ca35020b3a07c60e" data-cat="tech" data-sent="0" data-slug="gallery best monitor arms" hidden="until-found"><span class="ameta">WIRED &middot; Aug 22 &middot; Tech</span><a href="https://www.wired.com/gallery/best-monitor-arms/" target="_blank" rel="noopener noreferrer">The 4 Best Monitor Arms to Clear Up Your Desk Space (2026)</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.polygon.com/switchboard-snes-personal-history-super-mario-world-kart/" data-cat="games" data-sent="0" data-slug="switchboard snes personal history super mario world kart" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 22 &middot; Games</span><a href="https://www.polygon.com/switchboard-snes-personal-history-super-mario-world-kart/" target="_blank" rel="noopener noreferrer">30 Years Ago, One Console and Two Games Changed My Life</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
