@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-31T01:07:50.225Z">
+<meta name="sf-version" content="2026-08-31T01:54:55.217Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,6 +537,7 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
 :root[data-theme="light"] .meta [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
@@ -544,7 +545,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
 :root[data-theme="light"] .meta [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
-:root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
@@ -707,10 +707,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 9:07 PM &middot; 308 TODAY</p>
+	<p class="stats">UPDATED 9:54 PM &middot; 309 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">157</span><span class="sr-only"> — 157 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">226</span><span class="sr-only"> — 226 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">388</span><span class="sr-only"> — 388 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">290</span><span class="sr-only"> — 290 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">368</span><span class="sr-only"> — 368 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">147</span><span class="sr-only"> — 147 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">443</span><span class="sr-only"> — 443 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">328</span><span class="sr-only"> — 328 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">120</span><span class="sr-only"> — 120 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">426</span><span class="sr-only"> — 426 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">157</span><span class="sr-only"> — 157 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">226</span><span class="sr-only"> — 226 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">389</span><span class="sr-only"> — 389 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">290</span><span class="sr-only"> — 290 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">367</span><span class="sr-only"> — 367 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">147</span><span class="sr-only"> — 147 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">443</span><span class="sr-only"> — 443 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">328</span><span class="sr-only"> — 328 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">120</span><span class="sr-only"> — 120 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">426</span><span class="sr-only"> — 426 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -972,43 +972,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.neworleanssaints.com/news/new-orleans-saints-running-back-kendre-miller-hoping-for-good-health-productive-season-2026" target="_blank" rel="noopener noreferrer">Saints running back Kendre Miller hoping to run his way to good health, productive season</a>
-		<p class="trend-meta"><span class="src">NEW ORLEANS SAINTS</span><span class="sep" aria-hidden="true">&middot;</span>"alvin kamara" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.nfl.com/videos/can-t-miss-play-adam-randall-channels-derrick-henry-with-strong-stiff-arm-on-24-yard-run" target="_blank" rel="noopener noreferrer">Can&#39;t-Miss Play: Adam Randall channels Derrick Henry with strong stiff-arm on 24-yard run</a>
+		<p class="trend-meta"><span class="src">NFL.COM</span><span class="sep" aria-hidden="true">&middot;</span>"adam randall" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.instyle.com/novak-djokovic-wife-jelena-djokovic-12064315" target="_blank" rel="noopener noreferrer">Meet Novak Djokovic’s Wife, Jelena Djokovic, Who’s Always Rooting for Him in the Stands</a>
-		<p class="trend-meta"><span class="src">INSTYLE</span><span class="sep" aria-hidden="true">&middot;</span>"djokovic wife" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://roundtable.io/sports/nfl/chargers/opinion/it-is-time-for-the-chargers-to-move-on-from-jk-scott" target="_blank" rel="noopener noreferrer">It is Time for the Chargers to Move on from JK Scott</a>
+		<p class="trend-meta"><span class="src">ROUNDTABLE.IO</span><span class="sep" aria-hidden="true">&middot;</span>"jk scott" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.justjared.com/2026/08/30/pbs-cancels-1-tv-show-in-2026-confirms-2-are-ending-renews-several-hit-series/" target="_blank" rel="noopener noreferrer">PBS Cancels 1 TV Show in 2026, Confirms 2 Are Ending, &amp; Renews Several Hit Series</a>
-		<p class="trend-meta"><span class="src">JUST JARED</span><span class="sep" aria-hidden="true">&middot;</span>"pbs" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.si.com/es-us/futbol/la-posible-alineacion-titular-de-monterrey-vs-san-luis" target="_blank" rel="noopener noreferrer">Monterrey&#39;s possible starting lineup vs San Luis</a>
+		<p class="trend-meta"><span class="src">SPORTS ILLUSTRATED</span><span class="sep" aria-hidden="true">&middot;</span>"monterrey - san luis" &middot; 5000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.hogshaven.com/washington-commanders-discussion/435089/wr-diggs-signing-seen-as-most-critical-to-2026-success-survey-results" target="_blank" rel="noopener noreferrer">WR Diggs signing seen as most critical to 2026 success - survey results</a>
-		<p class="trend-meta"><span class="src">HOGS HAVEN</span><span class="sep" aria-hidden="true">&middot;</span>"stefon diggs" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.mlb.com/news/eugenio-suarez-tj-friedl-placed-on-waivers" target="_blank" rel="noopener noreferrer">Reds veterans Suárez, Friedl clear waivers (source)</a>
+		<p class="trend-meta"><span class="src">MLB.COM</span><span class="sep" aria-hidden="true">&middot;</span>"terry francona" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/fantasy/football/story/_/id/49734412/2026-fantasy-football-breakout-stars-league-winners-michael-florio" target="_blank" rel="noopener noreferrer">Who will be this year&#39;s fantasy football &#39;league winners&#39;?</a>
-		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"kc concepcion" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.sportsbettingdime.com/news/tennis/expert-picks-predictions-for-alexander-bublik-vs-jj-wolf-aug-30-us-open/" target="_blank" rel="noopener noreferrer">Expert Picks &amp; Predictions for Alexander Bublik vs JJ Wolf (Aug 30, US Open)</a>
+		<p class="trend-meta"><span class="src">SPORTS BETTING DIME</span><span class="sep" aria-hidden="true">&middot;</span>"jj wolf" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.mediotiempo.com/futbol/liga-mx-femenil/donde-ver-america-vs-tijuana-horario-y-canal-partido-liga-mx-femenil-2026" target="_blank" rel="noopener noreferrer">Where to Watch América vs. Tijuana LIVE? Time and Channel for the Liga Femenil Apertura 2026 Match</a>
-		<p class="trend-meta"><span class="src">MEDIOTIEMPO</span><span class="sep" aria-hidden="true">&middot;</span>"américa - tijuana" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.soleretriever.com/news/articles/li-ning-steph-curry-way-of-wade-jimmy-butler-pe-collection-release-info" target="_blank" rel="noopener noreferrer">Li-Ning is Dropping Steph Curry&#39;s Way of Wade and Jimmy Butler Signature PEs</a>
+		<p class="trend-meta"><span class="src">SOLE RETRIEVER</span><span class="sep" aria-hidden="true">&middot;</span>"steph curry" &middot; 500+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1030,6 +1030,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.foxnews.com/politics/republicans-tighten-screws-sherrill-noncitizen-voter-probe-enters-new-phase" target="_blank" rel="noopener noreferrer">Fox News Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.polygon.com/my-bloody-valentine-thrillers-free-streaming-august-2026/" data-srckey="polygon" data-cat="entertainment" data-sent="0" data-ts="1788139814000" data-slug="bloody valentine thrillers free streaming august">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The 90-Minute Action Thriller Quentin Tarantino Called &quot;My Favorite&quot; Is Officially Free on Streaming — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T01:30:14.000Z">9:30 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">The 90-Minute Action Thriller Quentin Tarantino Called &quot;My Favorite&quot; Is Officially Free on Streaming</h3>
+	<p class="snippet">You owe it to yourself to give My Bloody Valentine a try now that&#39;s free to stream on Pluto TV.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/m8dmybl_ec004.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/m8dmybl_ec004.jpg?w=240 240w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/m8dmybl_ec004.jpg?w=340 340w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/m8dmybl_ec004.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">The 90-Minute Action Thriller Quentin Tarantino Called &quot;My Favorite&quot; Is Officially Free on Streaming</h3>
+	<p class="about">You owe it to yourself to give My Bloody Valentine a try now that&#39;s free to stream on Pluto TV.</p>
+	
+	
+	<a class="more" href="https://www.polygon.com/my-bloody-valentine-thrillers-free-streaming-august-2026/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -8102,7 +8125,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2684 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2683 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/9y9jo6" data-cat="dev" data-sent="0" data-slug="blog such thing just tool" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 29 &middot; Dev</span><a href="https://deadsimpletech.com/blog/no-such-thing-as-just-a-tool" target="_blank" rel="noopener noreferrer">There&#39;s no such thing as Just a Tool</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236685010" data-cat="entertainment" data-sent="0" data-slug="news where watch open tennis streaming free schedule" hidden="until-found"><span class="ameta">HOLLYWOOD REPORTER &middot; Aug 29 &middot; Entertainment</span><a href="https://www.hollywoodreporter.com/tv/tv-news/where-to-watch-us-open-tennis-2026-streaming-free-schedule-1236685010/" target="_blank" rel="noopener noreferrer">Where to Watch the 2026 U.S. Open Tennis Tournament Online</a></li>
@@ -9814,6 +9837,7 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:d5b875e0-c696-49a6-8f2a-dc881d399d96" data-cat="markets" data-sent="0" data-slug="markets xrp rally brings leverage back raising risk sharper pullback" hidden="until-found"><span class="ameta">COINDESK &middot; Aug 26 &middot; Markets</span><a href="https://www.coindesk.com/markets/2026/08/26/xrp-s-44-rally-brings-leverage-back-raising-risk-of-sharper-pullback" target="_blank" rel="noopener noreferrer">XRP’s 44% rally brings leverage back, raising risk of sharper pullback</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/c8jdl0n0r7mo#1" data-cat="sports" data-sent="0" data-slug="sport football articles c8jdl0n0r7mo" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 26 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/football/articles/c8jdl0n0r7mo" target="_blank" rel="noopener noreferrer">Taekwondo, stats and £1m record - the rise of Arsenal striker Smith</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/e291dc" data-cat="dev" data-sent="0" data-slug="abs" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 26 &middot; Dev</span><a href="https://arxiv.org/abs/2608.23228" target="_blank" rel="noopener noreferrer">mold: A Massively Parallel Linker</a></li>
+<li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240991" data-cat="entertainment" data-sent="0" data-slug="news blue box anime season trailer unveils theme songs" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 26 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/news/2026-08-26/blue-box-anime-season-2-trailer-unveils-theme-songs/.240991" target="_blank" rel="noopener noreferrer">Blue Box Anime&#39;s Season 2 Trailer Unveils Theme Songs</a></li>
 <li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000727898" data-cat="entertainment" data-sent="0" data-slug="atelier just turned one its most popular rpg protagonists into chatbot" hidden="until-found"><span class="ameta">KOTAKU &middot; Aug 26 &middot; Entertainment</span><a href="https://kotaku.com/atelier-just-turned-one-of-its-most-popular-rpg-protagonists-into-an-ai-chatbot-2000727898" target="_blank" rel="noopener noreferrer">Atelier Just Turned One Of Its Most Popular RPG Protagonists Into An AI Chatbot</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/global-development/2026/aug/26/iran-criminalises-contact-foreign-media-human-rights-crackdown" data-cat="world" data-sent="0" data-slug="global development aug iran criminalises contact foreign media human rights crackdown" hidden="until-found"><span class="ameta">GUARDIAN WORLD &middot; Aug 26 &middot; World</span><a href="https://www.theguardian.com/global-development/2026/aug/26/iran-criminalises-contact-foreign-media-human-rights-crackdown" target="_blank" rel="noopener noreferrer">Iran seeks to criminalise all contact with foreign media in ‘chilling’ crackdown</a></li>
 <li class="arow" data-count="1" data-id="rss:3d3d1095-3d32-4226-8f4d-fcdf21921fd8" data-cat="markets" data-sent="0" data-slug="markets crypto greed gauge hits highest since just before october usd19 billion wipeout" hidden="until-found"><span class="ameta">COINDESK &middot; Aug 26 &middot; Markets</span><a href="https://www.coindesk.com/markets/2026/08/26/crypto-greed-gauge-hits-highest-since-just-before-october-s-usd19-billion-wipeout" target="_blank" rel="noopener noreferrer">Crypto greed gauge hits highest since just before October’s $19 billion wipeout</a></li>
@@ -10786,8 +10810,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236840765" data-cat="entertainment" data-sent="0" data-slug="news michael wright dead five heartbeats the principal" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 22 &middot; Entertainment</span><a href="https://variety.com/2026/tv/news/michael-wright-dead-five-heartbeats-the-principal-1236840765/" target="_blank" rel="noopener noreferrer">Actor Michael Wright, Star of ‘The Five Heartbeats’ and ‘V,’ Dies at 70</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/mortal-kombat-2-karl-urban-streaming-success-mk3-hbo/" data-cat="entertainment" data-sent="0" data-slug="mortal kombat karl urban streaming success mk3 hbo" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 22 &middot; Entertainment</span><a href="https://www.polygon.com/mortal-kombat-2-karl-urban-streaming-success-mk3-hbo/" target="_blank" rel="noopener noreferrer">HBO Max&#39;s R-Rated 116-Minute Action Sci-Fi Sequel Is Officially a Streaming Smash Hit</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2240108/google-pixel-android-bluetooth-diagnostics-feature/" data-cat="tech" data-sent="1" data-slug="google pixel android bluetooth diagnostics feature" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 22 &middot; Tech &middot; texted</span><a href="https://www.engadget.com/2240108/google-pixel-android-bluetooth-diagnostics-feature/" target="_blank" rel="noopener noreferrer">This handy Google Pixel feature can help solve annoying Android Bluetooth problems</a></li>
-<li class="arow" data-count="1" data-id="rss:WP-MKTW-0005192427" data-cat="markets" data-sent="1" data-slug="story move over credit cards social media stars are tapping magic wands buy things 62e475d4" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 22 &middot; Markets &middot; texted</span><a href="https://www.marketwatch.com/story/move-over-credit-cards-social-media-stars-are-tapping-magic-wands-to-buy-things-62e475d4?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Move over, credit cards: Social-media stars are tapping magic wands to buy things</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240563" data-cat="entertainment" data-sent="0" data-slug="review clevatess season episode" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 22 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/review/clevatess-season-2/episode-7/.240563" target="_blank" rel="noopener noreferrer">Clevatess Season 2 ‒ Episode 7</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
