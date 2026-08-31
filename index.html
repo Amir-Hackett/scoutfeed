@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-31T02:09:55.195Z">
+<meta name="sf-version" content="2026-08-31T02:57:59.592Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,17 +537,18 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
+:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
+:root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
 :root[data-theme="light"] .meta [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] .meta [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
-:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
-:root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
@@ -560,7 +561,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="hsl(243 55% 72%)"] { color: #58529b !important; }
-:root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
@@ -707,10 +707,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 10:09 PM &middot; 312 TODAY</p>
+	<p class="stats">UPDATED 10:57 PM &middot; 315 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">157</span><span class="sr-only"> — 157 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">226</span><span class="sr-only"> — 226 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">388</span><span class="sr-only"> — 388 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">290</span><span class="sr-only"> — 290 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">367</span><span class="sr-only"> — 367 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">147</span><span class="sr-only"> — 147 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">443</span><span class="sr-only"> — 443 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">330</span><span class="sr-only"> — 330 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">120</span><span class="sr-only"> — 120 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">425</span><span class="sr-only"> — 425 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">158</span><span class="sr-only"> — 158 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">224</span><span class="sr-only"> — 224 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">389</span><span class="sr-only"> — 389 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">290</span><span class="sr-only"> — 290 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">366</span><span class="sr-only"> — 366 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">148</span><span class="sr-only"> — 148 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">443</span><span class="sr-only"> — 443 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">330</span><span class="sr-only"> — 330 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">120</span><span class="sr-only"> — 120 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">425</span><span class="sr-only"> — 425 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -972,43 +972,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nfl.com/videos/can-t-miss-play-adam-randall-channels-derrick-henry-with-strong-stiff-arm-on-24-yard-run" target="_blank" rel="noopener noreferrer">Can&#39;t-Miss Play: Adam Randall channels Derrick Henry with strong stiff-arm on 24-yard run</a>
-		<p class="trend-meta"><span class="src">NFL.COM</span><span class="sep" aria-hidden="true">&middot;</span>"adam randall" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.yahoo.com/entertainment/celebrity/articles/gigi-hadid-shares-pasta-recipe-211235655.html" target="_blank" rel="noopener noreferrer">Gigi Hadid Shares the Pasta Recipe She ‘Definitely’ Makes for Her ‘Man’ Bradley Cooper: ‘He Loves This’</a>
+		<p class="trend-meta"><span class="src">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"gigi hadid" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://roundtable.io/sports/nfl/chargers/opinion/it-is-time-for-the-chargers-to-move-on-from-jk-scott" target="_blank" rel="noopener noreferrer">It is Time for the Chargers to Move on from JK Scott</a>
-		<p class="trend-meta"><span class="src">ROUNDTABLE.IO</span><span class="sep" aria-hidden="true">&middot;</span>"jk scott" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.allrecipes.com/rob-lowe-favorite-diner-dessert-chocolate-cream-pie-12070335" target="_blank" rel="noopener noreferrer">Rob Lowe’s Favorite Vintage Dessert Is Ours, Too</a>
+		<p class="trend-meta"><span class="src">ALLRECIPES</span><span class="sep" aria-hidden="true">&middot;</span>"rob lowe" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.si.com/es-us/futbol/la-posible-alineacion-titular-de-monterrey-vs-san-luis" target="_blank" rel="noopener noreferrer">Monterrey&#39;s possible starting lineup vs San Luis</a>
-		<p class="trend-meta"><span class="src">SPORTS ILLUSTRATED</span><span class="sep" aria-hidden="true">&middot;</span>"monterrey - san luis" &middot; 5000+ searches</p>
+		<a class="trend-title" href="https://www.realtor.com/news/trends/old-farmers-almanac-winter-2026-27-predictions/" target="_blank" rel="noopener noreferrer">A ‘Snowier-Than-Normal Winter’ Is Headed Toward These Homeowners, Warns The Old Farmer’s Almanac</a>
+		<p class="trend-meta"><span class="src">REALTOR.COM</span><span class="sep" aria-hidden="true">&middot;</span>"winter weather forecast" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.mlb.com/news/eugenio-suarez-tj-friedl-placed-on-waivers" target="_blank" rel="noopener noreferrer">Reds veterans Suárez, Friedl clear waivers (source)</a>
-		<p class="trend-meta"><span class="src">MLB.COM</span><span class="sep" aria-hidden="true">&middot;</span>"terry francona" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.goal.com/en-us/news/watch-toluca-v-fc-juarez-live-stream-online-tv-channel/blt5a1766d0ba56f0d9" target="_blank" rel="noopener noreferrer">Watch Toluca vs FC Juarez Liga MX soccer game LIVE: Online streams, TV channel, early teams news, start time</a>
+		<p class="trend-meta"><span class="src">GOAL.COM</span><span class="sep" aria-hidden="true">&middot;</span>"toluca fc vs fc juárez standings" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.sportsbettingdime.com/news/tennis/expert-picks-predictions-for-alexander-bublik-vs-jj-wolf-aug-30-us-open/" target="_blank" rel="noopener noreferrer">Expert Picks &amp; Predictions for Alexander Bublik vs JJ Wolf (Aug 30, US Open)</a>
-		<p class="trend-meta"><span class="src">SPORTS BETTING DIME</span><span class="sep" aria-hidden="true">&middot;</span>"jj wolf" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://www.detroitnews.com/story/entertainment/television/2026/08/29/dan-gheesling-named-by-big-brother-fans-best-winner-in-show-history/91527964007/" target="_blank" rel="noopener noreferrer">Metro Detroit &#39;Big Brother&#39; champion named Best Winner in show history</a>
+		<p class="trend-meta"><span class="src">THE DETROIT NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"big brother spoilers" &middot; 10000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.soleretriever.com/news/articles/li-ning-steph-curry-way-of-wade-jimmy-butler-pe-collection-release-info" target="_blank" rel="noopener noreferrer">Li-Ning is Dropping Steph Curry&#39;s Way of Wade and Jimmy Butler Signature PEs</a>
-		<p class="trend-meta"><span class="src">SOLE RETRIEVER</span><span class="sep" aria-hidden="true">&middot;</span>"steph curry" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.jsonline.com/story/entertainment/television-radio/2026/08/30/big-brother-tonight-episode-start-time/91540140007/" target="_blank" rel="noopener noreferrer">What time is Big Brother on tonight? Watch Sunday episode, TV schedule</a>
+		<p class="trend-meta"><span class="src">MILWAUKEE JOURNAL SENTINEL</span><span class="sep" aria-hidden="true">&middot;</span>"how long is big brother tonight" &middot; 10000+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1030,6 +1030,52 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.foxnews.com/politics/republicans-tighten-screws-sherrill-noncitizen-voter-probe-enters-new-phase" target="_blank" rel="noopener noreferrer">Fox News Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.billboard.com/?p=1236328446" data-srckey="billboard" data-cat="music" data-sent="0" data-ts="1788141747000" data-slug="music news jennie fallen angel best new poll results">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Fans Choose JENNIE’s ‘Fallen Angel’ as This Week’s Favorite New Music — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">BILLBOARD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T02:02:27.000Z">10:02 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
+	<h3 class="title">Fans Choose JENNIE’s ‘Fallen Angel’ as This Week’s Favorite New Music</h3>
+	<p class="snippet">JENNIE&#39;s new digital EP brought in more than 82% of the vote.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Fans Choose JENNIE’s ‘Fallen Angel’ as This Week’s Favorite New Music</h3>
+	<p class="about">JENNIE&#39;s new digital EP brought in more than 82% of the vote.</p>
+	
+	
+	<a class="more" href="https://www.billboard.com/music/music-news/jennie-fallen-angel-best-new-music-poll-results-1236328446/" target="_blank" rel="noopener noreferrer">Billboard &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236838632" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788141600000" data-slug="features lanterns aaron pierre john backstory episode green lantern">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘Lanterns’ Stars Aaron Pierre, Jasmine Cephas Jones on John’s Backstory Episode and How Being Black Informs His Quest to Become Green Lantern: ‘Fear Is Instilled in Our Ancestry’ — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T02:00:00.000Z">10:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">‘Lanterns’ Stars Aaron Pierre, Jasmine Cephas Jones on John’s Backstory Episode and How Being Black Informs His Quest to Become Green Lantern: ‘Fear Is Instilled in Our Ancestry’</h3>
+	<p class="snippet">SPOILER ALERT: This article contains spoilers for Season 1, Episode 3 of “Lanterns,” now streaming on HBO Max. From the series’ opening scene, “Lanterns” sets up John Stewart’s (Aaron Pierre) calling to one day step into his own as Green Lantern. But it’s not until Sunday’s episode that we learn just how long John has been […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/08/j-alphonse-nicholson-cairo-cash-lee.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/08/j-alphonse-nicholson-cairo-cash-lee.jpg?w=240 240w, https://variety.com/wp-content/uploads/2026/08/j-alphonse-nicholson-cairo-cash-lee.jpg?w=340 340w, https://variety.com/wp-content/uploads/2026/08/j-alphonse-nicholson-cairo-cash-lee.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">‘Lanterns’ Stars Aaron Pierre, Jasmine Cephas Jones on John’s Backstory Episode and How Being Black Informs His Quest to Become Green Lantern: ‘Fear Is Instilled in Our Ancestry’</h3>
+	<p class="about">SPOILER ALERT: This article contains spoilers for Season 1, Episode 3 of “Lanterns,” now streaming on HBO Max. From the series’ opening scene, “Lanterns” sets up John Stewart’s (Aaron Pierre) calling to one day step into his own as Green Lantern. But it’s not until Sunday’s episode that we learn just how long John has been […]</p>
+	
+	
+	<a class="more" href="https://variety.com/2026/tv/features/lanterns-aaron-pierre-john-backstory-episode-green-lantern-1236838632/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1107,6 +1153,29 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact h2 has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/" data-srckey="hacker news" data-cat="ai" data-sent="0" data-ts="1788139702000" data-slug="aug understanding chatgpt work">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Understanding ChatGPT Work — flip for details">
+	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T01:28:22.000Z">9:28 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Understanding ChatGPT Work</h3>
+	<p class="snippet">OpenAI announced ChatGPT Work on July 9th, and have been furiously iterating on it ever since. It is an extraordinarily confusing and very powerful product. Here’s what I’ve figured out …</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static.simonwillison.net/static/2026/chatgpt-work-card.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Understanding ChatGPT Work</h3>
+	<p class="about">OpenAI announced ChatGPT Work on July 9th, and have been furiously iterating on it ever since. It is an extraordinarily confusing and very powerful product. Here’s what I’ve figured out …</p>
+	<p class="why"><span class="whylabel">matched</span> <span class="whykey">OpenAI</span> <span class="whystrength" title="How strongly this matched your interest (decayed frequency: 2.0)">match</span></p>
+	
+	<a class="more" href="https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact w2 h2" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/f4620aeb-e992-4e22-8ae3-c906c22ecbbd" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1788137574185" data-slug="health tech fierce healthcare fundraising tracker">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Fierce Healthcare Fundraising Tracker &#39;26: Arintra lands $25M; Happy Health buoyed by $75M round — flip for details">
@@ -1130,14 +1199,14 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact h2" style="--rail:#f87171" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788133062" data-srckey="al jazeera" data-cat="world" data-sent="0" data-ts="1788136872000" data-slug="video inside story what are the implications venezuela oil deal">
+<article class="card compact h2 has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788133062" data-srckey="al jazeera" data-cat="world" data-sent="0" data-ts="1788136872000" data-slug="video inside story what are the implications venezuela oil deal">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="What are the implications of the US-Venezuela oil deal? — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T00:41:12.000Z">8:41 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
 	<h3 class="title">What are the implications of the US-Venezuela oil deal?</h3>
 	<p class="snippet">Opposition in Venezuela as interim leader insists the deal with Washington will help with the country&#39;s recovery.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://www.aljazeera.com/wp-content/uploads/2026/08/image-1788133141.jpg?resize=1920%2C1080&amp;amp;quality=80" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">What are the implications of the US-Venezuela oil deal?</h3>
@@ -8194,7 +8263,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2680 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2677 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/9y9jo6" data-cat="dev" data-sent="0" data-slug="blog such thing just tool" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 29 &middot; Dev</span><a href="https://deadsimpletech.com/blog/no-such-thing-as-just-a-tool" target="_blank" rel="noopener noreferrer">There&#39;s no such thing as Just a Tool</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236685010" data-cat="entertainment" data-sent="0" data-slug="news where watch open tennis streaming free schedule" hidden="until-found"><span class="ameta">HOLLYWOOD REPORTER &middot; Aug 29 &middot; Entertainment</span><a href="https://www.hollywoodreporter.com/tv/tv-news/where-to-watch-us-open-tennis-2026-streaming-free-schedule-1236685010/" target="_blank" rel="noopener noreferrer">Where to Watch the 2026 U.S. Open Tennis Tournament Online</a></li>
@@ -10873,9 +10942,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:6a84387d03b7ff172932c1cc" data-cat="tech" data-sent="0" data-slug="review saily ultra esim" hidden="until-found"><span class="ameta">WIRED &middot; Aug 22 &middot; Tech</span><a href="https://www.wired.com/review/saily-ultra-esim/" target="_blank" rel="noopener noreferrer">Saily Ultra eSIM Premum Plan Review: Packed With Perks</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2240112/how-to-airplay-from-iphone-macbook-to-tv/" data-cat="tech" data-sent="0" data-slug="how airplay from iphone macbook" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 22 &middot; Tech</span><a href="https://www.engadget.com/2240112/how-to-airplay-from-iphone-macbook-to-tv/" target="_blank" rel="noopener noreferrer">How to AirPlay from iPhone or MacBook to your TV</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theverge.com/tech/983554/hp-omnibook-3-16-snapdragon-laptop-review" data-cat="tech" data-sent="0" data-slug="tech omnibook snapdragon laptop review" hidden="until-found"><span class="ameta">THE VERGE &middot; Aug 22 &middot; Tech</span><a href="https://www.theverge.com/tech/983554/hp-omnibook-3-16-snapdragon-laptop-review" target="_blank" rel="noopener noreferrer">An okay laptop with 16GB of RAM is better than a nice laptop with 8GB, and this $520 HP OmniBook proves it</a></li>
-<li class="arow" data-count="1" data-id="rss:WP-MKTW-0005193891" data-cat="markets" data-sent="0" data-slug="story why announcement from the treasury sparked rally gold and bitcoin this week d9d5972b" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 22 &middot; Markets</span><a href="https://www.marketwatch.com/story/why-an-announcement-from-the-treasury-sparked-a-rally-in-gold-and-bitcoin-this-week-d9d5972b?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Why an announcement from the Treasury sparked a rally in gold and bitcoin this week</a></li>
-<li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/jwzbqi" data-cat="dev" data-sent="0" data-slug="espressif systems releases linux bsp developer preview for esp32 s31 risc microprocessor" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 22 &middot; Dev</span><a href="https://www.cnx-software.com/2026/08/22/espressif-systems-releases-a-linux-bsp-developer-preview-for-esp32-s31-risc-v-microprocessor/" target="_blank" rel="noopener noreferrer">Espressif releases Linux BSP for ESP32-S31 RISC-V boards</a></li>
-<li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/mbmn1f" data-cat="dev" data-sent="0" data-slug="you should never angry work" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 22 &middot; Dev</span><a href="https://www.seangoedecke.com/you-should-never-be-angry-at-work/" target="_blank" rel="noopener noreferrer">You should never be angry at work</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
