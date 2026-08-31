@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-31T02:57:59.592Z">
+<meta name="sf-version" content="2026-08-31T03:12:59.517Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,21 +537,23 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
+:root[data-theme="light"] .meta [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
+:root[data-theme="light"] .meta [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
+:root[data-theme="light"] .meta [style*="hsl(224 55% 72%)"] { color: #495b8f !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
-:root[data-theme="light"] .meta [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
-:root[data-theme="light"] .meta [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
-:root[data-theme="light"] .meta [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
+:root[data-theme="light"] .meta [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
@@ -566,7 +568,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] .meta [style*="hsl(156 55% 72%)"] { color: #176e52 !important; }
-:root[data-theme="light"] .meta [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
 :root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
 :root[data-theme="light"] .meta [style*="hsl(273 55% 72%)"] { color: #724890 !important; }
@@ -576,7 +577,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
 :root[data-theme="light"] .meta [style*="hsl(89 55% 72%)"] { color: #49691b !important; }
 :root[data-theme="light"] .meta [style*="hsl(336 55% 72%)"] { color: #894262 !important; }
-:root[data-theme="light"] .meta [style*="hsl(224 55% 72%)"] { color: #495b8f !important; }
 :root[data-theme="light"] .meta [style*="hsl(287 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] .meta [style*="hsl(232 55% 72%)"] { color: #4f5795 !important; }
 :root[data-theme="light"] .meta [style*="hsl(170 55% 72%)"] { color: #136c62 !important; }
@@ -707,10 +707,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 10:57 PM &middot; 315 TODAY</p>
+	<p class="stats">UPDATED 11:12 PM &middot; 322 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">158</span><span class="sr-only"> — 158 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">224</span><span class="sr-only"> — 224 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">389</span><span class="sr-only"> — 389 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">290</span><span class="sr-only"> — 290 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">366</span><span class="sr-only"> — 366 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">148</span><span class="sr-only"> — 148 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">443</span><span class="sr-only"> — 443 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">330</span><span class="sr-only"> — 330 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">120</span><span class="sr-only"> — 120 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">425</span><span class="sr-only"> — 425 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">159</span><span class="sr-only"> — 159 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">224</span><span class="sr-only"> — 224 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">390</span><span class="sr-only"> — 390 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">290</span><span class="sr-only"> — 290 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">365</span><span class="sr-only"> — 365 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">146</span><span class="sr-only"> — 146 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">443</span><span class="sr-only"> — 443 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">333</span><span class="sr-only"> — 333 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">122</span><span class="sr-only"> — 122 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">421</span><span class="sr-only"> — 421 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1038,6 +1038,121 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact h2" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236685512" data-srckey="hollywood reporter" data-cat="entertainment" data-sent="0" data-ts="1788144614000" data-slug="movies movie news naya rivera ryan dorsey son josey first fim role">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Naya Rivera and Ryan Dorsey’s 10-Year-Old Son, Josey, Lands First Film Role — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(18 55% 72%)">HOLLYWOOD REPORTER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T02:50:14.000Z">10:50 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Naya Rivera and Ryan Dorsey’s 10-Year-Old Son, Josey, Lands First Film Role</h3>
+	<p class="snippet">According to IMDB.com, he&#39;ll appear in writer-director Evan Coury&#39;s &#39;The Burning Valley,&#39; which is filming in Pennsylvania.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Naya Rivera and Ryan Dorsey’s 10-Year-Old Son, Josey, Lands First Film Role</h3>
+	<p class="about">According to IMDB.com, he&#39;ll appear in writer-director Evan Coury&#39;s &#39;The Burning Valley,&#39; which is filming in Pennsylvania.</p>
+	
+	
+	<a class="more" href="https://www.hollywoodreporter.com/movies/movie-news/naya-rivera-ryan-dorsey-son-josey-first-fim-role-1236685512/" target="_blank" rel="noopener noreferrer">Hollywood Reporter &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:108356180" data-srckey="cnbc" data-cat="ai" data-sent="0" data-ts="1788143753000" data-slug="jio ipo nse india shares meta google html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Meta- and Google-backed Indian telecom operator Jio Platforms gets regulatory nod for IPO — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T02:35:53.000Z">10:35 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Meta- and Google-backed Indian telecom operator Jio Platforms gets regulatory nod for IPO</h3>
+	<p class="snippet">India&#39;s largest digital and telecom operator, Jio Platforms, got a regulatory nod for an IPO, but the National Stock Exchange, another mega issue, is still awaiting regulatory clearance.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://image.cnbcfm.com/api/v1/image/108324349-1781835408345-gettyimages-1243100269-AVaishnav_Jio_5G_branding_in_Mumbai_10.jpeg?v=1781835421&amp;w=340&amp;h=191" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://image.cnbcfm.com/api/v1/image/108324349-1781835408345-gettyimages-1243100269-AVaishnav_Jio_5G_branding_in_Mumbai_10.jpeg?v=1781835421&amp;w=240&amp;h=135 240w, https://image.cnbcfm.com/api/v1/image/108324349-1781835408345-gettyimages-1243100269-AVaishnav_Jio_5G_branding_in_Mumbai_10.jpeg?v=1781835421&amp;w=340&amp;h=191 340w, https://image.cnbcfm.com/api/v1/image/108324349-1781835408345-gettyimages-1243100269-AVaishnav_Jio_5G_branding_in_Mumbai_10.jpeg?v=1781835421&amp;w=510&amp;h=287 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Meta- and Google-backed Indian telecom operator Jio Platforms gets regulatory nod for IPO</h3>
+	<p class="about">India&#39;s largest digital and telecom operator, Jio Platforms, got a regulatory nod for an IPO, but the National Stock Exchange, another mega issue, is still awaiting regulatory clearance.</p>
+	<p class="why"><span class="whylabel">matched</span> <span class="whykey">Google</span> <span class="whystrength" title="How strongly this matched your interest (decayed frequency: 2.0)">match</span></p>
+	
+	<a class="more" href="https://www.cnbc.com/2026/08/31/jio-ipo-nse-india-shares-meta-google.html" target="_blank" rel="noopener noreferrer">CNBC &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#f87171" data-count="1" data-id="rss:https://www.npr.org/2026/08/30/nx-s1-5924666/what-argentina-gets-right-about-youth-soccer-and-what-the-u-s-gets-wrong" data-srckey="npr world" data-cat="world" data-sent="0" data-ts="1788143269000" data-slug="what argentina gets right about youth soccer and the wrong">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="What Argentina gets right about youth soccer — and what the U.S. gets wrong — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(314 55% 72%)">NPR WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T02:27:49.000Z">10:27 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">What Argentina gets right about youth soccer — and what the U.S. gets wrong</h3>
+	<p class="snippet">Argentina has produced some of the world&#39;s greatest soccer players. Could its youth system offer lessons for the United States?</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">What Argentina gets right about youth soccer — and what the U.S. gets wrong</h3>
+	<p class="about">Argentina has produced some of the world&#39;s greatest soccer players. Could its youth system offer lessons for the United States?</p>
+	
+	
+	<a class="more" href="https://www.npr.org/2026/08/30/nx-s1-5924666/what-argentina-gets-right-about-youth-soccer-and-what-the-u-s-gets-wrong" target="_blank" rel="noopener noreferrer">NPR World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788137011" data-srckey="al jazeera" data-cat="world" data-sent="0" data-ts="1788142126000" data-slug="news plans sanction another bank keep economic pressure iran">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="US plans to sanction another bank to keep economic pressure on Iran — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T02:08:46.000Z">10:08 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">US plans to sanction another bank to keep economic pressure on Iran</h3>
+	<p class="snippet">Washington has recently stepped up efforts to economically pressure Tehran amid the deadlocked truce talks.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.aljazeera.com/wp-content/uploads/2026/08/AP26242764454014-1788139016.jpg?resize=1920%2C1440" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">US plans to sanction another bank to keep economic pressure on Iran</h3>
+	<p class="about">Washington has recently stepped up efforts to economically pressure Tehran amid the deadlocked truce talks.</p>
+	
+	
+	<a class="more" href="https://www.aljazeera.com/news/2026/8/31/us-plans-to-sanction-another-bank-to-keep-economic-pressure-on-iran?traffic_source=rss" target="_blank" rel="noopener noreferrer">Al Jazeera &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fb923c" data-count="1" data-id="rss:https://abcnews.com/Politics/wireStory/plan-cut-number-polling-sites-major-texas-county-136078582" data-srckey="abc news politics" data-cat="politics" data-sent="0" data-ts="1788141892000" data-slug="politics wirestory plan cut number polling sites major texas county">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Plan to cut number of polling sites in a major Texas county — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(224 55% 72%)">ABC NEWS POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T02:04:52.000Z">10:04 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">Plan to cut number of polling sites in a major Texas county</h3>
+	<p class="snippet">Plans in one of Texas’ largest counties to use dozens fewer polling location than previous years is drawing protests from Democrats who say the reductions could create confusion in the November midterm elections</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://s.abcnews.com/images/US/wirestory_14753f336d2977fdd0dd88492e707035_4x3_384.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Plan to cut number of polling sites in a major Texas county</h3>
+	<p class="about">Plans in one of Texas’ largest counties to use dozens fewer polling location than previous years is drawing protests from Democrats who say the reductions could create confusion in the November midterm elections</p>
+	
+	
+	<a class="more" href="https://abcnews.com/Politics/wireStory/plan-cut-number-polling-sites-major-texas-county-136078582" target="_blank" rel="noopener noreferrer">ABC News Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact h2" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.billboard.com/?p=1236328446" data-srckey="billboard" data-cat="music" data-sent="0" data-ts="1788141747000" data-slug="music news jennie fallen angel best new poll results">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Fans Choose JENNIE’s ‘Fallen Angel’ as This Week’s Favorite New Music — flip for details">
@@ -1076,6 +1191,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://variety.com/2026/tv/features/lanterns-aaron-pierre-john-backstory-episode-green-lantern-1236838632/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788133847" data-srckey="al jazeera" data-cat="world" data-sent="0" data-ts="1788141298000" data-slug="news venezuelas maduro shares first photos from detention">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Venezuela’s Maduro shares first photos from US detention — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T01:54:58.000Z">9:54 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Venezuela’s Maduro shares first photos from US detention</h3>
+	<p class="snippet">Abducted Venezuelan leader&#39;s post appears to show him in US detention, published two days after US-Venezuela oil deal.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.aljazeera.com/wp-content/uploads/2026/08/Screenshot-2026-08-31-at-8.37.39-AM-1788137191.jpg?resize=1200%2C675" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Venezuela’s Maduro shares first photos from US detention</h3>
+	<p class="about">Abducted Venezuelan leader&#39;s post appears to show him in US detention, published two days after US-Venezuela oil deal.</p>
+	
+	
+	<a class="more" href="https://www.aljazeera.com/news/2026/8/31/venezuelas-maduro-shares-first-photos-from-us-detention?traffic_source=rss" target="_blank" rel="noopener noreferrer">Al Jazeera &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1559,6 +1697,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://deadline.com/2026/08/box-office-summer-2026-near-record-1237062959/" target="_blank" rel="noopener noreferrer">Deadline &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fb923c" data-count="1" data-id="rss:1720877f-6f9e-41e7-b143-a4cc884e35d7" data-srckey="cbs politics" data-cat="politics" data-sent="0" data-ts="1788129000000" data-slug="video cbs weekend news">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="8/30: CBS Weekend News — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(69 55% 72%)">CBS POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T22:30:00.000Z">6:30 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">8/30: CBS Weekend News</h3>
+	<p class="snippet">Nepal warns of new flooding amid ongoing devastation; President Trump says the oil deal with Venezuela will boost U.S. oil reserves.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assets3.cbsnewsstatic.com/hub/i/r/2026/08/31/d9b6385a-dd12-4768-aa1a-fbd8bdd1a7b3/thumbnail/1200x630/a92ce07cd6bca2942a0bb24c73b373e0/wnthumb0830.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">8/30: CBS Weekend News</h3>
+	<p class="about">Nepal warns of new flooding amid ongoing devastation; President Trump says the oil deal with Venezuela will boost U.S. oil reserves.</p>
+	
+	
+	<a class="more" href="https://www.cbsnews.com/video/083026-cbs-weekend-news/" target="_blank" rel="noopener noreferrer">CBS Politics &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -8263,7 +8424,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2677 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2670 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/9y9jo6" data-cat="dev" data-sent="0" data-slug="blog such thing just tool" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 29 &middot; Dev</span><a href="https://deadsimpletech.com/blog/no-such-thing-as-just-a-tool" target="_blank" rel="noopener noreferrer">There&#39;s no such thing as Just a Tool</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236685010" data-cat="entertainment" data-sent="0" data-slug="news where watch open tennis streaming free schedule" hidden="until-found"><span class="ameta">HOLLYWOOD REPORTER &middot; Aug 29 &middot; Entertainment</span><a href="https://www.hollywoodreporter.com/tv/tv-news/where-to-watch-us-open-tennis-2026-streaming-free-schedule-1236685010/" target="_blank" rel="noopener noreferrer">Where to Watch the 2026 U.S. Open Tennis Tournament Online</a></li>
@@ -10935,13 +11096,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/magazine/mica-is-coming-for-defi-vaults-but-regulation-will-be-difficult" data-cat="markets" data-sent="0" data-slug="magazine mica coming for defi vaults but regulation will difficult" hidden="until-found"><span class="ameta">COINTELEGRAPH &middot; Aug 22 &middot; Markets</span><a href="https://cointelegraph.com/magazine/mica-is-coming-for-defi-vaults-but-regulation-will-be-difficult" target="_blank" rel="noopener noreferrer">MiCA is coming for DeFi vaults, but regulation will be difficult</a></li>
 <li class="arow" data-count="1" data-id="rss:108343943" data-cat="markets" data-sent="0" data-slug="stocks market investments diversification html" hidden="until-found"><span class="ameta">CNBC &middot; Aug 22 &middot; Markets</span><a href="https://www.cnbc.com/2026/08/22/stocks-market-investments-diversification.html" target="_blank" rel="noopener noreferrer">The biggest U.S. stocks have done great for you. Experts say not to get greedy</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/cpw94jp02xxo#0" data-cat="sports" data-sent="0" data-slug="sport football articles cpw94jp02xxo" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 22 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/football/articles/cpw94jp02xxo" target="_blank" rel="noopener noreferrer">Ajayi is rock at the back as Hull stun Man Utd - player ratings</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235613327" data-cat="music" data-sent="0" data-slug="music news olivia rodrigo new song serena joy indie record shop" hidden="until-found"><span class="ameta">ROLLING STONE MUSIC &middot; Aug 22 &middot; Music</span><a href="https://www.rollingstone.com/music/music-news/olivia-rodrigo-new-song-serena-joy-cd-indie-record-shop-1235613327/" target="_blank" rel="noopener noreferrer">Olivia Rodrigo Releases New Song ‘Serena Joy’ Via CD Single at One Indie Record Shop</a></li>
-<li class="arow" data-count="1" data-id="rss:108348017" data-cat="markets" data-sent="0" data-slug="longevity doctor daily habits healthy aging html" hidden="until-found"><span class="ameta">CNBC &middot; Aug 22 &middot; Markets</span><a href="https://www.cnbc.com/2026/08/22/longevity-doctor-daily-habits-healthy-aging.html" target="_blank" rel="noopener noreferrer">How a physician with a 1 a.m. bedtime optimizes his health: I try to &#39;tick all the longevity boxes that I can&#39;</a></li>
-<li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000726776" data-cat="tech" data-sent="0" data-slug="bots scam calls breakdown clips funny" hidden="until-found"><span class="ameta">KOTAKU &middot; Aug 22 &middot; Tech</span><a href="https://kotaku.com/ai-bots-scam-calls-breakdown-clips-funny-2000726776" target="_blank" rel="noopener noreferrer">Watching AI Scam Bots Having A Breakdown Is My New Guilty Pleasure</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.rollingstone.com/?post_type=pmc_list&amp;p=1235611569" data-cat="music" data-sent="0" data-slug="music lists best reunions rock history ranked" hidden="until-found"><span class="ameta">ROLLING STONE MUSIC &middot; Aug 22 &middot; Music</span><a href="https://www.rollingstone.com/music/music-lists/best-reunions-in-rock-history-ranked-1235611569/" target="_blank" rel="noopener noreferrer">The 31 Best One-Off Reunions in Rock History: From Led Zeppelin to Talking Heads</a></li>
-<li class="arow" data-count="1" data-id="rss:6a84387d03b7ff172932c1cc" data-cat="tech" data-sent="0" data-slug="review saily ultra esim" hidden="until-found"><span class="ameta">WIRED &middot; Aug 22 &middot; Tech</span><a href="https://www.wired.com/review/saily-ultra-esim/" target="_blank" rel="noopener noreferrer">Saily Ultra eSIM Premum Plan Review: Packed With Perks</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2240112/how-to-airplay-from-iphone-macbook-to-tv/" data-cat="tech" data-sent="0" data-slug="how airplay from iphone macbook" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 22 &middot; Tech</span><a href="https://www.engadget.com/2240112/how-to-airplay-from-iphone-macbook-to-tv/" target="_blank" rel="noopener noreferrer">How to AirPlay from iPhone or MacBook to your TV</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.theverge.com/tech/983554/hp-omnibook-3-16-snapdragon-laptop-review" data-cat="tech" data-sent="0" data-slug="tech omnibook snapdragon laptop review" hidden="until-found"><span class="ameta">THE VERGE &middot; Aug 22 &middot; Tech</span><a href="https://www.theverge.com/tech/983554/hp-omnibook-3-16-snapdragon-laptop-review" target="_blank" rel="noopener noreferrer">An okay laptop with 16GB of RAM is better than a nice laptop with 8GB, and this $520 HP OmniBook proves it</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
