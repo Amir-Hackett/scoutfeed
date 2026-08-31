@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-31T06:10:20.888Z">
+<meta name="sf-version" content="2026-08-31T07:15:03.912Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -538,13 +538,13 @@ h1 .tld { color: var(--accent); }
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
+:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
+:root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
-:root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
-:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
@@ -707,10 +707,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 2:10 AM &middot; 10 TODAY</p>
+	<p class="stats">UPDATED 3:15 AM &middot; 14 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">160</span><span class="sr-only"> — 160 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">224</span><span class="sr-only"> — 224 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">392</span><span class="sr-only"> — 392 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">291</span><span class="sr-only"> — 291 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">362</span><span class="sr-only"> — 362 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">145</span><span class="sr-only"> — 145 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">445</span><span class="sr-only"> — 445 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">333</span><span class="sr-only"> — 333 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">121</span><span class="sr-only"> — 121 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">420</span><span class="sr-only"> — 420 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">160</span><span class="sr-only"> — 160 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">223</span><span class="sr-only"> — 223 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">393</span><span class="sr-only"> — 393 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">291</span><span class="sr-only"> — 291 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">363</span><span class="sr-only"> — 363 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">145</span><span class="sr-only"> — 145 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">444</span><span class="sr-only"> — 444 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">333</span><span class="sr-only"> — 333 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">121</span><span class="sr-only"> — 121 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">420</span><span class="sr-only"> — 420 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -972,43 +972,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://pagesix.com/2026/08/29/celebrity-news/jack-osbourne-says-sister-kelly-in-a-happier-place-after-sid-wilson-split/" target="_blank" rel="noopener noreferrer">Kelly Osbourne in a ‘happier place’ after messy Sid Wilson split, brother Jack reveals</a>
-		<p class="trend-meta"><span class="src">PAGE SIX</span><span class="sep" aria-hidden="true">&middot;</span>"jack osbourne" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.texastribune.org/2026/08/28/texas-flock-cameras-auto-insurance-fee-mvcpa-grants/" target="_blank" rel="noopener noreferrer">How a $1 Texas insurance fee funded thousands of Flock cameras</a>
+		<p class="trend-meta"><span class="src">THE TEXAS TRIBUNE</span><span class="sep" aria-hidden="true">&middot;</span>"car insurance" &middot; 5000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.newsnationnow.com/business/your-money/september-social-security-benefits-schedule/" target="_blank" rel="noopener noreferrer">When Social Security recipients will get September payments</a>
-		<p class="trend-meta"><span class="src">NEWSNATION</span><span class="sep" aria-hidden="true">&middot;</span>"social security september 2026 dates" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://abc7ny.com/post/brooklyn-nurse-jiayi-zheng-killed-sunset-park-hit-run-driver-sought/19763742/" target="_blank" rel="noopener noreferrer">Brooklyn nurse Jiayi Zheng killed in Sunset Park hit-and-run; driver still sought</a>
+		<p class="trend-meta"><span class="src">ABC7 NEW YORK</span><span class="sep" aria-hidden="true">&middot;</span>"jiayi zheng nurse" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.vulture.com/article/furious-recap-season-1-episode-7-hulu.html" target="_blank" rel="noopener noreferrer">Furious Recap: A Hopeless Place</a>
-		<p class="trend-meta"><span class="src">VULTURE</span><span class="sep" aria-hidden="true">&middot;</span>"furious tv show" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.8newsnow.com/weather/heat-relief-headed-to-las-vegas-as-temps-begin-to-dip/" target="_blank" rel="noopener noreferrer">Heat relief headed to Las Vegas as temps begin to dip</a>
+		<p class="trend-meta"><span class="src">KLAS 8 NEWS NOW</span><span class="sep" aria-hidden="true">&middot;</span>"las vegas weather" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://variety.com/2026/tv/news/furious-season-2-hulu-1236845363/" target="_blank" rel="noopener noreferrer">‘Furious’ Renewed for Season 2 at Hulu</a>
-		<p class="trend-meta"><span class="src">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span>"furious season 2" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.theatlantic.com/science/2026/08/el-nino-effects/688429/" target="_blank" rel="noopener noreferrer">This El Niño Will Be Unlike Any in the Past Eight Decades</a>
+		<p class="trend-meta"><span class="src">THE ATLANTIC</span><span class="sep" aria-hidden="true">&middot;</span>"el nino news" &middot; 20000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nbclosangeles.com/entertainment/entertainment-news/olivia-rodrigo-festival-unites-women-girls-behind-nonprofits-promoting-well-being/3935431/" target="_blank" rel="noopener noreferrer">Olivia Rodrigo&#39;s festival is uniting women and girls behind nonprofits promoting their well-being</a>
-		<p class="trend-meta"><span class="src">NBC LOS ANGELES</span><span class="sep" aria-hidden="true">&middot;</span>"olivia rodrigo" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://pagesix.com/2026/08/29/celebrity-news/jack-osbourne-says-sister-kelly-in-a-happier-place-after-sid-wilson-split/" target="_blank" rel="noopener noreferrer">Kelly Osbourne in a ‘happier place’ after messy Sid Wilson split, brother Jack reveals</a>
+		<p class="trend-meta"><span class="src">PAGE SIX</span><span class="sep" aria-hidden="true">&middot;</span>"jack osbourne" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://variety.com/2026/film/news/pokemon-wild-card-movie-release-date-teaser-1236847050/" target="_blank" rel="noopener noreferrer">‘Pokémon: Wild Card’ Movie Sets 2027 Release Date, Drops Anime Teaser Starring Trading Card Game Player</a>
-		<p class="trend-meta"><span class="src">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span>"pokemon wild card" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.newsnationnow.com/business/your-money/september-social-security-benefits-schedule/" target="_blank" rel="noopener noreferrer">When Social Security recipients will get September payments</a>
+		<p class="trend-meta"><span class="src">NEWSNATION</span><span class="sep" aria-hidden="true">&middot;</span>"social security september 2026 dates" &middot; 2000+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1038,14 +1038,106 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49779357" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788156083000" data-slug="tennis story open novak djokovic upset mariano navone">
+<article class="card compact" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49780370" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788159683829" data-slug="tennis story venus williams loses sofia kenin open 1st round">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Venus, 46, loses after latest-ever start at US Open — flip for details">
+	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T07:01:23.829Z">3:01 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Venus, 46, loses after latest-ever start at US Open</h3>
+	<p class="snippet">Venus Williams bowed out of her 26th US Open singles appearance early Monday morning, falling in straight sets to fellow American wild card Sofia Kenin after not getting on the court until midnight local time.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Venus, 46, loses after latest-ever start at US Open</h3>
+	<p class="about">Venus Williams bowed out of her 26th US Open singles appearance early Monday morning, falling in straight sets to fellow American wild card Sofia Kenin after not getting on the court until midnight local time.</p>
+	
+	
+	<a class="more" href="https://www.espn.com/tennis/story/_/id/49780370/venus-williams-loses-sofia-kenin-us-open-1st-round" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236847106" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788159196000" data-slug="news nbcuniversal unext japan deal">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="NBCUniversal, U-Next Ink Sweeping Japan Partnership Spanning Streaming and Theme Parks — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T06:53:16.000Z">2:53 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">NBCUniversal, U-Next Ink Sweeping Japan Partnership Spanning Streaming and Theme Parks</h3>
+	<p class="snippet">NBCUniversal and U-Next have entered into a long-term strategic partnership in Japan, bringing NBCUniversal’s international streaming brand Universal+ exclusively to the platform alongside joint initiatives with Universal Studios Japan and new global distribution pathways for Japanese content. U-Next, operated by Usen &amp; U-Next Group, is Japan’s second-largest subscription video-on-demand platform…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/08/NBCUniversal-Unext.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/08/NBCUniversal-Unext.jpg?w=240 240w, https://variety.com/wp-content/uploads/2026/08/NBCUniversal-Unext.jpg?w=340 340w, https://variety.com/wp-content/uploads/2026/08/NBCUniversal-Unext.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">NBCUniversal, U-Next Ink Sweeping Japan Partnership Spanning Streaming and Theme Parks</h3>
+	<p class="about">NBCUniversal and U-Next have entered into a long-term strategic partnership in Japan, bringing NBCUniversal’s international streaming brand Universal+ exclusively to the platform alongside joint initiatives with Universal Studios Japan and new global distribution pathways for Japanese content. U-Next, operated by Usen &amp; U-Next Group, is Japan’s second-largest subscription video-on-demand platform…</p>
+	
+	
+	<a class="more" href="https://variety.com/2026/tv/news/nbcuniversal-unext-japan-deal-1236847106/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:f0a514a4-d108-4012-b936-88047a0f0ada" data-srckey="coindesk" data-cat="markets" data-sent="0" data-ts="1788158565000" data-slug="markets september fed rate hike fears appear overblown the probability just not">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="September Fed rate hike fears look overblown as the probability stands at just 58%, not 90% — flip for details">
+	<div class="meta"><span class="src" style="color:#fbbf24">COINDESK</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T06:42:45.000Z">2:42 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">September Fed rate hike fears look overblown as the probability stands at just 58%, not 90%</h3>
+	<p class="snippet">Odds of a rate hike in September remain below 60% despite Warsh&#39;s hawkish speech on Friday. Observers downplay fears of tightening.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://cdn.sanity.io/images/s3y3vcno/production/8e2b3d3280ff21f617ac48ec4a57ac45f5f2edb5-1080x1080.jpg?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://cdn.sanity.io/images/s3y3vcno/production/8e2b3d3280ff21f617ac48ec4a57ac45f5f2edb5-1080x1080.jpg?fm=jpg&amp;w=240&amp;h=135&amp;crop=focalpoint&amp;fit=clip 240w, https://cdn.sanity.io/images/s3y3vcno/production/8e2b3d3280ff21f617ac48ec4a57ac45f5f2edb5-1080x1080.jpg?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip 340w, https://cdn.sanity.io/images/s3y3vcno/production/8e2b3d3280ff21f617ac48ec4a57ac45f5f2edb5-1080x1080.jpg?fm=jpg&amp;w=510&amp;h=287&amp;crop=focalpoint&amp;fit=clip 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">September Fed rate hike fears look overblown as the probability stands at just 58%, not 90%</h3>
+	<p class="about">Odds of a rate hike in September remain below 60% despite Warsh&#39;s hawkish speech on Friday. Observers downplay fears of tightening.</p>
+	
+	
+	<a class="more" href="https://www.coindesk.com/markets/2026/08/31/september-fed-rate-hike-fears-appear-overblown-as-the-probability-is-just-58-not-90" target="_blank" rel="noopener noreferrer">CoinDesk &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 h2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236846509" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788158075000" data-slug="film global pink floyd roger waters freedom theatre rishi pelham">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Pink Floyd’s Roger Waters Boards Palestinian Art and Resistance Documentary ‘Freedom Theatre’ (EXCLUSIVE) — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T06:34:35.000Z">2:34 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Pink Floyd’s Roger Waters Boards Palestinian Art and Resistance Documentary ‘Freedom Theatre’ (EXCLUSIVE)</h3>
+	<p class="snippet">Singer-songwriter and Pink Floyd co-founder Roger Waters has signed on as executive producer on filmmaker Rishi Pelham’s debut feature documentary, “Freedom Theatre.” Described as “an immersive and sensory character study,” the film follows resistance fighter turned artist Ahmed Tobasi into the creative heart of the Jenin refugee camp in Palestine, where he fights to keep […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/08/FT_010.jpg?w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/08/FT_010.jpg?w=600 600w, https://variety.com/wp-content/uploads/2026/08/FT_010.jpg?w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Pink Floyd’s Roger Waters Boards Palestinian Art and Resistance Documentary ‘Freedom Theatre’ (EXCLUSIVE)</h3>
+	<p class="about">Singer-songwriter and Pink Floyd co-founder Roger Waters has signed on as executive producer on filmmaker Rishi Pelham’s debut feature documentary, “Freedom Theatre.” Described as “an immersive and sensory character study,” the film follows resistance fighter turned artist Ahmed Tobasi into the creative heart of the Jenin refugee camp in Palestine, where he fights to keep […]</p>
+	
+	
+	<a class="more" href="https://variety.com/2026/film/global/pink-floyd-roger-waters-freedom-theatre-rishi-pelham-1236846509/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49779357" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788156083000" data-slug="tennis story open novak djokovic upset mariano navone">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="What went wrong for Novak Djokovic at the US Open — flip for details">
 	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T06:01:23.000Z">2:01 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
 	<h3 class="title">What went wrong for Novak Djokovic at the US Open</h3>
 	<p class="snippet">On Sunday night, Novak Djokovic was upset by Mariano Navone in the first round of the US Open. What happened -- and what it means for the tournament.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0831%2Fr1709345_1296x729_16-9.jpg&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0831%2Fr1709345_1296x729_16-9.jpg&amp;w=240 240w, https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0831%2Fr1709345_1296x729_16-9.jpg&amp;w=340 340w, https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0831%2Fr1709345_1296x729_16-9.jpg&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">What went wrong for Novak Djokovic at the US Open</h3>
@@ -1084,14 +1176,14 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact" style="--rail:#facc15" data-count="1" data-id="rss:108356210" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1788154023000" data-slug="hdfc largest bank india ceo exit html">
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:108356210" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1788154023000" data-slug="hdfc largest bank india ceo exit html">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="India’s largest private lender HDFC Bank sees shares rise after CEO announces surprise exit — flip for details">
 	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T05:27:03.000Z">1:27 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
 	<h3 class="title">India’s largest private lender HDFC Bank sees shares rise after CEO announces surprise exit</h3>
 	<p class="snippet">Shares of HDFC Bank were up even as the company&#39;s chief executive officer made a surprise announcement to not seek reappointment.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://image.cnbcfm.com/api/v1/image/108280083-1773897802237-gettyimages-1654462882-kulkarni-notitle230906_np8u5.jpeg?v=1773897819&amp;w=340&amp;h=191" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://image.cnbcfm.com/api/v1/image/108280083-1773897802237-gettyimages-1654462882-kulkarni-notitle230906_np8u5.jpeg?v=1773897819&amp;w=240&amp;h=135 240w, https://image.cnbcfm.com/api/v1/image/108280083-1773897802237-gettyimages-1654462882-kulkarni-notitle230906_np8u5.jpeg?v=1773897819&amp;w=340&amp;h=191 340w, https://image.cnbcfm.com/api/v1/image/108280083-1773897802237-gettyimages-1654462882-kulkarni-notitle230906_np8u5.jpeg?v=1773897819&amp;w=510&amp;h=287 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">India’s largest private lender HDFC Bank sees shares rise after CEO announces surprise exit</h3>
@@ -8889,7 +8981,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2650 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2646 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/9y9jo6" data-cat="dev" data-sent="0" data-slug="blog such thing just tool" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 29 &middot; Dev</span><a href="https://deadsimpletech.com/blog/no-such-thing-as-just-a-tool" target="_blank" rel="noopener noreferrer">There&#39;s no such thing as Just a Tool</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236685010" data-cat="entertainment" data-sent="0" data-slug="news where watch open tennis streaming free schedule" hidden="until-found"><span class="ameta">HOLLYWOOD REPORTER &middot; Aug 29 &middot; Entertainment</span><a href="https://www.hollywoodreporter.com/tv/tv-news/where-to-watch-us-open-tennis-2026-streaming-free-schedule-1236685010/" target="_blank" rel="noopener noreferrer">Where to Watch the 2026 U.S. Open Tennis Tournament Online</a></li>
@@ -9283,6 +9375,7 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.nytimes.com/2026/08/28/us/politics/trump-iran-war.html" data-cat="politics" data-sent="0" data-slug="politics trump iran war html" hidden="until-found"><span class="ameta">NYT POLITICS &middot; Aug 28 &middot; Politics</span><a href="https://www.nytimes.com/2026/08/28/us/politics/trump-iran-war.html" target="_blank" rel="noopener noreferrer">For Trump, the Iran War Is Stuck Between Combat and Genuine Peace</a></li>
 <li class="arow" data-count="1" data-id="rss:fa2c23df-8fd3-4e59-bef1-4717a0f11be8" data-cat="sports" data-sent="0" data-slug="golf news tour championship tee times pairings schedule round saturday" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 28 &middot; Sports</span><a href="https://www.cbssports.com/golf/news/tour-championship-2026-tee-times-pairings-schedule-round-3-saturday/" target="_blank" rel="noopener noreferrer">2026 Tour Championship tee times, pairings: Complete schedule for Round 3 at FedEx Cup Playoffs finale</a></li>
 <li class="arow" data-count="1" data-id="rss:4269811c-2da0-4e54-8079-df73c947fa1f" data-cat="politics" data-sent="0" data-slug="video cbs evening news" hidden="until-found"><span class="ameta">CBS POLITICS &middot; Aug 28 &middot; Politics</span><a href="https://www.cbsnews.com/video/082826-cbs-evening-news/" target="_blank" rel="noopener noreferrer">8/28: CBS Evening News</a></li>
+<li class="arow" data-count="1" data-id="rss:https://hank.bond/posts/highlighting-my-code-based-on-how-much-i-care/" data-cat="tech" data-sent="0" data-slug="posts highlighting code based how much care" hidden="until-found"><span class="ameta">HACKER NEWS &middot; Aug 28 &middot; Tech</span><a href="https://hank.bond/posts/highlighting-my-code-based-on-how-much-i-care/" target="_blank" rel="noopener noreferrer">Highlighting My Code Based on How Much I Care</a></li>
 <li class="arow" data-count="1" data-id="rss:6a92024e685a213ba7a8ed35" data-cat="ai" data-sent="0" data-slug="story nvidia ceo jensen huang took call from donald trump the middle all hands" hidden="until-found"><span class="ameta">WIRED &middot; Aug 28 &middot; AI</span><a href="https://www.wired.com/story/nvidia-ceo-jensen-huang-took-a-call-from-donald-trump-in-the-middle-of-an-all-hands/" target="_blank" rel="noopener noreferrer">Nvidia CEO Jensen Huang Took a Call From Donald Trump in the Middle of an All-Hands</a></li>
 <li class="arow" data-count="1" data-id="rss:https://thedispatch.com/?post_type=newsletter&amp;p=127539" data-cat="politics" data-sent="0" data-slug="newsletter boilingfrogs trump lake america populist nationalism" hidden="until-found"><span class="ameta">THE DISPATCH POLITICS &middot; Aug 28 &middot; Politics</span><a href="https://thedispatch.com/newsletter/boilingfrogs/trump-lake-america-populist-nationalism/" target="_blank" rel="noopener noreferrer">Laughingstock America</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235617554" data-cat="music" data-sent="0" data-slug="music news lil durk murder for hire trial shooter grilled jail calls" hidden="until-found"><span class="ameta">ROLLING STONE MUSIC &middot; Aug 28 &middot; Music</span><a href="https://www.rollingstone.com/music/music-news/lil-durk-murder-for-hire-trial-shooter-grilled-jail-calls-1235617554/" target="_blank" rel="noopener noreferrer">Lil Durk Murder-for-Hire Trial: Admitted Shooter Grilled on Cross, Confronted With Jail Calls</a></li>
@@ -11536,11 +11629,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:0c625f92-3593-4544-bd04-29fe3ae6947e" data-cat="games" data-sent="0" data-slug="articles ultra graphics settings are scam why high good enough not better for most players" hidden="until-found"><span class="ameta">IGN &middot; Aug 22 &middot; Games</span><a href="https://www.ign.com/articles/ultra-graphics-settings-are-a-scam-why-high-is-good-enough-if-not-better-for-most-players" target="_blank" rel="noopener noreferrer">Ultra Graphics Settings Are a Scam: Why High Is Good Enough, if Not Better, for Most Players</a></li>
 <li class="arow" data-count="1" data-id="rss:cb142867-8563-4b15-a902-53515442881a" data-cat="sports" data-sent="0" data-slug="soccer news hull city manchester united opening day upset mkm stadium" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 22 &middot; Sports</span><a href="https://www.cbssports.com/soccer/news/hull-city-manchester-united-opening-day-upset-at-mkm-stadium/" target="_blank" rel="noopener noreferrer">Hull City stun Manchester United with dramatic opening day upset at MKM Stadium</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c93403wg288o#1" data-cat="world" data-sent="0" data-slug="news articles c93403wg288o" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 22 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/c93403wg288o" target="_blank" rel="noopener noreferrer">Father leaves 7-year-old son alone on Mount Fuji to continue hike</a></li>
-<li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/zibquu" data-cat="dev" data-sent="0" data-slug="blog performance issues html" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 22 &middot; Dev</span><a href="https://typesanitizer.com/blog/performance-issues.html" target="_blank" rel="noopener noreferrer">There continue to be reasons for software to be slow</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2240115/heres-what-youll-need-to-watch-netflix-in-4k-on-chrome/" data-cat="tech" data-sent="0" data-slug="heres what youll need watch netflix chrome" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 22 &middot; Tech</span><a href="https://www.engadget.com/2240115/heres-what-youll-need-to-watch-netflix-in-4k-on-chrome/" target="_blank" rel="noopener noreferrer">Here&#39;s what you&#39;ll need to watch Netflix in 4K on Chrome</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240815" data-cat="entertainment" data-sent="0" data-slug="review chainsmoker cat episode" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 22 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/review/chainsmoker-cat/episode-8/.240815" target="_blank" rel="noopener noreferrer">Chainsmoker Cat ‒ Episode 8</a></li>
-<li class="arow" data-count="1" data-id="rss:US-EN-49690579" data-cat="sports" data-sent="0" data-slug="soccer story man united fall shock hull defeat premier league opener" hidden="until-found"><span class="ameta">ESPN &middot; Aug 22 &middot; Sports</span><a href="https://www.espn.com/soccer/story/_/id/49690579/man-united-fall-shock-hull-defeat-premier-league-opener" target="_blank" rel="noopener noreferrer">Man United shocked by Hull loss in EPL opener</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/videos/cgmkm9xgv1zo#3" data-cat="sports" data-sent="0" data-slug="sport football videos cgmkm9xgv1zo" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 22 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/football/videos/cgmkm9xgv1zo" target="_blank" rel="noopener noreferrer">&#39;We showed we can compete&#39; - Jakirovic</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
