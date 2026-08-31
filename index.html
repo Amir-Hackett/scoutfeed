@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-31T08:18:10.377Z">
+<meta name="sf-version" content="2026-08-31T09:11:56.245Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,28 +537,30 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
-:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
+:root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
+:root[data-theme="light"] .meta [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
+:root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
+:root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
+:root[data-theme="light"] .meta [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
 :root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
+:root[data-theme="light"] .meta [style*="hsl(273 55% 72%)"] { color: #724890 !important; }
+:root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
+:root[data-theme="light"] .meta [style*="hsl(224 55% 72%)"] { color: #495b8f !important; }
+:root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
+:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
-:root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
-:root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
 :root[data-theme="light"] .meta [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
-:root[data-theme="light"] .meta [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
-:root[data-theme="light"] .meta [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
-:root[data-theme="light"] .meta [style*="hsl(224 55% 72%)"] { color: #495b8f !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
-:root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] .meta [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
-:root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
 :root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
@@ -568,9 +570,7 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] .meta [style*="hsl(156 55% 72%)"] { color: #176e52 !important; }
-:root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
-:root[data-theme="light"] .meta [style*="hsl(273 55% 72%)"] { color: #724890 !important; }
 :root[data-theme="light"] .meta [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
 :root[data-theme="light"] .meta [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
 :root[data-theme="light"] .meta [style*="hsl(290 55% 72%)"] { color: #7e418a !important; }
@@ -707,10 +707,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 4:18 AM &middot; 21 TODAY</p>
+	<p class="stats">UPDATED 5:11 AM &middot; 37 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">160</span><span class="sr-only"> — 160 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">223</span><span class="sr-only"> — 223 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">395</span><span class="sr-only"> — 395 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">290</span><span class="sr-only"> — 290 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">364</span><span class="sr-only"> — 364 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">144</span><span class="sr-only"> — 144 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">442</span><span class="sr-only"> — 442 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">121</span><span class="sr-only"> — 121 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">420</span><span class="sr-only"> — 420 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">161</span><span class="sr-only"> — 161 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">221</span><span class="sr-only"> — 221 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">394</span><span class="sr-only"> — 394 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">289</span><span class="sr-only"> — 289 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">367</span><span class="sr-only"> — 367 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">143</span><span class="sr-only"> — 143 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">438</span><span class="sr-only"> — 438 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">336</span><span class="sr-only"> — 336 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">125</span><span class="sr-only"> — 125 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">419</span><span class="sr-only"> — 419 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -972,43 +972,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.npr.org/2026/08/30/nx-s1-5924666/what-argentina-gets-right-about-youth-soccer-and-what-the-u-s-gets-wrong" target="_blank" rel="noopener noreferrer">What Argentina gets right about youth soccer — and what the U.S. gets wrong</a>
-		<p class="trend-meta"><span class="src">NPR</span><span class="sep" aria-hidden="true">&middot;</span>"kids soccer" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.yahoo.com/entertainment/celebrity/articles/gal-gadot-turns-heat-dangerously-142003342.html" target="_blank" rel="noopener noreferrer">Gal Gadot turns up the heat in dangerously plunging red dress at star-studded party</a>
+		<p class="trend-meta"><span class="src">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"gal gadot" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
+	<div class="trend-body">
+		<a class="trend-title" href="https://www.espn.com/nfl/story/_/id/49771289/colts-wr-keenan-allen-arrested-drunk-driving-charges" target="_blank" rel="noopener noreferrer">Colts WR Keenan Allen arrested on drunken driving charges</a>
+		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"arrest" &middot; 20000+ searches</p>
+	</div>
+</li>
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
 		<a class="trend-title" href="https://www.theguardian.com/world/2026/aug/31/ukraine-anger-weapons-storage-russian-bombing-myla" target="_blank" rel="noopener noreferrer">‘Everything’s smashed to bits’: Ukrainians turn anger on those storing weapons near their villages</a>
 		<p class="trend-meta"><span class="src">THE GUARDIAN</span><span class="sep" aria-hidden="true">&middot;</span>"warehouse" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
-	<span class="rank" aria-hidden="true">3</span>
+	<span class="rank" aria-hidden="true">4</span>
+	<div class="trend-body">
+		<a class="trend-title" href="https://www.npr.org/2026/08/30/nx-s1-5924666/what-argentina-gets-right-about-youth-soccer-and-what-the-u-s-gets-wrong" target="_blank" rel="noopener noreferrer">What Argentina gets right about youth soccer — and what the U.S. gets wrong</a>
+		<p class="trend-meta"><span class="src">NPR</span><span class="sep" aria-hidden="true">&middot;</span>"kids soccer" &middot; 500+ searches</p>
+	</div>
+</li>
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
 		<a class="trend-title" href="https://swimswam.com/2026-para-pan-pacific-championships-day-2-recap/" target="_blank" rel="noopener noreferrer">2026 Para Pan Pacific Championships: Day 2 Recap</a>
 		<p class="trend-meta"><span class="src">SWIMSWAM</span><span class="sep" aria-hidden="true">&middot;</span>"swimming competition" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
-	<span class="rank" aria-hidden="true">4</span>
+	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
 		<a class="trend-title" href="https://www.nytimes.com/2026/08/29/t-magazine/sea-saltwater-swimming-pools-ocean-hotels.html" target="_blank" rel="noopener noreferrer">The Best Sea Pools for Saltwater Swimming</a>
 		<p class="trend-meta"><span class="src">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"swimming facility" &middot; 200+ searches</p>
-	</div>
-</li>
-<li class="trend-item">
-	<span class="rank" aria-hidden="true">5</span>
-	<div class="trend-body">
-		<a class="trend-title" href="https://longisland.news12.com/2026/08/28/construction-begins-for-affordable-housing-development-in-port-jefferson/3OR8bmBP6L006Npmxcjj7e" target="_blank" rel="noopener noreferrer">Construction Begins For Affordable Housing Development In Port Jefferson</a>
-		<p class="trend-meta"><span class="src">NEWS12 | LONG ISLAND</span><span class="sep" aria-hidden="true">&middot;</span>"housing development" &middot; 200+ searches</p>
-	</div>
-</li>
-<li class="trend-item">
-	<span class="rank" aria-hidden="true">6</span>
-	<div class="trend-body">
-		<a class="trend-title" href="https://www.npr.org/2026/08/29/nx-s1-5948039/the-quest-to-find-former-president-obamas-infamous-tan-suit-npr" target="_blank" rel="noopener noreferrer">The quest to find former President Obama&#39;s infamous tan suit (NPR+) : Consider This from NPR</a>
-		<p class="trend-meta"><span class="src">NPR</span><span class="sep" aria-hidden="true">&middot;</span>"barack obama" &middot; 100+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1030,6 +1030,351 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.france24.com/en/complex-world-of-taliban-home-wife-embraces-taliban-brothers-asserts-women-s-right-to-freedom" target="_blank" rel="noopener noreferrer">France 24 &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:WP-MKTW-0005205903" data-srckey="marketwatch" data-cat="entertainment" data-sent="0" data-ts="1788166920000" data-slug="story historic million home restored rocky horror actor tim curry finds buyer just hours after his">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Historic $7.5 million L.A. home restored by ‘Rocky Horror’ actor Tim Curry finds a buyer just hours after his death — flip for details">
+	<div class="meta"><span class="src" style="color:#34d399">MARKETWATCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T09:02:00.000Z">5:02 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Historic $7.5 million L.A. home restored by ‘Rocky Horror’ actor Tim Curry finds a buyer just hours after his death</h3>
+	<p class="snippet">The late actor’s former Los Feliz home was later owned by a host of other famous faces, including “Twilight” star Robert Pattinson, “The Pitt” actor Noah Wyle, and “The Big Bang Theory” comedian Jim Parsons.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://images.mktw.net/im-33276353?width=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://images.mktw.net/im-33276353?width=240 240w, https://images.mktw.net/im-33276353?width=340 340w, https://images.mktw.net/im-33276353?width=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Historic $7.5 million L.A. home restored by ‘Rocky Horror’ actor Tim Curry finds a buyer just hours after his death</h3>
+	<p class="about">The late actor’s former Los Feliz home was later owned by a host of other famous faces, including “Twilight” star Robert Pattinson, “The Pitt” actor Noah Wyle, and “The Big Bang Theory” comedian Jim Parsons.</p>
+	<p class="why"><span class="whylabel">matched</span> <span class="whykey">The Pitt</span> <span class="whystrength" title="How strongly this matched your interest (decayed frequency: 2.0)">match</span></p>
+	
+	<a class="more" href="https://www.marketwatch.com/story/historic-7-5-million-l-a-home-restored-by-rocky-horror-actor-tim-curry-finds-a-buyer-just-hours-after-his-death-4934687a?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">MarketWatch &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236682391" data-srckey="hollywood reporter" data-cat="entertainment" data-sent="0" data-ts="1788166800000" data-slug="movies movie news tiff love the monster film trailer paulina garcia">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="In ‘Love Is the Monster,’ Paulina García Is a Granny Facing Impossible Choices (Exclusive TIFF Trailer) — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(18 55% 72%)">HOLLYWOOD REPORTER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T09:00:00.000Z">5:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">In ‘Love Is the Monster,’ Paulina García Is a Granny Facing Impossible Choices (Exclusive TIFF Trailer)</h3>
+	<p class="snippet">Costa Rican writer-director Neto Villalobos Brenes&#39; dystopian thriller, which world-premieres in Toronto&#39;s Centerpiece section and also gets a poster, sees a granddaughter kidnapped for ransom.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">In ‘Love Is the Monster,’ Paulina García Is a Granny Facing Impossible Choices (Exclusive TIFF Trailer)</h3>
+	<p class="about">Costa Rican writer-director Neto Villalobos Brenes&#39; dystopian thriller, which world-premieres in Toronto&#39;s Centerpiece section and also gets a poster, sees a granddaughter kidnapped for ransom.</p>
+	
+	
+	<a class="more" href="https://www.hollywoodreporter.com/movies/movie-news/tiff-2026-love-is-the-monster-film-trailer-paulina-garcia-1236682391/" target="_blank" rel="noopener noreferrer">Hollywood Reporter &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fb923c" data-count="1" data-id="rss:000001a0-49fc-dd5a-a9f6-7dfd55c80000" data-srckey="politico" data-cat="politics" data-sent="0" data-ts="1788166800000" data-slug="news working class voters midterms poll">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘We better not blow it’: Both parties are fighting to win over working class voters — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">POLITICO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T09:00:00.000Z">5:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">‘We better not blow it’: Both parties are fighting to win over working class voters</h3>
+	<p class="snippet">New results from The POLITICO Poll show a 37 percent plurality of Americans say Democrats best represent the interests of the working class, while 30 percent say Republicans.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static.politico.com/20/1f/7ef541784c71b70b1058c3e5cbf7/working-class.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">‘We better not blow it’: Both parties are fighting to win over working class voters</h3>
+	<p class="about">New results from The POLITICO Poll show a 37 percent plurality of Americans say Democrats best represent the interests of the working class, while 30 percent say Republicans.</p>
+	
+	
+	<a class="more" href="https://www.politico.com/news/2026/08/31/working-class-voters-midterms-poll-01054992" target="_blank" rel="noopener noreferrer">Politico &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 h2 has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:WP-MKTW-0005205825" data-srckey="marketwatch" data-cat="markets" data-sent="0" data-ts="1788166740000" data-slug="story heres what prince harry and meghan markles california mansion could really worth how much costs">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Here’s what Prince Harry and Meghan Markle’s California mansion could really be worth, and how much it costs to keep it up — flip for details">
+	<div class="meta"><span class="src" style="color:#34d399">MARKETWATCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T08:59:00.000Z">4:59 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Here’s what Prince Harry and Meghan Markle’s California mansion could really be worth, and how much it costs to keep it up</h3>
+	<p class="snippet">The couple’s decision to move back to the U.K. has raised a host of questions about what they plan to do with the opulent home in California, where they have been residing for the past six years.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://images.mktw.net/im-91222006?width=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://images.mktw.net/im-91222006?width=600 600w, https://images.mktw.net/im-91222006?width=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Here’s what Prince Harry and Meghan Markle’s California mansion could really be worth, and how much it costs to keep it up</h3>
+	<p class="about">The couple’s decision to move back to the U.K. has raised a host of questions about what they plan to do with the opulent home in California, where they have been residing for the past six years.</p>
+	
+	
+	<a class="more" href="https://www.marketwatch.com/story/heres-what-prince-harry-and-meghan-markles-california-mansion-could-really-be-worth-and-how-much-it-costs-to-keep-it-up-93a3c5fa?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">MarketWatch &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://the-decoder.com/?p=39605" data-srckey="the decoder" data-cat="ai" data-sent="0" data-ts="1788166512000" data-slug="openai and rival labs are buying tens thousands mac minis train computer use agents">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="OpenAI and rival AI labs are buying tens of thousands of Mac minis to train computer-use agents — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(45 55% 72%)">THE DECODER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T08:55:12.000Z">4:55 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">OpenAI and rival AI labs are buying tens of thousands of Mac minis to train computer-use agents</h3>
+	<p class="snippet">According to The Information, OpenAI has purchased tens of thousands of Mac minis and Mac Studios to train computer agents. Anthropic also relies on Apple hardware. Demand is so high that the most powerful models have been sold out for months. Apple’s Mac revenue rose by nearly 29 percent to $10.4 billion in the June quarter. The article OpenAI and rival AI labs are buying tens of thousands of…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://the-decoder.com/wp-content/uploads/2025/06/apple_iphone_illustration-2.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">OpenAI and rival AI labs are buying tens of thousands of Mac minis to train computer-use agents</h3>
+	<p class="about">According to The Information, OpenAI has purchased tens of thousands of Mac minis and Mac Studios to train computer agents. Anthropic also relies on Apple hardware. Demand is so high that the most powerful models have been sold out for months. Apple’s Mac revenue rose by nearly 29 percent to $10.4 billion in the June quarter. The article OpenAI and rival AI labs are buying tens of thousands of…</p>
+	
+	
+	<a class="more" href="https://the-decoder.com/openai-and-rival-ai-labs-are-buying-tens-of-thousands-of-mac-minis-to-train-computer-use-agents/" target="_blank" rel="noopener noreferrer">The Decoder &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:WP-MKTW-0005207197" data-srckey="marketwatch" data-cat="markets" data-sent="0" data-ts="1788166500000" data-slug="story brent oil tops after first and iran fighting month 3b818e19">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Brent oil tops $90 after first U.S. and Iran fighting in a month — flip for details">
+	<div class="meta"><span class="src" style="color:#34d399">MARKETWATCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T08:55:00.000Z">4:55 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Brent oil tops $90 after first U.S. and Iran fighting in a month</h3>
+	<p class="snippet">Oil prices jumped on Monday after the U.S. and Iran exchanged fire for the first time in a month.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://images.mktw.net/im-35775896?width=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://images.mktw.net/im-35775896?width=240 240w, https://images.mktw.net/im-35775896?width=340 340w, https://images.mktw.net/im-35775896?width=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Brent oil tops $90 after first U.S. and Iran fighting in a month</h3>
+	<p class="about">Oil prices jumped on Monday after the U.S. and Iran exchanged fire for the first time in a month.</p>
+	
+	
+	<a class="more" href="https://www.marketwatch.com/story/brent-oil-tops-90-after-first-u-s-and-iran-fighting-in-a-month-3b818e19?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">MarketWatch &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2" style="--rail:#f87171" data-count="1" data-id="rss:https://www.npr.org/2026/08/31/nx-s1-5947992/u-n-worker-shares-what-aid-is-needed-as-nepal-recovers-from-devastating-flood" data-srckey="npr world" data-cat="world" data-sent="0" data-ts="1788166082000" data-slug="worker shares what aid needed nepal recovers from devastating flood">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="U.N. worker shares what aid is needed as Nepal recovers from devastating flood — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(314 55% 72%)">NPR WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T08:48:02.000Z">4:48 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">U.N. worker shares what aid is needed as Nepal recovers from devastating flood</h3>
+	<p class="snippet">NPR&#39;s A Martínez asks the United Nations&#39; resident coordinator in Nepal, Lila Pieters Yahia, what more is needed to aid flood victims there.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">U.N. worker shares what aid is needed as Nepal recovers from devastating flood</h3>
+	<p class="about">NPR&#39;s A Martínez asks the United Nations&#39; resident coordinator in Nepal, Lila Pieters Yahia, what more is needed to aid flood victims there.</p>
+	
+	
+	<a class="more" href="https://www.npr.org/2026/08/31/nx-s1-5947992/u-n-worker-shares-what-aid-is-needed-as-nepal-recovers-from-devastating-flood" target="_blank" rel="noopener noreferrer">NPR World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:59a74ec4-a4d6-11f1-ab5a-95416b7faa69" data-srckey="france 24" data-cat="world" data-sent="0" data-ts="1788165969000" data-slug="shows sports ligue new leader monaco defeat marseille thanks paris brunner">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Ligue 1: New leaders Monaco defeat Marseille thanks to Brunner — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(279 55% 72%)">FRANCE 24</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T08:46:09.000Z">4:46 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Ligue 1: New leaders Monaco defeat Marseille thanks to Brunner</h3>
+	<p class="snippet">AS Monaco beat Olympique de Marseille 2–0 thanks to their new rising star, Paris Brunner. With this victory, Monaco (6 points) are the sole leaders of Ligue 1 after two matchdays.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://s.france24.com/media/display/0f16f17a-a4d6-11f1-bda3-005056a97e36/w:1024/p:16x9/J24-brunner-1.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Ligue 1: New leaders Monaco defeat Marseille thanks to Brunner</h3>
+	<p class="about">AS Monaco beat Olympique de Marseille 2–0 thanks to their new rising star, Paris Brunner. With this victory, Monaco (6 points) are the sole leaders of Ligue 1 after two matchdays.</p>
+	
+	
+	<a class="more" href="https://www.france24.com/en/tv-shows/sports/20260831-ligue-1-new-leader-as-monaco-defeat-marseille-thanks-to-paris-brunner" target="_blank" rel="noopener noreferrer">France 24 &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2" style="--rail:#fb923c" data-count="1" data-id="rss:https://www.npr.org/2026/08/31/nx-s1-5945760/funding-bill-at-the-top-of-the-agenda-as-house-returns-from-recess" data-srckey="npr politics" data-cat="politics" data-sent="0" data-ts="1788165960000" data-slug="funding bill the top agenda house returns from recess">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Funding bill at the top of the agenda as House returns from recess — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(273 55% 72%)">NPR POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T08:46:00.000Z">4:46 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">Funding bill at the top of the agenda as House returns from recess</h3>
+	<p class="snippet">The House returns Monday for one week before heading back home. At the top of the agenda is a bill to extend government funding past the midterm elections.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Funding bill at the top of the agenda as House returns from recess</h3>
+	<p class="about">The House returns Monday for one week before heading back home. At the top of the agenda is a bill to extend government funding past the midterm elections.</p>
+	
+	
+	<a class="more" href="https://www.npr.org/2026/08/31/nx-s1-5945760/funding-bill-at-the-top-of-the-agenda-as-house-returns-from-recess" target="_blank" rel="noopener noreferrer">NPR Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#fb923c" data-count="1" data-id="rss:https://www.npr.org/2026/08/31/nx-s1-5947993/rep-glenn-ivey-d-md-discusses-whats-on-the-agenda-as-the-house-reconvenes" data-srckey="npr politics" data-cat="politics" data-sent="0" data-ts="1788165910000" data-slug="rep glenn ivey discusses whats the agenda house reconvenes">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Rep. Glenn Ivey. D-Md., discusses what&#39;s on the agenda as the House reconvenes — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(273 55% 72%)">NPR POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T08:45:10.000Z">4:45 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">Rep. Glenn Ivey. D-Md., discusses what&#39;s on the agenda as the House reconvenes</h3>
+	<p class="snippet">NPR&#39;s A Martinez speaks with Democratic Rep. Glenn Ivey of Maryland, as the House reconvenes this week with a stopgap spending bill on the agenda.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Rep. Glenn Ivey. D-Md., discusses what&#39;s on the agenda as the House reconvenes</h3>
+	<p class="about">NPR&#39;s A Martinez speaks with Democratic Rep. Glenn Ivey of Maryland, as the House reconvenes this week with a stopgap spending bill on the agenda.</p>
+	
+	
+	<a class="more" href="https://www.npr.org/2026/08/31/nx-s1-5947993/rep-glenn-ivey-d-md-discusses-whats-on-the-agenda-as-the-house-reconvenes" target="_blank" rel="noopener noreferrer">NPR Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.eurogamer.net/call-of-duty-modern-warfare-4-beta-second-weekend-major-patch-steam-numbers" data-srckey="eurogamer" data-cat="games" data-sent="0" data-ts="1788165355000" data-slug="call duty modern warfare beta second weekend major patch steam numbers">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Call of Duty: Modern Warfare 4 beta Steam numbers haven&#39;t budged in the second weekend, despite Warzone&#39;s arrival and transformative patch — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">EUROGAMER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T08:35:55.000Z">4:35 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">Call of Duty: Modern Warfare 4 beta Steam numbers haven&#39;t budged in the second weekend, despite Warzone&#39;s arrival and transformative patch</h3>
+	<p class="snippet">We&#39;re deep in the second and final session of the Call of Duty: Modern Warfare 4 beta. This open portion is available on one more platform - Switch 2, and can be accessed without the need for a pre-order. It also includes a sampler of Warzone&#39;s next Resurgence map and two Ground War maps, alongside all the maps and modes from the first beta weekend. None of that appears to have moved the needle…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assetsio.gnwcdn.com/modern-warfare-4-beta-shot-crop-3.jpg?width=340&amp;quality=85&amp;format=jpg&amp;auto=webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://assetsio.gnwcdn.com/modern-warfare-4-beta-shot-crop-3.jpg?width=240&amp;quality=85&amp;format=jpg&amp;auto=webp 240w, https://assetsio.gnwcdn.com/modern-warfare-4-beta-shot-crop-3.jpg?width=340&amp;quality=85&amp;format=jpg&amp;auto=webp 340w, https://assetsio.gnwcdn.com/modern-warfare-4-beta-shot-crop-3.jpg?width=510&amp;quality=85&amp;format=jpg&amp;auto=webp 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Call of Duty: Modern Warfare 4 beta Steam numbers haven&#39;t budged in the second weekend, despite Warzone&#39;s arrival and transformative patch</h3>
+	<p class="about">We&#39;re deep in the second and final session of the Call of Duty: Modern Warfare 4 beta. This open portion is available on one more platform - Switch 2, and can be accessed without the need for a pre-order. It also includes a sampler of Warzone&#39;s next Resurgence map and two Ground War maps, alongside all the maps and modes from the first beta weekend. None of that appears to have moved the needle…</p>
+	
+	
+	<a class="more" href="https://www.eurogamer.net/call-of-duty-modern-warfare-4-beta-second-weekend-major-patch-steam-numbers" target="_blank" rel="noopener noreferrer">Eurogamer &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fb923c" data-count="1" data-id="rss:https://abcnews.com/Politics/wireStory/trump-teases-presidential-run-talking-life-after-2028-136079796" data-srckey="abc news politics" data-cat="politics" data-sent="0" data-ts="1788164703000" data-slug="politics wirestory trump teases presidential run talking life after">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Trump still teases a third presidential run, but he&#39;s talking more and more about life after 2028 — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(224 55% 72%)">ABC NEWS POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T08:25:03.000Z">4:25 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">Trump still teases a third presidential run, but he&#39;s talking more and more about life after 2028</h3>
+	<p class="snippet">Donald Trump frequently hints at a third presidential run, even wearing 2028 campaign hats</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://s.abcnews.com/images/US/abc_news_default_2000x2000_update_4x3t_384.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Trump still teases a third presidential run, but he&#39;s talking more and more about life after 2028</h3>
+	<p class="about">Donald Trump frequently hints at a third presidential run, even wearing 2028 campaign hats</p>
+	
+	
+	<a class="more" href="https://abcnews.com/Politics/wireStory/trump-teases-presidential-run-talking-life-after-2028-136079796" target="_blank" rel="noopener noreferrer">ABC News Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:f46c10cf-6c5c-49cc-9649-a1f713ff51ad" data-srckey="coindesk" data-cat="markets" data-sent="0" data-ts="1788164548000" data-slug="markets jobs report russia digital ruble rollout crypto week ahead">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="U.S. jobs report, Russia’s digital ruble rollout: Crypto Week Ahead — flip for details">
+	<div class="meta"><span class="src" style="color:#fbbf24">COINDESK</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T08:22:28.000Z">4:22 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">U.S. jobs report, Russia’s digital ruble rollout: Crypto Week Ahead</h3>
+	<p class="snippet">Your look at what&#39;s coming in the week starting Aug. 31.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://cdn.sanity.io/images/s3y3vcno/production/177fe0d442a9bb8ec8bb8ee503d2332e2d65478d-1710x958.png?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://cdn.sanity.io/images/s3y3vcno/production/177fe0d442a9bb8ec8bb8ee503d2332e2d65478d-1710x958.png?fm=jpg&amp;w=240&amp;h=135&amp;crop=focalpoint&amp;fit=clip 240w, https://cdn.sanity.io/images/s3y3vcno/production/177fe0d442a9bb8ec8bb8ee503d2332e2d65478d-1710x958.png?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip 340w, https://cdn.sanity.io/images/s3y3vcno/production/177fe0d442a9bb8ec8bb8ee503d2332e2d65478d-1710x958.png?fm=jpg&amp;w=510&amp;h=287&amp;crop=focalpoint&amp;fit=clip 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">U.S. jobs report, Russia’s digital ruble rollout: Crypto Week Ahead</h3>
+	<p class="about">Your look at what&#39;s coming in the week starting Aug. 31.</p>
+	
+	
+	<a class="more" href="https://www.coindesk.com/markets/2026/08/31/u-s-jobs-report-russia-s-digital-ruble-rollout-crypto-week-ahead" target="_blank" rel="noopener noreferrer">CoinDesk &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:3119e9ab-be4b-4786-84c2-2129568d3848" data-srckey="coindesk" data-cat="markets" data-sent="0" data-ts="1788164283000" data-slug="tech live updates bitcoin holds usd78 yen breaks and rate hike bets lift the dollar">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Live updates: Bitcoin holds $78,000 as yen breaks 160 and rate-hike bets lift the dollar — flip for details">
+	<div class="meta"><span class="src" style="color:#fbbf24">COINDESK</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T08:18:03.000Z">4:18 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Live updates: Bitcoin holds $78,000 as yen breaks 160 and rate-hike bets lift the dollar</h3>
+	<p class="snippet">Bitcoin is holding just under $78,000 as August closes. The dollar strength that pushed the yen past its intervention line is the same force capping crypto.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://cdn.sanity.io/images/s3y3vcno/production/07bc9c92549a732db3eb91f2f39febfc233e62d8-1512x848.png?fm=jpg&amp;w=1080&amp;h=608&amp;crop=focalpoint&amp;fit=clip" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://cdn.sanity.io/images/s3y3vcno/production/07bc9c92549a732db3eb91f2f39febfc233e62d8-1512x848.png?fm=jpg&amp;w=600&amp;h=338&amp;crop=focalpoint&amp;fit=clip 600w, https://cdn.sanity.io/images/s3y3vcno/production/07bc9c92549a732db3eb91f2f39febfc233e62d8-1512x848.png?fm=jpg&amp;w=1080&amp;h=608&amp;crop=focalpoint&amp;fit=clip 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Live updates: Bitcoin holds $78,000 as yen breaks 160 and rate-hike bets lift the dollar</h3>
+	<p class="about">Bitcoin is holding just under $78,000 as August closes. The dollar strength that pushed the yen past its intervention line is the same force capping crypto.</p>
+	
+	
+	<a class="more" href="https://www.coindesk.com/tech/2026/08/31/live-updates-bitcoin-holds-usd78-000-as-yen-breaks-160-and-rate-hike-bets-lift-the-dollar" target="_blank" rel="noopener noreferrer">CoinDesk &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:c77dd046-fb55-4bf1-9101-34754d6fdae9" data-srckey="coindesk" data-cat="markets" data-sent="0" data-ts="1788163494000" data-slug="business luke dashjr exits mining pool ocean after split over bitcoin future">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Luke Dashjr exits mining pool Ocean after split over Bitcoin mining’s future — flip for details">
+	<div class="meta"><span class="src" style="color:#fbbf24">COINDESK</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T08:04:54.000Z">4:04 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Luke Dashjr exits mining pool Ocean after split over Bitcoin mining’s future</h3>
+	<p class="snippet">The split was mutual, with both parties citing differing views on the future of Bitcoin mining and recent protocol developments.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://cdn.sanity.io/images/s3y3vcno/production/dc4c12877ab4eb63b5f44ae62d0347edcbabaa90-1920x1080.png?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://cdn.sanity.io/images/s3y3vcno/production/dc4c12877ab4eb63b5f44ae62d0347edcbabaa90-1920x1080.png?fm=jpg&amp;w=240&amp;h=135&amp;crop=focalpoint&amp;fit=clip 240w, https://cdn.sanity.io/images/s3y3vcno/production/dc4c12877ab4eb63b5f44ae62d0347edcbabaa90-1920x1080.png?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip 340w, https://cdn.sanity.io/images/s3y3vcno/production/dc4c12877ab4eb63b5f44ae62d0347edcbabaa90-1920x1080.png?fm=jpg&amp;w=510&amp;h=287&amp;crop=focalpoint&amp;fit=clip 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Luke Dashjr exits mining pool Ocean after split over Bitcoin mining’s future</h3>
+	<p class="about">The split was mutual, with both parties citing differing views on the future of Bitcoin mining and recent protocol developments.</p>
+	
+	
+	<a class="more" href="https://www.coindesk.com/business/2026/08/31/luke-dashjr-exits-mining-pool-ocean-after-split-over-bitcoin-mining-s-future" target="_blank" rel="noopener noreferrer">CoinDesk &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1061,18 +1406,18 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact no-snippet" style="--rail:#34d399" data-count="1" data-id="rss:https://au.pcmag.com/ai/116091/meta-security-researchers-ai-agent-accidentally-deleted-her-emails" data-srckey="hacker news" data-cat="tech" data-sent="0" data-ts="1788161027000" data-slug="meta security researchers agent accidentally deleted her emails">
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://au.pcmag.com/ai/116091/meta-security-researchers-ai-agent-accidentally-deleted-her-emails" data-srckey="hacker news" data-cat="tech" data-sent="0" data-ts="1788161027000" data-slug="meta security researchers agent accidentally deleted her emails">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Meta Security Researcher&#39;s AI Agent Accidentally Deleted Her Emails — flip for details">
 	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T07:23:47.000Z">3:23 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
 	<h3 class="title">Meta Security Researcher&#39;s AI Agent Accidentally Deleted Her Emails</h3>
-	
+	<p class="snippet">Meta&#39;s Summer Yue says she ran OpenClaw on her inbox, but its size &#39;triggered compaction [and] lost my original instruction&#39; to get her permission before deleting.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://sm.pcmag.com/t/pcmag_au/news/m/meta-secur/meta-security-researchers-ai-agent-accidentally-deleted-her_7uyw.1200.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Meta Security Researcher&#39;s AI Agent Accidentally Deleted Her Emails</h3>
-	<p class="about">No summary in this feed — follow the link for the story.</p>
+	<p class="about">Meta&#39;s Summer Yue says she ran OpenClaw on her inbox, but its size &#39;triggered compaction [and] lost my original instruction&#39; to get her permission before deleting.</p>
 	
 	
 	<a class="more" href="https://au.pcmag.com/ai/116091/meta-security-researchers-ai-agent-accidentally-deleted-her-emails" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
@@ -1191,6 +1536,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.cnbc.com/2026/08/31/us-trump-hormuz-iran-kharg-larak-oil-analysts-sanctions-.html" target="_blank" rel="noopener noreferrer">CNBC &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c8xkqjdk142o#0" data-srckey="bbc world" data-cat="world" data-sent="0" data-ts="1788159400000" data-slug="news articles c8xkqjdk142o">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="&#39;Moonies&#39; church leader jailed for two years over bribery offences — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T06:56:40.000Z">2:56 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">&#39;Moonies&#39; church leader jailed for two years over bribery offences</h3>
+	<p class="snippet">Han Hak-ja, 83, gave South Korea&#39;s former first lady two Chanel bags and a diamond necklace, a court found.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/9659/live/b4a5d730-a4fb-11f1-af21-17336bf2d27f.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9659/live/b4a5d730-a4fb-11f1-af21-17336bf2d27f.jpg 240w, https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/9659/live/b4a5d730-a4fb-11f1-af21-17336bf2d27f.jpg 340w, https://ichef.bbci.co.uk/ace/standard/510/cpsprodpb/9659/live/b4a5d730-a4fb-11f1-af21-17336bf2d27f.jpg 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">&#39;Moonies&#39; church leader jailed for two years over bribery offences</h3>
+	<p class="about">Han Hak-ja, 83, gave South Korea&#39;s former first lady two Chanel bags and a diamond necklace, a court found.</p>
+	
+	
+	<a class="more" href="https://www.bbc.co.uk/news/articles/c8xkqjdk142o" target="_blank" rel="noopener noreferrer">BBC World &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -9142,7 +9510,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2639 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2623 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/9y9jo6" data-cat="dev" data-sent="0" data-slug="blog such thing just tool" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 29 &middot; Dev</span><a href="https://deadsimpletech.com/blog/no-such-thing-as-just-a-tool" target="_blank" rel="noopener noreferrer">There&#39;s no such thing as Just a Tool</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236685010" data-cat="entertainment" data-sent="0" data-slug="news where watch open tennis streaming free schedule" hidden="until-found"><span class="ameta">HOLLYWOOD REPORTER &middot; Aug 29 &middot; Entertainment</span><a href="https://www.hollywoodreporter.com/tv/tv-news/where-to-watch-us-open-tennis-2026-streaming-free-schedule-1236685010/" target="_blank" rel="noopener noreferrer">Where to Watch the 2026 U.S. Open Tennis Tournament Online</a></li>
@@ -11767,22 +12135,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/snes-hidden-gems-switch-online/" data-cat="games" data-sent="0" data-slug="snes hidden gems switch online" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 22 &middot; Games</span><a href="https://www.polygon.com/snes-hidden-gems-switch-online/" target="_blank" rel="noopener noreferrer">Celebrate the SNES&#39;s 35th Birthday With the 5 Weirdest Switch Online Games</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240558" data-cat="entertainment" data-sent="0" data-slug="review the world dancing volumes" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 22 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/review/the-world-is-dancing/volumes-1-6/.240558" target="_blank" rel="noopener noreferrer">The World Is Dancing Volumes 1-6 Manga Review</a></li>
 <li class="arow" data-count="1" data-id="rss:https://techcrunch.com/?p=3155518" data-cat="tech" data-sent="0" data-slug="frontier labs still wont say how theyd contain rogue model" hidden="until-found"><span class="ameta">TECHCRUNCH &middot; Aug 22 &middot; Tech</span><a href="https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/" target="_blank" rel="noopener noreferrer">Frontier AI labs still won’t say how they’d contain a rogue model</a></li>
-<li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/qvlroc" data-cat="dev" data-sent="0" data-slug="felixs nss userhosts" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 22 &middot; Dev</span><a href="https://codeberg.org/felixs/nss-userhosts" target="_blank" rel="noopener noreferrer">nss-userhosts - hosts files for unprivileged users</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235613342" data-cat="music" data-sent="0" data-slug="music news bigxthaplug arrest drug gun charges texas" hidden="until-found"><span class="ameta">ROLLING STONE MUSIC &middot; Aug 22 &middot; Music</span><a href="https://www.rollingstone.com/music/music-news/bigxthaplug-arrest-drug-gun-charges-texas-1235613342/" target="_blank" rel="noopener noreferrer">BigXthaPlug Arrested on Drug and Gun Charges in Texas</a></li>
-<li class="arow" data-count="1" data-id="rss:1b200380-9efd-43c1-b5df-4a65291ec8a4" data-cat="sports" data-sent="0" data-slug="mlb news ketel marte injury diamondbacks drama casino" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 22 &middot; Sports</span><a href="https://www.cbssports.com/mlb/news/ketel-marte-injury-diamondbacks-drama-casino/" target="_blank" rel="noopener noreferrer">Ketel Marte spotted at casino during Diamondbacks game as off-field drama continues</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240830" data-cat="entertainment" data-sent="0" data-slug="news ize press announces whale star solo leveling releases anime nyc" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 22 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/news/2026-08-22/ize-press-announces-whale-star-solo-leveling-releases-at-anime-nyc/.240830" target="_blank" rel="noopener noreferrer">Ize Press Announces Whale Star, Solo Leveling Releases at Anime NYC</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240829" data-cat="entertainment" data-sent="0" data-slug="news yen press reveals new licenses including ubel blatt the gray exorcist seal lips with kiss" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 22 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/news/2026-08-22/yen-press-reveals-9-new-licenses-including-ubel-blatt-ii-the-gray-exorcist-seal-my-lips-with-a-kiss-/.240829" target="_blank" rel="noopener noreferrer">Yen Press Reveals 9 New Licenses Including Übel Blatt II, The Gray Exorcist, Seal My Lips With a Kiss Manga</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/c87n78p070do#0" data-cat="sports" data-sent="0" data-slug="sport football articles c87n78p070do" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 22 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/football/articles/c87n78p070do" target="_blank" rel="noopener noreferrer">Man Utd &#39;didn&#39;t look ready&#39; - but hurting Carrick remains calm</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240816" data-cat="entertainment" data-sent="0" data-slug="review tomb raider king episode" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 22 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/review/tomb-raider-king/episode-7/.240816" target="_blank" rel="noopener noreferrer">Tomb Raider King ‒ Episode 7</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2240118/before-you-buy-used-gamecube-check-region-locked/" data-cat="tech" data-sent="0" data-slug="before you buy used gamecube check region locked" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 22 &middot; Tech</span><a href="https://www.engadget.com/2240118/before-you-buy-used-gamecube-check-region-locked/" target="_blank" rel="noopener noreferrer">Before you buy a used GameCube, check for this common issue</a></li>
-<li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/2mvgzt" data-cat="dev" data-sent="0" data-slug="ntfs3 cagbkpgpixykwtjgysacnugmg1xps mpg xqziuz1k921 mail gmail com" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 22 &middot; Dev</span><a href="https://lore.kernel.org/ntfs3/CAGBKPgPiXyKWtjgYSACnugmG1XPs=mPg-Zu-xQziUZ1k921+qA@mail.gmail.com/T/#mc251816dfcb7d4dcbf07368f0d288dbfb1b8e1c9" target="_blank" rel="noopener noreferrer">InjectionBunny, a NTFS3 SUID injection for privilege escalation</a></li>
-<li class="arow" data-count="1" data-id="rss:US-EN-49691465" data-cat="sports" data-sent="0" data-slug="soccer story too soon panic man united see problems exposed hull city defeat" hidden="until-found"><span class="ameta">ESPN &middot; Aug 22 &middot; Sports</span><a href="https://www.espn.com/soccer/story/_/id/49691465/too-soon-panic-man-united-see-problems-exposed-hull-city-defeat" target="_blank" rel="noopener noreferrer">Too soon to panic? Man United see problems exposed in Hull City defeat</a></li>
-<li class="arow" data-count="1" data-id="rss:US-EN-49690629" data-cat="sports" data-sent="0" data-slug="fantasy football story cheat sheet draft tips sleepers busts" hidden="until-found"><span class="ameta">ESPN &middot; Aug 22 &middot; Sports</span><a href="https://www.espn.com/fantasy/football/story/_/id/49690629/2026-fantasy-football-cheat-sheet-draft-tips-sleepers-busts" target="_blank" rel="noopener noreferrer">Expanded Ultimate Fantasy Football Cheat Sheet: Print. Draft. Win.</a></li>
-<li class="arow" data-count="1" data-id="rss:1a234766-a7bd-4a7a-8912-430402d4a8b7" data-cat="markets" data-sent="0" data-slug="business crypto exchange bitmart weighs partial restart and creditor payouts weeks after announcing shutdown" hidden="until-found"><span class="ameta">COINDESK &middot; Aug 22 &middot; Markets</span><a href="https://www.coindesk.com/business/2026/08/22/crypto-exchange-bitmart-weighs-partial-restart-and-creditor-payouts-weeks-after-announcing-shutdown" target="_blank" rel="noopener noreferrer">Crypto exchange BitMart weighs partial restart and creditor payouts weeks after announcing shutdown</a></li>
-<li class="arow" data-count="1" data-id="rss:108352805" data-cat="markets" data-sent="0" data-slug="rising yields rattled the market but were sticking with our favorite and retail stocks html" hidden="until-found"><span class="ameta">CNBC &middot; Aug 22 &middot; Markets</span><a href="https://www.cnbc.com/2026/08/22/rising-yields-rattled-the-market-but-were-sticking-with-our-favorite-ai-and-retail-stocks.html" target="_blank" rel="noopener noreferrer">Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/blood-of-dawnwalker-no-60fps-console-launch" data-cat="games" data-sent="0" data-slug="blood dawnwalker 60fps console launch" hidden="until-found"><span class="ameta">EUROGAMER &middot; Aug 22 &middot; Games</span><a href="https://www.eurogamer.net/blood-of-dawnwalker-no-60fps-console-launch" target="_blank" rel="noopener noreferrer">The Blood of Dawnwalker&#39;s console modes top out at 40fps, with no 60fps option at launch</a></li>
-<li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000726779" data-cat="games" data-sent="0" data-slug="trails the sky 1st chapters mistake filled localization finally being fixed one year later" hidden="until-found"><span class="ameta">KOTAKU &middot; Aug 22 &middot; Games</span><a href="https://kotaku.com/trails-in-the-sky-1st-chapters-mistake-filled-localization-is-finally-being-fixed-one-year-later-2000726779" target="_blank" rel="noopener noreferrer">Trails In The Sky 1st Chapter’s Mistake-Filled Localization Is Finally Being Fixed One Year Later</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c3040pn8lmmo#0" data-cat="world" data-sent="0" data-slug="news articles c3040pn8lmmo" hidden="until-found"><span class="ameta">BBC WORLD &middot; Aug 22 &middot; World</span><a href="https://www.bbc.co.uk/news/articles/c3040pn8lmmo" target="_blank" rel="noopener noreferrer">Carney faces crucial test after walking away from Trump&#39;s deal</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
