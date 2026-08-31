@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-08-30T23:07:37.238Z">
+<meta name="sf-version" content="2026-08-31T00:07:37.345Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,17 +537,22 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
+:root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
+:root[data-theme="light"] .meta [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
+:root[data-theme="light"] .meta [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
+:root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
+:root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
+:root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
+:root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
-:root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
-:root[data-theme="light"] .meta [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
-:root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
+:root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
 :root[data-theme="light"] .meta [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
 :root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
-:root[data-theme="light"] .meta [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
 :root[data-theme="light"] .meta [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
@@ -555,11 +560,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(243 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
-:root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
-:root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
-:root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
-:root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
-:root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
 :root[data-theme="light"] .meta [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
@@ -707,10 +707,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 7:07 PM &middot; 290 TODAY</p>
+	<p class="stats">UPDATED 8:07 PM &middot; 303 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">157</span><span class="sr-only"> — 157 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">106</span><span class="sr-only"> — 106 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">225</span><span class="sr-only"> — 225 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">383</span><span class="sr-only"> — 383 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">293</span><span class="sr-only"> — 293 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">373</span><span class="sr-only"> — 373 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">147</span><span class="sr-only"> — 147 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">446</span><span class="sr-only"> — 446 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">327</span><span class="sr-only"> — 327 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">120</span><span class="sr-only"> — 120 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">423</span><span class="sr-only"> — 423 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">158</span><span class="sr-only"> — 158 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">106</span><span class="sr-only"> — 106 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">226</span><span class="sr-only"> — 226 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">383</span><span class="sr-only"> — 383 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">291</span><span class="sr-only"> — 291 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">370</span><span class="sr-only"> — 370 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">147</span><span class="sr-only"> — 147 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">445</span><span class="sr-only"> — 445 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">328</span><span class="sr-only"> — 328 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">120</span><span class="sr-only"> — 120 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">426</span><span class="sr-only"> — 426 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -972,43 +972,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://en.tennistemple.com/actu/lois-boisson-im-100-ready-ahead-of-us-open-clash/Vacl" target="_blank" rel="noopener noreferrer">Loïs Boisson: &#39;I&#39;m 100% Ready&#39; Ahead of US Open Clash with Navarro</a>
-		<p class="trend-meta"><span class="src">TENNISTEMPLE</span><span class="sep" aria-hidden="true">&middot;</span>"emma navarro" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.mediotiempo.com/futbol/liga-mx/a-que-hora-juega-toluca-vs-juarez-horario-y-canal-partido-j6-liga-mx-2026" target="_blank" rel="noopener noreferrer">What time do Toluca vs. Juárez play? Where to watch LIVE Matchday 6 Liga MX 2026 TODAY</a>
+		<p class="trend-meta"><span class="src">MEDIOTIEMPO</span><span class="sep" aria-hidden="true">&middot;</span>"toluca - juárez" &middot; 5000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.detroitnews.com/story/entertainment/television/2026/08/29/dan-gheesling-named-by-big-brother-fans-best-winner-in-show-history/91527964007/" target="_blank" rel="noopener noreferrer">Metro Detroit &#39;Big Brother&#39; champion named Best Winner in show history</a>
-		<p class="trend-meta"><span class="src">THE DETROIT NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"what time is big brother on tonight" &middot; 5000+ searches</p>
+		<a class="trend-title" href="https://www.yardbarker.com/tennis/articles/elina_svitolina_vs_solana_sierra_start_time_us_open_live_streaming_tv_channels_in_usa_other_countries/s1_17615_44239637" target="_blank" rel="noopener noreferrer">Elina Svitolina vs. Solana Sierra: Start Time, US Open Live Streaming &amp; TV Channels In USA &amp; Other Countries</a>
+		<p class="trend-meta"><span class="src">YARDBARKER</span><span class="sep" aria-hidden="true">&middot;</span>"elina svitolina" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.sounderatheart.com/2026/08/reign-vs-dash-gamethread/" target="_blank" rel="noopener noreferrer">Reign vs. Dash: Gamethread</a>
-		<p class="trend-meta"><span class="src">SOUNDER AT HEART</span><span class="sep" aria-hidden="true">&middot;</span>"houston dash vs seattle reign fc" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.space.com/stargazing/lunar-eclipses/when-is-the-next-lunar-eclipse" target="_blank" rel="noopener noreferrer">When is the next lunar eclipse?</a>
+		<p class="trend-meta"><span class="src">SPACE</span><span class="sep" aria-hidden="true">&middot;</span>"chicago weather" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://ge.globo.com/ba/futebol/brasileirao-serie-a/noticia/2026/08/30/bahia-x-internacional-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml" target="_blank" rel="noopener noreferrer">Bahia vs. Internacional: where to watch live, kickoff time and lineups</a>
-		<p class="trend-meta"><span class="src">GE</span><span class="sep" aria-hidden="true">&middot;</span>"bahia vs internacional" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://laopinion.com/2026/08/30/policia-mata-a-tiros-a-hombre-que-amenazo-con-una-espada-a-empleado-de-una-cafeteria-en-tennessee/" target="_blank" rel="noopener noreferrer">Police shoot and kill man who threatened a coffee shop employee with a sword in Tennessee</a>
+		<p class="trend-meta"><span class="src">LA OPINIÓN</span><span class="sep" aria-hidden="true">&middot;</span>"policía" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.mlb.com/news/chase-burns-starts-vs-cubs" target="_blank" rel="noopener noreferrer">Burns set for 1st career start vs. Cubs on Sunday Night Baseball</a>
-		<p class="trend-meta"><span class="src">MLB.COM</span><span class="sep" aria-hidden="true">&middot;</span>"cubs vs reds prediction" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.nbcchicago.com/news/local/rain-forces-delay-of-chicago-cubs-vs-cincinnati-reds-series-finale/3982597/" target="_blank" rel="noopener noreferrer">Rain forces delay of Chicago Cubs vs. Cincinnati Reds series finale</a>
+		<p class="trend-meta"><span class="src">NBC 5 CHICAGO</span><span class="sep" aria-hidden="true">&middot;</span>"anthony rizzo" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.mlssoccer.com/news/st-louis-city-vs-fc-dallas-what-to-know-for-sunday-night-soccer-md23-2026" target="_blank" rel="noopener noreferrer">St. Louis CITY vs. FC Dallas: What to know for Sunday Night Soccer</a>
-		<p class="trend-meta"><span class="src">MLSSOCCER.COM</span><span class="sep" aria-hidden="true">&middot;</span>"dallas vs st. louis" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/seahawks-cut-cb-trevon-diggs-place-rb-zach-charbonnet-on-pup-among-moves-to-53" target="_blank" rel="noopener noreferrer">Seahawks cut CB Trevon Diggs, place RB Zach Charbonnet on PUP among moves to 53</a>
+		<p class="trend-meta"><span class="src">NBC SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"trevon diggs" &middot; 2000+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1030,6 +1030,213 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.foxnews.com/politics/republicans-tighten-screws-sherrill-noncitizen-voter-probe-enters-new-phase" target="_blank" rel="noopener noreferrer">Fox News Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:https://cointelegraph.com/magazine/bitcoins-new-quantum-defenses-189m-sol-cancelled-hodlers-digest" data-srckey="cointelegraph" data-cat="markets" data-sent="0" data-ts="1788132976000" data-slug="magazine bitcoins new quantum defenses 189m sol cancelled hodlers digest">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Bitcoin’s new quantum defenses, 18.9M SOL cancelled: Hodler’s Digest — flip for details">
+	<div class="meta"><span class="src" style="color:#a78bfa">COINTELEGRAPH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T23:36:16.000Z">7:36 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Bitcoin’s new quantum defenses, 18.9M SOL cancelled: Hodler’s Digest</h3>
+	<p class="snippet">Bitcoin moves toward a post quantum future, Solana validators agree to curb rampant inflation and the bull case from Bernstein is for Bitcoin to peak at $500K this cycle.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://s3-images.ctmedia.io/media/article-covers/2026/08/01M1ABTCJ2NCZ56B6Y07HVQZ2T/magazine-cover-collage.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Bitcoin’s new quantum defenses, 18.9M SOL cancelled: Hodler’s Digest</h3>
+	<p class="about">Bitcoin moves toward a post quantum future, Solana validators agree to curb rampant inflation and the bull case from Bernstein is for Bitcoin to peak at $500K this cycle.</p>
+	
+	
+	<a class="more" href="https://cointelegraph.com/magazine/bitcoins-new-quantum-defenses-189m-sol-cancelled-hodlers-digest" target="_blank" rel="noopener noreferrer">Cointelegraph &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/edycutjong/sampling-rate-is-a-correctness-property-not-a-performance-knob-47p7" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788132798000" data-slug="edycutjong sampling rate correctness property not performance knob 47p7">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Sampling rate is a correctness property, not a performance knob — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T23:33:18.000Z">7:33 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">Sampling rate is a correctness property, not a performance knob</h3>
+	<p class="snippet">In 1997 a Pokémon episode aired in Japan with a four-second red-and-blue strobe. 685 children went to hospital that night. The regulations that followed — Ofcom Broadcasting Code 2.12, ITU-R BT.1702 — are why UK and Japanese broadcast deliveries have to clear a photosensitive-epilepsy check before transmission. I built a screening tool for that check. Live at flashframe-production.up.railway.app…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fflashframe-production.up.railway.app%2Fstatic%2Fog-image.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=240,height=125,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fflashframe-production.up.railway.app%2Fstatic%2Fog-image.png 240w, https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fflashframe-production.up.railway.app%2Fstatic%2Fog-image.png 340w, https://media2.dev.to/dynamic/image/width=510,height=266,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fflashframe-production.up.railway.app%2Fstatic%2Fog-image.png 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Sampling rate is a correctness property, not a performance knob</h3>
+	<p class="about">In 1997 a Pokémon episode aired in Japan with a four-second red-and-blue strobe. 685 children went to hospital that night. The regulations that followed — Ofcom Broadcasting Code 2.12, ITU-R BT.1702 — are why UK and Japanese broadcast deliveries have to clear a photosensitive-epilepsy check before transmission. I built a screening tool for that check. Live at flashframe-production.up.railway.app…</p>
+	
+	
+	<a class="more" href="https://dev.to/edycutjong/sampling-rate-is-a-correctness-property-not-a-performance-knob-47p7" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#f87171" data-count="1" data-id="rss:https://www.npr.org/2026/08/30/nx-s1-5949351/families-of-pilgrims-likely-caught-in-floods-are-desperate-for-news-from-nepal" data-srckey="npr world" data-cat="world" data-sent="0" data-ts="1788132759000" data-slug="families pilgrims likely caught floods are desperate for news from nepal">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Families of pilgrims likely caught in floods are desperate for news from Nepal — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(314 55% 72%)">NPR WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T23:32:39.000Z">7:32 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Families of pilgrims likely caught in floods are desperate for news from Nepal</h3>
+	<p class="snippet">Four days after catastrophic floods wiped out villages along the Nepal-China border, thousands are still missing. Families look for answers but hear nothing.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Families of pilgrims likely caught in floods are desperate for news from Nepal</h3>
+	<p class="about">Four days after catastrophic floods wiped out villages along the Nepal-China border, thousands are still missing. Families look for answers but hear nothing.</p>
+	
+	
+	<a class="more" href="https://www.npr.org/2026/08/30/nx-s1-5949351/families-of-pilgrims-likely-caught-in-floods-are-desperate-for-news-from-nepal" target="_blank" rel="noopener noreferrer">NPR World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://deadline.com/?p=1237062985" data-srckey="deadline" data-cat="entertainment" data-sent="0" data-ts="1788132688000" data-slug="post production tax incentive bill passes">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Your Move, Mr. Governor: CA Post Production Tax Incentive Bill Passes State Senate; Moves To Newsom’s Desk — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(288 55% 72%)">DEADLINE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T23:31:28.000Z">7:31 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Your Move, Mr. Governor: CA Post Production Tax Incentive Bill Passes State Senate; Moves To Newsom’s Desk</h3>
+	<p class="snippet">State support for the contracting L.A. film and TV industry is now in the hands of California Governor Gavin Newsom and some (hoperfully) very creative accountants. With just hours to spare, the California State Senate passed SB 2319, the legislation that would create a separate tax incentive for the post-production industry. The bill now moves […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://deadline.com/wp-content/uploads/2025/08/GettyImages-2228237432.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Your Move, Mr. Governor: CA Post Production Tax Incentive Bill Passes State Senate; Moves To Newsom’s Desk</h3>
+	<p class="about">State support for the contracting L.A. film and TV industry is now in the hands of California Governor Gavin Newsom and some (hoperfully) very creative accountants. With just hours to spare, the California State Senate passed SB 2319, the legislation that would create a separate tax incentive for the post-production industry. The bill now moves […]</p>
+	
+	
+	<a class="more" href="https://deadline.com/2026/08/ca-post-production-tax-incentive-bill-passes-1237062985/" target="_blank" rel="noopener noreferrer">Deadline &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.polygon.com/legend-of-zelda-temple-maker-steam-game/" data-srckey="polygon" data-cat="games" data-sent="0" data-ts="1788132673000" data-slug="legend zelda temple maker steam game">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="A Incredible Looking and Unofficial &#39;Zelda Maker 64&#39; Is Coming to Steam — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T23:31:13.000Z">7:31 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">A Incredible Looking and Unofficial &#39;Zelda Maker 64&#39; Is Coming to Steam</h3>
+	<p class="snippet">Temple Maker 64 is the work of a solo dev who left his full-time software engineering job to make a Zelda-like level creation suite</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/04/zelda.jpg?w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/04/zelda.jpg?w=600 600w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/04/zelda.jpg?w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">A Incredible Looking and Unofficial &#39;Zelda Maker 64&#39; Is Coming to Steam</h3>
+	<p class="about">Temple Maker 64 is the work of a solo dev who left his full-time software engineering job to make a Zelda-like level creation suite</p>
+	
+	
+	<a class="more" href="https://www.polygon.com/legend-of-zelda-temple-maker-steam-game/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:108356146" data-srckey="cnbc" data-cat="ai" data-sent="0" data-ts="1788132395000" data-slug="what caused nvidias nasty reversal friday look the fed for clues html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="What caused Nvidia&#39;s nasty reversal Friday? Look to the Fed for clues — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T23:26:35.000Z">7:26 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">What caused Nvidia&#39;s nasty reversal Friday? Look to the Fed for clues</h3>
+	<p class="snippet">In his Sunday column for Investing Club subscribers, Jim Cramer explores the linkage between Nvidia&#39;s stock, the oil market, and the Federal Reserve.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://image.cnbcfm.com/api/v1/image/108314498-1780317990187-gettyimages-2278514474-TAIWAN_COMPUTEX.jpeg?v=1780318027&amp;w=340&amp;h=191" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://image.cnbcfm.com/api/v1/image/108314498-1780317990187-gettyimages-2278514474-TAIWAN_COMPUTEX.jpeg?v=1780318027&amp;w=240&amp;h=135 240w, https://image.cnbcfm.com/api/v1/image/108314498-1780317990187-gettyimages-2278514474-TAIWAN_COMPUTEX.jpeg?v=1780318027&amp;w=340&amp;h=191 340w, https://image.cnbcfm.com/api/v1/image/108314498-1780317990187-gettyimages-2278514474-TAIWAN_COMPUTEX.jpeg?v=1780318027&amp;w=510&amp;h=287 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">What caused Nvidia&#39;s nasty reversal Friday? Look to the Fed for clues</h3>
+	<p class="about">In his Sunday column for Investing Club subscribers, Jim Cramer explores the linkage between Nvidia&#39;s stock, the oil market, and the Federal Reserve.</p>
+	<p class="why"><span class="whylabel">matched</span> <span class="whykey">Nvidia</span> <span class="whystrength" title="How strongly this matched your interest (decayed frequency: 2.0)">match</span></p>
+	
+	<a class="more" href="https://www.cnbc.com/2026/08/30/what-caused-nvidias-nasty-reversal-friday-look-to-the-fed-for-clues.html" target="_blank" rel="noopener noreferrer">CNBC &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:1e58afb4-4ec7-427f-8f2c-d15c7fa1d488" data-srckey="cbs sports" data-cat="sports" data-sent="0" data-ts="1788132230000" data-slug="fantasy baseball news week waiver wire are there any impact prospects left">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Week 24 Fantasy Baseball Waiver Wire: Are there any impact prospects left? — flip for details">
+	<div class="meta"><span class="src" style="color:#3b82f6">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T23:23:50.000Z">7:23 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Week 24 Fantasy Baseball Waiver Wire: Are there any impact prospects left?</h3>
+	<p class="snippet">September roster expansion opens the door for high-impact minor-league talents like Ralphy Velazquez and Seaver King to make a fantasy difference down the stretch.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://sportshub.cbsistatic.com/i/2026/08/12/35a313a6-94de-4535-ae7d-9a97dc233649/walker-jenkins-getty-images.jpg?width=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://sportshub.cbsistatic.com/i/2026/08/12/35a313a6-94de-4535-ae7d-9a97dc233649/walker-jenkins-getty-images.jpg?width=240 240w, https://sportshub.cbsistatic.com/i/2026/08/12/35a313a6-94de-4535-ae7d-9a97dc233649/walker-jenkins-getty-images.jpg?width=340 340w, https://sportshub.cbsistatic.com/i/2026/08/12/35a313a6-94de-4535-ae7d-9a97dc233649/walker-jenkins-getty-images.jpg?width=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Week 24 Fantasy Baseball Waiver Wire: Are there any impact prospects left?</h3>
+	<p class="about">September roster expansion opens the door for high-impact minor-league talents like Ralphy Velazquez and Seaver King to make a fantasy difference down the stretch.</p>
+	
+	
+	<a class="more" href="https://www.cbssports.com/fantasy/baseball/news/week-24-fantasy-baseball-waiver-wire-are-there-any-impact-prospects-left-24/" target="_blank" rel="noopener noreferrer">CBS Sports &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 h2 has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.polygon.com/stargate-movie-free-streaming-youtube-roland-emmerich/" data-srckey="polygon" data-cat="games" data-sent="0" data-ts="1788130874000" data-slug="stargate movie free streaming youtube roland emmerich">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The Definitive ’90s Sci-Fi Action Blockbuster Is Officially Streaming for Free on YouTube — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T23:01:14.000Z">7:01 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">The Definitive ’90s Sci-Fi Action Blockbuster Is Officially Streaming for Free on YouTube</h3>
+	<p class="snippet">As one of the best &#39;90s action sci-fi adventures, Stargate serves as an unforgettable trip into the past.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/merc8196210c4d1db04614d6db9f3e4fstargate1020-1024x580-1.jpg?w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/merc8196210c4d1db04614d6db9f3e4fstargate1020-1024x580-1.jpg?w=600 600w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/merc8196210c4d1db04614d6db9f3e4fstargate1020-1024x580-1.jpg?w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">The Definitive ’90s Sci-Fi Action Blockbuster Is Officially Streaming for Free on YouTube</h3>
+	<p class="about">As one of the best &#39;90s action sci-fi adventures, Stargate serves as an unforgettable trip into the past.</p>
+	
+	
+	<a class="more" href="https://www.polygon.com/stargate-movie-free-streaming-youtube-roland-emmerich/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.engadget.com/2246402/improve-audio-quality-apple-carplay/" data-srckey="engadget" data-cat="tech" data-sent="0" data-ts="1788130800000" data-slug="improve audio quality apple carplay">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="How to improve your audio quality on Apple CarPlay — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(229 55% 72%)">ENGADGET</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T23:00:00.000Z">7:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">How to improve your audio quality on Apple CarPlay</h3>
+	<p class="snippet">Apple CarPlay can sound great, but you have to make sure you&#39;re sending it high-quality audio. A few quick checks can boost your audio enjoyment on the road.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.engadget.com/img/gallery/how-to-improve-your-audio-quality-on-apple-carplay/l-intro-1787324051.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">How to improve your audio quality on Apple CarPlay</h3>
+	<p class="about">Apple CarPlay can sound great, but you have to make sure you&#39;re sending it high-quality audio. A few quick checks can boost your audio enjoyment on the road.</p>
+	
+	
+	<a class="more" href="https://www.engadget.com/2246402/improve-audio-quality-apple-carplay/" target="_blank" rel="noopener noreferrer">Engadget &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1130,6 +1337,29 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.engadget.com/2242787/how-to-soft-hard-reset-iphone/" data-srckey="engadget" data-cat="tech" data-sent="0" data-ts="1788129000000" data-slug="how soft hard reset iphone">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="How to soft and hard reset your iPhone — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(229 55% 72%)">ENGADGET</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T22:30:00.000Z">6:30 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">How to soft and hard reset your iPhone</h3>
+	<p class="snippet">Is your iPhone acting up? Let&#39;s walk through the different kinds of resets, what they do and how to perform them.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.engadget.com/img/gallery/how-to-soft-and-hard-reset-your-iphone/l-intro-1785432528.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">How to soft and hard reset your iPhone</h3>
+	<p class="about">Is your iPhone acting up? Let&#39;s walk through the different kinds of resets, what they do and how to perform them.</p>
+	
+	
+	<a class="more" href="https://www.engadget.com/2242787/how-to-soft-hard-reset-iphone/" target="_blank" rel="noopener noreferrer">Engadget &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://kotaku.com/?p=2000729699" data-srckey="kotaku" data-cat="entertainment" data-sent="0" data-ts="1788128027000" data-slug="larptubers recreating bygone youtubers dredge conflicting memories for original creators">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘LARPtubers’ Recreating Bygone YouTubers Dredge Up Conflicting Memories For Original Creators — flip for details">
@@ -1176,6 +1406,29 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact h2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.engadget.com/2242786/iphone-unavailable-message-how-to-fix/" data-srckey="engadget" data-cat="tech" data-sent="0" data-ts="1788127200000" data-slug="iphone unavailable message how fix">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Getting an &#39;iPhone Unavailable&#39; message? Here&#39;s how to fix it — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(229 55% 72%)">ENGADGET</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T22:00:00.000Z">6:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Getting an &#39;iPhone Unavailable&#39; message? Here&#39;s how to fix it</h3>
+	<p class="snippet">If you&#39;re having trouble getting into your iPhone, you&#39;ll need your old passcode or Apple Account password.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.engadget.com/img/gallery/getting-an-iphone-unavailable-message-heres-how-to-fix-it/l-intro-1785417432.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Getting an &#39;iPhone Unavailable&#39; message? Here&#39;s how to fix it</h3>
+	<p class="about">If you&#39;re having trouble getting into your iPhone, you&#39;ll need your old passcode or Apple Account password.</p>
+	
+	
+	<a class="more" href="https://www.engadget.com/2242786/iphone-unavailable-message-how-to-fix/" target="_blank" rel="noopener noreferrer">Engadget &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact w2 h2 has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/raymiles94/-59da" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788126788000" data-slug="raymiles94 59da">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="[Boost] — flip for details">
@@ -1214,6 +1467,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://variety.com/2026/music/news/enhypen-land-first-no-1-dolly-parton-returns-albums-chart-1236846995/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://arstechnica.com/gaming/2026/08/a-12tb-steam-teraleak-spills-more-than-a-decade-of-lost-pc-gaming-history/" data-srckey="ars technica" data-cat="tech" data-sent="0" data-ts="1788126056000" data-slug="gaming 12tb steam teraleak spills more than decade lost history">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="A 12TB Steam “teraleak” spills more than a decade of lost PC gaming history — flip for details">
+	<div class="meta"><span class="src" style="color:#f97316">ARS TECHNICA</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T21:40:56.000Z">5:40 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">A 12TB Steam “teraleak” spills more than a decade of lost PC gaming history</h3>
+	<p class="snippet">Cut content from Portal 2, hints of Half Life 2: Episode 3, and so much more.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/teraweapon-1152x648-1788124932.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">A 12TB Steam “teraleak” spills more than a decade of lost PC gaming history</h3>
+	<p class="about">Cut content from Portal 2, hints of Half Life 2: Episode 3, and so much more.</p>
+	
+	
+	<a class="more" href="https://arstechnica.com/gaming/2026/08/a-12tb-steam-teraleak-spills-more-than-a-decade-of-lost-pc-gaming-history/" target="_blank" rel="noopener noreferrer">Ars Technica &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -2042,6 +2318,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.theguardian.com/world/live/2026/aug/30/northern-cyprus-ferry-capsizes-latest-news-updates" target="_blank" rel="noopener noreferrer">Guardian World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.engadget.com/2242784/nintendo-most-unsuccessful-console-not-gamecube-wii-u/" data-srckey="engadget" data-cat="tech" data-sent="0" data-ts="1788112800000" data-slug="nintendo most unsuccessful console not gamecube wii">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Not the GameCube, not the Wii U: This was Nintendo&#39;s most unsuccessful console — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(229 55% 72%)">ENGADGET</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T18:00:00.000Z">2:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Not the GameCube, not the Wii U: This was Nintendo&#39;s most unsuccessful console</h3>
+	<p class="snippet">Nintendo&#39;s worst-ever console was awkward to use and didn&#39;t even sell a million units. But you can try it today if you&#39;re curious.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.engadget.com/img/gallery/not-the-gamecube-not-the-wii-u-this-was-nintendos-most-unsuccessful-console/l-intro-1786717178.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Not the GameCube, not the Wii U: This was Nintendo&#39;s most unsuccessful console</h3>
+	<p class="about">Nintendo&#39;s worst-ever console was awkward to use and didn&#39;t even sell a million units. But you can try it today if you&#39;re curious.</p>
+	
+	
+	<a class="more" href="https://www.engadget.com/2242784/nintendo-most-unsuccessful-console-not-gamecube-wii-u/" target="_blank" rel="noopener noreferrer">Engadget &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -7688,7 +7987,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2702 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2689 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/9y9jo6" data-cat="dev" data-sent="0" data-slug="blog such thing just tool" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 29 &middot; Dev</span><a href="https://deadsimpletech.com/blog/no-such-thing-as-just-a-tool" target="_blank" rel="noopener noreferrer">There&#39;s no such thing as Just a Tool</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236685010" data-cat="entertainment" data-sent="0" data-slug="news where watch open tennis streaming free schedule" hidden="until-found"><span class="ameta">HOLLYWOOD REPORTER &middot; Aug 29 &middot; Entertainment</span><a href="https://www.hollywoodreporter.com/tv/tv-news/where-to-watch-us-open-tennis-2026-streaming-free-schedule-1236685010/" target="_blank" rel="noopener noreferrer">Where to Watch the 2026 U.S. Open Tennis Tournament Online</a></li>
@@ -10379,19 +10678,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://the-decoder.com/?p=39282" data-cat="ai" data-sent="0" data-slug="study explains why agents benefit from skills and when they fail" hidden="until-found"><span class="ameta">THE DECODER &middot; Aug 22 &middot; AI</span><a href="https://the-decoder.com/study-explains-why-ai-agents-benefit-from-skills-and-when-they-fail/" target="_blank" rel="noopener noreferrer">Study explains why AI agents benefit from &quot;skills&quot; and when they fail</a></li>
 <li class="arow" data-count="1" data-id="rss:108352959" data-cat="markets" data-sent="0" data-slug="meet yvonne gonzalez rogers judge taking meta html" hidden="until-found"><span class="ameta">CNBC &middot; Aug 22 &middot; Markets</span><a href="https://www.cnbc.com/2026/08/22/meet-yvonne-gonzalez-rogers-judge-taking-on-meta.html" target="_blank" rel="noopener noreferrer">Meta is the latest tech giant to land in her courtroom. Meet Judge Yvonne Gonzalez Rogers</a></li>
 <li class="arow" data-count="1" data-id="rss:108353018" data-cat="markets" data-sent="0" data-slug="warren buffett not greg abel appears still calling the shots stocks html" hidden="until-found"><span class="ameta">CNBC &middot; Aug 22 &middot; Markets</span><a href="https://www.cnbc.com/2026/08/22/warren-buffett-not-greg-abel-appears-to-still-be-calling-the-shots-on-stocks.html" target="_blank" rel="noopener noreferrer">Warren Buffett Watch: It&#39;s Buffett, not Abel, who appears to be calling the shots on stocks</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.polygon.com/patch-notes-gta-6-leak-wolverine-summer/" data-cat="games" data-sent="0" data-slug="patch notes gta leak wolverine summer" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 22 &middot; Games</span><a href="https://www.polygon.com/patch-notes-gta-6-leak-wolverine-summer/" target="_blank" rel="noopener noreferrer">GTA 6 Leak and Wolverine Rage Are Symptoms of Gaming&#39;s Summer of Hate</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.polygon.com/masters-of-the-universe-streaming-success-prime-video-august-2026/" data-cat="entertainment" data-sent="0" data-slug="masters the universe streaming success prime video august" hidden="until-found"><span class="ameta">POLYGON &middot; Aug 22 &middot; Entertainment</span><a href="https://www.polygon.com/masters-of-the-universe-streaming-success-prime-video-august-2026/" target="_blank" rel="noopener noreferrer">Prime Video&#39;s $175M Action Fantasy Flop Is Officially Soaring on Global Streaming</a></li>
-<li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000726747" data-cat="games" data-sent="0" data-slug="grand theft auto gta leak video soundtrack rockstar" hidden="until-found"><span class="ameta">KOTAKU &middot; Aug 22 &middot; Games</span><a href="https://kotaku.com/grand-theft-auto-6-gta-6-leak-video-soundtrack-rockstar-2000726747" target="_blank" rel="noopener noreferrer">Grand Theft Auto 6’s Latest Leak Told Me All I Need To Know</a></li>
-<li class="arow" data-count="1" data-id="rss:108347965" data-cat="markets" data-sent="0" data-slug="workplace new phoneless frontier for teens html" hidden="until-found"><span class="ameta">CNBC &middot; Aug 22 &middot; Markets</span><a href="https://www.cnbc.com/2026/08/22/is-workplace-new-phoneless-frontier-for-teens.html" target="_blank" rel="noopener noreferrer">For young Americans, the workplace is the new phoneless frontier. &#39;It allows us to hyper focus on the task at hand,&#39; says employer</a></li>
-<li class="arow" data-count="1" data-id="rss:108351812" data-cat="markets" data-sent="0" data-slug="coca cola innovation labs dirty sodas refreshers html" hidden="until-found"><span class="ameta">CNBC &middot; Aug 22 &middot; Markets</span><a href="https://www.cnbc.com/2026/08/22/coca-cola-innovation-labs-dirty-sodas-refreshers.html" target="_blank" rel="noopener noreferrer">Inside Coca-Cola’s secretive innovation labs: How the beverage giant wants to automate dirty soda and refreshers</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.theverge.com/tech/983375/fairphone-6-plus-framework-12-laptop-mutiny-mortal-shell-2" data-cat="tech" data-sent="0" data-slug="tech fairphone plus framework laptop mutiny mortal shell" hidden="until-found"><span class="ameta">THE VERGE &middot; Aug 22 &middot; Tech</span><a href="https://www.theverge.com/tech/983375/fairphone-6-plus-framework-12-laptop-mutiny-mortal-shell-2" target="_blank" rel="noopener noreferrer">Two great new repairable gadgets</a></li>
-<li class="arow" data-count="1" data-id="rss:335d5441-22f3-4394-8f60-4f9f3bba154b" data-cat="markets" data-sent="0" data-slug="business bitcoin and ether bears get decimated amid squeeze led rally musk wants pay creators stablecoins" hidden="until-found"><span class="ameta">COINDESK &middot; Aug 22 &middot; Markets</span><a href="https://www.coindesk.com/business/2026/08/22/bitcoin-and-ether-bears-get-decimated-amid-squeeze-led-rally-and-musk-s-x-wants-to-pay-creators-in-stablecoins-crypto-week-in-5-stories" target="_blank" rel="noopener noreferrer">Bitcoin and Ether bears get decimated amid &#39;squeeze-led&#39; rally and Musk&#39;s X wants to pay creators in stablecoins: Crypto week in 5 stories</a></li>
-<li class="arow" data-count="1" data-id="rss:WP-MKTW-0005194071" data-cat="markets" data-sent="0" data-slug="story heres some surprisingly good news for the stock market this midterm election year d492d3a4" hidden="until-found"><span class="ameta">MARKETWATCH &middot; Aug 22 &middot; Markets</span><a href="https://www.marketwatch.com/story/heres-some-surprisingly-good-news-for-the-stock-market-this-midterm-election-year-d492d3a4?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Here’s some surprisingly good news for the stock market this midterm election year</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2241995/darkest-dungeon-dlc-a-bioshock-style-shooter-with-clowns-and-other-new-indie-games-worth-checking-out/" data-cat="tech" data-sent="0" data-slug="darkest dungeon dlc bioshock style shooter with clowns and other new indie games worth checking out" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 22 &middot; Tech</span><a href="https://www.engadget.com/2241995/darkest-dungeon-dlc-a-bioshock-style-shooter-with-clowns-and-other-new-indie-games-worth-checking-out/" target="_blank" rel="noopener noreferrer">Darkest Dungeon DLC, a BioShock-style shooter with clowns and other new indie games worth checking out</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/silent-hill-townfall-gameplay-trailer-ps5-exclusivity-window" data-cat="games" data-sent="0" data-slug="silent hill townfall gameplay trailer ps5 exclusivity window" hidden="until-found"><span class="ameta">EUROGAMER &middot; Aug 22 &middot; Games</span><a href="https://www.eurogamer.net/silent-hill-townfall-gameplay-trailer-ps5-exclusivity-window" target="_blank" rel="noopener noreferrer">Silent Hill: Townfall&#39;s new gameplay trailer quietly confirms how long its PS5 exclusivity will last</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/cj636ewwz46o#0" data-cat="sports" data-sent="0" data-slug="sport football articles cj636ewwz46o" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 22 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/football/articles/cj636ewwz46o" target="_blank" rel="noopener noreferrer">Martinelli deserves better from Arsenal - Wright</a></li>
-<li class="arow" data-count="1" data-id="rss:87ce1f85-0344-44b6-9dc0-84d3f5ad2e34" data-cat="sports" data-sent="0" data-slug="betting news nfl preseason week odds picks today expert backs cleveland browns saturdays best bets" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 22 &middot; Sports</span><a href="https://www.cbssports.com/betting/news/2026-nfl-preseason-week-2-nfl-odds-picks-today-expert-backs-cleveland-browns-in-saturdays-best-bets/" target="_blank" rel="noopener noreferrer">2026 NFL preseason Week 2 NFL odds, picks today: Expert backs Cleveland Browns in Saturday&#39;s best bets</a></li>
-<li class="arow" data-count="1" data-id="rss:0231a3e0-e3b8-4ebe-b7df-21ad552ddb88" data-cat="games" data-sent="0" data-slug="articles pokemon tcg etb amazon deals" hidden="until-found"><span class="ameta">IGN &middot; Aug 22 &middot; Games</span><a href="https://www.ign.com/articles/pokemon-tcg-etb-amazon-deals" target="_blank" rel="noopener noreferrer">Pokémon ETBs are Surprisingly Easy to Get Hold of Right Now on Amazon</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
