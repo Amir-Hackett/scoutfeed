@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-01T13:25:11.613Z">
+<meta name="sf-version" content="2026-09-01T14:25:20.063Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,11 +537,11 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] .meta [style*="hsl(287 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
-:root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
 :root[data-theme="light"] .meta [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] .meta [style*="hsl(89 55% 72%)"] { color: #49691b !important; }
@@ -555,6 +555,7 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
 :root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
+:root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="hsl(336 55% 72%)"] { color: #894262 !important; }
@@ -567,7 +568,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
 :root[data-theme="light"] .meta [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
-:root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
 :root[data-theme="light"] .meta [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
 :root[data-theme="light"] .meta [style*="hsl(273 55% 72%)"] { color: #724890 !important; }
@@ -707,10 +707,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 9:25 AM &middot; 171 TODAY</p>
+	<p class="stats">UPDATED 10:25 AM &middot; 173 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">187</span><span class="sr-only"> — 187 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">150</span><span class="sr-only"> — 150 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">186</span><span class="sr-only"> — 186 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">384</span><span class="sr-only"> — 384 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">255</span><span class="sr-only"> — 255 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">346</span><span class="sr-only"> — 346 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">135</span><span class="sr-only"> — 135 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">363</span><span class="sr-only"> — 363 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">419</span><span class="sr-only"> — 419 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">222</span><span class="sr-only"> — 222 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">353</span><span class="sr-only"> — 353 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">187</span><span class="sr-only"> — 187 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">150</span><span class="sr-only"> — 150 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">186</span><span class="sr-only"> — 186 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">384</span><span class="sr-only"> — 384 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">253</span><span class="sr-only"> — 253 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">346</span><span class="sr-only"> — 346 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">135</span><span class="sr-only"> — 135 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">363</span><span class="sr-only"> — 363 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">420</span><span class="sr-only"> — 420 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">222</span><span class="sr-only"> — 222 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">354</span><span class="sr-only"> — 354 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -733,29 +733,6 @@ footer a { color: var(--text-faint); }
 <h2><span class="date">FOR YOU</span><span class="rel">RANKED BY YOUR INTERESTS</span><span class="rule" aria-hidden="true"></span></h2>
 
 <div class="rail-row">
-<article class="card compact rail-art has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/msgai/are-more-ai-features-always-better-the-smart-ideas-i-removed-313p" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788098737000" data-slug="msgai are more features always better the smart ideas removed 313p">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Are More AI Features Always Better? The “Smart” Ideas I Removed — flip for details">
-	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-30T14:05:37.000Z">10:05 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
-	<h3 class="title">Are More AI Features Always Better? The “Smart” Ideas I Removed</h3>
-	<p class="snippet">When AI features became easy to add, my product backlog grew very quickly. Automatically translate every incoming message. Generate replies before the user asks. Detect customer intent. Choose a saved script. Send a follow-up when a conversation becomes quiet. Summarize every chat. Score every lead. Each idea sounded reasonable in isolation. Together, they would have turned a small WhatsApp Web…</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=640,height=334,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F3a1v3ioyk6d2jis2vl7z.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=320,height=167,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F3a1v3ioyk6d2jis2vl7z.png 320w, https://media2.dev.to/dynamic/image/width=640,height=334,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F3a1v3ioyk6d2jis2vl7z.png 640w, https://media2.dev.to/dynamic/image/width=960,height=502,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F3a1v3ioyk6d2jis2vl7z.png 960w" sizes="(max-width: 640px) 78vw, 320px">
-</div>
-<div class="face back" inert>
-	<h3 class="title">Are More AI Features Always Better? The “Smart” Ideas I Removed</h3>
-	<p class="about">When AI features became easy to add, my product backlog grew very quickly. Automatically translate every incoming message. Generate replies before the user asks. Detect customer intent. Choose a saved script. Send a follow-up when a conversation becomes quiet. Summarize every chat. Score every lead. Each idea sounded reasonable in isolation. Together, they would have turned a small WhatsApp Web…</p>
-	
-	
-	<a class="more" href="https://dev.to/msgai/are-more-ai-features-always-better-the-smart-ideas-i-removed-313p" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
 <article class="card compact rail-art has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.eurogamer.net/witcher-4-physical-edition-disc-ps5" data-srckey="eurogamer" data-cat="games" data-sent="0" data-ts="1788259371000" data-slug="witcher physical edition disc ps5">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="CD Projekt Red powerless regarding PS5 disc edition of The Witcher 4, but promises a game box with &quot;feelies&quot; whatever happens — flip for details">
@@ -825,21 +802,21 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact rail-art has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/tennis/articles/ckgvrdz061eo#0" data-srckey="bbc sport" data-cat="sports" data-sent="0" data-ts="1788239274000" data-slug="sport tennis articles ckgvrdz061eo">
+<article class="card compact rail-art has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49785035" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788206666010" data-slug="college football story lsu lane kiffin says players endorse pursing nflers">
 <div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="A loss that feels different - Djokovic&#39;s future more uncertain than ever — flip for details">
-	<div class="meta"><span class="src" style="color:#facc15">BBC SPORT</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T05:07:54.000Z">1:07 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
-	<h3 class="title">A loss that feels different - Djokovic&#39;s future more uncertain than ever</h3>
-	<p class="snippet">After Novak Djokovic&#39;s latest bid for a historic 25th major title ends in tears in New York, where does the most decorated men&#39;s player of the Open era go from here?</p>
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Kiffin says his players endorse pursing ex-NFLers — flip for details">
+	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T20:04:26.010Z">4:04 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Kiffin says his players endorse pursing ex-NFLers</h3>
+	<p class="snippet">LSU coach Lane Kiffin said his players have endorsed the decision to pursue former NFL rookies, making him feel better about the whole thing.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/640/cpsprodpb/3934/live/2c6c3e70-a589-11f1-86c5-a103e9fe117a.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/320/cpsprodpb/3934/live/2c6c3e70-a589-11f1-86c5-a103e9fe117a.jpg 320w, https://ichef.bbci.co.uk/ace/standard/640/cpsprodpb/3934/live/2c6c3e70-a589-11f1-86c5-a103e9fe117a.jpg 640w, https://ichef.bbci.co.uk/ace/standard/960/cpsprodpb/3934/live/2c6c3e70-a589-11f1-86c5-a103e9fe117a.jpg 960w" sizes="(max-width: 640px) 78vw, 320px">
+	<img class="thumb" src="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0810%2Fr1699949_1296x729_16-9.jpg&amp;w=640" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0810%2Fr1699949_1296x729_16-9.jpg&amp;w=320 320w, https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0810%2Fr1699949_1296x729_16-9.jpg&amp;w=640 640w, https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0810%2Fr1699949_1296x729_16-9.jpg&amp;w=960 960w" sizes="(max-width: 640px) 78vw, 320px">
 </div>
 <div class="face back" inert>
-	<h3 class="title">A loss that feels different - Djokovic&#39;s future more uncertain than ever</h3>
-	<p class="about">After Novak Djokovic&#39;s latest bid for a historic 25th major title ends in tears in New York, where does the most decorated men&#39;s player of the Open era go from here?</p>
+	<h3 class="title">Kiffin says his players endorse pursing ex-NFLers</h3>
+	<p class="about">LSU coach Lane Kiffin said his players have endorsed the decision to pursue former NFL rookies, making him feel better about the whole thing.</p>
 	
 	
-	<a class="more" href="https://www.bbc.co.uk/sport/tennis/articles/ckgvrdz061eo" target="_blank" rel="noopener noreferrer">BBC Sport &#8599;</a>
+	<a class="more" href="https://www.espn.com/college-football/story/_/id/49785035/lsu-lane-kiffin-says-players-endorse-pursing-ex-nflers" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -886,6 +863,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.rollingstone.com/music/music-album-reviews/prince-timeless-album-review-1235617984/" target="_blank" rel="noopener noreferrer">Rolling Stone Music &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact rail-art has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/ranajit-dhar-dev/rdai-a-multi-brain-python-sdk-for-self-healing-ai-icl" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788188500000" data-slug="ranajit dhar dev rdai multi brain python sdk for self healing icl">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="RDAI: A Multi-Brain Python SDK for Self-Healing AI — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T15:01:40.000Z">11:01 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">RDAI: A Multi-Brain Python SDK for Self-Healing AI</h3>
+	<p class="snippet">RDAI: Building a Self-Healing Multi-Provider AI Orchestrator for Python One Python SDK. Any AI Provider. Automatic Failover. Modern AI applications are increasingly built on APIs from multiple LLM providers. Gemini. OpenAI. Groq. Claude. DeepSeek. New models appear constantly, and each provider brings different capabilities, pricing, latency, limits, and failure modes. But there is a problem that…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=640,height=334,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fddnkul5901igk8tw74x3.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=320,height=167,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fddnkul5901igk8tw74x3.png 320w, https://media2.dev.to/dynamic/image/width=640,height=334,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fddnkul5901igk8tw74x3.png 640w, https://media2.dev.to/dynamic/image/width=960,height=502,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fddnkul5901igk8tw74x3.png 960w" sizes="(max-width: 640px) 78vw, 320px">
+</div>
+<div class="face back" inert>
+	<h3 class="title">RDAI: A Multi-Brain Python SDK for Self-Healing AI</h3>
+	<p class="about">RDAI: Building a Self-Healing Multi-Provider AI Orchestrator for Python One Python SDK. Any AI Provider. Automatic Failover. Modern AI applications are increasingly built on APIs from multiple LLM providers. Gemini. OpenAI. Groq. Claude. DeepSeek. New models appear constantly, and each provider brings different capabilities, pricing, latency, limits, and failure modes. But there is a problem that…</p>
+	
+	
+	<a class="more" href="https://dev.to/ranajit-dhar-dev/rdai-a-multi-brain-python-sdk-for-self-healing-ai-icl" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -972,43 +972,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.cnn.com/2026/08/31/politics/homeland-security-voter-fraud-investigations" target="_blank" rel="noopener noreferrer">Exclusive: DHS plans to launch voter fraud investigation surge Tuesday</a>
-		<p class="trend-meta"><span class="src">CNN</span><span class="sep" aria-hidden="true">&middot;</span>"dhs" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.foxnews.com/entertainment/meghan-markle-uk-return-poses-palace-control-nightmare-expert-warns" target="_blank" rel="noopener noreferrer">Meghan Markle’s UK return poses Palace control ‘nightmare,’ expert warns</a>
+		<p class="trend-meta"><span class="src">FOX NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"meghan markle news" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.courttv.com/news/ill-kill-you-with-one-shot-woman-claims-she-killed-man-who-attacked-threatened-her/" target="_blank" rel="noopener noreferrer">‘I’ll kill you with one shot’: Woman claims she killed man who attacked, threatened her</a>
-		<p class="trend-meta"><span class="src">COURT TV</span><span class="sep" aria-hidden="true">&middot;</span>"court tv live" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://wwd.com/fashion-news/fashion-scoops/calvin-klein-sadie-sink-second-chapter-feel-the-fit-campaign-1239176485/" target="_blank" rel="noopener noreferrer">Calvin Klein Taps Sadie Sink for Second Chapter of Fall ‘Feel the Fit’ Campaign</a>
+		<p class="trend-meta"><span class="src">WWD</span><span class="sep" aria-hidden="true">&middot;</span>"sadie sink" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://ohiostatebuckeyes.com/news/2026/8/31/football-ohio-state-begins-137th-season-saturday-against-ball-state" target="_blank" rel="noopener noreferrer">Ohio State Begins 137th Season Saturday Against Ball State</a>
-		<p class="trend-meta"><span class="src">OHIO STATE | OFFICIAL ATHLETICS WEBSITE</span><span class="sep" aria-hidden="true">&middot;</span>"ohio state buckeyes football" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.foodandwine.com/aldi-finds-september-2026-12074037" target="_blank" rel="noopener noreferrer">Aldi Has More Than 40 New Finds Coming in September, Including Plenty of Fall Favorites</a>
+		<p class="trend-meta"><span class="src">FOOD &AMP; WINE</span><span class="sep" aria-hidden="true">&middot;</span>"aldi september new product releases" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/news/articles/c1wxex4vg35o" target="_blank" rel="noopener noreferrer">Israeli fire kills three in Gaza City during reported raid, medics say</a>
-		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"palestine" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://finance.yahoo.com/markets/stocks/articles/dell-hpe-stocks-draw-focus-082109508.html" target="_blank" rel="noopener noreferrer">DELL, HPE Stocks Draw Focus Ahead Of Earnings This Week — And SMCI Bulls Are Watching Closely</a>
+		<p class="trend-meta"><span class="src">YAHOO FINANCE</span><span class="sep" aria-hidden="true">&middot;</span>"dell stock" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/future/article/20260828-two-giant-warming-patterns-are-brewing-in-the-pacific-and-warping-us-weather" target="_blank" rel="noopener noreferrer">Two giant warming patterns are brewing in the Pacific and warping US weather</a>
-		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"pacific marine heatwave and el nino" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.reuters.com/technology/apple-sets-sept-9-date-next-iphone-launch-event-2026-08-26/" target="_blank" rel="noopener noreferrer">Apple to launch next iPhone on September 9 in first major event under new CEO Ternus</a>
+		<p class="trend-meta"><span class="src">REUTERS</span><span class="sep" aria-hidden="true">&middot;</span>"apple event" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/news/articles/cew95ke74l7o" target="_blank" rel="noopener noreferrer">Dolly Parton laid to rest alongside husband in Nashville</a>
-		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"country music" &middot; 50000+ searches</p>
+		<a class="trend-title" href="https://m.sohu.com/a/1070583061_121455647?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334" target="_blank" rel="noopener noreferrer">Chinese football launches ‘Future Stars Program’! Officials to fund more than 100 youth players to play overseas, with three funding tiers: 450,000 yuan/year, 350,000 yuan/year and 250,000 yuan/year</a>
+		<p class="trend-meta"><span class="src">SOHU</span><span class="sep" aria-hidden="true">&middot;</span>"足球" &middot; 200+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1030,6 +1030,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.bbc.co.uk/sport/tennis/articles/ckgvrdz061eo" target="_blank" rel="noopener noreferrer">BBC Sport &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://techcrunch.com/?p=3159537" data-srckey="techcrunch" data-cat="tech" data-sent="0" data-ts="1788271122000" data-slug="indias unacademy sells rival upgrad for 206m about less than its peak valuation">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="India’s Unacademy sells to rival upGrad for $206M, about 94% less than its peak valuation — flip for details">
+	<div class="meta"><span class="src" style="color:#34d399">TECHCRUNCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T13:58:42.000Z">9:58 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">India’s Unacademy sells to rival upGrad for $206M, about 94% less than its peak valuation</h3>
+	<p class="snippet">&quot;We raised at a peak, but sold at a fraction of that,&quot; Unacademy co-founder and CEO Gaurav Munjal wrote. &quot;I&#39;m not going to dress these facts up.&quot;</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://techcrunch.com/wp-content/uploads/2024/07/Unacademy.jpeg?resize=1200,700" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">India’s Unacademy sells to rival upGrad for $206M, about 94% less than its peak valuation</h3>
+	<p class="about">&quot;We raised at a peak, but sold at a fraction of that,&quot; Unacademy co-founder and CEO Gaurav Munjal wrote. &quot;I&#39;m not going to dress these facts up.&quot;</p>
+	
+	
+	<a class="more" href="https://techcrunch.com/2026/09/01/indias-unacademy-sells-to-rival-upgrad-for-206m-about-94-less-than-its-peak-valuation/" target="_blank" rel="noopener noreferrer">TechCrunch &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1674,6 +1697,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.engadget.com/2248277/sonos-product-launch-live-blog-september-2026/" target="_blank" rel="noopener noreferrer">Engadget &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cm2q1qgg542o#0" data-srckey="bbc world" data-cat="world" data-sent="0" data-ts="1788267262000" data-slug="news articles cm2q1qgg542o">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Trump says US position on Falklands &#39;one of many&#39; under review — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T12:54:22.000Z">8:54 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Trump says US position on Falklands &#39;one of many&#39; under review</h3>
+	<p class="snippet">The UK says Falkland islanders &quot;are British with a right to determine their own future&quot;.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/3261/live/b6217ad0-a5e4-11f1-a291-b542ee92de7c.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3261/live/b6217ad0-a5e4-11f1-a291-b542ee92de7c.jpg 240w, https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/3261/live/b6217ad0-a5e4-11f1-a291-b542ee92de7c.jpg 340w, https://ichef.bbci.co.uk/ace/standard/510/cpsprodpb/3261/live/b6217ad0-a5e4-11f1-a291-b542ee92de7c.jpg 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Trump says US position on Falklands &#39;one of many&#39; under review</h3>
+	<p class="about">The UK says Falkland islanders &quot;are British with a right to determine their own future&quot;.</p>
+	
+	
+	<a class="more" href="https://www.bbc.co.uk/news/articles/cm2q1qgg542o" target="_blank" rel="noopener noreferrer">BBC World &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -4951,7 +4997,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2823 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2821 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:7aa790a5-8bdd-4bf0-b88f-b070fca5eb71" data-cat="markets" data-sent="0" data-slug="markets xrp futures are shifting toward cme institutional participation grows" hidden="until-found"><span class="ameta">COINDESK &middot; Aug 31 &middot; Markets</span><a href="https://www.coindesk.com/markets/2026/09/01/xrp-futures-are-shifting-toward-cme-as-institutional-participation-grows" target="_blank" rel="noopener noreferrer">CME’s share of XRP futures jumps as token rallies 40% in a week</a></li>
 <li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/news/thailand-sec-retail-overseas-crypto-derivatives" data-cat="markets" data-sent="0" data-slug="news thailand sec retail overseas crypto derivatives" hidden="until-found"><span class="ameta">COINTELEGRAPH &middot; Aug 31 &middot; Markets</span><a href="https://cointelegraph.com/news/thailand-sec-retail-overseas-crypto-derivatives" target="_blank" rel="noopener noreferrer">Thailand SEC proposes retail access to regulated overseas crypto derivatives</a></li>
@@ -6339,7 +6385,7 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:fa2c23df-8fd3-4e59-bef1-4717a0f11be8" data-cat="sports" data-sent="0" data-slug="golf news tour championship tee times pairings schedule round saturday" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 28 &middot; Sports</span><a href="https://www.cbssports.com/golf/news/tour-championship-2026-tee-times-pairings-schedule-round-3-saturday/" target="_blank" rel="noopener noreferrer">2026 Tour Championship tee times, pairings: Complete schedule for Round 3 at FedEx Cup Playoffs finale</a></li>
 <li class="arow" data-count="1" data-id="rss:4269811c-2da0-4e54-8079-df73c947fa1f" data-cat="politics" data-sent="0" data-slug="video cbs evening news" hidden="until-found"><span class="ameta">CBS POLITICS &middot; Aug 28 &middot; Politics</span><a href="https://www.cbsnews.com/video/082826-cbs-evening-news/" target="_blank" rel="noopener noreferrer">8/28: CBS Evening News</a></li>
 <li class="arow" data-count="1" data-id="rss:https://hank.bond/posts/highlighting-my-code-based-on-how-much-i-care/" data-cat="tech" data-sent="0" data-slug="posts highlighting code based how much care" hidden="until-found"><span class="ameta">HACKER NEWS &middot; Aug 28 &middot; Tech</span><a href="https://hank.bond/posts/highlighting-my-code-based-on-how-much-i-care/" target="_blank" rel="noopener noreferrer">Highlighting My Code Based on How Much I Care</a></li>
-<li class="arow" data-count="1" data-id="rss:6a92024e685a213ba7a8ed35" data-cat="ai" data-sent="0" data-slug="story nvidia ceo jensen huang took call from donald trump the middle all hands" hidden="until-found"><span class="ameta">WIRED &middot; Aug 28 &middot; AI</span><a href="https://www.wired.com/story/nvidia-ceo-jensen-huang-took-a-call-from-donald-trump-in-the-middle-of-an-all-hands/" target="_blank" rel="noopener noreferrer">Nvidia CEO Jensen Huang Took a Call From Donald Trump in the Middle of an All-Hands</a></li>
+<li class="arow" data-count="1" data-id="rss:6a92024e685a213ba7a8ed35" data-cat="ai" data-sent="1" data-slug="story nvidia ceo jensen huang took call from donald trump the middle all hands" hidden="until-found"><span class="ameta">WIRED &middot; Aug 28 &middot; AI &middot; texted</span><a href="https://www.wired.com/story/nvidia-ceo-jensen-huang-took-a-call-from-donald-trump-in-the-middle-of-an-all-hands/" target="_blank" rel="noopener noreferrer">Nvidia CEO Jensen Huang Took a Call From Donald Trump in the Middle of an All-Hands</a></li>
 <li class="arow" data-count="1" data-id="rss:https://thedispatch.com/?post_type=newsletter&amp;p=127539" data-cat="politics" data-sent="0" data-slug="newsletter boilingfrogs trump lake america populist nationalism" hidden="until-found"><span class="ameta">THE DISPATCH POLITICS &middot; Aug 28 &middot; Politics</span><a href="https://thedispatch.com/newsletter/boilingfrogs/trump-lake-america-populist-nationalism/" target="_blank" rel="noopener noreferrer">Laughingstock America</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235617554" data-cat="music" data-sent="0" data-slug="music news lil durk murder for hire trial shooter grilled jail calls" hidden="until-found"><span class="ameta">ROLLING STONE MUSIC &middot; Aug 28 &middot; Music</span><a href="https://www.rollingstone.com/music/music-news/lil-durk-murder-for-hire-trial-shooter-grilled-jail-calls-1235617554/" target="_blank" rel="noopener noreferrer">Lil Durk Murder-for-Hire Trial: Admitted Shooter Grilled on Cross, Confronted With Jail Calls</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.foxnews.com/politics/lgbtq-group-reveals-which-dem-nominee-sponsoring-halloween-drag-show" data-cat="politics" data-sent="0" data-slug="politics lgbtq group reveals which dem nominee sponsoring halloween drag show" hidden="until-found"><span class="ameta">FOX NEWS POLITICS &middot; Aug 28 &middot; Politics</span><a href="https://www.foxnews.com/politics/lgbtq-group-reveals-which-dem-nominee-sponsoring-halloween-drag-show" target="_blank" rel="noopener noreferrer">LGBTQ group reveals which Dem nominee is sponsoring Halloween event featuring drag shows</a></li>
@@ -7774,8 +7820,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/witcher-3-expansion-songs-of-the-past-trailer" data-cat="games" data-sent="0" data-slug="witcher expansion songs the past trailer" hidden="until-found"><span class="ameta">EUROGAMER &middot; Aug 25 &middot; Games</span><a href="https://www.eurogamer.net/witcher-3-expansion-songs-of-the-past-trailer" target="_blank" rel="noopener noreferrer">The Witcher 3 Remastered announced, an overhaul free for existing owners, while expansion Songs of the Past finally shown</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.billboard.com/?post_type=pmc_list&amp;p=1235281663" data-cat="ai" data-sent="0" data-slug="lists dolly parton good deeds timeline" hidden="until-found"><span class="ameta">BILLBOARD &middot; Aug 25 &middot; AI</span><a href="https://www.billboard.com/lists/dolly-parton-good-deeds-timeline/" target="_blank" rel="noopener noreferrer">A Timeline of Dolly Parton’s Good Deeds</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240880" data-cat="entertainment" data-sent="0" data-slug="convention all the news and reviews from anime nyc sanji zoro have best bromance off set" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 25 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/convention/2026/all-the-news-and-reviews-from-anime-nyc/sanji-and-zoro-have-the-best-bromance-on-and-off-the-set-of-one-piece-live-action/.240880" target="_blank" rel="noopener noreferrer">Sanji and Zoro Have The Best Bromance On And Off The Set Of One Piece Live Action</a></li>
-<li class="arow" data-count="1" data-id="rss:13a27460-af31-4f65-8b31-40be38c72e06" data-cat="games" data-sent="0" data-slug="articles gears war day campaign hands preview quote marcus fenix nice" hidden="until-found"><span class="ameta">IGN &middot; Aug 25 &middot; Games</span><a href="https://www.ign.com/articles/gears-of-war-e-day-campaign-hands-on-preview-to-quote-marcus-fenix-nice" target="_blank" rel="noopener noreferrer">Gears of War: E-Day Campaign Hands-On Preview: To Quote Marcus Fenix, “Nice”</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/gears-of-war-eday-preview" data-cat="games" data-sent="0" data-slug="gears war eday preview" hidden="until-found"><span class="ameta">EUROGAMER &middot; Aug 25 &middot; Games</span><a href="https://www.eurogamer.net/gears-of-war-eday-preview" target="_blank" rel="noopener noreferrer">Gears of War: E-Day somehow feels exactly like a direct continuation of the original Xbox 360 trilogy, for better and for worse</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
