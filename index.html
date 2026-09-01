@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-01T09:45:03.425Z">
+<meta name="sf-version" content="2026-09-01T10:03:09.088Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,8 +537,8 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
-:root[data-theme="light"] .meta [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
+:root[data-theme="light"] .meta [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
@@ -707,10 +707,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 5:45 AM &middot; 69 TODAY</p>
+	<p class="stats">UPDATED 6:03 AM &middot; 70 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">178</span><span class="sr-only"> — 178 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">150</span><span class="sr-only"> — 150 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">190</span><span class="sr-only"> — 190 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">380</span><span class="sr-only"> — 380 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">266</span><span class="sr-only"> — 266 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">350</span><span class="sr-only"> — 350 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">143</span><span class="sr-only"> — 143 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">370</span><span class="sr-only"> — 370 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">413</span><span class="sr-only"> — 413 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">192</span><span class="sr-only"> — 192 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">368</span><span class="sr-only"> — 368 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">178</span><span class="sr-only"> — 178 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">150</span><span class="sr-only"> — 150 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">190</span><span class="sr-only"> — 190 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">380</span><span class="sr-only"> — 380 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">265</span><span class="sr-only"> — 265 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">350</span><span class="sr-only"> — 350 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">143</span><span class="sr-only"> — 143 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">370</span><span class="sr-only"> — 370 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">413</span><span class="sr-only"> — 413 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">192</span><span class="sr-only"> — 192 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">369</span><span class="sr-only"> — 369 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -771,6 +771,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.foxnews.com/politics/republicans-tighten-screws-sherrill-noncitizen-voter-probe-enters-new-phase" target="_blank" rel="noopener noreferrer">Fox News Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact rail-art has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://techcrunch.com/?p=3159412" data-srckey="techcrunch" data-cat="tech" data-sent="0" data-ts="1788256800000" data-slug="space data centers feel far fetched why not interstellar travel">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="If space data centers feel far-fetched, why not interstellar travel? — flip for details">
+	<div class="meta"><span class="src" style="color:#34d399">TECHCRUNCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T10:00:00.000Z">6:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">If space data centers feel far-fetched, why not interstellar travel?</h3>
+	<p class="snippet">The team behind Starcloud&#39;s orbital data centers has a new high-risk space project: Sending a probe to Alpha Centauri.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://techcrunch.com/wp-content/uploads/2026/08/Philip_AC_vertical-e1788214270919.jpeg?w=640" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://techcrunch.com/wp-content/uploads/2026/08/Philip_AC_vertical-e1788214270919.jpeg?w=320 320w, https://techcrunch.com/wp-content/uploads/2026/08/Philip_AC_vertical-e1788214270919.jpeg?w=640 640w, https://techcrunch.com/wp-content/uploads/2026/08/Philip_AC_vertical-e1788214270919.jpeg?w=960 960w" sizes="(max-width: 640px) 78vw, 320px">
+</div>
+<div class="face back" inert>
+	<h3 class="title">If space data centers feel far-fetched, why not interstellar travel?</h3>
+	<p class="about">The team behind Starcloud&#39;s orbital data centers has a new high-risk space project: Sending a probe to Alpha Centauri.</p>
+	
+	
+	<a class="more" href="https://techcrunch.com/2026/09/01/if-space-data-centers-feel-far-fetched-why-not-interstellar-travel/" target="_blank" rel="noopener noreferrer">TechCrunch &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -871,29 +894,6 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact rail-art has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/gadgets/986647/sony-wh1000xm5-headphones-nintendo-switch-2-matic-sonos-deal-sale" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1788190319000" data-slug="gadgets sony wh1000xm5 headphones nintendo switch matic sonos deal sale">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Sony’s WH-1000XM5 headphones are back down to their lowest price — flip for details">
-	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-08-31T15:31:59.000Z">11:31 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
-	<h3 class="title">Sony’s WH-1000XM5 headphones are back down to their lowest price</h3>
-	<p class="snippet">Sony is one of many companies offering Labor Day discounts on tech products, though its week-long sale on the last-gen WH-1000XM5 is one of the most attractive deals I found upon logging in this morning. The comfy over-ear headphones offer some of the best sound quality and active noise cancelling, and are down to $198 at Amazon and Best Buy. Originally $399.99, they typically sell for around…</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/sonyxm5.png?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=640" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/sonyxm5.png?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=320 320w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/sonyxm5.png?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=640 640w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/sonyxm5.png?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=960 960w" sizes="(max-width: 640px) 78vw, 320px">
-</div>
-<div class="face back" inert>
-	<h3 class="title">Sony’s WH-1000XM5 headphones are back down to their lowest price</h3>
-	<p class="about">Sony is one of many companies offering Labor Day discounts on tech products, though its week-long sale on the last-gen WH-1000XM5 is one of the most attractive deals I found upon logging in this morning. The comfy over-ear headphones offer some of the best sound quality and active noise cancelling, and are down to $198 at Amazon and Best Buy. Originally $399.99, they typically sell for around…</p>
-	
-	
-	<a class="more" href="https://www.theverge.com/gadgets/986647/sony-wh1000xm5-headphones-nintendo-switch-2-matic-sonos-deal-sale" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
 <article class="card compact rail-art" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/e710321f-1327-4a6a-b31d-fe64b00d8936" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1788181463934" data-slug="sponsored how shared clinical decision making can shape metastatic prostate cancer journey">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="How Shared Clinical Decision-Making Can Shape the Metastatic Prostate Cancer Journey — flip for details">
@@ -972,43 +972,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://finance.yahoo.com/markets/stocks/articles/circle-calendars-sept-9-may-092600417.html" target="_blank" rel="noopener noreferrer">Circle Your Calendars: Sept. 9 May Be a Huge Day for SpaceX and Its Shareholders</a>
-		<p class="trend-meta"><span class="src">YAHOO FINANCE</span><span class="sep" aria-hidden="true">&middot;</span>"space exploration technologies corp." &middot; 100+ searches</p>
+		<a class="trend-title" href="https://nypost.com/2026/08/31/us-news/eric-swalwell-seen-surrounded-by-fbi-agents-at-sfo-in-new-video/" target="_blank" rel="noopener noreferrer">Exclusive | Moment disgraced Eric Swalwell is surrounded by FBI agents at San Francisco airport</a>
+		<p class="trend-meta"><span class="src">NEW YORK POST</span><span class="sep" aria-hidden="true">&middot;</span>"eric swalwell" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sportsbook.fanduel.com/soccer/esoccer-h2h-gg-league-2x4mins/atletico-de-madrid-(madness)-v-liverpool-(magician)-36016924" target="_blank" rel="noopener noreferrer">Atletico De Madrid (MADNESS) v Liverpool (MAGICIAN) Odds</a>
-		<p class="trend-meta"><span class="src">FANDUEL SPORTSBOOK</span><span class="sep" aria-hidden="true">&middot;</span>"fan duel" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.rollingstone.com/tv-movies/tv-movie-news/below-deck-nathan-gallagher-domestic-violence-mistakes-1235613826/" target="_blank" rel="noopener noreferrer">&#39;Below Deck&#39; Star Nathan Gallagher Breaks Silence on Domestic Violence Arrest: &#39;I Made Mistakes&#39;</a>
+		<p class="trend-meta"><span class="src">ROLLING STONE</span><span class="sep" aria-hidden="true">&middot;</span>"nathan gallagher" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.whio.com/news/local/20-year-old-dead-after-being-hit-by-semi-i-70-clark-county/AWGTON7QLZBYHJZUNIWXSCZ3ZI/" target="_blank" rel="noopener noreferrer">20-year-old dead after being hit by semi on I-70 in Clark County</a>
-		<p class="trend-meta"><span class="src">WHIO TV</span><span class="sep" aria-hidden="true">&middot;</span>"pierre damas bel" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://blog.playstation.com/2026/08/31/live-tv-on-ps5-launches-today-bringing-free-ad-supported-tv-to-ps5-players-in-the-u-s/" target="_blank" rel="noopener noreferrer">Live TV on PS5 launches today, bringing free ad-supported TV to PS5 players in the U.S.</a>
+		<p class="trend-meta"><span class="src">PLAYSTATION.BLOG</span><span class="sep" aria-hidden="true">&middot;</span>"ps5 live tv channels" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.kcci.com/article/iowa-nepalese-community-holds-vigil-for-flood-victims/73565037" target="_blank" rel="noopener noreferrer">Iowa Nepalese community holds vigil for flood victims</a>
-		<p class="trend-meta"><span class="src">KCCI</span><span class="sep" aria-hidden="true">&middot;</span>"fundraiser" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.espn.com/mlb/story/_/id/49785690/baltimore-orioles-claim-luis-robert-jr-new-york-mets" target="_blank" rel="noopener noreferrer">Baltimore Orioles claim Luis Robert Jr. from New York Mets</a>
+		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"orioles score" &middot; 5000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.rotowire.com/news/best-alberta-sportsbooks-august-2026-sign-up-with-the-best-sportsbooks-in-ab-130999" target="_blank" rel="noopener noreferrer">Alberta Sportsbooks Are Live: 2026 Alberta Sportsbook Guide</a>
-		<p class="trend-meta"><span class="src">ROTOWIRE</span><span class="sep" aria-hidden="true">&middot;</span>"betmgm sportsbook" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.skysports.com/football/news/11668/13579726/chelsea-transfer-latest-deal-close-for-roma-midfielder-manu-kone-as-loan-explored-for-jamie-gittens-to-go-the-other-way" target="_blank" rel="noopener noreferrer">Chelsea transfer latest: Deal close for Roma midfielder Manu Kone, as loan explored for Jamie Gittens to go the other way</a>
+		<p class="trend-meta"><span class="src">SKY SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"manu kone" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.yahoo.com/lifestyle/articles/christmas-farm-moves-home-rockford-081534325.html" target="_blank" rel="noopener noreferrer">Christmas at the Farm moves to a new home in Rockford</a>
-		<p class="trend-meta"><span class="src">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"new home" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.espn.com/mlb/story/_/id/49789719/chisholm-jr-yankees-criticize-red-sox-radio-voice-flemming" target="_blank" rel="noopener noreferrer">Chisholm Jr., Yankees criticize Red Sox radio voice Flemming</a>
+		<p class="trend-meta"><span class="src">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"yankees score" &middot; 5000+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1030,6 +1030,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.bbc.co.uk/sport/tennis/articles/ckgvrdz061eo" target="_blank" rel="noopener noreferrer">BBC Sport &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://techcrunch.com/?p=3159412" data-srckey="techcrunch" data-cat="tech" data-sent="0" data-ts="1788256800000" data-slug="space data centers feel far fetched why not interstellar travel">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="If space data centers feel far-fetched, why not interstellar travel? — flip for details">
+	<div class="meta"><span class="src" style="color:#34d399">TECHCRUNCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T10:00:00.000Z">6:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">If space data centers feel far-fetched, why not interstellar travel?</h3>
+	<p class="snippet">The team behind Starcloud&#39;s orbital data centers has a new high-risk space project: Sending a probe to Alpha Centauri.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://techcrunch.com/wp-content/uploads/2026/08/Philip_AC_vertical-e1788214270919.jpeg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://techcrunch.com/wp-content/uploads/2026/08/Philip_AC_vertical-e1788214270919.jpeg?w=240 240w, https://techcrunch.com/wp-content/uploads/2026/08/Philip_AC_vertical-e1788214270919.jpeg?w=340 340w, https://techcrunch.com/wp-content/uploads/2026/08/Philip_AC_vertical-e1788214270919.jpeg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">If space data centers feel far-fetched, why not interstellar travel?</h3>
+	<p class="about">The team behind Starcloud&#39;s orbital data centers has a new high-risk space project: Sending a probe to Alpha Centauri.</p>
+	
+	
+	<a class="more" href="https://techcrunch.com/2026/09/01/if-space-data-centers-feel-far-fetched-why-not-interstellar-travel/" target="_blank" rel="noopener noreferrer">TechCrunch &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -2605,7 +2628,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2925 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2924 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:7aa790a5-8bdd-4bf0-b88f-b070fca5eb71" data-cat="markets" data-sent="0" data-slug="markets xrp futures are shifting toward cme institutional participation grows" hidden="until-found"><span class="ameta">COINDESK &middot; Aug 31 &middot; Markets</span><a href="https://www.coindesk.com/markets/2026/09/01/xrp-futures-are-shifting-toward-cme-as-institutional-participation-grows" target="_blank" rel="noopener noreferrer">CME’s share of XRP futures jumps as token rallies 40% in a week</a></li>
 <li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/news/thailand-sec-retail-overseas-crypto-derivatives" data-cat="markets" data-sent="0" data-slug="news thailand sec retail overseas crypto derivatives" hidden="until-found"><span class="ameta">COINTELEGRAPH &middot; Aug 31 &middot; Markets</span><a href="https://cointelegraph.com/news/thailand-sec-retail-overseas-crypto-derivatives" target="_blank" rel="noopener noreferrer">Thailand SEC proposes retail access to regulated overseas crypto derivatives</a></li>
@@ -5531,7 +5554,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:US-EN-49682968" data-cat="sports" data-sent="0" data-slug="nfl story denver broncos quarterback nix year improvement slow dropbacks progressions" hidden="until-found"><span class="ameta">ESPN &middot; Aug 25 &middot; Sports</span><a href="https://www.espn.com/nfl/story/_/id/49682968/denver-broncos-quarterback-bo-nix-year-3-improvement-slow-dropbacks-progressions" target="_blank" rel="noopener noreferrer">The key to Bo Nix blossoming in Year 3? Slowing down his dropbacks and progressions</a></li>
 <li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/news/india-tokenized-bonds-digital-rupee" data-cat="markets" data-sent="0" data-slug="news india tokenized bonds digital rupee" hidden="until-found"><span class="ameta">COINTELEGRAPH &middot; Aug 25 &middot; Markets</span><a href="https://cointelegraph.com/news/india-tokenized-bonds-digital-rupee" target="_blank" rel="noopener noreferrer">India plans first tokenized bonds using wholesale CBDC: Report</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/ivr1bw" data-cat="dev" data-sent="0" data-slug="blog spanning tree" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 25 &middot; Dev</span><a href="https://vincent.bernat.ch/en/blog/2026-spanning-tree" target="_blank" rel="noopener noreferrer">An interactive introduction to the spanning tree protocol</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/optimism-week-games-industry-side-projects-creativity" data-cat="games" data-sent="0" data-slug="optimism week games industry side projects creativity" hidden="until-found"><span class="ameta">EUROGAMER &middot; Aug 25 &middot; Games</span><a href="https://www.eurogamer.net/optimism-week-games-industry-side-projects-creativity" target="_blank" rel="noopener noreferrer">Synths, impossible physics, and an &quot;erotic experience with a PS5 controller&quot; - the side projects of game devs are a reminder creativity is undimmable</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
