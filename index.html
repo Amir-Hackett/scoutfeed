@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-01T14:25:20.063Z">
+<meta name="sf-version" content="2026-09-01T14:48:47.010Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,32 +537,34 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
-:root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
-:root[data-theme="light"] .meta [style*="hsl(287 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
-:root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
+:root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
+:root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
+:root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
+:root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
+:root[data-theme="light"] .meta [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
+:root[data-theme="light"] .meta [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
+:root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
+:root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
+:root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
+:root[data-theme="light"] .meta [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
+:root[data-theme="light"] .meta [style*="hsl(287 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
 :root[data-theme="light"] .meta [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
-:root[data-theme="light"] .meta [style*="hsl(89 55% 72%)"] { color: #49691b !important; }
 :root[data-theme="light"] .meta [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
+:root[data-theme="light"] .meta [style*="hsl(89 55% 72%)"] { color: #49691b !important; }
 :root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="hsl(170 55% 72%)"] { color: #136c62 !important; }
-:root[data-theme="light"] .meta [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
-:root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
-:root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
-:root[data-theme="light"] .meta [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
-:root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="hsl(336 55% 72%)"] { color: #894262 !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] .meta [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
-:root[data-theme="light"] .meta [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] .meta [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] .meta [style*="hsl(290 55% 72%)"] { color: #7e418a !important; }
 :root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
@@ -572,11 +574,9 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
 :root[data-theme="light"] .meta [style*="hsl(273 55% 72%)"] { color: #724890 !important; }
 :root[data-theme="light"] .meta [style*="hsl(224 55% 72%)"] { color: #495b8f !important; }
-:root[data-theme="light"] .meta [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] .meta [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] .meta [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
-:root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] .meta [style*="hsl(232 55% 72%)"] { color: #4f5795 !important; }
 :root[data-theme="light"] .meta [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
@@ -707,10 +707,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 10:25 AM &middot; 173 TODAY</p>
+	<p class="stats">UPDATED 10:48 AM &middot; 195 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">187</span><span class="sr-only"> — 187 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">150</span><span class="sr-only"> — 150 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">186</span><span class="sr-only"> — 186 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">384</span><span class="sr-only"> — 384 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">253</span><span class="sr-only"> — 253 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">346</span><span class="sr-only"> — 346 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">135</span><span class="sr-only"> — 135 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">363</span><span class="sr-only"> — 363 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">420</span><span class="sr-only"> — 420 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">222</span><span class="sr-only"> — 222 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">354</span><span class="sr-only"> — 354 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">190</span><span class="sr-only"> — 190 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">150</span><span class="sr-only"> — 150 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">186</span><span class="sr-only"> — 186 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">384</span><span class="sr-only"> — 384 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">251</span><span class="sr-only"> — 251 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">348</span><span class="sr-only"> — 348 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">136</span><span class="sr-only"> — 136 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">364</span><span class="sr-only"> — 364 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">422</span><span class="sr-only"> — 422 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">222</span><span class="sr-only"> — 222 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">347</span><span class="sr-only"> — 347 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -733,6 +733,29 @@ footer a { color: var(--text-faint); }
 <h2><span class="date">FOR YOU</span><span class="rel">RANKED BY YOUR INTERESTS</span><span class="rule" aria-hidden="true"></span></h2>
 
 <div class="rail-row">
+<article class="card compact rail-art has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.technologyreview.com/?p=1142180" data-srckey="mit tech review" data-cat="tech" data-sent="0" data-ts="1788271200000" data-slug="making the powered case for legacy modernization">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Making the AI-powered case for legacy modernization — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(242 55% 72%)">MIT TECH REVIEW</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T14:00:00.000Z">10:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Making the AI-powered case for legacy modernization</h3>
+	<p class="snippet">For years, legacy technology has been a problem companies knew they needed to solve, but one they often struggled to tackle. The cost, complexity, and risk of replacing business-critical systems could make modernization feel like a disruption to manage instead of an opportunity to pursue. But with the rise in customer expectations and the changes…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/08/Asifa-Sherazi-Sanjeev-Tripathi-v2.png?resize=1200,600" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Making the AI-powered case for legacy modernization</h3>
+	<p class="about">For years, legacy technology has been a problem companies knew they needed to solve, but one they often struggled to tackle. The cost, complexity, and risk of replacing business-critical systems could make modernization feel like a disruption to manage instead of an opportunity to pursue. But with the rise in customer expectations and the changes…</p>
+	
+	
+	<a class="more" href="https://www.technologyreview.com/2026/09/01/1142180/making-the-ai-powered-case-for-legacy-modernization/" target="_blank" rel="noopener noreferrer">MIT Tech Review &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact rail-art has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.eurogamer.net/witcher-4-physical-edition-disc-ps5" data-srckey="eurogamer" data-cat="games" data-sent="0" data-ts="1788259371000" data-slug="witcher physical edition disc ps5">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="CD Projekt Red powerless regarding PS5 disc edition of The Witcher 4, but promises a game box with &quot;feelies&quot; whatever happens — flip for details">
@@ -748,29 +771,6 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.eurogamer.net/witcher-4-physical-edition-disc-ps5" target="_blank" rel="noopener noreferrer">Eurogamer &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
-<article class="card compact rail-art has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://techcrunch.com/?p=3159412" data-srckey="techcrunch" data-cat="tech" data-sent="0" data-ts="1788256800000" data-slug="space data centers feel far fetched why not interstellar travel">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="If space data centers feel far-fetched, why not interstellar travel? — flip for details">
-	<div class="meta"><span class="src" style="color:#34d399">TECHCRUNCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T10:00:00.000Z">6:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
-	<h3 class="title">If space data centers feel far-fetched, why not interstellar travel?</h3>
-	<p class="snippet">The team behind Starcloud&#39;s orbital data centers has a new high-risk space project: Sending a probe to Alpha Centauri.</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://techcrunch.com/wp-content/uploads/2026/08/Philip_AC_vertical-e1788214270919.jpeg?w=640" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://techcrunch.com/wp-content/uploads/2026/08/Philip_AC_vertical-e1788214270919.jpeg?w=320 320w, https://techcrunch.com/wp-content/uploads/2026/08/Philip_AC_vertical-e1788214270919.jpeg?w=640 640w, https://techcrunch.com/wp-content/uploads/2026/08/Philip_AC_vertical-e1788214270919.jpeg?w=960 960w" sizes="(max-width: 640px) 78vw, 320px">
-</div>
-<div class="face back" inert>
-	<h3 class="title">If space data centers feel far-fetched, why not interstellar travel?</h3>
-	<p class="about">The team behind Starcloud&#39;s orbital data centers has a new high-risk space project: Sending a probe to Alpha Centauri.</p>
-	
-	
-	<a class="more" href="https://techcrunch.com/2026/09/01/if-space-data-centers-feel-far-fetched-why-not-interstellar-travel/" target="_blank" rel="noopener noreferrer">TechCrunch &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1038,6 +1038,259 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49785306" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788273051359" data-slug="tennis story open carlos alcaraz roman safiullin">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Alcaraz is back -- and a threat to repeat as US Open champ — flip for details">
+	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T14:30:51.359Z">10:30 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Alcaraz is back -- and a threat to repeat as US Open champ</h3>
+	<p class="snippet">On Monday, Carlos Alcaraz returned from injury after fourth months away -- and looked like he could defend his US Open title.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0831%2Fr1709681_1149x646_16-9.jpg&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0831%2Fr1709681_1149x646_16-9.jpg&amp;w=240 240w, https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0831%2Fr1709681_1149x646_16-9.jpg&amp;w=340 340w, https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0831%2Fr1709681_1149x646_16-9.jpg&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Alcaraz is back -- and a threat to repeat as US Open champ</h3>
+	<p class="about">On Monday, Carlos Alcaraz returned from injury after fourth months away -- and looked like he could defend his US Open title.</p>
+	
+	
+	<a class="more" href="https://www.espn.com/tennis/story/_/id/49785306/us-open-2026-carlos-alcaraz-roman-safiullin" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.eurogamer.net/mortal-shell-2-update-patch-major-changes" data-srckey="eurogamer" data-cat="games" data-sent="0" data-ts="1788272645000" data-slug="mortal shell update patch major changes">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Mortal Shell 2 dramatically improved in almost every way by first major update — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">EUROGAMER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T14:24:05.000Z">10:24 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">Mortal Shell 2 dramatically improved in almost every way by first major update</h3>
+	<p class="snippet">On Saturday, Mortal Shell 2 received its biggest update yet, a little over a week after release. Developer Cold Symmetry was seemingly keen to address as many points of criticism as possible because the updates touch almost every aspect of the game. The patch is available now on Steam, and soon on PlayStation and Xbox, and it adds new stuff to the game alongside all of the changes. Read more</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assetsio.gnwcdn.com/mortal-shell-2-gameplay-screen-crop-1.jpg?width=340&amp;quality=85&amp;format=jpg&amp;auto=webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://assetsio.gnwcdn.com/mortal-shell-2-gameplay-screen-crop-1.jpg?width=240&amp;quality=85&amp;format=jpg&amp;auto=webp 240w, https://assetsio.gnwcdn.com/mortal-shell-2-gameplay-screen-crop-1.jpg?width=340&amp;quality=85&amp;format=jpg&amp;auto=webp 340w, https://assetsio.gnwcdn.com/mortal-shell-2-gameplay-screen-crop-1.jpg?width=510&amp;quality=85&amp;format=jpg&amp;auto=webp 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Mortal Shell 2 dramatically improved in almost every way by first major update</h3>
+	<p class="about">On Saturday, Mortal Shell 2 received its biggest update yet, a little over a week after release. Developer Cold Symmetry was seemingly keen to address as many points of criticism as possible because the updates touch almost every aspect of the game. The patch is available now on Steam, and soon on PlayStation and Xbox, and it adds new stuff to the game alongside all of the changes. Read more</p>
+	
+	
+	<a class="more" href="https://www.eurogamer.net/mortal-shell-2-update-patch-major-changes" target="_blank" rel="noopener noreferrer">Eurogamer &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://kotaku.com/?p=2000730205" data-srckey="kotaku" data-cat="games" data-sent="0" data-ts="1788272122000" data-slug="brutal legend double fine million kickstarter">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Double Fine Promises To Make Brütal Legend 2 But Only If Fans Give Them $100 Million — flip for details">
+	<div class="meta"><span class="src" style="color:#a3e635">KOTAKU</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T14:15:22.000Z">10:15 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">Double Fine Promises To Make Brütal Legend 2 But Only If Fans Give Them $100 Million</h3>
+	<p class="snippet">That&#39;s an ambitious-ass stretch goal for a Kickstarter, but not impossible</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://kotaku.com/app/uploads/2026/09/brutallegendozzy-1280x720.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Double Fine Promises To Make Brütal Legend 2 But Only If Fans Give Them $100 Million</h3>
+	<p class="about">That&#39;s an ambitious-ass stretch goal for a Kickstarter, but not impossible</p>
+	
+	
+	<a class="more" href="https://kotaku.com/brutal-legend-2-double-fine-100-million-kickstarter-2000730205" target="_blank" rel="noopener noreferrer">Kotaku &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:709c552b-8066-4325-9011-a80784b47455" data-srckey="cbs sports" data-cat="sports" data-sent="0" data-ts="1788271852000" data-slug="nfl news aaron donald myles garrett history">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Aaron Donald is back: What NFL history says about his super duo with Myles Garrett — flip for details">
+	<div class="meta"><span class="src" style="color:#3b82f6">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T14:10:52.000Z">10:10 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Aaron Donald is back: What NFL history says about his super duo with Myles Garrett</h3>
+	<p class="snippet">Donald&#39;s return gives the Rams two generational pass rushers with five Defensive Player of the Year awards between them</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://sportshub.cbsistatic.com/i/2026/09/01/f114b11e-72a5-4ed8-a764-d112f35b27ba/myles-garrett.jpg?width=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://sportshub.cbsistatic.com/i/2026/09/01/f114b11e-72a5-4ed8-a764-d112f35b27ba/myles-garrett.jpg?width=240 240w, https://sportshub.cbsistatic.com/i/2026/09/01/f114b11e-72a5-4ed8-a764-d112f35b27ba/myles-garrett.jpg?width=340 340w, https://sportshub.cbsistatic.com/i/2026/09/01/f114b11e-72a5-4ed8-a764-d112f35b27ba/myles-garrett.jpg?width=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Aaron Donald is back: What NFL history says about his super duo with Myles Garrett</h3>
+	<p class="about">Donald&#39;s return gives the Rams two generational pass rushers with five Defensive Player of the Year awards between them</p>
+	
+	
+	<a class="more" href="https://www.cbssports.com/nfl/news/aaron-donald-myles-garrett-nfl-history/" target="_blank" rel="noopener noreferrer">CBS Sports &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:WP-MKTW-0005209180" data-srckey="marketwatch" data-cat="markets" data-sent="0" data-ts="1788271800000" data-slug="story get over your fear haggling and start saving real money 5c215dc8">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Get over your fear of haggling — and start saving real money — flip for details">
+	<div class="meta"><span class="src" style="color:#34d399">MARKETWATCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T14:10:00.000Z">10:10 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Get over your fear of haggling — and start saving real money</h3>
+	<p class="snippet">If you ask for a lower price on something, the worst they can do is say no.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://images.mktw.net/im-99237998?width=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://images.mktw.net/im-99237998?width=240 240w, https://images.mktw.net/im-99237998?width=340 340w, https://images.mktw.net/im-99237998?width=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Get over your fear of haggling — and start saving real money</h3>
+	<p class="about">If you ask for a lower price on something, the worst they can do is say no.</p>
+	
+	
+	<a class="more" href="https://www.marketwatch.com/story/get-over-your-fear-of-haggling-and-start-saving-real-money-5c215dc8?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">MarketWatch &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235618795" data-srckey="rolling stone music" data-cat="music" data-sent="0" data-ts="1788271777000" data-slug="music news yeah yeahs live album short film london">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Yeah Yeah Yeahs Unveil Live Album Recorded at London’s Royal Albert Hall — flip for details">
+	<div class="meta"><span class="src" style="color:#fb7185">ROLLING STONE MUSIC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T14:09:37.000Z">10:09 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
+	<h3 class="title">Yeah Yeah Yeahs Unveil Live Album Recorded at London’s Royal Albert Hall</h3>
+	<p class="snippet">The album, Hidden in Pieces Live at the Royal Albert Hall, was recorded last year and arrived alongside a short film</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.rollingstone.com/wp-content/uploads/2026/09/YYY-Short-Film-Press-1.jpg?w=340#038;h=900&amp;#038;crop=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://www.rollingstone.com/wp-content/uploads/2026/09/YYY-Short-Film-Press-1.jpg?w=240#038;h=900&amp;#038;crop=1 240w, https://www.rollingstone.com/wp-content/uploads/2026/09/YYY-Short-Film-Press-1.jpg?w=340#038;h=900&amp;#038;crop=1 340w, https://www.rollingstone.com/wp-content/uploads/2026/09/YYY-Short-Film-Press-1.jpg?w=510#038;h=900&amp;#038;crop=1 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Yeah Yeah Yeahs Unveil Live Album Recorded at London’s Royal Albert Hall</h3>
+	<p class="about">The album, Hidden in Pieces Live at the Royal Albert Hall, was recorded last year and arrived alongside a short film</p>
+	
+	
+	<a class="more" href="https://www.rollingstone.com/music/music-news/yeah-yeah-yeahs-live-album-short-film-london-1235618795/" target="_blank" rel="noopener noreferrer">Rolling Stone Music &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.eurogamer.net/savvy-games-group-ceo-brian-ward-steps-down" data-srckey="eurogamer" data-cat="entertainment" data-sent="0" data-ts="1788271485000" data-slug="savvy games group ceo brian ward steps down">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="CEO of Saudi Arabia&#39;s Savvy Games Group Brian Ward steps down after overseeing billions in mobile gaming acquisitions — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">EUROGAMER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T14:04:45.000Z">10:04 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">CEO of Saudi Arabia&#39;s Savvy Games Group Brian Ward steps down after overseeing billions in mobile gaming acquisitions</h3>
+	<p class="snippet">Brian Ward, the CEO of the Saudi-Arabian-state-owned Savvy Games Group, has left his role. During his tenure, he oversaw $38bn of investment into various gaming companies, including Pokemon Go developer Niantic, and Monopoly Go&#39;s Scopely. Read more</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assetsio.gnwcdn.com/Pokemon-Go-XP-World-Championship-Header.jpg?width=340&amp;quality=85&amp;format=jpg&amp;auto=webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://assetsio.gnwcdn.com/Pokemon-Go-XP-World-Championship-Header.jpg?width=240&amp;quality=85&amp;format=jpg&amp;auto=webp 240w, https://assetsio.gnwcdn.com/Pokemon-Go-XP-World-Championship-Header.jpg?width=340&amp;quality=85&amp;format=jpg&amp;auto=webp 340w, https://assetsio.gnwcdn.com/Pokemon-Go-XP-World-Championship-Header.jpg?width=510&amp;quality=85&amp;format=jpg&amp;auto=webp 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">CEO of Saudi Arabia&#39;s Savvy Games Group Brian Ward steps down after overseeing billions in mobile gaming acquisitions</h3>
+	<p class="about">Brian Ward, the CEO of the Saudi-Arabian-state-owned Savvy Games Group, has left his role. During his tenure, he oversaw $38bn of investment into various gaming companies, including Pokemon Go developer Niantic, and Monopoly Go&#39;s Scopely. Read more</p>
+	
+	
+	<a class="more" href="https://www.eurogamer.net/savvy-games-group-ceo-brian-ward-steps-down" target="_blank" rel="noopener noreferrer">Eurogamer &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.nytimes.com/2026/09/01/business/bond-yields-debt.html" data-srckey="nyt world" data-cat="world" data-sent="0" data-ts="1788271304000" data-slug="business bond yields debt html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Bond Sell-Off Threatens to Squeeze Borrowers Around the World — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(147 55% 72%)">NYT WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T14:01:44.000Z">10:01 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Bond Sell-Off Threatens to Squeeze Borrowers Around the World</h3>
+	<p class="snippet">Government yields are hitting multi-decade highs, reflecting anxiety about debt levels, deficits and inflation. The effects will extend to mortgages, business loans and other types of credit.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static01.nyt.com/images/2026/09/01/multimedia/global-bonds-promo-tfkb/globa-bonds-promo-tfkb-mediumSquareAt3X.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Bond Sell-Off Threatens to Squeeze Borrowers Around the World</h3>
+	<p class="about">Government yields are hitting multi-decade highs, reflecting anxiety about debt levels, deficits and inflation. The effects will extend to mortgages, business loans and other types of credit.</p>
+	
+	
+	<a class="more" href="https://www.nytimes.com/2026/09/01/business/bond-yields-debt.html" target="_blank" rel="noopener noreferrer">NYT World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:108356742" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1788271201000" data-slug="waymo and zoox expand into more markets robotaxi race heats html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Waymo and Zoox expand into more U.S. markets as robotaxi race heats up — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T14:00:01.000Z">10:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Waymo and Zoox expand into more U.S. markets as robotaxi race heats up</h3>
+	<p class="snippet">Waymo is bringing driverless rides to three more cities, and Amazon plans to start testing in two additional U.S. markets.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://image.cnbcfm.com/api/v1/image/108313235-1779981122408-gettyimages-2277937156-1556420-fi-waymo-ojai-ajs-17.jpeg?v=1779981207&amp;w=340&amp;h=191" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://image.cnbcfm.com/api/v1/image/108313235-1779981122408-gettyimages-2277937156-1556420-fi-waymo-ojai-ajs-17.jpeg?v=1779981207&amp;w=240&amp;h=135 240w, https://image.cnbcfm.com/api/v1/image/108313235-1779981122408-gettyimages-2277937156-1556420-fi-waymo-ojai-ajs-17.jpeg?v=1779981207&amp;w=340&amp;h=191 340w, https://image.cnbcfm.com/api/v1/image/108313235-1779981122408-gettyimages-2277937156-1556420-fi-waymo-ojai-ajs-17.jpeg?v=1779981207&amp;w=510&amp;h=287 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Waymo and Zoox expand into more U.S. markets as robotaxi race heats up</h3>
+	<p class="about">Waymo is bringing driverless rides to three more cities, and Amazon plans to start testing in two additional U.S. markets.</p>
+	
+	
+	<a class="more" href="https://www.cnbc.com/2026/09/01/waymo-and-zoox-expand-into-more-us-markets-as-robotaxi-race-heats-up.html" target="_blank" rel="noopener noreferrer">CNBC &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.technologyreview.com/?p=1142180" data-srckey="mit tech review" data-cat="tech" data-sent="0" data-ts="1788271200000" data-slug="making the powered case for legacy modernization">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Making the AI-powered case for legacy modernization — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(242 55% 72%)">MIT TECH REVIEW</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T14:00:00.000Z">10:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Making the AI-powered case for legacy modernization</h3>
+	<p class="snippet">For years, legacy technology has been a problem companies knew they needed to solve, but one they often struggled to tackle. The cost, complexity, and risk of replacing business-critical systems could make modernization feel like a disruption to manage instead of an opportunity to pursue. But with the rise in customer expectations and the changes…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/08/Asifa-Sherazi-Sanjeev-Tripathi-v2.png?resize=1200,600" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Making the AI-powered case for legacy modernization</h3>
+	<p class="about">For years, legacy technology has been a problem companies knew they needed to solve, but one they often struggled to tackle. The cost, complexity, and risk of replacing business-critical systems could make modernization feel like a disruption to manage instead of an opportunity to pursue. But with the rise in customer expectations and the changes…</p>
+	
+	
+	<a class="more" href="https://www.technologyreview.com/2026/09/01/1142180/making-the-ai-powered-case-for-legacy-modernization/" target="_blank" rel="noopener noreferrer">MIT Tech Review &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/tech/987129/sonos-27-ace-ultra-beam-ultra-announcement" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1788271200000" data-slug="tech sonos ace ultra beam announcement">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Sonos introduces new headphones, soundbar, and software in its biggest announcement in years — flip for details">
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T14:00:00.000Z">10:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Sonos introduces new headphones, soundbar, and software in its biggest announcement in years</h3>
+	<p class="snippet">The Sonos Ace Ultra are what the original Ace should have been — headphones for the Sonos ecosystem. | Image: Sonos At an event in New York City, Sonos announced two new audio products - the Sonos Beam Ultra soundbar and Sonos Ace Ultra headphones, details of which were found in an FCC filing in early August - and a major update to its audio operating system dubbed Sonos 27. It&#39;s the biggest…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/sonos-ace-ultra-lifestyle.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.765679560227%2C100%2C78.468640879546&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/sonos-ace-ultra-lifestyle.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.765679560227%2C100%2C78.468640879546&amp;w=240 240w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/sonos-ace-ultra-lifestyle.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.765679560227%2C100%2C78.468640879546&amp;w=340 340w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/sonos-ace-ultra-lifestyle.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.765679560227%2C100%2C78.468640879546&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Sonos introduces new headphones, soundbar, and software in its biggest announcement in years</h3>
+	<p class="about">The Sonos Ace Ultra are what the original Ace should have been — headphones for the Sonos ecosystem. | Image: Sonos At an event in New York City, Sonos announced two new audio products - the Sonos Beam Ultra soundbar and Sonos Ace Ultra headphones, details of which were found in an FCC filing in early August - and a major update to its audio operating system dubbed Sonos 27. It&#39;s the biggest…</p>
+	
+	
+	<a class="more" href="https://www.theverge.com/tech/987129/sonos-27-ace-ultra-beam-ultra-announcement" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://techcrunch.com/?p=3159537" data-srckey="techcrunch" data-cat="tech" data-sent="0" data-ts="1788271122000" data-slug="indias unacademy sells rival upgrad for 206m about less than its peak valuation">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="India’s Unacademy sells to rival upGrad for $206M, about 94% less than its peak valuation — flip for details">
@@ -1061,6 +1314,144 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://cointelegraph.com/news/fake-claude-desktop-app-spreads-crypto-stealing-malware" data-srckey="cointelegraph" data-cat="ai" data-sent="0" data-ts="1788271080000" data-slug="news fake claude desktop app spreads crypto stealing malware">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Fake Claude desktop app spreads crypto-stealing malware — flip for details">
+	<div class="meta"><span class="src" style="color:#a78bfa">COINTELEGRAPH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T13:58:00.000Z">9:58 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Fake Claude desktop app spreads crypto-stealing malware</h3>
+	<p class="snippet">RevStealer targets more than 50 crypto wallets alongside browser passwords, cookies, messaging data and selected documents.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1EK7VS1ZRRC1VAJANKBB54F/bug-error-hack-red-mistake-malwire-1.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Fake Claude desktop app spreads crypto-stealing malware</h3>
+	<p class="about">RevStealer targets more than 50 crypto wallets alongside browser passwords, cookies, messaging data and selected documents.</p>
+	<p class="why"><span class="whylabel">matched</span> <span class="whykey">Claude</span> <span class="whystrength" title="How strongly this matched your interest (decayed frequency: 2.0)">match</span></p>
+	
+	<a class="more" href="https://cointelegraph.com/news/fake-claude-desktop-app-spreads-crypto-stealing-malware" target="_blank" rel="noopener noreferrer">Cointelegraph &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:a3776ac1-9c22-4cd8-a0bd-e725ab1cb98c" data-srckey="coindesk" data-cat="markets" data-sent="0" data-ts="1788271004000" data-slug="business firelight raises usd8 million expands beyond xrp aims make defi less scary for fintechs">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Firelight raises $8 million, expands beyond XRP as it aims to make DeFi less scary for fintechs — flip for details">
+	<div class="meta"><span class="src" style="color:#fbbf24">COINDESK</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T13:56:44.000Z">9:56 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Firelight raises $8 million, expands beyond XRP as it aims to make DeFi less scary for fintechs</h3>
+	<p class="snippet">The protocol aims to give fintechs and investors a faster way to recover losses from DeFi hacks, while letting XRP, bitcoin and XLM holders earn yield by backing that protection.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://cdn.sanity.io/images/s3y3vcno/production/88b0247a20e283b64794175f63ff7a428b202fc4-1674x974.png?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://cdn.sanity.io/images/s3y3vcno/production/88b0247a20e283b64794175f63ff7a428b202fc4-1674x974.png?fm=jpg&amp;w=240&amp;h=135&amp;crop=focalpoint&amp;fit=clip 240w, https://cdn.sanity.io/images/s3y3vcno/production/88b0247a20e283b64794175f63ff7a428b202fc4-1674x974.png?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip 340w, https://cdn.sanity.io/images/s3y3vcno/production/88b0247a20e283b64794175f63ff7a428b202fc4-1674x974.png?fm=jpg&amp;w=510&amp;h=287&amp;crop=focalpoint&amp;fit=clip 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Firelight raises $8 million, expands beyond XRP as it aims to make DeFi less scary for fintechs</h3>
+	<p class="about">The protocol aims to give fintechs and investors a faster way to recover losses from DeFi hacks, while letting XRP, bitcoin and XLM holders earn yield by backing that protection.</p>
+	
+	
+	<a class="more" href="https://www.coindesk.com/business/2026/08/31/firelight-raises-usd8-million-expands-beyond-xrp-as-it-aims-to-make-defi-less-scary-for-fintechs" target="_blank" rel="noopener noreferrer">CoinDesk &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:bf02cc92-6648-4f6d-b285-3de91340040e" data-srckey="coindesk" data-cat="markets" data-sent="0" data-ts="1788270926000" data-slug="markets bitcoin enters rektember rate hike risks threaten its august rally">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Bitcoin enters ‘Rektember’ as rate-hike risk combines with seasonality to threaten rally — flip for details">
+	<div class="meta"><span class="src" style="color:#fbbf24">COINDESK</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T13:55:26.000Z">9:55 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Bitcoin enters ‘Rektember’ as rate-hike risk combines with seasonality to threaten rally</h3>
+	<p class="snippet">September has historically been a poor month for risk assets in general, and bitcoin, in particular.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://cdn.sanity.io/images/s3y3vcno/production/4e5448765db1f69c5f0ecf3ade14cd0e458f28f6-1362x868.png?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://cdn.sanity.io/images/s3y3vcno/production/4e5448765db1f69c5f0ecf3ade14cd0e458f28f6-1362x868.png?fm=jpg&amp;w=240&amp;h=135&amp;crop=focalpoint&amp;fit=clip 240w, https://cdn.sanity.io/images/s3y3vcno/production/4e5448765db1f69c5f0ecf3ade14cd0e458f28f6-1362x868.png?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip 340w, https://cdn.sanity.io/images/s3y3vcno/production/4e5448765db1f69c5f0ecf3ade14cd0e458f28f6-1362x868.png?fm=jpg&amp;w=510&amp;h=287&amp;crop=focalpoint&amp;fit=clip 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Bitcoin enters ‘Rektember’ as rate-hike risk combines with seasonality to threaten rally</h3>
+	<p class="about">September has historically been a poor month for risk assets in general, and bitcoin, in particular.</p>
+	
+	
+	<a class="more" href="https://www.coindesk.com/markets/2026/09/01/bitcoin-enters-rektember-as-rate-hike-risks-threaten-its-august-rally" target="_blank" rel="noopener noreferrer">CoinDesk &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#fb923c" data-count="1" data-id="rss:https://www.foxnews.com/politics/ex-dem-fundraiser-traces-socialist-surge-biden-era-leadership-vacuum-theres-no-one-there" data-srckey="fox news politics" data-cat="politics" data-sent="0" data-ts="1788270716000" data-slug="politics dem fundraiser traces socialist surge biden era leadership vacuum theres one there">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Ex-Dem fundraiser traces socialist surge to Biden-era leadership vacuum: ‘There’s no one there’ — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(101 55% 72%)">FOX NEWS POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T13:51:56.000Z">9:51 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">Ex-Dem fundraiser traces socialist surge to Biden-era leadership vacuum: ‘There’s no one there’</h3>
+	<p class="snippet">Lindy Li says the DSA is filling a vacuum left by Joe Biden&#39;s decline and the Democratic Party&#39;s lack of a defining leader heading into 2026.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/06/931/523/Lindy-li-and-joe-biden.jpeg?ve=1&amp;tl=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Ex-Dem fundraiser traces socialist surge to Biden-era leadership vacuum: ‘There’s no one there’</h3>
+	<p class="about">Lindy Li says the DSA is filling a vacuum left by Joe Biden&#39;s decline and the Democratic Party&#39;s lack of a defining leader heading into 2026.</p>
+	
+	
+	<a class="more" href="https://www.foxnews.com/politics/ex-dem-fundraiser-traces-socialist-surge-biden-era-leadership-vacuum-theres-no-one-there" target="_blank" rel="noopener noreferrer">Fox News Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.eurogamer.net/dont-nod-layoffs-restructuring-aphelion" data-srckey="eurogamer" data-cat="games" data-sent="0" data-ts="1788270689000" data-slug="dont nod layoffs restructuring aphelion">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Life is Strange and Aphelion studio Don&#39;t Nod probably facing layoffs again, as it announces ominous-sounding &quot;transformation initiative&quot; — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">EUROGAMER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T13:51:29.000Z">9:51 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">Life is Strange and Aphelion studio Don&#39;t Nod probably facing layoffs again, as it announces ominous-sounding &quot;transformation initiative&quot;</h3>
+	<p class="snippet">French game developer and publisher Don&#39;t Nod - creator of the Life is Strange series and games like Remember Me, Vampyr, Banishers, Jusant and most recently Aphelion - seems as though it&#39;s about to enter another round of layoffs. Read more</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assetsio.gnwcdn.com/life-is-strange-max-chloe.jpg?width=340&amp;quality=85&amp;format=jpg&amp;auto=webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://assetsio.gnwcdn.com/life-is-strange-max-chloe.jpg?width=240&amp;quality=85&amp;format=jpg&amp;auto=webp 240w, https://assetsio.gnwcdn.com/life-is-strange-max-chloe.jpg?width=340&amp;quality=85&amp;format=jpg&amp;auto=webp 340w, https://assetsio.gnwcdn.com/life-is-strange-max-chloe.jpg?width=510&amp;quality=85&amp;format=jpg&amp;auto=webp 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Life is Strange and Aphelion studio Don&#39;t Nod probably facing layoffs again, as it announces ominous-sounding &quot;transformation initiative&quot;</h3>
+	<p class="about">French game developer and publisher Don&#39;t Nod - creator of the Life is Strange series and games like Remember Me, Vampyr, Banishers, Jusant and most recently Aphelion - seems as though it&#39;s about to enter another round of layoffs. Read more</p>
+	
+	
+	<a class="more" href="https://www.eurogamer.net/dont-nod-layoffs-restructuring-aphelion" target="_blank" rel="noopener noreferrer">Eurogamer &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/policy/987356/tim-cook-apple-trump-xi" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1788270662000" data-slug="policy tim cook apple trump">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Tim Cook’s legacy isn’t just phones, it’s politics — flip for details">
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T13:51:02.000Z">9:51 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Tim Cook’s legacy isn’t just phones, it’s politics</h3>
+	<p class="snippet">As much as any Apple product released during his time as CEO, Tim Cook&#39;s tenure will be remembered for its ruthlessly efficient tight-rope walk between an autocrat in China and a would-be autocrat in the US. During his 15 years as CEO, Cook steered Apple through relations with both Chinese President Xi Jinping and US President Donald Trump, including escalating conflicts between the two. As…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25345071/STK468_APPLE_ANTITRUST_CVIRGINIA_I.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25345071/STK468_APPLE_ANTITRUST_CVIRGINIA_I.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=240 240w, https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25345071/STK468_APPLE_ANTITRUST_CVIRGINIA_I.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=340 340w, https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25345071/STK468_APPLE_ANTITRUST_CVIRGINIA_I.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Tim Cook’s legacy isn’t just phones, it’s politics</h3>
+	<p class="about">As much as any Apple product released during his time as CEO, Tim Cook&#39;s tenure will be remembered for its ruthlessly efficient tight-rope walk between an autocrat in China and a would-be autocrat in the US. During his 15 years as CEO, Cook steered Apple through relations with both Chinese President Xi Jinping and US President Donald Trump, including escalating conflicts between the two. As…</p>
+	
+	
+	<a class="more" href="https://www.theverge.com/policy/987356/tim-cook-apple-trump-xi" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact has-thumb" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.statnews.com/?p=1516046" data-srckey="stat news" data-cat="healthcare" data-sent="0" data-ts="1788268866000" data-slug="pharmalot novartis bristol trials paused pancreatic cancer drug price pharmalittle newsletter">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="STAT+: Pharmalittle: We’re reading about Novartis and Bristol pausing cell therapy trials, a $480K cancer drug, and more — flip for details">
@@ -1076,6 +1467,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.statnews.com/pharmalot/2026/09/01/novartis-bristol-trials-paused-pancreatic-cancer-drug-price-pharmalittle-newsletter/" target="_blank" rel="noopener noreferrer">STAT News &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/tech/987353/florida-flock-cam-ban-state-highways" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1788268656000" data-slug="tech florida flock cam ban state highways">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Florida blocks Flock cams on state highways — flip for details">
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T13:17:36.000Z">9:17 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Florida blocks Flock cams on state highways</h3>
+	<p class="snippet">Florida is banning Flock cameras and other automated license plate readers across state highways, as reported earlier by NBC News and local news outlet WUSF. In a memo on Monday, Florida&#39;s Department of Transportation says it&#39;s revoking permits for all license plate readers, adding that they must be removed from state highways within 30 days. As noted in the memo, Florida&#39;s DOT says it&#39;s issuing…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2265184860.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.735414032424%2C100%2C78.529171935151&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2265184860.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.735414032424%2C100%2C78.529171935151&amp;w=240 240w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2265184860.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.735414032424%2C100%2C78.529171935151&amp;w=340 340w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2265184860.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.735414032424%2C100%2C78.529171935151&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Florida blocks Flock cams on state highways</h3>
+	<p class="about">Florida is banning Flock cameras and other automated license plate readers across state highways, as reported earlier by NBC News and local news outlet WUSF. In a memo on Monday, Florida&#39;s Department of Transportation says it&#39;s revoking permits for all license plate readers, adding that they must be removed from state highways within 30 days. As noted in the memo, Florida&#39;s DOT says it&#39;s issuing…</p>
+	
+	
+	<a class="more" href="https://www.theverge.com/tech/987353/florida-flock-cam-ban-state-highways" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1237,6 +1651,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.statnews.com/2026/09/01/fda-stryker-surgical-cockpit-apple-vr-headset-health-tech/" target="_blank" rel="noopener noreferrer">STAT News &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2" style="--rail:#f87171" data-count="1" data-id="rss:https://www.dw.com/en/mladic-s-death-bosnia-and-serbia-s-unfinished-reckoning/a-78602733?maca=en-rss-en-world-4025-rdf" data-srckey="dw world" data-cat="world" data-sent="0" data-ts="1788268140000" data-slug="mladic death bosnia and serbia unfinished reckoning">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Mladic&#39;s death, Bosnia and Serbia&#39;s unfinished reckoning — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(29 55% 72%)">DW WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T13:09:00.000Z">9:09 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Mladic&#39;s death, Bosnia and Serbia&#39;s unfinished reckoning</h3>
+	<p class="snippet">The death of Ratko Mladic did not close a dark chapter of European history; it reopened old wounds. The ideology that created him lives on. The Dayton Peace Agreement ended the war, not the divisions that produced it.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Mladic&#39;s death, Bosnia and Serbia&#39;s unfinished reckoning</h3>
+	<p class="about">The death of Ratko Mladic did not close a dark chapter of European history; it reopened old wounds. The ideology that created him lives on. The Dayton Peace Agreement ended the war, not the divisions that produced it.</p>
+	
+	
+	<a class="more" href="https://www.dw.com/en/mladic-s-death-bosnia-and-serbia-s-unfinished-reckoning/a-78602733?maca=en-rss-en-world-4025-rdf" target="_blank" rel="noopener noreferrer">DW World &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1475,6 +1912,29 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact h2 has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://www.theverge.com/tech/986378/nvidia-dlss-5-launch-nba-2k27" data-srckey="the verge" data-cat="ai" data-sent="0" data-ts="1788267600000" data-slug="tech nvidia dlss launch nba 2k27">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Nvidia’s controversial DLSS 5 arrives September 3rd and requires serious GPU horsepower — flip for details">
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T13:00:00.000Z">9:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Nvidia’s controversial DLSS 5 arrives September 3rd and requires serious GPU horsepower</h3>
+	<p class="snippet">Nvidia is officially launching DLSS 5 this week, following a divisive announcement in March where we likened the AI upscaling tech to a &quot;real-time generative AI filter for video games&quot; and &quot;motion smoothing for video games, but worse.&quot; DLSS 5 will officially be available on RTX 50-series desktop and laptop GPUs and through GeForce Now cloud gaming, though the only game with the tech so far is NBA…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/nba-2k-image.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.724534322093%2C100%2C78.550931355815&amp;w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/nba-2k-image.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.724534322093%2C100%2C78.550931355815&amp;w=600 600w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/nba-2k-image.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.724534322093%2C100%2C78.550931355815&amp;w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Nvidia’s controversial DLSS 5 arrives September 3rd and requires serious GPU horsepower</h3>
+	<p class="about">Nvidia is officially launching DLSS 5 this week, following a divisive announcement in March where we likened the AI upscaling tech to a &quot;real-time generative AI filter for video games&quot; and &quot;motion smoothing for video games, but worse.&quot; DLSS 5 will officially be available on RTX 50-series desktop and laptop GPUs and through GeForce Now cloud gaming, though the only game with the tech so far is NBA…</p>
+	<p class="why"><span class="whylabel">matched</span> <span class="whykey">Nvidia</span> <span class="whystrength" title="How strongly this matched your interest (decayed frequency: 2.0)">match</span></p>
+	
+	<a class="more" href="https://www.theverge.com/tech/986378/nvidia-dlss-5-launch-nba-2k27" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact w2 h2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://deadline.com/?p=1237064007" data-srckey="deadline" data-cat="entertainment" data-sent="0" data-ts="1788267600000" data-slug="leslie odom hamilton documentary cast reunions">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Leslie Odom Jr. Reveals Documentary About His ‘Hamilton’ Return &amp; Talks Original Cast Reunions — flip for details">
@@ -1536,29 +1996,6 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://cointelegraph.com/news/kast-launches-stablecoin-business-platform-80m-raise" target="_blank" rel="noopener noreferrer">Cointelegraph &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
-<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/tech/986236/smartphones-september-ifa-apple-iphone-oppo-vivo-xiaomi" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1788267600000" data-slug="tech smartphones september ifa apple iphone oppo vivo xiaomi">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Get ready for a really busy month of smartphones — flip for details">
-	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T13:00:00.000Z">9:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
-	<h3 class="title">Get ready for a really busy month of smartphones</h3>
-	<p class="snippet">At what point are there simply too many phones? | Image: Cath Virginia / The Verge We&#39;re not even half a day into September, and two new smartphones have already launched: the Poco F9 Pro and F9 Ultra. We&#39;re expecting more this week, as the IFA trade show kicks off in Berlin, before we get new iPhones a week after that. And that&#39;s only the beginning of what promises to be an exceptionally busy…</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25642174/247288_Phone_Buying_Guides_2B_CVirginia.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25642174/247288_Phone_Buying_Guides_2B_CVirginia.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=240 240w, https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25642174/247288_Phone_Buying_Guides_2B_CVirginia.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=340 340w, https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25642174/247288_Phone_Buying_Guides_2B_CVirginia.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
-</div>
-<div class="face back" inert>
-	<h3 class="title">Get ready for a really busy month of smartphones</h3>
-	<p class="about">At what point are there simply too many phones? | Image: Cath Virginia / The Verge We&#39;re not even half a day into September, and two new smartphones have already launched: the Poco F9 Pro and F9 Ultra. We&#39;re expecting more this week, as the IFA trade show kicks off in Berlin, before we get new iPhones a week after that. And that&#39;s only the beginning of what promises to be an exceptionally busy…</p>
-	
-	
-	<a class="more" href="https://www.theverge.com/tech/986236/smartphones-september-ifa-apple-iphone-oppo-vivo-xiaomi" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1674,6 +2111,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.foxnews.com/politics/obama-era-mandate-slashed-being-blamed-skyrocketing-housing-costs" target="_blank" rel="noopener noreferrer">Fox News Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/tech/986236/smartphones-september-ifa-apple-iphone-oppo-vivo-xiaomi" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1788267600000" data-slug="tech smartphones september ifa apple iphone oppo vivo xiaomi">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Get ready for a really busy month of smartphones — flip for details">
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T13:00:00.000Z">9:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Get ready for a really busy month of smartphones</h3>
+	<p class="snippet">At what point are there simply too many phones? | Image: Cath Virginia / The Verge We&#39;re not even half a day into September, and two new smartphones have already launched: the Poco F9 Pro and F9 Ultra. We&#39;re expecting more this week, as the IFA trade show kicks off in Berlin, before we get new iPhones a week after that. And that&#39;s only the beginning of what promises to be an exceptionally busy…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25642174/247288_Phone_Buying_Guides_2B_CVirginia.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25642174/247288_Phone_Buying_Guides_2B_CVirginia.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=240 240w, https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25642174/247288_Phone_Buying_Guides_2B_CVirginia.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=340 340w, https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25642174/247288_Phone_Buying_Guides_2B_CVirginia.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Get ready for a really busy month of smartphones</h3>
+	<p class="about">At what point are there simply too many phones? | Image: Cath Virginia / The Verge We&#39;re not even half a day into September, and two new smartphones have already launched: the Poco F9 Pro and F9 Ultra. We&#39;re expecting more this week, as the IFA trade show kicks off in Berlin, before we get new iPhones a week after that. And that&#39;s only the beginning of what promises to be an exceptionally busy…</p>
+	
+	
+	<a class="more" href="https://www.theverge.com/tech/986236/smartphones-september-ifa-apple-iphone-oppo-vivo-xiaomi" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -2088,6 +2548,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.france24.com/en/tv-shows/perspective/20260901-expert-warns-of-hotter-summers-more-wildfires-more-drought-and-more-floods" target="_blank" rel="noopener noreferrer">France 24 &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://www.unite.ai/?p=457909" data-srckey="unite.ai" data-cat="ai" data-sent="0" data-ts="1788265119000" data-slug="hype tax enterprise communication vendor risk">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Amid Market Fluctuations, Here’s the AI Risk We’re Not Talking About — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(29 55% 72%)">UNITE.AI</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T12:18:39.000Z">8:18 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Amid Market Fluctuations, Here’s the AI Risk We’re Not Talking About</h3>
+	<p class="snippet">It’s clear that the stock market is reacting to AI, with a sharp selloff hitting companies powering the AI boom last week, including chip companies that collectively lost over $1 trillion. But is there something about different companies’ approach to AI that’s triggering the different ways the market is reacting to those companies? As July came to a close, Microsoft was up 9 percent and Meta was…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.unite.ai/wp-content/uploads/2026/08/f5091aa2-0677-4c94-997f-8f777bbc4db3.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Amid Market Fluctuations, Here’s the AI Risk We’re Not Talking About</h3>
+	<p class="about">It’s clear that the stock market is reacting to AI, with a sharp selloff hitting companies powering the AI boom last week, including chip companies that collectively lost over $1 trillion. But is there something about different companies’ approach to AI that’s triggering the different ways the market is reacting to those companies? As July came to a close, Microsoft was up 9 percent and Meta was…</p>
+	
+	
+	<a class="more" href="https://www.unite.ai/ai-hype-tax-enterprise-communication-vendor-risk/" target="_blank" rel="noopener noreferrer">Unite.AI &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -4810,6 +5293,29 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact w2 h2 has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://www.unite.ai/?p=459053" data-srckey="unite.ai" data-cat="ai" data-sent="0" data-ts="1788238802000" data-slug="openai backs california bill youth safety rules for companion chatbots">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="OpenAI Backs California Bill on Youth Safety Rules for Companion Chatbots — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(29 55% 72%)">UNITE.AI</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T05:00:02.000Z">1:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">OpenAI Backs California Bill on Youth Safety Rules for Companion Chatbots</h3>
+	<p class="snippet">OpenAI said on August 31, 2026, that it supports California Senate Bill 1119, legislation that would impose safety obligations on operators of companion chatbots used by children, and the company urged Governor Gavin Newsom to sign the measure into law. Ann O&#39;Leary, OpenAI&#39;s vice president of global policy, announced the position in a company post, saying the support builds on principles for teen…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.unite.ai/wp-content/uploads/2026/09/openai-backs-california-bill-youth-safety-companion-chatbots.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">OpenAI Backs California Bill on Youth Safety Rules for Companion Chatbots</h3>
+	<p class="about">OpenAI said on August 31, 2026, that it supports California Senate Bill 1119, legislation that would impose safety obligations on operators of companion chatbots used by children, and the company urged Governor Gavin Newsom to sign the measure into law. Ann O&#39;Leary, OpenAI&#39;s vice president of global policy, announced the position in a company post, saying the support builds on principles for teen…</p>
+	<p class="why"><span class="whylabel">matched</span> <span class="whykey">OpenAI</span> <span class="whystrength" title="How strongly this matched your interest (decayed frequency: 2.0)">match</span></p>
+	
+	<a class="more" href="https://www.unite.ai/openai-backs-california-bill-on-youth-safety-rules-for-companion-chatbots/" target="_blank" rel="noopener noreferrer">Unite.AI &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact w2 has-thumb" style="--rail:#fb923c" data-count="1" data-id="rss:https://thedispatch.com/?p=127684" data-srckey="the dispatch politics" data-cat="politics" data-sent="0" data-ts="1788238800000" data-slug="article constitution republic oligarchy populism imperialism">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Welcome to the ‘Imperial Populist Oligarchy’ — flip for details">
@@ -4997,7 +5503,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2821 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2799 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:7aa790a5-8bdd-4bf0-b88f-b070fca5eb71" data-cat="markets" data-sent="0" data-slug="markets xrp futures are shifting toward cme institutional participation grows" hidden="until-found"><span class="ameta">COINDESK &middot; Aug 31 &middot; Markets</span><a href="https://www.coindesk.com/markets/2026/09/01/xrp-futures-are-shifting-toward-cme-as-institutional-participation-grows" target="_blank" rel="noopener noreferrer">CME’s share of XRP futures jumps as token rallies 40% in a week</a></li>
 <li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/news/thailand-sec-retail-overseas-crypto-derivatives" data-cat="markets" data-sent="0" data-slug="news thailand sec retail overseas crypto derivatives" hidden="until-found"><span class="ameta">COINTELEGRAPH &middot; Aug 31 &middot; Markets</span><a href="https://cointelegraph.com/news/thailand-sec-retail-overseas-crypto-derivatives" target="_blank" rel="noopener noreferrer">Thailand SEC proposes retail access to regulated overseas crypto derivatives</a></li>
@@ -5030,6 +5536,7 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.nytimes.com/2026/08/31/us/politics/trump-data-centers.html" data-cat="politics" data-sent="0" data-slug="politics trump data centers html" hidden="until-found"><span class="ameta">NYT POLITICS &middot; Aug 31 &middot; Politics</span><a href="https://www.nytimes.com/2026/08/31/us/politics/trump-data-centers.html" target="_blank" rel="noopener noreferrer">Trump Mocks Data-Center Opponents as Wanting to Stay ‘Backwards and Poor’</a></li>
 <li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236847622" data-cat="entertainment" data-sent="0" data-slug="news rise love island usa" hidden="until-found"><span class="ameta">VARIETY &middot; Aug 31 &middot; Entertainment</span><a href="https://variety.com/2026/tv/news/rise-of-love-island-usa-1236847622/" target="_blank" rel="noopener noreferrer">The Rise of ‘Love Island USA’: From Death Threats Against Contestants to Agency Battles for the Biggest Stars</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.nytimes.com/2026/08/31/us/politics/minnesota-church-protest-immigration.html" data-cat="politics" data-sent="0" data-slug="politics minnesota church protest immigration html" hidden="until-found"><span class="ameta">NYT POLITICS &middot; Aug 31 &middot; Politics</span><a href="https://www.nytimes.com/2026/08/31/us/politics/minnesota-church-protest-immigration.html" target="_blank" rel="noopener noreferrer">Defendants in Minnesota Church Protest Case Challenge Charges in Flurry of Motions</a></li>
+<li class="arow" data-count="1" data-id="rss:US-EN-49784884" data-cat="sports" data-sent="0" data-slug="soccer story messi argentina retirement world cup copa america gab marcotti" hidden="until-found"><span class="ameta">ESPN &middot; Aug 31 &middot; Sports</span><a href="https://www.espn.com/soccer/story/_/id/49784884/messi-argentina-retirement-world-cup-copa-america-gab-marcotti" target="_blank" rel="noopener noreferrer">Messi&#39;s emotional Argentina farewell shows he hasn&#39;t forgotten criticism of the past</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.nationalreview.com/?post_type=blog-post&amp;p=2027873" data-cat="politics" data-sent="0" data-slug="corner more bioethical advocacy compel medical help self starvation suicides" hidden="until-found"><span class="ameta">NATIONAL REVIEW POLITICS &middot; Aug 31 &middot; Politics</span><a href="https://www.nationalreview.com/corner/more-bioethical-advocacy-to-compel-medical-help-in-self-starvation-suicides/" target="_blank" rel="noopener noreferrer">More Bioethical Advocacy to Compel Medical Help in Self-Starvation Suicides</a></li>
 <li class="arow" data-count="1" data-id="rss:b0ec6744-719d-4a51-a9e3-bf4aedfbfd1c" data-cat="politics" data-sent="0" data-slug="news army secretary dan driscoll resigns" hidden="until-found"><span class="ameta">CBS POLITICS &middot; Aug 31 &middot; Politics</span><a href="https://www.cbsnews.com/news/army-secretary-dan-driscoll-resigns/" target="_blank" rel="noopener noreferrer">Army Secretary Dan Driscoll resigns after friction with Hegseth</a></li>
 <li class="arow" data-count="1" data-id="rss:https://arstechnica.com/cars/2026/08/the-bentley-supersports-a-stripped-out-engineers-indulgence/" data-cat="tech" data-sent="0" data-slug="cars the bentley supersports stripped out engineers indulgence" hidden="until-found"><span class="ameta">ARS TECHNICA &middot; Aug 31 &middot; Tech</span><a href="https://arstechnica.com/cars/2026/08/the-bentley-supersports-a-stripped-out-engineers-indulgence/" target="_blank" rel="noopener noreferrer">The Bentley Supersports: A stripped-out engineer&#39;s indulgence</a></li>
@@ -5044,6 +5551,7 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:f799e93d-0c14-4673-8292-1d7d157fa4e6" data-cat="politics" data-sent="0" data-slug="video cbs evening news" hidden="until-found"><span class="ameta">CBS POLITICS &middot; Aug 31 &middot; Politics</span><a href="https://www.cbsnews.com/video/083126-cbs-evening-news/" target="_blank" rel="noopener noreferrer">8/31: CBS Evening News</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/tennis/articles/cm2m3484v4xo#0" data-cat="sports" data-sent="0" data-slug="sport tennis articles cm2m3484v4xo" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 31 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/tennis/articles/cm2m3484v4xo" target="_blank" rel="noopener noreferrer">&#39;I felt the love&#39; - how did Alcaraz look on winning singles return?</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.npr.org/2026/08/31/nx-s1-5948057/department-commerce-census-bureau-scientific-integrity" data-cat="politics" data-sent="0" data-slug="department commerce census bureau scientific integrity" hidden="until-found"><span class="ameta">NPR POLITICS &middot; Aug 31 &middot; Politics</span><a href="https://www.npr.org/2026/08/31/nx-s1-5948057/department-commerce-census-bureau-scientific-integrity" target="_blank" rel="noopener noreferrer">Trump officials cut political interference ban after unusual Census Bureau report</a></li>
+<li class="arow" data-count="1" data-id="rss:https://www.unite.ai/?p=458992" data-cat="ai" data-sent="0" data-slug="nscale closes term loans" hidden="until-found"><span class="ameta">UNITE.AI &middot; Aug 31 &middot; AI</span><a href="https://www.unite.ai/nscale-closes-3b-in-term-loans/" target="_blank" rel="noopener noreferrer">Nscale Closes $3B in Term Loans</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.nytimes.com/2026/08/31/us/politics/new-hampshire-senate-scott-brown.html" data-cat="politics" data-sent="0" data-slug="politics new hampshire senate scott brown html" hidden="until-found"><span class="ameta">NYT POLITICS &middot; Aug 31 &middot; Politics</span><a href="https://www.nytimes.com/2026/08/31/us/politics/new-hampshire-senate-scott-brown.html" target="_blank" rel="noopener noreferrer">Scott Brown Was a GOP Star. Will It Matter in the New Hampshire Senate Race?</a></li>
 <li class="arow" data-count="1" data-id="rss:https://techcrunch.com/?p=3159355" data-cat="tech" data-sent="0" data-slug="group funded andreessen horowitz and brockman plan data center ads sway midterms" hidden="until-found"><span class="ameta">TECHCRUNCH &middot; Aug 31 &middot; Tech</span><a href="https://techcrunch.com/2026/08/31/a-group-funded-by-andreessen-horowitz-and-brockman-plan-data-center-ads-to-sway-midterms/" target="_blank" rel="noopener noreferrer">A group funded by Andreessen, Horowitz, and Brockman plans data center ads to sway midterms</a></li>
 <li class="arow" data-count="1" data-id="rss:https://thedispatch.com/?post_type=newsletter&amp;p=127694" data-cat="politics" data-sent="0" data-slug="newsletter boilingfrogs hegseth gowdy media government postliberal" hidden="until-found"><span class="ameta">THE DISPATCH POLITICS &middot; Aug 31 &middot; Politics</span><a href="https://thedispatch.com/newsletter/boilingfrogs/hegseth-gowdy-media-government-postliberal/" target="_blank" rel="noopener noreferrer">Everyone’s a ‘Fed’ Now</a></li>
@@ -7796,30 +8304,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:0d3a535b-e991-4346-b6d1-323f2e9b116c" data-cat="sports" data-sent="0" data-slug="nfl news vikings jeshaun jones suspended substance abuse policy" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 25 &middot; Sports</span><a href="https://www.cbssports.com/nfl/news/vikings-jeshaun-jones-suspended-nfl-substance-abuse-policy/" target="_blank" rel="noopener noreferrer">Vikings&#39; Jeshaun Jones suspended three games for violating NFL substance abuse policy</a></li>
 <li class="arow" data-count="1" data-id="rss:108353891" data-cat="markets" data-sent="0" data-slug="shaped economy may changing html" hidden="until-found"><span class="ameta">CNBC &middot; Aug 25 &middot; Markets</span><a href="https://www.cnbc.com/2026/08/25/k-shaped-economy-c-shaped-economy-may-be-changing.html" target="_blank" rel="noopener noreferrer">Is the K-shaped economy ending? Finance pros weigh in</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/videos/cn74yyepggmo#3" data-cat="sports" data-sent="0" data-slug="sport football videos cn74yyepggmo" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 25 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/football/videos/cn74yyepggmo" target="_blank" rel="noopener noreferrer">&#39;A huge award&#39; - O&#39;Reilly named PFA young player of the year</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.technologyreview.com/?p=1140952" data-cat="tech" data-sent="0" data-slug="taking your temperature from the inside" hidden="until-found"><span class="ameta">MIT TECH REVIEW &middot; Aug 25 &middot; Tech</span><a href="https://www.technologyreview.com/2026/08/25/1140952/taking-your-temperature-from-the-inside/" target="_blank" rel="noopener noreferrer">Taking your temperature from the inside</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.technologyreview.com/?p=1140949" data-cat="tech" data-sent="0" data-slug="amping cells target cancer" hidden="until-found"><span class="ameta">MIT TECH REVIEW &middot; Aug 25 &middot; Tech</span><a href="https://www.technologyreview.com/2026/08/25/1140949/amping-up-t-cells-to-target-cancer/" target="_blank" rel="noopener noreferrer">Amping up T cells to target cancer</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.technologyreview.com/?p=1140917" data-cat="tech" data-sent="0" data-slug="agelab research inspires startup" hidden="until-found"><span class="ameta">MIT TECH REVIEW &middot; Aug 25 &middot; Tech</span><a href="https://www.technologyreview.com/2026/08/25/1140917/agelab-research-inspires-an-a-i-startup/" target="_blank" rel="noopener noreferrer">AgeLab research inspires an A I startup</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.technologyreview.com/?p=1140914" data-cat="tech" data-sent="0" data-slug="new stamp cyberfraud prevention" hidden="until-found"><span class="ameta">MIT TECH REVIEW &middot; Aug 25 &middot; Tech</span><a href="https://www.technologyreview.com/2026/08/25/1140914/a-new-stamp-on-cyberfraud-prevention/" target="_blank" rel="noopener noreferrer">A new stamp on cyberfraud prevention</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.technologyreview.com/?p=1140911" data-cat="tech" data-sent="0" data-slug="launching youth entrepreneurship" hidden="until-found"><span class="ameta">MIT TECH REVIEW &middot; Aug 25 &middot; Tech</span><a href="https://www.technologyreview.com/2026/08/25/1140911/launching-youth-entrepreneurship/" target="_blank" rel="noopener noreferrer">Launching youth entrepreneurship</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.technologyreview.com/?p=1140905" data-cat="tech" data-sent="0" data-slug="youtuber finds niche college admissions mentor" hidden="until-found"><span class="ameta">MIT TECH REVIEW &middot; Aug 25 &middot; Tech</span><a href="https://www.technologyreview.com/2026/08/25/1140905/youtuber-finds-niche-as-college-admissions-mentor/" target="_blank" rel="noopener noreferrer">YouTuber finds niche as college admissions mentor</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.technologyreview.com/?p=1140902" data-cat="tech" data-sent="0" data-slug="addressing sticking point sustainable adhesives" hidden="until-found"><span class="ameta">MIT TECH REVIEW &middot; Aug 25 &middot; Tech</span><a href="https://www.technologyreview.com/2026/08/25/1140902/addressing-a-sticking-point-in-sustainable-adhesives/" target="_blank" rel="noopener noreferrer">Addressing a sticking point in sustainable adhesives</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2243450/commodore-64-cyberpunk-2077-commodore-77-edition/" data-cat="tech" data-sent="0" data-slug="commodore cyberpunk edition" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 25 &middot; Tech</span><a href="https://www.engadget.com/2243450/commodore-64-cyberpunk-2077-commodore-77-edition/" target="_blank" rel="noopener noreferrer">Check out this cool Cyberpunk 2077-edition Commodore 64</a></li>
-<li class="arow" data-count="1" data-id="rss:854cfb83-e00c-4dfe-9b63-aef958d21f49" data-cat="games" data-sent="0" data-slug="articles sea remnants exclusive gameplay secrets" hidden="until-found"><span class="ameta">IGN &middot; Aug 25 &middot; Games</span><a href="https://www.ign.com/articles/sea-of-remnants-exclusive-gameplay-secrets" target="_blank" rel="noopener noreferrer">Sea of Remnants Director Reveals 10 Minutes of Exclusive Gameplay, Details the Game’s Hidden Secrets</a></li>
-<li class="arow" data-count="1" data-id="rss:https://abcnews.com/Politics/wireStory/michigan-ag-releases-flint-water-crisis-report-final-135949495" data-cat="politics" data-sent="0" data-slug="politics wirestory michigan releases flint water crisis report final" hidden="until-found"><span class="ameta">ABC NEWS POLITICS &middot; Aug 25 &middot; Politics</span><a href="https://abcnews.com/Politics/wireStory/michigan-ag-releases-flint-water-crisis-report-final-135949495" target="_blank" rel="noopener noreferrer">Michigan AG releases Flint water crisis report, says final accountability step her office can take</a></li>
-<li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000728077" data-cat="games" data-sent="0" data-slug="year old the witcher getting remaster and its free upgrade" hidden="until-found"><span class="ameta">KOTAKU &middot; Aug 25 &middot; Games</span><a href="https://kotaku.com/11-year-old-the-witcher-3-is-getting-a-remaster-and-its-a-free-upgrade-2000728077" target="_blank" rel="noopener noreferrer">11-Year-Old The Witcher 3 Is Getting A Remaster And It’s A Free Upgrade</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.theverge.com/gadgets/984677/inscryption-humble-daniel-mullins-pony-island-deal-sale" data-cat="tech" data-sent="0" data-slug="gadgets inscryption humble daniel mullins pony island deal sale" hidden="until-found"><span class="ameta">THE VERGE &middot; Aug 25 &middot; Tech</span><a href="https://www.theverge.com/gadgets/984677/inscryption-humble-daniel-mullins-pony-island-deal-sale" target="_blank" rel="noopener noreferrer">At just $8, you owe it to yourself to grab Inscryption</a></li>
-<li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/news/world-liberty-financial-launches-usd1-natively-on-canton-network" data-cat="markets" data-sent="0" data-slug="news world liberty financial launches usd1 natively canton network" hidden="until-found"><span class="ameta">COINTELEGRAPH &middot; Aug 25 &middot; Markets</span><a href="https://cointelegraph.com/news/world-liberty-financial-launches-usd1-natively-on-canton-network" target="_blank" rel="noopener noreferrer">World Liberty Financial launches USD1 natively on Canton Network</a></li>
-<li class="arow" data-count="1" data-id="rss:6f2ab906-0512-4c27-b5ee-0a61278f82eb" data-cat="sports" data-sent="0" data-slug="mlb news shane bieber injury timeline blue jays playoff odds" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 25 &middot; Sports</span><a href="https://www.cbssports.com/mlb/news/shane-bieber-injury-timeline-blue-jays-playoff-odds/" target="_blank" rel="noopener noreferrer">Shane Bieber lands on IL in latest rotation hit as Blue Jays cling to playoff hopes</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2244137/benq-screenbar-max-first-dual-monitor-desk-lamp/" data-cat="tech" data-sent="0" data-slug="benq screenbar max first dual monitor desk lamp" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 25 &middot; Tech</span><a href="https://www.engadget.com/2244137/benq-screenbar-max-first-dual-monitor-desk-lamp/" target="_blank" rel="noopener noreferrer">BenQ&#39;s first dual-monitor desk lamp will give your screens a glow up</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2243934/spacex-use-nvidia-gpu-for-starmind-project/" data-cat="ai" data-sent="0" data-slug="spacex use nvidia gpu for starmind project" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 25 &middot; AI</span><a href="https://www.engadget.com/2243934/spacex-use-nvidia-gpu-for-starmind-project/" target="_blank" rel="noopener noreferrer">SpaceX to use NVIDIA GPUs for its Starmind project — Here&#39;s what they&#39;ll face in space</a></li>
-<li class="arow" data-count="1" data-id="rss:108354121" data-cat="markets" data-sent="0" data-slug="our software stocks face major tests whether their rallies are for real html" hidden="until-found"><span class="ameta">CNBC &middot; Aug 25 &middot; Markets</span><a href="https://www.cnbc.com/2026/08/25/2-of-our-software-stocks-face-major-tests-of-whether-their-rallies-are-for-real.html" target="_blank" rel="noopener noreferrer">2 of our software stocks face major tests of whether their rallies are for real</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.theverge.com/games/984680/the-witcher-3-wild-hunt-remastered-launch-date-trailer" data-cat="tech" data-sent="0" data-slug="games the witcher wild hunt remastered launch date trailer" hidden="until-found"><span class="ameta">THE VERGE &middot; Aug 25 &middot; Tech</span><a href="https://www.theverge.com/games/984680/the-witcher-3-wild-hunt-remastered-launch-date-trailer" target="_blank" rel="noopener noreferrer">The Witcher 3 is getting a remaster</a></li>
-<li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000728058" data-cat="games" data-sent="0" data-slug="witcher dlc gameplay reveal shows geralt pulling mortal kombat get over here with new monster slaying" hidden="until-found"><span class="ameta">KOTAKU &middot; Aug 25 &middot; Games</span><a href="https://kotaku.com/witcher-3-dlc-gameplay-reveal-shows-geralt-pulling-a-mortal-kombat-get-over-here-with-new-monster-slaying-weapon-2000728058" target="_blank" rel="noopener noreferrer">Witcher 3 DLC Gameplay Reveal Shows Geralt Pulling A Mortal Kombat ‘Get Over Here’ With New Monster-Slaying Weapon</a></li>
-<li class="arow" data-count="1" data-id="rss:203c41f6-91d8-4123-bbf7-28b1a7468c6e" data-cat="sports" data-sent="0" data-slug="fantasy football news bhayshul tuten sleeper draft rankings" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 25 &middot; Sports</span><a href="https://www.cbssports.com/fantasy/football/news/bhayshul-tuten-fantasy-football-sleeper-draft-rankings/" target="_blank" rel="noopener noreferrer">Bhayshul Tuten, Fantasy sleeper? Jaguars RB proves in joint practice why he&#39;s worth the Round 5 risk</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/paradox-grand-strategy-afterworld-announcement" data-cat="games" data-sent="0" data-slug="paradox grand strategy afterworld announcement" hidden="until-found"><span class="ameta">EUROGAMER &middot; Aug 25 &middot; Games</span><a href="https://www.eurogamer.net/paradox-grand-strategy-afterworld-announcement" target="_blank" rel="noopener noreferrer">Paradox&#39;s latest grand strategy Afterworld wants you to survive and thrive in the post-apocalypse</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/witcher-3-expansion-songs-of-the-past-trailer" data-cat="games" data-sent="0" data-slug="witcher expansion songs the past trailer" hidden="until-found"><span class="ameta">EUROGAMER &middot; Aug 25 &middot; Games</span><a href="https://www.eurogamer.net/witcher-3-expansion-songs-of-the-past-trailer" target="_blank" rel="noopener noreferrer">The Witcher 3 Remastered announced, an overhaul free for existing owners, while expansion Songs of the Past finally shown</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.billboard.com/?post_type=pmc_list&amp;p=1235281663" data-cat="ai" data-sent="0" data-slug="lists dolly parton good deeds timeline" hidden="until-found"><span class="ameta">BILLBOARD &middot; Aug 25 &middot; AI</span><a href="https://www.billboard.com/lists/dolly-parton-good-deeds-timeline/" target="_blank" rel="noopener noreferrer">A Timeline of Dolly Parton’s Good Deeds</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.240880" data-cat="entertainment" data-sent="0" data-slug="convention all the news and reviews from anime nyc sanji zoro have best bromance off set" hidden="until-found"><span class="ameta">ANIME NEWS NETWORK &middot; Aug 25 &middot; Entertainment</span><a href="https://www.animenewsnetwork.com/convention/2026/all-the-news-and-reviews-from-anime-nyc/sanji-and-zoro-have-the-best-bromance-on-and-off-the-set-of-one-piece-live-action/.240880" target="_blank" rel="noopener noreferrer">Sanji and Zoro Have The Best Bromance On And Off The Set Of One Piece Live Action</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
