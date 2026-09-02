@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-02T00:32:17.486Z">
+<meta name="sf-version" content="2026-09-02T00:46:57.500Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,6 +537,13 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="hsl(89 55% 72%)"] { color: #49691b !important; }
+:root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
+:root[data-theme="light"] .meta [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
+:root[data-theme="light"] .meta [style*="hsl(336 55% 72%)"] { color: #894262 !important; }
+:root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
+:root[data-theme="light"] .meta [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
+:root[data-theme="light"] .meta [style*="hsl(156 55% 72%)"] { color: #176e52 !important; }
 :root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
 :root[data-theme="light"] .meta [style*="hsl(287 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] .meta [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
@@ -547,19 +554,14 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(232 55% 72%)"] { color: #4f5795 !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
-:root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="hsl(273 55% 72%)"] { color: #724890 !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
-:root[data-theme="light"] .meta [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="hsl(169 55% 72%)"] { color: #146c60 !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(243 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] .meta [style*="#facc15"] { color: #815500 !important; }
-:root[data-theme="light"] .meta [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
-:root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
-:root[data-theme="light"] .meta [style*="hsl(89 55% 72%)"] { color: #49691b !important; }
 :root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] .meta [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
 :root[data-theme="light"] .meta [style*="hsl(224 55% 72%)"] { color: #495b8f !important; }
@@ -574,10 +576,8 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] .meta [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
-:root[data-theme="light"] .meta [style*="hsl(336 55% 72%)"] { color: #894262 !important; }
 :root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
-:root[data-theme="light"] .meta [style*="hsl(156 55% 72%)"] { color: #176e52 !important; }
 :root[data-theme="light"] .meta [style*="hsl(111 55% 72%)"] { color: #2f6e23 !important; }
 :root[data-theme="light"] .meta [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] .meta [style*="hsl(290 55% 72%)"] { color: #7e418a !important; }
@@ -707,10 +707,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 8:32 PM &middot; 613 TODAY</p>
+	<p class="stats">UPDATED 8:46 PM &middot; 622 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">200</span><span class="sr-only"> — 200 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">168</span><span class="sr-only"> — 168 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">189</span><span class="sr-only"> — 189 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">395</span><span class="sr-only"> — 395 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">222</span><span class="sr-only"> — 222 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">310</span><span class="sr-only"> — 310 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">130</span><span class="sr-only"> — 130 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">358</span><span class="sr-only"> — 358 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">476</span><span class="sr-only"> — 476 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">230</span><span class="sr-only"> — 230 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">322</span><span class="sr-only"> — 322 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">199</span><span class="sr-only"> — 199 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">169</span><span class="sr-only"> — 169 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">189</span><span class="sr-only"> — 189 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">395</span><span class="sr-only"> — 395 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">223</span><span class="sr-only"> — 223 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">310</span><span class="sr-only"> — 310 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">130</span><span class="sr-only"> — 130 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">357</span><span class="sr-only"> — 357 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">476</span><span class="sr-only"> — 476 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">236</span><span class="sr-only"> — 236 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">316</span><span class="sr-only"> — 316 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1038,6 +1038,167 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact" style="--rail:#fb923c" data-count="1" data-id="rss:https://www.washingtonpost.com/nation/2026/09/01/tyler-robinson-accused-killing-charlie-kirk-faces-potential-death-penalty/" data-srckey="washington post politics" data-cat="politics" data-sent="0" data-ts="1788308954000" data-slug="nation tyler robinson accused killing charlie kirk faces potential death penalty">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Man accused of killing Charlie Kirk will stand trial, face potential death penalty — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(89 55% 72%)">WASHINGTON POST POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-02T00:29:14.000Z">8:29 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">Man accused of killing Charlie Kirk will stand trial, face potential death penalty</h3>
+	<p class="snippet">Tyler James Robinson, the 23-year-old accused of fatally shooting Charlie Kirk, will face murder charges, a judge in Utah ruled Tuesday.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Man accused of killing Charlie Kirk will stand trial, face potential death penalty</h3>
+	<p class="about">Tyler James Robinson, the 23-year-old accused of fatally shooting Charlie Kirk, will face murder charges, a judge in Utah ruled Tuesday.</p>
+	
+	
+	<a class="more" href="https://www.washingtonpost.com/nation/2026/09/01/tyler-robinson-accused-killing-charlie-kirk-faces-potential-death-penalty/" target="_blank" rel="noopener noreferrer">Washington Post Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#fb923c" data-count="1" data-id="rss:000001a0-5f04-d286-a1b8-ff745cbd0001" data-srckey="politico" data-cat="politics" data-sent="0" data-ts="1788308124000" data-slug="news republican jewish coalition vance tucker carlson">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="JD Vance courts Jewish Republicans. Tucker Carlson still looms. — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">POLITICO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-02T00:15:24.000Z">8:15 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">JD Vance courts Jewish Republicans. Tucker Carlson still looms.</h3>
+	<p class="snippet">Vice President JD Vance’s answer to a question about conservative pundit Tucker Carlson left some in the audience disappointed.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static.politico.com/87/23/e0b175544379be24266a03aff379/vance-4736.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">JD Vance courts Jewish Republicans. Tucker Carlson still looms.</h3>
+	<p class="about">Vice President JD Vance’s answer to a question about conservative pundit Tucker Carlson left some in the audience disappointed.</p>
+	
+	
+	<a class="more" href="https://www.politico.com/news/2026/09/01/republican-jewish-coalition-jd-vance-tucker-carlson-01060877" target="_blank" rel="noopener noreferrer">Politico &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fb923c" data-count="1" data-id="rss:https://www.foxnews.com/politics/doj-lawsuit-targets-alleged-school-secret-gender-transitions-policies-keep-parents-dark" data-srckey="fox news politics" data-cat="politics" data-sent="0" data-ts="1788306623000" data-slug="politics doj lawsuit targets alleged school secret gender transitions policies keep parents dark">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="DOJ lawsuit targets alleged school ‘secret gender transitions’ policies that keep parents in the dark — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(101 55% 72%)">FOX NEWS POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T23:50:23.000Z">7:50 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">DOJ lawsuit targets alleged school ‘secret gender transitions’ policies that keep parents in the dark</h3>
+	<p class="snippet">The DOJ lawsuit against Kansas City, Kansas Public Schools alleges &quot;secret&quot; gender transition plans locked parents out, violating FERPA and PPRA.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/09/931/523/harmeet-dhillon-002.jpg?ve=1&amp;tl=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">DOJ lawsuit targets alleged school ‘secret gender transitions’ policies that keep parents in the dark</h3>
+	<p class="about">The DOJ lawsuit against Kansas City, Kansas Public Schools alleges &quot;secret&quot; gender transition plans locked parents out, violating FERPA and PPRA.</p>
+	
+	
+	<a class="more" href="https://www.foxnews.com/politics/doj-lawsuit-targets-alleged-school-secret-gender-transitions-policies-keep-parents-dark" target="_blank" rel="noopener noreferrer">Fox News Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fb923c" data-count="1" data-id="rss:https://www.nytimes.com/2026/09/01/us/politics/caine-military-elections.html" data-srckey="nyt politics" data-cat="politics" data-sent="0" data-ts="1788306525000" data-slug="politics caine military elections html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Joint Chiefs Chairman Says Military Has ‘No Plans’ to Send Troops to the Polls — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(336 55% 72%)">NYT POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T23:48:45.000Z">7:48 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">Joint Chiefs Chairman Says Military Has ‘No Plans’ to Send Troops to the Polls</h3>
+	<p class="snippet">Gen. Dan Caine, President Trump’s top military adviser, appeared to renounce the possibility of the military interfering in the 2026 midterms.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static01.nyt.com/images/2026/09/01/multimedia/01trump-news-troops-election-hlvp/01trump-news-troops-election-hlvp-mediumSquareAt3X.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Joint Chiefs Chairman Says Military Has ‘No Plans’ to Send Troops to the Polls</h3>
+	<p class="about">Gen. Dan Caine, President Trump’s top military adviser, appeared to renounce the possibility of the military interfering in the 2026 midterms.</p>
+	
+	
+	<a class="more" href="https://www.nytimes.com/2026/09/01/us/politics/caine-military-elections.html" target="_blank" rel="noopener noreferrer">NYT Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 h2" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.billboard.com/?p=1236330592" data-srckey="billboard" data-cat="music" data-sent="0" data-ts="1788305830000" data-slug="music news josh groban find your light benefit concert wynton marsalis">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Josh Groban’s Find Your Light Benefit Concert Will Honor This Famed Trumpeter &amp; Include a Performance by a Boy Bander — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">BILLBOARD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T23:37:10.000Z">7:37 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
+	<h3 class="title">Josh Groban’s Find Your Light Benefit Concert Will Honor This Famed Trumpeter &amp; Include a Performance by a Boy Bander</h3>
+	<p class="snippet">Groban will host the event, which is set for Oct. 19 at Jazz at Lincoln Center.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Josh Groban’s Find Your Light Benefit Concert Will Honor This Famed Trumpeter &amp; Include a Performance by a Boy Bander</h3>
+	<p class="about">Groban will host the event, which is set for Oct. 19 at Jazz at Lincoln Center.</p>
+	
+	
+	<a class="more" href="https://www.billboard.com/music/music-news/josh-groban-find-your-light-benefit-concert-wynton-marsalis-1236330592/" target="_blank" rel="noopener noreferrer">Billboard &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fb923c" data-count="1" data-id="rss:54458ec7-d647-40ed-991a-07e8ace1f29d" data-srckey="cbs politics" data-cat="politics" data-sent="0" data-ts="1788305430000" data-slug="video tit tat strikes iran lawmakers react dan driscolls resignation">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Tit-for-tat strikes with Iran as lawmakers react to Dan Driscoll&#39;s resignation — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(69 55% 72%)">CBS POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T23:30:30.000Z">7:30 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">Tit-for-tat strikes with Iran as lawmakers react to Dan Driscoll&#39;s resignation</h3>
+	<p class="snippet">U.S. forces struck Iran on Tuesday, the second series of attacks in three days. Meanwhile, lawmakers reacted to the resignation of U.S. Army Secretary Dan Driscoll, part of a wave of about two dozen early departures among America&#39;s generals, admirals and top military brass. Weijia Jiang reports.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assets2.cbsnewsstatic.com/hub/i/r/2026/09/01/d2378fb3-d644-46d6-bee9-c84c026c9404/thumbnail/1200x630/7a6a76ebca01e68a337ee2fdc9f0df78/cbsn-fusion-tit-tat-strikes-iran-lawmakers-react-dan-driscolls-resignation-thumbnail.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Tit-for-tat strikes with Iran as lawmakers react to Dan Driscoll&#39;s resignation</h3>
+	<p class="about">U.S. forces struck Iran on Tuesday, the second series of attacks in three days. Meanwhile, lawmakers reacted to the resignation of U.S. Army Secretary Dan Driscoll, part of a wave of about two dozen early departures among America&#39;s generals, admirals and top military brass. Weijia Jiang reports.</p>
+	
+	
+	<a class="more" href="https://www.cbsnews.com/video/tit-tat-strikes-iran-lawmakers-react-dan-driscolls-resignation/" target="_blank" rel="noopener noreferrer">CBS Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://medcitynews.com/?p=149820" data-srckey="medcity news" data-cat="healthcare" data-sent="0" data-ts="1788305036000" data-slug="merger rare disease patient data">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="This Merger Wants to Prevent Rare Disease Patients from Losing Their Data — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(156 55% 72%)">MEDCITY NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T23:23:56.000Z">7:23 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#7dd3fc">Healthcare</span></div>
+	<h3 class="title">This Merger Wants to Prevent Rare Disease Patients from Losing Their Data</h3>
+	<p class="snippet">Cushla and Clirinx, two Irish startups, are merging to give rare disease patients one continuous health and research record. The deal will pair Cushla’s patient-controlled EHR with Clirinx’s unique patient ID system so data no longer gets lost between doctors, hospitals and clinical trials. The post This Merger Wants to Prevent Rare Disease Patients from Losing Their Data appeared first on…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://medcitynews.com/wp-content/uploads/sites/7/2026/09/rare-disease.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">This Merger Wants to Prevent Rare Disease Patients from Losing Their Data</h3>
+	<p class="about">Cushla and Clirinx, two Irish startups, are merging to give rare disease patients one continuous health and research record. The deal will pair Cushla’s patient-controlled EHR with Clirinx’s unique patient ID system so data no longer gets lost between doctors, hospitals and clinical trials. The post This Merger Wants to Prevent Rare Disease Patients from Losing Their Data appeared first on…</p>
+	
+	
+	<a class="more" href="https://medcitynews.com/2026/09/merger-rare-disease-patient-data/" target="_blank" rel="noopener noreferrer">MedCity News &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact h2" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/5b5cb38c-e2d7-4bbb-9315-15def3427b23" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1788304166095" data-slug="payers unitedhealthcare nix prior auth services oct">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="UnitedHealthcare to nix prior auth on 1,700 services on Oct. 1 — flip for details">
@@ -1214,6 +1375,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.rollingstone.com/music/music-news/alanis-morissette-sues-tour-manager-extortion-airport-drugs-1235619395/" target="_blank" rel="noopener noreferrer">Rolling Stone Music &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:3d2eaccd-edae-47be-8b5f-c37b8a2ab24d" data-srckey="ign" data-cat="games" data-sent="0" data-ts="1788302307000" data-slug="articles projekt red boss isnt worried about delays for next gen consoles ram prices soar">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="CD Projekt Red Boss &#39;Isn&#39;t Worried&#39; About Delays for Next-Gen Consoles as RAM Prices Soar — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">IGN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T22:38:27.000Z">6:38 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">CD Projekt Red Boss &#39;Isn&#39;t Worried&#39; About Delays for Next-Gen Consoles as RAM Prices Soar</h3>
+	<p class="snippet">CD Projekt Red joint CEO Michał Nowakowski opened up about the developer’s reaction to the rising price of consoles and the possibility of next-generation hardware getting delayed.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assets-prd.ignimgs.com/2026/08/29/the-witcher-4-physical-release-1788029748153.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">CD Projekt Red Boss &#39;Isn&#39;t Worried&#39; About Delays for Next-Gen Consoles as RAM Prices Soar</h3>
+	<p class="about">CD Projekt Red joint CEO Michał Nowakowski opened up about the developer’s reaction to the rising price of consoles and the possibility of next-generation hardware getting delayed.</p>
+	
+	
+	<a class="more" href="https://www.ign.com/articles/cd-projekt-red-boss-isnt-worried-about-delays-for-next-gen-consoles-as-ram-prices-soar" target="_blank" rel="noopener noreferrer">IGN &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1789,6 +1973,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.billboard.com/music/music-news/ed-sheeran-detroit-ford-field-injured-workers-investigation-1236330462/" target="_blank" rel="noopener noreferrer">Billboard &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fb923c" data-count="1" data-id="rss:dc0e746e-0c38-49f7-a8d4-f5b77817ae5d" data-srckey="cbs politics" data-cat="politics" data-sent="0" data-ts="1788296400000" data-slug="video the takeout with major garrett">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="9/1: The Takeout with Major Garrett — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(69 55% 72%)">CBS POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-01T21:00:00.000Z">5:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">9/1: The Takeout with Major Garrett</h3>
+	<p class="snippet">Lindsay Clancy jury unable to reach unanimous decision on Day 4 of deliberations; Trump warns Iran not to retaliate after latest U.S. strike.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assets3.cbsnewsstatic.com/hub/i/r/2026/09/01/5b0870af-9c0e-49f4-b556-a4245bbfb15e/thumbnail/1200x630/a289ee2d63132e202d35b438ff8b8584/thetakeout090126.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">9/1: The Takeout with Major Garrett</h3>
+	<p class="about">Lindsay Clancy jury unable to reach unanimous decision on Day 4 of deliberations; Trump warns Iran not to retaliate after latest U.S. strike.</p>
+	
+	
+	<a class="more" href="https://www.cbsnews.com/video/090126-the-takeout-with-major-garrett/" target="_blank" rel="noopener noreferrer">CBS Politics &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -15117,7 +15324,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2380 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2371 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:7aa790a5-8bdd-4bf0-b88f-b070fca5eb71" data-cat="markets" data-sent="0" data-slug="markets xrp futures are shifting toward cme institutional participation grows" hidden="until-found"><span class="ameta">COINDESK &middot; Aug 31 &middot; Markets</span><a href="https://www.coindesk.com/markets/2026/09/01/xrp-futures-are-shifting-toward-cme-as-institutional-participation-grows" target="_blank" rel="noopener noreferrer">CME’s share of XRP futures jumps as token rallies 40% in a week</a></li>
 <li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/news/thailand-sec-retail-overseas-crypto-derivatives" data-cat="markets" data-sent="0" data-slug="news thailand sec retail overseas crypto derivatives" hidden="until-found"><span class="ameta">COINTELEGRAPH &middot; Aug 31 &middot; Markets</span><a href="https://cointelegraph.com/news/thailand-sec-retail-overseas-crypto-derivatives" target="_blank" rel="noopener noreferrer">Thailand SEC proposes retail access to regulated overseas crypto derivatives</a></li>
@@ -17490,15 +17697,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.theverge.com/tech/985329/instagram-facebook-meta-settlement-changes" data-cat="tech" data-sent="0" data-slug="tech instagram facebook meta settlement changes" hidden="until-found"><span class="ameta">THE VERGE &middot; Aug 26 &middot; Tech</span><a href="https://www.theverge.com/tech/985329/instagram-facebook-meta-settlement-changes" target="_blank" rel="noopener noreferrer">All the ways Instagram and Facebook are changing for teens</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2245008/the-colorful-jbl-pulse-6-speaker-will-be-available-next-month/" data-cat="tech" data-sent="0" data-slug="the colorful jbl pulse speaker will available next month" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 26 &middot; Tech</span><a href="https://www.engadget.com/2245008/the-colorful-jbl-pulse-6-speaker-will-be-available-next-month/" target="_blank" rel="noopener noreferrer">The colorful JBL Pulse 6 speaker will be available next month</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/nksuk5" data-cat="dev" data-sent="0" data-slug="stagas 09ad937b493bf8cd3285917279de2488" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 26 &middot; Dev</span><a href="https://gist.github.com/stagas/09ad937b493bf8cd3285917279de2488" target="_blank" rel="noopener noreferrer">Building textlog without JavaScript</a></li>
-<li class="arow" data-count="1" data-id="rss:https://arstechnica.com/tech-policy/2026/08/meta-settles-states-child-safety-claims-for-18b-florida-rejects-deal-as-peanuts/" data-cat="tech" data-sent="0" data-slug="tech policy meta settles states child safety claims for 18b florida rejects deal peanuts" hidden="until-found"><span class="ameta">ARS TECHNICA &middot; Aug 26 &middot; Tech</span><a href="https://arstechnica.com/tech-policy/2026/08/meta-settles-states-child-safety-claims-for-18b-florida-rejects-deal-as-peanuts/" target="_blank" rel="noopener noreferrer">Meta settles states&#39; child-safety claims for $18B; Florida rejects deal as &quot;peanuts&quot;</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2244997/roku-will-stream-select-nwsl-games-this-season/" data-cat="tech" data-sent="0" data-slug="roku will stream select nwsl games this season" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 26 &middot; Tech</span><a href="https://www.engadget.com/2244997/roku-will-stream-select-nwsl-games-this-season/" target="_blank" rel="noopener noreferrer">Roku will stream select NWSL games this season</a></li>
-<li class="arow" data-count="1" data-id="rss:74e4386f-f2a4-44af-9ffb-69177e10e871" data-cat="sports" data-sent="0" data-slug="college football news tennessee nil collective retail store" hidden="until-found"><span class="ameta">CBS SPORTS &middot; Aug 26 &middot; Sports</span><a href="https://www.cbssports.com/college-football/news/tennessee-nil-collective-retail-store/" target="_blank" rel="noopener noreferrer">The cornerstone: Tennessee&#39;s NIL collective setting the curve with new brick-and-mortar retail store</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2244996/soundcore-nebula-x1s-project-is-an-incredibly-bright-version-of-its-popular-nebula-x1/" data-cat="tech" data-sent="0" data-slug="soundcore nebula x1s project incredibly bright version its popular" hidden="until-found"><span class="ameta">ENGADGET &middot; Aug 26 &middot; Tech</span><a href="https://www.engadget.com/2244996/soundcore-nebula-x1s-project-is-an-incredibly-bright-version-of-its-popular-nebula-x1/" target="_blank" rel="noopener noreferrer">Soundcore&#39;s Nebula X1S projector is an incredibly bright version of its popular Nebula X1</a></li>
-<li class="arow" data-count="1" data-id="rss:https://acceptmarkdown.com/" data-cat="tech" data-sent="0" hidden="until-found"><span class="ameta">HACKER NEWS &middot; Aug 26 &middot; Tech</span><a href="https://acceptmarkdown.com/" target="_blank" rel="noopener noreferrer">Serve Markdown to AI Agents with Accept Headers</a></li>
-<li class="arow" data-count="1" data-id="rss:https://arstechnica.com/health/2026/08/catholic-bishops-tell-florida-theres-no-religious-reason-for-vaccine-exemptions/" data-cat="tech" data-sent="0" data-slug="health catholic bishops tell florida theres religious reason for vaccine exemptions" hidden="until-found"><span class="ameta">ARS TECHNICA &middot; Aug 26 &middot; Tech</span><a href="https://arstechnica.com/health/2026/08/catholic-bishops-tell-florida-theres-no-religious-reason-for-vaccine-exemptions/" target="_blank" rel="noopener noreferrer">Florida Catholics slap down state AG by rejecting religious vaccine exemptions</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.billboard.com/?p=1236325159" data-cat="music" data-sent="0" data-slug="music news olivia dean pop shame man need" hidden="until-found"><span class="ameta">BILLBOARD &middot; Aug 26 &middot; Music</span><a href="https://www.billboard.com/music/music-news/olivia-dean-pop-shame-man-i-need-1236325159/" target="_blank" rel="noopener noreferrer">Olivia Dean Says She Used to Think Making Pop Music Was ‘Lame’ Until ‘Man I Need’ Turned Her ‘Shame’ Into Gold</a></li>
-<li class="arow" data-count="1" data-id="rss:https://techcrunch.com/?p=3157316" data-cat="ai" data-sent="0" data-slug="googles gemini has branding problem and does the rest" hidden="until-found"><span class="ameta">TECHCRUNCH &middot; Aug 26 &middot; AI</span><a href="https://techcrunch.com/2026/08/26/googles-gemini-has-a-branding-problem-and-so-does-the-rest-of-ai/" target="_blank" rel="noopener noreferrer">Google’s Gemini has a branding problem, and so does the rest of AI</a></li>
-<li class="arow" data-count="1" data-id="rss:https://techcrunch.com/?p=3157219" data-cat="tech" data-sent="0" data-slug="how explain openais executive exodus" hidden="until-found"><span class="ameta">TECHCRUNCH &middot; Aug 26 &middot; Tech</span><a href="https://techcrunch.com/2026/08/26/how-do-we-explain-openais-executive-exodus/" target="_blank" rel="noopener noreferrer">How do we explain OpenAI’s executive exodus?</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
