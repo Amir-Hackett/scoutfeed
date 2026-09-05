@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-05T15:27:01.813Z">
+<meta name="sf-version" content="2026-09-05T15:30:59.709Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -524,14 +524,17 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 /* Narrow cards (the rail, and every card on a phone) drop the category word —
    the left rail colour already encodes it, and it is the first thing to get
    sliced when the meta line runs out of room. */
+/* .sep:last-of-type never matched: the category span is the last span, so
+   the dot before it stayed ("POLYGON · 11:04 am ·", measured 2026-09-05).
+   :has(+ .cat) names the separator that precedes the category. */
 @container card (max-width: 260px) {
-	.face > .meta .cat, .face > .meta .sep:last-of-type { display: none; }
+	.face > .meta .cat, .face > .meta .sep:has(+ .cat) { display: none; }
 }
 /* A thumb card's meta line is the card minus the art — about 150px on a
    284px phone card — and the source truncated to one letter ("V… · 10:04 am
    · Ent…", ui audit 2026-09-05). Same trade, one size up. */
 @container card (max-width: 340px) {
-	.card.has-thumb .face > .meta .cat, .card.has-thumb .face > .meta .sep:last-of-type { display: none; }
+	.card.has-thumb .face > .meta .cat, .card.has-thumb .face > .meta .sep:has(+ .cat) { display: none; }
 }
 /* A fixed-height card can only hold so many lines. Text boxes are pinned at
    their clamped height (flex: none) so a flex engine can never shrink one a
@@ -613,13 +616,14 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#c084fc"] { color: #7638ab !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
@@ -629,7 +633,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(260 55% 72%)"] { color: #674c95 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#facc15"] { color: #815500 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(271 55% 72%)"] { color: #704891 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#60a5fa"] { color: #145dac !important; }
@@ -666,9 +669,8 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(71 55% 72%)"] { color: #5a6512 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(59 55% 72%)"] { color: #64610b !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(136 55% 72%)"] { color: #1c6f3c !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(318 55% 72%)"] { color: #874074 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(19 55% 72%)"] { color: #80503a !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(318 55% 72%)"] { color: #874074 !important; }
 .sc0 { color: hsl(269 55% 72%); }
 :root[data-theme="light"] .sc0 { color: #6e4992; }
 .sc1 { color: #fb923c; }
@@ -927,10 +929,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 11:27 AM &middot; 259 TODAY</p>
+	<p class="stats">UPDATED 11:30 AM &middot; 262 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">232</span><span class="sr-only"> — 232 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">167</span><span class="sr-only"> — 167 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">377</span><span class="sr-only"> — 377 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">207</span><span class="sr-only"> — 207 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">264</span><span class="sr-only"> — 264 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">117</span><span class="sr-only"> — 117 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">303</span><span class="sr-only"> — 303 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">528</span><span class="sr-only"> — 528 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">330</span><span class="sr-only"> — 330 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">298</span><span class="sr-only"> — 298 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">232</span><span class="sr-only"> — 232 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">167</span><span class="sr-only"> — 167 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">377</span><span class="sr-only"> — 377 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">207</span><span class="sr-only"> — 207 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">263</span><span class="sr-only"> — 263 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">119</span><span class="sr-only"> — 119 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">303</span><span class="sr-only"> — 303 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">528</span><span class="sr-only"> — 528 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">329</span><span class="sr-only"> — 329 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">298</span><span class="sr-only"> — 298 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1229,8 +1231,8 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.prizepicks.com/playbook-article/us-open-predictions-potapova-vs-anisimova-fritz-vs-cerundolo-saturday-september-5" target="_blank" rel="noopener noreferrer">US Open Predictions Today for Anisimova, Fritz, Keys – Saturday, September 5</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(136 55% 72%)">PRIZEPICKS</span><span class="sep" aria-hidden="true">&middot;</span>"amanda anisimova" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.bbc.co.uk/sport/tennis/live/cr59n7vje2jt" target="_blank" rel="noopener noreferrer">US Open 2026 LIVE: Amanda Anisimova vs Anastasia Potapova - scores, radio &amp; live text updates</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(19 55% 72%)">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"amanda anisimova" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
@@ -1267,6 +1269,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://variety.com/2026/film/reviews/everest-the-other-side-review-1236852376/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236852578" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788621224000" data-slug="film global jannis lenz oasis venice">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Teens Seek to Heal Wounds Through Macabre Rituals in Jannis Lenz’s ‘Oasis,’ With Hints of the Influence of Jessica Hausner, Michael Haneke — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T15:13:44.000Z">11:13 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Teens Seek to Heal Wounds Through Macabre Rituals in Jannis Lenz’s ‘Oasis,’ With Hints of the Influence of Jessica Hausner, Michael Haneke</h3>
+	<p class="snippet">Three teenagers, unclothed, stand close to one another in a forest, gently caressing the wounds they have inflicted on one another. This is the climactic moment in “Oasis,” a film that at times feels like a Grimms Brothers fairytale, and, at others, an all-too-real vision of modern-day youth in crisis. If you were told that […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/07/Oasis.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/07/Oasis.jpg?w=240 240w, https://variety.com/wp-content/uploads/2026/07/Oasis.jpg?w=340 340w, https://variety.com/wp-content/uploads/2026/07/Oasis.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Teens Seek to Heal Wounds Through Macabre Rituals in Jannis Lenz’s ‘Oasis,’ With Hints of the Influence of Jessica Hausner, Michael Haneke</h3>
+	<p class="about">Three teenagers, unclothed, stand close to one another in a forest, gently caressing the wounds they have inflicted on one another. This is the climactic moment in “Oasis,” a film that at times feels like a Grimms Brothers fairytale, and, at others, an all-too-real vision of modern-day youth in crisis. If you were told that […]</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://variety.com/2026/film/global/jannis-lenz-oasis-venice-1236852578/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1351,6 +1378,31 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact has-thumb" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235622112" data-srckey="rolling stone music" data-cat="music" data-sent="0" data-ts="1788620698000" data-slug="music news phoebe bridgers talks acting debut primetime venice premiere">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Phoebe Bridgers Talks ‘Super Intimidating’ Acting Debut at ‘Primetime’ Venice Premiere — flip for details">
+	<div class="meta"><span class="src" style="color:#fb7185">ROLLING STONE MUSIC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T15:04:58.000Z">11:04 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
+	<h3 class="title">Phoebe Bridgers Talks ‘Super Intimidating’ Acting Debut at ‘Primetime’ Venice Premiere</h3>
+	<p class="snippet">“She’s unbelievable,” Robert Pattinson said of his musician co-star. &quot;Even on the first day, she was so relaxed&quot;</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.rollingstone.com/wp-content/uploads/2026/09/GettyImages-2293101882.jpg?w=340#038;h=900&amp;#038;crop=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://www.rollingstone.com/wp-content/uploads/2026/09/GettyImages-2293101882.jpg?w=240#038;h=900&amp;#038;crop=1 240w, https://www.rollingstone.com/wp-content/uploads/2026/09/GettyImages-2293101882.jpg?w=340#038;h=900&amp;#038;crop=1 340w, https://www.rollingstone.com/wp-content/uploads/2026/09/GettyImages-2293101882.jpg?w=510#038;h=900&amp;#038;crop=1 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Phoebe Bridgers Talks ‘Super Intimidating’ Acting Debut at ‘Primetime’ Venice Premiere</h3>
+	<p class="about">“She’s unbelievable,” Robert Pattinson said of his musician co-star. &quot;Even on the first day, she was so relaxed&quot;</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.rollingstone.com/music/music-news/phoebe-bridgers-talks-acting-debut-primetime-venice-premiere-1235622112/" target="_blank" rel="noopener noreferrer">Rolling Stone Music &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
 <article class="card compact no-snippet" style="--rail:#a78bfa" data-count="1" data-id="rss:https://kk.org/cooltools/the-1930-poetry-book-that-anthropic-tried-to-censor/" data-srckey="hacker news" data-cat="ai" data-sent="0" data-ts="1788620690000" data-slug="cooltools the poetry book that anthropic tried censor">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Poetry book that Anthropic tried to censor — flip for details">
@@ -1417,6 +1469,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://deadline.com/2026/09/primetime-review-robert-pattinson-lance-oppenheim-venice-1237068867/" target="_blank" rel="noopener noreferrer">Deadline &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235614874" data-srckey="rolling stone music" data-cat="music" data-sent="0" data-ts="1788620400000" data-slug="music features cds revival gen compact discs">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="CDs Are Back, and We Think We Know Why — flip for details">
+	<div class="meta"><span class="src" style="color:#fb7185">ROLLING STONE MUSIC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T15:00:00.000Z">11:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
+	<h3 class="title">CDs Are Back, and We Think We Know Why</h3>
+	<p class="snippet">Data shows that Gen Z fans are listening to music from the Nineties and earlier on those shiny round discs</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.rollingstone.com/wp-content/uploads/2026/09/CDWEBFDSC07782.jpg?w=340#038;h=900&amp;#038;crop=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://www.rollingstone.com/wp-content/uploads/2026/09/CDWEBFDSC07782.jpg?w=240#038;h=900&amp;#038;crop=1 240w, https://www.rollingstone.com/wp-content/uploads/2026/09/CDWEBFDSC07782.jpg?w=340#038;h=900&amp;#038;crop=1 340w, https://www.rollingstone.com/wp-content/uploads/2026/09/CDWEBFDSC07782.jpg?w=510#038;h=900&amp;#038;crop=1 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">CDs Are Back, and We Think We Know Why</h3>
+	<p class="about">Data shows that Gen Z fans are listening to music from the Nineties and earlier on those shiny round discs</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.rollingstone.com/music/music-features/cds-revival-gen-z-compact-discs-1235614874/" target="_blank" rel="noopener noreferrer">Rolling Stone Music &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -7729,7 +7806,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2736 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2733 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241376" data-cat="entertainment" data-sent="0" data-slug="interest toei animation confirms license for french dragon ball theme park" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-04/toei-animation-confirms-no-license-for-french-dragon-ball-theme-park/.241376" target="_blank" rel="noopener noreferrer">Toei Animation Confirms No License for French Dragon Ball Theme Park</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241422" data-cat="entertainment" data-sent="0" data-slug="news yowaki max reijo nanoni ratsuwan konyakusha sama kake notte shimatta anime reveals theme song" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-09-04/yowaki-max-reijo-nanoni-ratsuwan-konyakusha-sama-no-kake-ni-notte-shimatta-anime-reveals-theme-song-/.241422" target="_blank" rel="noopener noreferrer">&#39;Yowaki MAX Reijō nanoni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta&#39; Anime Reveals Theme Song Artist, October 4 Debut</a></li>
@@ -10464,9 +10541,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/2026/aug/28/nepal-tibet-flash-floods-red-cross-rescuers-death-toll" data-cat="world" data-sent="0" data-slug="world aug nepal tibet flash floods red cross rescuers death toll" hidden="until-found"><span class="ameta"><span class="src sc11">GUARDIAN WORLD</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.theguardian.com/world/2026/aug/28/nepal-tibet-flash-floods-red-cross-rescuers-death-toll" target="_blank" rel="noopener noreferrer">At least 93,000 ‘in great need’ after Nepal-Tibet flash floods, says Red Cross</a></li>
 <li class="arow" data-count="1" data-id="rss:https://dev.to/jesstemporal/-10j5" data-cat="dev" data-sent="0" data-slug="jesstemporal 10j5" hidden="until-found"><span class="ameta"><span class="src sc48">DEV.TO</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Dev</span></span></span><a class="atitle" href="https://dev.to/jesstemporal/-10j5" target="_blank" rel="noopener noreferrer">Go watch it =)</a></li>
 <li class="arow" data-count="1" data-id="rss:WP-MKTW-0005204396" data-cat="markets" data-sent="0" data-slug="story why you shouldnt use pick medicare plan 5db7c50f" hidden="until-found"><span class="ameta"><span class="src sc13">MARKETWATCH</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Markets</span></span></span><a class="atitle" href="https://www.marketwatch.com/story/why-you-shouldnt-use-ai-to-pick-a-medicare-plan-5db7c50f?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Why you shouldn’t use AI to pick a Medicare plan</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241090" data-cat="entertainment" data-sent="0" data-slug="news yang cant live alone manga switches publishers" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-08-28/yang-cant-live-alone-manga-switches-publishers/.241090" target="_blank" rel="noopener noreferrer">Yang Can&#39;t Live Alone Manga Switches Publishers</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.washingtonpost.com/sports/2026/08/28/east-potomac-golf-tree-removal-begins-ahead-trump-project/" data-cat="politics" data-sent="0" data-slug="sports east potomac golf tree removal begins ahead trump project" hidden="until-found"><span class="ameta"><span class="src sc22">WASHINGTON POST POLITICS</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Politics</span></span></span><a class="atitle" href="https://www.washingtonpost.com/sports/2026/08/28/east-potomac-golf-tree-removal-begins-ahead-trump-project/" target="_blank" rel="noopener noreferrer">Trees are coming down by the dozen as Trump’s D.C. golf makeover nears</a></li>
-<li class="arow" data-count="1" data-id="rss:WP-MKTW-0005204420" data-cat="markets" data-sent="0" data-slug="story charts that show why americans longer believe hard work enough for financial success 526faf74" hidden="until-found"><span class="ameta"><span class="src sc13">MARKETWATCH</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Markets</span></span></span><a class="atitle" href="https://www.marketwatch.com/story/3-charts-that-show-why-americans-no-longer-believe-hard-work-is-enough-for-financial-success-526faf74?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">3 charts that show why Americans no longer believe hard work is enough for financial success</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
