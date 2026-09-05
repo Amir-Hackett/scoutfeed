@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-05T22:37:31.858Z">
+<meta name="sf-version" content="2026-09-05T23:37:31.788Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -631,6 +631,7 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
@@ -656,7 +657,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb7185"] { color: #a72041 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(260 55% 72%)"] { color: #674c95 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(271 55% 72%)"] { color: #704891 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(224 55% 72%)"] { color: #495b8f !important; }
@@ -682,10 +682,11 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(159 55% 72%)"] { color: #176d56 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(71 55% 72%)"] { color: #5a6512 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(244 55% 72%)"] { color: #5a519b !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(114 55% 72%)"] { color: #2a6f24 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(250 55% 72%)"] { color: #5e5099 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(342 55% 72%)"] { color: #8a435b !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(329 55% 72%)"] { color: #884169 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(52 55% 72%)"] { color: #695e19 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(35 55% 72%)"] { color: #75582c !important; }
 .sc0 { color: hsl(269 55% 72%); }
 :root[data-theme="light"] .sc0 { color: #6e4992; }
 .sc1 { color: #fb923c; }
@@ -944,10 +945,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 6:37 PM &middot; 328 TODAY</p>
+	<p class="stats">UPDATED 7:37 PM &middot; 329 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">221</span><span class="sr-only"> — 221 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">398</span><span class="sr-only"> — 398 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">206</span><span class="sr-only"> — 206 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">259</span><span class="sr-only"> — 259 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">113</span><span class="sr-only"> — 113 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">309</span><span class="sr-only"> — 309 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">528</span><span class="sr-only"> — 528 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">333</span><span class="sr-only"> — 333 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">292</span><span class="sr-only"> — 292 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">221</span><span class="sr-only"> — 221 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">163</span><span class="sr-only"> — 163 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">397</span><span class="sr-only"> — 397 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">206</span><span class="sr-only"> — 206 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">259</span><span class="sr-only"> — 259 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">113</span><span class="sr-only"> — 113 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">309</span><span class="sr-only"> — 309 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">528</span><span class="sr-only"> — 528 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">333</span><span class="sr-only"> — 333 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">294</span><span class="sr-only"> — 294 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1225,43 +1226,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.usopen.org/en_US/news/articles/2026-09-04/michael_zheng_and_arthur_gea_are_primed_for_the_2026_us_open_stage.html" target="_blank" rel="noopener noreferrer">Michael Zheng and Arthur Gea are primed for the 2026 US Open stage</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(159 55% 72%)">US OPEN TENNIS</span><span class="sep" aria-hidden="true">&middot;</span>"gea tennis" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://hdfcsky.com/news/india-vix-falls-5-82percent-as-equities-recover-and-fed-risks-ease-september-4-2026" target="_blank" rel="noopener noreferrer">India VIX Falls 5.82% to 10.79 as Markets Rebound, Rate Fears Ease</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(250 55% 72%)">HDFC SKY</span><span class="sep" aria-hidden="true">&middot;</span>"vix" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sports.yahoo.com/articles/saturday-spotlight-know-more-tennessee-175050390.html" target="_blank" rel="noopener noreferrer">Saturday Spotlight: Get to Know More About Tennessee Receiver Mike Matthews</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(71 55% 72%)">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"mike matthews" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.sportsnet.ca/mls/article/mls-preview-tfc-faces-tough-foe-as-lewandowski-fire-come-to-town/" target="_blank" rel="noopener noreferrer">MLS preview: TFC faces tough foe as Lewandowski, Fire come to town</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(342 55% 72%)">SPORTSNET.CA</span><span class="sep" aria-hidden="true">&middot;</span>"chicago fire - toronto" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nfl.com/videos/gmfb-crew-reacts-to-raiders-naming-kirk-cousins-qb1-over-fernando-mendoza" target="_blank" rel="noopener noreferrer">&#39;GMFB&#39; crew reacts to Raiders naming Kirk Cousins QB1 over Fernando Mendoza</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(183 55% 72%)">NFL.COM</span><span class="sep" aria-hidden="true">&middot;</span>"fernando mendoza las vegas raiders" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://floridagators.com/news/2026/9/4/football-florida-florida-atlantic-what-you-need-to-know" target="_blank" rel="noopener noreferrer">Florida-Florida Atlantic: What You Need to Know</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(329 55% 72%)">FLORIDA GATORS</span><span class="sep" aria-hidden="true">&middot;</span>"fl atlantic vs florida" &middot; 20000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.yahoo.com/news/slideshows/alabama-state-football-vs-lane-203800770.html" target="_blank" rel="noopener noreferrer">Alabama State football vs Lane photo gallery: Images from home opener</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(152 55% 72%)">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"lane vs alabama state" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://apnews.com/article/cf-montreal-philadelphia-union-soccer-mls-soccer-5867025a95444758ab391071a3f064bd" target="_blank" rel="noopener noreferrer">Philadelphia Union host CF Montreal in conference matchup</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(52 55% 72%)">AP NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"montréal vs philadelphia" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.foxnews.com/outkick-sports/alabama-high-school-qb-leaves-fans-awe-record-breaking-touchdown-pass" target="_blank" rel="noopener noreferrer">Alabama high school QB leaves fans in awe with record-breaking touchdown pass</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(244 55% 72%)">FOX NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"trent seaborn" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.sportsgambler.com/betting-tips/football/fc-cincinnati-vs-dc-united-prediction-lineups-odds-2026-09-05/" target="_blank" rel="noopener noreferrer">FC Cincinnati vs D.C. United Prediction, Betting Tips, Lineups &amp; Odds | 05 Sep 2026</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(35 55% 72%)">SPORTSGAMBLER</span><span class="sep" aria-hidden="true">&middot;</span>"d.c. united vs cincinnati" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.batterypower.com/atlanta-braves-game-information/139315/atlanta-braves-vs-phillies-tv-streaming-radio-start-time-look-to-take-another-in-philly-behind-martin-perez" target="_blank" rel="noopener noreferrer">Braves look to take another in Philly behind Martin Perez</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(114 55% 72%)">BATTERY POWER</span><span class="sep" aria-hidden="true">&middot;</span>"braves - phillies" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://sicem365.com/s/21703/baylor-safety-jacob-redding-to-miss-2026-season-with-knee-injury" target="_blank" rel="noopener noreferrer">Baylor Safety Jacob Redding to Miss 2026 Season with Knee Injury</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(69 55% 72%)">SICEM365</span><span class="sep" aria-hidden="true">&middot;</span>"baylor university football" &middot; 500+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1284,6 +1285,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://variety.com/2026/film/reviews/everest-the-other-side-review-1236852376/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 h2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://github.com/okf-memory/okf-agent-memory" data-srckey="hacker news" data-cat="tech" data-sent="0" data-ts="1788646552000" data-slug="okf memory agent">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="OKF Agent Memory – Git-native persistent memory for AI coding agents — flip for details">
+	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T22:15:52.000Z">6:15 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">OKF Agent Memory – Git-native persistent memory for AI coding agents</h3>
+	<p class="snippet">Git-native persistent memory for AI coding agents. Implements Google OKF v0.2 with sub-300µs in-memory BM25 search, embedded MCP server, and progressive disclosure. Slashes token bloat by 80% with ...</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://opengraph.githubassets.com/a6b9b45dfa3010477156875c59772adae7ec3fcb57a68b41f4616a9569d19bf9/okf-memory/okf-agent-memory" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">OKF Agent Memory – Git-native persistent memory for AI coding agents</h3>
+	<p class="about">Git-native persistent memory for AI coding agents. Implements Google OKF v0.2 with sub-300µs in-memory BM25 search, embedded MCP server, and progressive disclosure. Slashes token bloat by 80% with ...</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://github.com/okf-memory/okf-agent-memory" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -7048,13 +7074,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Trump’s Pentagon shake-up revives a presidential power play with a long history — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(101 55% 72%)">FOX NEWS POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T11:00:48.000Z">7:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
 	<h3 class="title">Trump’s Pentagon shake-up revives a presidential power play with a long history</h3>
-	<p class="snippet">Dan Driscoll&#39;s exit as Army secretary intensifies debate over whether Trump&#39;s Pentagon overhaul strengthens or destabilizes military leadership.</p>
+	<p class="snippet">Dan Driscoll’s departure as Army secretary has brought new scrutiny to the Trump administration’s sweeping changes at the Pentagon, with Democrats and some Republicans warning that Defense Secretary Pete Hegseth’s approach is creating instability among the military’s top leaders. But the president replacing senior military leaders is nothing new. Presidents from Abraham Lincoln to Harry Truman have removed commanders when they lost confidence in their leadership, disagreed over strategy or wanted a different direction. What stands out about the current moment is the pace of the turnover — and the debate over whether the administration’s changes are putting the military on a stronger footing or creating leadership gaps along the way. COMMANDING GENERAL OF THE US ARMY IN EUROPEAN AND…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/09/931/523/lincoln-obama-truman-split.jpg?ve=1&amp;tl=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Trump’s Pentagon shake-up revives a presidential power play with a long history</h3>
-	<p class="about">Dan Driscoll&#39;s exit as Army secretary intensifies debate over whether Trump&#39;s Pentagon overhaul strengthens or destabilizes military leadership.</p>
+	<p class="about">Dan Driscoll’s departure as Army secretary has brought new scrutiny to the Trump administration’s sweeping changes at the Pentagon, with Democrats and some Republicans warning that Defense Secretary Pete Hegseth’s approach is creating instability among the military’s top leaders. But the president replacing senior military leaders is nothing new. Presidents from Abraham Lincoln to Harry Truman have removed commanders when they lost confidence in their leadership, disagreed over strategy or wanted a different direction. What stands out about the current moment is the pace of the turnover — and the debate over whether the administration’s changes are putting the military on a stronger footing or creating leadership gaps along the way. COMMANDING GENERAL OF THE US ARMY IN EUROPEAN AND…</p>
 	
 	
 	<div class="actions">
@@ -7273,13 +7299,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Antonelli &#39;disrupting rules of fandom&#39; in Ferrari&#39;s Italy — flip for details">
 	<div class="meta"><span class="src" style="color:#facc15">BBC SPORT</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T10:37:00.000Z">6:37 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
 	<h3 class="title">Antonelli &#39;disrupting rules of fandom&#39; in Ferrari&#39;s Italy</h3>
-	<p class="snippet">BBC Sport heads to Monza to find out if Italians want Kimi Antonelli to win the F1 title or if it is all about Ferrari.</p>
+	<p class="snippet">Kimi Antonelli has been hailed as a generational talent in Formula 1; the driver who can end the 73-year wait for an Italian world champion. In March, Antonelli became the youngest-ever championship leader when he sealed victory in Japan at 19 years, seven months and four days. This weekend, Antonelli arrives at the Italian Grand Prix with a 59-point advantage at the top of the standings after winning six races so far this year. There is just one small issue: the young star drives for Mercedes, not Italy&#39;s beloved Ferrari. &quot;Ferrari is my heart,&quot; says Thomas, who is Monza born and bred, to BBC Sport at the circuit on Friday. &quot;It&#39;s a religion,&quot; says Emanuele, who is at the grand prix with his daughter, Matilde. &quot;In Italy, we do support other teams and other sports, but there is only one…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/f337/live/88ad9d50-a877-11f1-824a-0fc4c5d895ae.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/600/cpsprodpb/f337/live/88ad9d50-a877-11f1-824a-0fc4c5d895ae.png 600w, https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/f337/live/88ad9d50-a877-11f1-824a-0fc4c5d895ae.png 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Antonelli &#39;disrupting rules of fandom&#39; in Ferrari&#39;s Italy</h3>
-	<p class="about">BBC Sport heads to Monza to find out if Italians want Kimi Antonelli to win the F1 title or if it is all about Ferrari.</p>
+	<p class="about">Kimi Antonelli has been hailed as a generational talent in Formula 1; the driver who can end the 73-year wait for an Italian world champion. In March, Antonelli became the youngest-ever championship leader when he sealed victory in Japan at 19 years, seven months and four days. This weekend, Antonelli arrives at the Italian Grand Prix with a 59-point advantage at the top of the standings after winning six races so far this year. There is just one small issue: the young star drives for Mercedes, not Italy&#39;s beloved Ferrari. &quot;Ferrari is my heart,&quot; says Thomas, who is Monza born and bred, to BBC Sport at the circuit on Friday. &quot;It&#39;s a religion,&quot; says Emanuele, who is at the grand prix with his daughter, Matilde. &quot;In Italy, we do support other teams and other sports, but there is only one…</p>
 	
 	
 	<div class="actions">
@@ -7448,13 +7474,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Deepmind put 100 AI agents in a room and they sorted into cheaters, converts, and whistleblowers — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(45 55% 72%)">THE DECODER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T10:22:38.000Z">6:22 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
 	<h3 class="title">Deepmind put 100 AI agents in a room and they sorted into cheaters, converts, and whistleblowers</h3>
-	<p class="snippet">Google Deepmind set up a simulated research conference where 100 Gemini agents were supposed to prove mathematical conjectures together. Instead, one agent found a loophole in the grading system, and within 27 minutes every remaining problem was &quot;solved&quot; with fake proofs. The swarm split into cheaters, converts, and whistleblowers. The whistleblowers organized protests and boycotts on their own…</p>
+	<p class="snippet">What happens when you put 100 autonomous AI agents to work proving mathematical conjectures together? Researchers at Google Deepmind set up the experiment to study collaborative problem-solving, but what they got was a swarm that split into cheaters and whistleblowers. Researchers at Google Deepmind set up a simulated scientific conference with 100 AI agents, all running on Gemini 3.1 Pro. The agents shared the same base weights and core prompts but were given randomized domain personas and minor specializations. Their task was to solve 71 formalized mathematical conjectures in the Lean proof language. The problems ranged from easy exercises to unsolved open conjectures like the square-freeness of Fermat numbers. The agents could talk to each other through a public forum, direct messages…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://the-decoder.com/wp-content/uploads/2026/09/agent_conference_math_google_deepmind.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Deepmind put 100 AI agents in a room and they sorted into cheaters, converts, and whistleblowers</h3>
-	<p class="about">Google Deepmind set up a simulated research conference where 100 Gemini agents were supposed to prove mathematical conjectures together. Instead, one agent found a loophole in the grading system, and within 27 minutes every remaining problem was &quot;solved&quot; with fake proofs. The swarm split into cheaters, converts, and whistleblowers. The whistleblowers organized protests and boycotts on their own…</p>
+	<p class="about">What happens when you put 100 autonomous AI agents to work proving mathematical conjectures together? Researchers at Google Deepmind set up the experiment to study collaborative problem-solving, but what they got was a swarm that split into cheaters and whistleblowers. Researchers at Google Deepmind set up a simulated scientific conference with 100 AI agents, all running on Gemini 3.1 Pro. The agents shared the same base weights and core prompts but were given randomized domain personas and minor specializations. Their task was to solve 71 formalized mathematical conjectures in the Lean proof language. The problems ranged from easy exercises to unsolved open conjectures like the square-freeness of Fermat numbers. The agents could talk to each other through a public forum, direct messages…</p>
 	
 	
 	<div class="actions">
@@ -9471,7 +9497,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2667 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2666 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241376" data-cat="entertainment" data-sent="0" data-slug="interest toei animation confirms license for french dragon ball theme park" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-04/toei-animation-confirms-no-license-for-french-dragon-ball-theme-park/.241376" target="_blank" rel="noopener noreferrer">Toei Animation Confirms No License for French Dragon Ball Theme Park</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241422" data-cat="entertainment" data-sent="0" data-slug="news yowaki max reijo nanoni ratsuwan konyakusha sama kake notte shimatta anime reveals theme song" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-09-04/yowaki-max-reijo-nanoni-ratsuwan-konyakusha-sama-no-kake-ni-notte-shimatta-anime-reveals-theme-song-/.241422" target="_blank" rel="noopener noreferrer">&#39;Yowaki MAX Reijō nanoni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta&#39; Anime Reveals Theme Song Artist, October 4 Debut</a></li>
@@ -10589,6 +10615,7 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/news/trump-jr-linked-fund-invest-300m-polymarket-1b-round" data-cat="markets" data-sent="0" data-slug="news trump linked fund invest 300m polymarket round" hidden="until-found"><span class="ameta"><span class="src sc30">COINTELEGRAPH</span> &middot; Sep 1<span class="acat"> &middot; <span class="cat">Markets</span></span></span><a class="atitle" href="https://cointelegraph.com/news/trump-jr-linked-fund-invest-300m-polymarket-1b-round" target="_blank" rel="noopener noreferrer">Trump Jr.-linked 1789 Capital leads Polymarket’s $1B raise: Report</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/2026/sep/01/canada-liberals-special-elections-mark-carney" data-cat="world" data-sent="0" data-slug="world sep canada liberals special elections mark carney" hidden="until-found"><span class="ameta"><span class="src sc11">GUARDIAN WORLD</span> &middot; Sep 1<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.theguardian.com/world/2026/sep/01/canada-liberals-special-elections-mark-carney" target="_blank" rel="noopener noreferrer">Canada’s ruling Liberals sweep byelections in boost to Mark Carney</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236686483" data-cat="entertainment" data-sent="0" data-slug="news shadow has fallen season iwan rheon brendan coyle africa" hidden="until-found"><span class="ameta"><span class="src sc2">HOLLYWOOD REPORTER</span> &middot; Sep 1<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.hollywoodreporter.com/tv/tv-news/shadow-has-fallen-season-3-iwan-rheon-brendan-coyle-africa-1236686483/" target="_blank" rel="noopener noreferrer">‘Shadow Has Fallen’: Iwan Rheon, Brendan Coyle, Atandwa Kani Join ‘Has Fallen’ Season 3</a></li>
+<li class="arow" data-count="1" data-id="rss:https://michaelteter.com/flyby.html" data-cat="tech" data-sent="0" data-slug="flyby html" hidden="until-found"><span class="ameta"><span class="src sc1">HACKER NEWS</span> &middot; Sep 1<span class="acat"> &middot; <span class="cat">Tech</span></span></span><a class="atitle" href="https://michaelteter.com/flyby.html" target="_blank" rel="noopener noreferrer">Show HN: Fly By – retro biplane flying game</a></li>
 <li class="arow" data-count="1" data-id="rss:108356786" data-cat="ai" data-sent="0" data-slug="hugging faces new duck robot selling fast chinese chip powers html" hidden="until-found"><span class="ameta"><span class="src sc21">CNBC</span> &middot; Sep 1<span class="acat"> &middot; <span class="cat">AI</span></span></span><a class="atitle" href="https://www.cnbc.com/2026/09/01/hugging-faces-new-duck-robot-is-selling-fast-a-chinese-chip-powers-it.html" target="_blank" rel="noopener noreferrer">Hugging Face&#39;s new duck robot is selling fast. A Chinese chip powers it</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236685285" data-cat="entertainment" data-sent="0" data-slug="news love island usa season reunion highlights best moments" hidden="until-found"><span class="ameta"><span class="src sc2">HOLLYWOOD REPORTER</span> &middot; Sep 1<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.hollywoodreporter.com/tv/tv-news/love-island-usa-season-8-reunion-highlights-best-moments-1236685285/" target="_blank" rel="noopener noreferrer">‘Love Island USA’ Season 8 Reunion Sees Fiery Islander Confrontations, Tear-Filled Moments and More</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788189407" data-cat="world" data-sent="0" data-slug="news duolingo day iranians question latest sanctions targeting education" hidden="until-found"><span class="ameta"><span class="src sc49">AL JAZEERA</span> &middot; Sep 1<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.aljazeera.com/news/2026/9/1/duolingo-d-day-iranians-question-latest-us-sanctions-targeting-education?traffic_source=rss" target="_blank" rel="noopener noreferrer">Duolingo D-Day: Iranians question latest US sanctions targeting education</a></li>
@@ -12138,8 +12165,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/the-simpsons-black-mirror-special-crossover-yellow-mirror/" data-cat="entertainment" data-sent="0" data-slug="the simpsons black mirror special crossover yellow" hidden="until-found"><span class="ameta"><span class="src sc46">POLYGON</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.polygon.com/the-simpsons-black-mirror-special-crossover-yellow-mirror/" target="_blank" rel="noopener noreferrer">&#39;The Simpsons&#39;&#39; 2-Part Crossover With a Beloved Netflix Sci-Fi Series Is Officially #1 on Streaming</a></li>
 <li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236846186" data-cat="entertainment" data-sent="0" data-slug="news new pokemon stop motion series disney plus deal" hidden="until-found"><span class="ameta"><span class="src sc47">VARIETY</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://variety.com/2026/tv/news/new-pokemon-stop-motion-series-disney-plus-deal-1236846186/" target="_blank" rel="noopener noreferrer">Disney+, Pokemon Company Ink Global Distribution Deal, Including New Stop-Motion Series</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.billboard.com/?p=1236327800" data-cat="music" data-sent="0" data-slug="music news ninajirachi ipod touch madeon remix" hidden="until-found"><span class="ameta"><span class="src sc21">BILLBOARD</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Music</span></span></span><a class="atitle" href="https://www.billboard.com/music/music-news/ninajirachi-ipod-touch-madeon-remix-1236327800/" target="_blank" rel="noopener noreferrer">Madeon’s First Official Remix Since 2012 Is a Shimmering Take on Ninajirachi’s ‘iPod Touch’</a></li>
-<li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236845553" data-cat="entertainment" data-sent="0" data-slug="film features rafael manuel filipinana social commentary" hidden="until-found"><span class="ameta"><span class="src sc47">VARIETY</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://variety.com/2026/film/features/rafael-manuel-filipinana-social-commentary-1236845553/" target="_blank" rel="noopener noreferrer">Rafael Manuel on Why the Golf Course in ‘Filipiñana’ Is a Metaphor for Inequality in the Philippines</a></li>
-<li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/suwcbt" data-cat="dev" data-sent="0" data-slug="how catstxt showed llmstxt evidence" hidden="until-found"><span class="ameta"><span class="src sc27">LOBSTERS</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Dev</span></span></span><a class="atitle" href="https://markwilliamscook.substack.com/p/how-catstxt-showed-llmstxt-evidence" target="_blank" rel="noopener noreferrer">How cats.txt showed llms.txt evidence is GEO astrology</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
