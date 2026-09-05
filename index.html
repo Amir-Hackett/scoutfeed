@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-05T18:15:03.495Z">
+<meta name="sf-version" content="2026-09-05T18:20:30.417Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -631,10 +631,10 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(336 55% 72%)"] { color: #894262 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#facc15"] { color: #815500 !important; }
@@ -945,10 +945,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 2:15 PM &middot; 305 TODAY</p>
+	<p class="stats">UPDATED 2:20 PM &middot; 306 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">175</span><span class="sr-only"> — 175 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">227</span><span class="sr-only"> — 227 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">394</span><span class="sr-only"> — 394 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">208</span><span class="sr-only"> — 208 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">261</span><span class="sr-only"> — 261 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">116</span><span class="sr-only"> — 116 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">307</span><span class="sr-only"> — 307 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">529</span><span class="sr-only"> — 529 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">328</span><span class="sr-only"> — 328 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">291</span><span class="sr-only"> — 291 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">175</span><span class="sr-only"> — 175 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">227</span><span class="sr-only"> — 227 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">394</span><span class="sr-only"> — 394 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">208</span><span class="sr-only"> — 208 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">261</span><span class="sr-only"> — 261 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">115</span><span class="sr-only"> — 115 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">307</span><span class="sr-only"> — 307 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">529</span><span class="sr-only"> — 529 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">328</span><span class="sr-only"> — 328 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">292</span><span class="sr-only"> — 292 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1278,6 +1278,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://variety.com/2026/film/reviews/everest-the-other-side-review-1236852376/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.engadget.com/2247939/how-to-remap-keys-windows/" data-srckey="engadget" data-cat="tech" data-sent="0" data-ts="1788631200000" data-slug="how remap keys windows">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="You&#39;re probably wasting these keys on your keyboard — here&#39;s how to remap them — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(229 55% 72%)">ENGADGET</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T18:00:00.000Z">2:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">You&#39;re probably wasting these keys on your keyboard — here&#39;s how to remap them</h3>
+	<p class="snippet">There are almost certainly keys on your keyboard that you never touch. Assign new functions to give them a job.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.engadget.com/img/gallery/youre-probably-wasting-these-keys-on-your-keyboard-heres-how-to-remap-them/l-intro-1788180462.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">You&#39;re probably wasting these keys on your keyboard — here&#39;s how to remap them</h3>
+	<p class="about">There are almost certainly keys on your keyboard that you never touch. Assign new functions to give them a job.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.engadget.com/2247939/how-to-remap-keys-windows/" target="_blank" rel="noopener noreferrer">Engadget &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1892,13 +1917,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="2026 Has Been the Best Year for City-Builders in Decades — flip for details">
 	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T16:00:15.000Z">12:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
 	<h3 class="title">2026 Has Been the Best Year for City-Builders in Decades</h3>
-	<p class="snippet">2026&#39;s release calendar is packed with top-notch city builders like Timberborn, Transport Fever 3, Corsair Cove, and a whole lot more</p>
+	<p class="snippet">I picked the best possible year to get deep into city builders, at least in terms of being spoiled for high-quality choices. Having the time to play them all? Yeah, that&#39;s another matter entirely. 2026&#39;s release calendar has already been packed with some excellent new games, and there&#39;s more to come heading into 2027 as well. After years in early access, the 1.0 version of Mechanistry&#39;s whimsical Timberborn finally launched in March. I call it whimsical because it simply couldn’t fit more whimsy into it: You’re a beaver planner building a giant beaver city. It&#39;s a crunchy management sim nonetheless. You&#39;re managing water flow via aqueducts and dams (what else?) and making the most of limited space on your island, which means building up once the lateral space runs out. Once you get used…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/town-to-city.jpg?w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/town-to-city.jpg?w=600 600w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/town-to-city.jpg?w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">2026 Has Been the Best Year for City-Builders in Decades</h3>
-	<p class="about">2026&#39;s release calendar is packed with top-notch city builders like Timberborn, Transport Fever 3, Corsair Cove, and a whole lot more</p>
+	<p class="about">I picked the best possible year to get deep into city builders, at least in terms of being spoiled for high-quality choices. Having the time to play them all? Yeah, that&#39;s another matter entirely. 2026&#39;s release calendar has already been packed with some excellent new games, and there&#39;s more to come heading into 2027 as well. After years in early access, the 1.0 version of Mechanistry&#39;s whimsical Timberborn finally launched in March. I call it whimsical because it simply couldn’t fit more whimsy into it: You’re a beaver planner building a giant beaver city. It&#39;s a crunchy management sim nonetheless. You&#39;re managing water flow via aqueducts and dams (what else?) and making the most of limited space on your island, which means building up once the lateral space runs out. Once you get used…</p>
 	
 	
 	<div class="actions">
@@ -2217,13 +2242,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="UN experts urge Sudan-wide arms embargo — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(279 55% 72%)">FRANCE 24</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T15:16:39.000Z">11:16 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
 	<h3 class="title">UN experts urge Sudan-wide arms embargo</h3>
-	<p class="snippet">A weapons embargo must be extended to the whole of Sudan, and it must be enforced. That is, in essence, the conclusion of a UN experts&#39; report presented to the Human Rights Council. The report also points to the responsibility of foreign entities in a conflict that has now been raging for more than three years. Our correspondent Bastien Renouil tells us more.</p>
+	<p class="snippet">A weapons embargo must be extended to the whole of Sudan, and it must be enforced. That is, in essence, the conclusion of a UN experts&#39; report presented to the Human Rights Council. The report also points to the responsibility of foreign entities in a conflict that has now been raging for more than three years. Our correspondent Bastien Renouil tells us more. Witkoff and Kushner are in Moscow in a new push for peace between Russia and Ukraine Nepal: Temporary education centres help flood-displaced children</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://s.france24.com/media/display/1cec4f4c-a92d-11f1-9149-005056bfb2b6/w:1024/p:16x9/EN-20260904-214333-214523-CS.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">UN experts urge Sudan-wide arms embargo</h3>
-	<p class="about">A weapons embargo must be extended to the whole of Sudan, and it must be enforced. That is, in essence, the conclusion of a UN experts&#39; report presented to the Human Rights Council. The report also points to the responsibility of foreign entities in a conflict that has now been raging for more than three years. Our correspondent Bastien Renouil tells us more.</p>
+	<p class="about">A weapons embargo must be extended to the whole of Sudan, and it must be enforced. That is, in essence, the conclusion of a UN experts&#39; report presented to the Human Rights Council. The report also points to the responsibility of foreign entities in a conflict that has now been raging for more than three years. Our correspondent Bastien Renouil tells us more. Witkoff and Kushner are in Moscow in a new push for peace between Russia and Ukraine Nepal: Temporary education centres help flood-displaced children</p>
 	
 	
 	<div class="actions">
@@ -8890,7 +8915,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2690 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2689 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241376" data-cat="entertainment" data-sent="0" data-slug="interest toei animation confirms license for french dragon ball theme park" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-04/toei-animation-confirms-no-license-for-french-dragon-ball-theme-park/.241376" target="_blank" rel="noopener noreferrer">Toei Animation Confirms No License for French Dragon Ball Theme Park</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241422" data-cat="entertainment" data-sent="0" data-slug="news yowaki max reijo nanoni ratsuwan konyakusha sama kake notte shimatta anime reveals theme song" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-09-04/yowaki-max-reijo-nanoni-ratsuwan-konyakusha-sama-no-kake-ni-notte-shimatta-anime-reveals-theme-song-/.241422" target="_blank" rel="noopener noreferrer">&#39;Yowaki MAX Reijō nanoni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta&#39; Anime Reveals Theme Song Artist, October 4 Debut</a></li>
@@ -11581,7 +11606,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:2ada0933-dec0-4c1d-b9f0-16824d5afb71" data-cat="games" data-sent="0" data-slug="articles capcom making life sized statues lady dimitrescu and albert wesker the internet being totally normal" hidden="until-found"><span class="ameta"><span class="src sc8">IGN</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Games</span></span></span><a class="atitle" href="https://www.ign.com/articles/capcom-is-making-life-sized-statues-of-lady-dimitrescu-and-albert-wesker-and-the-internet-is-being-totally-normal-about-it" target="_blank" rel="noopener noreferrer">Capcom Is Making Life-Sized Statues of Lady Dimitrescu and Albert Wesker, and the Internet Is Being Totally Normal About It</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cd68vpjv21do#2" data-cat="world" data-sent="0" data-slug="news articles cd68vpjv21do" hidden="until-found"><span class="ameta"><span class="src sc8">BBC WORLD</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.bbc.co.uk/news/articles/cd68vpjv21do" target="_blank" rel="noopener noreferrer">Satellite images reveal scale of flood devastation in Nepal villages</a></li>
 <li class="arow" data-count="1" data-id="rss:https://arstechnica.com/space/2026/08/trump-calls-for-creation-of-a-space-academy-to-train-future-nasa-leaders/" data-cat="tech" data-sent="0" data-slug="space trump calls for creation academy train future nasa leaders" hidden="until-found"><span class="ameta"><span class="src sc16">ARS TECHNICA</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Tech</span></span></span><a class="atitle" href="https://arstechnica.com/space/2026/08/trump-calls-for-creation-of-a-space-academy-to-train-future-nasa-leaders/" target="_blank" rel="noopener noreferrer">Here&#39;s what we know about the &quot;space academy&quot; Trump just announced</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.billboard.com/?p=1236327642" data-cat="music" data-sent="0" data-slug="music news post malone engagement ring fiancee christy lee revealed" hidden="until-found"><span class="ameta"><span class="src sc21">BILLBOARD</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Music</span></span></span><a class="atitle" href="https://www.billboard.com/music/music-news/post-malone-engagement-ring-fiancee-christy-lee-revealed-1236327642/" target="_blank" rel="noopener noreferrer">Post Malone’s ‘Immaculate’ 20-Carat Engagement Ring for Fiancée Christy Lee Revealed by Jeweler</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
