@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-05T13:31:15.264Z">
+<meta name="sf-version" content="2026-09-05T13:36:25.308Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,6 +537,7 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
 :root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
@@ -554,7 +555,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
-:root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
 :root[data-theme="light"] .meta [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
@@ -707,10 +707,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 9:31 AM &middot; 209 TODAY</p>
+	<p class="stats">UPDATED 9:36 AM &middot; 210 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">206</span><span class="sr-only"> — 206 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">171</span><span class="sr-only"> — 171 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">366</span><span class="sr-only"> — 366 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">211</span><span class="sr-only"> — 211 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">265</span><span class="sr-only"> — 265 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">119</span><span class="sr-only"> — 119 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">319</span><span class="sr-only"> — 319 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">532</span><span class="sr-only"> — 532 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">300</span><span class="sr-only"> — 300 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">206</span><span class="sr-only"> — 206 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">170</span><span class="sr-only"> — 170 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">367</span><span class="sr-only"> — 367 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">211</span><span class="sr-only"> — 211 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">265</span><span class="sr-only"> — 265 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">119</span><span class="sr-only"> — 119 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">319</span><span class="sr-only"> — 319 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">532</span><span class="sr-only"> — 532 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">300</span><span class="sr-only"> — 300 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -972,43 +972,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/sport/football/live/c50m31j84m8xt" target="_blank" rel="noopener noreferrer">Nottingham Forest vs Tottenham Hotspur: Premier League preview, team news, stats &amp; head-to-head</a>
-		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"nottm forest vs spurs" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.marca.com/futbol/laliga-ea-sports/athletic-atletico/2026/09/05/01_0101_20260905_174_175-directo.html" target="_blank" rel="noopener noreferrer">Athletic - Atlético, live | LaLiga EA Sports live today</a>
+		<p class="trend-meta"><span class="src">MARCA</span><span class="sep" aria-hidden="true">&middot;</span>"athletic vs atlético madrid" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/sport/football/live/cxr5031vq5npt" target="_blank" rel="noopener noreferrer">Brighton &amp; Hove Albion vs Leeds United: Premier League preview, team news, stats &amp; head-to-head</a>
-		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"brighton vs leeds" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://finance.yahoo.com/markets/stocks/articles/fubotv-rallies-7-disney-ticks-154335400.html" target="_blank" rel="noopener noreferrer">FuboTV Rallies 7%, Disney Ticks Up: Is the Hulu Live TV Deal Finally Getting Credit?</a>
+		<p class="trend-meta"><span class="src">YAHOO FINANCE</span><span class="sep" aria-hidden="true">&middot;</span>"fubo" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sports.yahoo.com/college-football/article/push-reset-after-struggles-at-florida-dj-lagway-has-found-a-new-home-and-himself-at-baylor-131854567.html" target="_blank" rel="noopener noreferrer">&#39;Push reset&#39;: After struggles at Florida, DJ Lagway has found a new home (and himself) at Baylor</a>
-		<p class="trend-meta"><span class="src">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"dj lagway" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.wafb.com/2026/09/04/i-team-bipartisan-bill-seeks-uniform-rules-college-athletics-disputes-mount/" target="_blank" rel="noopener noreferrer">I-TEAM: Bipartisan bill seeks uniform rules for college athletics as disputes mount</a>
+		<p class="trend-meta"><span class="src">WAFB</span><span class="sep" aria-hidden="true">&middot;</span>"protect college sports act" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.wsj.com/opinion/free-expression/america-needs-its-boys-to-play-football-5b9673de" target="_blank" rel="noopener noreferrer">Opinion | America Needs Its Boys to Play Football</a>
-		<p class="trend-meta"><span class="src">WSJ</span><span class="sep" aria-hidden="true">&middot;</span>"ben sasse" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://collegefootballnews.com/college-football/army-vs-bryant-prediction-2026" target="_blank" rel="noopener noreferrer">Army vs Bryant Prediction: Did the Black Knights Learn Their Lesson?</a>
+		<p class="trend-meta"><span class="src">COLLEGE FOOTBALL NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"army football" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/sport/football/live/c6zxz89ewxlyt" target="_blank" rel="noopener noreferrer">Fulham vs Crystal Palace: Premier League preview, team news, stats &amp; head-to-head</a>
-		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"fulham vs palace" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.bangordailynews.com/2026/09/05/sports/college-football/umaine-football-husson-mma-joam40zk0w/" target="_blank" rel="noopener noreferrer">UMaine football seeking another win, while Husson, MMA and UNE open their seasons</a>
+		<p class="trend-meta"><span class="src">BANGOR DAILY NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"app state football" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.whufc.com/en/news/training-gallery-or-full-focus-on-derby" target="_blank" rel="noopener noreferrer">Training Gallery | Full focus on Derby</a>
-		<p class="trend-meta"><span class="src">WEST HAM UNITED</span><span class="sep" aria-hidden="true">&middot;</span>"west ham vs derby county" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.bbc.com/sport/football/live/c50m31j84m8xt" target="_blank" rel="noopener noreferrer">Nottingham Forest vs Tottenham Hotspur: Premier League preview, team news, stats &amp; head-to-head</a>
+		<p class="trend-meta"><span class="src">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"nottm forest vs spurs" &middot; 2000+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1030,6 +1030,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://variety.com/2026/film/reviews/everest-the-other-side-review-1236852376/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236852403" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788614898000" data-slug="film festivals liam noel gallagher skip oasis doc press conference venice">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Liam and Noel Gallagher Skip Oasis Documentary Press Conference at Venice Film Festival — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:28:18.000Z">9:28 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Liam and Noel Gallagher Skip Oasis Documentary Press Conference at Venice Film Festival</h3>
+	<p class="snippet">In news that might not surprise anyone, Liam and Noel Gallagher skipped the Venice Film Festival press conference for their upcoming Disney+ documentary “Oasis: Don’t Look Back in Anger” on Saturday. The two brothers — who reunited last year for their massive “Live ’25” tour after a 15-year feud — arrived on the Lido in […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/09/GettyImages-2293640331.jpg?w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/09/GettyImages-2293640331.jpg?w=600 600w, https://variety.com/wp-content/uploads/2026/09/GettyImages-2293640331.jpg?w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Liam and Noel Gallagher Skip Oasis Documentary Press Conference at Venice Film Festival</h3>
+	<p class="about">In news that might not surprise anyone, Liam and Noel Gallagher skipped the Venice Film Festival press conference for their upcoming Disney+ documentary “Oasis: Don’t Look Back in Anger” on Saturday. The two brothers — who reunited last year for their massive “Live ’25” tour after a 15-year feud — arrived on the Lido in […]</p>
+	
+	
+	<a class="more" href="https://variety.com/2026/film/festivals/liam-noel-gallagher-skip-oasis-doc-press-conference-venice-1236852403/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -14156,7 +14179,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2424 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2423 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:1714fe94-5177-41bc-806a-579b17621b44" data-cat="markets" data-sent="0" data-slug="policy banking agency gives blockchain bank openreserve initial operate" hidden="until-found"><span class="ameta">COINDESK &middot; Sep 3 &middot; Markets</span><a href="https://www.coindesk.com/policy/2026/09/03/u-s-banking-agency-gives-blockchain-bank-openreserve-initial-ok-to-operate" target="_blank" rel="noopener noreferrer">U.S. banking agency gives blockchain bank OpenReserve initial OK to operate</a></li>
 <li class="arow" data-count="1" data-id="rss:0fd0a417-dc00-42b1-9427-aa349c98ecd5" data-cat="politics" data-sent="0" data-slug="news johnny doc release prison president trump commutation" hidden="until-found"><span class="ameta">CBS POLITICS &middot; Sep 3 &middot; Politics</span><a href="https://www.cbsnews.com/news/johnny-doc-release-prison-president-trump-commutation/" target="_blank" rel="noopener noreferrer">Trump commutes former Philadelphia labor leader &quot;Johnny Doc&#39;s&quot; prison sentence</a></li>
@@ -16581,7 +16604,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/c14dlme86d8o#1" data-cat="sports" data-sent="0" data-slug="sport football articles c14dlme86d8o" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 28 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/football/articles/c14dlme86d8o" target="_blank" rel="noopener noreferrer">Man Utd agree terms to sign Swedish winger Jusu Bah</a></li>
 <li class="arow" data-count="1" data-id="rss:https://dev.to/dexterlung/i-cut-41-ai-tools-self-descriptions-in-half-then-ab-tested-that-trigger-rate-didnt-drop-54k4" data-cat="dev" data-sent="0" data-slug="dexterlung cut tools self descriptions half then tested that trigger rate didnt drop 54k4" hidden="until-found"><span class="ameta">DEV.TO &middot; Aug 28 &middot; Dev</span><a href="https://dev.to/dexterlung/i-cut-41-ai-tools-self-descriptions-in-half-then-ab-tested-that-trigger-rate-didnt-drop-54k4" target="_blank" rel="noopener noreferrer">I cut 41 AI tools&#39; self-descriptions in half, then A/B tested that trigger rate didn&#39;t drop</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.statnews.com/?p=1515308" data-cat="healthcare" data-sent="0" data-slug="pharmalot astrazeneca trial failure monstrous conflict interest" hidden="until-found"><span class="ameta">STAT NEWS &middot; Aug 28 &middot; Healthcare</span><a href="https://www.statnews.com/pharmalot/2026/08/28/astrazeneca-trial-failure-monstrous-conflict-of-interest/" target="_blank" rel="noopener noreferrer">STAT+: Pharmalittle: We’re reading about an AstraZeneca trial failure, a ‘monstrous’ conflict of interest, and more</a></li>
-<li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/oveaa3" data-cat="dev" data-sent="0" data-slug="oveaa3 what are you doing this weekend" hidden="until-found"><span class="ameta">LOBSTERS &middot; Aug 28 &middot; Dev</span><a href="https://lobste.rs/s/oveaa3/what_are_you_doing_this_weekend" target="_blank" rel="noopener noreferrer">What are you doing this weekend?</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
