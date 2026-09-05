@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-05T13:36:25.308Z">
+<meta name="sf-version" content="2026-09-05T13:43:07.299Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -537,10 +537,14 @@ h1 .tld { color: var(--accent); }
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
+:root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
+:root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
+:root[data-theme="light"] .meta [style*="hsl(224 55% 72%)"] { color: #495b8f !important; }
 :root[data-theme="light"] .meta [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] .meta [style*="#7dd3fc"] { color: #00678c !important; }
-:root[data-theme="light"] .meta [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
+:root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] .meta [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] .meta [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
@@ -552,8 +556,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] .meta [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] .meta [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
-:root[data-theme="light"] .meta [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
-:root[data-theme="light"] .meta [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] .meta [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] .meta [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] .meta [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
@@ -563,7 +565,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] .meta [style*="hsl(273 55% 72%)"] { color: #724890 !important; }
 :root[data-theme="light"] .meta [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
-:root[data-theme="light"] .meta [style*="hsl(224 55% 72%)"] { color: #495b8f !important; }
 :root[data-theme="light"] .meta [style*="#a78bfa"] { color: #6545ad !important; }
 :root[data-theme="light"] .meta [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
 :root[data-theme="light"] .meta [style*="hsl(243 55% 72%)"] { color: #58529b !important; }
@@ -576,7 +577,6 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] .meta [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] .meta [style*="#f97316"] { color: #aa2700 !important; }
-:root[data-theme="light"] .meta [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] .meta [style*="hsl(156 55% 72%)"] { color: #176e52 !important; }
 :root[data-theme="light"] .meta [style*="hsl(170 55% 72%)"] { color: #136c62 !important; }
 :root[data-theme="light"] .meta [style*="hsl(183 55% 72%)"] { color: #186a6e !important; }
@@ -707,10 +707,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 9:36 AM &middot; 210 TODAY</p>
+	<p class="stats">UPDATED 9:43 AM &middot; 215 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">206</span><span class="sr-only"> — 206 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">170</span><span class="sr-only"> — 170 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">367</span><span class="sr-only"> — 367 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">211</span><span class="sr-only"> — 211 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">265</span><span class="sr-only"> — 265 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">119</span><span class="sr-only"> — 119 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">319</span><span class="sr-only"> — 319 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">532</span><span class="sr-only"> — 532 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">300</span><span class="sr-only"> — 300 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">178</span><span class="sr-only"> — 178 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">205</span><span class="sr-only"> — 205 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">168</span><span class="sr-only"> — 168 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">367</span><span class="sr-only"> — 367 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">211</span><span class="sr-only"> — 211 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">265</span><span class="sr-only"> — 265 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">120</span><span class="sr-only"> — 120 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">319</span><span class="sr-only"> — 319 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">532</span><span class="sr-only"> — 532 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">335</span><span class="sr-only"> — 335 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">300</span><span class="sr-only"> — 300 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1038,6 +1038,75 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact w2 has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/numbpill3d/the-dealership-charges-180hr-for-this-i-do-it-with-an-esp32-off" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788615306000" data-slug="numbpill3d the dealership charges 180hr for this with esp32 off">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The Dealership Charges $180/hr for This, I Do It With an ESP32 — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:35:06.000Z">9:35 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">The Dealership Charges $180/hr for This, I Do It With an ESP32</h3>
+	<p class="snippet">Your car is not magic. It is just a noisy network with cupholders. Let me tell you how a service advisor tried to charge me $180 for a diagnostic that took my $18 microcontroller eleven seconds to do. I had a weird issue. Intermittent warning light. You know the one. The little orange gremlin that shows up on Tuesday, disappears on Wednesday, then comes back when you are already late for…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F566y2mffictoct06970x.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=240,height=125,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F566y2mffictoct06970x.png 240w, https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F566y2mffictoct06970x.png 340w, https://media2.dev.to/dynamic/image/width=510,height=266,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F566y2mffictoct06970x.png 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">The Dealership Charges $180/hr for This, I Do It With an ESP32</h3>
+	<p class="about">Your car is not magic. It is just a noisy network with cupholders. Let me tell you how a service advisor tried to charge me $180 for a diagnostic that took my $18 microcontroller eleven seconds to do. I had a weird issue. Intermittent warning light. You know the one. The little orange gremlin that shows up on Tuesday, disappears on Wednesday, then comes back when you are already late for…</p>
+	
+	
+	<a class="more" href="https://dev.to/numbpill3d/the-dealership-charges-180hr-for-this-i-do-it-with-an-esp32-off" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://the-decoder.com/?p=39837" data-srckey="the decoder" data-cat="ai" data-sent="0" data-ts="1788615064000" data-slug="openai shares prompting tips for gpt astra including blocklist slop words">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="OpenAI shares prompting tips for GPT-6 Astra including a blocklist of slop words — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(45 55% 72%)">THE DECODER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:31:04.000Z">9:31 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">OpenAI shares prompting tips for GPT-6 Astra including a blocklist of slop words</h3>
+	<p class="snippet">OpenAI ships a detailed prompting guide for GPT-6 Astra that shows developers how to make the model take more initiative, avoid AI &quot;slop&quot; phrases, and stop it from overtesting code. The article OpenAI shares prompting tips for GPT-6 Astra including a blocklist of slop words appeared first on The Decoder.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://the-decoder.com/wp-content/uploads/2026/09/openai_gpt_6_stars_astra.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">OpenAI shares prompting tips for GPT-6 Astra including a blocklist of slop words</h3>
+	<p class="about">OpenAI ships a detailed prompting guide for GPT-6 Astra that shows developers how to make the model take more initiative, avoid AI &quot;slop&quot; phrases, and stop it from overtesting code. The article OpenAI shares prompting tips for GPT-6 Astra including a blocklist of slop words appeared first on The Decoder.</p>
+	
+	
+	<a class="more" href="https://the-decoder.com/openai-shares-prompting-tips-for-gpt-6-astra-including-a-blocklist-of-slop-words/" target="_blank" rel="noopener noreferrer">The Decoder &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.rollingstone.com/?post_type=pmc_list&amp;p=1235618399" data-srckey="rolling stone music" data-cat="music" data-sent="0" data-ts="1788615000000" data-slug="music lists fleetwood mac your own way all the versions">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Watch 24 Different Versions of ‘Go Your Own Way’ by Fleetwood Mac and Their Offshoots — flip for details">
+	<div class="meta"><span class="src" style="color:#fb7185">ROLLING STONE MUSIC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:30:00.000Z">9:30 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
+	<h3 class="title">Watch 24 Different Versions of ‘Go Your Own Way’ by Fleetwood Mac and Their Offshoots</h3>
+	<p class="snippet">Ever since Lindsey Buckingham wrote one of rock&#39;s greatest breakup songs, Fleetwood Mac have been unable to leave a concert stage without playing it</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Watch 24 Different Versions of ‘Go Your Own Way’ by Fleetwood Mac and Their Offshoots</h3>
+	<p class="about">Ever since Lindsey Buckingham wrote one of rock&#39;s greatest breakup songs, Fleetwood Mac have been unable to leave a concert stage without playing it</p>
+	
+	
+	<a class="more" href="https://www.rollingstone.com/music/music-lists/fleetwood-mac-go-your-own-way-all-the-versions-1235618399/" target="_blank" rel="noopener noreferrer">Rolling Stone Music &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact h2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236852403" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788614898000" data-slug="film festivals liam noel gallagher skip oasis doc press conference venice">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Liam and Noel Gallagher Skip Oasis Documentary Press Conference at Venice Film Festival — flip for details">
@@ -1061,14 +1130,37 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49795137" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788613728102" data-slug="college football story lane kiffin lsu expectations high pressure week">
+<article class="card compact has-thumb" style="--rail:#fb923c" data-count="1" data-id="rss:https://abcnews.com/Politics/wireStory/after-years-defying-odds-californias-david-valadao-faces-136224661" data-srckey="abc news politics" data-cat="politics" data-sent="0" data-ts="1788614741000" data-slug="politics wirestory after years defying odds californias david valadao faces">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="After years of defying the odds, California&#39;s David Valadao faces new test as Latinos turn on Trump — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(224 55% 72%)">ABC NEWS POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:25:41.000Z">9:25 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">After years of defying the odds, California&#39;s David Valadao faces new test as Latinos turn on Trump</h3>
+	<p class="snippet">Republican congressman David Valadao has defied the odds before, winning elections in California districts with big Democratic registration advantages</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://s.abcnews.com/images/Politics/wirestory_f2da959acb96c2c565204bd9c5c26e45_4x3_384.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">After years of defying the odds, California&#39;s David Valadao faces new test as Latinos turn on Trump</h3>
+	<p class="about">Republican congressman David Valadao has defied the odds before, winning elections in California districts with big Democratic registration advantages</p>
+	
+	
+	<a class="more" href="https://abcnews.com/Politics/wireStory/after-years-defying-odds-californias-david-valadao-faces-136224661" target="_blank" rel="noopener noreferrer">ABC News Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49795137" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788613728102" data-slug="college football story lane kiffin lsu expectations high pressure week">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Be boring? Lane Kiffin is anything but as he enters a new era at LSU — flip for details">
 	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:08:48.102Z">9:08 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
 	<h3 class="title">Be boring? Lane Kiffin is anything but as he enters a new era at LSU</h3>
 	<p class="snippet">Kiffin chose LSU as the path of least resistance to win a title. Anything short of that will bring a legion of critics.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0901%2Fr1710048_1296x729_16-9.jpg&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0901%2Fr1710048_1296x729_16-9.jpg&amp;w=240 240w, https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0901%2Fr1710048_1296x729_16-9.jpg&amp;w=340 340w, https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0901%2Fr1710048_1296x729_16-9.jpg&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Be boring? Lane Kiffin is anything but as he enters a new era at LSU</h3>
@@ -1084,14 +1176,14 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49814597" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788613728090" data-slug="college football story week preview lsu clemson louisville ole miss notre dame">
+<article class="card compact w2 h2 has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49814597" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788613728090" data-slug="college football story week preview lsu clemson louisville ole miss notre dame">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Get ready for Week 1! 34 games to look out for as the season gets going — flip for details">
 	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:08:48.090Z">9:08 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
 	<h3 class="title">Get ready for Week 1! 34 games to look out for as the season gets going</h3>
 	<p class="snippet">Lane at LSU, Arch&#39;s next steps, Indiana&#39;s title defense and more give college football fans plenty to watch.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F1130%2Fr1582855_1296x729_16-9.jpg&amp;w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F1130%2Fr1582855_1296x729_16-9.jpg&amp;w=600 600w, https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F1130%2Fr1582855_1296x729_16-9.jpg&amp;w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Get ready for Week 1! 34 games to look out for as the season gets going</h3>
@@ -1107,14 +1199,14 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact h2" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-gamedaykickoff090326" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788613728076" data-slug="college football story page gamedaykickoff090326 gameday kickoff week preview top games players lsu clemson">
+<article class="card compact h2 has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-gamedaykickoff090326" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788613728076" data-slug="college football story page gamedaykickoff090326 gameday kickoff week preview top games players lsu clemson">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Lane vs. Dabo, Mike Norvell vs. the hot seat and everything to watch in Week 1 — flip for details">
 	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:08:48.076Z">9:08 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
 	<h3 class="title">Lane vs. Dabo, Mike Norvell vs. the hot seat and everything to watch in Week 1</h3>
 	<p class="snippet">College football is back! Previewing Week 1&#39;s top games and which teams are on upset watch.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0901%2Fr1710079_1296x729_16-9.jpg&amp;w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0901%2Fr1710079_1296x729_16-9.jpg&amp;w=600 600w, https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0901%2Fr1710079_1296x729_16-9.jpg&amp;w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Lane vs. Dabo, Mike Norvell vs. the hot seat and everything to watch in Week 1</h3>
@@ -1130,14 +1222,14 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49690629" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788613728065" data-slug="fantasy football story cheat sheet draft tips sleepers busts">
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49690629" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788613728065" data-slug="fantasy football story cheat sheet draft tips sleepers busts">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="✍️ Ultimate Fantasy Football Cheat Sheet — flip for details">
 	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:08:48.065Z">9:08 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
 	<h3 class="title">✍️ Ultimate Fantasy Football Cheat Sheet</h3>
 	<p class="snippet">All the names we&#39;ve been talking about in a printable cheat sheet for your fantasy football draft.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0822%2Fr1705246_1296x729_16-9.jpg&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0822%2Fr1705246_1296x729_16-9.jpg&amp;w=240 240w, https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0822%2Fr1705246_1296x729_16-9.jpg&amp;w=340 340w, https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0822%2Fr1705246_1296x729_16-9.jpg&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">✍️ Ultimate Fantasy Football Cheat Sheet</h3>
@@ -1789,6 +1881,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://dev.to/savankumar_sanghani_949c7/how-i-built-a-tech-interview-prep-app-in-flutter-28gd" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:c66f9f20-0164-4699-816f-0c8756575171" data-srckey="cbs sports" data-cat="sports" data-sent="0" data-ts="1788613429000">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="SportsLine Newsletter September 5, 2026 — flip for details">
+	<div class="meta"><span class="src" style="color:#3b82f6">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:03:49.000Z">9:03 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">SportsLine Newsletter September 5, 2026</h3>
+	<p class="snippet">Saturday Betting Guide: How to pick CFB Week 1, and Fantasy football draft advice</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://sportsfly.cbsistatic.com/fly-782/bundles/sportsmediacss/images/fantasy/default-article-image-large.png?width=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://sportsfly.cbsistatic.com/fly-782/bundles/sportsmediacss/images/fantasy/default-article-image-large.png?width=240 240w, https://sportsfly.cbsistatic.com/fly-782/bundles/sportsmediacss/images/fantasy/default-article-image-large.png?width=340 340w, https://sportsfly.cbsistatic.com/fly-782/bundles/sportsmediacss/images/fantasy/default-article-image-large.png?width=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">SportsLine Newsletter September 5, 2026</h3>
+	<p class="about">Saturday Betting Guide: How to pick CFB Week 1, and Fantasy football draft advice</p>
+	
+	
+	<a class="more" href="https://www.cbssports.com/" target="_blank" rel="noopener noreferrer">CBS Sports &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -14179,7 +14294,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2423 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2418 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:1714fe94-5177-41bc-806a-579b17621b44" data-cat="markets" data-sent="0" data-slug="policy banking agency gives blockchain bank openreserve initial operate" hidden="until-found"><span class="ameta">COINDESK &middot; Sep 3 &middot; Markets</span><a href="https://www.coindesk.com/policy/2026/09/03/u-s-banking-agency-gives-blockchain-bank-openreserve-initial-ok-to-operate" target="_blank" rel="noopener noreferrer">U.S. banking agency gives blockchain bank OpenReserve initial OK to operate</a></li>
 <li class="arow" data-count="1" data-id="rss:0fd0a417-dc00-42b1-9427-aa349c98ecd5" data-cat="politics" data-sent="0" data-slug="news johnny doc release prison president trump commutation" hidden="until-found"><span class="ameta">CBS POLITICS &middot; Sep 3 &middot; Politics</span><a href="https://www.cbsnews.com/news/johnny-doc-release-prison-president-trump-commutation/" target="_blank" rel="noopener noreferrer">Trump commutes former Philadelphia labor leader &quot;Johnny Doc&#39;s&quot; prison sentence</a></li>
@@ -16599,11 +16714,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.nationalreview.com/?post_type=blog-post&amp;p=2025929" data-cat="politics" data-sent="0" data-slug="corner republicans need more trump" hidden="until-found"><span class="ameta">NATIONAL REVIEW POLITICS &middot; Aug 28 &middot; Politics</span><a href="https://www.nationalreview.com/corner/do-republicans-need-more-trump/" target="_blank" rel="noopener noreferrer">Do Republicans Need More Trump?</a></li>
 <li class="arow" data-count="1" data-id="rss:https://dev.to/mishmanners/getting-involved-in-developer-communities-46e8" data-cat="dev" data-sent="0" data-slug="mishmanners getting involved developer communities 46e8" hidden="until-found"><span class="ameta">DEV.TO &middot; Aug 28 &middot; Dev</span><a href="https://dev.to/mishmanners/getting-involved-in-developer-communities-46e8" target="_blank" rel="noopener noreferrer">Getting involved in developer communities</a></li>
 <li class="arow" data-count="1" data-id="rss:https://medcitynews.com/?p=148698" data-cat="healthcare" data-sent="0" data-slug="reading the bodys signals ais ultimate healthcare opportunity" hidden="until-found"><span class="ameta">MEDCITY NEWS &middot; Aug 28 &middot; Healthcare</span><a href="https://medcitynews.com/2026/08/reading-the-bodys-signals-ais-ultimate-healthcare-opportunity/" target="_blank" rel="noopener noreferrer">Reading the Body’s Signals: AI’s Ultimate Healthcare Opportunity</a></li>
-<li class="arow" data-count="1" data-id="rss:https://dev.to/borntoup/polymarket-bot-execution-why-detecting-a-signal-isnt-enough-597d" data-cat="dev" data-sent="0" data-slug="borntoup polymarket bot execution why detecting signal isnt enough 597d" hidden="until-found"><span class="ameta">DEV.TO &middot; Aug 28 &middot; Dev</span><a href="https://dev.to/borntoup/polymarket-bot-execution-why-detecting-a-signal-isnt-enough-597d" target="_blank" rel="noopener noreferrer">Polymarket Bot Execution: Why Detecting a Signal Isn&#39;t Enough</a></li>
-<li class="arow" data-count="1" data-id="rss:https://dev.to/poulluisen/building-better-property-platforms-5-ux-details-that-matter-4mn8" data-cat="dev" data-sent="0" data-slug="poulluisen building better property platforms details that matter 4mn8" hidden="until-found"><span class="ameta">DEV.TO &middot; Aug 28 &middot; Dev</span><a href="https://dev.to/poulluisen/building-better-property-platforms-5-ux-details-that-matter-4mn8" target="_blank" rel="noopener noreferrer">Building Better Property Platforms: 5 UX Details That Matter</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/c14dlme86d8o#1" data-cat="sports" data-sent="0" data-slug="sport football articles c14dlme86d8o" hidden="until-found"><span class="ameta">BBC SPORT &middot; Aug 28 &middot; Sports</span><a href="https://www.bbc.co.uk/sport/football/articles/c14dlme86d8o" target="_blank" rel="noopener noreferrer">Man Utd agree terms to sign Swedish winger Jusu Bah</a></li>
-<li class="arow" data-count="1" data-id="rss:https://dev.to/dexterlung/i-cut-41-ai-tools-self-descriptions-in-half-then-ab-tested-that-trigger-rate-didnt-drop-54k4" data-cat="dev" data-sent="0" data-slug="dexterlung cut tools self descriptions half then tested that trigger rate didnt drop 54k4" hidden="until-found"><span class="ameta">DEV.TO &middot; Aug 28 &middot; Dev</span><a href="https://dev.to/dexterlung/i-cut-41-ai-tools-self-descriptions-in-half-then-ab-tested-that-trigger-rate-didnt-drop-54k4" target="_blank" rel="noopener noreferrer">I cut 41 AI tools&#39; self-descriptions in half, then A/B tested that trigger rate didn&#39;t drop</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.statnews.com/?p=1515308" data-cat="healthcare" data-sent="0" data-slug="pharmalot astrazeneca trial failure monstrous conflict interest" hidden="until-found"><span class="ameta">STAT NEWS &middot; Aug 28 &middot; Healthcare</span><a href="https://www.statnews.com/pharmalot/2026/08/28/astrazeneca-trial-failure-monstrous-conflict-of-interest/" target="_blank" rel="noopener noreferrer">STAT+: Pharmalittle: We’re reading about an AstraZeneca trial failure, a ‘monstrous’ conflict of interest, and more</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
