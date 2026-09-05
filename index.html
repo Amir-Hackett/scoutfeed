@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-05T13:44:44.965Z">
+<meta name="sf-version" content="2026-09-05T13:49:03.555Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -403,12 +403,22 @@ h1 .tld { color: var(--accent); }
    chrome therefore painted as 2,632 empty pills with the list gap between them
    (owner report 2026-08-23). Collapse the box while it is still hidden, and
    carry the spacing on the revealed rows instead of on the list. */
-.alist { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+/* An index, not more cards (owner 2026-09-05: the full-width white pills read
+   as a second river). Hairline rows flowing into columns. Multicol, not grid,
+   on purpose: the collapsed hidden rows are still boxes, and in a grid every
+   one of them would hold a cell, scattering the few revealed rows across the
+   columns; in a column flow a zero-height box simply contributes nothing. */
+.alist { list-style: none; margin: 0; padding: 0; columns: 3 320px; column-gap: 36px; }
 .arow[hidden] { padding: 0; border: 0; margin: 0; background: none; border-radius: 0; }
-.arow { display: flex; flex-direction: column; gap: 2px; margin-bottom: 6px; padding: 10px 14px; background: var(--surface-solid); border: 1px solid var(--border); border-radius: 10px; }
-.arow a { color: var(--text); font-weight: 600; text-decoration: none; }
-.arow a:hover { text-decoration: underline; }
-.ameta { font-size: 12px; letter-spacing: 0.04em; color: var(--text-faint); }
+.arow { display: flex; flex-direction: column; gap: 3px; padding: 9px 0 10px; border-bottom: 1px solid var(--border); break-inside: avoid; }
+.arow a, .arow > span:last-child {
+	color: var(--text); text-decoration: none;
+	font-family: var(--serif); font-size: 15px; font-weight: 700; line-height: 1.35;
+	display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.arow a:hover { color: var(--accent); }
+.arow a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.ameta { font-size: 11.5px; font-weight: 600; letter-spacing: 0.06em; color: var(--text-faint); }
 .card {
 	position: relative; height: 100%; cursor: pointer;
 	-webkit-tap-highlight-color: transparent;
@@ -666,7 +676,12 @@ footer a { color: var(--text-faint); }
 .undo button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 /* 4.5 "new since your last visit" — a divider, not a badge storm. */
-.newdiv { grid-column: 1 / -1; display: flex; align-items: center; gap: 12px; margin: 4px 0 2px; color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+/* Sits between the day heading and the grid, NOT inside the grid: .grid packs
+   dense into fixed 188px rows, so an in-grid divider cost a near-empty row
+   above the first card (owner screenshot 2026-09-05) — and dense packing
+   reorders cards visually, so it never truly sat between new and old anyway.
+   The NEW mark on each card is the real boundary; this is the count. */
+.newdiv { display: flex; align-items: center; gap: 12px; margin: -2px 0 12px; color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
 .newdiv::after { content: ""; flex: 1; height: 1px; background: currentColor; opacity: 0.35; }
 .card.is-new .front .meta::before { content: "NEW"; color: var(--accent); font-weight: 700; letter-spacing: 0.06em; margin-right: 7px; }
 
@@ -707,10 +722,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 9:44 AM &middot; 217 TODAY</p>
+	<p class="stats">UPDATED 9:49 AM &middot; 217 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">178</span><span class="sr-only"> — 178 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">204</span><span class="sr-only"> — 204 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">167</span><span class="sr-only"> — 167 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">369</span><span class="sr-only"> — 369 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">211</span><span class="sr-only"> — 211 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">265</span><span class="sr-only"> — 265 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">120</span><span class="sr-only"> — 120 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">319</span><span class="sr-only"> — 319 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">532</span><span class="sr-only"> — 532 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">335</span><span class="sr-only"> — 335 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">300</span><span class="sr-only"> — 300 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">178</span><span class="sr-only"> — 178 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">204</span><span class="sr-only"> — 204 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">167</span><span class="sr-only"> — 167 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">369</span><span class="sr-only"> — 369 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">210</span><span class="sr-only"> — 210 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">265</span><span class="sr-only"> — 265 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">120</span><span class="sr-only"> — 120 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">319</span><span class="sr-only"> — 319 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">532</span><span class="sr-only"> — 532 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">335</span><span class="sr-only"> — 335 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">301</span><span class="sr-only"> — 301 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -993,8 +1008,8 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.marca.com/futbol/laliga-ea-sports/athletic-atletico/2026/09/05/01_0101_20260905_174_175-directo.html" target="_blank" rel="noopener noreferrer">Athletic - Atlético, live | LaLiga EA Sports live today</a>
-		<p class="trend-meta"><span class="src">MARCA</span><span class="sep" aria-hidden="true">&middot;</span>"athletic - atlético madrid" &middot; 5000+ searches</p>
+		<a class="trend-title" href="https://as.com/futbol/primera/athletic-de-bilbao-atletico-de-madrid-hoy-en-directo-previa-y-ultima-hora-de-laliga-ea-sports-en-vivo-f202609-d/" target="_blank" rel="noopener noreferrer">Athletic Club - Atlético de Madrid, live: LaLiga EA Sports, live today</a>
+		<p class="trend-meta"><span class="src">DIARIO AS</span><span class="sep" aria-hidden="true">&middot;</span>"athletic - atlético madrid" &middot; 5000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
@@ -10013,10 +10028,10 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:972fc411-fd0d-4263-93a9-90b59896e8a4" data-srckey="ign" data-cat="games" data-sent="0" data-ts="1788543178000" data-slug="articles dlss will coming older graphics cards after all">
+<article class="card compact w2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:972fc411-fd0d-4263-93a9-90b59896e8a4" data-srckey="ign" data-cat="tech" data-sent="0" data-ts="1788543178000" data-slug="articles dlss will coming older graphics cards after all">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="DLSS 5 Will Be Coming to Older Graphics Cards After All — flip for details">
-	<div class="meta"><span class="src" style="color:#f87171">IGN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-04T17:32:58.000Z">1:32 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<div class="meta"><span class="src" style="color:#f87171">IGN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-04T17:32:58.000Z">1:32 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
 	<h3 class="title">DLSS 5 Will Be Coming to Older Graphics Cards After All</h3>
 	<p class="snippet">On Nvidia&#39;s forums, an Nvidia employee claimed that the company will be expanding DLSS 5 support to RTX 40 series graphics cards at some point, but we&#39;re probably going to be waiting a while for it.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
@@ -17105,13 +17120,13 @@ footer a { color: var(--text-faint); }
 		if (!lastVisit) return;                     // first ever visit: nothing is "new"
 		var firstDay = document.querySelector('#feed .day .grid');
 		if (!firstDay) return;
-		var n = 0, firstOld = null;
+		var n = 0;
 		document.querySelectorAll('#feed .card').forEach(function (card) {
 			if (card.style.display === 'none') return;
 			var ts = Number(card.getAttribute('data-ts')) || 0;
 			var isNew = ts > lastVisit;
 			card.classList.toggle('is-new', isNew);
-            if (isNew) n++; else if (!firstOld && card.closest('.grid') === firstDay) firstOld = card;
+			if (isNew) n++;
 		});
 		var div = document.getElementById('newdiv');
 		if (!n) { if (div) div.remove(); return; }
@@ -17123,7 +17138,8 @@ footer a { color: var(--text-faint); }
 		var t = new Date(lastVisit);
 		div.textContent = n + (n === 1 ? ' new story since ' : ' new since ')
 			+ t.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
-		if (firstOld) firstDay.insertBefore(div, firstOld); else firstDay.insertBefore(div, firstDay.firstChild);
+		// Above the grid, never inside it — see the .newdiv rule for why.
+		firstDay.parentNode.insertBefore(div, firstDay);
 	}
 
 	// Boot: restore filters from the URL (4.8), then local reader state.
