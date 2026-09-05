@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-05T18:26:44.205Z">
+<meta name="sf-version" content="2026-09-05T18:41:24.191Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -631,6 +631,9 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(336 55% 72%)"] { color: #894262 !important; }
@@ -638,7 +641,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#facc15"] { color: #815500 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#34d399"] { color: #007644 !important; }
@@ -653,13 +655,11 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(260 55% 72%)"] { color: #674c95 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(271 55% 72%)"] { color: #704891 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(224 55% 72%)"] { color: #495b8f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#7dd3fc"] { color: #00678c !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(290 55% 72%)"] { color: #7e418a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fbbf24"] { color: #885000 !important; }
@@ -946,10 +946,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 2:26 PM &middot; 306 TODAY</p>
+	<p class="stats">UPDATED 2:41 PM &middot; 309 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">175</span><span class="sr-only"> — 175 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">227</span><span class="sr-only"> — 227 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">394</span><span class="sr-only"> — 394 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">208</span><span class="sr-only"> — 208 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">261</span><span class="sr-only"> — 261 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">115</span><span class="sr-only"> — 115 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">307</span><span class="sr-only"> — 307 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">529</span><span class="sr-only"> — 529 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">328</span><span class="sr-only"> — 328 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">292</span><span class="sr-only"> — 292 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">176</span><span class="sr-only"> — 176 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">227</span><span class="sr-only"> — 227 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">395</span><span class="sr-only"> — 395 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">207</span><span class="sr-only"> — 207 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">261</span><span class="sr-only"> — 261 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">115</span><span class="sr-only"> — 115 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">307</span><span class="sr-only"> — 307 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">528</span><span class="sr-only"> — 528 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">329</span><span class="sr-only"> — 329 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">291</span><span class="sr-only"> — 291 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1286,6 +1286,81 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://variety.com/2026/film/reviews/everest-the-other-side-review-1236852376/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fb923c" data-count="1" data-id="rss:https://www.nationalreview.com/?post_type=blog-post&amp;p=2031729" data-srckey="national review politics" data-cat="politics" data-sent="0" data-ts="1788633083000" data-slug="corner big money made assisting suicides">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Big Money to Be Made Assisting Suicides — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(267 55% 72%)">NATIONAL REVIEW POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T18:31:23.000Z">2:31 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">Big Money to Be Made Assisting Suicides</h3>
+	<p class="snippet">Do we really want to financially incentivize access to suicide and let doctors get rich providing it?</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://i0.wp.com/www.nationalreview.com/wp-content/uploads/2026/09/opioids-money.jpg?fit=617%2C360&amp;ssl=1&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://i0.wp.com/www.nationalreview.com/wp-content/uploads/2026/09/opioids-money.jpg?fit=617%2C360&amp;ssl=1&amp;w=240 240w, https://i0.wp.com/www.nationalreview.com/wp-content/uploads/2026/09/opioids-money.jpg?fit=617%2C360&amp;ssl=1&amp;w=340 340w, https://i0.wp.com/www.nationalreview.com/wp-content/uploads/2026/09/opioids-money.jpg?fit=617%2C360&amp;ssl=1&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Big Money to Be Made Assisting Suicides</h3>
+	<p class="about">Do we really want to financially incentivize access to suicide and let doctors get rich providing it?</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.nationalreview.com/corner/big-money-to-be-made-assisting-suicides/" target="_blank" rel="noopener noreferrer">National Review Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://the-decoder.com/?p=39843" data-srckey="the decoder" data-cat="ai" data-sent="0" data-ts="1788632462000" data-slug="artificial analysis overhauls its intelligence index after gpt astra scoring drew skepticism">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Artificial Analysis overhauls its Intelligence Index after GPT-6 Astra scoring drew skepticism — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(45 55% 72%)">THE DECODER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T18:21:02.000Z">2:21 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Artificial Analysis overhauls its Intelligence Index after GPT-6 Astra scoring drew skepticism</h3>
+	<p class="snippet">Artificial Analysis has released version 4.2 of its Intelligence Index, likely in response to criticism that its benchmarks failed to capture GPT-6 Astra&#39;s actual progress. Astra now scores four points above its predecessor but still trails Anthropic&#39;s Claude Fable 5.1. The article Artificial Analysis overhauls its Intelligence Index after GPT-6 Astra scoring drew skepticism appeared first on The Decoder.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://the-decoder.com/wp-content/uploads/2026/09/openai_dark_gpt6_stars.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Artificial Analysis overhauls its Intelligence Index after GPT-6 Astra scoring drew skepticism</h3>
+	<p class="about">Artificial Analysis has released version 4.2 of its Intelligence Index, likely in response to criticism that its benchmarks failed to capture GPT-6 Astra&#39;s actual progress. Astra now scores four points above its predecessor but still trails Anthropic&#39;s Claude Fable 5.1. The article Artificial Analysis overhauls its Intelligence Index after GPT-6 Astra scoring drew skepticism appeared first on The Decoder.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://the-decoder.com/artificial-analysis-overhauls-its-intelligence-index-after-gpt-6-astra-scoring-drew-skepticism/" target="_blank" rel="noopener noreferrer">The Decoder &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236691960" data-srckey="hollywood reporter" data-cat="entertainment" data-sent="0" data-ts="1788631955000" data-slug="movies movie features the idiots johnny flynn aimee lou wood exclusive">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Johnny Flynn and Aimee Lou Wood on “Getting Whipped Naked” and “Embracing the Madness” of Their Deranged Literary Biopic — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(18 55% 72%)">HOLLYWOOD REPORTER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T18:12:35.000Z">2:12 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Johnny Flynn and Aimee Lou Wood on “Getting Whipped Naked” and “Embracing the Madness” of Their Deranged Literary Biopic</h3>
+	<p class="snippet">&#39;The Idiot(s),&#39; which premiered Friday night in Telluride, is unlike anything else on the fall circuit: “There&#39;d be days where they would say…‘Today you&#39;re going to be shitting on your landlady&#39;s doorstep.’”</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Johnny Flynn and Aimee Lou Wood on “Getting Whipped Naked” and “Embracing the Madness” of Their Deranged Literary Biopic</h3>
+	<p class="about">&#39;The Idiot(s),&#39; which premiered Friday night in Telluride, is unlike anything else on the fall circuit: “There&#39;d be days where they would say…‘Today you&#39;re going to be shitting on your landlady&#39;s doorstep.’”</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.hollywoodreporter.com/movies/movie-features/the-idiots-johnny-flynn-aimee-lou-wood-exclusive-1236691960/" target="_blank" rel="noopener noreferrer">Hollywood Reporter &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -4425,13 +4500,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="No one asked, but I&#39;ve written a C++ header-only library so you don&#39;t have to declare the variable again. — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:03:39.000Z">9:03 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
 	<h3 class="title">No one asked, but I&#39;ve written a C++ header-only library so you don&#39;t have to declare the variable again.</h3>
-	<p class="snippet">In my spare time, I wrote a header-only C++ library that will help you extract variable declarations from the main(...) function of one .cpp file to the main(...) function of another .cpp file. main(...) function, from a custom-named struct to strange declarations like int a,b,c = 100; as long as it&#39;s syntax-correct in C++. Quick Example : #include #include #include &quot;var_saver.hpp&quot; int main(){…</p>
+	<p class="snippet">In my spare time, I wrote a header-only C++ library that will help you extract variable declarations from the main(...) function of one .cpp file to the main(...) function of another .cpp file. Yes, I mean you can declare any type of variable in any way you can think of, as long as it&#39;s within the main(...) function, from a custom-named struct to strange declarations like int a,b,c = 100; as long as it&#39;s syntax-correct in C++. Key advantage : You only need to call the function once—anywhere in your code, as long as it gets executed at least once during runtime. Note: If you can&#39;t read the code in the repository, it&#39;s my fault, not yours. I&#39;m a competitive programmer, so you might have some difficulty reading variable names and trying to understand their meaning. Templates let you quickly…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=1080,height=564,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6ce3txovazvytca7eopr.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=600,height=314,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6ce3txovazvytca7eopr.png 600w, https://media2.dev.to/dynamic/image/width=1080,height=564,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6ce3txovazvytca7eopr.png 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">No one asked, but I&#39;ve written a C++ header-only library so you don&#39;t have to declare the variable again.</h3>
-	<p class="about">In my spare time, I wrote a header-only C++ library that will help you extract variable declarations from the main(...) function of one .cpp file to the main(...) function of another .cpp file. main(...) function, from a custom-named struct to strange declarations like int a,b,c = 100; as long as it&#39;s syntax-correct in C++. Quick Example : #include #include #include &quot;var_saver.hpp&quot; int main(){…</p>
+	<p class="about">In my spare time, I wrote a header-only C++ library that will help you extract variable declarations from the main(...) function of one .cpp file to the main(...) function of another .cpp file. Yes, I mean you can declare any type of variable in any way you can think of, as long as it&#39;s within the main(...) function, from a custom-named struct to strange declarations like int a,b,c = 100; as long as it&#39;s syntax-correct in C++. Key advantage : You only need to call the function once—anywhere in your code, as long as it gets executed at least once during runtime. Note: If you can&#39;t read the code in the repository, it&#39;s my fault, not yours. I&#39;m a competitive programmer, so you might have some difficulty reading variable names and trying to understand their meaning. Templates let you quickly…</p>
 	
 	
 	<div class="actions">
@@ -4725,13 +4800,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Hughes steps down as Liverpool sporting director — flip for details">
 	<div class="meta"><span class="src" style="color:#facc15">BBC SPORT</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T12:52:56.000Z">8:52 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
 	<h3 class="title">Hughes steps down as Liverpool sporting director</h3>
-	<p class="snippet">Richard Hughes steps down from his position as sporting director of Liverpool and is set to join Saudi side Al-Hilal.</p>
+	<p class="snippet">Liverpool sporting director Richard Hughes has stepped down and is set to join Saudi Arabian side Al-Hilal. Hughes had only been at the club since June 2024, after moving from a similar position at Bournemouth , and his exit had been expected with his contract set to expire in June 2027. In the summer he oversaw transfer spending of about £200m, including the signing of Bradley Barcola from Paris St-Germain. &quot;I&#39;ll always follow and support the club with great affection, and I wish everyone involved nothing but success for this season and beyond,&quot; said Hughes in a statement released by Liverpool . Hughes, 47, arrived at Anfield after the departure of long-time manager Jurgen Klopp and was instrumental in the appointment of his successor, Arne Slot, who led Liverpool to a 20th Premier…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/4b00/live/21528d40-a91d-11f1-a3dc-e78e2c02425d.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/600/cpsprodpb/4b00/live/21528d40-a91d-11f1-a3dc-e78e2c02425d.jpg 600w, https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/4b00/live/21528d40-a91d-11f1-a3dc-e78e2c02425d.jpg 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Hughes steps down as Liverpool sporting director</h3>
-	<p class="about">Richard Hughes steps down from his position as sporting director of Liverpool and is set to join Saudi side Al-Hilal.</p>
+	<p class="about">Liverpool sporting director Richard Hughes has stepped down and is set to join Saudi Arabian side Al-Hilal. Hughes had only been at the club since June 2024, after moving from a similar position at Bournemouth , and his exit had been expected with his contract set to expire in June 2027. In the summer he oversaw transfer spending of about £200m, including the signing of Bradley Barcola from Paris St-Germain. &quot;I&#39;ll always follow and support the club with great affection, and I wish everyone involved nothing but success for this season and beyond,&quot; said Hughes in a statement released by Liverpool . Hughes, 47, arrived at Anfield after the departure of long-time manager Jurgen Klopp and was instrumental in the appointment of his successor, Arne Slot, who led Liverpool to a 20th Premier…</p>
 	
 	
 	<div class="actions">
@@ -4950,13 +5025,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Yemen government launches own air attacks on Houthis: What that means — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T12:43:38.000Z">8:43 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
 	<h3 class="title">Yemen government launches own air attacks on Houthis: What that means</h3>
-	<p class="snippet">A major Houthi offensive towards Bab al-Mandeb has triggered some of Yemen’s worst fighting in years.</p>
+	<p class="snippet">A major Houthi offensive towards Bab al-Mandeb has triggered some of Yemen’s worst fighting in years. Yemen’s internationally recognised government has launched a series of air attacks against Houthi positions in the country, marking a significant escalation in the conflict, with some of the country’s heaviest fighting since a fragile truce in 2022. Government warplanes carried out at least 15 strikes on Friday against Houthi positions, gatherings and vehicles in the western provinces of Taiz and Hodeidah, according to the Yemeni military. The air assault against Houthi positions provided support to government forces fighting a major Houthi offensive towards the Red Sea coast and the strategic Bab al-Mandeb Strait, one of the world’s most important shipping routes. These are not the first…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://www.aljazeera.com/wp-content/uploads/2026/09/reuters_6a99e0a8-1788469416_64e0cb-1788605892.jpg?resize=1200%2C630&amp;amp;quality=80" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Yemen government launches own air attacks on Houthis: What that means</h3>
-	<p class="about">A major Houthi offensive towards Bab al-Mandeb has triggered some of Yemen’s worst fighting in years.</p>
+	<p class="about">A major Houthi offensive towards Bab al-Mandeb has triggered some of Yemen’s worst fighting in years. Yemen’s internationally recognised government has launched a series of air attacks against Houthi positions in the country, marking a significant escalation in the conflict, with some of the country’s heaviest fighting since a fragile truce in 2022. Government warplanes carried out at least 15 strikes on Friday against Houthi positions, gatherings and vehicles in the western provinces of Taiz and Hodeidah, according to the Yemeni military. The air assault against Houthi positions provided support to government forces fighting a major Houthi offensive towards the Red Sea coast and the strategic Bab al-Mandeb Strait, one of the world’s most important shipping routes. These are not the first…</p>
 	
 	
 	<div class="actions">
@@ -8923,7 +8998,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2689 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2686 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241376" data-cat="entertainment" data-sent="0" data-slug="interest toei animation confirms license for french dragon ball theme park" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-04/toei-animation-confirms-no-license-for-french-dragon-ball-theme-park/.241376" target="_blank" rel="noopener noreferrer">Toei Animation Confirms No License for French Dragon Ball Theme Park</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241422" data-cat="entertainment" data-sent="0" data-slug="news yowaki max reijo nanoni ratsuwan konyakusha sama kake notte shimatta anime reveals theme song" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-09-04/yowaki-max-reijo-nanoni-ratsuwan-konyakusha-sama-no-kake-ni-notte-shimatta-anime-reveals-theme-song-/.241422" target="_blank" rel="noopener noreferrer">&#39;Yowaki MAX Reijō nanoni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta&#39; Anime Reveals Theme Song Artist, October 4 Debut</a></li>
@@ -11611,9 +11686,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:a9538694-ab45-405d-8d6e-0981ca2e8662" data-cat="games" data-sent="0" data-slug="articles grand theft auto already bringing back characters from gta" hidden="until-found"><span class="ameta"><span class="src sc8">IGN</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Games</span></span></span><a class="atitle" href="https://www.ign.com/articles/grand-theft-auto-6-is-already-bringing-back-characters-from-gta-5" target="_blank" rel="noopener noreferrer">Grand Theft Auto 6 Is Already Bringing Back Characters from GTA 5</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/2026/aug/28/us-venezuela-oil-gas-stake" data-cat="world" data-sent="0" data-slug="world aug venezuela oil gas stake" hidden="until-found"><span class="ameta"><span class="src sc11">GUARDIAN WORLD</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.theguardian.com/world/2026/aug/28/us-venezuela-oil-gas-stake" target="_blank" rel="noopener noreferrer">Venezuelan opposition up in arms over reports US wants big stake in oil and gas</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.beckershospitalreview.com/?p=376998" data-cat="healthcare" data-sent="0" data-slug="hospital executive moves recent health system coo exits" hidden="until-found"><span class="ameta"><span class="src sc32">BECKER&#39;S HOSPITAL REVIEW</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Healthcare</span></span></span><a class="atitle" href="https://www.beckershospitalreview.com/hospital-executive-moves/19-recent-hospital-health-system-coo-exits/" target="_blank" rel="noopener noreferrer">7 recent hospital, health system COO exits</a></li>
-<li class="arow" data-count="1" data-id="rss:2ada0933-dec0-4c1d-b9f0-16824d5afb71" data-cat="games" data-sent="0" data-slug="articles capcom making life sized statues lady dimitrescu and albert wesker the internet being totally normal" hidden="until-found"><span class="ameta"><span class="src sc8">IGN</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Games</span></span></span><a class="atitle" href="https://www.ign.com/articles/capcom-is-making-life-sized-statues-of-lady-dimitrescu-and-albert-wesker-and-the-internet-is-being-totally-normal-about-it" target="_blank" rel="noopener noreferrer">Capcom Is Making Life-Sized Statues of Lady Dimitrescu and Albert Wesker, and the Internet Is Being Totally Normal About It</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cd68vpjv21do#2" data-cat="world" data-sent="0" data-slug="news articles cd68vpjv21do" hidden="until-found"><span class="ameta"><span class="src sc8">BBC WORLD</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.bbc.co.uk/news/articles/cd68vpjv21do" target="_blank" rel="noopener noreferrer">Satellite images reveal scale of flood devastation in Nepal villages</a></li>
-<li class="arow" data-count="1" data-id="rss:https://arstechnica.com/space/2026/08/trump-calls-for-creation-of-a-space-academy-to-train-future-nasa-leaders/" data-cat="tech" data-sent="0" data-slug="space trump calls for creation academy train future nasa leaders" hidden="until-found"><span class="ameta"><span class="src sc16">ARS TECHNICA</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Tech</span></span></span><a class="atitle" href="https://arstechnica.com/space/2026/08/trump-calls-for-creation-of-a-space-academy-to-train-future-nasa-leaders/" target="_blank" rel="noopener noreferrer">Here&#39;s what we know about the &quot;space academy&quot; Trump just announced</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
