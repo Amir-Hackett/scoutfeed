@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-05T16:47:10.265Z">
+<meta name="sf-version" content="2026-09-05T16:55:08.198Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -309,6 +309,15 @@ h1 .tld { color: var(--accent); }
 }
 .card.lead.has-thumb .front { padding-right: min(44%, 360px); }
 .card.lead .front .thumb { width: min(42%, 340px); }
+/* Art-aware windows (owner screenshot 2026-09-05: a 2.4:1 ProPublica banner
+   in the square window kept half a face and three clipped words). The page
+   cannot know an image's shape at render, so the client tags the card from
+   naturalWidth/naturalHeight on load: wide art gets a wide window, a banner a
+   wider one, and portrait art crops from the top where the face is. Tall
+   (h2) cards already mount art as a full-width strip and are left alone. */
+.card.art-wide:not(.h2) .front .thumb { aspect-ratio: 16 / 10; }
+.card.art-banner:not(.h2) .front .thumb { aspect-ratio: 2 / 1; }
+.card.art-tall .front .thumb { object-position: center top; }
 /* Feedback — bottom-right of the back face, out of the flip/read path. */
 /* Back-face action row (ui audit 2026-09-05): source link, share and the
    votes on ONE 32px row, each with a 44px hit area, instead of the link
@@ -518,6 +527,7 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    w2 card actually spans two tracks. */
 @container card (min-width: 560px) {
 	.card.w2.h2 .front .title { font-size: 22px; -webkit-line-clamp: 3; }
+	.card.w2.h2 .front .snippet { -webkit-line-clamp: 6; }
 	.card.w2:not(.h2):not(.has-thumb) .front .title { font-size: 20px; -webkit-line-clamp: 3; }
 	.card.w2:not(.h2):not(.has-thumb) .front .snippet { -webkit-line-clamp: 3; }
 }
@@ -568,7 +578,10 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 .card:active { transform: scale(0.985); }
 .card.lead { grid-column: 1 / -1; }
 .card.lead .front .title { font-size: clamp(21px, 4vw, 26px); line-height: 1.22; -webkit-line-clamp: 2; }
-.card.lead .front .snippet { font-size: 14.5px; }
+/* Three lines, not two: the 640-char dek (ledger cap raised 2026-09-05)
+   fills a full-width lead to the line, and the 188px row has exactly room
+   for meta + a two-line headline + three lines of 14.5px. */
+.card.lead .front .snippet { font-size: 14.5px; -webkit-line-clamp: 3; }
 .card .inner {
 	position: absolute; inset: 0;
 	transition: transform 550ms cubic-bezier(0.3, 0.8, 0.3, 1);
@@ -667,11 +680,12 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(290 55% 72%)"] { color: #7e418a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(280 55% 72%)"] { color: #77458e !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(303 55% 72%)"] { color: #853d83 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(15 55% 72%)"] { color: #824e3c !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(306 55% 72%)"] { color: #853d80 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(92 55% 72%)"] { color: #466a1c !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(131 55% 72%)"] { color: #1d6f36 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(284 55% 72%)"] { color: #7a438c !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(19 55% 72%)"] { color: #80503a !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(71 55% 72%)"] { color: #5a6512 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(265 55% 72%)"] { color: #6b4b94 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(73 55% 72%)"] { color: #586513 !important; }
 .sc0 { color: hsl(269 55% 72%); }
 :root[data-theme="light"] .sc0 { color: #6e4992; }
 .sc1 { color: #fb923c; }
@@ -930,7 +944,7 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 12:47 PM &middot; 285 TODAY</p>
+	<p class="stats">UPDATED 12:55 PM &middot; 285 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
 	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">231</span><span class="sr-only"> — 231 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">386</span><span class="sr-only"> — 386 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">207</span><span class="sr-only"> — 207 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">260</span><span class="sr-only"> — 260 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">116</span><span class="sr-only"> — 116 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">306</span><span class="sr-only"> — 306 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">530</span><span class="sr-only"> — 530 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">328</span><span class="sr-only"> — 328 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">295</span><span class="sr-only"> — 295 stories</span></button>
@@ -1211,43 +1225,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://gazette.com/2026/09/04/how-to-watch-air-force-footballs-home-opener-on-saturday/" target="_blank" rel="noopener noreferrer">How to watch Air Force football’s home opener on Saturday</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(287 55% 72%)">COLORADO SPRINGS GAZETTE</span><span class="sep" aria-hidden="true">&middot;</span>"duquesne vs air force" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.dispatch.com/picture-gallery/sports/college/football/2026/09/04/bo-jackson-ohio-state-running-back-in-2026-season-photos/91547424007/" target="_blank" rel="noopener noreferrer">OSU running back Bo Jackson in action: Photos from 2026 Ohio State football season</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(131 55% 72%)">THE COLUMBUS DISPATCH</span><span class="sep" aria-hidden="true">&middot;</span>"bo jackson ohio state" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.foxsports.com/stories/college-football/dylan-raiola-oregon-dante-moore" target="_blank" rel="noopener noreferrer">Dylan Raiola Has Never Been A Backup — Now He’s Embracing The Wait At Oregon</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(280 55% 72%)">FOX SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"dylan raiola" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://247sports.com/college/ohio-state/article/why-ohio-state-football-oc-arthur-smith-will-coach-from-the-sideline-in-2026-289440707/" target="_blank" rel="noopener noreferrer">Why Ohio State OC Arthur Smith will coach from the sideline in 2026</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(284 55% 72%)">247SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"arthur smith" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.uwdawgpound.com/general/76729/the-prediction-apple-cup-uw-football" target="_blank" rel="noopener noreferrer">The Prediction: Apple Cup</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(303 55% 72%)">UW DAWG POUND</span><span class="sep" aria-hidden="true">&middot;</span>"apple cup 2026" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.bbc.com/sport/football/live/cmq8jkwz3x02t" target="_blank" rel="noopener noreferrer">Athletic Club vs Atletico Madrid: Spanish La Liga stats &amp; head-to-head</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(19 55% 72%)">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"athletic bilbao vs atlético madrid standings" &middot; 5000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://cryptobriefing.com/nico-williams-athletic-club-decade-deal/" target="_blank" rel="noopener noreferrer">Athletic Club locks down Nico Williams with decade-long deal worth over €200M</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(15 55% 72%)">CRYPTO BRIEFING</span><span class="sep" aria-hidden="true">&middot;</span>"athletic club" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://sports.yahoo.com/articles/key-alabama-running-back-gets-145727337.html" target="_blank" rel="noopener noreferrer">Key Alabama running back gets injury update ahead of East Carolina clash</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(71 55% 72%)">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"ej crowell" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://people.com/natalie-portman-welcomes-baby-no-3-her-first-with-partner-tanguy-destable-11986813" target="_blank" rel="noopener noreferrer">Natalie Portman Welcomes Baby No. 3, Her First with Partner Tanguy Destable (Exclusive Source)</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(306 55% 72%)">PEOPLE.COM</span><span class="sep" aria-hidden="true">&middot;</span>"natalie portman" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://dknetwork.draftkings.com/2026/09/05/prediction-pick-for-nora-cornolle-vs-klaudia-sygula-at-ufc-paris/" target="_blank" rel="noopener noreferrer">Prediction, pick for Nora Cornolle vs. Klaudia Sygula at UFC Paris</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(265 55% 72%)">DRAFTKINGS NETWORK</span><span class="sep" aria-hidden="true">&middot;</span>"klaudia sygula" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://collider.com/19-years-later-the-gritty-timothy-olyphant-thriller-youve-never-seen-is-officially-streaming/" target="_blank" rel="noopener noreferrer">19 Years Later, the Gritty Timothy Olyphant Thriller You&#39;ve Never Seen Is Officially Streaming</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(92 55% 72%)">COLLIDER</span><span class="sep" aria-hidden="true">&middot;</span>"timothy olyphant" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.autoblog.com/news/rams-first-suv-coming-with-777-hp-supercharged-v8" target="_blank" rel="noopener noreferrer">Ram’s First SUV Coming With 777-HP Supercharged V8</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(73 55% 72%)">AUTOBLOG</span><span class="sep" aria-hidden="true">&middot;</span>"ram suv" &middot; 500+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1429,7 +1443,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2 has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.polygon.com/city-builder-games-2026/" data-srckey="polygon" data-cat="games" data-sent="0" data-ts="1788624015000" data-slug="city builder games">
+<article class="card compact h2 has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.polygon.com/city-builder-games-2026/" data-srckey="polygon" data-cat="games" data-sent="0" data-ts="1788624015000" data-slug="city builder games">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="2026 Has Been the Best Year for City-Builders in Decades — flip for details">
 	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T16:00:15.000Z">12:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
@@ -1854,7 +1868,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2" style="--rail:#f87171" data-count="1" data-id="rss:https://www.npr.org/2026/09/05/nx-s1-5959159/us-iran-warships-targeted" data-srckey="npr world" data-cat="world" data-sent="0" data-ts="1788620708000" data-slug="iran warships targeted">
+<article class="card compact" style="--rail:#f87171" data-count="1" data-id="rss:https://www.npr.org/2026/09/05/nx-s1-5959159/us-iran-warships-targeted" data-srckey="npr world" data-cat="world" data-sent="0" data-ts="1788620708000" data-slug="iran warships targeted">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="US military hits 3 Iranian oil tankers after saying Navy warships were targeted — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(314 55% 72%)">NPR WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T15:05:08.000Z">11:05 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
@@ -2179,7 +2193,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2 has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.polygon.com/fortnite-kingdom-hearts-collab-delayed-next-update/" data-srckey="polygon" data-cat="games" data-sent="0" data-ts="1788620180000" data-slug="fortnite kingdom hearts collab delayed next update">
+<article class="card compact h2 has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.polygon.com/fortnite-kingdom-hearts-collab-delayed-next-update/" data-srckey="polygon" data-cat="games" data-sent="0" data-ts="1788620180000" data-slug="fortnite kingdom hearts collab delayed next update">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Kingdom Hearts&#39; Highly Anticipated Fortnite Collab Delayed, Rumors Say — flip for details">
 	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T14:56:20.000Z">10:56 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
@@ -2229,7 +2243,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2 has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788617994" data-srckey="al jazeera" data-cat="world" data-sent="0" data-ts="1788619868000" data-slug="opinions multipolarity gives middle powers more choices but fewer guarantees">
+<article class="card compact h2 has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788617994" data-srckey="al jazeera" data-cat="world" data-sent="0" data-ts="1788619868000" data-slug="opinions multipolarity gives middle powers more choices but fewer guarantees">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Multipolarity gives middle powers more choices, but fewer guarantees — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T14:51:08.000Z">10:51 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
@@ -2329,7 +2343,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact h2" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236691725" data-srckey="hollywood reporter" data-cat="entertainment" data-sent="0" data-ts="1788618870000" data-slug="news general pianist actress maureen lipman noisy london israel">
+<article class="card compact w2" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236691725" data-srckey="hollywood reporter" data-cat="entertainment" data-sent="0" data-ts="1788618870000" data-slug="news general pianist actress maureen lipman noisy london israel">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘Pianist’ Actress Maureen Lipman Predicts “Noisy” Night in London Over Her Israel Views — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(18 55% 72%)">HOLLYWOOD REPORTER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T14:34:30.000Z">10:34 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
@@ -2579,7 +2593,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact h2" style="--rail:#7dd3fc" data-count="1" data-id="rss:CBMihwJBVV95cUxOclpRbHFkel94RHE3ZDhQbjdveXBmSXc0ZFFpQzl2OEpqLUhxLUVNUnhuTzhONndOUWpLSzVsaHVab0dvS3NmQWhwRm4wVEMzNEYwN25lNGxjdk4xRkMyNlYyNndnZzFORFlSaGgtbDJyM0RvWGVQVi1YUmxUZHVqVnl6Qm0yLXNjME9kR0JlWU42SzFwQW1IbnZqaDZETVFIZElFa19jRHNXaUlMODcyQmNtWGFxckJMMFpzVmNOd0FIY2liZXFlblFLLS1TYUtFVDZnUHdoTGxZRFR4SERTUWh0cTRFdG5rRm8wRVV6aFQ1VUhaTlJxV2M1TkVrMEthWmZ0X21YNA" data-srckey="medicare advantage wire" data-cat="healthcare" data-sent="0" data-ts="1788617700000" data-slug="rss articles cbmihwjbvv95cuxoclprbhfkel94rhe3zdhqbjdvexbmsxc0zffpqzl2oepqluhxluvnunhutzhonndouwplszvsahvab0dvs3nmqwhwrm4wvemzneywn25lngxjdk4xrkmynlyynndnzzforflsaggtbdjym0rvwgvqvi1yumxuzhvqvnl6qm0ylxnjme9kr0jlwu42szfwqw1ibnzqadzetvfizelfa19jrhnxaulmodcyqmntwgfxckjmmfpzvmnod0fiy2lizxflblflls1tyutfvdznuhdotgxzrfr4sertuwh0ctrfdg5rrm8wrvv6afq1vuhatljxv2m1tkvrmethwmz0x21yna">
+<article class="card compact" style="--rail:#7dd3fc" data-count="1" data-id="rss:CBMihwJBVV95cUxOclpRbHFkel94RHE3ZDhQbjdveXBmSXc0ZFFpQzl2OEpqLUhxLUVNUnhuTzhONndOUWpLSzVsaHVab0dvS3NmQWhwRm4wVEMzNEYwN25lNGxjdk4xRkMyNlYyNndnZzFORFlSaGgtbDJyM0RvWGVQVi1YUmxUZHVqVnl6Qm0yLXNjME9kR0JlWU42SzFwQW1IbnZqaDZETVFIZElFa19jRHNXaUlMODcyQmNtWGFxckJMMFpzVmNOd0FIY2liZXFlblFLLS1TYUtFVDZnUHdoTGxZRFR4SERTUWh0cTRFdG5rRm8wRVV6aFQ1VUhaTlJxV2M1TkVrMEthWmZ0X21YNA" data-srckey="medicare advantage wire" data-cat="healthcare" data-sent="0" data-ts="1788617700000" data-slug="rss articles cbmihwjbvv95cuxoclprbhfkel94rhe3zdhqbjdvexbmsxc0zffpqzl2oepqluhxluvnunhutzhonndouwplszvsahvab0dvs3nmqwhwrm4wvemzneywn25lngxjdk4xrkmynlyynndnzzforflsaggtbdjym0rvwgvqvi1yumxuzhvqvnl6qm0ylxnjme9kr0jlwu42szfwqw1ibnzqadzetvfizelfa19jrhnxaulmodcyqmntwgfxckjmmfpzvmnod0fiy2lizxflblflls1tyutfvdznuhdotgxzrfr4sertuwh0ctrfdg5rrm8wrvv6afq1vuhatljxv2m1tkvrmethwmz0x21yna">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Medicare Advantage patients who get diagnosed with Alzheimer’s or other serious diseases are ditching their plans — and it can cost them - MarketWatch — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(260 55% 72%)">MEDICARE ADVANTAGE WIRE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T14:15:00.000Z">10:15 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#7dd3fc">Healthcare</span></div>
@@ -3029,7 +3043,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact h2" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.rollingstone.com/?post_type=pmc_list&amp;p=1235618399" data-srckey="rolling stone music" data-cat="music" data-sent="0" data-ts="1788615000000" data-slug="music lists fleetwood mac your own way all the versions">
+<article class="card compact" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.rollingstone.com/?post_type=pmc_list&amp;p=1235618399" data-srckey="rolling stone music" data-cat="music" data-sent="0" data-ts="1788615000000" data-slug="music lists fleetwood mac your own way all the versions">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Watch 24 Different Versions of ‘Go Your Own Way’ by Fleetwood Mac and Their Offshoots — flip for details">
 	<div class="meta"><span class="src" style="color:#fb7185">ROLLING STONE MUSIC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:30:00.000Z">9:30 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
@@ -3129,7 +3143,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2 has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49814597" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788613728090" data-slug="college football story week preview lsu clemson louisville ole miss notre dame">
+<article class="card compact h2 has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49814597" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788613728090" data-slug="college football story week preview lsu clemson louisville ole miss notre dame">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Get ready for Week 1! 34 games to look out for as the season gets going — flip for details">
 	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:08:48.090Z">9:08 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
@@ -3429,7 +3443,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/0ae34d30-4889-450e-9d33-67e24b40a97b" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1788613578360" data-slug="payers employers health benefits costs could rise marsh survey">
+<article class="card compact" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/0ae34d30-4889-450e-9d33-67e24b40a97b" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1788613578360" data-slug="payers employers health benefits costs could rise marsh survey">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Employers’ health benefits costs could rise 8.2% in 2027: Marsh survey — flip for details">
 	<div class="meta"><span class="src" style="color:#7dd3fc">FIERCE HEALTHCARE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:06:18.360Z">9:06 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#7dd3fc">Healthcare</span></div>
@@ -3604,7 +3618,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/50555c30-5b12-416e-9808-c1a8682c9cd4" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1788613578302" data-slug="finance fierce healthcare layoff tracker job cuts eliminations health systems hospitals">
+<article class="card compact" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/50555c30-5b12-416e-9808-c1a8682c9cd4" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1788613578302" data-slug="finance fierce healthcare layoff tracker job cuts eliminations health systems hospitals">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Fierce Healthcare Layoff Tracker—HCA Healthcare cuts corporate, support staff; Stanford Health Care lays off 95 — flip for details">
 	<div class="meta"><span class="src" style="color:#7dd3fc">FIERCE HEALTHCARE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:06:18.302Z">9:06 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#7dd3fc">Healthcare</span></div>
@@ -3679,7 +3693,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/15519a44-3dfb-4596-84b0-899249e9ef34" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1788613578241" data-slug="regulatory oig medicare part plans spent millions ineligible otc drugs">
+<article class="card compact" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/15519a44-3dfb-4596-84b0-899249e9ef34" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1788613578241" data-slug="regulatory oig medicare part plans spent millions ineligible otc drugs">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="OIG: Medicare Part D plans spent millions on ineligible OTC drugs — flip for details">
 	<div class="meta"><span class="src" style="color:#7dd3fc">FIERCE HEALTHCARE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:06:18.241Z">9:06 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#7dd3fc">Healthcare</span></div>
@@ -3704,7 +3718,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact h2" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/5f73021a-e703-4169-87c5-998cc9617133" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1788613578191" data-slug="payers rep pallone probing surprises act arbiters amid concern about idr costs volume">
+<article class="card compact" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/5f73021a-e703-4169-87c5-998cc9617133" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1788613578191" data-slug="payers rep pallone probing surprises act arbiters amid concern about idr costs volume">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Rep. Pallone probing No Surprises Act arbiters amid concern about IDR costs, volume — flip for details">
 	<div class="meta"><span class="src" style="color:#7dd3fc">FIERCE HEALTHCARE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:06:18.191Z">9:06 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#7dd3fc">Healthcare</span></div>
@@ -3729,7 +3743,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact h2" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/6708430b-b3da-4f50-8c70-ff8436f6c7d4" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1788613578151" data-slug="regulatory ftc claims ohio hospitals acquisition pivot antitrust victory">
+<article class="card compact w2" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/6708430b-b3da-4f50-8c70-ff8436f6c7d4" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1788613578151" data-slug="regulatory ftc claims ohio hospitals acquisition pivot antitrust victory">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="FTC claims Ohio hospital&#39;s acquisition pivot as antitrust victory — flip for details">
 	<div class="meta"><span class="src" style="color:#7dd3fc">FIERCE HEALTHCARE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:06:18.151Z">9:06 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#7dd3fc">Healthcare</span></div>
@@ -3754,7 +3768,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/501b610a-361a-4d9a-a641-2423473527d5" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1788613578107" data-slug="health tech weekly rundown vitality acquires icario hims expands australia">
+<article class="card compact" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/501b610a-361a-4d9a-a641-2423473527d5" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1788613578107" data-slug="health tech weekly rundown vitality acquires icario hims expands australia">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Weekly Rundown: LeanTaaS acquires care transition platform Aidin; Hims expands to Australia — flip for details">
 	<div class="meta"><span class="src" style="color:#7dd3fc">FIERCE HEALTHCARE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:06:18.107Z">9:06 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#7dd3fc">Healthcare</span></div>
@@ -3804,7 +3818,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/a16c5953-8d25-47ba-974a-44bfd93a7389" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1788613577947" data-slug="digital health smart ring maker oura files public pitching investors driven preventive">
+<article class="card compact w2" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/a16c5953-8d25-47ba-974a-44bfd93a7389" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1788613577947" data-slug="digital health smart ring maker oura files public pitching investors driven preventive">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Smart ring maker Oura files to go public, pitching investors on AI-driven preventive health — flip for details">
 	<div class="meta"><span class="src" style="color:#7dd3fc">FIERCE HEALTHCARE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:06:17.947Z">9:06 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#7dd3fc">Healthcare</span></div>
@@ -3829,7 +3843,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/13b0d753-205b-4fec-877a-93d540d76838" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1788613577893" data-slug="regulatory mark cubans recipe affordable healthcare includes these policy changes">
+<article class="card compact w2" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.fiercehealthcare.com/13b0d753-205b-4fec-877a-93d540d76838" data-srckey="fierce healthcare" data-cat="healthcare" data-sent="0" data-ts="1788613577893" data-slug="regulatory mark cubans recipe affordable healthcare includes these policy changes">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Mark Cuban&#39;s recipe for affordable healthcare includes these 5 policy changes — flip for details">
 	<div class="meta"><span class="src" style="color:#7dd3fc">FIERCE HEALTHCARE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:06:17.893Z">9:06 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#7dd3fc">Healthcare</span></div>
@@ -4579,7 +4593,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/ken_mwaura1/building-production-kra-etims-and-safaricom-m-pesa-integrations-for-odoo-19-2f29" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788611852000" data-slug="ken mwaura1 building production kra etims and safaricom pesa integrations for odoo 2f29">
+<article class="card compact h2" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/ken_mwaura1/building-production-kra-etims-and-safaricom-m-pesa-integrations-for-odoo-19-2f29" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788611852000" data-slug="ken mwaura1 building production kra etims and safaricom pesa integrations for odoo 2f29">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Building Production KRA eTIMS and Safaricom M-Pesa Integrations for Odoo 19 — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T12:37:32.000Z">8:37 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
@@ -4604,7 +4618,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49815317" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788611795000" data-slug="nfl story minnesota vikings kyler murray mccarthy kevin oconnell">
+<article class="card compact" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49815317" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788611795000" data-slug="nfl story minnesota vikings kyler murray mccarthy kevin oconnell">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Will Kyler Murray end the Vikings&#39; tragicomic QB history? — flip for details">
 	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T12:36:35.000Z">8:36 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
@@ -4729,7 +4743,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2 has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:WP-MKTW-0005218748" data-srckey="marketwatch" data-cat="markets" data-sent="0" data-ts="1788611400000" data-slug="story plastic surgery booming with boomers heres how cash the antiaging craze 7f1ea891">
+<article class="card compact h2 has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:WP-MKTW-0005218748" data-srckey="marketwatch" data-cat="markets" data-sent="0" data-ts="1788611400000" data-slug="story plastic surgery booming with boomers heres how cash the antiaging craze 7f1ea891">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Plastic surgery is booming with boomers. Here’s how to cash in on the antiaging craze. — flip for details">
 	<div class="meta"><span class="src" style="color:#34d399">MARKETWATCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T12:30:00.000Z">8:30 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
@@ -4904,7 +4918,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2" style="--rail:#facc15" data-count="1" data-id="rss:108358626" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1788610542000" data-slug="hsa 401k plan retirement automatic enrollment html">
+<article class="card compact" style="--rail:#facc15" data-count="1" data-id="rss:108358626" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1788610542000" data-slug="hsa 401k plan retirement automatic enrollment html">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="With HSAs, employers are turning to the 401(k) playbook — flip for details">
 	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T12:15:42.000Z">8:15 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
@@ -5229,7 +5243,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2 has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://www.unite.ai/?p=458043" data-srckey="unite.ai" data-cat="ai" data-sent="0" data-ts="1788609600000" data-slug="how agents work">
+<article class="card compact h2 has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://www.unite.ai/?p=458043" data-srckey="unite.ai" data-cat="ai" data-sent="0" data-ts="1788609600000" data-slug="how agents work">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="How AI Agents Work: The Model, Tools, Memory, and Control Loop — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(29 55% 72%)">UNITE.AI</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T12:00:00.000Z">8:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
@@ -5404,7 +5418,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact h2" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236691657" data-srckey="hollywood reporter" data-cat="entertainment" data-sent="0" data-ts="1788609088000" data-slug="movies movie news maggie gyllenhaal marilyn monroe film dakota johnson">
+<article class="card compact w2" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236691657" data-srckey="hollywood reporter" data-cat="entertainment" data-sent="0" data-ts="1788609088000" data-slug="movies movie news maggie gyllenhaal marilyn monroe film dakota johnson">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Maggie Gyllenhaal Was Asked to Use AI to Recreate Marilyn Monroe. But it Flopped Compared to Dakota Johnson — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(18 55% 72%)">HOLLYWOOD REPORTER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T11:51:28.000Z">7:51 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
@@ -5429,7 +5443,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 no-snippet" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/6du6h3" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1788609024000" data-slug="projects visualizing rusts vtables how dyn trait works memory">
+<article class="card compact no-snippet" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/6du6h3" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1788609024000" data-slug="projects visualizing rusts vtables how dyn trait works memory">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Visualizing Rust&#39;s Vtables: How dyn Trait Works In Memory — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T11:50:24.000Z">7:50 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
@@ -5554,7 +5568,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact h2" style="--rail:#fb923c" data-count="1" data-id="rss:https://www.npr.org/2026/09/05/nx-s1-5957499/week-in-politics-trumps-face-on-the-coin-reshaping-the-capital-the-midterms" data-srckey="npr politics" data-cat="politics" data-sent="0" data-ts="1788608602000" data-slug="week politics trumps face the coin reshaping capital midterms">
+<article class="card compact w2" style="--rail:#fb923c" data-count="1" data-id="rss:https://www.npr.org/2026/09/05/nx-s1-5957499/week-in-politics-trumps-face-on-the-coin-reshaping-the-capital-the-midterms" data-srckey="npr politics" data-cat="politics" data-sent="0" data-ts="1788608602000" data-slug="week politics trumps face the coin reshaping capital midterms">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Week in Politics: Trump&#39;s face on the coin; reshaping the capital; the midterms — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(273 55% 72%)">NPR POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T11:43:22.000Z">7:43 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
@@ -5629,7 +5643,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 no-snippet" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/svyytg" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1788608029000" data-slug="content pitcrew pages">
+<article class="card compact no-snippet" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/svyytg" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1788608029000" data-slug="content pitcrew pages">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="NYC PIT Crew — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T11:33:49.000Z">7:33 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
@@ -5829,7 +5843,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact h2 no-snippet" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/grm0m9" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1788606779000" data-slug="knowing where type zero">
+<article class="card compact no-snippet" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/grm0m9" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1788606779000" data-slug="knowing where type zero">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Knowing Where to Type ‘Zero’ (2015) — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T11:12:59.000Z">7:12 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
@@ -6529,7 +6543,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2" style="--rail:#fb923c" data-count="1" data-id="rss:https://www.washingtonpost.com/politics/2026/09/05/mystery-behind-an-audio-clip-that-helped-upend-senate-race/" data-srckey="washington post politics" data-cat="politics" data-sent="0" data-ts="1788602401000" data-slug="politics mystery behind audio clip that helped upend senate race">
+<article class="card compact" style="--rail:#fb923c" data-count="1" data-id="rss:https://www.washingtonpost.com/politics/2026/09/05/mystery-behind-an-audio-clip-that-helped-upend-senate-race/" data-srckey="washington post politics" data-cat="politics" data-sent="0" data-ts="1788602401000" data-slug="politics mystery behind audio clip that helped upend senate race">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The mystery behind an audio clip that helped upend a Senate race — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(89 55% 72%)">WASHINGTON POST POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T10:00:01.000Z">6:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
@@ -6629,7 +6643,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2" style="--rail:#f87171" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788594727" data-srckey="al jazeera" data-cat="world" data-sent="0" data-ts="1788602213000" data-slug="news why trump threatening strike irans pickaxe mountain again now">
+<article class="card compact" style="--rail:#f87171" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788594727" data-srckey="al jazeera" data-cat="world" data-sent="0" data-ts="1788602213000" data-slug="news why trump threatening strike irans pickaxe mountain again now">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Why is Trump threatening to strike Iran’s Pickaxe Mountain again, now? — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T09:56:53.000Z">5:56 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
@@ -6704,7 +6718,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:6a9a8e508c5dcdd338e64bb6" data-srckey="wired" data-cat="tech" data-sent="0" data-ts="1788601500000" data-slug="story the watch world went crazy this week here are you need see">
+<article class="card compact h2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:6a9a8e508c5dcdd338e64bb6" data-srckey="wired" data-cat="tech" data-sent="0" data-ts="1788601500000" data-slug="story the watch world went crazy this week here are you need see">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The Watch World Went Crazy This Week. Here Are the 10 You Need to See — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(207 55% 72%)">WIRED</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T09:45:00.000Z">5:45 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
@@ -7279,7 +7293,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact h2" style="--rail:#fb923c" data-count="1" data-id="rss:https://www.npr.org/2026/09/05/nx-s1-5913671/ai-data-center-campaign-spending" data-srckey="npr politics" data-cat="politics" data-sent="0" data-ts="1788598800000" data-slug="data center campaign spending">
+<article class="card compact w2" style="--rail:#fb923c" data-count="1" data-id="rss:https://www.npr.org/2026/09/05/nx-s1-5913671/ai-data-center-campaign-spending" data-srckey="npr politics" data-cat="politics" data-sent="0" data-ts="1788598800000" data-slug="data center campaign spending">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Voters are fed up with data centers. Both parties are trying to cash in for midterms — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(273 55% 72%)">NPR POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T09:00:00.000Z">5:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
@@ -7304,7 +7318,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2" style="--rail:#a78bfa" data-count="1" data-id="rss:https://www.washingtonpost.com/politics/2026/09/05/chatgpt-bans-campaigns-using-ai-make-ads-theyre-doing-it-anyway/" data-srckey="washington post politics" data-cat="ai" data-sent="0" data-ts="1788598800000" data-slug="politics chatgpt bans campaigns using make ads theyre doing anyway">
+<article class="card compact" style="--rail:#a78bfa" data-count="1" data-id="rss:https://www.washingtonpost.com/politics/2026/09/05/chatgpt-bans-campaigns-using-ai-make-ads-theyre-doing-it-anyway/" data-srckey="washington post politics" data-cat="ai" data-sent="0" data-ts="1788598800000" data-slug="politics chatgpt bans campaigns using make ads theyre doing anyway">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="ChatGPT bans campaigns from using AI to make ads. They’re doing it anyway. — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(89 55% 72%)">WASHINGTON POST POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T09:00:00.000Z">5:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
@@ -7404,7 +7418,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2 has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c3v45xy67g5o#1" data-srckey="bbc world" data-cat="world" data-sent="0" data-ts="1788597698000" data-slug="news articles c3v45xy67g5o">
+<article class="card compact h2 has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/c3v45xy67g5o#1" data-srckey="bbc world" data-cat="world" data-sent="0" data-ts="1788597698000" data-slug="news articles c3v45xy67g5o">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="At least two dead in blast at Bolivia military barracks — flip for details">
 	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T08:41:38.000Z">4:41 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
@@ -7529,7 +7543,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.polygon.com/zelda-tears-of-the-kingdom-secrets-of-the-zonai-book-october-2026/" data-srckey="polygon" data-cat="entertainment" data-sent="0" data-ts="1788596414000" data-slug="zelda tears the kingdom secrets zonai book october">
+<article class="card compact h2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.polygon.com/zelda-tears-of-the-kingdom-secrets-of-the-zonai-book-october-2026/" data-srckey="polygon" data-cat="entertainment" data-sent="0" data-ts="1788596414000" data-slug="zelda tears the kingdom secrets zonai book october">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Zelda: Tears of the Kingdom Returns in October With a New Deluxe Release — flip for details">
 	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T08:20:14.000Z">4:20 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
@@ -7579,7 +7593,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2" style="--rail:#f87171" data-count="1" data-id="rss:https://www.dw.com/en/why-many-syrians-feel-assad-s-death-sentence-isn-t-enough/a-78985915?maca=en-rss-en-world-4025-rdf" data-srckey="dw world" data-cat="world" data-sent="0" data-ts="1788595380000" data-slug="why many syrians feel assad death sentence isn enough">
+<article class="card compact w2" style="--rail:#f87171" data-count="1" data-id="rss:https://www.dw.com/en/why-many-syrians-feel-assad-s-death-sentence-isn-t-enough/a-78985915?maca=en-rss-en-world-4025-rdf" data-srckey="dw world" data-cat="world" data-sent="0" data-ts="1788595380000" data-slug="why many syrians feel assad death sentence isn enough">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Why many Syrians feel Assad&#39;s death sentence isn&#39;t enough — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(29 55% 72%)">DW WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T08:03:00.000Z">4:03 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
@@ -8029,7 +8043,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2 has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:bc221e41-f2eb-4337-86b6-1b02950889b6" data-srckey="coindesk" data-cat="markets" data-sent="0" data-ts="1788586245000" data-slug="markets xrp ledger has fewer active accounts but bigger trades and more value">
+<article class="card compact h2 has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:bc221e41-f2eb-4337-86b6-1b02950889b6" data-srckey="coindesk" data-cat="markets" data-sent="0" data-ts="1788586245000" data-slug="markets xrp ledger has fewer active accounts but bigger trades and more value">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="XRP Ledger has fewer active accounts than last year, but bigger trades and more value — flip for details">
 	<div class="meta"><span class="src" style="color:#fbbf24">COINDESK</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T05:30:45.000Z">1:30 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
@@ -8204,7 +8218,7 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2 h2" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236681228" data-srckey="hollywood reporter" data-cat="entertainment" data-sent="0" data-ts="1788582600000" data-slug="movies movie reviews the idiots review aimee lou wood johnny flynn dostoevsky">
+<article class="card compact w2" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236681228" data-srckey="hollywood reporter" data-cat="entertainment" data-sent="0" data-ts="1788582600000" data-slug="movies movie reviews the idiots review aimee lou wood johnny flynn dostoevsky">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘The Idiot(s)’ Review: Aimee Lou Wood and Johnny Flynn Sparkle in a Playful, Indulgent Tribute to Fyodor Dostoevsky’s Underappreciated Wife — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(18 55% 72%)">HOLLYWOOD REPORTER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T04:30:00.000Z">12:30 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
@@ -11314,8 +11328,17 @@ footer a { color: var(--text-faint); }
 			orderRail();
 		}
 	});
-	// Broken/blocked art degrades to the text-only card, no dead frame.
+	// Broken/blocked art degrades to the text-only card, no dead frame. Art
+	// that loads tags its card with its shape (see the art-aware window rules).
 	document.querySelectorAll('.thumb').forEach(function (img) {
+		function tagShape() {
+			if (!img.naturalWidth || !img.naturalHeight) return;
+			var card = img.closest('.card');
+			if (!card) return;
+			var r = img.naturalWidth / img.naturalHeight;
+			card.classList.add(r >= 2.1 ? 'art-banner' : r >= 1.6 ? 'art-wide' : r <= 0.85 ? 'art-tall' : 'art-square');
+		}
+		if (img.complete) tagShape(); else img.addEventListener('load', tagShape);
 		img.addEventListener('error', function () {
 			var card = img.closest('.card');
 			if (card) card.classList.remove('has-thumb');
