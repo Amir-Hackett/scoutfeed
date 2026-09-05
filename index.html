@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-05T20:22:49.962Z">
+<meta name="sf-version" content="2026-09-05T20:37:29.961Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -631,8 +631,10 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(336 55% 72%)"] { color: #894262 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
@@ -640,14 +642,13 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#c084fc"] { color: #7638ab !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#3b82f6"] { color: #0755c5 !important; }
@@ -667,7 +668,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(273 55% 72%)"] { color: #724890 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#a78bfa"] { color: #6545ad !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(243 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(89 55% 72%)"] { color: #49691b !important; }
@@ -943,10 +943,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 4:22 PM &middot; 317 TODAY</p>
+	<p class="stats">UPDATED 4:37 PM &middot; 320 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">225</span><span class="sr-only"> — 225 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">397</span><span class="sr-only"> — 397 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">205</span><span class="sr-only"> — 205 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">260</span><span class="sr-only"> — 260 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">114</span><span class="sr-only"> — 114 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">309</span><span class="sr-only"> — 309 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">527</span><span class="sr-only"> — 527 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">331</span><span class="sr-only"> — 331 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">291</span><span class="sr-only"> — 291 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">223</span><span class="sr-only"> — 223 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">397</span><span class="sr-only"> — 397 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">206</span><span class="sr-only"> — 206 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">260</span><span class="sr-only"> — 260 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">114</span><span class="sr-only"> — 114 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">309</span><span class="sr-only"> — 309 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">527</span><span class="sr-only"> — 527 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">332</span><span class="sr-only"> — 332 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">291</span><span class="sr-only"> — 291 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1292,6 +1292,31 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact w2 has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://kotaku.com/?p=2000731564" data-srckey="kotaku" data-cat="games" data-sent="0" data-ts="1788638697000" data-slug="epic games ceo tim sweeney says the industry crashing and making worse">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Epic Games CEO Tim Sweeney Says The Industry Is Crashing And AI Is Making It Worse — flip for details">
+	<div class="meta"><span class="src" style="color:#a3e635">KOTAKU</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T20:04:57.000Z">4:04 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">Epic Games CEO Tim Sweeney Says The Industry Is Crashing And AI Is Making It Worse</h3>
+	<p class="snippet">Usually playing the cheerleader for artificial intelligence, the Epic CEO seems to have cooled on the trend and regrets humoring NFTs</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://kotaku.com/app/uploads/2026/09/fortnitecollapse-1280x792.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Epic Games CEO Tim Sweeney Says The Industry Is Crashing And AI Is Making It Worse</h3>
+	<p class="about">Usually playing the cheerleader for artificial intelligence, the Epic CEO seems to have cooled on the trend and regrets humoring NFTs</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://kotaku.com/epic-games-ceo-tim-sweeney-says-the-industry-is-crashing-and-ai-is-making-it-worse-2000731564" target="_blank" rel="noopener noreferrer">Kotaku &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
 <article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://techcrunch.com/?p=3161045" data-srckey="techcrunch" data-cat="tech" data-sent="0" data-ts="1788636924000" data-slug="hikers rescued after using google gemini for planning">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Hikers rescued after using Google Gemini for planning — flip for details">
@@ -1333,6 +1358,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://deadline.com/2026/09/oasis-dont-look-back-in-anger-review-liam-gallagher-noel-gallagher-1237069054/" target="_blank" rel="noopener noreferrer">Deadline &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fb923c" data-count="1" data-id="rss:9a87a52a-8fcf-4cf6-95a1-1cc5988b7943" data-srckey="cbs politics" data-cat="politics" data-sent="0" data-ts="1788636580000" data-slug="news trump million ken paxton first major contribution midterms">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Trump delivers $10 million to Ken Paxton in first major contribution of midterms — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(69 55% 72%)">CBS POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T19:29:40.000Z">3:29 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">Trump delivers $10 million to Ken Paxton in first major contribution of midterms</h3>
+	<p class="snippet">President Trump&#39;s MAGA Inc. super PAC had previously only given one donation this midterm cycle: about $800,000 to Darline Graham.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assets2.cbsnewsstatic.com/hub/i/r/2026/09/05/8243372d-950c-47d3-8d08-3c359903b15a/thumbnail/1200x630/0cce39be7fc8cf0c7a85209897fb2497/gettyimages-2277314604.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Trump delivers $10 million to Ken Paxton in first major contribution of midterms</h3>
+	<p class="about">President Trump&#39;s MAGA Inc. super PAC had previously only given one donation this midterm cycle: about $800,000 to Darline Graham.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.cbsnews.com/news/trump-10-million-ken-paxton-first-major-contribution-midterms/" target="_blank" rel="noopener noreferrer">CBS Politics &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1508,6 +1558,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://www.nationalreview.com/corner/big-money-to-be-made-assisting-suicides/" target="_blank" rel="noopener noreferrer">National Review Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.engadget.com/2247813/how-to-track-prices-safari-notify-me-tool-iphone-ipad-macbook/" data-srckey="engadget" data-cat="tech" data-sent="0" data-ts="1788633000000" data-slug="how track prices safari notify tool iphone ipad macbook">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="How to track prices with Safari&#39;s Notify Me tool on iPhone, iPad and Mac — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(229 55% 72%)">ENGADGET</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T18:30:00.000Z">2:30 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">How to track prices with Safari&#39;s Notify Me tool on iPhone, iPad and Mac</h3>
+	<p class="snippet">Apple&#39;s Notify Me feature can update you every time a price drops or a product comes back in stock. Tell it what to do and it&#39;ll take care of the rest.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.engadget.com/img/gallery/how-to-track-prices-with-safaris-notify-me-tool-on-iphone-ipad-and-mac/l-intro-1788197004.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">How to track prices with Safari&#39;s Notify Me tool on iPhone, iPad and Mac</h3>
+	<p class="about">Apple&#39;s Notify Me feature can update you every time a price drops or a product comes back in stock. Tell it what to do and it&#39;ll take care of the rest.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.engadget.com/2247813/how-to-track-prices-safari-notify-me-tool-iphone-ipad-macbook/" target="_blank" rel="noopener noreferrer">Engadget &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -5547,13 +5622,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Aflac Taps Affleck for Commercials to Keep Insurance Customers Quacking — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T12:30:00.000Z">8:30 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
 	<h3 class="title">Aflac Taps Affleck for Commercials to Keep Insurance Customers Quacking</h3>
-	<p class="snippet">It seems as simple as moving a few letters around, but a new collaboration between Aflac, the provider of supplemental insurance and Ben Affleck, the actor and director, has been years in the making. Pairing Aflac, which has thrived with commercials featuring an anthropomorphic duck squawking out its name, and Affleck. the star of “Good […]</p>
+	<p class="snippet">It seems as simple as moving a few letters around, but a new collaboration between Aflac , the provider of supplemental insurance and Ben Affleck , the actor and director, has been years in the making. Pairing Aflac, which has thrived with commercials featuring an anthropomorphic duck squawking out its name, and Affleck. the star of “Good Will Hunting,” “Gone Girl” and “Argo,” is an idea that has been in the ether for some time, acknowledges Garth Knutson, the insurer’s senior vice president and chief marketing officer. “This has probably been tens of thousands of peoples’ idea,” he says during a recent interview. “It’s one of those things that people just make as a joke. Even Ben has been joking about it for a long time — maybe he has been a little bit more annoyed in the past.”</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/09/e325c62e-fdcb-4f19-97dc-7e63c410882a.png?w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/09/e325c62e-fdcb-4f19-97dc-7e63c410882a.png?w=600 600w, https://variety.com/wp-content/uploads/2026/09/e325c62e-fdcb-4f19-97dc-7e63c410882a.png?w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Aflac Taps Affleck for Commercials to Keep Insurance Customers Quacking</h3>
-	<p class="about">It seems as simple as moving a few letters around, but a new collaboration between Aflac, the provider of supplemental insurance and Ben Affleck, the actor and director, has been years in the making. Pairing Aflac, which has thrived with commercials featuring an anthropomorphic duck squawking out its name, and Affleck. the star of “Good […]</p>
+	<p class="about">It seems as simple as moving a few letters around, but a new collaboration between Aflac , the provider of supplemental insurance and Ben Affleck , the actor and director, has been years in the making. Pairing Aflac, which has thrived with commercials featuring an anthropomorphic duck squawking out its name, and Affleck. the star of “Good Will Hunting,” “Gone Girl” and “Argo,” is an idea that has been in the ether for some time, acknowledges Garth Knutson, the insurer’s senior vice president and chief marketing officer. “This has probably been tens of thousands of peoples’ idea,” he says during a recent interview. “It’s one of those things that people just make as a joke. Even Ben has been joking about it for a long time — maybe he has been a little bit more annoyed in the past.”</p>
 	
 	
 	<div class="actions">
@@ -5597,13 +5672,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="US envoys arrive in Moscow ahead of Ukraine talks — flip for details">
 	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T12:23:00.000Z">8:23 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
 	<h3 class="title">US envoys arrive in Moscow ahead of Ukraine talks</h3>
-	<p class="snippet">Steve Witkoff and Jared Kushner are due to hold talks with Russia before travelling to Ukraine on Sunday.</p>
+	<p class="snippet">US President Donald Trump&#39;s top negotiators are meeting Russian President Vladimir Putin in Moscow, as efforts to end the war in Ukraine gather pace. Footage released by the Kremlin showed Steve Witkoff and Jared Kushner being greeted by Putin, who said the current situation &quot;is not so easy&quot;. He added Russia would explain &quot;how we see the situation&quot;. Witkoff thanked Putin for agreeing with Ukraine to halt strikes on each other&#39;s capitals for three days. On Sunday the envoys will travel to Kyiv for more talks. On Friday, Trump said Witkoff and Kushner were &quot;bringing with them a proposal to end the war&quot;. So far, efforts by the US and its allies to broker a peace deal have failed. At Saturday&#39;s talks in the Kremlin, Putin also said that &quot;in any case, whatever happens, such contacts are…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/7a17/live/0cde6b70-a910-11f1-9eff-150801023722.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/600/cpsprodpb/7a17/live/0cde6b70-a910-11f1-9eff-150801023722.jpg 600w, https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/7a17/live/0cde6b70-a910-11f1-9eff-150801023722.jpg 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">US envoys arrive in Moscow ahead of Ukraine talks</h3>
-	<p class="about">Steve Witkoff and Jared Kushner are due to hold talks with Russia before travelling to Ukraine on Sunday.</p>
+	<p class="about">US President Donald Trump&#39;s top negotiators are meeting Russian President Vladimir Putin in Moscow, as efforts to end the war in Ukraine gather pace. Footage released by the Kremlin showed Steve Witkoff and Jared Kushner being greeted by Putin, who said the current situation &quot;is not so easy&quot;. He added Russia would explain &quot;how we see the situation&quot;. Witkoff thanked Putin for agreeing with Ukraine to halt strikes on each other&#39;s capitals for three days. On Sunday the envoys will travel to Kyiv for more talks. On Friday, Trump said Witkoff and Kushner were &quot;bringing with them a proposal to end the war&quot;. So far, efforts by the US and its allies to broker a peace deal have failed. At Saturday&#39;s talks in the Kremlin, Putin also said that &quot;in any case, whatever happens, such contacts are…</p>
 	
 	
 	<div class="actions">
@@ -5922,13 +5997,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Mario Kart 8 Refuses to Let the Switch 2 Rule Nintendo — flip for details">
 	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T12:00:14.000Z">8:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
 	<h3 class="title">Mario Kart 8 Refuses to Let the Switch 2 Rule Nintendo</h3>
-	<p class="snippet">After the 4.0 update with 8-player split-screen, everyone&#39;s talking about it instead of Mario Kart World. Awkward!</p>
+	<p class="snippet">As you may have heard, Mario Kart 8 Deluxe received a major update this week; it&#39;s now on version 4.0 and has a number of Switch 2 upgrades (more on those in a second). This was a strange occurrence for many reasons. Firstly: Mario Kart 8 Deluxe is one of the best-selling games of all time. There are 71 million copies of it out there (not counting the original Wii U game). It is, presumably, still played frequently by huge numbers of people. Why is it only getting its Switch 2 update now, over a year into the console&#39;s life? Secondly: Why a free update, and not an official Switch 2 Edition? This is fairly easily answered — Nintendo doesn&#39;t want to cannibalize Mario Kart World sales by turning Mario Kart 8 into an official Switch 2 product. But those sales are being cannibalized anyway…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/8330553/mario_kart_8_deluxe_mario_1920.jpg?w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/8330553/mario_kart_8_deluxe_mario_1920.jpg?w=600 600w, https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/8330553/mario_kart_8_deluxe_mario_1920.jpg?w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Mario Kart 8 Refuses to Let the Switch 2 Rule Nintendo</h3>
-	<p class="about">After the 4.0 update with 8-player split-screen, everyone&#39;s talking about it instead of Mario Kart World. Awkward!</p>
+	<p class="about">As you may have heard, Mario Kart 8 Deluxe received a major update this week; it&#39;s now on version 4.0 and has a number of Switch 2 upgrades (more on those in a second). This was a strange occurrence for many reasons. Firstly: Mario Kart 8 Deluxe is one of the best-selling games of all time. There are 71 million copies of it out there (not counting the original Wii U game). It is, presumably, still played frequently by huge numbers of people. Why is it only getting its Switch 2 update now, over a year into the console&#39;s life? Secondly: Why a free update, and not an official Switch 2 Edition? This is fairly easily answered — Nintendo doesn&#39;t want to cannibalize Mario Kart World sales by turning Mario Kart 8 into an official Switch 2 product. But those sales are being cannibalized anyway…</p>
 	
 	
 	<div class="actions">
@@ -9195,7 +9270,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2678 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2675 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241376" data-cat="entertainment" data-sent="0" data-slug="interest toei animation confirms license for french dragon ball theme park" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-04/toei-animation-confirms-no-license-for-french-dragon-ball-theme-park/.241376" target="_blank" rel="noopener noreferrer">Toei Animation Confirms No License for French Dragon Ball Theme Park</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241422" data-cat="entertainment" data-sent="0" data-slug="news yowaki max reijo nanoni ratsuwan konyakusha sama kake notte shimatta anime reveals theme song" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-09-04/yowaki-max-reijo-nanoni-ratsuwan-konyakusha-sama-no-kake-ni-notte-shimatta-anime-reveals-theme-song-/.241422" target="_blank" rel="noopener noreferrer">&#39;Yowaki MAX Reijō nanoni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta&#39; Anime Reveals Theme Song Artist, October 4 Debut</a></li>
@@ -11872,9 +11947,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236845690" data-cat="entertainment" data-sent="0" data-slug="news owen thiele adults overcompensating nepo baby" hidden="until-found"><span class="ameta"><span class="src sc47">VARIETY</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://variety.com/2026/tv/news/owen-thiele-adults-overcompensating-nepo-baby-1236845690/" target="_blank" rel="noopener noreferrer">Owen Thiele on Portraying Queer Friendship in ‘Adults,’ Working With Connor Storrie and Being a ‘Nepo Grandchild’</a></li>
 <li class="arow" data-count="1" data-id="rss:https://dev.to/uhltak/zfs-auf-proxmox-performance-tuning-und-datensicherung-in-der-praxis-361o" data-cat="dev" data-sent="0" data-slug="uhltak zfs auf proxmox performance tuning und datensicherung der praxis 361o" hidden="until-found"><span class="ameta"><span class="src sc48">DEV.TO</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Dev</span></span></span><a class="atitle" href="https://dev.to/uhltak/zfs-auf-proxmox-performance-tuning-und-datensicherung-in-der-praxis-361o" target="_blank" rel="noopener noreferrer">ZFS auf Proxmox: Performance-Tuning und Datensicherung in der Praxis</a></li>
 <li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000729304" data-cat="games" data-sent="0" data-slug="elden rings big update dark souls character" hidden="until-found"><span class="ameta"><span class="src sc14">KOTAKU</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Games</span></span></span><a class="atitle" href="https://kotaku.com/elden-rings-big-update-dark-souls-2-character-2000729304" target="_blank" rel="noopener noreferrer">Elden Ring’s New DLC Just Quietly Brought Back A Beloved Dark Souls 2 Character</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.beckershospitalreview.com/?p=409194" data-cat="healthcare" data-sent="0" data-slug="finance hca florida hospital close nicu" hidden="until-found"><span class="ameta"><span class="src sc32">BECKER&#39;S HOSPITAL REVIEW</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Healthcare</span></span></span><a class="atitle" href="https://www.beckershospitalreview.com/finance/hca-florida-hospital-to-close-nicu/" target="_blank" rel="noopener noreferrer">HCA Florida hospital to close NICU</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2244161/dolby-atmos-and-lossless-audio-differences/" data-cat="tech" data-sent="0" data-slug="dolby atmos and lossless audio differences" hidden="until-found"><span class="ameta"><span class="src sc15">ENGADGET</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Tech</span></span></span><a class="atitle" href="https://www.engadget.com/2244161/dolby-atmos-and-lossless-audio-differences/" target="_blank" rel="noopener noreferrer">What&#39;s the difference between Dolby Atmos and lossless audio?</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.statnews.com/?p=1515450" data-cat="healthcare" data-sent="0" data-slug="lindsay clancy postpartum psychosis reproductive psychiatrists liability" hidden="until-found"><span class="ameta"><span class="src sc26">STAT NEWS</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Healthcare</span></span></span><a class="atitle" href="https://www.statnews.com/2026/08/28/lindsay-clancy-postpartum-psychosis-reproductive-psychiatrists-liability/" target="_blank" rel="noopener noreferrer">Opinion: The unintended consequences of the Lindsay Clancy case</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
