@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-05T16:56:56.488Z">
+<meta name="sf-version" content="2026-09-05T16:57:56.693Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -541,9 +541,11 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 	.face > .meta .cat, .face > .meta .sep:has(+ .cat) { display: none; }
 }
 /* A thumb card's meta line is the card minus the art — about 150px on a
-   284px phone card — and the source truncated to one letter ("V… · 10:04 am
-   · Ent…", ui audit 2026-09-05). Same trade, one size up. */
-@container card (max-width: 340px) {
+   284px phone card, ~200px on a 370px desktop card — and the source
+   truncated ("V… · 10:04 am · Ent…" on the phone, "THE VER… · 12:49 pm · Te…"
+   on the desktop, both 2026-09-05). Same trade, up to the width at which
+   source + time + category actually fit beside the art. */
+@container card (max-width: 430px) {
 	.card.has-thumb .face > .meta .cat, .card.has-thumb .face > .meta .sep:has(+ .cat) { display: none; }
 }
 /* A fixed-height card can only hold so many lines. Text boxes are pinned at
@@ -944,7 +946,7 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 12:56 PM &middot; 287 TODAY</p>
+	<p class="stats">UPDATED 12:57 PM &middot; 287 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
 	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">230</span><span class="sr-only"> — 230 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">386</span><span class="sr-only"> — 386 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">207</span><span class="sr-only"> — 207 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">260</span><span class="sr-only"> — 260 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">116</span><span class="sr-only"> — 116 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">306</span><span class="sr-only"> — 306 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">530</span><span class="sr-only"> — 530 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">328</span><span class="sr-only"> — 328 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">296</span><span class="sr-only"> — 296 stories</span></button>
