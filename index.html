@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-05T16:55:08.198Z">
+<meta name="sf-version" content="2026-09-05T16:56:56.488Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -629,9 +629,10 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#c084fc"] { color: #7638ab !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#a3e635"] { color: #367000 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#ef4444"] { color: #b60010 !important; }
@@ -644,7 +645,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(260 55% 72%)"] { color: #674c95 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
@@ -944,10 +944,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 12:55 PM &middot; 285 TODAY</p>
+	<p class="stats">UPDATED 12:56 PM &middot; 287 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">231</span><span class="sr-only"> — 231 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">386</span><span class="sr-only"> — 386 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">207</span><span class="sr-only"> — 207 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">260</span><span class="sr-only"> — 260 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">116</span><span class="sr-only"> — 116 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">306</span><span class="sr-only"> — 306 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">530</span><span class="sr-only"> — 530 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">328</span><span class="sr-only"> — 328 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">295</span><span class="sr-only"> — 295 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">230</span><span class="sr-only"> — 230 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">386</span><span class="sr-only"> — 386 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">207</span><span class="sr-only"> — 207 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">260</span><span class="sr-only"> — 260 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">116</span><span class="sr-only"> — 116 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">306</span><span class="sr-only"> — 306 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">530</span><span class="sr-only"> — 530 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">328</span><span class="sr-only"> — 328 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">296</span><span class="sr-only"> — 296 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1284,6 +1284,56 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://variety.com/2026/film/reviews/everest-the-other-side-review-1236852376/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/entertainment/990794/cd-sales-are-booming-as-physical-media-continues-its-resurgence" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1788626973000" data-slug="entertainment sales are booming physical media continues its resurgence">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="CD sales are booming as physical media continues its resurgence — flip for details">
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T16:49:33.000Z">12:49 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">CD sales are booming as physical media continues its resurgence</h3>
+	<p class="snippet">There’s some real gems in there. | Photo: Terrence O’Brien / The Verge According to the Recording Industry Association of America (RIAA), CD sales exploded in the first half of 2026. A new report from the organization says 17.5 million CDs were sold in the first six months of the year, up from just 12 million during the same period in 2025. That&#39;s a jump of 45.7 percent, and 58.6 percent in dollars, which reached $171.1 million. What makes this all the more shocking is that CD sales actually shrank 22 percent from 2024 to 2025. The RIAA isn&#39;t the only one to notice the boom in CD sales. In July, research firm Luminate released a…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DSCF1155-EDIT.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.737667300434%2C100%2C78.524665399133&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DSCF1155-EDIT.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.737667300434%2C100%2C78.524665399133&amp;w=240 240w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DSCF1155-EDIT.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.737667300434%2C100%2C78.524665399133&amp;w=340 340w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DSCF1155-EDIT.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.737667300434%2C100%2C78.524665399133&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">CD sales are booming as physical media continues its resurgence</h3>
+	<p class="about">There’s some real gems in there. | Photo: Terrence O’Brien / The Verge According to the Recording Industry Association of America (RIAA), CD sales exploded in the first half of 2026. A new report from the organization says 17.5 million CDs were sold in the first six months of the year, up from just 12 million during the same period in 2025. That&#39;s a jump of 45.7 percent, and 58.6 percent in dollars, which reached $171.1 million. What makes this all the more shocking is that CD sales actually shrank 22 percent from 2024 to 2025. The RIAA isn&#39;t the only one to notice the boom in CD sales. In July, research firm Luminate released a…</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.theverge.com/entertainment/990794/cd-sales-are-booming-as-physical-media-continues-its-resurgence" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.polygon.com/double-fine-reveals-thank-you-bus-driver/" data-srckey="polygon" data-cat="games" data-sent="0" data-ts="1788626877000" data-slug="double fine reveals thank you bus driver">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Double Fine reveals its first post-Xbox game as Tim Schafer declares no one will shut the studio down but him — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T16:47:57.000Z">12:47 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">Double Fine reveals its first post-Xbox game as Tim Schafer declares no one will shut the studio down but him</h3>
+	<p class="snippet">Thank You Bus Driver is the first game being published under the Double Fine Action Labs label</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/screenshot-2026-09-05-113452.png?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/screenshot-2026-09-05-113452.png?w=240 240w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/screenshot-2026-09-05-113452.png?w=340 340w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/screenshot-2026-09-05-113452.png?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Double Fine reveals its first post-Xbox game as Tim Schafer declares no one will shut the studio down but him</h3>
+	<p class="about">Thank You Bus Driver is the first game being published under the Double Fine Action Labs label</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.polygon.com/double-fine-reveals-thank-you-bus-driver/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -8396,7 +8446,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2710 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2708 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241376" data-cat="entertainment" data-sent="0" data-slug="interest toei animation confirms license for french dragon ball theme park" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-04/toei-animation-confirms-no-license-for-french-dragon-ball-theme-park/.241376" target="_blank" rel="noopener noreferrer">Toei Animation Confirms No License for French Dragon Ball Theme Park</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241422" data-cat="entertainment" data-sent="0" data-slug="news yowaki max reijo nanoni ratsuwan konyakusha sama kake notte shimatta anime reveals theme song" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-09-04/yowaki-max-reijo-nanoni-ratsuwan-konyakusha-sama-no-kake-ni-notte-shimatta-anime-reveals-theme-song-/.241422" target="_blank" rel="noopener noreferrer">&#39;Yowaki MAX Reijō nanoni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta&#39; Anime Reveals Theme Song Artist, October 4 Debut</a></li>
@@ -11106,8 +11156,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.dw.com/en/what-next-kurds-say-yes-druze-still-say-no-to-united-syria/a-78549925?maca=en-rss-en-world-4025-rdf" data-cat="world" data-sent="0" data-slug="what next kurds say yes druze still united syria" hidden="until-found"><span class="ameta"><span class="src sc28">DW WORLD</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.dw.com/en/what-next-kurds-say-yes-druze-still-say-no-to-united-syria/a-78549925?maca=en-rss-en-world-4025-rdf" target="_blank" rel="noopener noreferrer">What next? Kurds say yes, Druze still say no to united Syria</a></li>
 <li class="arow" data-count="1" data-id="rss:https://arstechnica.com/culture/2026/08/our-10-favorite-scenes-from-t2-judgment-day/" data-cat="tech" data-sent="0" data-slug="culture our favorite scenes from judgment day" hidden="until-found"><span class="ameta"><span class="src sc16">ARS TECHNICA</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Tech</span></span></span><a class="atitle" href="https://arstechnica.com/culture/2026/08/our-10-favorite-scenes-from-t2-judgment-day/" target="_blank" rel="noopener noreferrer">Our 10 favorite scenes from T2: Judgment Day</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235617335" data-cat="music" data-sent="0" data-slug="music news john mayer future dead and company" hidden="until-found"><span class="ameta"><span class="src sc24">ROLLING STONE MUSIC</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Music</span></span></span><a class="atitle" href="https://www.rollingstone.com/music/music-news/john-mayer-future-dead-and-company-1235617335/" target="_blank" rel="noopener noreferrer">John Mayer Has Some Thoughts on His Future With Dead and Company</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.beckerspayer.com/?p=28055" data-cat="healthcare" data-sent="0" data-slug="legal florida sues pbms over alleged price fixing" hidden="until-found"><span class="ameta"><span class="src sc36">BECKER&#39;S PAYER ISSUES</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Healthcare</span></span></span><a class="atitle" href="https://www.beckerspayer.com/legal/florida-sues-2-pbms-over-alleged-price-fixing/" target="_blank" rel="noopener noreferrer">Florida sues 2 PBMs over alleged price fixing</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.polygon.com/marvel-iron-man-game-leak-ea-motive/" data-cat="games" data-sent="0" data-slug="marvel iron man game leak motive" hidden="until-found"><span class="ameta"><span class="src sc46">POLYGON</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Games</span></span></span><a class="atitle" href="https://www.polygon.com/marvel-iron-man-game-leak-ea-motive/" target="_blank" rel="noopener noreferrer">Iron Man&#39;s Official Return Looks Incredible in Leaked Footage</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
@@ -11338,7 +11386,11 @@ footer a { color: var(--text-faint); }
 			var r = img.naturalWidth / img.naturalHeight;
 			card.classList.add(r >= 2.1 ? 'art-banner' : r >= 1.6 ? 'art-wide' : r <= 0.85 ? 'art-tall' : 'art-square');
 		}
-		if (img.complete) tagShape(); else img.addEventListener('load', tagShape);
+		// Both, always: a lazy image that has not been requested yet reports
+		// complete=true with naturalWidth 0, so an either/or here silently
+		// tagged nothing (measured 2026-09-05: 285 cards, 0 tagged).
+		img.addEventListener('load', tagShape);
+		if (img.complete) tagShape();
 		img.addEventListener('error', function () {
 			var card = img.closest('.card');
 			if (card) card.classList.remove('has-thumb');
