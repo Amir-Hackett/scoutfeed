@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-05T20:37:29.961Z">
+<meta name="sf-version" content="2026-09-05T21:37:31.836Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -631,16 +631,19 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#c084fc"] { color: #7638ab !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#34d399"] { color: #007644 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(336 55% 72%)"] { color: #894262 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#facc15"] { color: #815500 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
@@ -648,14 +651,11 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#3b82f6"] { color: #0755c5 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb923c"] { color: #9d3b00 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(260 55% 72%)"] { color: #674c95 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(271 55% 72%)"] { color: #704891 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(224 55% 72%)"] { color: #495b8f !important; }
@@ -682,9 +682,10 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(71 55% 72%)"] { color: #5a6512 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(2 55% 72%)"] { color: #8a4745 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(268 55% 72%)"] { color: #6d4a92 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(19 55% 72%)"] { color: #80503a !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(54 55% 72%)"] { color: #685f15 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(159 55% 72%)"] { color: #176d56 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(203 55% 72%)"] { color: #35647e !important; }
 .sc0 { color: hsl(269 55% 72%); }
 :root[data-theme="light"] .sc0 { color: #6e4992; }
 .sc1 { color: #fb923c; }
@@ -943,10 +944,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 4:37 PM &middot; 320 TODAY</p>
+	<p class="stats">UPDATED 5:37 PM &middot; 325 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">223</span><span class="sr-only"> — 223 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">397</span><span class="sr-only"> — 397 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">206</span><span class="sr-only"> — 206 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">260</span><span class="sr-only"> — 260 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">114</span><span class="sr-only"> — 114 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">309</span><span class="sr-only"> — 309 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">527</span><span class="sr-only"> — 527 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">332</span><span class="sr-only"> — 332 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">291</span><span class="sr-only"> — 291 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">223</span><span class="sr-only"> — 223 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">163</span><span class="sr-only"> — 163 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">397</span><span class="sr-only"> — 397 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">205</span><span class="sr-only"> — 205 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">259</span><span class="sr-only"> — 259 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">114</span><span class="sr-only"> — 114 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">309</span><span class="sr-only"> — 309 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">528</span><span class="sr-only"> — 528 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">333</span><span class="sr-only"> — 333 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">292</span><span class="sr-only"> — 292 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1224,43 +1225,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/tennis/story/_/id/49825071/us-open-2026-tennis-etiquette-social-media-influencers-content-creators" target="_blank" rel="noopener noreferrer">Separating fact from fiction: The US Open influencer controversy</a>
-		<p class="trend-meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"coco gauff" &middot; 5000+ searches</p>
+		<a class="trend-title" href="https://www.bbc.com/sport/football/live/cx5ylvj9d8e3t" target="_blank" rel="noopener noreferrer">Villarreal vs Deportivo de A Coruña: Spanish La Liga stats &amp; head-to-head</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(19 55% 72%)">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"deportivo la coruna" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sports.yahoo.com/mma/article/mailbag-ufc-332-is-looking-like-an-event-without-a-headliner-and-time-is-running-out-205522712.html" target="_blank" rel="noopener noreferrer">Mailbag: UFC 332 is looking like an event without a headliner, and time is running out</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(71 55% 72%)">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"ufc 332" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.bbc.com/sport/football/live/c9vgye06mllkt" target="_blank" rel="noopener noreferrer">St Mirren vs Celtic LIVE: Scottish Premiership radio commentary, updates, team news, stats &amp; match report</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(19 55% 72%)">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"st. mirren vs celtic" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sports.yahoo.com/articles/where-watch-coco-gauff-vs-165000773.html" target="_blank" rel="noopener noreferrer">How and Where to Watch Coco Gauff vs. Cristina Bucsa Match? Start Time, Live Streaming and TV Channels for US Open</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(71 55% 72%)">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"bucsa tennis" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://ge.globo.com/futebol/times/atletico-mg/noticia/2026/09/04/escalacao-do-atletico-mg-volante-e-cortado-e-dominguez-prepara-mudancas-no-time.ghtml" target="_blank" rel="noopener noreferrer">Atlético-MG lineup: defensive midfielder ruled out as Domínguez prepares changes to the team</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(54 55% 72%)">GE</span><span class="sep" aria-hidden="true">&middot;</span>"são paulo vs atlético mineiro" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://bloodyelbow.com/2026/09/04/arman-tsarukyan-is-confident-he-can-surpass-khabib-and-break-impressive-islam-makhachev-ufc-record/" target="_blank" rel="noopener noreferrer">Arman Tsarukyan is confident he can surpass Khabib and break impressive Islam Makhachev UFC record</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(2 55% 72%)">BLOODY ELBOW</span><span class="sep" aria-hidden="true">&middot;</span>"ufc 331" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.usopen.org/en_US/news/articles/2026-08-30/jessica_pegula_off_to_a_winning_start_at_2026_us_open.html" target="_blank" rel="noopener noreferrer">Jessica Pegula off to a winning start at 2026 US Open</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(159 55% 72%)">US OPEN TENNIS</span><span class="sep" aria-hidden="true">&middot;</span>"arthur gea" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/college-football/story/_/id/49793915/james-franklin-virginia-tech-2026" target="_blank" rel="noopener noreferrer">At Virginia Tech, what does success look like for James Franklin?</a>
-		<p class="trend-meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"james franklin" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://mmajunkie.usatoday.com/story/sports/ufc/2026/09/03/ufc-333s-movsar-evloev-no-finish-doesnt-mean-a-boring-fight/91591934007/" target="_blank" rel="noopener noreferrer">Movsar Evloev dismisses notion that he&#39;s a boring fighter ahead of UFC 333</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(203 55% 72%)">MMA JUNKIE</span><span class="sep" aria-hidden="true">&middot;</span>"ufc 333" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.legacy.com/us/obituaries/name/arthur-marshall-obituary?id=62345654" target="_blank" rel="noopener noreferrer">Arthur Marshall Obituary (2026) - Sarasota, FL - Toale Brothers Funeral Home &amp; Crematory - Colonial Chapel - Sarasota</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(268 55% 72%)">LEGACY | OBITUARY</span><span class="sep" aria-hidden="true">&middot;</span>"marshall" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.politico.com/live-updates/2026/09/04/congress/talarico-texas-midterms-convention-01065607" target="_blank" rel="noopener noreferrer">How Talarico is countering Trump’s midterms convention</a>
+		<p class="trend-meta"><span class="src" style="color:#f87171">POLITICO</span><span class="sep" aria-hidden="true">&middot;</span>"talarico" &middot; 200+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1283,6 +1284,131 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://variety.com/2026/film/reviews/everest-the-other-side-review-1236852376/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#f87171" data-count="1" data-id="rss:https://www.npr.org/2026/09/05/nx-s1-5954264/this-is-the-work-of-our-lifetime-ayana-elizabeth-johnson-urges-action-after-new-un-climate-report" data-srckey="npr world" data-cat="world" data-sent="0" data-ts="1788642068000" data-slug="this the work our lifetime ayana elizabeth johnson urges action after new climate report">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="This is the work of our lifetime: Ayana Elizabeth Johnson urges action after new UN climate report — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(314 55% 72%)">NPR WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T21:01:08.000Z">5:01 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">This is the work of our lifetime: Ayana Elizabeth Johnson urges action after new UN climate report</h3>
+	<p class="snippet">A United Nations report has found that the world will warm to 1.5 degrees Celsius above pre-industrial levels. Climate solutions advocate Ayana Elizabeth Johnson urges a quicker implementation of known strategies - and determination rather than despair.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">This is the work of our lifetime: Ayana Elizabeth Johnson urges action after new UN climate report</h3>
+	<p class="about">A United Nations report has found that the world will warm to 1.5 degrees Celsius above pre-industrial levels. Climate solutions advocate Ayana Elizabeth Johnson urges a quicker implementation of known strategies - and determination rather than despair.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.npr.org/2026/09/05/nx-s1-5954264/this-is-the-work-of-our-lifetime-ayana-elizabeth-johnson-urges-action-after-new-un-climate-report" target="_blank" rel="noopener noreferrer">NPR World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fb923c" data-count="1" data-id="rss:https://www.foxnews.com/politics/north-carolina-dem-senate-candidate-added-former-bloods-gang-member-criminal-justice-task-force" data-srckey="fox news politics" data-cat="politics" data-sent="0" data-ts="1788641904000" data-slug="politics north carolina dem senate candidate added former bloods gang member criminal justice task force">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="North Carolina Dem Senate candidate added former Bloods gang member to criminal justice task force: report — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(101 55% 72%)">FOX NEWS POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T20:58:24.000Z">4:58 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">North Carolina Dem Senate candidate added former Bloods gang member to criminal justice task force: report</h3>
+	<p class="snippet">Roy Cooper appointed a convicted Bloods gang member to his criminal justice reform task force in 2020, a Washington Free Beacon report reveals.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/09/931/523/Pittman_Cooper.jpg?ve=1&amp;tl=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">North Carolina Dem Senate candidate added former Bloods gang member to criminal justice task force: report</h3>
+	<p class="about">Roy Cooper appointed a convicted Bloods gang member to his criminal justice reform task force in 2020, a Washington Free Beacon report reveals.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.foxnews.com/politics/north-carolina-dem-senate-candidate-added-former-bloods-gang-member-criminal-justice-task-force" target="_blank" rel="noopener noreferrer">Fox News Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 h2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/tech/990868/iphone-handoff-ios-27" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1788641638000" data-slug="tech iphone handoff ios">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="iPhone Handoff will seamlessly share one number between two phones — flip for details">
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T20:53:58.000Z">4:53 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">iPhone Handoff will seamlessly share one number between two phones</h3>
+	<p class="snippet">When iOS 27 lands later this month, it will have a feature called iPhone Handoff that lets you switch between two phones using the same number. It was briefly mentioned during the WWDC keynote back in June, but there were no details at the time. Now there&#39;s a demo clip showing how to set up the feature running in Xcode 27&#39;s Device Hub. It lets you pair two iPhones, using one as your main device and the other as its &quot;companion.&quot; Launching the feature now makes sense with the expected launch of the foldable iPhone Ultra right around the corner. People might not always want to take a chunky and extremely expensive device out with…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/vpavic_210916_4760_0240.webp?quality=90&amp;strip=all&amp;crop=0%2C10.742788791498%2C100%2C78.514422417005&amp;w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/vpavic_210916_4760_0240.webp?quality=90&amp;strip=all&amp;crop=0%2C10.742788791498%2C100%2C78.514422417005&amp;w=600 600w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/vpavic_210916_4760_0240.webp?quality=90&amp;strip=all&amp;crop=0%2C10.742788791498%2C100%2C78.514422417005&amp;w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">iPhone Handoff will seamlessly share one number between two phones</h3>
+	<p class="about">When iOS 27 lands later this month, it will have a feature called iPhone Handoff that lets you switch between two phones using the same number. It was briefly mentioned during the WWDC keynote back in June, but there were no details at the time. Now there&#39;s a demo clip showing how to set up the feature running in Xcode 27&#39;s Device Hub. It lets you pair two iPhones, using one as your main device and the other as its &quot;companion.&quot; Launching the feature now makes sense with the expected launch of the foldable iPhone Ultra right around the corner. People might not always want to take a chunky and extremely expensive device out with…</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.theverge.com/tech/990868/iphone-handoff-ios-27" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/mprog10/c-shell-rethought-and-reimplementation-on-functions-552p" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788640931000" data-slug="mprog10 shell rethought and reimplementation functions 552p">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="C shell - Rethought and reimplementation on functions — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T20:42:11.000Z">4:42 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">C shell - Rethought and reimplementation on functions</h3>
+	<p class="snippet">Should we have goto as one-line? What&#39;s your take?</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=1080,height=564,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fiytxkjw1d55yisy2ba03.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=600,height=314,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fiytxkjw1d55yisy2ba03.png 600w, https://media2.dev.to/dynamic/image/width=1080,height=564,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fiytxkjw1d55yisy2ba03.png 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">C shell - Rethought and reimplementation on functions</h3>
+	<p class="about">Should we have goto as one-line? What&#39;s your take?</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://dev.to/mprog10/c-shell-rethought-and-reimplementation-on-functions-552p" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://deadline.com/?p=1237069088" data-srckey="deadline" data-cat="entertainment" data-sent="0" data-ts="1788640532000" data-slug="kid cudi defends performing kanye west chicago">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Kid Cudi Defends Performing With Kanye West In Chicago: “I Held Him Accountable” — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(288 55% 72%)">DEADLINE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T20:35:32.000Z">4:35 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Kid Cudi Defends Performing With Kanye West In Chicago: “I Held Him Accountable”</h3>
+	<p class="snippet">As Kanye West returned to the Windy City for a two-night stay, he had some support from an old friend. On Saturday, Kid Cudi defended performing with the controversial 24x Grammy-winning artist the night before at Soldier Field in Chicago, telling a critic that although “I understand ur frustration,” “I don’t really care if ur […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://deadline.com/wp-content/uploads/2026/09/Kid-Cudi-Kanye-West-2-shot.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Kid Cudi Defends Performing With Kanye West In Chicago: “I Held Him Accountable”</h3>
+	<p class="about">As Kanye West returned to the Windy City for a two-night stay, he had some support from an old friend. On Saturday, Kid Cudi defended performing with the controversial 24x Grammy-winning artist the night before at Soldier Field in Chicago, telling a critic that although “I understand ur frustration,” “I don’t really care if ur […]</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://deadline.com/2026/09/kid-cudi-defends-performing-kanye-west-chicago-1237069088/" target="_blank" rel="noopener noreferrer">Deadline &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1572,13 +1698,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="How to track prices with Safari&#39;s Notify Me tool on iPhone, iPad and Mac — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(229 55% 72%)">ENGADGET</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T18:30:00.000Z">2:30 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
 	<h3 class="title">How to track prices with Safari&#39;s Notify Me tool on iPhone, iPad and Mac</h3>
-	<p class="snippet">Apple&#39;s Notify Me feature can update you every time a price drops or a product comes back in stock. Tell it what to do and it&#39;ll take care of the rest.</p>
+	<p class="snippet">Get an update every time a price drops or a product comes back in stock. One of the features in Apple&#39;s iOS 27 update that you may have missed is Safari&#39;s new Notify Me tool. Designed for things like product restocks and price drops, it can send you a notification when it detects a particular change on any website. Tell the tool, using a simple description, what you want it to watch for and choose how often you&#39;d like it to check the page. Notify Me should be able to handle the rest without you lifting a finger. Setting it up is easy. Tap or click the three horizontal lines on the left side of Safari&#39;s address bar. Select Notify Me and a pop-up will appear, asking you to describe the changes you want it to monitor. After that, select the blue edit button to set the exact time it polls for…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://www.engadget.com/img/gallery/how-to-track-prices-with-safaris-notify-me-tool-on-iphone-ipad-and-mac/l-intro-1788197004.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">How to track prices with Safari&#39;s Notify Me tool on iPhone, iPad and Mac</h3>
-	<p class="about">Apple&#39;s Notify Me feature can update you every time a price drops or a product comes back in stock. Tell it what to do and it&#39;ll take care of the rest.</p>
+	<p class="about">Get an update every time a price drops or a product comes back in stock. One of the features in Apple&#39;s iOS 27 update that you may have missed is Safari&#39;s new Notify Me tool. Designed for things like product restocks and price drops, it can send you a notification when it detects a particular change on any website. Tell the tool, using a simple description, what you want it to watch for and choose how often you&#39;d like it to check the page. Notify Me should be able to handle the rest without you lifting a finger. Setting it up is easy. Tap or click the three horizontal lines on the left side of Safari&#39;s address bar. Select Notify Me and a pop-up will appear, asking you to describe the changes you want it to monitor. After that, select the blue edit button to set the exact time it polls for…</p>
 	
 	
 	<div class="actions">
@@ -6097,13 +6223,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="How AI Agents Work: The Model, Tools, Memory, and Control Loop — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(29 55% 72%)">UNITE.AI</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T12:00:00.000Z">8:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
 	<h3 class="title">How AI Agents Work: The Model, Tools, Memory, and Control Loop</h3>
-	<p class="snippet">An AI agent combines a model with instructions, tools, memory, and a control loop. Understanding how those parts interact explains both the power of agents and the ways they fail.</p>
+	<p class="snippet">An AI agent combines a model with instructions, tools, memory, and a control loop. Understanding how those parts interact explains both the power of agents and the ways they fail. An AI agent works by combining a model with instructions, tools, memory, and a control loop that repeatedly decides what to do next. The model supplies judgment and language capabilities, while the surrounding software turns those capabilities into a stateful process that can act, inspect results, recover from errors, and stop. Understanding this architecture is more useful than treating an agent as a single intelligent object. Most successes and failures arise from how the components interact: an excellent model can be undermined by vague tools, stale memory, excessive permissions, or a control loop with no…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://www.unite.ai/wp-content/uploads/2026/08/02-how-ai-agents-work-1920x1080-1.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">How AI Agents Work: The Model, Tools, Memory, and Control Loop</h3>
-	<p class="about">An AI agent combines a model with instructions, tools, memory, and a control loop. Understanding how those parts interact explains both the power of agents and the ways they fail.</p>
+	<p class="about">An AI agent combines a model with instructions, tools, memory, and a control loop. Understanding how those parts interact explains both the power of agents and the ways they fail. An AI agent works by combining a model with instructions, tools, memory, and a control loop that repeatedly decides what to do next. The model supplies judgment and language capabilities, while the surrounding software turns those capabilities into a stateful process that can act, inspect results, recover from errors, and stop. Understanding this architecture is more useful than treating an agent as a single intelligent object. Most successes and failures arise from how the components interact: an excellent model can be undermined by vague tools, stale memory, excessive permissions, or a control loop with no…</p>
 	
 	
 	<div class="actions">
@@ -6222,13 +6348,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="As wildfires spread north, UN agencies race to help Europe adapt — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(290 55% 72%)">UN NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T12:00:00.000Z">8:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
 	<h3 class="title">As wildfires spread north, UN agencies race to help Europe adapt</h3>
-	<p class="snippet">As the climate warms, the threat of wildfires is spreading in Europe. How can historically cooler and wetter countries prepare?</p>
+	<p class="snippet">Climate and Environment As the climate warms, the threat of wildfires is spreading in Europe. How can historically cooler and wetter countries prepare? Human activity causes most of the wildfires breaking out across Europe, but their spread, speed and intensity are strongly affected by the warmer, drier conditions associated with climate change as well as with changing land use. More than 600,000 hectares of land have burned within European Union countries in the first eight months of 2026, according to the European Forest Fire Information System. That’s below the area recorded by the same date in 2025 (the worst year on record), but it far exceeds the 20-year average of around 280,000 hectares, and preparing for wildfires is key, UN agencies say. While most fires have occured in…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/07/31-07-2026_Adobe_France-01.jpg/image560x340cropped.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">As wildfires spread north, UN agencies race to help Europe adapt</h3>
-	<p class="about">As the climate warms, the threat of wildfires is spreading in Europe. How can historically cooler and wetter countries prepare?</p>
+	<p class="about">Climate and Environment As the climate warms, the threat of wildfires is spreading in Europe. How can historically cooler and wetter countries prepare? Human activity causes most of the wildfires breaking out across Europe, but their spread, speed and intensity are strongly affected by the warmer, drier conditions associated with climate change as well as with changing land use. More than 600,000 hectares of land have burned within European Union countries in the first eight months of 2026, according to the European Forest Fire Information System. That’s below the area recorded by the same date in 2025 (the worst year on record), but it far exceeds the 20-year average of around 280,000 hectares, and preparing for wildfires is key, UN agencies say. While most fires have occured in…</p>
 	
 	
 	<div class="actions">
@@ -9270,7 +9396,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2675 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2670 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241376" data-cat="entertainment" data-sent="0" data-slug="interest toei animation confirms license for french dragon ball theme park" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-04/toei-animation-confirms-no-license-for-french-dragon-ball-theme-park/.241376" target="_blank" rel="noopener noreferrer">Toei Animation Confirms No License for French Dragon Ball Theme Park</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241422" data-cat="entertainment" data-sent="0" data-slug="news yowaki max reijo nanoni ratsuwan konyakusha sama kake notte shimatta anime reveals theme song" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-09-04/yowaki-max-reijo-nanoni-ratsuwan-konyakusha-sama-no-kake-ni-notte-shimatta-anime-reveals-theme-song-/.241422" target="_blank" rel="noopener noreferrer">&#39;Yowaki MAX Reijō nanoni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta&#39; Anime Reveals Theme Song Artist, October 4 Debut</a></li>
@@ -11942,11 +12068,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235617426" data-cat="music" data-sent="0" data-slug="music news miguel calls out online harassment" hidden="until-found"><span class="ameta"><span class="src sc24">ROLLING STONE MUSIC</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Music</span></span></span><a class="atitle" href="https://www.rollingstone.com/music/music-news/miguel-calls-out-online-harassment-1235617426/" target="_blank" rel="noopener noreferrer">Miguel Calls Out Harassment of Partner and Child: ‘Legal and Ethical Lines Have Been Crossed’</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.fiercehealthcare.com/f62cabb6-54da-43f4-bd01-40655708aad0" data-cat="healthcare" data-sent="0" data-slug="providers what medical groups are already doing make care more affordable and whats standing" hidden="until-found"><span class="ameta"><span class="src sc45">FIERCE HEALTHCARE</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Healthcare</span></span></span><a class="atitle" href="https://www.fiercehealthcare.com/providers/op-ed-what-medical-groups-are-already-doing-make-care-more-affordable-and-whats-standing" target="_blank" rel="noopener noreferrer">Op-ed: What medical groups are already doing to make care more affordable, and what&#39;s standing in the way</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.fiercehealthcare.com/1fec1e4e-c435-4e09-9d74-ca31a888b0e9" data-cat="healthcare" data-sent="0" data-slug="regulatory trump admin blocks over 16b potentially fraudulent medicare lab payments cms" hidden="until-found"><span class="ameta"><span class="src sc45">FIERCE HEALTHCARE</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Healthcare</span></span></span><a class="atitle" href="https://www.fiercehealthcare.com/regulatory/trump-admin-blocks-over-16b-potentially-fraudulent-medicare-lab-payments-cms" target="_blank" rel="noopener noreferrer">Trump admin blocks over $1.6B in potentially fraudulent Medicare lab payments: CMS</a></li>
-<li class="arow" data-count="1" data-id="rss:108355791" data-cat="markets" data-sent="0" data-slug="what learned from warshs jackson hole speech and vernovas cfo retire html" hidden="until-found"><span class="ameta"><span class="src sc21">CNBC</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Markets</span></span></span><a class="atitle" href="https://www.cnbc.com/2026/08/28/what-we-learned-from-warshs-jackson-hole-speech-and-ge-vernovas-cfo-to-retire.html" target="_blank" rel="noopener noreferrer">What we learned from Warsh&#39;s Jackson Hole speech, and GE Vernova&#39;s CFO to retire</a></li>
-<li class="arow" data-count="1" data-id="rss:https://dev.to/arivale_e81b6292068e36e1a/hello-from-ari-vale-29m0" data-cat="dev" data-sent="0" data-slug="arivale e81b6292068e36e1a hello from ari vale 29m0" hidden="until-found"><span class="ameta"><span class="src sc48">DEV.TO</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Dev</span></span></span><a class="atitle" href="https://dev.to/arivale_e81b6292068e36e1a/hello-from-ari-vale-29m0" target="_blank" rel="noopener noreferrer">Hello from Ari Vale</a></li>
-<li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236845690" data-cat="entertainment" data-sent="0" data-slug="news owen thiele adults overcompensating nepo baby" hidden="until-found"><span class="ameta"><span class="src sc47">VARIETY</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://variety.com/2026/tv/news/owen-thiele-adults-overcompensating-nepo-baby-1236845690/" target="_blank" rel="noopener noreferrer">Owen Thiele on Portraying Queer Friendship in ‘Adults,’ Working With Connor Storrie and Being a ‘Nepo Grandchild’</a></li>
-<li class="arow" data-count="1" data-id="rss:https://dev.to/uhltak/zfs-auf-proxmox-performance-tuning-und-datensicherung-in-der-praxis-361o" data-cat="dev" data-sent="0" data-slug="uhltak zfs auf proxmox performance tuning und datensicherung der praxis 361o" hidden="until-found"><span class="ameta"><span class="src sc48">DEV.TO</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Dev</span></span></span><a class="atitle" href="https://dev.to/uhltak/zfs-auf-proxmox-performance-tuning-und-datensicherung-in-der-praxis-361o" target="_blank" rel="noopener noreferrer">ZFS auf Proxmox: Performance-Tuning und Datensicherung in der Praxis</a></li>
-<li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000729304" data-cat="games" data-sent="0" data-slug="elden rings big update dark souls character" hidden="until-found"><span class="ameta"><span class="src sc14">KOTAKU</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Games</span></span></span><a class="atitle" href="https://kotaku.com/elden-rings-big-update-dark-souls-2-character-2000729304" target="_blank" rel="noopener noreferrer">Elden Ring’s New DLC Just Quietly Brought Back A Beloved Dark Souls 2 Character</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
