@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-05T21:37:31.836Z">
+<meta name="sf-version" content="2026-09-05T22:37:31.858Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -631,11 +631,13 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
@@ -648,7 +650,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
@@ -665,7 +666,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(290 55% 72%)"] { color: #7e418a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fbbf24"] { color: #885000 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(273 55% 72%)"] { color: #724890 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#a78bfa"] { color: #6545ad !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(243 55% 72%)"] { color: #58529b !important; }
@@ -682,10 +682,10 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(19 55% 72%)"] { color: #80503a !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(54 55% 72%)"] { color: #685f15 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(159 55% 72%)"] { color: #176d56 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(203 55% 72%)"] { color: #35647e !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(71 55% 72%)"] { color: #5a6512 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(244 55% 72%)"] { color: #5a519b !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(114 55% 72%)"] { color: #2a6f24 !important; }
 .sc0 { color: hsl(269 55% 72%); }
 :root[data-theme="light"] .sc0 { color: #6e4992; }
 .sc1 { color: #fb923c; }
@@ -944,10 +944,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 5:37 PM &middot; 325 TODAY</p>
+	<p class="stats">UPDATED 6:37 PM &middot; 328 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">223</span><span class="sr-only"> — 223 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">163</span><span class="sr-only"> — 163 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">397</span><span class="sr-only"> — 397 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">205</span><span class="sr-only"> — 205 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">259</span><span class="sr-only"> — 259 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">114</span><span class="sr-only"> — 114 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">309</span><span class="sr-only"> — 309 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">528</span><span class="sr-only"> — 528 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">333</span><span class="sr-only"> — 333 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">292</span><span class="sr-only"> — 292 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">221</span><span class="sr-only"> — 221 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">398</span><span class="sr-only"> — 398 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">206</span><span class="sr-only"> — 206 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">259</span><span class="sr-only"> — 259 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">113</span><span class="sr-only"> — 113 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">309</span><span class="sr-only"> — 309 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">528</span><span class="sr-only"> — 528 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">333</span><span class="sr-only"> — 333 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">292</span><span class="sr-only"> — 292 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1070,31 +1070,6 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact rail-art has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.engadget.com/2249734/apple-products-being-discontinued-left-behind-2026/" data-srckey="engadget" data-cat="tech" data-sent="0" data-ts="1788610500000" data-slug="apple products being discontinued left behind">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="10 products Apple is leaving behind in 2026 — flip for details">
-	<div class="meta"><span class="src" style="color:hsl(229 55% 72%)">ENGADGET</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T12:15:00.000Z">8:15 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
-	<h3 class="title">10 products Apple is leaving behind in 2026</h3>
-	<p class="snippet">As Apple continues to upgrade its operating system and line of smartphones, smartwatches, displays, and computers, it&#39;s leaving plenty behind in 2026.</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://www.engadget.com/img/gallery/10-products-apple-is-leaving-behind-in-2026/l-intro-1784824676.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-</div>
-<div class="face back" inert>
-	<h3 class="title">10 products Apple is leaving behind in 2026</h3>
-	<p class="about">As Apple continues to upgrade its operating system and line of smartphones, smartwatches, displays, and computers, it&#39;s leaving plenty behind in 2026.</p>
-	
-	
-	<div class="actions">
-	<a class="more" href="https://www.engadget.com/2249734/apple-products-being-discontinued-left-behind-2026/" target="_blank" rel="noopener noreferrer">Engadget &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-	</div>
-</div>
-</div>
-</article>
 <article class="card compact rail-art has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.eurogamer.net/crazy-taxi-world-tour-gamescom-preview" data-srckey="eurogamer" data-cat="games" data-sent="0" data-ts="1788598861000" data-slug="crazy taxi world tour gamescom preview">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Gen-AI controversy aside, Crazy Taxi: World Tour feels like classic arcade Sega - and it&#39;s an absolute blast — flip for details">
@@ -1136,6 +1111,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://www.dw.com/en/why-many-syrians-feel-assad-s-death-sentence-isn-t-enough/a-78985915?maca=en-rss-en-world-4025-rdf" target="_blank" rel="noopener noreferrer">DW World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact rail-art has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.engadget.com/2249734/apple-products-being-discontinued-left-behind-2026/" data-srckey="engadget" data-cat="tech" data-sent="0" data-ts="1788610500000" data-slug="apple products being discontinued left behind">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="10 products Apple is leaving behind in 2026 — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(229 55% 72%)">ENGADGET</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T12:15:00.000Z">8:15 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">10 products Apple is leaving behind in 2026</h3>
+	<p class="snippet">As Apple continues to upgrade its operating system and line of smartphones, smartwatches, displays, and computers, it&#39;s leaving plenty behind in 2026.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.engadget.com/img/gallery/10-products-apple-is-leaving-behind-in-2026/l-intro-1784824676.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">10 products Apple is leaving behind in 2026</h3>
+	<p class="about">As Apple continues to upgrade its operating system and line of smartphones, smartwatches, displays, and computers, it&#39;s leaving plenty behind in 2026.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.engadget.com/2249734/apple-products-being-discontinued-left-behind-2026/" target="_blank" rel="noopener noreferrer">Engadget &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1225,43 +1225,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/sport/football/live/cx5ylvj9d8e3t" target="_blank" rel="noopener noreferrer">Villarreal vs Deportivo de A Coruña: Spanish La Liga stats &amp; head-to-head</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(19 55% 72%)">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"deportivo la coruna" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.usopen.org/en_US/news/articles/2026-09-04/michael_zheng_and_arthur_gea_are_primed_for_the_2026_us_open_stage.html" target="_blank" rel="noopener noreferrer">Michael Zheng and Arthur Gea are primed for the 2026 US Open stage</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(159 55% 72%)">US OPEN TENNIS</span><span class="sep" aria-hidden="true">&middot;</span>"gea tennis" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/sport/football/live/c9vgye06mllkt" target="_blank" rel="noopener noreferrer">St Mirren vs Celtic LIVE: Scottish Premiership radio commentary, updates, team news, stats &amp; match report</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(19 55% 72%)">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"st. mirren vs celtic" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://sports.yahoo.com/articles/saturday-spotlight-know-more-tennessee-175050390.html" target="_blank" rel="noopener noreferrer">Saturday Spotlight: Get to Know More About Tennessee Receiver Mike Matthews</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(71 55% 72%)">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"mike matthews" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://ge.globo.com/futebol/times/atletico-mg/noticia/2026/09/04/escalacao-do-atletico-mg-volante-e-cortado-e-dominguez-prepara-mudancas-no-time.ghtml" target="_blank" rel="noopener noreferrer">Atlético-MG lineup: defensive midfielder ruled out as Domínguez prepares changes to the team</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(54 55% 72%)">GE</span><span class="sep" aria-hidden="true">&middot;</span>"são paulo vs atlético mineiro" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.nfl.com/videos/gmfb-crew-reacts-to-raiders-naming-kirk-cousins-qb1-over-fernando-mendoza" target="_blank" rel="noopener noreferrer">&#39;GMFB&#39; crew reacts to Raiders naming Kirk Cousins QB1 over Fernando Mendoza</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(183 55% 72%)">NFL.COM</span><span class="sep" aria-hidden="true">&middot;</span>"fernando mendoza las vegas raiders" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.usopen.org/en_US/news/articles/2026-08-30/jessica_pegula_off_to_a_winning_start_at_2026_us_open.html" target="_blank" rel="noopener noreferrer">Jessica Pegula off to a winning start at 2026 US Open</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(159 55% 72%)">US OPEN TENNIS</span><span class="sep" aria-hidden="true">&middot;</span>"arthur gea" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.yahoo.com/news/slideshows/alabama-state-football-vs-lane-203800770.html" target="_blank" rel="noopener noreferrer">Alabama State football vs Lane photo gallery: Images from home opener</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(152 55% 72%)">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"lane vs alabama state" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://mmajunkie.usatoday.com/story/sports/ufc/2026/09/03/ufc-333s-movsar-evloev-no-finish-doesnt-mean-a-boring-fight/91591934007/" target="_blank" rel="noopener noreferrer">Movsar Evloev dismisses notion that he&#39;s a boring fighter ahead of UFC 333</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(203 55% 72%)">MMA JUNKIE</span><span class="sep" aria-hidden="true">&middot;</span>"ufc 333" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.foxnews.com/outkick-sports/alabama-high-school-qb-leaves-fans-awe-record-breaking-touchdown-pass" target="_blank" rel="noopener noreferrer">Alabama high school QB leaves fans in awe with record-breaking touchdown pass</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(244 55% 72%)">FOX NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"trent seaborn" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.politico.com/live-updates/2026/09/04/congress/talarico-texas-midterms-convention-01065607" target="_blank" rel="noopener noreferrer">How Talarico is countering Trump’s midterms convention</a>
-		<p class="trend-meta"><span class="src" style="color:#f87171">POLITICO</span><span class="sep" aria-hidden="true">&middot;</span>"talarico" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.batterypower.com/atlanta-braves-game-information/139315/atlanta-braves-vs-phillies-tv-streaming-radio-start-time-look-to-take-another-in-philly-behind-martin-perez" target="_blank" rel="noopener noreferrer">Braves look to take another in Philly behind Martin Perez</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(114 55% 72%)">BATTERY POWER</span><span class="sep" aria-hidden="true">&middot;</span>"braves - phillies" &middot; 1000+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1284,6 +1284,81 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://variety.com/2026/film/reviews/everest-the-other-side-review-1236852376/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://deadline.com/?p=1237069099" data-srckey="deadline" data-cat="entertainment" data-sent="0" data-ts="1788644486000" data-slug="danny boyle confirms use new movie ink">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Danny Boyle Confirms Use Of AI In New Movie ‘Ink’ — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(288 55% 72%)">DEADLINE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T21:41:26.000Z">5:41 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Danny Boyle Confirms Use Of AI In New Movie ‘Ink’</h3>
+	<p class="snippet">Danny Boyle has confirmed the use of AI in new movie Ink about the launch of The Sun newspaper. Speaking to Vanity Fair, Boyle said he had used around 30 seconds of generative AI in the making of his new movie, which opened the Venice Film Festival this week before going on to play Telluride. […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://deadline.com/wp-content/uploads/2026/09/Ink.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Danny Boyle Confirms Use Of AI In New Movie ‘Ink’</h3>
+	<p class="about">Danny Boyle has confirmed the use of AI in new movie Ink about the launch of The Sun newspaper. Speaking to Vanity Fair, Boyle said he had used around 30 seconds of generative AI in the making of his new movie, which opened the Venice Film Festival this week before going on to play Telluride. […]</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://deadline.com/2026/09/danny-boyle-confirms-use-of-ai-in-new-movie-ink-1237069099/" target="_blank" rel="noopener noreferrer">Deadline &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:ec304502-ea4c-41c8-89f7-86b18c79d089" data-srckey="ign" data-cat="games" data-sent="0" data-ts="1788644090000" data-slug="articles insomniac clears the air after marvels wolverine fans confuse lady deathstrike for psylocke">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Insomniac Clears the Air After Marvel&#39;s Wolverine Fans Confuse Lady Deathstrike for Psylocke — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">IGN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T21:34:50.000Z">5:34 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">Insomniac Clears the Air After Marvel&#39;s Wolverine Fans Confuse Lady Deathstrike for Psylocke</h3>
+	<p class="snippet">Insomniac Games has cleared the air after a new trailer for Marvel&#39;s Wolverine had fans confusing Lady Deathstrike for Psylocke.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assets-prd.ignimgs.com/2026/09/05/marvels-wolverine-lady-deathstrike-1788643655912.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Insomniac Clears the Air After Marvel&#39;s Wolverine Fans Confuse Lady Deathstrike for Psylocke</h3>
+	<p class="about">Insomniac Games has cleared the air after a new trailer for Marvel&#39;s Wolverine had fans confusing Lady Deathstrike for Psylocke.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.ign.com/articles/insomniac-clears-the-air-after-marvels-wolverine-fans-confuse-lady-deathstrike-for-psylocke" target="_blank" rel="noopener noreferrer">IGN &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact h2" style="--rail:#5eead4" data-count="1" data-id="rss:https://lobste.rs/s/qnnvq2" data-srckey="lobsters" data-cat="dev" data-sent="0" data-ts="1788642516000" data-slug="abs">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Large-Language Models as a Cognitive Virus — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(6 55% 72%)">LOBSTERS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T21:08:36.000Z">5:08 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
+	<h3 class="title">Large-Language Models as a Cognitive Virus</h3>
+	<p class="snippet">Large-language models (LLMs) are rapidly becoming part of human culture, reshaping how information is produced, transmitted, and used. Here we propose that their diffusion can be understood through a viral analogy, with LLM use spreading through populations, becoming embedded in cognitive and cultural practices. We model transitions among uncoupled, coupled, and persistently dependent users, and show that the interplay between social transmission, recovery, and collective reinforcement can generate tipping points and technological lock-in. A central consequence is the possibility of runaway dynamics: once a critical threshold is…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Large-Language Models as a Cognitive Virus</h3>
+	<p class="about">Large-language models (LLMs) are rapidly becoming part of human culture, reshaping how information is produced, transmitted, and used. Here we propose that their diffusion can be understood through a viral analogy, with LLM use spreading through populations, becoming embedded in cognitive and cultural practices. We model transitions among uncoupled, coupled, and persistently dependent users, and show that the interplay between social transmission, recovery, and collective reinforcement can generate tipping points and technological lock-in. A central consequence is the possibility of runaway dynamics: once a critical threshold is…</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://arxiv.org/abs/2609.03344" target="_blank" rel="noopener noreferrer">Lobsters &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1373,13 +1448,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="C shell - Rethought and reimplementation on functions — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T20:42:11.000Z">4:42 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
 	<h3 class="title">C shell - Rethought and reimplementation on functions</h3>
-	<p class="snippet">Should we have goto as one-line? What&#39;s your take?</p>
+	<p class="snippet">Hello. Recently, I&#39;ve added a new feature to the C shell. This feature is for one-line control structure parsing. Now, after this work, I&#39;ve reimplemented functions. I disliked the work on functions based on pipes. Now, because one-line control structures are a feature, I based functions on aliases. Templates let you quickly answer FAQs or store snippets for re-use. Are you sure you want to hide this comment? It will become hidden in your post, but will still be visible via the comment&#39;s permalink .</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=1080,height=564,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fiytxkjw1d55yisy2ba03.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=600,height=314,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fiytxkjw1d55yisy2ba03.png 600w, https://media2.dev.to/dynamic/image/width=1080,height=564,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fiytxkjw1d55yisy2ba03.png 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">C shell - Rethought and reimplementation on functions</h3>
-	<p class="about">Should we have goto as one-line? What&#39;s your take?</p>
+	<p class="about">Hello. Recently, I&#39;ve added a new feature to the C shell. This feature is for one-line control structure parsing. Now, after this work, I&#39;ve reimplemented functions. I disliked the work on functions based on pipes. Now, because one-line control structures are a feature, I based functions on aliases. Templates let you quickly answer FAQs or store snippets for re-use. Are you sure you want to hide this comment? It will become hidden in your post, but will still be visible via the comment&#39;s permalink .</p>
 	
 	
 	<div class="actions">
@@ -6398,13 +6473,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="China Banks, Carriers Turn AI Tokens Into Rewards and Monthly Plans — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(29 55% 72%)">UNITE.AI</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T11:55:01.000Z">7:55 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
 	<h3 class="title">China Banks, Carriers Turn AI Tokens Into Rewards and Monthly Plans</h3>
-	<p class="snippet">Banks, telecom carriers, and a district government in China have begun packaging artificial intelligence tokens as consumer products, embedding the units of AI computing into credit card rewards, mobile-style monthly plans, and a new category of business lending. The offers, documented across official product and government pages, meter AI usage much like airline miles or mobile data. A token is…</p>
+	<p class="snippet">Banks, telecom carriers, and a district government in China have begun packaging artificial intelligence tokens as consumer products, embedding the units of AI computing into credit card rewards, mobile-style monthly plans, and a new category of business lending. The offers, documented across official product and government pages, meter AI usage much like airline miles or mobile data. A token is the small unit of text an AI model processes when it generates a response. Rather than leaving that consumption inside a developer console, the Chinese programs turn it into a reward currency and a billable commodity aimed at ordinary customers and small businesses. Moonshot AI ‘s Kimi and Agricultural Bank of China jointly launched a co-branded credit card, also called the “Kimi–American…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://www.unite.ai/wp-content/uploads/2026/09/china-businesses-package-ai-tokens-credit-card-telecom-loans.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">China Banks, Carriers Turn AI Tokens Into Rewards and Monthly Plans</h3>
-	<p class="about">Banks, telecom carriers, and a district government in China have begun packaging artificial intelligence tokens as consumer products, embedding the units of AI computing into credit card rewards, mobile-style monthly plans, and a new category of business lending. The offers, documented across official product and government pages, meter AI usage much like airline miles or mobile data. A token is…</p>
+	<p class="about">Banks, telecom carriers, and a district government in China have begun packaging artificial intelligence tokens as consumer products, embedding the units of AI computing into credit card rewards, mobile-style monthly plans, and a new category of business lending. The offers, documented across official product and government pages, meter AI usage much like airline miles or mobile data. A token is the small unit of text an AI model processes when it generates a response. Rather than leaving that consumption inside a developer console, the Chinese programs turn it into a reward currency and a billable commodity aimed at ordinary customers and small businesses. Moonshot AI ‘s Kimi and Agricultural Bank of China jointly launched a co-branded credit card, also called the “Kimi–American…</p>
 	
 	
 	<div class="actions">
@@ -6498,13 +6573,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘Our Share of Sand’ Review: A Brooding Indian Social Drama Told Through the Eyes of a Young Girl — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T11:45:00.000Z">7:45 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
 	<h3 class="title">‘Our Share of Sand’ Review: A Brooding Indian Social Drama Told Through the Eyes of a Young Girl</h3>
-	<p class="snippet">A keenly observed class drama shown through the eyes of a child, Shalini Adnani’s “Our Share of Sand” overcomes its characters’ narrow construction through its brooding intensity. Set against a sand-mining crisis in modern India, it tells of a 12-year-old British Asian girl, Maya (Maya Mehta), who returns to the country to join her industrialist […]</p>
+	<p class="snippet">Shalini Adnani’s debut feature turns a diasporic gaze into an autocritique of pervasive structures. A keenly observed class drama shown through the eyes of a child, Shalini Adnani ’s “ Our Share of Sand ” overcomes its characters’ narrow construction through its brooding intensity. Set against a sand-mining crisis in modern India, it tells of a 12-year-old British Asian girl, Maya (Maya Mehta), who returns to the country to join her industrialist father Rohan (Mohammad Zeeshan Ayyub), and bears witness to a routine accident in his line of work. As notions of justice, power and inequity begin to shade her peripheral vision, Maya is torn between speaking out and adhering to the moral compartmentalization that goes hand in hand with her family’s generational success.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/09/SIC2026-our-share-of-sand-02.webp?w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/09/SIC2026-our-share-of-sand-02.webp?w=600 600w, https://variety.com/wp-content/uploads/2026/09/SIC2026-our-share-of-sand-02.webp?w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">‘Our Share of Sand’ Review: A Brooding Indian Social Drama Told Through the Eyes of a Young Girl</h3>
-	<p class="about">A keenly observed class drama shown through the eyes of a child, Shalini Adnani’s “Our Share of Sand” overcomes its characters’ narrow construction through its brooding intensity. Set against a sand-mining crisis in modern India, it tells of a 12-year-old British Asian girl, Maya (Maya Mehta), who returns to the country to join her industrialist […]</p>
+	<p class="about">Shalini Adnani’s debut feature turns a diasporic gaze into an autocritique of pervasive structures. A keenly observed class drama shown through the eyes of a child, Shalini Adnani ’s “ Our Share of Sand ” overcomes its characters’ narrow construction through its brooding intensity. Set against a sand-mining crisis in modern India, it tells of a 12-year-old British Asian girl, Maya (Maya Mehta), who returns to the country to join her industrialist father Rohan (Mohammad Zeeshan Ayyub), and bears witness to a routine accident in his line of work. As notions of justice, power and inequity begin to shade her peripheral vision, Maya is torn between speaking out and adhering to the moral compartmentalization that goes hand in hand with her family’s generational success.</p>
 	
 	
 	<div class="actions">
@@ -6723,13 +6798,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Remote work as a worm, colorful platformers and other new indie games worth checking out — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(229 55% 72%)">ENGADGET</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T11:30:00.000Z">7:30 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
 	<h3 class="title">Remote work as a worm, colorful platformers and other new indie games worth checking out</h3>
-	<p class="snippet">Here are the new indie games worth checking out, plus an early look at shipbuilding, I Am Your Beast DLC and a cat trying to stop an AI office takeover.</p>
+	<p class="snippet">Plus, shipbuilding, I Am Your Beast DLC and a cat trying to stop an AI office takeover. Welcome to our latest roundup of what&#39;s going on in the indie game space. Along with a look at some of this week&#39;s news, we&#39;ll run through some new games you can play this weekend as well as others that are a bit further out. It&#39;s been a busy week for Double Fine Productions, which recently left Microsoft to become independent again. The studio is running an already successful Kickstarter campaign to fund a game jam, with backers getting to vote on their favorite ideas. Four of the 26 pitches will go into further development and become playable prototypes. After another round of voting, one will become a full, small-scale game. 2 Player Productions (the team behind Double Fine PsychOdyssey and other…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://www.engadget.com/img/gallery/remote-work-as-a-worm-colorful-platformers-and-other-new-indie-games-worth-checking-out/l-intro-1788554876.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Remote work as a worm, colorful platformers and other new indie games worth checking out</h3>
-	<p class="about">Here are the new indie games worth checking out, plus an early look at shipbuilding, I Am Your Beast DLC and a cat trying to stop an AI office takeover.</p>
+	<p class="about">Plus, shipbuilding, I Am Your Beast DLC and a cat trying to stop an AI office takeover. Welcome to our latest roundup of what&#39;s going on in the indie game space. Along with a look at some of this week&#39;s news, we&#39;ll run through some new games you can play this weekend as well as others that are a bit further out. It&#39;s been a busy week for Double Fine Productions, which recently left Microsoft to become independent again. The studio is running an already successful Kickstarter campaign to fund a game jam, with backers getting to vote on their favorite ideas. Four of the 26 pitches will go into further development and become playable prototypes. After another round of voting, one will become a full, small-scale game. 2 Player Productions (the team behind Double Fine PsychOdyssey and other…</p>
 	
 	
 	<div class="actions">
@@ -9396,7 +9471,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2670 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2667 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241376" data-cat="entertainment" data-sent="0" data-slug="interest toei animation confirms license for french dragon ball theme park" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-04/toei-animation-confirms-no-license-for-french-dragon-ball-theme-park/.241376" target="_blank" rel="noopener noreferrer">Toei Animation Confirms No License for French Dragon Ball Theme Park</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241422" data-cat="entertainment" data-sent="0" data-slug="news yowaki max reijo nanoni ratsuwan konyakusha sama kake notte shimatta anime reveals theme song" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-09-04/yowaki-max-reijo-nanoni-ratsuwan-konyakusha-sama-no-kake-ni-notte-shimatta-anime-reveals-theme-song-/.241422" target="_blank" rel="noopener noreferrer">&#39;Yowaki MAX Reijō nanoni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta&#39; Anime Reveals Theme Song Artist, October 4 Debut</a></li>
@@ -12065,9 +12140,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.billboard.com/?p=1236327800" data-cat="music" data-sent="0" data-slug="music news ninajirachi ipod touch madeon remix" hidden="until-found"><span class="ameta"><span class="src sc21">BILLBOARD</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Music</span></span></span><a class="atitle" href="https://www.billboard.com/music/music-news/ninajirachi-ipod-touch-madeon-remix-1236327800/" target="_blank" rel="noopener noreferrer">Madeon’s First Official Remix Since 2012 Is a Shimmering Take on Ninajirachi’s ‘iPod Touch’</a></li>
 <li class="arow" data-count="1" data-id="rss:https://variety.com/?p=1236845553" data-cat="entertainment" data-sent="0" data-slug="film features rafael manuel filipinana social commentary" hidden="until-found"><span class="ameta"><span class="src sc47">VARIETY</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://variety.com/2026/film/features/rafael-manuel-filipinana-social-commentary-1236845553/" target="_blank" rel="noopener noreferrer">Rafael Manuel on Why the Golf Course in ‘Filipiñana’ Is a Metaphor for Inequality in the Philippines</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/suwcbt" data-cat="dev" data-sent="0" data-slug="how catstxt showed llmstxt evidence" hidden="until-found"><span class="ameta"><span class="src sc27">LOBSTERS</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Dev</span></span></span><a class="atitle" href="https://markwilliamscook.substack.com/p/how-catstxt-showed-llmstxt-evidence" target="_blank" rel="noopener noreferrer">How cats.txt showed llms.txt evidence is GEO astrology</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235617426" data-cat="music" data-sent="0" data-slug="music news miguel calls out online harassment" hidden="until-found"><span class="ameta"><span class="src sc24">ROLLING STONE MUSIC</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Music</span></span></span><a class="atitle" href="https://www.rollingstone.com/music/music-news/miguel-calls-out-online-harassment-1235617426/" target="_blank" rel="noopener noreferrer">Miguel Calls Out Harassment of Partner and Child: ‘Legal and Ethical Lines Have Been Crossed’</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.fiercehealthcare.com/f62cabb6-54da-43f4-bd01-40655708aad0" data-cat="healthcare" data-sent="0" data-slug="providers what medical groups are already doing make care more affordable and whats standing" hidden="until-found"><span class="ameta"><span class="src sc45">FIERCE HEALTHCARE</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Healthcare</span></span></span><a class="atitle" href="https://www.fiercehealthcare.com/providers/op-ed-what-medical-groups-are-already-doing-make-care-more-affordable-and-whats-standing" target="_blank" rel="noopener noreferrer">Op-ed: What medical groups are already doing to make care more affordable, and what&#39;s standing in the way</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.fiercehealthcare.com/1fec1e4e-c435-4e09-9d74-ca31a888b0e9" data-cat="healthcare" data-sent="0" data-slug="regulatory trump admin blocks over 16b potentially fraudulent medicare lab payments cms" hidden="until-found"><span class="ameta"><span class="src sc45">FIERCE HEALTHCARE</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Healthcare</span></span></span><a class="atitle" href="https://www.fiercehealthcare.com/regulatory/trump-admin-blocks-over-16b-potentially-fraudulent-medicare-lab-payments-cms" target="_blank" rel="noopener noreferrer">Trump admin blocks over $1.6B in potentially fraudulent Medicare lab payments: CMS</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
