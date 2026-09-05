@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-05T13:49:03.555Z">
+<meta name="sf-version" content="2026-09-05T13:51:51.039Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -596,6 +596,11 @@ h1 .tld { color: var(--accent); }
 :root[data-theme="light"] .meta [style*="hsl(290 55% 72%)"] { color: #7e418a !important; }
 :root[data-theme="light"] .meta [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] .meta [style*="#5eead4"] { color: #007362 !important; }
+/* The separators and the time keep their natural width: every meta child is
+   min-width:0 so the labels can ellipsise, but a middot shrunk to 0px still
+   paints its glyph — over the next word ("9:43 amEntert…", owner screenshot
+   2026-09-05, once NEW took its share of the line). Only src and cat give. */
+.meta .sep, .meta time { flex: none; }
 .meta .sep { opacity: 0.5; }
 .meta .cat { letter-spacing: 0.08em; }
 .sent {
@@ -683,7 +688,10 @@ footer a { color: var(--text-faint); }
    The NEW mark on each card is the real boundary; this is the count. */
 .newdiv { display: flex; align-items: center; gap: 12px; margin: -2px 0 12px; color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
 .newdiv::after { content: ""; flex: 1; height: 1px; background: currentColor; opacity: 0.35; }
-.card.is-new .front .meta::before { content: "NEW"; color: var(--accent); font-weight: 700; letter-spacing: 0.06em; margin-right: 7px; }
+.card.is-new .front .meta::before { content: "NEW"; flex: none; color: var(--accent); font-weight: 700; letter-spacing: 0.06em; }
+/* A thumb card's meta line is ~150px; the word cost the source its name
+   ("VA…"). A dot carries the same signal at 7px. */
+.card.compact.has-thumb.is-new .front .meta::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
 
 /* ── S-3 (audit 2026-08-23, items 4.3 / 4.10 / 4.12-share) ───────────────── */
 /* Why a card is here: quiet on the back face, never competing with the story. */
@@ -722,10 +730,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 9:49 AM &middot; 217 TODAY</p>
+	<p class="stats">UPDATED 9:51 AM &middot; 217 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">178</span><span class="sr-only"> — 178 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">204</span><span class="sr-only"> — 204 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">167</span><span class="sr-only"> — 167 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">369</span><span class="sr-only"> — 369 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">210</span><span class="sr-only"> — 210 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">265</span><span class="sr-only"> — 265 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">120</span><span class="sr-only"> — 120 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">319</span><span class="sr-only"> — 319 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">532</span><span class="sr-only"> — 532 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">335</span><span class="sr-only"> — 335 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">301</span><span class="sr-only"> — 301 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">178</span><span class="sr-only"> — 178 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">204</span><span class="sr-only"> — 204 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">167</span><span class="sr-only"> — 167 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">369</span><span class="sr-only"> — 369 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">210</span><span class="sr-only"> — 210 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">265</span><span class="sr-only"> — 265 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">120</span><span class="sr-only"> — 120 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">319</span><span class="sr-only"> — 319 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">532</span><span class="sr-only"> — 532 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">302</span><span class="sr-only"> — 302 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -11408,6 +11416,29 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/gadgets/989407/alienware-gaming-laptop-capsule-dishwasher-samsung-oled-deal-sale" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1788533740000" data-slug="gadgets alienware gaming laptop capsule dishwasher samsung oled deal sale">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Alienware’s refurbished 16 Aurora is almost $200 off at Woot — flip for details">
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-04T14:55:40.000Z">10:55 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Alienware’s refurbished 16 Aurora is almost $200 off at Woot</h3>
+	<p class="snippet">Gaming laptop deals aren’t what they used to be (stares daggers at RAMageddon), which is why I consider Woot’s deal on a refurbished Alienware 16 Aurora gaming laptop with Nvidia’s RTX 5050 a pretty good deal at $927 for new Woot customers (with code WOOTALIEN used at checkout). It costs $1,029 for returning Woot shoppers, which is a decent discount off the new $1,099.99 price at Alienware’s…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/alienware.png?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/alienware.png?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=240 240w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/alienware.png?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=340 340w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/alienware.png?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Alienware’s refurbished 16 Aurora is almost $200 off at Woot</h3>
+	<p class="about">Gaming laptop deals aren’t what they used to be (stares daggers at RAMageddon), which is why I consider Woot’s deal on a refurbished Alienware 16 Aurora gaming laptop with Nvidia’s RTX 5050 a pretty good deal at $927 for new Woot customers (with code WOOTALIEN used at checkout). It costs $1,029 for returning Woot shoppers, which is a decent discount off the new $1,099.99 price at Alienware’s…</p>
+	
+	
+	<a class="more" href="https://www.theverge.com/gadgets/989407/alienware-gaming-laptop-capsule-dishwasher-samsung-oled-deal-sale" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact h2" style="--rail:#7dd3fc" data-count="1" data-id="rss:https://www.beckerspayer.com/?p=28251" data-srckey="becker&#39;s payer issues" data-cat="healthcare" data-sent="0" data-ts="1788533501000" data-slug="payer medicare advantage paid estimated 380m for unused organs oig">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Medicare paid estimated $380M for unused organs: OIG — flip for details">
@@ -14355,7 +14386,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2416 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2415 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:1714fe94-5177-41bc-806a-579b17621b44" data-cat="markets" data-sent="0" data-slug="policy banking agency gives blockchain bank openreserve initial operate" hidden="until-found"><span class="ameta">COINDESK &middot; Sep 3 &middot; Markets</span><a href="https://www.coindesk.com/policy/2026/09/03/u-s-banking-agency-gives-blockchain-bank-openreserve-initial-ok-to-operate" target="_blank" rel="noopener noreferrer">U.S. banking agency gives blockchain bank OpenReserve initial OK to operate</a></li>
 <li class="arow" data-count="1" data-id="rss:0fd0a417-dc00-42b1-9427-aa349c98ecd5" data-cat="politics" data-sent="0" data-slug="news johnny doc release prison president trump commutation" hidden="until-found"><span class="ameta">CBS POLITICS &middot; Sep 3 &middot; Politics</span><a href="https://www.cbsnews.com/news/johnny-doc-release-prison-president-trump-commutation/" target="_blank" rel="noopener noreferrer">Trump commutes former Philadelphia labor leader &quot;Johnny Doc&#39;s&quot; prison sentence</a></li>
@@ -16772,7 +16803,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:US-EN-49745245" data-cat="sports" data-sent="0" data-slug="nfl story packers star josh jacobs charged two misdemeanors" hidden="until-found"><span class="ameta">ESPN &middot; Aug 28 &middot; Sports</span><a href="https://www.espn.com/nfl/story/_/id/49745245/packers-star-rb-josh-jacobs-charged-two-misdemeanors" target="_blank" rel="noopener noreferrer">Packers star RB Jacobs formally charged by DA</a></li>
 <li class="arow" data-count="1" data-id="rss:US-EN-49749940" data-cat="sports" data-sent="0" data-slug="nfl story kubiak mum raiders starter fernando mendoza struggles" hidden="until-found"><span class="ameta">ESPN &middot; Aug 28 &middot; Sports</span><a href="https://www.espn.com/nfl/story/_/id/49749940/kubiak-mum-raiders-starter-fernando-mendoza-struggles" target="_blank" rel="noopener noreferrer">Kubiak mum on Vegas&#39; QB as Mendoza struggles</a></li>
 <li class="arow" data-count="1" data-id="rss:US-EN-49750040" data-cat="sports" data-sent="0" data-slug="nfl story atwell trade depth not possible nacua ban" hidden="until-found"><span class="ameta">ESPN &middot; Aug 28 &middot; Sports</span><a href="https://www.espn.com/nfl/story/_/id/49750040/atwell-trade-depth-not-possible-nacua-ban" target="_blank" rel="noopener noreferrer">McVay: Atwell trade not about possible Nacua ban</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.nationalreview.com/?post_type=blog-post&amp;p=2025929" data-cat="politics" data-sent="0" data-slug="corner republicans need more trump" hidden="until-found"><span class="ameta">NATIONAL REVIEW POLITICS &middot; Aug 28 &middot; Politics</span><a href="https://www.nationalreview.com/corner/do-republicans-need-more-trump/" target="_blank" rel="noopener noreferrer">Do Republicans Need More Trump?</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
