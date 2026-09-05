@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-05T14:05:35.365Z">
+<meta name="sf-version" content="2026-09-05T14:07:06.270Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -590,11 +590,11 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#fb7185"] { color: #a72041 !important; }
-:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
@@ -639,12 +639,11 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(290 55% 72%)"] { color: #7e418a !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
+:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(71 55% 72%)"] { color: #5a6512 !important; }
+:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(131 55% 72%)"] { color: #1d6f36 !important; }
+:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(351 55% 72%)"] { color: #8b4451 !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(15 55% 72%)"] { color: #824e3c !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(19 55% 72%)"] { color: #80503a !important; }
-:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(16 55% 72%)"] { color: #824f3c !important; }
-:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(244 55% 72%)"] { color: #5a519b !important; }
-:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(274 55% 72%)"] { color: #724790 !important; }
-:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(95 55% 72%)"] { color: #436b1d !important; }
 /* The separators and the time keep their natural width: every meta child is
    min-width:0 so the labels can ellipsise, but a middot shrunk to 0px still
    paints its glyph — over the next word ("9:43 amEntert…", owner screenshot
@@ -779,10 +778,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 10:05 AM &middot; 225 TODAY</p>
+	<p class="stats">UPDATED 10:07 AM &middot; 226 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">178</span><span class="sr-only"> — 178 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">204</span><span class="sr-only"> — 204 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">167</span><span class="sr-only"> — 167 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">371</span><span class="sr-only"> — 371 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">210</span><span class="sr-only"> — 210 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">267</span><span class="sr-only"> — 267 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">121</span><span class="sr-only"> — 121 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">312</span><span class="sr-only"> — 312 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">533</span><span class="sr-only"> — 533 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">303</span><span class="sr-only"> — 303 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">178</span><span class="sr-only"> — 178 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">204</span><span class="sr-only"> — 204 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">167</span><span class="sr-only"> — 167 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">372</span><span class="sr-only"> — 372 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">210</span><span class="sr-only"> — 210 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">267</span><span class="sr-only"> — 267 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">121</span><span class="sr-only"> — 121 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">311</span><span class="sr-only"> — 311 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">533</span><span class="sr-only"> — 533 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">303</span><span class="sr-only"> — 303 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1044,43 +1043,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.cricinfo.com/series/women-s-asia-cup-2026-1548888/india-women-vs-pakistan-women-9th-match-group-a-1548899/match-preview" target="_blank" rel="noopener noreferrer">India&#39;s batting depth faces Pakistan examination in Asia Cup fixture</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(15 55% 72%)">CRICINFO</span><span class="sep" aria-hidden="true">&middot;</span>"indw vs pakw" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://sports.yahoo.com/articles/long-indiana-footballs-home-winning-091539978.html" target="_blank" rel="noopener noreferrer">How long is Indiana football&#39;s home winning streak</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(71 55% 72%)">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"curt cignetti" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/news/articles/c62k677d4lzo" target="_blank" rel="noopener noreferrer">Trump signs order to remove endangered species status for grey wolves</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(19 55% 72%)">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"mexican wolf" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.sportschau.de/fussball/bundesliga2/cottbus-mit-erfolgreicher-aufholjagd-in-wolfsburg,audio-wolfsburg-und-cottbus-spielen-torreich-unentschieden-100.html" target="_blank" rel="noopener noreferrer">Cottbus completes successful comeback in Wolfsburg</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(183 55% 72%)">SPORTSCHAU.DE</span><span class="sep" aria-hidden="true">&middot;</span>"bundesliga" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://arkansasrazorbacks.com/how-to-listen-to-razorback-football-2026/" target="_blank" rel="noopener noreferrer">How to Listen to Razorback Football</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(16 55% 72%)">ARKANSAS RAZORBACKS</span><span class="sep" aria-hidden="true">&middot;</span>"razorback football schedule" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.dispatch.com/story/sports/college/football/2026/09/02/ohio-state-qb-julian-sayin-bigger-voice-responsibility-osu-football/91372834007/" target="_blank" rel="noopener noreferrer">Julian Sayin has a bigger voice and more responsibility for Ohio State football</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(131 55% 72%)">THE COLUMBUS DISPATCH</span><span class="sep" aria-hidden="true">&middot;</span>"julian sayin" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.foxnews.com/live-news/us-iran-war-strait-of-hormuz-energy-prices-09-05-26" target="_blank" rel="noopener noreferrer">Iran could end up with Strait of Hormuz ‘that’s not very necessary anymore,’ Trump says</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(244 55% 72%)">FOX NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"donald trump strait of hormuz alternatives" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.chicagotribune.com/2026/09/03/cj-carr-notre-dame-michigan/" target="_blank" rel="noopener noreferrer">How CJ Carr, the grandson of Michigan legends, became the QB tasked with ending Notre Dame’s title drought</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(351 55% 72%)">CHICAGO TRIBUNE</span><span class="sep" aria-hidden="true">&middot;</span>"cj carr" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.fox8live.com/2026/09/04/heavy-storms-developing-this-morning/" target="_blank" rel="noopener noreferrer">Heavy storms developing Friday morning</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(274 55% 72%)">FOX 8 LOCAL FIRST</span><span class="sep" aria-hidden="true">&middot;</span>"baton rouge weather" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.cricinfo.com/series/women-s-asia-cup-2026-1548888/india-women-vs-pakistan-women-9th-match-group-a-1548899/match-preview" target="_blank" rel="noopener noreferrer">India&#39;s batting depth faces Pakistan examination in Asia Cup fixture</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(15 55% 72%)">CRICINFO</span><span class="sep" aria-hidden="true">&middot;</span>"indw vs pakw" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.wsfa.com/2026/09/01/lawsuit-filed-looking-remove-republican-lt-gov-candidate-john-wahl-ballot-over-residency/" target="_blank" rel="noopener noreferrer">Lawsuit filed looking to remove Republican Lt. Gov. candidate John Wahl from ballot over residency</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(95 55% 72%)">WSFA</span><span class="sep" aria-hidden="true">&middot;</span>"alabama" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.bbc.com/news/articles/c62k677d4lzo" target="_blank" rel="noopener noreferrer">Trump signs order to remove endangered species status for grey wolves</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(19 55% 72%)">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"mexican wolf" &middot; 200+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1102,6 +1101,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://variety.com/2026/film/reviews/everest-the-other-side-review-1236852376/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236851487" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788617073000" data-slug="film festivals pacino skips father joe press conference venice">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Al Pacino Sends Video Message to Venice After Missing Press Conference for ‘Father Joe’: ‘I Wish I Was There, I Really Do’ — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T14:04:33.000Z">10:04 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Al Pacino Sends Video Message to Venice After Missing Press Conference for ‘Father Joe’: ‘I Wish I Was There, I Really Do’</h3>
+	<p class="snippet">Al Pacino didn’t travel to the Venice Film Festival for the premiere of “Father Joe,” but he sent a video message with well wishes to his collaborators on the movie. “I wish I was there with all of you in Venice, which is great and lovely. I’ve had films there. I’ve been there. I’ve experienced […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/09/GettyImages-2280788227.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/09/GettyImages-2280788227.jpg?w=240 240w, https://variety.com/wp-content/uploads/2026/09/GettyImages-2280788227.jpg?w=340 340w, https://variety.com/wp-content/uploads/2026/09/GettyImages-2280788227.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Al Pacino Sends Video Message to Venice After Missing Press Conference for ‘Father Joe’: ‘I Wish I Was There, I Really Do’</h3>
+	<p class="about">Al Pacino didn’t travel to the Venice Film Festival for the premiere of “Father Joe,” but he sent a video message with well wishes to his collaborators on the movie. “I wish I was there with all of you in Venice, which is great and lovely. I’ve had films there. I’ve been there. I’ve experienced […]</p>
+	
+	
+	<a class="more" href="https://variety.com/2026/film/festivals/al-pacino-skips-father-joe-press-conference-venice-1236851487/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -14619,7 +14641,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2407 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2406 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:1714fe94-5177-41bc-806a-579b17621b44" data-cat="markets" data-sent="0" data-slug="policy banking agency gives blockchain bank openreserve initial operate" hidden="until-found"><span class="ameta"><span class="src" style="color:#fbbf24">COINDESK</span> &middot; Sep 3 &middot; <span class="cat" style="color:#facc15">Markets</span></span><a class="atitle" href="https://www.coindesk.com/policy/2026/09/03/u-s-banking-agency-gives-blockchain-bank-openreserve-initial-ok-to-operate" target="_blank" rel="noopener noreferrer">U.S. banking agency gives blockchain bank OpenReserve initial OK to operate</a></li>
 <li class="arow" data-count="1" data-id="rss:0fd0a417-dc00-42b1-9427-aa349c98ecd5" data-cat="politics" data-sent="0" data-slug="news johnny doc release prison president trump commutation" hidden="until-found"><span class="ameta"><span class="src" style="color:hsl(69 55% 72%)">CBS POLITICS</span> &middot; Sep 3 &middot; <span class="cat" style="color:#fb923c">Politics</span></span><a class="atitle" href="https://www.cbsnews.com/news/johnny-doc-release-prison-president-trump-commutation/" target="_blank" rel="noopener noreferrer">Trump commutes former Philadelphia labor leader &quot;Johnny Doc&#39;s&quot; prison sentence</a></li>
@@ -17027,7 +17049,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://the-decoder.com/?p=39529" data-cat="ai" data-sent="0" data-slug="benchmarks have trust problem and google wants fix" hidden="until-found"><span class="ameta"><span class="src" style="color:hsl(45 55% 72%)">THE DECODER</span> &middot; Aug 28 &middot; <span class="cat" style="color:#a78bfa">AI</span></span><a class="atitle" href="https://the-decoder.com/ai-benchmarks-have-a-trust-problem-and-google-wants-to-fix-it/" target="_blank" rel="noopener noreferrer">AI benchmarks have a trust problem and Google wants to fix it</a></li>
 <li class="arow" data-count="1" data-id="rss:https://medcitynews.com/?p=148611" data-cat="healthcare" data-sent="0" data-slug="the silent epidemic why diabetic foot ulcers have been overlooked for three decades" hidden="until-found"><span class="ameta"><span class="src" style="color:hsl(156 55% 72%)">MEDCITY NEWS</span> &middot; Aug 28 &middot; <span class="cat" style="color:#7dd3fc">Healthcare</span></span><a class="atitle" href="https://medcitynews.com/2026/08/the-silent-epidemic-why-diabetic-foot-ulcers-have-been-overlooked-for-three-decades/" target="_blank" rel="noopener noreferrer">The Silent Epidemic: Why Diabetic Foot Ulcers Have Been Overlooked for Three Decades</a></li>
 <li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000729127" data-cat="games" data-sent="0" data-slug="the smallest tamagotchi yet lives inside one inch screen your finger" hidden="until-found"><span class="ameta"><span class="src" style="color:#a3e635">KOTAKU</span> &middot; Aug 28 &middot; <span class="cat" style="color:#a3e635">Games</span></span><a class="atitle" href="https://kotaku.com/the-smallest-tamagotchi-yet-lives-inside-a-one-inch-screen-on-your-finger-2000729127" target="_blank" rel="noopener noreferrer">The Smallest Tamagotchi Yet Lives Inside A One Inch Screen On Your Finger</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/c4gk206k95xo#0" data-cat="sports" data-sent="0" data-slug="sport football articles c4gk206k95xo" hidden="until-found"><span class="ameta"><span class="src" style="color:#facc15">BBC SPORT</span> &middot; Aug 28 &middot; <span class="cat" style="color:#3b82f6">Sports</span></span><a class="atitle" href="https://www.bbc.co.uk/sport/football/articles/c4gk206k95xo" target="_blank" rel="noopener noreferrer">Celtic &amp; Rangers to play Scottish Cup ties behind closed doors after fan disorder</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
