@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-05T14:00:45.426Z">
+<meta name="sf-version" content="2026-09-05T14:05:35.365Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -140,8 +140,10 @@ h1 .tld { color: var(--accent); }
 .stats { color: var(--text-faint); font-size: 12.5px; font-weight: 600; letter-spacing: 0.08em; margin-top: 14px; }
 /* Lives inside the search pill, right of the slash hint — watchfeed's placement. */
 .theme {
-	flex: none; margin-right: -8px;
-	width: 38px; height: 38px; display: flex; align-items: center; justify-content: center;
+	/* 44px, the touch floor — it measured 38 (ui audit 2026-09-05). The pill is
+	   51px tall, so it fits; the margin keeps the icon where it was. */
+	flex: none; margin-right: -11px;
+	width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;
 	background: none; color: var(--text-faint);
 	border: none; border-radius: 999px;
 	cursor: pointer; touch-action: manipulation;
@@ -270,7 +272,11 @@ h1 .tld { color: var(--accent); }
 	text-transform: uppercase; padding: 7px 12px; border-radius: 999px;
 	cursor: pointer; touch-action: manipulation;
 	transition: background 150ms ease-out, color 150ms ease-out;
+	position: relative;
 }
+/* 33px pill, 45px target: the hit area grows vertically only, so the pill
+   keeps its size and its 10px gap to the theme button (ui audit 2026-09-05). */
+#today::before { content: ""; position: absolute; inset: -6px 0; }
 #today:hover { background: var(--accent); color: #0f0f1a; }
 #today:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 /* Card art — Apple-News restraint: the thumb sits right, text keeps priority.
@@ -584,25 +590,25 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
-:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
-:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
+:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
-:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
-:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
+:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#fb7185"] { color: #a72041 !important; }
+:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
+:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
+:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#facc15"] { color: #815500 !important; }
+:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
+:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#60a5fa"] { color: #145dac !important; }
+:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(224 55% 72%)"] { color: #495b8f !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#7dd3fc"] { color: #00678c !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#3b82f6"] { color: #0755c5 !important; }
-:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
-:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#c084fc"] { color: #7638ab !important; }
-:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
-:root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] :is(.meta, .ameta, .trend-meta) [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
@@ -773,10 +779,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 10:00 AM &middot; 218 TODAY</p>
+	<p class="stats">UPDATED 10:05 AM &middot; 225 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">178</span><span class="sr-only"> — 178 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">204</span><span class="sr-only"> — 204 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">167</span><span class="sr-only"> — 167 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">369</span><span class="sr-only"> — 369 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">210</span><span class="sr-only"> — 210 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">265</span><span class="sr-only"> — 265 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">120</span><span class="sr-only"> — 120 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">318</span><span class="sr-only"> — 318 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">533</span><span class="sr-only"> — 533 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">302</span><span class="sr-only"> — 302 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">178</span><span class="sr-only"> — 178 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">204</span><span class="sr-only"> — 204 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">167</span><span class="sr-only"> — 167 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">371</span><span class="sr-only"> — 371 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">210</span><span class="sr-only"> — 210 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">267</span><span class="sr-only"> — 267 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">121</span><span class="sr-only"> — 121 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">312</span><span class="sr-only"> — 312 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">533</span><span class="sr-only"> — 533 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">303</span><span class="sr-only"> — 303 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -814,6 +820,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://variety.com/2026/film/reviews/everest-the-other-side-review-1236852376/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact rail-art has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:108358020" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1788615188000" data-slug="data centers cost economy html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Many truckers don&#39;t feel like the rest of America about AI data centers as business booms — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:33:08.000Z">9:33 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Many truckers don&#39;t feel like the rest of America about AI data centers as business booms</h3>
+	<p class="snippet">Sprawling data center components from HVAC systems to tubing, wiring and semiconductors arrive primarily by truck, a boon for a business hit hard by trade wars.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=640&amp;h=360" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=320&amp;h=180 320w, https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=640&amp;h=360 640w, https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=960&amp;h=540 960w" sizes="(max-width: 640px) 78vw, 320px">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Many truckers don&#39;t feel like the rest of America about AI data centers as business booms</h3>
+	<p class="about">Sprawling data center components from HVAC systems to tubing, wiring and semiconductors arrive primarily by truck, a boon for a business hit hard by trade wars.</p>
+	
+	
+	<a class="more" href="https://www.cnbc.com/2026/09/05/ai-data-centers-cost-economy.html" target="_blank" rel="noopener noreferrer">CNBC &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -960,29 +989,6 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact rail-art has-thumb" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235621396" data-srckey="rolling stone music" data-cat="music" data-sent="0" data-ts="1788534389000" data-slug="music news turnstile guitarist ordered competency evaluation">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Judge Orders Competency Evaluation for Ex-Turnstile Guitarist in Attempted Murder Case — flip for details">
-	<div class="meta"><span class="src" style="color:#fb7185">ROLLING STONE MUSIC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-04T15:06:29.000Z">11:06 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
-	<h3 class="title">Judge Orders Competency Evaluation for Ex-Turnstile Guitarist in Attempted Murder Case</h3>
-	<p class="snippet">Brady Ebert is facing life in prison after his charges for intentionally driving his car into the father of Turnstile singer Brendan Yates were upgraded to attempted first-degree murder</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://www.rollingstone.com/wp-content/uploads/2026/09/brady-ebert-turnstile-competency-eval.jpg?w=640#038;h=900&amp;#038;crop=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://www.rollingstone.com/wp-content/uploads/2026/09/brady-ebert-turnstile-competency-eval.jpg?w=320#038;h=900&amp;#038;crop=1 320w, https://www.rollingstone.com/wp-content/uploads/2026/09/brady-ebert-turnstile-competency-eval.jpg?w=640#038;h=900&amp;#038;crop=1 640w, https://www.rollingstone.com/wp-content/uploads/2026/09/brady-ebert-turnstile-competency-eval.jpg?w=960#038;h=900&amp;#038;crop=1 960w" sizes="(max-width: 640px) 78vw, 320px">
-</div>
-<div class="face back" inert>
-	<h3 class="title">Judge Orders Competency Evaluation for Ex-Turnstile Guitarist in Attempted Murder Case</h3>
-	<p class="about">Brady Ebert is facing life in prison after his charges for intentionally driving his car into the father of Turnstile singer Brendan Yates were upgraded to attempted first-degree murder</p>
-	
-	
-	<a class="more" href="https://www.rollingstone.com/music/music-news/turnstile-guitarist-ordered-competency-evaluation-1235621396/" target="_blank" rel="noopener noreferrer">Rolling Stone Music &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-</div>
-</div>
-</article>
 </div>
 </section>
 <main id="feed">
@@ -1104,6 +1110,121 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/tech/990426/us-open-influencers-naomi-osaka-anastasia-zakharova-callaway-good-good-ad" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1788616816000" data-slug="tech open influencers naomi osaka anastasia zakharova callaway good">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Content creators drop the ball — flip for details">
+	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T14:00:16.000Z">10:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Content creators drop the ball</h3>
+	<p class="snippet">The USTA Billie Jean King National Tennis Center. | Getty Images During Naomi Osaka&#39;s match against Anastasia Zakharova at this year&#39;s US Open earlier this week, a gaggle of ring light-wielding influencers who were packed in a luxury suite became enough of a distraction that the umpire paused the match and repeatedly asked them to quiet down. Elsewhere in the USTA Billie Jean King National Tennis…</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2293089524.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.729518843039%2C100%2C78.540962313923&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2293089524.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.729518843039%2C100%2C78.540962313923&amp;w=240 240w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2293089524.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.729518843039%2C100%2C78.540962313923&amp;w=340 340w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2293089524.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.729518843039%2C100%2C78.540962313923&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Content creators drop the ball</h3>
+	<p class="about">The USTA Billie Jean King National Tennis Center. | Getty Images During Naomi Osaka&#39;s match against Anastasia Zakharova at this year&#39;s US Open earlier this week, a gaggle of ring light-wielding influencers who were packed in a luxury suite became enough of a distraction that the umpire paused the match and repeatedly asked them to quiet down. Elsewhere in the USTA Billie Jean King National Tennis…</p>
+	
+	
+	<a class="more" href="https://www.theverge.com/tech/990426/us-open-influencers-naomi-osaka-anastasia-zakharova-callaway-good-good-ad" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.polygon.com/after-playing-a-q-on-star-trek-rhys-darby-thinks-hes-ready-to-be-q-in-james-bond/" data-srckey="polygon" data-cat="entertainment" data-sent="0" data-ts="1788616814000" data-slug="after playing star trek rhys darby thinks hes ready james bond">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Star Trek Actor Reveals His Plan for a Perfect James Bond Crossover — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T14:00:14.000Z">10:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Star Trek Actor Reveals His Plan for a Perfect James Bond Crossover</h3>
+	<p class="snippet">The Our Flag Means Death star answers our Q Qs</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/trelane-rhys-darby-serves-spock-ethan-peck-a-drink-in-star-trek-strange-new-worlds-season-3.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/trelane-rhys-darby-serves-spock-ethan-peck-a-drink-in-star-trek-strange-new-worlds-season-3.jpg?w=240 240w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/trelane-rhys-darby-serves-spock-ethan-peck-a-drink-in-star-trek-strange-new-worlds-season-3.jpg?w=340 340w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/trelane-rhys-darby-serves-spock-ethan-peck-a-drink-in-star-trek-strange-new-worlds-season-3.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Star Trek Actor Reveals His Plan for a Perfect James Bond Crossover</h3>
+	<p class="about">The Our Flag Means Death star answers our Q Qs</p>
+	
+	
+	<a class="more" href="https://www.polygon.com/after-playing-a-q-on-star-trek-rhys-darby-thinks-hes-ready-to-be-q-in-james-bond/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:WP-MKTW-0005214578" data-srckey="marketwatch" data-cat="markets" data-sent="0" data-ts="1788616800000" data-slug="story wife and are our 70s should move california take bigger mortgage near kids 1d619084">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="My wife and I are in our 70s. Should we move to California and take on a bigger mortgage to be near our kids? — flip for details">
+	<div class="meta"><span class="src" style="color:#34d399">MARKETWATCH</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T14:00:00.000Z">10:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">My wife and I are in our 70s. Should we move to California and take on a bigger mortgage to be near our kids?</h3>
+	<p class="snippet">“We currently live in a relatively low-cost, lower-tax Northwest state.”</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://images.mktw.net/im-89138177?width=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://images.mktw.net/im-89138177?width=600 600w, https://images.mktw.net/im-89138177?width=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">My wife and I are in our 70s. Should we move to California and take on a bigger mortgage to be near our kids?</h3>
+	<p class="about">“We currently live in a relatively low-cost, lower-tax Northwest state.”</p>
+	
+	
+	<a class="more" href="https://www.marketwatch.com/story/my-wife-and-i-are-in-our-70s-should-we-move-to-california-and-take-on-a-bigger-mortgage-to-be-near-our-kids-1d619084?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">MarketWatch &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235621702" data-srckey="rolling stone music" data-cat="music" data-sent="0" data-ts="1788616800000" data-slug="music features years ago clash angry hecklers">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="50 Years Ago Today: The Clash Battled With Angry Hecklers at One of Their First Concerts — flip for details">
+	<div class="meta"><span class="src" style="color:#fb7185">ROLLING STONE MUSIC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T14:00:00.000Z">10:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
+	<h3 class="title">50 Years Ago Today: The Clash Battled With Angry Hecklers at One of Their First Concerts</h3>
+	<p class="snippet">Just months after they formed, the Clash played at London&#39;s Roundhouse, where they unveiled classics like &quot;London&#39;s Burning&quot; and &quot;1977,&quot; even if many in the crowd couldn&#39;t have cared less</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.rollingstone.com/wp-content/uploads/2026/09/the-clash-50-years-ago-keith-levene.jpg?w=340#038;h=900&amp;#038;crop=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://www.rollingstone.com/wp-content/uploads/2026/09/the-clash-50-years-ago-keith-levene.jpg?w=240#038;h=900&amp;#038;crop=1 240w, https://www.rollingstone.com/wp-content/uploads/2026/09/the-clash-50-years-ago-keith-levene.jpg?w=340#038;h=900&amp;#038;crop=1 340w, https://www.rollingstone.com/wp-content/uploads/2026/09/the-clash-50-years-ago-keith-levene.jpg?w=510#038;h=900&amp;#038;crop=1 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">50 Years Ago Today: The Clash Battled With Angry Hecklers at One of Their First Concerts</h3>
+	<p class="about">Just months after they formed, the Clash played at London&#39;s Roundhouse, where they unveiled classics like &quot;London&#39;s Burning&quot; and &quot;1977,&quot; even if many in the crowd couldn&#39;t have cared less</p>
+	
+	
+	<a class="more" href="https://www.rollingstone.com/music/music-features/50-years-ago-clash-angry-hecklers-1235621702/" target="_blank" rel="noopener noreferrer">Rolling Stone Music &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236850092" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788616800000" data-slug="shopping news how watch katie taylor flora pili boxing live sept online">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Retirement Match: Here’s How to Watch Katie Taylor vs. Flora Pili Boxing Live Online — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T14:00:00.000Z">10:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Retirement Match: Here’s How to Watch Katie Taylor vs. Flora Pili Boxing Live Online</h3>
+	<p class="snippet">Set as Katie Taylor’s final fight, one of the greatest fighters in boxing is going for the undisputed title. Irish boxer Katie Taylor defense her WBO, IBF and WBA women’s super lightweight (junior welterweight) championship belts against French fighter Flora Pili. Additionally, the vacant WBC women’s super lightweight title is on the line, so the […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/09/Boxing-Katie-Taylor-Getty-VR-Featured.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/09/Boxing-Katie-Taylor-Getty-VR-Featured.jpg?w=240 240w, https://variety.com/wp-content/uploads/2026/09/Boxing-Katie-Taylor-Getty-VR-Featured.jpg?w=340 340w, https://variety.com/wp-content/uploads/2026/09/Boxing-Katie-Taylor-Getty-VR-Featured.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Retirement Match: Here’s How to Watch Katie Taylor vs. Flora Pili Boxing Live Online</h3>
+	<p class="about">Set as Katie Taylor’s final fight, one of the greatest fighters in boxing is going for the undisputed title. Irish boxer Katie Taylor defense her WBO, IBF and WBA women’s super lightweight (junior welterweight) championship belts against French fighter Flora Pili. Additionally, the vacant WBC women’s super lightweight title is on the line, so the […]</p>
+	
+	
+	<a class="more" href="https://variety.com/2026/shopping/news/how-to-watch-katie-taylor-vs-flora-pili-boxing-live-sept-2026-online-1236850092/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
 <article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cly5r60v4mro#0" data-srckey="bbc world" data-cat="world" data-sent="0" data-ts="1788615962000" data-slug="news articles cly5r60v4mro">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="What different world maps get right - and what they get wrong — flip for details">
@@ -1119,6 +1240,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://www.bbc.co.uk/news/articles/cly5r60v4mro" target="_blank" rel="noopener noreferrer">BBC World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/ckg0xegkegyo#2" data-srckey="bbc sport" data-cat="sports" data-sent="0" data-ts="1788615921000" data-slug="sport football articles ckg0xegkegyo">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Modric plans to play for Croatia past 41st birthday — flip for details">
+	<div class="meta"><span class="src" style="color:#facc15">BBC SPORT</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:45:21.000Z">9:45 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Modric plans to play for Croatia past 41st birthday</h3>
+	<p class="snippet">Luke Modric, 41, is not ready to retire from international football and hopes to play for Croatia in upcoming Nations League games, including against England.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/9e30/live/eeed7d40-a92d-11f1-bb81-8fbd2d2d397c.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9e30/live/eeed7d40-a92d-11f1-bb81-8fbd2d2d397c.jpg 240w, https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/9e30/live/eeed7d40-a92d-11f1-bb81-8fbd2d2d397c.jpg 340w, https://ichef.bbci.co.uk/ace/standard/510/cpsprodpb/9e30/live/eeed7d40-a92d-11f1-bb81-8fbd2d2d397c.jpg 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Modric plans to play for Croatia past 41st birthday</h3>
+	<p class="about">Luke Modric, 41, is not ready to retire from international football and hopes to play for Croatia in upcoming Nations League games, including against England.</p>
+	
+	
+	<a class="more" href="https://www.bbc.co.uk/sport/football/articles/ckg0xegkegyo" target="_blank" rel="noopener noreferrer">BBC Sport &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1188,6 +1332,29 @@ footer a { color: var(--text-faint); }
 	
 	
 	<a class="more" href="https://dev.to/numbpill3d/the-dealership-charges-180hr-for-this-i-do-it-with-an-esp32-off" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:108358020" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1788615188000" data-slug="data centers cost economy html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Many truckers don&#39;t feel like the rest of America about AI data centers as business booms — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:33:08.000Z">9:33 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Many truckers don&#39;t feel like the rest of America about AI data centers as business booms</h3>
+	<p class="snippet">Sprawling data center components from HVAC systems to tubing, wiring and semiconductors arrive primarily by truck, a boon for a business hit hard by trade wars.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=340&amp;h=191" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=240&amp;h=135 240w, https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=340&amp;h=191 340w, https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=510&amp;h=287 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Many truckers don&#39;t feel like the rest of America about AI data centers as business booms</h3>
+	<p class="about">Sprawling data center components from HVAC systems to tubing, wiring and semiconductors arrive primarily by truck, a boon for a business hit hard by trade wars.</p>
+	
+	
+	<a class="more" href="https://www.cnbc.com/2026/09/05/ai-data-centers-cost-economy.html" target="_blank" rel="noopener noreferrer">CNBC &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -14452,7 +14619,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2414 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2407 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:1714fe94-5177-41bc-806a-579b17621b44" data-cat="markets" data-sent="0" data-slug="policy banking agency gives blockchain bank openreserve initial operate" hidden="until-found"><span class="ameta"><span class="src" style="color:#fbbf24">COINDESK</span> &middot; Sep 3 &middot; <span class="cat" style="color:#facc15">Markets</span></span><a class="atitle" href="https://www.coindesk.com/policy/2026/09/03/u-s-banking-agency-gives-blockchain-bank-openreserve-initial-ok-to-operate" target="_blank" rel="noopener noreferrer">U.S. banking agency gives blockchain bank OpenReserve initial OK to operate</a></li>
 <li class="arow" data-count="1" data-id="rss:0fd0a417-dc00-42b1-9427-aa349c98ecd5" data-cat="politics" data-sent="0" data-slug="news johnny doc release prison president trump commutation" hidden="until-found"><span class="ameta"><span class="src" style="color:hsl(69 55% 72%)">CBS POLITICS</span> &middot; Sep 3 &middot; <span class="cat" style="color:#fb923c">Politics</span></span><a class="atitle" href="https://www.cbsnews.com/news/johnny-doc-release-prison-president-trump-commutation/" target="_blank" rel="noopener noreferrer">Trump commutes former Philadelphia labor leader &quot;Johnny Doc&#39;s&quot; prison sentence</a></li>
@@ -16861,13 +17028,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://medcitynews.com/?p=148611" data-cat="healthcare" data-sent="0" data-slug="the silent epidemic why diabetic foot ulcers have been overlooked for three decades" hidden="until-found"><span class="ameta"><span class="src" style="color:hsl(156 55% 72%)">MEDCITY NEWS</span> &middot; Aug 28 &middot; <span class="cat" style="color:#7dd3fc">Healthcare</span></span><a class="atitle" href="https://medcitynews.com/2026/08/the-silent-epidemic-why-diabetic-foot-ulcers-have-been-overlooked-for-three-decades/" target="_blank" rel="noopener noreferrer">The Silent Epidemic: Why Diabetic Foot Ulcers Have Been Overlooked for Three Decades</a></li>
 <li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000729127" data-cat="games" data-sent="0" data-slug="the smallest tamagotchi yet lives inside one inch screen your finger" hidden="until-found"><span class="ameta"><span class="src" style="color:#a3e635">KOTAKU</span> &middot; Aug 28 &middot; <span class="cat" style="color:#a3e635">Games</span></span><a class="atitle" href="https://kotaku.com/the-smallest-tamagotchi-yet-lives-inside-a-one-inch-screen-on-your-finger-2000729127" target="_blank" rel="noopener noreferrer">The Smallest Tamagotchi Yet Lives Inside A One Inch Screen On Your Finger</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/c4gk206k95xo#0" data-cat="sports" data-sent="0" data-slug="sport football articles c4gk206k95xo" hidden="until-found"><span class="ameta"><span class="src" style="color:#facc15">BBC SPORT</span> &middot; Aug 28 &middot; <span class="cat" style="color:#3b82f6">Sports</span></span><a class="atitle" href="https://www.bbc.co.uk/sport/football/articles/c4gk206k95xo" target="_blank" rel="noopener noreferrer">Celtic &amp; Rangers to play Scottish Cup ties behind closed doors after fan disorder</a></li>
-<li class="arow" data-count="1" data-id="rss:US-EN-49734496" data-cat="sports" data-sent="0" data-slug="mlb story prospect rankings update farm systems teams brewers dodgers orioles rays" hidden="until-found"><span class="ameta"><span class="src" style="color:#ef4444">ESPN</span> &middot; Aug 28 &middot; <span class="cat" style="color:#3b82f6">Sports</span></span><a class="atitle" href="https://www.espn.com/mlb/story/_/id/49734496/2026-mlb-prospect-rankings-update-farm-systems-30-teams-brewers-dodgers-orioles-rays" target="_blank" rel="noopener noreferrer">📈 Updated ranking of all 30 MLB farm systems</a></li>
-<li class="arow" data-count="1" data-id="rss:US-EN-49747161" data-cat="sports" data-sent="0" data-slug="college football story judge order prohibits sec blocking athletes return" hidden="until-found"><span class="ameta"><span class="src" style="color:#ef4444">ESPN</span> &middot; Aug 28 &middot; <span class="cat" style="color:#3b82f6">Sports</span></span><a class="atitle" href="https://www.espn.com/college-football/story/_/id/49747161/judge-order-prohibits-sec-blocking-athletes-return" target="_blank" rel="noopener noreferrer">Judge&#39;s order prohibits SEC from banning players</a></li>
-<li class="arow" data-count="1" data-id="rss:US-EN-49748391" data-cat="sports" data-sent="0" data-slug="mlb story tony romo accepts full responsibility actions camp says" hidden="until-found"><span class="ameta"><span class="src" style="color:#ef4444">ESPN</span> &middot; Aug 28 &middot; <span class="cat" style="color:#3b82f6">Sports</span></span><a class="atitle" href="https://www.espn.com/mlb/story/_/id/49748391/tony-romo-accepts-full-responsibility-actions-camp-says" target="_blank" rel="noopener noreferrer">Romo issued new citations related to July arrest</a></li>
-<li class="arow" data-count="1" data-id="rss:US-EN-49749335" data-cat="sports" data-sent="0" data-slug="mlb story sale tops mph throws complete game braves sweep dodgers" hidden="until-found"><span class="ameta"><span class="src" style="color:#ef4444">ESPN</span> &middot; Aug 28 &middot; <span class="cat" style="color:#3b82f6">Sports</span></span><a class="atitle" href="https://www.espn.com/mlb/story/_/id/49749335/sale-tops-100-mph-throws-complete-game-braves-sweep-dodgers" target="_blank" rel="noopener noreferrer">&#39;This is mine&#39;: Sale tops 100 mph, goes distance</a></li>
-<li class="arow" data-count="1" data-id="rss:US-EN-49749300" data-cat="sports" data-sent="0" data-slug="nfl story mccarthy says all four steelers quarterbacks earned spots" hidden="until-found"><span class="ameta"><span class="src" style="color:#ef4444">ESPN</span> &middot; Aug 28 &middot; <span class="cat" style="color:#3b82f6">Sports</span></span><a class="atitle" href="https://www.espn.com/nfl/story/_/id/49749300/mccarthy-says-all-four-steelers-quarterbacks-earned-spots" target="_blank" rel="noopener noreferrer">McCarthy says Steelers&#39; 4 QBs have earned spots</a></li>
-<li class="arow" data-count="1" data-id="rss:US-EN-49745245" data-cat="sports" data-sent="0" data-slug="nfl story packers star josh jacobs charged two misdemeanors" hidden="until-found"><span class="ameta"><span class="src" style="color:#ef4444">ESPN</span> &middot; Aug 28 &middot; <span class="cat" style="color:#3b82f6">Sports</span></span><a class="atitle" href="https://www.espn.com/nfl/story/_/id/49745245/packers-star-rb-josh-jacobs-charged-two-misdemeanors" target="_blank" rel="noopener noreferrer">Packers star RB Jacobs formally charged by DA</a></li>
-<li class="arow" data-count="1" data-id="rss:US-EN-49749940" data-cat="sports" data-sent="0" data-slug="nfl story kubiak mum raiders starter fernando mendoza struggles" hidden="until-found"><span class="ameta"><span class="src" style="color:#ef4444">ESPN</span> &middot; Aug 28 &middot; <span class="cat" style="color:#3b82f6">Sports</span></span><a class="atitle" href="https://www.espn.com/nfl/story/_/id/49749940/kubiak-mum-raiders-starter-fernando-mendoza-struggles" target="_blank" rel="noopener noreferrer">Kubiak mum on Vegas&#39; QB as Mendoza struggles</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
