@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-05T13:59:34.608Z">
+<meta name="sf-version" content="2026-09-05T14:00:45.426Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -403,8 +403,10 @@ a.trend-title::after { content: ""; position: absolute; inset: 0; }
 .trend-title:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .trend-meta {
 	margin: 0; color: var(--text-faint);
-	font-size: 11.5px; font-weight: 700; letter-spacing: 0.08em;
-	white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+	font-size: 11.5px; font-weight: 700; letter-spacing: 0.08em; line-height: 1.5;
+	/* Two lines, not one: the search term IS the point of a trending tile
+	   ("indw vs pakw" · 500+ searches) and a single line clipped it. */
+	display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
 }
 .trend-meta .src { font-weight: 700; letter-spacing: 0.08em; }
 .trend-meta .sep { opacity: 0.5; margin: 0 5px; }
@@ -771,7 +773,7 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 9:59 AM &middot; 218 TODAY</p>
+	<p class="stats">UPDATED 10:00 AM &middot; 218 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
 	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">178</span><span class="sr-only"> — 178 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">204</span><span class="sr-only"> — 204 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">167</span><span class="sr-only"> — 167 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">369</span><span class="sr-only"> — 369 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">210</span><span class="sr-only"> — 210 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">265</span><span class="sr-only"> — 265 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">120</span><span class="sr-only"> — 120 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">318</span><span class="sr-only"> — 318 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">533</span><span class="sr-only"> — 533 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">302</span><span class="sr-only"> — 302 stories</span></button>
