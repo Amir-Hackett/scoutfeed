@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-05T18:41:24.191Z">
+<meta name="sf-version" content="2026-09-05T19:41:25.927Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -631,17 +631,19 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#ef4444"] { color: #b60010 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(336 55% 72%)"] { color: #894262 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#facc15"] { color: #815500 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(336 55% 72%)"] { color: #894262 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#60a5fa"] { color: #145dac !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#ef4444"] { color: #b60010 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#facc15"] { color: #815500 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#c084fc"] { color: #7638ab !important; }
@@ -657,7 +659,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(271 55% 72%)"] { color: #704891 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(224 55% 72%)"] { color: #495b8f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#7dd3fc"] { color: #00678c !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(290 55% 72%)"] { color: #7e418a !important; }
@@ -671,7 +672,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(89 55% 72%)"] { color: #49691b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(287 55% 72%)"] { color: #7c428b !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(232 55% 72%)"] { color: #4f5795 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f97316"] { color: #aa2700 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(156 55% 72%)"] { color: #176e52 !important; }
@@ -682,11 +682,9 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(241 55% 72%)"] { color: #57529b !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(236 55% 72%)"] { color: #525598 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(174 55% 72%)"] { color: #126c66 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(306 55% 72%)"] { color: #853d80 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(203 55% 72%)"] { color: #35647e !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(159 55% 72%)"] { color: #176d56 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(71 55% 72%)"] { color: #5a6512 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(283 55% 72%)"] { color: #79448d !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(251 55% 72%)"] { color: #604f98 !important; }
 .sc0 { color: hsl(269 55% 72%); }
 :root[data-theme="light"] .sc0 { color: #6e4992; }
@@ -946,10 +944,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 2:41 PM &middot; 309 TODAY</p>
+	<p class="stats">UPDATED 3:41 PM &middot; 316 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">176</span><span class="sr-only"> — 176 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">227</span><span class="sr-only"> — 227 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">395</span><span class="sr-only"> — 395 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">207</span><span class="sr-only"> — 207 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">261</span><span class="sr-only"> — 261 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">115</span><span class="sr-only"> — 115 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">307</span><span class="sr-only"> — 307 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">528</span><span class="sr-only"> — 528 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">329</span><span class="sr-only"> — 329 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">291</span><span class="sr-only"> — 291 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">225</span><span class="sr-only"> — 225 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">397</span><span class="sr-only"> — 397 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">205</span><span class="sr-only"> — 205 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">260</span><span class="sr-only"> — 260 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">114</span><span class="sr-only"> — 114 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">309</span><span class="sr-only"> — 309 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">527</span><span class="sr-only"> — 527 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">331</span><span class="sr-only"> — 331 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">291</span><span class="sr-only"> — 291 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1097,31 +1095,6 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact rail-art" style="--rail:#f87171" data-count="1" data-id="rss:https://www.dw.com/en/why-many-syrians-feel-assad-s-death-sentence-isn-t-enough/a-78985915?maca=en-rss-en-world-4025-rdf" data-srckey="dw world" data-cat="world" data-sent="0" data-ts="1788595380000" data-slug="why many syrians feel assad death sentence isn enough">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Why many Syrians feel Assad&#39;s death sentence isn&#39;t enough — flip for details">
-	<div class="meta"><span class="src" style="color:hsl(29 55% 72%)">DW WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T08:03:00.000Z">4:03 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
-	<h3 class="title">Why many Syrians feel Assad&#39;s death sentence isn&#39;t enough</h3>
-	<p class="snippet">In July, a Syrian court sentenced former dictator Bashar Assad to death for crimes against his own people. But after 14 years of civil war, many survivors are demanding more when it comes to transitional justice.</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
-</div>
-<div class="face back" inert>
-	<h3 class="title">Why many Syrians feel Assad&#39;s death sentence isn&#39;t enough</h3>
-	<p class="about">In July, a Syrian court sentenced former dictator Bashar Assad to death for crimes against his own people. But after 14 years of civil war, many survivors are demanding more when it comes to transitional justice.</p>
-	
-	
-	<div class="actions">
-	<a class="more" href="https://www.dw.com/en/why-many-syrians-feel-assad-s-death-sentence-isn-t-enough/a-78985915?maca=en-rss-en-world-4025-rdf" target="_blank" rel="noopener noreferrer">DW World &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-	</div>
-</div>
-</div>
-</article>
 <article class="card compact rail-art has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.engadget.com/2249734/apple-products-being-discontinued-left-behind-2026/" data-srckey="engadget" data-cat="tech" data-sent="0" data-ts="1788610500000" data-slug="apple products being discontinued left behind">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="10 products Apple is leaving behind in 2026 — flip for details">
@@ -1147,22 +1120,47 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact rail-art has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://www.unite.ai/?p=460254" data-srckey="unite.ai" data-cat="ai" data-sent="0" data-ts="1788528893000" data-slug="scaling enterprise b2b marketing with workflows">
+<article class="card compact rail-art" style="--rail:#f87171" data-count="1" data-id="rss:https://www.dw.com/en/why-many-syrians-feel-assad-s-death-sentence-isn-t-enough/a-78985915?maca=en-rss-en-world-4025-rdf" data-srckey="dw world" data-cat="world" data-sent="0" data-ts="1788595380000" data-slug="why many syrians feel assad death sentence isn enough">
 <div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="How AI Turned Our Small Marketing Team into a Full-Service Agency — flip for details">
-	<div class="meta"><span class="src" style="color:hsl(29 55% 72%)">UNITE.AI</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-04T13:34:53.000Z">9:34 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
-	<h3 class="title">How AI Turned Our Small Marketing Team into a Full-Service Agency</h3>
-	<p class="snippet">Being a small marketing team in a large international organization can sometimes feel like the old stories of a small group of soldiers fending off the invading army. Instead of being “The 300” standing against the Persian horde, we are the half-dozen facing down a tidal wave of PowerPoints and RFPs. Our greatest weapon in this battle is AI, and it has enabled our rag-tag little squad to function…</p>
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Why many Syrians feel Assad&#39;s death sentence isn&#39;t enough — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(29 55% 72%)">DW WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T08:03:00.000Z">4:03 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Why many Syrians feel Assad&#39;s death sentence isn&#39;t enough</h3>
+	<p class="snippet">In July, a Syrian court sentenced former dictator Bashar Assad to death for crimes against his own people. But after 14 years of civil war, many survivors are demanding more when it comes to transitional justice.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://www.unite.ai/wp-content/uploads/2026/09/e834c7f8-3b6f-4643-ae17-5a67893f2c14.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+	
 </div>
 <div class="face back" inert>
-	<h3 class="title">How AI Turned Our Small Marketing Team into a Full-Service Agency</h3>
-	<p class="about">Being a small marketing team in a large international organization can sometimes feel like the old stories of a small group of soldiers fending off the invading army. Instead of being “The 300” standing against the Persian horde, we are the half-dozen facing down a tidal wave of PowerPoints and RFPs. Our greatest weapon in this battle is AI, and it has enabled our rag-tag little squad to function…</p>
+	<h3 class="title">Why many Syrians feel Assad&#39;s death sentence isn&#39;t enough</h3>
+	<p class="about">In July, a Syrian court sentenced former dictator Bashar Assad to death for crimes against his own people. But after 14 years of civil war, many survivors are demanding more when it comes to transitional justice.</p>
 	
 	
 	<div class="actions">
-	<a class="more" href="https://www.unite.ai/scaling-enterprise-b2b-marketing-with-ai-workflows/" target="_blank" rel="noopener noreferrer">Unite.AI &#8599;</a>
+	<a class="more" href="https://www.dw.com/en/why-many-syrians-feel-assad-s-death-sentence-isn-t-enough/a-78985915?maca=en-rss-en-world-4025-rdf" target="_blank" rel="noopener noreferrer">DW World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact rail-art has-thumb" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235621396" data-srckey="rolling stone music" data-cat="music" data-sent="0" data-ts="1788534389000" data-slug="music news turnstile guitarist ordered competency evaluation">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Judge Orders Competency Evaluation for Ex-Turnstile Guitarist in Attempted Murder Case — flip for details">
+	<div class="meta"><span class="src" style="color:#fb7185">ROLLING STONE MUSIC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-04T15:06:29.000Z">11:06 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
+	<h3 class="title">Judge Orders Competency Evaluation for Ex-Turnstile Guitarist in Attempted Murder Case</h3>
+	<p class="snippet">Brady Ebert is facing life in prison after his charges for intentionally driving his car into the father of Turnstile singer Brendan Yates were upgraded to attempted first-degree murder</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.rollingstone.com/wp-content/uploads/2026/09/brady-ebert-turnstile-competency-eval.jpg?w=640#038;h=900&amp;#038;crop=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://www.rollingstone.com/wp-content/uploads/2026/09/brady-ebert-turnstile-competency-eval.jpg?w=320#038;h=900&amp;#038;crop=1 320w, https://www.rollingstone.com/wp-content/uploads/2026/09/brady-ebert-turnstile-competency-eval.jpg?w=640#038;h=900&amp;#038;crop=1 640w, https://www.rollingstone.com/wp-content/uploads/2026/09/brady-ebert-turnstile-competency-eval.jpg?w=960#038;h=900&amp;#038;crop=1 960w" sizes="(max-width: 640px) 78vw, 320px">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Judge Orders Competency Evaluation for Ex-Turnstile Guitarist in Attempted Murder Case</h3>
+	<p class="about">Brady Ebert is facing life in prison after his charges for intentionally driving his car into the father of Turnstile singer Brendan Yates were upgraded to attempted first-degree murder</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.rollingstone.com/music/music-news/turnstile-guitarist-ordered-competency-evaluation-1235621396/" target="_blank" rel="noopener noreferrer">Rolling Stone Music &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1227,43 +1225,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.dazn.com/es-ES/news/f%C3%BAtbol/sevilla-barcelona-femenino-horario-donde-ver-tv-online-partido-liga-f-202627/1806tgzaftve91gw7ydzbps5ph" target="_blank" rel="noopener noreferrer">Sevilla FC vs Barcelona women: time and where to watch today on TV and online the Liga F 2026/27 match</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(241 55% 72%)">DAZN</span><span class="sep" aria-hidden="true">&middot;</span>"sevilla - barcelona" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.usopen.org/en_US/news/articles/2026-09-03/who_won_on_thursday_at_the_2026_us_open_results_and_highlights.html" target="_blank" rel="noopener noreferrer">Who won on Thursday at the 2026 US Open? Results and highlights</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(159 55% 72%)">US OPEN TENNIS</span><span class="sep" aria-hidden="true">&middot;</span>"fritz tennis" &middot; 5000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.marca.com/futbol/primera-division/2026/09/03/villarreal-deportivo-de-a-coruna-horario-y-donde-ver-hoy-en-tv-el-partido-de-la-jornada-4-de-laliga-ea-sports.html" target="_blank" rel="noopener noreferrer">Villarreal - Deportivo de A Coruña: time and where to watch today on TV the LaLiga EA Sports matchday 4 game</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(236 55% 72%)">MARCA</span><span class="sep" aria-hidden="true">&middot;</span>"villarreal - deportivo" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://sports.yahoo.com/articles/why-georgia-rb-nate-frazier-142930026.html" target="_blank" rel="noopener noreferrer">Why Georgia RB Nate Frazier is playing with a heavy heart</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(71 55% 72%)">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"nate frazier" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.montanasports.com/college/montana-grizzlies/no-3-montana-shifts-to-non-conference-play-welcomes-drake-in-second-game" target="_blank" rel="noopener noreferrer">No. 3 Montana shifts to non-conference play, welcomes Drake in second game</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(174 55% 72%)">MONTANASPORTS.COM</span><span class="sep" aria-hidden="true">&middot;</span>"drake vs montana" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.cnn.com/2026/09/05/politics/maga-inc-ken-paxton-trump" target="_blank" rel="noopener noreferrer">Trump’s PAC wades into midterms with $10 million ad buy to boost Ken Paxton</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(283 55% 72%)">CNN</span><span class="sep" aria-hidden="true">&middot;</span>"texas" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://people.com/arch-manning-on-advice-from-eli-peyton-manning-as-nfl-nears-exclusive-11969674" target="_blank" rel="noopener noreferrer">How Arch Manning is Approaching College Football Season After Uncles Eli and Peyton Manning’s Advice (Exclusive)</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(306 55% 72%)">PEOPLE.COM</span><span class="sep" aria-hidden="true">&middot;</span>"arch manning" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.usopen.org/en_US/news/articles/2026-09-02/flavio_cobolli_relishes_the_new_york_spotlight_at_the_2026_us_open.html" target="_blank" rel="noopener noreferrer">Flavio Cobolli relishes the New York spotlight at the 2026 US Open</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(159 55% 72%)">US OPEN TENNIS</span><span class="sep" aria-hidden="true">&middot;</span>"cobolli" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://mmajunkie.usatoday.com/story/sports/ufc/2026/09/04/ufc-paris-felipe-lima-dark-place-featherweight-bantamweight-mental-mma/91608321007/" target="_blank" rel="noopener noreferrer">Felipe Lima glad to be back from &#39;a dark place&#39; at UFC Paris</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(203 55% 72%)">MMA JUNKIE</span><span class="sep" aria-hidden="true">&middot;</span>"morgan charriere" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://parade.com/news/prayers-pouring-in-for-stevie-nicks-after-brothers-death-this-is-devastating-news" target="_blank" rel="noopener noreferrer">Prayers Pouring In for Stevie Nicks After Brother’s Death: ‘This Is Devastating News’</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(251 55% 72%)">PARADE MAGAZINE</span><span class="sep" aria-hidden="true">&middot;</span>"christopher nicks" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.fanduel.com/research/college-football-props-today-4-best-player-props-for-week-1" target="_blank" rel="noopener noreferrer">College Football Props Today: 4 Best Player Props for Week 1</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(251 55% 72%)">FANDUEL</span><span class="sep" aria-hidden="true">&middot;</span>"lanorris sellers" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://sports.yahoo.com/videos/watch-monmouth-football-goes-warmups-174636660.html" target="_blank" rel="noopener noreferrer">WATCH: Monmouth football goes through warmups and a pregame update</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(71 55% 72%)">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"monmouth football" &middot; 200+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1286,6 +1284,181 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://variety.com/2026/film/reviews/everest-the-other-side-review-1236852376/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://deadline.com/?p=1237069054" data-srckey="deadline" data-cat="entertainment" data-sent="0" data-ts="1788636660000" data-slug="oasis dont look back anger review liam gallagher noel">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘Oasis: Don’t Look Back In Anger’ Review: The Gallagher Bros. Bury The Hatchet In A Sentimental But Funny Concert Movie – Venice Film Festival — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(288 55% 72%)">DEADLINE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T19:31:00.000Z">3:31 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">‘Oasis: Don’t Look Back In Anger’ Review: The Gallagher Bros. Bury The Hatchet In A Sentimental But Funny Concert Movie – Venice Film Festival</h3>
+	<p class="snippet">“Bucket hats – cash or card!” The great mystery about why Noel and Liam Gallagher put aside their differences for a heavily promoted multi-million-dollar world stadium tour is never really addressed in this more-than-feature-length documentary. Instead, directors Dylan Southern and Will Lovelace look at what came of out of it for the estranged brothers, offering […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://deadline.com/wp-content/uploads/2026/07/Simon-Emmett_Oasis_Tokyo_Doc_.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">‘Oasis: Don’t Look Back In Anger’ Review: The Gallagher Bros. Bury The Hatchet In A Sentimental But Funny Concert Movie – Venice Film Festival</h3>
+	<p class="about">“Bucket hats – cash or card!” The great mystery about why Noel and Liam Gallagher put aside their differences for a heavily promoted multi-million-dollar world stadium tour is never really addressed in this more-than-feature-length documentary. Instead, directors Dylan Southern and Will Lovelace look at what came of out of it for the estranged brothers, offering […]</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://deadline.com/2026/09/oasis-dont-look-back-in-anger-review-liam-gallagher-noel-gallagher-1237069054/" target="_blank" rel="noopener noreferrer">Deadline &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49837672" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788636544817" data-slug="soccer story manchester city given enzo maresca everything needs challenge season">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Man City have given Maresca everything he needs to challenge this season — flip for details">
+	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T19:29:04.817Z">3:29 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Man City have given Maresca everything he needs to challenge this season</h3>
+	<p class="snippet">Enzo Maresca asked for new signings during his first season at Manchester City. Now, he has the pieces necessary to compete on all fronts.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0905%2Fr1711867_1296x729_16-9.jpg&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0905%2Fr1711867_1296x729_16-9.jpg&amp;w=240 240w, https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0905%2Fr1711867_1296x729_16-9.jpg&amp;w=340 340w, https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0905%2Fr1711867_1296x729_16-9.jpg&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Man City have given Maresca everything he needs to challenge this season</h3>
+	<p class="about">Enzo Maresca asked for new signings during his first season at Manchester City. Now, he has the pieces necessary to compete on all fronts.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.espn.com/soccer/story/_/id/49837672/manchester-city-given-enzo-maresca-everything-needs-challenge-season" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fb923c" data-count="1" data-id="rss:https://www.nytimes.com/2026/09/05/us/politics/trump-maga-inc-super-pac.html" data-srckey="nyt politics" data-cat="politics" data-sent="0" data-ts="1788636009000" data-slug="politics trump maga inc super pac html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Trump’s Super PAC Will Spend $10 Million on Texas Senate Race — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(336 55% 72%)">NYT POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T19:20:09.000Z">3:20 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">Trump’s Super PAC Will Spend $10 Million on Texas Senate Race</h3>
+	<p class="snippet">A financial filing announcing the TV and digital ad buy is the first general election spending by MAGA Inc. The group intends to boost the Republican nominee, Ken Paxton.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static01.nyt.com/images/2026/09/05/multimedia/05pol-maga-texas-lpzj/05pol-maga-texas-lpzj-mediumSquareAt3X.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Trump’s Super PAC Will Spend $10 Million on Texas Senate Race</h3>
+	<p class="about">A financial filing announcing the TV and digital ad buy is the first general election spending by MAGA Inc. The group intends to boost the Republican nominee, Ken Paxton.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.nytimes.com/2026/09/05/us/politics/trump-maga-inc-super-pac.html" target="_blank" rel="noopener noreferrer">NYT Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://www.marktechpost.com/?p=82106" data-srckey="marktechpost" data-cat="ai" data-sent="0" data-ts="1788635522000" data-slug="nous research hermes desktop one click local model setup">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Nous Research Adds One-Click Local Model Setup to Hermes Desktop — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(323 55% 72%)">MARKTECHPOST</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T19:12:02.000Z">3:12 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Nous Research Adds One-Click Local Model Setup to Hermes Desktop</h3>
+	<p class="snippet">Nous Research has collapsed local model setup into a single click in Hermes Desktop. The app reads your hardware, fit-checks the catalog against your GPU, picks the highest-quality build that fits, downloads it, and configures llama.cpp — with a hard 4-bit floor and a 64K minimum context window. The post Nous Research Adds One-Click Local Model Setup to Hermes Desktop appeared first on MarkTechPost.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.marktechpost.com/wp-content/uploads/2026/09/blog1311-1-1.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Nous Research Adds One-Click Local Model Setup to Hermes Desktop</h3>
+	<p class="about">Nous Research has collapsed local model setup into a single click in Hermes Desktop. The app reads your hardware, fit-checks the catalog against your GPU, picks the highest-quality build that fits, downloads it, and configures llama.cpp — with a hard 4-bit floor and a 64K minimum context window. The post Nous Research Adds One-Click Local Model Setup to Hermes Desktop appeared first on MarkTechPost.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.marktechpost.com/2026/09/05/nous-research-hermes-desktop-one-click-local-model-setup/" target="_blank" rel="noopener noreferrer">MarkTechPost &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236851086" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788634940000" data-slug="columns mandy moore hilary duff dan fogelman hulu series the land">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Mandy Moore on Hilary Duff’s Musical Comeback and Playing an ‘Absolute Bitch’ in Dan Fogelman’s NFL Family Drama ‘The Land’: It’s ‘”Friday Night Lights” and “Succession” All Rolled Into One’ — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T19:02:20.000Z">3:02 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Mandy Moore on Hilary Duff’s Musical Comeback and Playing an ‘Absolute Bitch’ in Dan Fogelman’s NFL Family Drama ‘The Land’: It’s ‘”Friday Night Lights” and “Succession” All Rolled Into One’</h3>
+	<p class="snippet">Mandy Moore knows how to travel with her kids. She hands them a tablet for some screen time. Not that the children have carte blanche on what they could watch. Instead, Moore uses ABCmouse, a childhood education app that she says keeps the kiddos occupied while teaching them how to read. It also offers lessons […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/09/MM-Entry_PAP09328_ccZwyL7O_20260724083111.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/09/MM-Entry_PAP09328_ccZwyL7O_20260724083111.jpg?w=240 240w, https://variety.com/wp-content/uploads/2026/09/MM-Entry_PAP09328_ccZwyL7O_20260724083111.jpg?w=340 340w, https://variety.com/wp-content/uploads/2026/09/MM-Entry_PAP09328_ccZwyL7O_20260724083111.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Mandy Moore on Hilary Duff’s Musical Comeback and Playing an ‘Absolute Bitch’ in Dan Fogelman’s NFL Family Drama ‘The Land’: It’s ‘”Friday Night Lights” and “Succession” All Rolled Into One’</h3>
+	<p class="about">Mandy Moore knows how to travel with her kids. She hands them a tablet for some screen time. Not that the children have carte blanche on what they could watch. Instead, Moore uses ABCmouse, a childhood education app that she says keeps the kiddos occupied while teaching them how to read. It also offers lessons […]</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://variety.com/2026/tv/columns/mandy-moore-hilary-duff-dan-fogelman-hulu-series-the-land-1236851086/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/videos/cx2zg0zl0nyo#0" data-srckey="bbc sport" data-cat="sports" data-sent="0" data-ts="1788634839000" data-slug="sport football videos cx2zg0zl0nyo">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Haaland header maintains perfect winning start for Man City — flip for details">
+	<div class="meta"><span class="src" style="color:#facc15">BBC SPORT</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T19:00:39.000Z">3:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Haaland header maintains perfect winning start for Man City</h3>
+	<p class="snippet">Manchester City highlighted their early season credentials by maintaining their 100% winning record after three Premier League games, but had to cling on to leave newly promoted Coventry still searching for their first point of the campaign.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/c738/live/5bb9aee0-a941-11f1-aed2-8d6da8d75094.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c738/live/5bb9aee0-a941-11f1-aed2-8d6da8d75094.jpg 240w, https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/c738/live/5bb9aee0-a941-11f1-aed2-8d6da8d75094.jpg 340w, https://ichef.bbci.co.uk/ace/standard/510/cpsprodpb/c738/live/5bb9aee0-a941-11f1-aed2-8d6da8d75094.jpg 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Haaland header maintains perfect winning start for Man City</h3>
+	<p class="about">Manchester City highlighted their early season credentials by maintaining their 100% winning record after three Premier League games, but had to cling on to leave newly promoted Coventry still searching for their first point of the campaign.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.bbc.co.uk/sport/football/videos/cx2zg0zl0nyo" target="_blank" rel="noopener noreferrer">BBC Sport &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#fb923c" data-count="1" data-id="rss:https://www.foxnews.com/politics/judge-allows-homewrecker-lawsuit-former-sen-kyrsten-sinema-move-forward" data-srckey="fox news politics" data-cat="politics" data-sent="0" data-ts="1788633538000" data-slug="politics judge allows homewrecker lawsuit former sen kyrsten sinema move forward">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Judge allows &#39;homewrecker&#39; lawsuit against former Sen Kyrsten Sinema to move forward — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(101 55% 72%)">FOX NEWS POLITICS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T18:38:58.000Z">2:38 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">Judge allows &#39;homewrecker&#39; lawsuit against former Sen Kyrsten Sinema to move forward</h3>
+	<p class="snippet">Former U.S. Sen. Kyrsten Sinema can be sued under North Carolina&#39;s alienation of affection law after a judge ruled her messages establish jurisdiction.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/03/931/523/kyrsten-sinema-capitol-2-.jpg?ve=1&amp;tl=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Judge allows &#39;homewrecker&#39; lawsuit against former Sen Kyrsten Sinema to move forward</h3>
+	<p class="about">Former U.S. Sen. Kyrsten Sinema can be sued under North Carolina&#39;s alienation of affection law after a judge ruled her messages establish jurisdiction.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.foxnews.com/politics/judge-allows-homewrecker-lawsuit-former-sen-kyrsten-sinema-move-forward" target="_blank" rel="noopener noreferrer">Fox News Politics &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -5125,13 +5298,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Texas vs. Texas State prediction, odds, time: Week 1 college football picks from proven model — flip for details">
 	<div class="meta"><span class="src" style="color:#3b82f6">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T12:37:53.000Z">8:37 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
 	<h3 class="title">Texas vs. Texas State prediction, odds, time: Week 1 college football picks from proven model</h3>
-	<p class="snippet">The SportsLine Projection Model has revealed its Saturday best bets for the Texas State Bobcats vs. Arch Manning and the No. 4-ranked Texas Longhorns</p>
+	<p class="snippet">Kickoff is set for 3:30 p.m. ET from Texas Memorial Stadium in Austin. The Longhorns are 29.5-point favorites in the latest Texas State vs. Texas odds, while the over/under is 60.5. Before making any Texas vs. Texas State picks, check out the Texas vs. Texas State predictions from the SportsLine Projection Model . The model simulates every FBS game 10,000 times. It is on a 32-19 run on top-rated CFB money-line picks since the 2024 season, and it has been upgraded for the 2026 season to even better factor in the transfer portal to help nail college football betting picks at sportsbooks and on betting sites . Anyone looking for Texas prediction markets should know that after 10,000 simulations of Texas State vs. Texas, the SportsLine model is going Under (60.5 points) on the total. Texas…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://sportshub.cbsistatic.com/i/2026/05/11/0e7af832-8842-4a69-9247-042dab9fb0e9/imagn-arch-manning-texas.jpg?width=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://sportshub.cbsistatic.com/i/2026/05/11/0e7af832-8842-4a69-9247-042dab9fb0e9/imagn-arch-manning-texas.jpg?width=600 600w, https://sportshub.cbsistatic.com/i/2026/05/11/0e7af832-8842-4a69-9247-042dab9fb0e9/imagn-arch-manning-texas.jpg?width=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Texas vs. Texas State prediction, odds, time: Week 1 college football picks from proven model</h3>
-	<p class="about">The SportsLine Projection Model has revealed its Saturday best bets for the Texas State Bobcats vs. Arch Manning and the No. 4-ranked Texas Longhorns</p>
+	<p class="about">Kickoff is set for 3:30 p.m. ET from Texas Memorial Stadium in Austin. The Longhorns are 29.5-point favorites in the latest Texas State vs. Texas odds, while the over/under is 60.5. Before making any Texas vs. Texas State picks, check out the Texas vs. Texas State predictions from the SportsLine Projection Model . The model simulates every FBS game 10,000 times. It is on a 32-19 run on top-rated CFB money-line picks since the 2024 season, and it has been upgraded for the 2026 season to even better factor in the transfer portal to help nail college football betting picks at sportsbooks and on betting sites . Anyone looking for Texas prediction markets should know that after 10,000 simulations of Texas State vs. Texas, the SportsLine model is going Under (60.5 points) on the total. Texas…</p>
 	
 	
 	<div class="actions">
@@ -5150,13 +5323,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Building Production KRA eTIMS and Safaricom M-Pesa Integrations for Odoo 19 — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T12:37:32.000Z">8:37 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
 	<h3 class="title">Building Production KRA eTIMS and Safaricom M-Pesa Integrations for Odoo 19</h3>
-	<p class="snippet">Building business software in East Africa means dealing with two hard operational facts. First, the Kenya Revenue Authority requires every business invoice to carry a digital fiscal signature and a verifiable QR code via eTIMS. Second, over 80 percent of commercial transactions settle through Safaricom M-Pesa. If your ERP cannot sign invoices in real time or match incoming Paybill payments…</p>
+	<p class="snippet">Building business software in East Africa means dealing with two hard operational facts. First, the Kenya Revenue Authority requires every business invoice to carry a digital fiscal signature and a verifiable QR code via eTIMS. Second, over 80 percent of commercial transactions settle through Safaricom M-Pesa. If your ERP cannot sign invoices in real time or match incoming Paybill payments automatically, your accounting team spends their days doing manual data entry. If your retail POS goes offline when the fiber cuts, you cannot legally issue receipts. To solve these problems, we built and published three production-ready modules on the official Odoo App Store. They support Odoo 17.0, 18.0, and 19.0 across both Community and Enterprise editions. Here is the technical architecture behind…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	
 </div>
 <div class="face back" inert>
 	<h3 class="title">Building Production KRA eTIMS and Safaricom M-Pesa Integrations for Odoo 19</h3>
-	<p class="about">Building business software in East Africa means dealing with two hard operational facts. First, the Kenya Revenue Authority requires every business invoice to carry a digital fiscal signature and a verifiable QR code via eTIMS. Second, over 80 percent of commercial transactions settle through Safaricom M-Pesa. If your ERP cannot sign invoices in real time or match incoming Paybill payments…</p>
+	<p class="about">Building business software in East Africa means dealing with two hard operational facts. First, the Kenya Revenue Authority requires every business invoice to carry a digital fiscal signature and a verifiable QR code via eTIMS. Second, over 80 percent of commercial transactions settle through Safaricom M-Pesa. If your ERP cannot sign invoices in real time or match incoming Paybill payments automatically, your accounting team spends their days doing manual data entry. If your retail POS goes offline when the fiber cuts, you cannot legally issue receipts. To solve these problems, we built and published three production-ready modules on the official Odoo App Store. They support Odoo 17.0, 18.0, and 19.0 across both Community and Enterprise editions. Here is the technical architecture behind…</p>
 	
 	
 	<div class="actions">
@@ -8998,7 +9171,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2686 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2679 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241376" data-cat="entertainment" data-sent="0" data-slug="interest toei animation confirms license for french dragon ball theme park" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-04/toei-animation-confirms-no-license-for-french-dragon-ball-theme-park/.241376" target="_blank" rel="noopener noreferrer">Toei Animation Confirms No License for French Dragon Ball Theme Park</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241422" data-cat="entertainment" data-sent="0" data-slug="news yowaki max reijo nanoni ratsuwan konyakusha sama kake notte shimatta anime reveals theme song" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-09-04/yowaki-max-reijo-nanoni-ratsuwan-konyakusha-sama-no-kake-ni-notte-shimatta-anime-reveals-theme-song-/.241422" target="_blank" rel="noopener noreferrer">&#39;Yowaki MAX Reijō nanoni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta&#39; Anime Reveals Theme Song Artist, October 4 Debut</a></li>
@@ -11679,13 +11852,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2244161/dolby-atmos-and-lossless-audio-differences/" data-cat="tech" data-sent="0" data-slug="dolby atmos and lossless audio differences" hidden="until-found"><span class="ameta"><span class="src sc15">ENGADGET</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Tech</span></span></span><a class="atitle" href="https://www.engadget.com/2244161/dolby-atmos-and-lossless-audio-differences/" target="_blank" rel="noopener noreferrer">What&#39;s the difference between Dolby Atmos and lossless audio?</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.statnews.com/?p=1515450" data-cat="healthcare" data-sent="0" data-slug="lindsay clancy postpartum psychosis reproductive psychiatrists liability" hidden="until-found"><span class="ameta"><span class="src sc26">STAT NEWS</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Healthcare</span></span></span><a class="atitle" href="https://www.statnews.com/2026/08/28/lindsay-clancy-postpartum-psychosis-reproductive-psychiatrists-liability/" target="_blank" rel="noopener noreferrer">Opinion: The unintended consequences of the Lindsay Clancy case</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2246550/theres-a-new-twitter-in-town-even-though-a-judge-has-yet-to-rule-on-a-trademark-injunction/" data-cat="tech" data-sent="0" data-slug="theres new twitter town even though judge has yet rule trademark injunction" hidden="until-found"><span class="ameta"><span class="src sc15">ENGADGET</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Tech</span></span></span><a class="atitle" href="https://www.engadget.com/2246550/theres-a-new-twitter-in-town-even-though-a-judge-has-yet-to-rule-on-a-trademark-injunction/" target="_blank" rel="noopener noreferrer">There&#39;s a new Twitter in town, even though a judge has yet to rule on a trademark injunction</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235617332" data-cat="music" data-sent="0" data-slug="music features prince estate interview timeless complaints michael" hidden="until-found"><span class="ameta"><span class="src sc24">ROLLING STONE MUSIC</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Music</span></span></span><a class="atitle" href="https://www.rollingstone.com/music/music-features/prince-estate-interview-timeless-complaints-michael-1235617332/" target="_blank" rel="noopener noreferrer">Prince Estate Co-Manager L. Londell McMillan on ‘Timeless,’ Fan Complaints, Learning from ‘Michael’</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.beckershospitalreview.com/?p=409190" data-cat="healthcare" data-sent="0" data-slug="hospital management administration the political relationship ceos cant outsource" hidden="until-found"><span class="ameta"><span class="src sc32">BECKER&#39;S HOSPITAL REVIEW</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Healthcare</span></span></span><a class="atitle" href="https://www.beckershospitalreview.com/hospital-management-administration/the-political-relationship-hospital-ceos-cant-outsource/" target="_blank" rel="noopener noreferrer">The political relationship hospital CEOs can’t outsource</a></li>
-<li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/news/chelsea-football-circle-sponsor-fca-warning-questionable-deals" data-cat="markets" data-sent="0" data-slug="news chelsea football circle sponsor fca warning questionable deals" hidden="until-found"><span class="ameta"><span class="src sc30">COINTELEGRAPH</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Markets</span></span></span><a class="atitle" href="https://cointelegraph.com/news/chelsea-football-circle-sponsor-fca-warning-questionable-deals" target="_blank" rel="noopener noreferrer">Chelsea FC gets a stablecoin sponsor after UK FCA warning to clubs</a></li>
-<li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000729397" data-cat="games" data-sent="0" data-slug="persona revival yosuke gay romance mod canceled" hidden="until-found"><span class="ameta"><span class="src sc14">KOTAKU</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Games</span></span></span><a class="atitle" href="https://kotaku.com/persona-4-revival-yosuke-gay-romance-mod-canceled-2000729397" target="_blank" rel="noopener noreferrer">Persona 4 Revival Won’t Add The Original’s Scrapped Gay Romance And The Reason Is Disappointing</a></li>
-<li class="arow" data-count="1" data-id="rss:a9538694-ab45-405d-8d6e-0981ca2e8662" data-cat="games" data-sent="0" data-slug="articles grand theft auto already bringing back characters from gta" hidden="until-found"><span class="ameta"><span class="src sc8">IGN</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Games</span></span></span><a class="atitle" href="https://www.ign.com/articles/grand-theft-auto-6-is-already-bringing-back-characters-from-gta-5" target="_blank" rel="noopener noreferrer">Grand Theft Auto 6 Is Already Bringing Back Characters from GTA 5</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/2026/aug/28/us-venezuela-oil-gas-stake" data-cat="world" data-sent="0" data-slug="world aug venezuela oil gas stake" hidden="until-found"><span class="ameta"><span class="src sc11">GUARDIAN WORLD</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.theguardian.com/world/2026/aug/28/us-venezuela-oil-gas-stake" target="_blank" rel="noopener noreferrer">Venezuelan opposition up in arms over reports US wants big stake in oil and gas</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.beckershospitalreview.com/?p=376998" data-cat="healthcare" data-sent="0" data-slug="hospital executive moves recent health system coo exits" hidden="until-found"><span class="ameta"><span class="src sc32">BECKER&#39;S HOSPITAL REVIEW</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Healthcare</span></span></span><a class="atitle" href="https://www.beckershospitalreview.com/hospital-executive-moves/19-recent-hospital-health-system-coo-exits/" target="_blank" rel="noopener noreferrer">7 recent hospital, health system COO exits</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
