@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-05T17:45:55.710Z">
+<meta name="sf-version" content="2026-09-05T17:49:25.950Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -631,6 +631,7 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#ef4444"] { color: #b60010 !important; }
@@ -650,7 +651,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(260 55% 72%)"] { color: #674c95 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(271 55% 72%)"] { color: #704891 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(224 55% 72%)"] { color: #495b8f !important; }
@@ -682,11 +682,12 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(166 55% 72%)"] { color: #146d5e !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(203 55% 72%)"] { color: #35647e !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(312 55% 72%)"] { color: #863f7a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(159 55% 72%)"] { color: #176d56 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(322 55% 72%)"] { color: #884070 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(265 55% 72%)"] { color: #6b4b94 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(19 55% 72%)"] { color: #80503a !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(72 55% 72%)"] { color: #596512 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(44 55% 72%)"] { color: #6f5b23 !important; }
 .sc0 { color: hsl(269 55% 72%); }
 :root[data-theme="light"] .sc0 { color: #6e4992; }
 .sc1 { color: #fb923c; }
@@ -945,10 +946,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 1:45 PM &middot; 297 TODAY</p>
+	<p class="stats">UPDATED 1:49 PM &middot; 298 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">229</span><span class="sr-only"> — 229 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">388</span><span class="sr-only"> — 388 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">208</span><span class="sr-only"> — 208 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">261</span><span class="sr-only"> — 261 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">116</span><span class="sr-only"> — 116 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">307</span><span class="sr-only"> — 307 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">530</span><span class="sr-only"> — 530 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">328</span><span class="sr-only"> — 328 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">292</span><span class="sr-only"> — 292 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">228</span><span class="sr-only"> — 228 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">388</span><span class="sr-only"> — 388 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">209</span><span class="sr-only"> — 209 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">261</span><span class="sr-only"> — 261 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">116</span><span class="sr-only"> — 116 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">307</span><span class="sr-only"> — 307 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">530</span><span class="sr-only"> — 530 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">328</span><span class="sr-only"> — 328 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">292</span><span class="sr-only"> — 292 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1226,43 +1227,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.usopen.org/en_US/news/articles/2026-09-02/who_is_eva_lys_mirra_andreevas_2026_us_open_round_2_opponent.html" target="_blank" rel="noopener noreferrer">Who is Eva Lys: Mirra Andreeva’s 2026 US Open Round 2 opponent</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(159 55% 72%)">US OPEN TENNIS</span><span class="sep" aria-hidden="true">&middot;</span>"mirra andreeva" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://fever.wnba.com/news/cunningham-sets-tone-for-fever-off-the-bench" target="_blank" rel="noopener noreferrer">Cunningham Sets Tone for Fever Off the Bench</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(166 55% 72%)">INDIANA FEVER</span><span class="sep" aria-hidden="true">&middot;</span>"sophie cunningham" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/soccer/team-stats/_/gameId/401878780" target="_blank" rel="noopener noreferrer">Nottm Forest 0-0 Spurs (Sep 5, 2026) Team Stats</a>
-		<p class="trend-meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"iu score" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://omaha.com/sports/huskers/shatel/article_968b9694-6b97-4c10-a775-932ab0cafd62.html" target="_blank" rel="noopener noreferrer">Shatel: Under construction, literal and metaphorical, Nebraska football offers welcome surprise</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(203 55% 72%)">OMAHA WORLD-HERALD</span><span class="sep" aria-hidden="true">&middot;</span>"matt rhule" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.racingpost.com/sport/tennis-tips/us-open/us-open-tennis-day-seven-predictions-acca-tips-and-odds-aANMe2R1bnyk/" target="_blank" rel="noopener noreferrer">US Open tennis day seven predictions, acca tips and odds: Cobolli may be kept waiting by big-serving Blockx</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(322 55% 72%)">RACING POST</span><span class="sep" aria-hidden="true">&middot;</span>"alexander blockx" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.northjersey.com/story/entertainment/music/2026/09/05/ed-sheeran-loop-tour-fills-metlife-stadium/91629413007/" target="_blank" rel="noopener noreferrer">Ed Sheeran commands MetLife Stadium with fireworks and Camila Cabello</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(312 55% 72%)">BERGEN RECORD</span><span class="sep" aria-hidden="true">&middot;</span>"ed sheeran metlife" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
+	<div class="trend-body">
+		<a class="trend-title" href="https://www.usopen.org/en_US/news/articles/2026-09-02/who_is_eva_lys_mirra_andreevas_2026_us_open_round_2_opponent.html" target="_blank" rel="noopener noreferrer">Who is Eva Lys: Mirra Andreeva’s 2026 US Open Round 2 opponent</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(159 55% 72%)">US OPEN TENNIS</span><span class="sep" aria-hidden="true">&middot;</span>"mirra andreeva" &middot; 1000+ searches</p>
+	</div>
+</li>
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
 		<a class="trend-title" href="https://dknetwork.draftkings.com/2026/09/05/prediction-pick-for-oumar-sy-vs-modestas-bukauskas-at-ufc-paris/" target="_blank" rel="noopener noreferrer">Prediction, pick for Oumar Sy vs. Modestas Bukauskas at UFC Paris</a>
 		<p class="trend-meta"><span class="src" style="color:hsl(265 55% 72%)">DRAFTKINGS NETWORK</span><span class="sep" aria-hidden="true">&middot;</span>"modestas bukauskas" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
-	<span class="rank" aria-hidden="true">5</span>
-	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/sport/football/live/cm5ye69gldg6t" target="_blank" rel="noopener noreferrer">Al Ittihad vs Al Nassr: Saudi Pro League stats &amp; head-to-head</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(19 55% 72%)">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"al-ittihad vs al-nassr" &middot; 2000+ searches</p>
-	</div>
-</li>
-<li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://jewishinsider.com/2026/09/michael-whatley-north-carolina-jewish-voters-roy-cooper-rjc-summit/" target="_blank" rel="noopener noreferrer">Michael Whatley details his pitch to North Carolina’s Jewish voters</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(72 55% 72%)">JEWISH INSIDER</span><span class="sep" aria-hidden="true">&middot;</span>"michael whatley" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.actionnetwork.com/tennis/us-open-best-bets-picks-odds-alexander-zverev-vs-alejandro-tabilo-saturday-september-5" target="_blank" rel="noopener noreferrer">US Open Best Bets, Picks, Odds for Zverev vs Tabilo &amp; More — 9/5</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(44 55% 72%)">ACTION NETWORK</span><span class="sep" aria-hidden="true">&middot;</span>"alexander blockx" &middot; 200+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1285,6 +1286,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://variety.com/2026/film/reviews/everest-the-other-side-review-1236852376/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:0591ee65-8d17-4bad-b892-558ba82a921a" data-srckey="ign" data-cat="games" data-sent="0" data-ts="1788629416000" data-slug="articles the blood dawnwalker passes million copies sold just days">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The Blood of Dawnwalker Passes 1 Million Copies Sold in Just 2 Days — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">IGN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T17:30:16.000Z">1:30 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">The Blood of Dawnwalker Passes 1 Million Copies Sold in Just 2 Days</h3>
+	<p class="snippet">Single-player RPG and new IP The Blood of Dawnwalker has sold 1 million copies just two days after its launch, publisher Bandai Namco and developer Rebel Wolves have announced.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assets-prd.ignimgs.com/2026/09/05/the-blood-of-dawnwalker-1788629295977.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">The Blood of Dawnwalker Passes 1 Million Copies Sold in Just 2 Days</h3>
+	<p class="about">Single-player RPG and new IP The Blood of Dawnwalker has sold 1 million copies just two days after its launch, publisher Bandai Namco and developer Rebel Wolves have announced.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.ign.com/articles/the-blood-of-dawnwalker-passes-1-million-copies-sold-in-just-2-days" target="_blank" rel="noopener noreferrer">IGN &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -8697,7 +8723,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2698 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2697 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241376" data-cat="entertainment" data-sent="0" data-slug="interest toei animation confirms license for french dragon ball theme park" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-04/toei-animation-confirms-no-license-for-french-dragon-ball-theme-park/.241376" target="_blank" rel="noopener noreferrer">Toei Animation Confirms No License for French Dragon Ball Theme Park</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241422" data-cat="entertainment" data-sent="0" data-slug="news yowaki max reijo nanoni ratsuwan konyakusha sama kake notte shimatta anime reveals theme song" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-09-04/yowaki-max-reijo-nanoni-ratsuwan-konyakusha-sama-no-kake-ni-notte-shimatta-anime-reveals-theme-song-/.241422" target="_blank" rel="noopener noreferrer">&#39;Yowaki MAX Reijō nanoni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta&#39; Anime Reveals Theme Song Artist, October 4 Debut</a></li>
@@ -11396,7 +11422,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.marktechpost.com/?p=81925" data-cat="ai" data-sent="0" data-slug="vercel vgpu webgpu library open source" hidden="until-found"><span class="ameta"><span class="src sc44">MARKTECHPOST</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">AI</span></span></span><a class="atitle" href="https://www.marktechpost.com/2026/08/28/vercel-vgpu-webgpu-library-open-source/" target="_blank" rel="noopener noreferrer">Vercel AI Open-Sources vgpu: A TypeScript WebGPU Library for AI Agent Shaders</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.beckershospitalreview.com/?p=409181" data-cat="healthcare" data-sent="0" data-slug="healthcare information technology the value gap why successful pilots still fail scale" hidden="until-found"><span class="ameta"><span class="src sc32">BECKER&#39;S HOSPITAL REVIEW</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Healthcare</span></span></span><a class="atitle" href="https://www.beckershospitalreview.com/healthcare-information-technology/the-ai-value-gap-why-successful-healthcare-ai-pilots-still-fail-to-scale/" target="_blank" rel="noopener noreferrer">The AI value gap: why successful healthcare AI pilots still fail to scale</a></li>
 <li class="arow" data-count="1" data-id="rss:https://arstechnica.com/gadgets/2026/08/apple-one-and-apple-tv-subscription-prices-increase-by-up-to-20-percent/" data-cat="tech" data-sent="0" data-slug="gadgets apple one and subscription prices increase percent" hidden="until-found"><span class="ameta"><span class="src sc16">ARS TECHNICA</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Tech</span></span></span><a class="atitle" href="https://arstechnica.com/gadgets/2026/08/apple-one-and-apple-tv-subscription-prices-increase-by-up-to-20-percent/" target="_blank" rel="noopener noreferrer">Apple One and Apple TV subscription prices increase by up to 20 percent</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.beckershospitalreview.com/?p=408488" data-cat="healthcare" data-sent="0" data-slug="finance from large systems ranked margins" hidden="until-found"><span class="ameta"><span class="src sc32">BECKER&#39;S HOSPITAL REVIEW</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Healthcare</span></span></span><a class="atitle" href="https://www.beckershospitalreview.com/finance/from-4-8-to-26-7-25-large-systems-ranked-by-margins/" target="_blank" rel="noopener noreferrer">From -4.8% to 26.7%: 26 large systems ranked by Q2 margins</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
