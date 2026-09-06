@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-06T18:07:16.061Z">
+<meta name="sf-version" content="2026-09-06T18:39:07.392Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -631,13 +631,14 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#facc15"] { color: #815500 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#a3e635"] { color: #367000 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb7185"] { color: #a72041 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#ef4444"] { color: #b60010 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#a3e635"] { color: #367000 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
@@ -645,7 +646,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
@@ -682,12 +682,11 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(276 55% 72%)"] { color: #734790 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(157 55% 72%)"] { color: #176d54 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(217 55% 72%)"] { color: #435e8a !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(241 55% 72%)"] { color: #57529b !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(71 55% 72%)"] { color: #5a6512 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(121 55% 72%)"] { color: #1f7028 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(160 55% 72%)"] { color: #166d57 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(19 55% 72%)"] { color: #80503a !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(294 55% 72%)"] { color: #813f88 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(194 55% 72%)"] { color: #2a6777 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(244 55% 72%)"] { color: #5a519b !important; }
 .sc0 { color: hsl(269 55% 72%); }
 :root[data-theme="light"] .sc0 { color: #6e4992; }
 .sc1 { color: #f472b6; }
@@ -946,10 +945,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 2:07 PM &middot; 232 TODAY</p>
+	<p class="stats">UPDATED 2:39 PM &middot; 236 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">178</span><span class="sr-only"> — 178 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">243</span><span class="sr-only"> — 243 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">159</span><span class="sr-only"> — 159 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">392</span><span class="sr-only"> — 392 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">207</span><span class="sr-only"> — 207 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">252</span><span class="sr-only"> — 252 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">106</span><span class="sr-only"> — 106 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">305</span><span class="sr-only"> — 305 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">537</span><span class="sr-only"> — 537 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">324</span><span class="sr-only"> — 324 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">297</span><span class="sr-only"> — 297 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">178</span><span class="sr-only"> — 178 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">243</span><span class="sr-only"> — 243 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">159</span><span class="sr-only"> — 159 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">392</span><span class="sr-only"> — 392 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">208</span><span class="sr-only"> — 208 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">252</span><span class="sr-only"> — 252 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">305</span><span class="sr-only"> — 305 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">535</span><span class="sr-only"> — 535 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">324</span><span class="sr-only"> — 324 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">297</span><span class="sr-only"> — 297 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -997,31 +996,6 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact rail-art" style="--rail:#34d399" data-count="1" data-id="rss:https://beza1e1.tuxen.de/ai_feelings.html" data-srckey="hacker news" data-cat="tech" data-sent="0" data-ts="1788706819000" data-slug="feelings html">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="I Feel about AI — flip for details">
-	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T15:00:19.000Z">11:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
-	<h3 class="title">I Feel about AI</h3>
-	<p class="snippet">It&#39;s complicated</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
-</div>
-<div class="face back" inert>
-	<h3 class="title">I Feel about AI</h3>
-	<p class="about">It&#39;s complicated</p>
-	
-	
-	<div class="actions">
-	<a class="more" href="https://beza1e1.tuxen.de/ai_feelings.html" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-	</div>
-</div>
-</div>
-</article>
 <article class="card compact rail-art has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/yashksaini/dev-log-deleting-180k-lines-and-chasing-socket-leaks-a-week-in-the-oss-trenches-4f9b" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788702376000" data-slug="yashksaini dev log deleting 180k lines and chasing socket leaks week the oss trenches 4f9b">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Dev log 20: Deleting 180k lines and chasing socket leaks: A week in the OSS trenches — flip for details">
@@ -1047,22 +1021,22 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact rail-art has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/videos/cvgy1nvm5jko#3" data-srckey="bbc sport" data-cat="sports" data-sent="0" data-ts="1788621219000" data-slug="sport football videos cvgy1nvm5jko">
+<article class="card compact rail-art has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49829911" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788613727927" data-slug="tennis story feeling good return injury carlos alcaraz plans take more long breaks">
 <div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Jaissle fumes at &#39;slapstick&#39; goals as Newcastle rescue Bournemouth draw — flip for details">
-	<div class="meta"><span class="src" style="color:#facc15">BBC SPORT</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T15:13:39.000Z">11:13 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
-	<h3 class="title">Jaissle fumes at &#39;slapstick&#39; goals as Newcastle rescue Bournemouth draw</h3>
-	<p class="snippet">Newcastle United manager Matthias Jaissle shares his &quot;mixed feelings&quot; on their late 2-2 draw against Bournemouth, describing the goals conceded by his side at St. James&#39; Park as &quot;slapstick&quot;.</p>
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Feeling good, Alcaraz plans more in-season breaks — flip for details">
+	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:08:47.927Z">9:08 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Feeling good, Alcaraz plans more in-season breaks</h3>
+	<p class="snippet">Feeling better than he expected after a four-month absence, Carlos Alcaraz is planning to take more breaks during the tennis season.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/640/cpsprodpb/c9b3/live/f933cba0-a938-11f1-aed2-8d6da8d75094.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/320/cpsprodpb/c9b3/live/f933cba0-a938-11f1-aed2-8d6da8d75094.jpg 320w, https://ichef.bbci.co.uk/ace/standard/640/cpsprodpb/c9b3/live/f933cba0-a938-11f1-aed2-8d6da8d75094.jpg 640w, https://ichef.bbci.co.uk/ace/standard/960/cpsprodpb/c9b3/live/f933cba0-a938-11f1-aed2-8d6da8d75094.jpg 960w" sizes="(max-width: 640px) 78vw, 320px">
+	<img class="thumb" src="https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0905%2Fr1711591_1296x729_16-9.jpg&amp;w=640" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0905%2Fr1711591_1296x729_16-9.jpg&amp;w=320 320w, https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0905%2Fr1711591_1296x729_16-9.jpg&amp;w=640 640w, https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0905%2Fr1711591_1296x729_16-9.jpg&amp;w=960 960w" sizes="(max-width: 640px) 78vw, 320px">
 </div>
 <div class="face back" inert>
-	<h3 class="title">Jaissle fumes at &#39;slapstick&#39; goals as Newcastle rescue Bournemouth draw</h3>
-	<p class="about">Newcastle United manager Matthias Jaissle shares his &quot;mixed feelings&quot; on their late 2-2 draw against Bournemouth, describing the goals conceded by his side at St. James&#39; Park as &quot;slapstick&quot;.</p>
+	<h3 class="title">Feeling good, Alcaraz plans more in-season breaks</h3>
+	<p class="about">Feeling better than he expected after a four-month absence, Carlos Alcaraz is planning to take more breaks during the tennis season.</p>
 	
 	
 	<div class="actions">
-	<a class="more" href="https://www.bbc.co.uk/sport/football/videos/cvgy1nvm5jko" target="_blank" rel="noopener noreferrer">BBC Sport &#8599;</a>
+	<a class="more" href="https://www.espn.com/tennis/story/_/id/49829911/feeling-good-return-injury-carlos-alcaraz-plans-take-more-long-breaks-tennis" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1072,22 +1046,22 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact rail-art has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:108358020" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1788615188000" data-slug="data centers cost economy html">
+<article class="card compact rail-art" style="--rail:#34d399" data-count="1" data-id="rss:https://beza1e1.tuxen.de/ai_feelings.html" data-srckey="hacker news" data-cat="tech" data-sent="0" data-ts="1788706819000" data-slug="feelings html">
 <div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Many truckers don&#39;t feel like the rest of America about AI data centers as business booms — flip for details">
-	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:33:08.000Z">9:33 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
-	<h3 class="title">Many truckers don&#39;t feel like the rest of America about AI data centers as business booms</h3>
-	<p class="snippet">Sprawling data center components from HVAC systems to tubing, wiring and semiconductors arrive primarily by truck, a boon for a business hit hard by trade wars.</p>
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="I Feel about AI — flip for details">
+	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T15:00:19.000Z">11:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">I Feel about AI</h3>
+	<p class="snippet">It&#39;s complicated</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=640&amp;h=360" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=320&amp;h=180 320w, https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=640&amp;h=360 640w, https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=960&amp;h=540 960w" sizes="(max-width: 640px) 78vw, 320px">
+	
 </div>
 <div class="face back" inert>
-	<h3 class="title">Many truckers don&#39;t feel like the rest of America about AI data centers as business booms</h3>
-	<p class="about">Sprawling data center components from HVAC systems to tubing, wiring and semiconductors arrive primarily by truck, a boon for a business hit hard by trade wars.</p>
+	<h3 class="title">I Feel about AI</h3>
+	<p class="about">It&#39;s complicated</p>
 	
 	
 	<div class="actions">
-	<a class="more" href="https://www.cnbc.com/2026/09/05/ai-data-centers-cost-economy.html" target="_blank" rel="noopener noreferrer">CNBC &#8599;</a>
+	<a class="more" href="https://beza1e1.tuxen.de/ai_feelings.html" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1113,6 +1087,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://www.aljazeera.com/features/2026/9/6/israeli-flags-become-the-latest-weapon-of-settlers-in-west-bank-domination?traffic_source=rss" target="_blank" rel="noopener noreferrer">Al Jazeera &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact rail-art has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:108358020" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1788615188000" data-slug="data centers cost economy html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Many truckers don&#39;t feel like the rest of America about AI data centers as business booms — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:33:08.000Z">9:33 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Many truckers don&#39;t feel like the rest of America about AI data centers as business booms</h3>
+	<p class="snippet">Sprawling data center components from HVAC systems to tubing, wiring and semiconductors arrive primarily by truck, a boon for a business hit hard by trade wars.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=640&amp;h=360" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=320&amp;h=180 320w, https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=640&amp;h=360 640w, https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=960&amp;h=540 960w" sizes="(max-width: 640px) 78vw, 320px">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Many truckers don&#39;t feel like the rest of America about AI data centers as business booms</h3>
+	<p class="about">Sprawling data center components from HVAC systems to tubing, wiring and semiconductors arrive primarily by truck, a boon for a business hit hard by trade wars.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.cnbc.com/2026/09/05/ai-data-centers-cost-economy.html" target="_blank" rel="noopener noreferrer">CNBC &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1227,43 +1226,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.fubo.tv/news/soccer/nwsl/denver-summit-vs-gotham-fc-live-stream-how-to-watch-nwsl/" target="_blank" rel="noopener noreferrer">Denver Summit vs Gotham FC Live Stream: How to Watch NWSL</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(276 55% 72%)">FUBO</span><span class="sep" aria-hidden="true">&middot;</span>"gotham vs denver summit" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.tallahassee.com/story/sports/college/famu/2026/09/05/famu-rattlers-football-vs-south-carolina-state-orange-blossom-classic-prediction/91499012007/" target="_blank" rel="noopener noreferrer">FAMU football prediction, scouting report vs South Carolina State</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(160 55% 72%)">TALLAHASSEE DEMOCRAT</span><span class="sep" aria-hidden="true">&middot;</span>"sc state vs florida a&amp;m" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.latimes.com/entertainment-arts/business/story/2026-09-04/former-abc-news-employee-drops-harassment-charge-against-cbs-correspondent-matt-gutman" target="_blank" rel="noopener noreferrer">Former ABC News employee drops CBS correspondent Matt Gutman’s name from lawsuit</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(157 55% 72%)">LOS ANGELES TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"matt gutman abc lawsuit dismissed" &middot; 10000+ searches</p>
+		<a class="trend-title" href="https://www.bbc.com/sport/football/live/cq62j55x5gedt" target="_blank" rel="noopener noreferrer">Espanyol vs Sevilla: Spanish La Liga stats &amp; head-to-head</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(19 55% 72%)">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"espanyol vs sevilla" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.arsenal.com/news/rice-quizzed-by-arsenal-in-the-community-akgkK9S948wx" target="_blank" rel="noopener noreferrer">Rice quizzed by Arsenal in the Community</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(217 55% 72%)">ARSENAL.COM</span><span class="sep" aria-hidden="true">&middot;</span>"declan rice" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.vietnam.vn/es/nhan-dinh-espanyol-vs-sevilla-diem-nong-cuoc-dua-top-dau" target="_blank" rel="noopener noreferrer">Espanyol vs Sevilla prediction: A key point in the title race</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(294 55% 72%)">VIETNAM.VN</span><span class="sep" aria-hidden="true">&middot;</span>"rcd espanyol - sevilla" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bostonglobe.com/2026/09/06/sports/joe-morgan-red-sox-obituary/" target="_blank" rel="noopener noreferrer">Former Red Sox manager Joe Morgan, whose 1988 team defied the odds, dies at 95</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(241 55% 72%)">THE BOSTON GLOBE</span><span class="sep" aria-hidden="true">&middot;</span>"joe morgan" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://finance.yahoo.com/markets/stocks/articles/stock-market-doing-something-only-105601675.html" target="_blank" rel="noopener noreferrer">The Stock Market Is Doing Something for Only the 2nd Time in Nearly 156 Years, and History Says It Foreshadows Disaster for Wall Street</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(194 55% 72%)">YAHOO FINANCE</span><span class="sep" aria-hidden="true">&middot;</span>"federal reserve equity risk premium warning" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sports.yahoo.com/articles/est-v-o-fears-less-095600622.html" target="_blank" rel="noopener noreferrer">👀 Estêvão fears less game time and a tactical shift under Xabi Alonso; why</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(71 55% 72%)">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"estevao" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.cbssports.com/fantasy/baseball/news/red-soxs-eli-white-breaks-scoreless-tie/" target="_blank" rel="noopener noreferrer">Red Sox&#39;s Eli White: Breaks scoreless tie</a>
+		<p class="trend-meta"><span class="src" style="color:#3b82f6">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"eli white" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.mensjournal.com/news/1971-film-turned-down-by-paul-newman-ranked-among-greatest-thrillers-of-all-time" target="_blank" rel="noopener noreferrer">1971 Film, Turned Down by Paul Newman, Ranked Among Greatest Thrillers of All Time</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(121 55% 72%)">MEN&#39;S JOURNAL</span><span class="sep" aria-hidden="true">&middot;</span>"paul newman" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.usatoday.com/story/sports/mlb/columnist/bob-nightengale/2026/09/03/phillies-nl-east-standings-arraez-harper-atlanta/91588621007/" target="_blank" rel="noopener noreferrer">MLB&#39;s trade of the year? Phillies&#39; bold deal needed Bryce Harper buy-in</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(244 55% 72%)">USA TODAY</span><span class="sep" aria-hidden="true">&middot;</span>"luis arraez" &middot; 500+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1286,6 +1285,106 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://www.aljazeera.com/features/2026/9/6/israeli-flags-become-the-latest-weapon-of-settlers-in-west-bank-domination?traffic_source=rss" target="_blank" rel="noopener noreferrer">Al Jazeera &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/formula1/articles/c5y4k1v7gryo#1" data-srckey="bbc sport" data-cat="sports" data-sent="0" data-ts="1788718920000" data-slug="sport formula1 articles c5y4k1v7gryo">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Far too late for title fight priority - Hamilton — flip for details">
+	<div class="meta"><span class="src" style="color:#facc15">BBC SPORT</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T18:22:00.000Z">2:22 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Far too late for title fight priority - Hamilton</h3>
+	<p class="snippet">Lewis Hamilton says it is &quot;far too late&quot; for Ferrari to give him priority over team-mate Charles Leclerc in the championship fight.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/f67c/live/588bb050-aa19-11f1-bbe8-51444f709166.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/600/cpsprodpb/f67c/live/588bb050-aa19-11f1-bbe8-51444f709166.jpg 600w, https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/f67c/live/588bb050-aa19-11f1-bbe8-51444f709166.jpg 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Far too late for title fight priority - Hamilton</h3>
+	<p class="about">Lewis Hamilton says it is &quot;far too late&quot; for Ferrari to give him priority over team-mate Charles Leclerc in the championship fight.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.bbc.co.uk/sport/formula1/articles/c5y4k1v7gryo" target="_blank" rel="noopener noreferrer">BBC Sport &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://kotaku.com/?p=2000731678" data-srckey="kotaku" data-cat="games" data-sent="0" data-ts="1788717658000" data-slug="final fantasy revelation devs dont want the ending explained you someone else">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Final Fantasy 7 Revelation Devs Don’t Want The Ending ‘Explained To You By Someone Else’ — flip for details">
+	<div class="meta"><span class="src" style="color:#a3e635">KOTAKU</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T18:00:58.000Z">2:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">Final Fantasy 7 Revelation Devs Don’t Want The Ending ‘Explained To You By Someone Else’</h3>
+	<p class="snippet">No spoilers, please</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://kotaku.com/app/uploads/2026/09/sephiroths-1280x738.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Final Fantasy 7 Revelation Devs Don’t Want The Ending ‘Explained To You By Someone Else’</h3>
+	<p class="about">No spoilers, please</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://kotaku.com/final-fantasy-7-revelation-devs-dont-want-the-ending-explained-to-you-by-someone-else-2000731678" target="_blank" rel="noopener noreferrer">Kotaku &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235622341" data-srckey="rolling stone music" data-cat="music" data-sent="0" data-ts="1788717413000" data-slug="music news andy williams every time die guitarist wrestler dead obit">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Andy Williams, Every Time I Die Guitarist and Pro Wrestler, Dead at 48 — flip for details">
+	<div class="meta"><span class="src" style="color:#fb7185">ROLLING STONE MUSIC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T17:56:53.000Z">1:56 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
+	<h3 class="title">Andy Williams, Every Time I Die Guitarist and Pro Wrestler, Dead at 48</h3>
+	<p class="snippet">Founding rhythm guitarist for Buffalo metalcore band successfully segued into wrestling at &quot;The Butcher&quot;</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.rollingstone.com/wp-content/uploads/2026/09/GettyImages-507052272.jpg?w=340#038;h=900&amp;#038;crop=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://www.rollingstone.com/wp-content/uploads/2026/09/GettyImages-507052272.jpg?w=240#038;h=900&amp;#038;crop=1 240w, https://www.rollingstone.com/wp-content/uploads/2026/09/GettyImages-507052272.jpg?w=340#038;h=900&amp;#038;crop=1 340w, https://www.rollingstone.com/wp-content/uploads/2026/09/GettyImages-507052272.jpg?w=510#038;h=900&amp;#038;crop=1 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Andy Williams, Every Time I Die Guitarist and Pro Wrestler, Dead at 48</h3>
+	<p class="about">Founding rhythm guitarist for Buffalo metalcore band successfully segued into wrestling at &quot;The Butcher&quot;</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.rollingstone.com/music/music-news/andy-williams-every-time-i-die-guitarist-wrestler-dead-obit-1235622341/" target="_blank" rel="noopener noreferrer">Rolling Stone Music &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236838135" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788717047000" data-slug="film festivals possible love lee chang dong venice premiere">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘Possible Love’ Cast Sobs as Lee Chang-dong’s Epic Embraced at Venice With 6-Minute Standing Ovation — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T17:50:47.000Z">1:50 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">‘Possible Love’ Cast Sobs as Lee Chang-dong’s Epic Embraced at Venice With 6-Minute Standing Ovation</h3>
+	<p class="snippet">Acclaimed South Korean director Lee Chang-dong returned after 24 years to the Venice Film Festival, where he was warmly embraced with a 6-minute standing ovation for his romantic drama “Possible Love.” Directed by Lee and co-written by Oh Jung-mi, “Possible Love” follows the intertwined lives of two married couples whose lives intersect after a funeral. […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/09/GettyImages-2293826628.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/09/GettyImages-2293826628.jpg?w=240 240w, https://variety.com/wp-content/uploads/2026/09/GettyImages-2293826628.jpg?w=340 340w, https://variety.com/wp-content/uploads/2026/09/GettyImages-2293826628.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">‘Possible Love’ Cast Sobs as Lee Chang-dong’s Epic Embraced at Venice With 6-Minute Standing Ovation</h3>
+	<p class="about">Acclaimed South Korean director Lee Chang-dong returned after 24 years to the Venice Film Festival, where he was warmly embraced with a 6-minute standing ovation for his romantic drama “Possible Love.” Directed by Lee and co-written by Oh Jung-mi, “Possible Love” follows the intertwined lives of two married couples whose lives intersect after a funeral. […]</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://variety.com/2026/film/festivals/possible-love-lee-chang-dong-venice-premiere-1236838135/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1400,13 +1499,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Official Backrooms 2 Announcement Reportedly Happening Soon, With Kane Parsons Returning — flip for details">
 	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T17:31:58.000Z">1:31 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
 	<h3 class="title">Official Backrooms 2 Announcement Reportedly Happening Soon, With Kane Parsons Returning</h3>
-	<p class="snippet">Report indicates that A24 has signed Backrooms director and web series creator Kane Parsons to take charge of the sequel.</p>
+	<p class="snippet">Dread Central reports that a sequel to Backrooms is in the works and that Kane Parsons has been signed as director. According to the horror media outlet , fans can expect an announcement soon. Backrooms was born from a picture of a strange, liminal space that caught the eye of Kane Parsons, who then turned it into a horror web series on YouTube that went viral. This led A24 to pick up the project and turn it into an indie horror film, which was directed by the YouTuber himself. The movie proved just as popular as the web series, as Backrooms grossed nearly $400 million globally — about 40 times its production budget. In an interview with Variety back in May, director Kane Parsons hinted at a possible sequel: &quot; Backrooms has always been planned to be more of a series that goes outside the…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/05/mcdback_ec082.jpg?w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/05/mcdback_ec082.jpg?w=600 600w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/05/mcdback_ec082.jpg?w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Official Backrooms 2 Announcement Reportedly Happening Soon, With Kane Parsons Returning</h3>
-	<p class="about">Report indicates that A24 has signed Backrooms director and web series creator Kane Parsons to take charge of the sequel.</p>
+	<p class="about">Dread Central reports that a sequel to Backrooms is in the works and that Kane Parsons has been signed as director. According to the horror media outlet , fans can expect an announcement soon. Backrooms was born from a picture of a strange, liminal space that caught the eye of Kane Parsons, who then turned it into a horror web series on YouTube that went viral. This led A24 to pick up the project and turn it into an indie horror film, which was directed by the YouTuber himself. The movie proved just as popular as the web series, as Backrooms grossed nearly $400 million globally — about 40 times its production budget. In an interview with Variety back in May, director Kane Parsons hinted at a possible sequel: &quot; Backrooms has always been planned to be more of a series that goes outside the…</p>
 	
 	
 	<div class="actions">
@@ -1425,13 +1524,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="At Telluride Film Festival, Bill Gates Compares Lack of Control Over AI to HAL in ‘2001’: ‘You Could Say “Please Shut Down,” and It Would Say, “OK, I Took That Under Advisement, But…”‘ — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T17:08:46.000Z">1:08 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
 	<h3 class="title">At Telluride Film Festival, Bill Gates Compares Lack of Control Over AI to HAL in ‘2001’: ‘You Could Say “Please Shut Down,” and It Would Say, “OK, I Took That Under Advisement, But…”‘</h3>
-	<p class="snippet">Plenty of comparisons have been made in recent years between fast-developing artificial intelligence systems and HAL, the rogue computer in Stanley Kubrick’s “2001: A Space Odyssey” that operated by its own sets of rules, ultimately disregarding human oversight. If that comparison ever seemed overstated, it may be worth knowing that tech mogul Bill Gates is […]</p>
+	<p class="snippet">Plenty of comparisons have been made in recent years between fast-developing artificial intelligence systems and HAL, the rogue computer in Stanley Kubrick’s “ 2001: A Space Odyssey ” that operated by its own sets of rules, ultimately disregarding human oversight. If that comparison ever seemed overstated, it may be worth knowing that tech mogul Bill Gates is now raising the issue of AI’s HAL-like qualities. Said Gates, speaking at the Telluride Film Festival , “I mean, what we have now is almost like HAL in ‘2001,’ where you could say to it, ‘Please shut down,’ and it would say, ‘OK, I took that under advisement, but I’ve decided that all these other things I read and you told me to do outweigh that dictate.&#39;”</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/09/GettyImages-2293719415.jpg?w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/09/GettyImages-2293719415.jpg?w=600 600w, https://variety.com/wp-content/uploads/2026/09/GettyImages-2293719415.jpg?w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">At Telluride Film Festival, Bill Gates Compares Lack of Control Over AI to HAL in ‘2001’: ‘You Could Say “Please Shut Down,” and It Would Say, “OK, I Took That Under Advisement, But…”‘</h3>
-	<p class="about">Plenty of comparisons have been made in recent years between fast-developing artificial intelligence systems and HAL, the rogue computer in Stanley Kubrick’s “2001: A Space Odyssey” that operated by its own sets of rules, ultimately disregarding human oversight. If that comparison ever seemed overstated, it may be worth knowing that tech mogul Bill Gates is […]</p>
+	<p class="about">Plenty of comparisons have been made in recent years between fast-developing artificial intelligence systems and HAL, the rogue computer in Stanley Kubrick’s “ 2001: A Space Odyssey ” that operated by its own sets of rules, ultimately disregarding human oversight. If that comparison ever seemed overstated, it may be worth knowing that tech mogul Bill Gates is now raising the issue of AI’s HAL-like qualities. Said Gates, speaking at the Telluride Film Festival , “I mean, what we have now is almost like HAL in ‘2001,’ where you could say to it, ‘Please shut down,’ and it would say, ‘OK, I took that under advisement, but I’ve decided that all these other things I read and you told me to do outweigh that dictate.&#39;”</p>
 	
 	
 	<div class="actions">
@@ -1525,13 +1624,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Trump official says ‘there may not be a nuclear agreement’ with Iran — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T16:59:04.000Z">12:59 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
 	<h3 class="title">Trump official says ‘there may not be a nuclear agreement’ with Iran</h3>
-	<p class="snippet">US Energy Secretary Chris Wright&#39;s comments could signal that US hopes for a nuclear deal are dimming.</p>
+	<p class="snippet">US Energy Secretary Chris Wright’s comments could signal that US hopes for a nuclear deal are dimming. As the United States and Iran resume trading attacks, a top US official has publicly downplayed the chances of one of President Donald Trump’s initial key objectives in the US and Israel’s war on Iran: getting a signed nuclear agreement . During an interview on Sunday with US channel ABC News, the US Energy Secretary, Chris Wright, said “there may not” be a nuclear deal, signalling that the US may pivot instead to launching strikes against any Iranian efforts to build nuclear infrastructure. list of 3 items • list 1 of 3 Why is Trump threatening to strike Iran’s Pickaxe Mountain again, now? “It may be simply destroying their capabilities to do it,” Wright said on ‘ABC This Week’ about…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://www.aljazeera.com/wp-content/uploads/2026/09/getty_6a9d8b69d6-1788709737.jpg?resize=1920%2C1440" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Trump official says ‘there may not be a nuclear agreement’ with Iran</h3>
-	<p class="about">US Energy Secretary Chris Wright&#39;s comments could signal that US hopes for a nuclear deal are dimming.</p>
+	<p class="about">US Energy Secretary Chris Wright’s comments could signal that US hopes for a nuclear deal are dimming. As the United States and Iran resume trading attacks, a top US official has publicly downplayed the chances of one of President Donald Trump’s initial key objectives in the US and Israel’s war on Iran: getting a signed nuclear agreement . During an interview on Sunday with US channel ABC News, the US Energy Secretary, Chris Wright, said “there may not” be a nuclear deal, signalling that the US may pivot instead to launching strikes against any Iranian efforts to build nuclear infrastructure. list of 3 items • list 1 of 3 Why is Trump threatening to strike Iran’s Pickaxe Mountain again, now? “It may be simply destroying their capabilities to do it,” Wright said on ‘ABC This Week’ about…</p>
 	
 	
 	<div class="actions">
@@ -1850,13 +1949,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="14 People Hospitalized During the Chainsmokers’ Concert in San Jose — flip for details">
 	<div class="meta"><span class="src" style="color:#fb7185">ROLLING STONE MUSIC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T16:08:48.000Z">12:08 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
 	<h3 class="title">14 People Hospitalized During the Chainsmokers’ Concert in San Jose</h3>
-	<p class="snippet">Over a dozen concertgoers required medical attention for &quot;suspected alcohol intoxication and drug-related issues,&quot; authorities say</p>
+	<p class="snippet">At least 14 people were hospitalized Friday during the Chainsmokers ’ concert in San Jose, California. The San Jose Fire Department wrote on social media that they responded to over a dozen calls for assistance during the EDM duo’s show at Discovery Meadows. “At 8:22 p.m. on Friday, September 4, the San Jos&amp;eacute; Fire Department responded to an outdoor concert at Discovery Meadow for reports of multiple patients requiring medical attention,” SJFD wrote. 1/3 At 8:22 p.m. on Friday, September 4, the San José Fire Department responded to an outdoor concert at Discovery Meadow for reports of multiple patients requiring medical attention. “SJFD immediately requested an Ambulance Task Force, two additional advanced life support fire units, and a Battalion Chief to manage the incident and…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://www.rollingstone.com/wp-content/uploads/2026/09/GettyImages-2283673980.jpg?w=1080#038;h=900&amp;#038;crop=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://www.rollingstone.com/wp-content/uploads/2026/09/GettyImages-2283673980.jpg?w=600#038;h=900&amp;#038;crop=1 600w, https://www.rollingstone.com/wp-content/uploads/2026/09/GettyImages-2283673980.jpg?w=1080#038;h=900&amp;#038;crop=1 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">14 People Hospitalized During the Chainsmokers’ Concert in San Jose</h3>
-	<p class="about">Over a dozen concertgoers required medical attention for &quot;suspected alcohol intoxication and drug-related issues,&quot; authorities say</p>
+	<p class="about">At least 14 people were hospitalized Friday during the Chainsmokers ’ concert in San Jose, California. The San Jose Fire Department wrote on social media that they responded to over a dozen calls for assistance during the EDM duo’s show at Discovery Meadows. “At 8:22 p.m. on Friday, September 4, the San Jos&amp;eacute; Fire Department responded to an outdoor concert at Discovery Meadow for reports of multiple patients requiring medical attention,” SJFD wrote. 1/3 At 8:22 p.m. on Friday, September 4, the San José Fire Department responded to an outdoor concert at Discovery Meadow for reports of multiple patients requiring medical attention. “SJFD immediately requested an Ambulance Task Force, two additional advanced life support fire units, and a Battalion Chief to manage the incident and…</p>
 	
 	
 	<div class="actions">
@@ -7073,7 +7172,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2764 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2760 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241003" data-cat="entertainment" data-sent="0" data-slug="interest rilakkuma heads mount midoriyama new ninja warrior crossover" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-05/rilakkuma-heads-to-mount-midoriyama-in-new-ninja-warrior-crossover/.241003" target="_blank" rel="noopener noreferrer">Rilakkuma Heads to Mount Midoriyama in New Ninja Warrior Crossover</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/netflix-haunting-bly-manor-perfect-binge-september-2026/" data-cat="entertainment" data-sent="0" data-slug="netflix haunting bly manor perfect binge september" hidden="until-found"><span class="ameta"><span class="src sc1">POLYGON</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.polygon.com/netflix-haunting-bly-manor-perfect-binge-september-2026/" target="_blank" rel="noopener noreferrer">Netflix&#39;s Near-Perfect 9-Part Gothic Thriller Is So Good You&#39;ll Finish in One Weekend</a></li>
@@ -9835,10 +9934,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/flcppv" data-cat="dev" data-sent="0" data-slug="project news reactos released" hidden="until-found"><span class="ameta"><span class="src sc11">LOBSTERS</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Dev</span></span></span><a class="atitle" href="https://reactos.org/project-news/reactos-0416-released/" target="_blank" rel="noopener noreferrer">Introducing ReactOS 0.4.16</a></li>
 <li class="arow" data-count="1" data-id="rss:https://dev.to/psycho_gopher/-3ld7" data-cat="dev" data-sent="0" data-slug="psycho gopher 3ld7" hidden="until-found"><span class="ameta"><span class="src sc24">DEV.TO</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Dev</span></span></span><a class="atitle" href="https://dev.to/psycho_gopher/-3ld7" target="_blank" rel="noopener noreferrer">[Boost]</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/wg65qn" data-cat="dev" data-sent="0" data-slug="todotge canonical basis" hidden="until-found"><span class="ameta"><span class="src sc11">LOBSTERS</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Dev</span></span></span><a class="atitle" href="https://github.com/todotge/canonical-basis" target="_blank" rel="noopener noreferrer">Canonical-basis realignment for Transformer LLMs: every hidden axis becomes independently measurable and controllable</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.nytimes.com/2026/08/29/world/asia/nepal-flood-hydropower-tunnels-rescue-missing-workers.html" data-cat="world" data-sent="0" data-slug="world asia nepal flood hydropower tunnels rescue missing workers html" hidden="until-found"><span class="ameta"><span class="src sc10">NYT WORLD</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.nytimes.com/2026/08/29/world/asia/nepal-flood-hydropower-tunnels-rescue-missing-workers.html" target="_blank" rel="noopener noreferrer">Nepal Rescuers Bore Through Tunnels to Try to Reach 900 Workers Missing After Floods</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788033952" data-cat="world" data-sent="0" data-slug="video newsfeed gaza hospitals targetting" hidden="until-found"><span class="ameta"><span class="src sc3">AL JAZEERA</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.aljazeera.com/video/newsfeed/2026/8/29/29-08-sv-gaza-hospitals-targetting-fm?traffic_source=rss" target="_blank" rel="noopener noreferrer">Gaza runs out of cancer medicines, as Israeli strikes continue</a></li>
-<li class="arow" data-count="1" data-id="rss:bbebdd56-8044-494a-8b64-a896f48deaa8" data-cat="sports" data-sent="0" data-slug="betting news travers stakes predictions horses odds time post positions surprising picks top expert" hidden="until-found"><span class="ameta"><span class="src sc6">CBS SPORTS</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Sports</span></span></span><a class="atitle" href="https://www.cbssports.com/betting/news/2026-travers-stakes-predictions-horses-odds-time-post-positions-surprising-picks-by-top-expert/" target="_blank" rel="noopener noreferrer">2026 Travers Stakes predictions, horses, odds, time, post positions: Surprising picks by top expert</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.polygon.com/charles-schulz-peanuts-best-quote/" data-cat="entertainment" data-sent="0" data-slug="charles schulz peanuts best quote" hidden="until-found"><span class="ameta"><span class="src sc1">POLYGON</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.polygon.com/charles-schulz-peanuts-best-quote/" target="_blank" rel="noopener noreferrer">60 Years Later, the Best &#39;Peanuts&#39; Quote of All Time Still Doesn&#39;t Get the Credit it Deserves</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
