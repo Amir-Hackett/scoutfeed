@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-06T10:00:46.794Z">
+<meta name="sf-version" content="2026-09-06T10:49:25.879Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -631,6 +631,7 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
@@ -640,7 +641,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
@@ -682,12 +682,11 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(28 55% 72%)"] { color: #7a5532 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(226 55% 72%)"] { color: #4a5a91 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(293 55% 72%)"] { color: #803f89 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(71 55% 72%)"] { color: #5a6512 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(194 55% 72%)"] { color: #2a6777 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(218 55% 72%)"] { color: #445d8b !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(19 55% 72%)"] { color: #80503a !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(199 55% 72%)"] { color: #30657b !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(277 55% 72%)"] { color: #74468f !important; }
 .sc0 { color: hsl(269 55% 72%); }
 :root[data-theme="light"] .sc0 { color: #6e4992; }
 .sc1 { color: #fb923c; }
@@ -946,10 +945,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 6:00 AM &middot; 12 TODAY</p>
+	<p class="stats">UPDATED 6:49 AM &middot; 13 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">179</span><span class="sr-only"> — 179 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">218</span><span class="sr-only"> — 218 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">163</span><span class="sr-only"> — 163 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">391</span><span class="sr-only"> — 391 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">208</span><span class="sr-only"> — 208 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">258</span><span class="sr-only"> — 258 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">113</span><span class="sr-only"> — 113 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">308</span><span class="sr-only"> — 308 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">535</span><span class="sr-only"> — 535 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">333</span><span class="sr-only"> — 333 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">294</span><span class="sr-only"> — 294 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">179</span><span class="sr-only"> — 179 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">217</span><span class="sr-only"> — 217 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">163</span><span class="sr-only"> — 163 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">391</span><span class="sr-only"> — 391 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">208</span><span class="sr-only"> — 208 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">258</span><span class="sr-only"> — 258 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">113</span><span class="sr-only"> — 113 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">308</span><span class="sr-only"> — 308 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">535</span><span class="sr-only"> — 535 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">294</span><span class="sr-only"> — 294 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1227,43 +1226,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sports.yahoo.com/articles/collin-sexton-had-fun-luka-054838824.html" target="_blank" rel="noopener noreferrer">Collin Sexton had fun at Luka Doncic&#39;s minicamp</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(71 55% 72%)">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"lakers" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.kold.com/2026/09/01/seven-months-into-nancy-guthries-disappearance-retired-fbi-agent-weighs/" target="_blank" rel="noopener noreferrer">Seven months into Nancy Guthrie’s disappearance, retired FBI agent weighs in</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(28 55% 72%)">KOLD</span><span class="sep" aria-hidden="true">&middot;</span>"nancy guthrie" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://finance.yahoo.com/video/uk-trading-platform-hargreaves-lansdown-173000945.html" target="_blank" rel="noopener noreferrer">UK trading platform Hargreaves Lansdown ends its crypto holdout</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(194 55% 72%)">YAHOO FINANCE</span><span class="sep" aria-hidden="true">&middot;</span>"cryptocurrency trading" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.imdb.com/news/ni66000225/?ref_=nmnw_art_perm" target="_blank" rel="noopener noreferrer">New Brendan Fraser Look Sparks The Mummy 4 Excitement For Rick O’Connell Return</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(226 55% 72%)">IMDB</span><span class="sep" aria-hidden="true">&middot;</span>"brendan fraser" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.fox32chicago.com/weather/chicago-weather-cooler-temps-come-clouds-lovely-labor-day-weekend" target="_blank" rel="noopener noreferrer">Chicago weather: Cooler temps come with clouds, lovely Labor Day weekend</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(218 55% 72%)">FOX 32 CHICAGO</span><span class="sep" aria-hidden="true">&middot;</span>"what is a heat index" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.rotowire.com/news/betmgm-sportsbook-alberta-review-sign-up-wit-registration-code-rotobet-132571" target="_blank" rel="noopener noreferrer">BetMGM Sportsbook Alberta Now Live! Sign Up With Registration Code ROTOBET</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(293 55% 72%)">ROTOWIRE</span><span class="sep" aria-hidden="true">&middot;</span>"betmgm sportsbook" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/news/articles/cg491zp13qqo" target="_blank" rel="noopener noreferrer">&#39;He was a lifeline&#39; - Families at a loss after Haitian caregivers let go in US</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(19 55% 72%)">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"haitians" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.cbssports.com/prediction/news/draftkings-predictions-promo-code-get-200-bonus-clemson-lsu-ucla-cal-college-football-on-saturday/" target="_blank" rel="noopener noreferrer">DraftKings Predictions promo code: Get $200 bonus for Clemson-LSU, UCLA-Cal, college football on Saturday</a>
+		<p class="trend-meta"><span class="src" style="color:#3b82f6">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"draftkings free bet" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.kcra.com/article/sac-state-warns-shots-fired-on-campus-football-game/73623765" target="_blank" rel="noopener noreferrer">Sac State says no suspect detained after shots fired on campus, but &#39;no ongoing threat&#39;</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(199 55% 72%)">KCRA</span><span class="sep" aria-hidden="true">&middot;</span>"sacramento state football" &middot; 5000+ searches</p>
+		<a class="trend-title" href="https://sports.yahoo.com/articles/collin-sexton-had-fun-luka-054838824.html" target="_blank" rel="noopener noreferrer">Collin Sexton had fun at Luka Doncic&#39;s minicamp</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(71 55% 72%)">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"lakers" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://games.gg/wardogs/guides/wardogs-closed-beta-playtest-end-date/" target="_blank" rel="noopener noreferrer">WARDOGS Closed Beta Playtest End Date &amp; How to Join</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(277 55% 72%)">GAMES.GG</span><span class="sep" aria-hidden="true">&middot;</span>"wardogs beta" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://finance.yahoo.com/video/uk-trading-platform-hargreaves-lansdown-173000945.html" target="_blank" rel="noopener noreferrer">UK trading platform Hargreaves Lansdown ends its crypto holdout</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(194 55% 72%)">YAHOO FINANCE</span><span class="sep" aria-hidden="true">&middot;</span>"cryptocurrency trading" &middot; 100+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1275,17 +1274,42 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="You Don&#39;t Have a Right to Safe Drinking Water, US Court Rules — flip for details">
 	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T09:14:22.000Z">5:14 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
 	<h3 class="title">You Don&#39;t Have a Right to Safe Drinking Water, US Court Rules</h3>
-	<p class="snippet">A Trump-appointed judge also said Americans have no “constitutional right to truthful information” during a public health crisis.</p>
+	<p class="snippet">Get your news from a source that’s not owned and controlled by oligarchs. Sign up for the free Mother Jones Daily . On Friday, the Fifth Circuit Court of Appeals affirmed the dismissal of a lawsuit against the city of Jackson, Mississippi, which alleged the city knowingly let residents drink lead-contaminated water. The lawsuit, first filed in 2022 , says the contamination violated Jacksonians’ constitutional right to bodily integrity. Donald Trump-appointed judge Kurt Engelhardt disagreed . “The Constitution does not provide redress for every governmental wrongdoing,” Engelhardt said. “Defendants’ actions allegedly deprived Plaintiffs of clean water and guileless information. These deprivations, while grievous, do not infringe upon any deeply rooted constitutional right.” That may be…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://www.motherjones.com/wp-content/uploads/2026/09/jackson-ms-resized.jpg?w=680&amp;h=357&amp;crop=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://www.motherjones.com/wp-content/uploads/2026/09/jackson-ms-resized.jpg?w=340&amp;h=179&amp;crop=1 340w, https://www.motherjones.com/wp-content/uploads/2026/09/jackson-ms-resized.jpg?w=680&amp;h=357&amp;crop=1 680w, https://www.motherjones.com/wp-content/uploads/2026/09/jackson-ms-resized.jpg?w=1020&amp;h=536&amp;crop=1 1020w" sizes="(max-width: 640px) 88vw, min(42vw, 340px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">You Don&#39;t Have a Right to Safe Drinking Water, US Court Rules</h3>
-	<p class="about">A Trump-appointed judge also said Americans have no “constitutional right to truthful information” during a public health crisis.</p>
+	<p class="about">Get your news from a source that’s not owned and controlled by oligarchs. Sign up for the free Mother Jones Daily . On Friday, the Fifth Circuit Court of Appeals affirmed the dismissal of a lawsuit against the city of Jackson, Mississippi, which alleged the city knowingly let residents drink lead-contaminated water. The lawsuit, first filed in 2022 , says the contamination violated Jacksonians’ constitutional right to bodily integrity. Donald Trump-appointed judge Kurt Engelhardt disagreed . “The Constitution does not provide redress for every governmental wrongdoing,” Engelhardt said. “Defendants’ actions allegedly deprived Plaintiffs of clean water and guileless information. These deprivations, while grievous, do not infringe upon any deeply rooted constitutional right.” That may be…</p>
 	
 	
 	<div class="actions">
 	<a class="more" href="https://www.motherjones.com/politics/2026/09/drinking-water-mississippi-lawsuit/" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact no-snippet" style="--rail:#fb923c" data-count="1" data-id="rss:000001a0-4942-d6af-afaa-7bced5590000" data-srckey="politico" data-cat="politics" data-sent="0" data-ts="1788688800000" data-slug="video are winning elections bernie sanders democrats progressive wing">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="&#39;We are winning elections’: Bernie Sanders on Democrats’ progressive wing — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">POLITICO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T10:00:00.000Z">6:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fb923c">Politics</span></div>
+	<h3 class="title">&#39;We are winning elections’: Bernie Sanders on Democrats’ progressive wing</h3>
+	
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">&#39;We are winning elections’: Bernie Sanders on Democrats’ progressive wing</h3>
+	<p class="about">No summary in this feed — follow the link for the story.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.politico.com/video/2026/09/06/we-are-winning-elections-bernie-sanders-on-democrats-progressive-wing-2153935" target="_blank" rel="noopener noreferrer">Politico &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1325,13 +1349,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="GTA Cheat Codes Taught a Generation How Much Fun It Is to Break a Video Game — flip for details">
 	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T09:00:14.000Z">5:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
 	<h3 class="title">GTA Cheat Codes Taught a Generation How Much Fun It Is to Break a Video Game</h3>
-	<p class="snippet">For PS2-era gamers, Grand Theft Auto&#39;s extensive cheats were a key part of the fun.</p>
+	<p class="snippet">I have a confession to make: I have never played a Grand Theft Auto game without cheating my way through it. I knew the code to unlock every weapon in GTA 3 so well at the time that I’m confident I could input it on muscle memory alone if you put a controller in my hand. I have no clue how the intended progression plays out in any given game. I’ve always had a bazooka within moments of starting a save file. If that sounds like a gaming sin, know that I’m a product of my generation. Back in the 2000s, when GTA was on a PlayStation 2 hot streak, cheat codes were very much part of the experience. I didn’t know a single person growing up who played through a GTA story as intended. Instead, my teenage pals exclusively played it as a sandbox shooting range. While that means that many kids of…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/23008734/san_andreas_definitive.jpg?w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/23008734/san_andreas_definitive.jpg?w=600 600w, https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/23008734/san_andreas_definitive.jpg?w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">GTA Cheat Codes Taught a Generation How Much Fun It Is to Break a Video Game</h3>
-	<p class="about">For PS2-era gamers, Grand Theft Auto&#39;s extensive cheats were a key part of the fun.</p>
+	<p class="about">I have a confession to make: I have never played a Grand Theft Auto game without cheating my way through it. I knew the code to unlock every weapon in GTA 3 so well at the time that I’m confident I could input it on muscle memory alone if you put a controller in my hand. I have no clue how the intended progression plays out in any given game. I’ve always had a bazooka within moments of starting a save file. If that sounds like a gaming sin, know that I’m a product of my generation. Back in the 2000s, when GTA was on a PlayStation 2 hot streak, cheat codes were very much part of the experience. I didn’t know a single person growing up who played through a GTA story as intended. Instead, my teenage pals exclusively played it as a sandbox shooting range. While that means that many kids of…</p>
 	
 	
 	<div class="actions">
@@ -1630,13 +1654,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Anak Krakatau eruption halts flights at Indonesia’s main airport — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T03:38:23.000Z">11:38 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
 	<h3 class="title">Anak Krakatau eruption halts flights at Indonesia’s main airport</h3>
-	<p class="snippet">Volcanic ash from Mount Anak Krakatau eruption leads to hundreds of flight suspensions.</p>
+	<p class="snippet">Volcanic ash from Mount Anak Krakatau’s eruption leads to hundreds of flight suspensions. Indonesia has suspended flights at its main international airport outside Jakarta, after volcanic ash from the erupting Mount Anak Krakatau spread over the capital. Soekarno-Hatta international airport, more than 150km (93 miles) from the volcano, said on Sunday it had halted operations until 5:30pm local time (10:30 GMT), stranding hundreds of passengers. The suspension has affected 301 flights, including 58 international services, airport operator Angkasa Pura said in a statement on Sunday. Singapore Airlines said it had cancelled flights to and from Jakarta for the rest of the day. Operations were suspended at a total of six airports, including the Husein Sastranegara airport in Bandung and Radin…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://www.aljazeera.com/wp-content/uploads/2026/09/ap_6a9cc78f613ee-1788659599.jpg?resize=1920%2C1440" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Anak Krakatau eruption halts flights at Indonesia’s main airport</h3>
-	<p class="about">Volcanic ash from Mount Anak Krakatau eruption leads to hundreds of flight suspensions.</p>
+	<p class="about">Volcanic ash from Mount Anak Krakatau’s eruption leads to hundreds of flight suspensions. Indonesia has suspended flights at its main international airport outside Jakarta, after volcanic ash from the erupting Mount Anak Krakatau spread over the capital. Soekarno-Hatta international airport, more than 150km (93 miles) from the volcano, said on Sunday it had halted operations until 5:30pm local time (10:30 GMT), stranding hundreds of passengers. The suspension has affected 301 flights, including 58 international services, airport operator Angkasa Pura said in a statement on Sunday. Singapore Airlines said it had cancelled flights to and from Jakarta for the rest of the day. Operations were suspended at a total of six airports, including the Husein Sastranegara airport in Bandung and Radin…</p>
 	
 	
 	<div class="actions">
@@ -10078,7 +10102,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2643 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2642 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241376" data-cat="entertainment" data-sent="0" data-slug="interest toei animation confirms license for french dragon ball theme park" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-04/toei-animation-confirms-no-license-for-french-dragon-ball-theme-park/.241376" target="_blank" rel="noopener noreferrer">Toei Animation Confirms No License for French Dragon Ball Theme Park</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241422" data-cat="entertainment" data-sent="0" data-slug="news yowaki max reijo nanoni ratsuwan konyakusha sama kake notte shimatta anime reveals theme song" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-09-04/yowaki-max-reijo-nanoni-ratsuwan-konyakusha-sama-no-kake-ni-notte-shimatta-anime-reveals-theme-song-/.241422" target="_blank" rel="noopener noreferrer">&#39;Yowaki MAX Reijō nanoni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta&#39; Anime Reveals Theme Song Artist, October 4 Debut</a></li>
@@ -12722,7 +12746,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:6703041d-5ac1-4fe0-a7f6-401b9b58d6d2" data-cat="entertainment" data-sent="0" data-slug="articles this week game movie show trailers aug" hidden="until-found"><span class="ameta"><span class="src sc8">IGN</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.ign.com/articles/this-week-in-game-movie-tv-show-trailers-aug-22-aug-28" target="_blank" rel="noopener noreferrer">12 Game, Movie, and TV Show Trailers You Might Have Missed This Week</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.marktechpost.com/?p=81938" data-cat="ai" data-sent="0" data-slug="glm flash qwen3 next two chinese labs independently converge the same model architecture" hidden="until-found"><span class="ameta"><span class="src sc44">MARKTECHPOST</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">AI</span></span></span><a class="atitle" href="https://www.marktechpost.com/2026/08/28/glm-5-3-flash-vs-qwen3-8-flash-next-two-chinese-ai-labs-independently-converge-on-the-same-model-architecture/" target="_blank" rel="noopener noreferrer">GLM-5.3-Flash vs Qwen3.8-Flash-Next: Two Chinese AI Labs Independently Converge on the Same Model Architecture</a></li>
 <li class="arow" data-count="1" data-id="rss:US-EN-49754391" data-cat="sports" data-sent="0" data-slug="tennis story coco gauff backs mother squashing open ticket requests" hidden="until-found"><span class="ameta"><span class="src sc20">ESPN</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Sports</span></span></span><a class="atitle" href="https://www.espn.com/tennis/story/_/id/49754391/coco-gauff-backs-mother-squashing-us-open-ticket-requests" target="_blank" rel="noopener noreferrer">Gauff backs mother for squashing ticket requests</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.fiercehealthcare.com/7a08f991-0196-4283-8c8c-ae6f9ef92a73" data-cat="healthcare" data-sent="0" data-slug="health tech ncqa use komodo platform future development hedis measures" hidden="until-found"><span class="ameta"><span class="src sc45">FIERCE HEALTHCARE</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Healthcare</span></span></span><a class="atitle" href="https://www.fiercehealthcare.com/health-tech/ncqa-use-komodo-platform-future-development-hedis-measures" target="_blank" rel="noopener noreferrer">NCQA to use Komodo data, AI tool to develop future HEDIS measures</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
