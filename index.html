@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-06T02:32:32.771Z">
+<meta name="sf-version" content="2026-09-06T03:38:14.514Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -631,6 +631,7 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
@@ -646,7 +647,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(336 55% 72%)"] { color: #894262 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
@@ -682,11 +682,12 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(262 55% 72%)"] { color: #694c95 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(238 55% 72%)"] { color: #54549a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(70 55% 72%)"] { color: #5b6411 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(107 55% 72%)"] { color: #346d22 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(257 55% 72%)"] { color: #654d96 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(103 55% 72%)"] { color: #3a6c20 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(135 55% 72%)"] { color: #1c6f3b !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(244 55% 72%)"] { color: #5a519b !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(52 55% 72%)"] { color: #695e19 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(306 55% 72%)"] { color: #853d80 !important; }
 .sc0 { color: hsl(269 55% 72%); }
 :root[data-theme="light"] .sc0 { color: #6e4992; }
 .sc1 { color: #fb923c; }
@@ -945,7 +946,7 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 10:32 PM &middot; 337 TODAY</p>
+	<p class="stats">UPDATED 11:38 PM &middot; 338 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
 	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">221</span><span class="sr-only"> — 221 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">163</span><span class="sr-only"> — 163 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">394</span><span class="sr-only"> — 394 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">208</span><span class="sr-only"> — 208 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">259</span><span class="sr-only"> — 259 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">113</span><span class="sr-only"> — 113 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">308</span><span class="sr-only"> — 308 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">530</span><span class="sr-only"> — 530 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">293</span><span class="sr-only"> — 293 stories</span></button>
@@ -1226,43 +1227,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.mediotiempo.com/futbol/liga-mx/donde-ver-atlas-vs-atlante-horario-y-canal-jornada-7-hoy-liga-mx-2026" target="_blank" rel="noopener noreferrer">Where to watch Atlas vs. Atlante TODAY? Time and channel LIVE Matchday 7 of Liga MX 2026</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(70 55% 72%)">MEDIOTIEMPO</span><span class="sep" aria-hidden="true">&middot;</span>"atlas vs atlante" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.sfgate.com/news/bayarea/article/berkeley-cal-expecting-large-crowd-for-football-22418576.php" target="_blank" rel="noopener noreferrer">Large crowd anticipated in Berkeley for Cal&#39;s opener against UCLA</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(262 55% 72%)">SFGATE</span><span class="sep" aria-hidden="true">&middot;</span>"ron rivera" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.whitecapsfc.com/news/preview-caps-look-to-halt-st-louis" target="_blank" rel="noopener noreferrer">PREVIEW: &#39;Caps look to halt in-form St. Louis at BC Place | Watch on Apple TV, TSN</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(107 55% 72%)">WWW.WHITECAPSFC.COM</span><span class="sep" aria-hidden="true">&middot;</span>"st. louis vs vancouver" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.mlb.com/gameday/cardinals-vs-dodgers/2026/09/03/823907/final/box" target="_blank" rel="noopener noreferrer">MLB Gameday: Cardinals 2, Dodgers 3 Final Score (09/03/2026)</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(238 55% 72%)">MLB.COM</span><span class="sep" aria-hidden="true">&middot;</span>"tommy edman" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/college-football/story/_/id/49819908/umass-rutgers-college-football-2026-week-1-upset-numbers" target="_blank" rel="noopener noreferrer">All the numbers behind UMass&#39; wild Week 1 upset of Rutgers</a>
-		<p class="trend-meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"dave portnoy" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://www.wral.com/news/ap/7c26d-teenager-cavan-sullivan-makes-mls-history-in-unions-2-0-victory-over-montreal/" target="_blank" rel="noopener noreferrer">Teenager Cavan Sullivan makes MLS history in Union&#39;s 2-0 victory over Montreal</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(70 55% 72%)">WRAL</span><span class="sep" aria-hidden="true">&middot;</span>"cavan sullivan" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.hollywoodreporter.com/tv/tv-features/alix-earle-alex-cooper-feud-explained-1236564121/" target="_blank" rel="noopener noreferrer">Alix Earle Finally Unpacks What Happened With Alex Cooper: “I Am Scared of Her”</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(257 55% 72%)">THE HOLLYWOOD REPORTER</span><span class="sep" aria-hidden="true">&middot;</span>"alix earle net worth" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.usatoday.com/story/entertainment/tv/2026/09/04/chad-powers-season-2-glen-powell-season-3-plans/91497819007/" target="_blank" rel="noopener noreferrer">&#39;Chad Powers&#39; Season 2 let Glen Powell go wild. He&#39;s got big plans for Season 3</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(244 55% 72%)">USA TODAY</span><span class="sep" aria-hidden="true">&middot;</span>"chad powers cast" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.hottytoddy.com/2026/09/05/kewan-lacy-kirk-herbstreit-top-playmakers/" target="_blank" rel="noopener noreferrer">Ole Miss RB Kewan Lacy makes Kirk Herbstreit’s Herbie Awards list</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(103 55% 72%)">HOTTYTODDY.COM</span><span class="sep" aria-hidden="true">&middot;</span>"kewan lacy" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://apnews.com/article/japan-prince-hisahito-birthday-succession-naruhito-aiko-a34222534cd81692fee238e7219c3934" target="_blank" rel="noopener noreferrer">Prince Hisahito turns 20 as Japan’s government reinforces male-only succession rules</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(52 55% 72%)">AP NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"prince" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.detroitnews.com/story/sports/college/university-michigan/2026/09/04/michigan-basketball-releases-nonconference-schedule-for-2026-27-season/91616248007/" target="_blank" rel="noopener noreferrer">Michigan hoops finalizes nonconference schedule, exhibition slate</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(135 55% 72%)">THE DETROIT NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"michigan basketball" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://people.com/jennifer-garner-julianne-moore-black-travel-pants-amazon-september-2026-12107150" target="_blank" rel="noopener noreferrer">Jennifer Garner and More Celebs Are Wearing Black Pants for Travel</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(306 55% 72%)">PEOPLE.COM</span><span class="sep" aria-hidden="true">&middot;</span>"jennifer garner" &middot; 500+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1285,6 +1286,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://variety.com/2026/film/reviews/everest-the-other-side-review-1236852376/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://www.marktechpost.com/?p=82124" data-srckey="marktechpost" data-cat="ai" data-sent="0" data-ts="1788664847000" data-slug="perplexity details its gpu embedding stack how ivy tulip and rose serve pplx embed">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Perplexity Details Its GPU Embedding Stack: How Ivy, Tulip and ROSE Serve pplx-embed — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(323 55% 72%)">MARKTECHPOST</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T03:20:47.000Z">11:20 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Perplexity Details Its GPU Embedding Stack: How Ivy, Tulip and ROSE Serve pplx-embed</h3>
+	<p class="snippet">Retrieval quality in an AI search product is bounded by two things: how good the embedding model is, and how cheaply you can run it across an index. This week, Perplexity Engineering team published Fast Embeddings on GPUs, an under-the-hood account of the second — the serving infrastructure behind pplx-embed and the ranking models used […] The post Perplexity Details Its GPU Embedding Stack: How Ivy, Tulip and ROSE Serve pplx-embed appeared first on MarkTechPost.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.marktechpost.com/wp-content/uploads/2026/09/blog1311-4.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Perplexity Details Its GPU Embedding Stack: How Ivy, Tulip and ROSE Serve pplx-embed</h3>
+	<p class="about">Retrieval quality in an AI search product is bounded by two things: how good the embedding model is, and how cheaply you can run it across an index. This week, Perplexity Engineering team published Fast Embeddings on GPUs, an under-the-hood account of the second — the serving infrastructure behind pplx-embed and the ranking models used […] The post Perplexity Details Its GPU Embedding Stack: How Ivy, Tulip and ROSE Serve pplx-embed appeared first on MarkTechPost.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.marktechpost.com/2026/09/05/perplexity-details-its-gpu-embedding-stack-how-ivy-tulip-and-rose-serve-pplx-embed/" target="_blank" rel="noopener noreferrer">MarkTechPost &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -9299,13 +9325,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Man Utd made midfield recruitment summer priority - what happens now? — flip for details">
 	<div class="meta"><span class="src" style="color:#facc15">BBC SPORT</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T05:56:59.000Z">1:56 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
 	<h3 class="title">Man Utd made midfield recruitment summer priority - what happens now?</h3>
-	<p class="snippet">Michael Carrick says Manchester United have balance in their midfield following a £150m summer recruitment campaign - so who plays?</p>
+	<p class="snippet">Michael Carrick struck a chord with many Manchester United fans as he lavished praise on Kobbie Mainoo after his side&#39;s thrilling 5-2 victory over Ipswich at Old Trafford, calling the midfielder&#39;s performance &quot;immense&quot;. Starting in the Premier League for the first time since he surprisingly failed to play a minute at the World Cup, Mainoo caught the eye with his performance and Carrick made sure the 21-year-old was not overlooked on a day skipper Bruno Fernandes scored a hat-trick. But former United goalkeeper Ben Foster had a different take. &quot;He&#39;s the future, but he&#39;s not there yet. Be honest with yourself and you&#39;ll know he&#39;s not gonna be one of the first four or five names on the team sheet. &quot;If he can get a year out on loan where he is the main man, where he is needed and relied upon…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/a2d7/live/efab2c30-a862-11f1-aed2-8d6da8d75094.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/600/cpsprodpb/a2d7/live/efab2c30-a862-11f1-aed2-8d6da8d75094.jpg 600w, https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/a2d7/live/efab2c30-a862-11f1-aed2-8d6da8d75094.jpg 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Man Utd made midfield recruitment summer priority - what happens now?</h3>
-	<p class="about">Michael Carrick says Manchester United have balance in their midfield following a £150m summer recruitment campaign - so who plays?</p>
+	<p class="about">Michael Carrick struck a chord with many Manchester United fans as he lavished praise on Kobbie Mainoo after his side&#39;s thrilling 5-2 victory over Ipswich at Old Trafford, calling the midfielder&#39;s performance &quot;immense&quot;. Starting in the Premier League for the first time since he surprisingly failed to play a minute at the World Cup, Mainoo caught the eye with his performance and Carrick made sure the 21-year-old was not overlooked on a day skipper Bruno Fernandes scored a hat-trick. But former United goalkeeper Ben Foster had a different take. &quot;He&#39;s the future, but he&#39;s not there yet. Be honest with yourself and you&#39;ll know he&#39;s not gonna be one of the first four or five names on the team sheet. &quot;If he can get a year out on loan where he is the main man, where he is needed and relied upon…</p>
 	
 	
 	<div class="actions">
@@ -9697,7 +9723,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2658 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2657 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241376" data-cat="entertainment" data-sent="0" data-slug="interest toei animation confirms license for french dragon ball theme park" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-04/toei-animation-confirms-no-license-for-french-dragon-ball-theme-park/.241376" target="_blank" rel="noopener noreferrer">Toei Animation Confirms No License for French Dragon Ball Theme Park</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241422" data-cat="entertainment" data-sent="0" data-slug="news yowaki max reijo nanoni ratsuwan konyakusha sama kake notte shimatta anime reveals theme song" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-09-04/yowaki-max-reijo-nanoni-ratsuwan-konyakusha-sama-no-kake-ni-notte-shimatta-anime-reveals-theme-song-/.241422" target="_blank" rel="noopener noreferrer">&#39;Yowaki MAX Reijō nanoni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta&#39; Anime Reveals Theme Song Artist, October 4 Debut</a></li>
@@ -12356,7 +12382,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/qlpiur" data-cat="dev" data-sent="0" data-slug="blog keyboard driven guis html" hidden="until-found"><span class="ameta"><span class="src sc27">LOBSTERS</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Dev</span></span></span><a class="atitle" href="https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html" target="_blank" rel="noopener noreferrer">GUIs should be fully keyboard-driven</a></li>
 <li class="arow" data-count="1" data-id="rss:https://the-decoder.com/?p=39541" data-cat="ai" data-sent="0" data-slug="google deepminds scientist now plans experiments runs lab equipment and writes scientific papers" hidden="until-found"><span class="ameta"><span class="src sc33">THE DECODER</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">AI</span></span></span><a class="atitle" href="https://the-decoder.com/google-deepminds-ai-co-scientist-now-plans-experiments-runs-lab-equipment-and-writes-scientific-papers/" target="_blank" rel="noopener noreferrer">Google Deepmind&#39;s AI Co-Scientist now plans experiments, runs lab equipment, and writes scientific papers</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.beckershospitalreview.com/?p=409200" data-cat="healthcare" data-sent="0" data-slug="leadership the operational metrics drawing renewed focus from coos" hidden="until-found"><span class="ameta"><span class="src sc32">BECKER&#39;S HOSPITAL REVIEW</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Healthcare</span></span></span><a class="atitle" href="https://www.beckershospitalreview.com/leadership/the-operational-metrics-drawing-renewed-focus-from-coos/" target="_blank" rel="noopener noreferrer">The operational metrics drawing renewed focus from COOs</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.unite.ai/?p=457918" data-cat="ai" data-sent="0" data-slug="blue owl funds lead factory equipment financing for iren" hidden="until-found"><span class="ameta"><span class="src sc28">UNITE.AI</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">AI</span></span></span><a class="atitle" href="https://www.unite.ai/blue-owl-funds-lead-2-4b-ai-factory-equipment-financing-for-iren/" target="_blank" rel="noopener noreferrer">Blue Owl Funds Lead $2.4B AI Factory Equipment Financing for IREN</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
