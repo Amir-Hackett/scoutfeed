@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-06T06:42:49.873Z">
+<meta name="sf-version" content="2026-09-06T06:58:33.904Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -631,9 +631,10 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
@@ -664,7 +665,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(290 55% 72%)"] { color: #7e418a !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(273 55% 72%)"] { color: #724890 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#a78bfa"] { color: #6545ad !important; }
@@ -683,8 +683,8 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(283 55% 72%)"] { color: #79448d !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(342 55% 72%)"] { color: #8a435b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(251 55% 72%)"] { color: #604f98 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(150 55% 72%)"] { color: #196e4d !important; }
 .sc0 { color: hsl(269 55% 72%); }
 :root[data-theme="light"] .sc0 { color: #6e4992; }
 .sc1 { color: #fb923c; }
@@ -943,10 +943,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 2:42 AM &middot; 1 TODAY</p>
+	<p class="stats">UPDATED 2:58 AM &middot; 4 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">176</span><span class="sr-only"> — 176 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">220</span><span class="sr-only"> — 220 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">163</span><span class="sr-only"> — 163 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">395</span><span class="sr-only"> — 395 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">208</span><span class="sr-only"> — 208 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">259</span><span class="sr-only"> — 259 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">113</span><span class="sr-only"> — 113 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">308</span><span class="sr-only"> — 308 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">531</span><span class="sr-only"> — 531 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">293</span><span class="sr-only"> — 293 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">220</span><span class="sr-only"> — 220 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">162</span><span class="sr-only"> — 162 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">395</span><span class="sr-only"> — 395 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">208</span><span class="sr-only"> — 208 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">259</span><span class="sr-only"> — 259 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">112</span><span class="sr-only"> — 112 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">308</span><span class="sr-only"> — 308 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">533</span><span class="sr-only"> — 533 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">292</span><span class="sr-only"> — 292 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1224,8 +1224,8 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/tennis/story/_/id/49816878/alex-eala-naomi-osaka-advance-3rd-round-us-open" target="_blank" rel="noopener noreferrer">Eala, Gauff into third round at US Open; Osaka needs 3 sets</a>
-		<p class="trend-meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"karen khachanov" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.yahoo.com/entertainment/celebrity/articles/jaidyn-alexis-says-her-kids-143937000.html" target="_blank" rel="noopener noreferrer">Jaidyn Alexis Says Her Kids Won&#39;t be Meeting Blueface&#39;s New Son Yet</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(152 55% 72%)">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"nevaeh akira" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
@@ -1238,29 +1238,29 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.cnn.com/2026/09/04/us/disruptive-passenger-duct-tape" target="_blank" rel="noopener noreferrer">Disruptive passenger duct-taped to first-class seat as plane makes emergency landing</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(283 55% 72%)">CNN</span><span class="sep" aria-hidden="true">&middot;</span>"passenger duct taped plane" &middot; 20000+ searches</p>
+		<a class="trend-title" href="https://www.espn.com/tennis/story/_/id/49816878/alex-eala-naomi-osaka-advance-3rd-round-us-open" target="_blank" rel="noopener noreferrer">Eala, Gauff into third round at US Open; Osaka needs 3 sets</a>
+		<p class="trend-meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"karen khachanov" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/soccer/story/_/id/49816199/weekend-predictions-arsenal-take-chelsea-london-derby-paris-saint-germain-bounce-back" target="_blank" rel="noopener noreferrer">Weekend predictions: Arsenal take on Chelsea in a London derby, can PSG bounce back?</a>
-		<p class="trend-meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"arsenal vs chelsea" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://www.cnn.com/2026/09/04/us/disruptive-passenger-duct-tape" target="_blank" rel="noopener noreferrer">Disruptive passenger duct-taped to first-class seat as plane makes emergency landing</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(283 55% 72%)">CNN</span><span class="sep" aria-hidden="true">&middot;</span>"unruly passenger duct taped" &middot; 20000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.azfamily.com/2026/09/05/thinking-you-sun-devil-hockey-posts-message-hospitalized-teammate/" target="_blank" rel="noopener noreferrer">‘Thinking of you’: Sun Devil Hockey posts message for hospitalized teammate</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(251 55% 72%)">AZ FAMILY</span><span class="sep" aria-hidden="true">&middot;</span>"asu hockey" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.si.com/soccer/arsenal-vs-chelsea-combined-xi-blues-dominate-key-department-9-6-26" target="_blank" rel="noopener noreferrer">Arsenal vs. Chelsea Combined XI: Blues Dominate Key Department</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(342 55% 72%)">SPORTS ILLUSTRATED</span><span class="sep" aria-hidden="true">&middot;</span>"arsenal vs chelsea" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://ktla.com/weather/hurricane-marie-to-impact-southern-california-weather-into-next-week/" target="_blank" rel="noopener noreferrer">Hurricane Marie to impact Southern California weather into next week</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(150 55% 72%)">KTLA</span><span class="sep" aria-hidden="true">&middot;</span>"hurricane marie" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.azfamily.com/2026/09/05/thinking-you-sun-devil-hockey-posts-message-hospitalized-teammate/" target="_blank" rel="noopener noreferrer">‘Thinking of you’: Sun Devil Hockey posts message for hospitalized teammate</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(251 55% 72%)">AZ FAMILY</span><span class="sep" aria-hidden="true">&middot;</span>"asu hockey" &middot; 500+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1292,7 +1292,81 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-
+<article class="card compact w2" style="--rail:#f87171" data-count="1" data-id="rss:https://www.dw.com/en/ebola-why-children-are-last-to-be-treated-in-medical-crises/a-79050107?maca=en-rss-en-world-4025-rdf" data-srckey="dw world" data-cat="world" data-sent="0" data-ts="1788675180000" data-slug="ebola why children are last treated medical crises">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Ebola: Why children are last to be treated in medical crises — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(29 55% 72%)">DW WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T06:13:00.000Z">2:13 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Ebola: Why children are last to be treated in medical crises</h3>
+	<p class="snippet">In the latest Ebola outbreak in the Democratic Republic of Congo, children are more likely to die than adults. But it&#39;s not always due to the disease. Specific medicines for younger people are often harder to come by.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Ebola: Why children are last to be treated in medical crises</h3>
+	<p class="about">In the latest Ebola outbreak in the Democratic Republic of Congo, children are more likely to die than adults. But it&#39;s not always due to the disease. Specific medicines for younger people are often harder to come by.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.dw.com/en/ebola-why-children-are-last-to-be-treated-in-medical-crises/a-79050107?maca=en-rss-en-world-4025-rdf" target="_blank" rel="noopener noreferrer">DW World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://www.marktechpost.com/?p=82141" data-srckey="marktechpost" data-cat="ai" data-sent="0" data-ts="1788675062000" data-slug="berkeley researchers release cua lite open platform unifying sandboxes data evaluation and for computer use agents">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="UC Berkeley Researchers Release CUA-Lite, an Open Platform Unifying Sandboxes, Data, Evaluation and RL for Computer-Use Agents — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(323 55% 72%)">MARKTECHPOST</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T06:11:02.000Z">2:11 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">UC Berkeley Researchers Release CUA-Lite, an Open Platform Unifying Sandboxes, Data, Evaluation and RL for Computer-Use Agents</h3>
+	<p class="snippet">Training and benchmarking a computer-use agent needs four things — agents, environments, traces, and a framework to evaluate and train them — and all four ship in incompatible formats today. CUA-Lite, from a UC Berkeley led team, puts them behind one action space and one data schema, and replaces OSWorld&#39;s per-task virtual machine with a plain Docker container at 0.9 GB instead of 4.1 GB. The post UC Berkeley Researchers Release CUA-Lite, an Open Platform Unifying Sandboxes, Data, Evaluation and RL for Computer-Use Agents appeared first on MarkTechPost.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.marktechpost.com/wp-content/uploads/2026/09/blog1311-5.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">UC Berkeley Researchers Release CUA-Lite, an Open Platform Unifying Sandboxes, Data, Evaluation and RL for Computer-Use Agents</h3>
+	<p class="about">Training and benchmarking a computer-use agent needs four things — agents, environments, traces, and a framework to evaluate and train them — and all four ship in incompatible formats today. CUA-Lite, from a UC Berkeley led team, puts them behind one action space and one data schema, and replaces OSWorld&#39;s per-task virtual machine with a plain Docker container at 0.9 GB instead of 4.1 GB. The post UC Berkeley Researchers Release CUA-Lite, an Open Platform Unifying Sandboxes, Data, Evaluation and RL for Computer-Use Agents appeared first on MarkTechPost.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.marktechpost.com/2026/09/05/uc-berkeley-researchers-release-cua-lite-an-open-platform-unifying-sandboxes-data-evaluation-and-rl-for-computer-use-agents/" target="_blank" rel="noopener noreferrer">MarkTechPost &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact w2" style="--rail:#f87171" data-count="1" data-id="rss:https://www.dw.com/en/hungary-begins-hunt-for-corrupt-regime-s-billions/a-79047176?maca=en-rss-en-world-4025-rdf" data-srckey="dw world" data-cat="world" data-sent="0" data-ts="1788674040000" data-slug="hungary begins hunt for corrupt regime billions">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Hungary begins hunt for corrupt regime&#39;s billions — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(29 55% 72%)">DW WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T05:54:00.000Z">1:54 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Hungary begins hunt for corrupt regime&#39;s billions</h3>
+	<p class="snippet">Hungary&#39;s new prime minister promised he would recover billions stolen or diverted by the previous administration. A new &quot;super authority&quot; is about to begin that work. Its success or failure will have a big impact.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Hungary begins hunt for corrupt regime&#39;s billions</h3>
+	<p class="about">Hungary&#39;s new prime minister promised he would recover billions stolen or diverted by the previous administration. A new &quot;super authority&quot; is about to begin that work. Its success or failure will have a big impact.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.dw.com/en/hungary-begins-hunt-for-corrupt-regime-s-billions/a-79047176?maca=en-rss-en-world-4025-rdf" target="_blank" rel="noopener noreferrer">DW World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
 </div>
 </section>
 <section class="day">
@@ -9776,7 +9850,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2655 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2652 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241376" data-cat="entertainment" data-sent="0" data-slug="interest toei animation confirms license for french dragon ball theme park" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-04/toei-animation-confirms-no-license-for-french-dragon-ball-theme-park/.241376" target="_blank" rel="noopener noreferrer">Toei Animation Confirms No License for French Dragon Ball Theme Park</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241422" data-cat="entertainment" data-sent="0" data-slug="news yowaki max reijo nanoni ratsuwan konyakusha sama kake notte shimatta anime reveals theme song" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-09-04/yowaki-max-reijo-nanoni-ratsuwan-konyakusha-sama-no-kake-ni-notte-shimatta-anime-reveals-theme-song-/.241422" target="_blank" rel="noopener noreferrer">&#39;Yowaki MAX Reijō nanoni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta&#39; Anime Reveals Theme Song Artist, October 4 Debut</a></li>
@@ -12430,9 +12504,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/best-far-side-comics-movies/" data-cat="entertainment" data-sent="0" data-slug="best far side comics movies" hidden="until-found"><span class="ameta"><span class="src sc46">POLYGON</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.polygon.com/best-far-side-comics-movies/" target="_blank" rel="noopener noreferrer">10 Near-Perfect Far Side Comics About Movies</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.beckershospitalreview.com/?p=409203" data-cat="healthcare" data-sent="0" data-slug="leadership how the coo and strategic leader roles healthcare have evolved leaders weigh" hidden="until-found"><span class="ameta"><span class="src sc32">BECKER&#39;S HOSPITAL REVIEW</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Healthcare</span></span></span><a class="atitle" href="https://www.beckershospitalreview.com/leadership/how-the-coo-and-strategic-leader-roles-in-healthcare-have-evolved-13-leaders-weigh-in/" target="_blank" rel="noopener noreferrer">How the COO and strategic leader roles in healthcare have evolved: 13 Leaders Weigh In</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/pokemon-stop-motion-animated-series-sirfetchd-pichu-disney-plus/" data-cat="entertainment" data-sent="0" data-slug="pokemon stop motion animated series sirfetchd pichu disney plus" hidden="until-found"><span class="ameta"><span class="src sc46">POLYGON</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.polygon.com/pokemon-stop-motion-animated-series-sirfetchd-pichu-disney-plus/" target="_blank" rel="noopener noreferrer">Pokémon Officially Returns to Galar for New Disney+ Series in 2027</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.billboard.com/?p=1236327878" data-cat="music" data-sent="0" data-slug="music news beyond kawaii asobisystem future japanese idol culture" hidden="until-found"><span class="ameta"><span class="src sc21">BILLBOARD</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Music</span></span></span><a class="atitle" href="https://www.billboard.com/music/music-news/beyond-kawaii-asobisystem-future-japanese-idol-culture-1236327878/" target="_blank" rel="noopener noreferrer">Beyond ‘Kawaii’: How ASOBISYSTEM Is Building a Global Future for Japanese Idol Culture</a></li>
-<li class="arow" data-count="1" data-id="rss:https://techcrunch.com/?p=3158484" data-cat="tech" data-sent="0" data-slug="braves browser one ups chrome with its new support for email aliases" hidden="until-found"><span class="ameta"><span class="src sc13">TECHCRUNCH</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Tech</span></span></span><a class="atitle" href="https://techcrunch.com/2026/08/28/braves-browser-one-ups-chrome-with-its-new-support-for-email-aliases/" target="_blank" rel="noopener noreferrer">Brave’s browser one-ups Chrome with its new support for email aliases</a></li>
-<li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/qlpiur" data-cat="dev" data-sent="0" data-slug="blog keyboard driven guis html" hidden="until-found"><span class="ameta"><span class="src sc27">LOBSTERS</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Dev</span></span></span><a class="atitle" href="https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html" target="_blank" rel="noopener noreferrer">GUIs should be fully keyboard-driven</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
