@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-06T19:19:24.862Z">
+<meta name="sf-version" content="2026-09-06T19:22:56.423Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -653,12 +653,12 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#facc15"] { color: #815500 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#ef4444"] { color: #b60010 !important; }
@@ -967,10 +967,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 3:19 PM &middot; 247 TODAY</p>
+	<p class="stats">UPDATED 3:22 PM &middot; 248 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">179</span><span class="sr-only"> — 179 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">243</span><span class="sr-only"> — 243 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">155</span><span class="sr-only"> — 155 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">396</span><span class="sr-only"> — 396 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">207</span><span class="sr-only"> — 207 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">251</span><span class="sr-only"> — 251 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">303</span><span class="sr-only"> — 303 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">537</span><span class="sr-only"> — 537 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">324</span><span class="sr-only"> — 324 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">298</span><span class="sr-only"> — 298 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">179</span><span class="sr-only"> — 179 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">243</span><span class="sr-only"> — 243 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">155</span><span class="sr-only"> — 155 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">397</span><span class="sr-only"> — 397 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">207</span><span class="sr-only"> — 207 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">251</span><span class="sr-only"> — 251 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">303</span><span class="sr-only"> — 303 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">536</span><span class="sr-only"> — 536 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">324</span><span class="sr-only"> — 324 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">298</span><span class="sr-only"> — 298 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1307,6 +1307,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://www.aljazeera.com/features/2026/9/6/israeli-flags-become-the-latest-weapon-of-settlers-in-west-bank-domination?traffic_source=rss" target="_blank" rel="noopener noreferrer">Al Jazeera &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://kotaku.com/?p=2000731690" data-srckey="kotaku" data-cat="entertainment" data-sent="0" data-ts="1788721257000" data-slug="buddy the unicorn kicked out universal studios halloween horror nights">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Buddy The Unicorn Kicked Out Of Universal Studios’ Halloween Horror Nights — flip for details">
+	<div class="meta"><span class="src" style="color:#a3e635">KOTAKU</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T19:00:57.000Z">3:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Buddy The Unicorn Kicked Out Of Universal Studios’ Halloween Horror Nights</h3>
+	<p class="snippet">The theme park’s increasingly popular Halloween season continues to amass more and more movie maniacs, assuming they’re invited</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://kotaku.com/app/uploads/2026/09/buddyhhn.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Buddy The Unicorn Kicked Out Of Universal Studios’ Halloween Horror Nights</h3>
+	<p class="about">The theme park’s increasingly popular Halloween season continues to amass more and more movie maniacs, assuming they’re invited</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://kotaku.com/buddy-the-unicorn-kicked-out-of-universal-studios-halloween-horror-nights-2000731690" target="_blank" rel="noopener noreferrer">Kotaku &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -5521,13 +5546,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="These Cyborg Cockroaches Could Save Your Life — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(207 55% 72%)">WIRED</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T10:30:00.000Z">6:30 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
 	<h3 class="title">These Cyborg Cockroaches Could Save Your Life</h3>
-	<p class="snippet">The team embedded electrodes into live cockroaches, then outfitted them with cameras and injection devices to deliver medication via remote control.</p>
+	<p class="snippet">A research team from the University of Queensland (UQ) and the University of New South Wales (UNSW) have developed the “Paraborg” to not only help with searching for victims, but also administer first aid. While the idea of receiving medical care from a cockroach might be a little skin-crawling, the new cyborg bug could one day help buy human rescuers valuable time in a disaster zone. “Cyborg insects have been designed for ‘search and explore’ missions for the past couple of decades,” Tan Vo Doan, a bio-robotics researcher at UQ, says in a press release. “We wanted to take the next step.” The team relied on a giant burrowing cockroach that inhabits northern Queensland to develop the Paraborg, which they documented in a recent paper published the journal Advanced Science. The armored…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://media.wired.com/photos/6a9af4664c28b30a706b7171/master/pass/eait-mda-2026-cyborg-cockroach-16.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">These Cyborg Cockroaches Could Save Your Life</h3>
-	<p class="about">The team embedded electrodes into live cockroaches, then outfitted them with cameras and injection devices to deliver medication via remote control.</p>
+	<p class="about">A research team from the University of Queensland (UQ) and the University of New South Wales (UNSW) have developed the “Paraborg” to not only help with searching for victims, but also administer first aid. While the idea of receiving medical care from a cockroach might be a little skin-crawling, the new cyborg bug could one day help buy human rescuers valuable time in a disaster zone. “Cyborg insects have been designed for ‘search and explore’ missions for the past couple of decades,” Tan Vo Doan, a bio-robotics researcher at UQ, says in a press release. “We wanted to take the next step.” The team relied on a giant burrowing cockroach that inhabits northern Queensland to develop the Paraborg, which they documented in a recent paper published the journal Advanced Science. The armored…</p>
 	
 	
 	<div class="actions">
@@ -7469,7 +7494,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2749 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2748 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241003" data-cat="entertainment" data-sent="0" data-slug="interest rilakkuma heads mount midoriyama new ninja warrior crossover" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-05/rilakkuma-heads-to-mount-midoriyama-in-new-ninja-warrior-crossover/.241003" target="_blank" rel="noopener noreferrer">Rilakkuma Heads to Mount Midoriyama in New Ninja Warrior Crossover</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/netflix-haunting-bly-manor-perfect-binge-september-2026/" data-cat="entertainment" data-sent="0" data-slug="netflix haunting bly manor perfect binge september" hidden="until-found"><span class="ameta"><span class="src sc1">POLYGON</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.polygon.com/netflix-haunting-bly-manor-perfect-binge-september-2026/" target="_blank" rel="noopener noreferrer">Netflix&#39;s Near-Perfect 9-Part Gothic Thriller Is So Good You&#39;ll Finish in One Weekend</a></li>
@@ -10219,7 +10244,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:984ce9ad-4a5d-4c0a-a4e6-6242140b1cf2" data-cat="sports" data-sent="0" data-slug="mlb news shohei ohtani injury update timeline dodgers pitching" hidden="until-found"><span class="ameta"><span class="src sc6">CBS SPORTS</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Sports</span></span></span><a class="atitle" href="https://www.cbssports.com/mlb/news/shohei-ohtani-injury-update-timeline-dodgers-pitching/" target="_blank" rel="noopener noreferrer">Shohei Ohtani&#39;s return to Dodgers rotation uncertain as knee soreness lingers</a></li>
 <li class="arow" data-count="1" data-id="rss:5dc3fa79-ae45-4ed7-8efc-e7f756e242ad" data-cat="sports" data-sent="0" data-slug="betting news coke zero sugar predictions odds time drivers nascar daytona night race picks best bets" hidden="until-found"><span class="ameta"><span class="src sc6">CBS SPORTS</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Sports</span></span></span><a class="atitle" href="https://www.cbssports.com/betting/news/2026-coke-zero-sugar-400-predictions-odds-time-drivers-nascar-daytona-night-race-picks-best-bets/" target="_blank" rel="noopener noreferrer">2026 Coke Zero Sugar 400 predictions, odds, time: NASCAR Daytona Night Race picks, best bets from proven model</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theverge.com/entertainment/986461/hike-appalachian-trail-pixel-art-a-trail-tale" data-cat="tech" data-sent="0" data-slug="entertainment hike appalachian trail pixel art tale" hidden="until-found"><span class="ameta"><span class="src sc18">THE VERGE</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Tech</span></span></span><a class="atitle" href="https://www.theverge.com/entertainment/986461/hike-appalachian-trail-pixel-art-a-trail-tale" target="_blank" rel="noopener noreferrer">Vicariously hike the Appalachian in the gorgeous A Trail Tale</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788036939" data-cat="world" data-sent="0" data-slug="video newsfeed anger mounts nepal over the governments response flash flood" hidden="until-found"><span class="ameta"><span class="src sc3">AL JAZEERA</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.aljazeera.com/video/newsfeed/2026/8/29/anger-mounts-in-nepal-over-the-governments-response-to-flash-flood?traffic_source=rss" target="_blank" rel="noopener noreferrer">Anger mounts in Nepal over the government’s response to flash flood</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
