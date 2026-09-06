@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-06T18:43:51.599Z">
+<meta name="sf-version" content="2026-09-06T18:45:28.159Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -543,8 +543,14 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 	   wants them. */
 	.card.w2:not(.h2).has-thumb .front { padding-right: calc(36% + 24px); justify-content: center; }
 	.card.w2:not(.h2).has-thumb .front .thumb {
-		top: 12px; bottom: 12px; width: 36%;
-		height: auto; aspect-ratio: auto; max-height: none;
+		/* An EXPLICIT height, not top+bottom: an absolutely positioned <img> is
+		   a replaced element, so top+bottom+height:auto is over-constrained and
+		   the browser keeps the intrinsic height and drops the bottom offset — the panel
+		   then measured 178px on one card, 150px on the next and 0px on any
+		   image that had not loaded (measured 2026-09-06). calc() is the only
+		   form that is right before the art arrives. */
+		top: 12px; width: 36%; height: calc(100% - 24px);
+		aspect-ratio: auto; max-height: none;
 	}
 }
 /* Narrow cards (the rail, and every card on a phone) drop the category word —
@@ -699,7 +705,7 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(236 55% 72%)"] { color: #525598 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(70 55% 72%)"] { color: #5b6411 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(244 55% 72%)"] { color: #5a519b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(315 55% 72%)"] { color: #873f77 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(54 55% 72%)"] { color: #685f15 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(99 55% 72%)"] { color: #3e6c1f !important; }
@@ -961,7 +967,7 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 2:43 PM &middot; 236 TODAY</p>
+	<p class="stats">UPDATED 2:45 PM &middot; 236 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
 	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">178</span><span class="sr-only"> — 178 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">243</span><span class="sr-only"> — 243 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">158</span><span class="sr-only"> — 158 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">392</span><span class="sr-only"> — 392 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">208</span><span class="sr-only"> — 208 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">252</span><span class="sr-only"> — 252 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">305</span><span class="sr-only"> — 305 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">535</span><span class="sr-only"> — 535 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">324</span><span class="sr-only"> — 324 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">298</span><span class="sr-only"> — 298 stories</span></button>
@@ -1249,8 +1255,8 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.facebook.com/NBC6SouthFlorida/posts/video-captured-outside-of-miami-international-airport-appears-to-show-a-crashed-/1607264287434558/" target="_blank" rel="noopener noreferrer">Video captured outside of Miami International Airport appears to show a crashed Amazon plane</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(70 55% 72%)">FACEBOOK</span><span class="sep" aria-hidden="true">&middot;</span>"miami airport" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://wsvn.com/news/local/miami-dade/mishap-with-plane-forces-ground-stop-at-mia/" target="_blank" rel="noopener noreferrer">Mishap with plane forces ground stop at MIA</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(244 55% 72%)">WSVN</span><span class="sep" aria-hidden="true">&middot;</span>"miami airport" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
@@ -1263,22 +1269,22 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://ge.globo.com/mg/futebol/brasileirao-serie-a/noticia/2026/09/06/cruzeiro-x-athletico-pr-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml" target="_blank" rel="noopener noreferrer">Cruzeiro vs Athletico-PR: where to watch live, kickoff time and lineups</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(54 55% 72%)">GE</span><span class="sep" aria-hidden="true">&middot;</span>"cruzeiro x athletico-pr" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.yahoo.com/entertainment/celebrity/articles/photos-carlos-alcaraz-rumored-girlfriend-031037400.html" target="_blank" rel="noopener noreferrer">Photos of Carlos Alcaraz’s Rumored Girlfriend Turns Heads Amid US Open</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(152 55% 72%)">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"carlos alcaraz girlfriend" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.mlb.com/stories/game/824145" target="_blank" rel="noopener noreferrer">Arizona Diamondbacks at Houston Astros Game Story, Scores/Highlights - 09/05/2026</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(99 55% 72%)">MLB</span><span class="sep" aria-hidden="true">&middot;</span>"dbacks - astros" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://ge.globo.com/mg/futebol/brasileirao-serie-a/noticia/2026/09/06/cruzeiro-x-athletico-pr-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml" target="_blank" rel="noopener noreferrer">Cruzeiro vs Athletico-PR: where to watch live, kickoff time and lineups</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(54 55% 72%)">GE</span><span class="sep" aria-hidden="true">&middot;</span>"cruzeiro x athletico-pr" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.realmadrid.com/es-ES/noticias/futbol/primer-equipo-femenino/convocatorias/convocatoria-del-real-madrid-contra-el-eibar-06-09-2026" target="_blank" rel="noopener noreferrer">Real Madrid squad list against Eibar</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(183 55% 72%)">REAL MADRID CF | WEB OFICIAL</span><span class="sep" aria-hidden="true">&middot;</span>"real madrid vs eibar" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.mlb.com/stories/game/824145" target="_blank" rel="noopener noreferrer">Arizona Diamondbacks at Houston Astros Game Story, Scores/Highlights - 09/05/2026</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(99 55% 72%)">MLB</span><span class="sep" aria-hidden="true">&middot;</span>"dbacks - astros" &middot; 1000+ searches</p>
 	</div>
 </li>
 </ol>
