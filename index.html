@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-06T01:45:14.667Z">
+<meta name="sf-version" content="2026-09-06T02:32:32.771Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -631,6 +631,7 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
@@ -651,7 +652,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
@@ -682,11 +682,11 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(214 55% 72%)"] { color: #405f87 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(12 55% 72%)"] { color: #844c3f !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(63 55% 72%)"] { color: #61620b !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(71 55% 72%)"] { color: #5a6512 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(284 55% 72%)"] { color: #7a438c !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(70 55% 72%)"] { color: #5b6411 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(107 55% 72%)"] { color: #346d22 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(257 55% 72%)"] { color: #654d96 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(103 55% 72%)"] { color: #3a6c20 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(135 55% 72%)"] { color: #1c6f3b !important; }
 .sc0 { color: hsl(269 55% 72%); }
 :root[data-theme="light"] .sc0 { color: #6e4992; }
 .sc1 { color: #fb923c; }
@@ -945,10 +945,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 9:45 PM &middot; 335 TODAY</p>
+	<p class="stats">UPDATED 10:32 PM &middot; 337 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">221</span><span class="sr-only"> — 221 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">163</span><span class="sr-only"> — 163 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">396</span><span class="sr-only"> — 396 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">208</span><span class="sr-only"> — 208 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">259</span><span class="sr-only"> — 259 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">112</span><span class="sr-only"> — 112 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">308</span><span class="sr-only"> — 308 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">530</span><span class="sr-only"> — 530 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">292</span><span class="sr-only"> — 292 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">221</span><span class="sr-only"> — 221 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">163</span><span class="sr-only"> — 163 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">394</span><span class="sr-only"> — 394 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">208</span><span class="sr-only"> — 208 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">259</span><span class="sr-only"> — 259 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">113</span><span class="sr-only"> — 113 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">308</span><span class="sr-only"> — 308 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">530</span><span class="sr-only"> — 530 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">293</span><span class="sr-only"> — 293 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1226,43 +1226,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://hawaiiathletics.com/news/2026/8/31/football-rainbow-warriors-clash-with-conferne-rival-unlv-in-home-opener.aspx" target="_blank" rel="noopener noreferrer">Rainbow Warriors Clash With Conference Rival UNLV In Home Opener</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(214 55% 72%)">HAWAII ATHLETICS</span><span class="sep" aria-hidden="true">&middot;</span>"unlv vs hawaii" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.mediotiempo.com/futbol/liga-mx/donde-ver-atlas-vs-atlante-horario-y-canal-jornada-7-hoy-liga-mx-2026" target="_blank" rel="noopener noreferrer">Where to watch Atlas vs. Atlante TODAY? Time and channel LIVE Matchday 7 of Liga MX 2026</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(70 55% 72%)">MEDIOTIEMPO</span><span class="sep" aria-hidden="true">&middot;</span>"atlas vs atlante" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://espndeportes.espn.com/futbol/colombia/nota/_/id/17211023/junior-vs-jaguares-liga-betplay-equipo-fecha-hora-tv-en-vivo" target="_blank" rel="noopener noreferrer">When Junior vs. Jaguares Play in Liga BetPlay: Squad, Date, Time and Live TV</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(12 55% 72%)">ESPN DEPORTES</span><span class="sep" aria-hidden="true">&middot;</span>"junior - jaguares" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.whitecapsfc.com/news/preview-caps-look-to-halt-st-louis" target="_blank" rel="noopener noreferrer">PREVIEW: &#39;Caps look to halt in-form St. Louis at BC Place | Watch on Apple TV, TSN</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(107 55% 72%)">WWW.WHITECAPSFC.COM</span><span class="sep" aria-hidden="true">&middot;</span>"st. louis vs vancouver" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.yardbarker.com/tennis/articles/exploring_alexandra_eala_nationality_controversy_what_happened_between_commentator_the_filipino_tennis_star/s1_17615_44264235" target="_blank" rel="noopener noreferrer">Exploring Alexandra Eala Nationality Controversy: What Happened Between Commentator &amp; the Filipino Tennis Star</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(63 55% 72%)">YARDBARKER</span><span class="sep" aria-hidden="true">&middot;</span>"eala tennis player" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.espn.com/college-football/story/_/id/49819908/umass-rutgers-college-football-2026-week-1-upset-numbers" target="_blank" rel="noopener noreferrer">All the numbers behind UMass&#39; wild Week 1 upset of Rutgers</a>
+		<p class="trend-meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"dave portnoy" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sports.yahoo.com/articles/nine-espn-analysts-project-byu-191655577.html" target="_blank" rel="noopener noreferrer">Nine ESPN analysts project BYU to make College Football Playoff in 2026</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(71 55% 72%)">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"bear bachmeier" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.hollywoodreporter.com/tv/tv-features/alix-earle-alex-cooper-feud-explained-1236564121/" target="_blank" rel="noopener noreferrer">Alix Earle Finally Unpacks What Happened With Alex Cooper: “I Am Scared of Her”</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(257 55% 72%)">THE HOLLYWOOD REPORTER</span><span class="sep" aria-hidden="true">&middot;</span>"alix earle net worth" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.greenvilleonline.com/story/sports/college/clemson/2026/09/05/christopher-vizzina-clemson-football-qb-lsu/91601665007/" target="_blank" rel="noopener noreferrer">Who is Clemson&#39;s QB vs LSU? What to know about Christopher Vizzina</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(284 55% 72%)">GREENVILLE ONLINE</span><span class="sep" aria-hidden="true">&middot;</span>"christopher vizzina" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.hottytoddy.com/2026/09/05/kewan-lacy-kirk-herbstreit-top-playmakers/" target="_blank" rel="noopener noreferrer">Ole Miss RB Kewan Lacy makes Kirk Herbstreit’s Herbie Awards list</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(103 55% 72%)">HOTTYTODDY.COM</span><span class="sep" aria-hidden="true">&middot;</span>"kewan lacy" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/nfl/story/_/id/49785060/2026-nfl-rookies-guide-fantasy-picks-stat-projections-top-qbs-roy" target="_blank" rel="noopener noreferrer">2026 NFL rookies guide: Stat leaders, fantasy picks, top QBs</a>
-		<p class="trend-meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"justin jefferson" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://www.detroitnews.com/story/sports/college/university-michigan/2026/09/04/michigan-basketball-releases-nonconference-schedule-for-2026-27-season/91616248007/" target="_blank" rel="noopener noreferrer">Michigan hoops finalizes nonconference schedule, exhibition slate</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(135 55% 72%)">THE DETROIT NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"michigan basketball" &middot; 500+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1285,6 +1285,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://variety.com/2026/film/reviews/everest-the-other-side-review-1236852376/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.billboard.com/?p=1236335029" data-srckey="billboard" data-cat="music" data-sent="0" data-ts="1788659220000" data-slug="music news taylor swift knew you meaning country radio">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Taylor Swift Talks ‘Double Meaning’ of ‘I Knew It, I Knew You’ Lyrics in Rare Country Radio Appearance — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">BILLBOARD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T01:47:00.000Z">9:47 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
+	<h3 class="title">Taylor Swift Talks ‘Double Meaning’ of ‘I Knew It, I Knew You’ Lyrics in Rare Country Radio Appearance</h3>
+	<p class="snippet">&quot;I love that the lyrics of this song are really being delved into by the fans. There are several lyrics that have more than one meaning to them,&quot; she said of &quot;I Knew It, I Knew You.&quot;</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Taylor Swift Talks ‘Double Meaning’ of ‘I Knew It, I Knew You’ Lyrics in Rare Country Radio Appearance</h3>
+	<p class="about">&quot;I love that the lyrics of this song are really being delved into by the fans. There are several lyrics that have more than one meaning to them,&quot; she said of &quot;I Knew It, I Knew You.&quot;</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.billboard.com/music/music-news/taylor-swift-i-knew-it-i-knew-you-meaning-country-radio-1236335029/" target="_blank" rel="noopener noreferrer">Billboard &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1385,6 +1410,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://www.cbsnews.com/news/trump-vance-to-speak-rnc-midterm-convention-dallas/" target="_blank" rel="noopener noreferrer">CBS Politics &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact no-snippet" style="--rail:#34d399" data-count="1" data-id="rss:https://lapcatsoftware.com/articles/2026/9/1.html" data-srckey="hacker news" data-cat="tech" data-sent="0" data-ts="1788651587000" data-slug="articles html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Chrome again exempts Google from user site data settings — flip for details">
+	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T23:39:47.000Z">7:39 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Chrome again exempts Google from user site data settings</h3>
+	
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Chrome again exempts Google from user site data settings</h3>
+	<p class="about">No summary in this feed — follow the link for the story.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://lapcatsoftware.com/articles/2026/9/1.html" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -8674,13 +8724,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="At least two dead in blast at Bolivia military barracks — flip for details">
 	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T08:41:38.000Z">4:41 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
 	<h3 class="title">At least two dead in blast at Bolivia military barracks</h3>
-	<p class="snippet">Authorities fear the death toll in Viacha will rise and warn people to stay away from the barracks due to a risk of further explosions.</p>
+	<p class="snippet">At least two people have been killed after an explosion at a military barracks in Bolivia - but authorities fear the toll could be higher. Bolivian Defence Minister Ernesto Justiniano said at least 81 people had been injured when &quot;pyrotechnic material&quot; detonated at the barracks, where an artillery regiment was stationed, about 14:30 local time (18:30 GMT) on Friday. Fourteen others remain missing. Health official Rita Nebraska told local television between 10 and 15 people were believed to have died in the incident in Viacha, about 30km (19 miles) from La Paz, according to Reuters. Police said dozens of homes had been damaged by the blast and that emergency workers were searching the rubble. Nebraska said there was a risk of a further explosion and urged people to stay at least 150m from…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/cea5/live/8e7be190-a905-11f1-b109-879e35c24276.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/600/cpsprodpb/cea5/live/8e7be190-a905-11f1-b109-879e35c24276.jpg 600w, https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/cea5/live/8e7be190-a905-11f1-b109-879e35c24276.jpg 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">At least two dead in blast at Bolivia military barracks</h3>
-	<p class="about">Authorities fear the death toll in Viacha will rise and warn people to stay away from the barracks due to a risk of further explosions.</p>
+	<p class="about">At least two people have been killed after an explosion at a military barracks in Bolivia - but authorities fear the toll could be higher. Bolivian Defence Minister Ernesto Justiniano said at least 81 people had been injured when &quot;pyrotechnic material&quot; detonated at the barracks, where an artillery regiment was stationed, about 14:30 local time (18:30 GMT) on Friday. Fourteen others remain missing. Health official Rita Nebraska told local television between 10 and 15 people were believed to have died in the incident in Viacha, about 30km (19 miles) from La Paz, according to Reuters. Police said dozens of homes had been damaged by the blast and that emergency workers were searching the rubble. Nebraska said there was a risk of a further explosion and urged people to stay at least 150m from…</p>
 	
 	
 	<div class="actions">
@@ -8724,13 +8774,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="I&#39;ve never spoken to Everton owner Friedkin - Moyes — flip for details">
 	<div class="meta"><span class="src" style="color:#facc15">BBC SPORT</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T08:40:13.000Z">4:40 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
 	<h3 class="title">I&#39;ve never spoken to Everton owner Friedkin - Moyes</h3>
-	<p class="snippet">Everton manager David Moyes says he has never met or spoken to the club&#39;s owner Dan Friedkin.</p>
+	<p class="snippet">David Moyes says he has never met or spoken to Everton owner Dan Friedkin since returning as manager in January 2025. Friedkin is head of The Friedkin Group, which runs the club from its base in Houston, but has not attended a home game since completing a takeover of the club in December 2024. How the club is run and who is responsible for making key decisions came under close scrutiny during the summer transfer window. Speaking to reporters before Everton &#39;s match against Manchester United on Sunday, Moyes reiterated his commitment to the club despite a chaotic end to the window. When asked if he had ever met or spoken to Friedkin in the 20 months since he was reappointed as manager, Moyes&#39; answer was a simple &quot;No&quot;. Friedkin leaves the day-to-day running of the club to his son-in-law…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/2894/live/590172b0-a8ff-11f1-bd44-2b0afe453f7d.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/600/cpsprodpb/2894/live/590172b0-a8ff-11f1-bd44-2b0afe453f7d.jpg 600w, https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/2894/live/590172b0-a8ff-11f1-bd44-2b0afe453f7d.jpg 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">I&#39;ve never spoken to Everton owner Friedkin - Moyes</h3>
-	<p class="about">Everton manager David Moyes says he has never met or spoken to the club&#39;s owner Dan Friedkin.</p>
+	<p class="about">David Moyes says he has never met or spoken to Everton owner Dan Friedkin since returning as manager in January 2025. Friedkin is head of The Friedkin Group, which runs the club from its base in Houston, but has not attended a home game since completing a takeover of the club in December 2024. How the club is run and who is responsible for making key decisions came under close scrutiny during the summer transfer window. Speaking to reporters before Everton &#39;s match against Manchester United on Sunday, Moyes reiterated his commitment to the club despite a chaotic end to the window. When asked if he had ever met or spoken to Friedkin in the 20 months since he was reappointed as manager, Moyes&#39; answer was a simple &quot;No&quot;. Friedkin leaves the day-to-day running of the club to his son-in-law…</p>
 	
 	
 	<div class="actions">
@@ -8799,13 +8849,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Zelda: Tears of the Kingdom Returns in October With a New Deluxe Release — flip for details">
 	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T08:20:14.000Z">4:20 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
 	<h3 class="title">Zelda: Tears of the Kingdom Returns in October With a New Deluxe Release</h3>
-	<p class="snippet">Nintendo and Dark Horse will release The Legend of Zelda: Tears of the Kingdom - Secrets of the Zonai this fall.</p>
+	<p class="snippet">While fans wait for Nintendo&#39;s highly anticipated remake of The Legend of Zelda: Ocarina of Time for Switch 2, devotees of The Legend of Zelda: Tears of the Kingdom will be eating good come fall. A new release, The Legend of Zelda: Tears of the Kingdom - Secrets of the Zonai , arrives in October for the Zelda series&#39; 40th anniversary, giving fans a behind-the-scenes look at the making of the 2023 game. Dark Horse, the publisher behind several stellar Zelda reference books like 2013&#39;s Hyrule Historia , will expand that collection on Oct. 20 with The Legend of Zelda: Tears of the Kingdom - Secrets of the Zonai. The Legend of Zelda: Tears of the Kingdom - Secrets of the Zonai will be available in two editions. The Standard Edition hardcover will have an MSRP of $59.99 and include all the…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/06/tears-of-the-kingdom-breath-of-the-wild-switch-2-upgrade.jpg?w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/06/tears-of-the-kingdom-breath-of-the-wild-switch-2-upgrade.jpg?w=600 600w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/06/tears-of-the-kingdom-breath-of-the-wild-switch-2-upgrade.jpg?w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Zelda: Tears of the Kingdom Returns in October With a New Deluxe Release</h3>
-	<p class="about">Nintendo and Dark Horse will release The Legend of Zelda: Tears of the Kingdom - Secrets of the Zonai this fall.</p>
+	<p class="about">While fans wait for Nintendo&#39;s highly anticipated remake of The Legend of Zelda: Ocarina of Time for Switch 2, devotees of The Legend of Zelda: Tears of the Kingdom will be eating good come fall. A new release, The Legend of Zelda: Tears of the Kingdom - Secrets of the Zonai , arrives in October for the Zelda series&#39; 40th anniversary, giving fans a behind-the-scenes look at the making of the 2023 game. Dark Horse, the publisher behind several stellar Zelda reference books like 2013&#39;s Hyrule Historia , will expand that collection on Oct. 20 with The Legend of Zelda: Tears of the Kingdom - Secrets of the Zonai. The Legend of Zelda: Tears of the Kingdom - Secrets of the Zonai will be available in two editions. The Standard Edition hardcover will have an MSRP of $59.99 and include all the…</p>
 	
 	
 	<div class="actions">
@@ -9099,13 +9149,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Adaption Labs Introduces ‘Invent a Dataset’: Training Data Generated From a Task Description, Not a Seed Corpus — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(323 55% 72%)">MARKTECHPOST</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T06:48:29.000Z">2:48 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
 	<h3 class="title">Adaption Labs Introduces ‘Invent a Dataset’: Training Data Generated From a Task Description, Not a Seed Corpus</h3>
-	<p class="snippet">Adaption Labs has released Invent a Dataset, which generates a structured, training-ready dataset from a description of the behavior you want a model to learn. There is no seed corpus, no schema design, and no labeling guide. A single datasets.invent call sets domains, row count, output format, and language expansion, and the rows download as JSONL, JSON, CSV, or Parquet. The dataset ID then…</p>
+	<p class="snippet">This week, Adaption Labs released Invent a Dataset . The feature generates a structured, training-ready dataset from a description of the behavior you want a model to learn. You do not arrive with a seed corpus, a predefined schema, or a labeling guide. Is it deployable? Yes, with one caveat. Invent a Dataset is live now in the Adaption app and through the Python SDK and REST API . Generated rows download as JSONL, JSON, CSV, or Parquet, so the artifact is a portable file you own and can train on anywhere. Generation itself runs on Adaption’s hosted platform and consumes credits. No self-hosted generation path is documented. Most dataset workflows begin with data that already exists. Teams then spend weeks labeling, filtering, and reshaping it to approximate the target task. Adaption’s…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://www.marktechpost.com/wp-content/uploads/2026/09/blog1311-2.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Adaption Labs Introduces ‘Invent a Dataset’: Training Data Generated From a Task Description, Not a Seed Corpus</h3>
-	<p class="about">Adaption Labs has released Invent a Dataset, which generates a structured, training-ready dataset from a description of the behavior you want a model to learn. There is no seed corpus, no schema design, and no labeling guide. A single datasets.invent call sets domains, row count, output format, and language expansion, and the rows download as JSONL, JSON, CSV, or Parquet. The dataset ID then…</p>
+	<p class="about">This week, Adaption Labs released Invent a Dataset . The feature generates a structured, training-ready dataset from a description of the behavior you want a model to learn. You do not arrive with a seed corpus, a predefined schema, or a labeling guide. Is it deployable? Yes, with one caveat. Invent a Dataset is live now in the Adaption app and through the Python SDK and REST API . Generated rows download as JSONL, JSON, CSV, or Parquet, so the artifact is a portable file you own and can train on anywhere. Generation itself runs on Adaption’s hosted platform and consumes credits. No self-hosted generation path is documented. Most dataset workflows begin with data that already exists. Teams then spend weeks labeling, filtering, and reshaping it to approximate the target task. Adaption’s…</p>
 	
 	
 	<div class="actions">
@@ -9647,7 +9697,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2660 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2658 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241376" data-cat="entertainment" data-sent="0" data-slug="interest toei animation confirms license for french dragon ball theme park" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-04/toei-animation-confirms-no-license-for-french-dragon-ball-theme-park/.241376" target="_blank" rel="noopener noreferrer">Toei Animation Confirms No License for French Dragon Ball Theme Park</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241422" data-cat="entertainment" data-sent="0" data-slug="news yowaki max reijo nanoni ratsuwan konyakusha sama kake notte shimatta anime reveals theme song" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-09-04/yowaki-max-reijo-nanoni-ratsuwan-konyakusha-sama-no-kake-ni-notte-shimatta-anime-reveals-theme-song-/.241422" target="_blank" rel="noopener noreferrer">&#39;Yowaki MAX Reijō nanoni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta&#39; Anime Reveals Theme Song Artist, October 4 Debut</a></li>
@@ -12307,8 +12357,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://the-decoder.com/?p=39541" data-cat="ai" data-sent="0" data-slug="google deepminds scientist now plans experiments runs lab equipment and writes scientific papers" hidden="until-found"><span class="ameta"><span class="src sc33">THE DECODER</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">AI</span></span></span><a class="atitle" href="https://the-decoder.com/google-deepminds-ai-co-scientist-now-plans-experiments-runs-lab-equipment-and-writes-scientific-papers/" target="_blank" rel="noopener noreferrer">Google Deepmind&#39;s AI Co-Scientist now plans experiments, runs lab equipment, and writes scientific papers</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.beckershospitalreview.com/?p=409200" data-cat="healthcare" data-sent="0" data-slug="leadership the operational metrics drawing renewed focus from coos" hidden="until-found"><span class="ameta"><span class="src sc32">BECKER&#39;S HOSPITAL REVIEW</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Healthcare</span></span></span><a class="atitle" href="https://www.beckershospitalreview.com/leadership/the-operational-metrics-drawing-renewed-focus-from-coos/" target="_blank" rel="noopener noreferrer">The operational metrics drawing renewed focus from COOs</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.unite.ai/?p=457918" data-cat="ai" data-sent="0" data-slug="blue owl funds lead factory equipment financing for iren" hidden="until-found"><span class="ameta"><span class="src sc28">UNITE.AI</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">AI</span></span></span><a class="atitle" href="https://www.unite.ai/blue-owl-funds-lead-2-4b-ai-factory-equipment-financing-for-iren/" target="_blank" rel="noopener noreferrer">Blue Owl Funds Lead $2.4B AI Factory Equipment Financing for IREN</a></li>
-<li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000729407" data-cat="entertainment" data-sent="0" data-slug="pokemon stop motion sirfetchd pichu wallace gromit" hidden="until-found"><span class="ameta"><span class="src sc14">KOTAKU</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://kotaku.com/pokemon-stop-motion-sirfetchd-pichu-wallace-gromit-2000729407" target="_blank" rel="noopener noreferrer">The Wallace &amp; Gromit Studio’s Pokémon Stop Motion Show Looks Delightful</a></li>
-<li class="arow" data-count="1" data-id="rss:http://variety.com/?p=1203517873" data-cat="entertainment" data-sent="0" data-slug="feature whats netflix movies shows" hidden="until-found"><span class="ameta"><span class="src sc47">VARIETY</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://variety.com/feature/whats-on-netflix-movies-shows-1203517873/" target="_blank" rel="noopener noreferrer">What’s New on Netflix in September 2026</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
