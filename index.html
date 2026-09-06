@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-06T09:45:17.437Z">
+<meta name="sf-version" content="2026-09-06T10:00:46.794Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -631,6 +631,7 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
@@ -654,7 +655,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb7185"] { color: #a72041 !important; }
@@ -682,12 +682,12 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(71 55% 72%)"] { color: #5a6512 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(194 55% 72%)"] { color: #2a6777 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(218 55% 72%)"] { color: #445d8b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(19 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(199 55% 72%)"] { color: #30657b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(277 55% 72%)"] { color: #74468f !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(71 55% 72%)"] { color: #5a6512 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(81 55% 72%)"] { color: #506717 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(284 55% 72%)"] { color: #7a438c !important; }
 .sc0 { color: hsl(269 55% 72%); }
 :root[data-theme="light"] .sc0 { color: #6e4992; }
 .sc1 { color: #fb923c; }
@@ -946,10 +946,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 5:45 AM &middot; 10 TODAY</p>
+	<p class="stats">UPDATED 6:00 AM &middot; 12 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">218</span><span class="sr-only"> — 218 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">163</span><span class="sr-only"> — 163 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">391</span><span class="sr-only"> — 391 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">209</span><span class="sr-only"> — 209 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">259</span><span class="sr-only"> — 259 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">113</span><span class="sr-only"> — 113 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">308</span><span class="sr-only"> — 308 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">535</span><span class="sr-only"> — 535 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">333</span><span class="sr-only"> — 333 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">294</span><span class="sr-only"> — 294 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">179</span><span class="sr-only"> — 179 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">218</span><span class="sr-only"> — 218 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">163</span><span class="sr-only"> — 163 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">391</span><span class="sr-only"> — 391 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">208</span><span class="sr-only"> — 208 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">258</span><span class="sr-only"> — 258 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">113</span><span class="sr-only"> — 113 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">308</span><span class="sr-only"> — 308 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">535</span><span class="sr-only"> — 535 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">333</span><span class="sr-only"> — 333 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">294</span><span class="sr-only"> — 294 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1181,43 +1181,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
+		<a class="trend-title" href="https://www.aljazeera.com/news/2026/9/6/indonesias-main-airport-suspends-flights-due-to-anak-krakatoa-eruption?traffic_source=rss" target="_blank" rel="noopener noreferrer">Anak Krakatau eruption halts flights at Indonesia’s main airport</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span>Sat 11:38 PM</p>
+	</div>
+</li>
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">2</span>
+	<div class="trend-body">
 		<a class="trend-title" href="https://www.france24.com/en/video/20260905-two-nepal-rescues-revive-hopes-10-days-after-flood" target="_blank" rel="noopener noreferrer">Two Nepal rescues revive hopes 10 days after flood</a>
 		<p class="trend-meta"><span class="src" style="color:hsl(279 55% 72%)">FRANCE 24</span><span class="sep" aria-hidden="true">&middot;</span>Sat 8:47 AM</p>
 	</div>
 </li>
 <li class="trend-item">
-	<span class="rank" aria-hidden="true">2</span>
+	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
 		<a class="trend-title" href="https://news.un.org/feed/view/en/story/2026/09/1168273" target="_blank" rel="noopener noreferrer">As wildfires spread north, UN agencies race to help Europe adapt</a>
 		<p class="trend-meta"><span class="src" style="color:hsl(290 55% 72%)">UN NEWS</span><span class="sep" aria-hidden="true">&middot;</span>Sat 8:00 AM</p>
 	</div>
 </li>
 <li class="trend-item">
-	<span class="rank" aria-hidden="true">3</span>
+	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
 		<a class="trend-title" href="https://www.theguardian.com/world/2026/sep/05/aid-workers-gaza-killed-in-israel-airstrike-investigation" target="_blank" rel="noopener noreferrer">‘Guilt by association’: why seven international aid workers were killed in Israeli airstrike</a>
 		<p class="trend-meta"><span class="src" style="color:hsl(243 55% 72%)">GUARDIAN WORLD</span><span class="sep" aria-hidden="true">&middot;</span>Sat 7:08 AM</p>
 	</div>
 </li>
 <li class="trend-item">
-	<span class="rank" aria-hidden="true">4</span>
+	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
 		<a class="trend-title" href="https://www.aljazeera.com/video/newsfeed/2026/9/5/mudslide-in-eastern-china-kills-one-leaves-11-missing?traffic_source=rss" target="_blank" rel="noopener noreferrer">Mudslide in eastern China kills one, leaves 11 missing</a>
 		<p class="trend-meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span>Sat 6:49 AM</p>
 	</div>
 </li>
 <li class="trend-item">
-	<span class="rank" aria-hidden="true">5</span>
+	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
 		<a class="trend-title" href="https://www.aljazeera.com/news/2026/9/5/at-least-5-killed-in-russian-attacks-on-ukraine-as-us-envoys-visit-moscow?traffic_source=rss" target="_blank" rel="noopener noreferrer">At least 5 killed in Russian attacks on Ukraine as US envoys visit Moscow</a>
 		<p class="trend-meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span>Sat 6:27 AM</p>
-	</div>
-</li>
-<li class="trend-item">
-	<span class="rank" aria-hidden="true">6</span>
-	<div class="trend-body">
-		<a class="trend-title" href="https://www.france24.com/en/asia-pacific/20260905-i-dont-know-if-im-dreaming-rebuilding-lives-after-nepal-devastating-floods" target="_blank" rel="noopener noreferrer">&#39;I don&#39;t know if I&#39;m dreaming&#39;: Rebuilding lives after Nepal&#39;s devastating floods</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(279 55% 72%)">FRANCE 24</span><span class="sep" aria-hidden="true">&middot;</span>Sat 6:16 AM</p>
 	</div>
 </li>
 </ol>
@@ -1227,43 +1227,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/news/articles/cg491zp13qqo" target="_blank" rel="noopener noreferrer">&#39;He was a lifeline&#39; - Families at a loss after Haitian caregivers let go in US</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(19 55% 72%)">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"haitians" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://sports.yahoo.com/articles/collin-sexton-had-fun-luka-054838824.html" target="_blank" rel="noopener noreferrer">Collin Sexton had fun at Luka Doncic&#39;s minicamp</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(71 55% 72%)">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"lakers" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
+	<div class="trend-body">
+		<a class="trend-title" href="https://finance.yahoo.com/video/uk-trading-platform-hargreaves-lansdown-173000945.html" target="_blank" rel="noopener noreferrer">UK trading platform Hargreaves Lansdown ends its crypto holdout</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(194 55% 72%)">YAHOO FINANCE</span><span class="sep" aria-hidden="true">&middot;</span>"cryptocurrency trading" &middot; 100+ searches</p>
+	</div>
+</li>
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">3</span>
+	<div class="trend-body">
+		<a class="trend-title" href="https://www.fox32chicago.com/weather/chicago-weather-cooler-temps-come-clouds-lovely-labor-day-weekend" target="_blank" rel="noopener noreferrer">Chicago weather: Cooler temps come with clouds, lovely Labor Day weekend</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(218 55% 72%)">FOX 32 CHICAGO</span><span class="sep" aria-hidden="true">&middot;</span>"what is a heat index" &middot; 100+ searches</p>
+	</div>
+</li>
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">4</span>
+	<div class="trend-body">
+		<a class="trend-title" href="https://www.bbc.com/news/articles/cg491zp13qqo" target="_blank" rel="noopener noreferrer">&#39;He was a lifeline&#39; - Families at a loss after Haitian caregivers let go in US</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(19 55% 72%)">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"haitians" &middot; 200+ searches</p>
+	</div>
+</li>
+<li class="trend-item">
+	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
 		<a class="trend-title" href="https://www.kcra.com/article/sac-state-warns-shots-fired-on-campus-football-game/73623765" target="_blank" rel="noopener noreferrer">Sac State says no suspect detained after shots fired on campus, but &#39;no ongoing threat&#39;</a>
 		<p class="trend-meta"><span class="src" style="color:hsl(199 55% 72%)">KCRA</span><span class="sep" aria-hidden="true">&middot;</span>"sacramento state football" &middot; 5000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
-	<span class="rank" aria-hidden="true">3</span>
+	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
 		<a class="trend-title" href="https://games.gg/wardogs/guides/wardogs-closed-beta-playtest-end-date/" target="_blank" rel="noopener noreferrer">WARDOGS Closed Beta Playtest End Date &amp; How to Join</a>
 		<p class="trend-meta"><span class="src" style="color:hsl(277 55% 72%)">GAMES.GG</span><span class="sep" aria-hidden="true">&middot;</span>"wardogs beta" &middot; 500+ searches</p>
-	</div>
-</li>
-<li class="trend-item">
-	<span class="rank" aria-hidden="true">4</span>
-	<div class="trend-body">
-		<a class="trend-title" href="https://sports.yahoo.com/nfl/betting/article/2026-nfl-week-1-odds-betting-full-list-of-week-1-spreads-151703390.html" target="_blank" rel="noopener noreferrer">2026 NFL Week 1 odds, betting: Full list of Week 1 spreads</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(71 55% 72%)">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"nfl schedule this week" &middot; 200+ searches</p>
-	</div>
-</li>
-<li class="trend-item">
-	<span class="rank" aria-hidden="true">5</span>
-	<div class="trend-body">
-		<a class="trend-title" href="https://morristowngreen.com/2026/09/02/we-have-to-stand-with-them-now-morristown-cafe-aids-colombian-hometown-after-earthquake/" target="_blank" rel="noopener noreferrer">‘We have to stand with them now’: Morristown café aids Colombian hometown after earthquake</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(81 55% 72%)">MORRISTOWN GREEN</span><span class="sep" aria-hidden="true">&middot;</span>"recent earthquakes" &middot; 200+ searches</p>
-	</div>
-</li>
-<li class="trend-item">
-	<span class="rank" aria-hidden="true">6</span>
-	<div class="trend-body">
-		<a class="trend-title" href="https://www.nytimes.com/2026/09/05/crosswords/wordle-review-1905.html" target="_blank" rel="noopener noreferrer">Today’s Wordle Hints for September 6, 2026</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(284 55% 72%)">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"today wordle hints" &middot; 100+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1295,6 +1295,31 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://the-decoder.com/?p=39851" data-srckey="the decoder" data-cat="ai" data-sent="0" data-ts="1788687918000" data-slug="metas new real time audio model the foundation for assistants that never stop listening">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Meta&#39;s new real-time audio model is the foundation for AI assistants that never stop listening — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(45 55% 72%)">THE DECODER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T09:45:18.000Z">5:45 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Meta&#39;s new real-time audio model is the foundation for AI assistants that never stop listening</h3>
+	<p class="snippet">Meta&#39;s Superintelligence Labs have released Muse Voice Transcribe, a real-time transcription model that processes speech in 80-millisecond chunks, tells speakers apart, and detects sentence boundaries. According to Artificial Analysis, it delivers the most accurate streaming transcription at the lowest price in the market. Meta sees the model as a building block for personal AI agents that listen in on real conversations through devices like its camera glasses. The article Meta&#39;s new real-time audio model is the foundation for AI assistants that never stop listening appeared first on The Decoder.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://the-decoder.com/wp-content/uploads/2026/06/meta_logo.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Meta&#39;s new real-time audio model is the foundation for AI assistants that never stop listening</h3>
+	<p class="about">Meta&#39;s Superintelligence Labs have released Muse Voice Transcribe, a real-time transcription model that processes speech in 80-millisecond chunks, tells speakers apart, and detects sentence boundaries. According to Artificial Analysis, it delivers the most accurate streaming transcription at the lowest price in the market. Meta sees the model as a building block for personal AI agents that listen in on real conversations through devices like its camera glasses. The article Meta&#39;s new real-time audio model is the foundation for AI assistants that never stop listening appeared first on The Decoder.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://the-decoder.com/metas-new-real-time-audio-model-is-the-foundation-for-ai-assistants-that-never-stop-listening/" target="_blank" rel="noopener noreferrer">The Decoder &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
 <article class="card compact h2 has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:https://www.polygon.com/gta-ps2-cheat-codes/" data-srckey="polygon" data-cat="games" data-sent="0" data-ts="1788685214000" data-slug="gta ps2 cheat codes">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="GTA Cheat Codes Taught a Generation How Much Fun It Is to Break a Video Game — flip for details">
@@ -1311,6 +1336,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://www.polygon.com/gta-ps2-cheat-codes/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://the-decoder.com/?p=39806" data-srckey="the decoder" data-cat="ai" data-sent="0" data-ts="1788684956000" data-slug="stripping safety guardrails from open weight models now turnkey commercial service">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Stripping safety guardrails from open-weight AI models is now a turnkey commercial service — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(45 55% 72%)">THE DECODER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T08:55:56.000Z">4:55 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">Stripping safety guardrails from open-weight AI models is now a turnkey commercial service</h3>
+	<p class="snippet">Abliteration.ai sells access to modified open-weight models with their trained safety mechanisms stripped out, currently based on Z.AI&#39;s GLM-5.3. The startup markets the service for offensive cybersecurity and red teaming, but journalists were able to generate malware instructions without much effort. Whether the benefits outweigh the risks remains an open question. The article Stripping safety guardrails from open-weight AI models is now a turnkey commercial service appeared first on The Decoder.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://the-decoder.com/wp-content/uploads/2026/09/abliteration-ai-1200x670.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Stripping safety guardrails from open-weight AI models is now a turnkey commercial service</h3>
+	<p class="about">Abliteration.ai sells access to modified open-weight models with their trained safety mechanisms stripped out, currently based on Z.AI&#39;s GLM-5.3. The startup markets the service for offensive cybersecurity and red teaming, but journalists were able to generate malware instructions without much effort. Whether the benefits outweigh the risks remains an open question. The article Stripping safety guardrails from open-weight AI models is now a turnkey commercial service appeared first on The Decoder.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://the-decoder.com/stripping-safety-guardrails-from-open-weight-ai-models-is-now-a-turnkey-commercial-service/" target="_blank" rel="noopener noreferrer">The Decoder &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1566,6 +1616,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://www.polygon.com/netflix-haunting-bly-manor-perfect-binge-september-2026/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788659110" data-srckey="al jazeera" data-cat="world" data-sent="0" data-ts="1788665903000" data-slug="news indonesias main airport suspends flights due anak krakatoa eruption">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Anak Krakatau eruption halts flights at Indonesia’s main airport — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T03:38:23.000Z">11:38 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Anak Krakatau eruption halts flights at Indonesia’s main airport</h3>
+	<p class="snippet">Volcanic ash from Mount Anak Krakatau eruption leads to hundreds of flight suspensions.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.aljazeera.com/wp-content/uploads/2026/09/ap_6a9cc78f613ee-1788659599.jpg?resize=1920%2C1440" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Anak Krakatau eruption halts flights at Indonesia’s main airport</h3>
+	<p class="about">Volcanic ash from Mount Anak Krakatau eruption leads to hundreds of flight suspensions.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.aljazeera.com/news/2026/9/6/indonesias-main-airport-suspends-flights-due-to-anak-krakatoa-eruption?traffic_source=rss" target="_blank" rel="noopener noreferrer">Al Jazeera &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -10003,7 +10078,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2646 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2643 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241376" data-cat="entertainment" data-sent="0" data-slug="interest toei animation confirms license for french dragon ball theme park" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-04/toei-animation-confirms-no-license-for-french-dragon-ball-theme-park/.241376" target="_blank" rel="noopener noreferrer">Toei Animation Confirms No License for French Dragon Ball Theme Park</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241422" data-cat="entertainment" data-sent="0" data-slug="news yowaki max reijo nanoni ratsuwan konyakusha sama kake notte shimatta anime reveals theme song" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-09-04/yowaki-max-reijo-nanoni-ratsuwan-konyakusha-sama-no-kake-ni-notte-shimatta-anime-reveals-theme-song-/.241422" target="_blank" rel="noopener noreferrer">&#39;Yowaki MAX Reijō nanoni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta&#39; Anime Reveals Theme Song Artist, October 4 Debut</a></li>
@@ -12648,9 +12723,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.marktechpost.com/?p=81938" data-cat="ai" data-sent="0" data-slug="glm flash qwen3 next two chinese labs independently converge the same model architecture" hidden="until-found"><span class="ameta"><span class="src sc44">MARKTECHPOST</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">AI</span></span></span><a class="atitle" href="https://www.marktechpost.com/2026/08/28/glm-5-3-flash-vs-qwen3-8-flash-next-two-chinese-ai-labs-independently-converge-on-the-same-model-architecture/" target="_blank" rel="noopener noreferrer">GLM-5.3-Flash vs Qwen3.8-Flash-Next: Two Chinese AI Labs Independently Converge on the Same Model Architecture</a></li>
 <li class="arow" data-count="1" data-id="rss:US-EN-49754391" data-cat="sports" data-sent="0" data-slug="tennis story coco gauff backs mother squashing open ticket requests" hidden="until-found"><span class="ameta"><span class="src sc20">ESPN</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Sports</span></span></span><a class="atitle" href="https://www.espn.com/tennis/story/_/id/49754391/coco-gauff-backs-mother-squashing-us-open-ticket-requests" target="_blank" rel="noopener noreferrer">Gauff backs mother for squashing ticket requests</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.fiercehealthcare.com/7a08f991-0196-4283-8c8c-ae6f9ef92a73" data-cat="healthcare" data-sent="0" data-slug="health tech ncqa use komodo platform future development hedis measures" hidden="until-found"><span class="ameta"><span class="src sc45">FIERCE HEALTHCARE</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Healthcare</span></span></span><a class="atitle" href="https://www.fiercehealthcare.com/health-tech/ncqa-use-komodo-platform-future-development-hedis-measures" target="_blank" rel="noopener noreferrer">NCQA to use Komodo data, AI tool to develop future HEDIS measures</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cz0zm2j7ld1o#1" data-cat="world" data-sent="0" data-slug="news articles cz0zm2j7ld1o" hidden="until-found"><span class="ameta"><span class="src sc8">BBC WORLD</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.bbc.co.uk/news/articles/cz0zm2j7ld1o" target="_blank" rel="noopener noreferrer">Russia ramps up rhetoric but wants to avoid war with Nato, Western officials say</a></li>
-<li class="arow" data-count="1" data-id="rss:WP-MKTW-0005205057" data-cat="markets" data-sent="0" data-slug="story meet generation renter young americans who longer expect ever own home 3cff63a9" hidden="until-found"><span class="ameta"><span class="src sc13">MARKETWATCH</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Markets</span></span></span><a class="atitle" href="https://www.marketwatch.com/story/meet-generation-renter-young-americans-who-no-longer-expect-ever-to-own-a-home-3cff63a9?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Meet Generation Renter — young Americans who don’t expect to ever own a home</a></li>
-<li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000729352" data-cat="games" data-sent="0" data-slug="pet dog gta throw poop" hidden="until-found"><span class="ameta"><span class="src sc14">KOTAKU</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Games</span></span></span><a class="atitle" href="https://kotaku.com/pet-dog-gta-6-throw-poop-2000729352" target="_blank" rel="noopener noreferrer">You Can Pet The Dog In GTA 6 And Also Throw Its Poop At NPCs</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
