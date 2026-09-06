@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-06T11:12:46.820Z">
+<meta name="sf-version" content="2026-09-06T11:46:19.040Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -631,12 +631,12 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(45 55% 72%)"] { color: #6e5c22 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#60a5fa"] { color: #145dac !important; }
@@ -682,10 +682,9 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(283 55% 72%)"] { color: #79448d !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(28 55% 72%)"] { color: #7a5532 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(19 55% 72%)"] { color: #80503a !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(275 55% 72%)"] { color: #734790 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(244 55% 72%)"] { color: #5a519b !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(217 55% 72%)"] { color: #435e8a !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(284 55% 72%)"] { color: #7a438c !important; }
 .sc0 { color: hsl(269 55% 72%); }
 :root[data-theme="light"] .sc0 { color: #6e4992; }
 .sc1 { color: #fb923c; }
@@ -944,10 +943,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 7:12 AM &middot; 16 TODAY</p>
+	<p class="stats">UPDATED 7:46 AM &middot; 18 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">178</span><span class="sr-only"> — 178 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">217</span><span class="sr-only"> — 217 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">390</span><span class="sr-only"> — 390 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">208</span><span class="sr-only"> — 208 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">258</span><span class="sr-only"> — 258 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">113</span><span class="sr-only"> — 113 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">307</span><span class="sr-only"> — 307 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">536</span><span class="sr-only"> — 536 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">335</span><span class="sr-only"> — 335 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">294</span><span class="sr-only"> — 294 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">178</span><span class="sr-only"> — 178 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">217</span><span class="sr-only"> — 217 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">164</span><span class="sr-only"> — 164 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">390</span><span class="sr-only"> — 390 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">208</span><span class="sr-only"> — 208 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">258</span><span class="sr-only"> — 258 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">113</span><span class="sr-only"> — 113 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">306</span><span class="sr-only"> — 306 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">536</span><span class="sr-only"> — 536 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">296</span><span class="sr-only"> — 296 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1006,7 +1005,7 @@ footer a { color: var(--text-faint); }
 </div>
 <div class="face back" inert>
 	<h3 class="title">Israeli flags become the latest weapon of settlers in West Bank domination</h3>
-	<p class="about">Israel&#39;s visual colonisation aims to make Palestinians feel like guests in their own homeland.</p>
+	<p class="about">Through the rapid deployment of mobile outposts and hundreds of flags, a new phase of visual and psychological colonisation aims to make Palestinians feel like guests in their own homeland. A profound sense of anguish accompanies 25-year-old Taghreed Yahya during her daily commute from her town of Kafr Ra’i to the city centre of Jenin in the north of the occupied West Bank. Along the main road connecting Jenin and Nablus, she is routinely confronted by hundreds of Israeli flags, a jarring visual imposition of Israeli domination and occupation on a route heavily used by local Palestinians. Yahya said it started with a flag here, an outpost there, a new road cutting through the landscape. “[It] makes the scene that was familiar for years change; all of this naturally leaves sadness, anger…</p>
 	
 	
 	<div class="actions">
@@ -1225,43 +1224,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.cbssports.com/college-football/news/dabo-swinney-buyout-contract-clemson-coach/" target="_blank" rel="noopener noreferrer">Dabo Swinney buyout: What it would cost Clemson to move on from coach as Tigers&#39; issues persist in 2026</a>
-		<p class="trend-meta"><span class="src" style="color:#3b82f6">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"dabo swinney clemson contract buyout" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.usatoday.com/story/money/lottery/2026/09/05/powerball-winning-numbers-sept-5-2026-jackpot-results/91618206007/" target="_blank" rel="noopener noreferrer">Powerball numbers are in. Did anyone win $173M?</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(244 55% 72%)">USA TODAY</span><span class="sep" aria-hidden="true">&middot;</span>"powerball" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.cnn.com/2026/09/06/europe/witkoff-kushner-visit-kyiv-intl" target="_blank" rel="noopener noreferrer">Witkoff and Kushner arrive in Kyiv for second leg of US diplomacy push</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(283 55% 72%)">CNN</span><span class="sep" aria-hidden="true">&middot;</span>"ukraine" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.arsenal.com/news/how-to-watch-brighton-v-arsenal-women-live-on-tv-aXKR87o9QsFF" target="_blank" rel="noopener noreferrer">How to watch Brighton v Arsenal Women live on TV</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(217 55% 72%)">ARSENAL.COM</span><span class="sep" aria-hidden="true">&middot;</span>"brighton &amp; hove albion vs arsenal" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.fiercehealthcare.com/regulatory/mark-cubans-recipe-affordable-healthcare-includes-these-5-policy-changes" target="_blank" rel="noopener noreferrer">Mark Cuban&#39;s recipe for affordability includes 5 policy changes</a>
-		<p class="trend-meta"><span class="src" style="color:#7dd3fc">FIERCE HEALTHCARE</span><span class="sep" aria-hidden="true">&middot;</span>"mark cuban" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.yahoo.com/lifestyle/videos/nina-dobrev-rushed-off-red-173527458.html" target="_blank" rel="noopener noreferrer">Nina Dobrev rushed off red carpet in embarrassing exchange</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(152 55% 72%)">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"nina dobrev venice film festival" &middot; 100+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.crossingbroad.com/news/sports-gambling/thescore-bet-promo-code-broad-get-1000-bonus-for-cfb-mlb-games-tonight/" target="_blank" rel="noopener noreferrer">theScore Bet Promo Code BROAD: Get $1,000 Bonus for CFB, MLB Games Tonight</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(28 55% 72%)">CROSSING BROAD</span><span class="sep" aria-hidden="true">&middot;</span>"thescore bet promo code" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.nytimes.com/athletic/7568024/2026/09/06/us-open-recap-bracket-results-analysis-third-round/" target="_blank" rel="noopener noreferrer">U.S. Open recap Day 7: Coco Gauff toughs it out on day of upsets and dramatic matches</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(284 55% 72%)">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"us open results" &middot; 5000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/sport/football/live/crje8vvjxje1t" target="_blank" rel="noopener noreferrer">Birmingham City vs Wolverhampton Wanderers LIVE: Championship stats &amp; head-to-head</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(19 55% 72%)">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"birmingham vs wolves" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.espn.com/mlb/story/_/id/49843556/cards-rockies-players-tilt-caps-protest-ump-power-hungry-move" target="_blank" rel="noopener noreferrer">Cards, Rockies tilt caps in protest against ump, &#39;power-hungry move&#39;</a>
+		<p class="trend-meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"mlb umpire doug eddings" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://playbill.com/article/game-of-thrones-prequel-stage-play-the-mad-king-will-make-london-debut-in-2027" target="_blank" rel="noopener noreferrer">Game of Thrones Prequel Stage Play The Mad King Will Make London Debut in 2027</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(275 55% 72%)">PLAYBILL</span><span class="sep" aria-hidden="true">&middot;</span>"game of thrones: the mad king" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://www.yahoo.com/entertainment/celebrity/articles/cruz-beckham-takes-fresh-dig-060849450.html" target="_blank" rel="noopener noreferrer">Cruz Beckham takes fresh dig at Brooklyn Beckham - hours after his loved-up appearance with Nicola</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(152 55% 72%)">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"brooklyn beckham" &middot; 100+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1273,17 +1272,42 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Israeli flags become the latest weapon of settlers in West Bank domination — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T09:40:06.000Z">5:40 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
 	<h3 class="title">Israeli flags become the latest weapon of settlers in West Bank domination</h3>
-	<p class="snippet">Israel&#39;s visual colonisation aims to make Palestinians feel like guests in their own homeland.</p>
+	<p class="snippet">Through the rapid deployment of mobile outposts and hundreds of flags, a new phase of visual and psychological colonisation aims to make Palestinians feel like guests in their own homeland. A profound sense of anguish accompanies 25-year-old Taghreed Yahya during her daily commute from her town of Kafr Ra’i to the city centre of Jenin in the north of the occupied West Bank. Along the main road connecting Jenin and Nablus, she is routinely confronted by hundreds of Israeli flags, a jarring visual imposition of Israeli domination and occupation on a route heavily used by local Palestinians. Yahya said it started with a flag here, an outpost there, a new road cutting through the landscape. “[It] makes the scene that was familiar for years change; all of this naturally leaves sadness, anger…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://www.aljazeera.com/wp-content/uploads/2026/02/afp_6991c3fac364-1771160570.jpg?resize=1920%2C1440" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Israeli flags become the latest weapon of settlers in West Bank domination</h3>
-	<p class="about">Israel&#39;s visual colonisation aims to make Palestinians feel like guests in their own homeland.</p>
+	<p class="about">Through the rapid deployment of mobile outposts and hundreds of flags, a new phase of visual and psychological colonisation aims to make Palestinians feel like guests in their own homeland. A profound sense of anguish accompanies 25-year-old Taghreed Yahya during her daily commute from her town of Kafr Ra’i to the city centre of Jenin in the north of the occupied West Bank. Along the main road connecting Jenin and Nablus, she is routinely confronted by hundreds of Israeli flags, a jarring visual imposition of Israeli domination and occupation on a route heavily used by local Palestinians. Yahya said it started with a flag here, an outpost there, a new road cutting through the landscape. “[It] makes the scene that was familiar for years change; all of this naturally leaves sadness, anger…</p>
 	
 	
 	<div class="actions">
 	<a class="more" href="https://www.aljazeera.com/features/2026/9/6/israeli-flags-become-the-latest-weapon-of-settlers-in-west-bank-domination?traffic_source=rss" target="_blank" rel="noopener noreferrer">Al Jazeera &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact no-snippet" style="--rail:#34d399" data-count="1" data-id="rss:https://github.com/pigeonlabsHQ/pigeon" data-srckey="hacker news" data-cat="tech" data-sent="0" data-ts="1788691639000" data-slug="pigeonlabshq pigeon">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Pigeon, a signed Pass for what a sub-agent may do — flip for details">
+	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T10:47:19.000Z">6:47 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Pigeon, a signed Pass for what a sub-agent may do</h3>
+	
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Pigeon, a signed Pass for what a sub-agent may do</h3>
+	<p class="about">No summary in this feed — follow the link for the story.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://github.com/pigeonlabsHQ/pigeon" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1359,6 +1383,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://www.politico.com/video/2026/09/06/we-are-winning-elections-bernie-sanders-on-democrats-progressive-wing-2153935" target="_blank" rel="noopener noreferrer">Politico &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#34d399" data-count="1" data-id="rss:https://keenbean.app/" data-srckey="hacker news" data-cat="tech" data-sent="0" data-ts="1788688392000">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Show HN: Keen Bean – Mac meeting notes that draft the spec while you talk — flip for details">
+	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T09:53:12.000Z">5:53 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">Show HN: Keen Bean – Mac meeting notes that draft the spec while you talk</h3>
+	<p class="snippet">No bot joins your call. No server of ours in the path. One monthly price with the AI usage included — no keys to paste.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Show HN: Keen Bean – Mac meeting notes that draft the spec while you talk</h3>
+	<p class="about">No bot joins your call. No server of ours in the path. One monthly price with the AI usage included — no keys to paste.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://keenbean.app/" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1493,14 +1542,14 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact" style="--rail:#f87171" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788680558" data-srckey="al jazeera" data-cat="world" data-sent="0" data-ts="1788680708000" data-slug="video the numbers how you arrest people quietly">
+<article class="card compact w2 has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788680558" data-srckey="al jazeera" data-cat="world" data-sent="0" data-ts="1788680708000" data-slug="video the numbers how you arrest people quietly">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="How do you arrest 50,000 people quietly? — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T07:45:08.000Z">3:45 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
 	<h3 class="title">How do you arrest 50,000 people quietly?</h3>
 	<p class="snippet">ICE agents arrested an average of one person every 54 seconds in July. AJLabs examines a record month for deportations.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://www.aljazeera.com/wp-content/uploads/2026/09/BTN_Thumbnail_Landscape_V07-1788680621.png?resize=1920%2C1008&amp;amp;quality=80" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">How do you arrest 50,000 people quietly?</h3>
@@ -10176,7 +10225,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2639 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2637 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241376" data-cat="entertainment" data-sent="0" data-slug="interest toei animation confirms license for french dragon ball theme park" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-04/toei-animation-confirms-no-license-for-french-dragon-ball-theme-park/.241376" target="_blank" rel="noopener noreferrer">Toei Animation Confirms No License for French Dragon Ball Theme Park</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241422" data-cat="entertainment" data-sent="0" data-slug="news yowaki max reijo nanoni ratsuwan konyakusha sama kake notte shimatta anime reveals theme song" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-09-04/yowaki-max-reijo-nanoni-ratsuwan-konyakusha-sama-no-kake-ni-notte-shimatta-anime-reveals-theme-song-/.241422" target="_blank" rel="noopener noreferrer">&#39;Yowaki MAX Reijō nanoni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta&#39; Anime Reveals Theme Song Artist, October 4 Debut</a></li>
@@ -12815,8 +12864,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.washingtonpost.com/politics/2026/08/28/prominent-texas-republican-predicts-gop-losses-over-data-centers/" data-cat="politics" data-sent="0" data-slug="politics prominent texas republican predicts gop losses over data centers" hidden="until-found"><span class="ameta"><span class="src sc22">WASHINGTON POST POLITICS</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Politics</span></span></span><a class="atitle" href="https://www.washingtonpost.com/politics/2026/08/28/prominent-texas-republican-predicts-gop-losses-over-data-centers/" target="_blank" rel="noopener noreferrer">Prominent Texas Republican predicts GOP losses over data centers</a></li>
 <li class="arow" data-count="1" data-id="rss:https://thedispatch.com/?post_type=newsletter&amp;p=127513" data-cat="politics" data-sent="0" data-slug="newsletter gfile trump popularity confidence closeup" hidden="until-found"><span class="ameta"><span class="src sc18">THE DISPATCH POLITICS</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Politics</span></span></span><a class="atitle" href="https://thedispatch.com/newsletter/gfile/trump-popularity-confidence-closeup/" target="_blank" rel="noopener noreferrer">Always Ready for His Closeup</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.washingtonpost.com/politics/2026/08/28/what-happened-under-trump-this-week/" data-cat="politics" data-sent="0" data-slug="politics what happened under trump this week" hidden="until-found"><span class="ameta"><span class="src sc22">WASHINGTON POST POLITICS</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Politics</span></span></span><a class="atitle" href="https://www.washingtonpost.com/politics/2026/08/28/what-happened-under-trump-this-week/" target="_blank" rel="noopener noreferrer">What happened under Trump this week</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/articles/czjz9j3r8p8o#6" data-cat="sports" data-sent="0" data-slug="sport football articles czjz9j3r8p8o" hidden="until-found"><span class="ameta"><span class="src sc17">BBC SPORT</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Sports</span></span></span><a class="atitle" href="https://www.bbc.co.uk/sport/football/articles/czjz9j3r8p8o" target="_blank" rel="noopener noreferrer">What will Jackson bring to Villa with Watkins set for exit?</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.washingtonpost.com/politics/2026/08/28/wyoming-governor-decries-aggressive-behavior-federal-election-monitors/" data-cat="politics" data-sent="0" data-slug="politics wyoming governor decries aggressive behavior federal election monitors" hidden="until-found"><span class="ameta"><span class="src sc22">WASHINGTON POST POLITICS</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Politics</span></span></span><a class="atitle" href="https://www.washingtonpost.com/politics/2026/08/28/wyoming-governor-decries-aggressive-behavior-federal-election-monitors/" target="_blank" rel="noopener noreferrer">Wyoming governor decries ‘aggressive’ behavior of federal election monitors</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
