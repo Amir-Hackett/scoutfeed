@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-06T14:04:26.244Z">
+<meta name="sf-version" content="2026-09-06T14:35:58.014Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -631,20 +631,21 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#ef4444"] { color: #b60010 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#ef4444"] { color: #b60010 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#7dd3fc"] { color: #00678c !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(336 55% 72%)"] { color: #894262 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#60a5fa"] { color: #145dac !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#a78bfa"] { color: #6545ad !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(243 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
@@ -668,7 +669,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#a3e635"] { color: #367000 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(260 55% 72%)"] { color: #674c95 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(271 55% 72%)"] { color: #704891 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(224 55% 72%)"] { color: #495b8f !important; }
@@ -682,12 +682,11 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(76 55% 72%)"] { color: #556615 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(284 55% 72%)"] { color: #7a438c !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(204 55% 72%)"] { color: #366380 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(177 55% 72%)"] { color: #116b69 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(19 55% 72%)"] { color: #80503a !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(17 55% 72%)"] { color: #814f3b !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(236 55% 72%)"] { color: #525598 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(306 55% 72%)"] { color: #853d80 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(244 55% 72%)"] { color: #5a519b !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(295 55% 72%)"] { color: #813e88 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(164 55% 72%)"] { color: #156d5b !important; }
 .sc0 { color: hsl(269 55% 72%); }
 :root[data-theme="light"] .sc0 { color: #6e4992; }
 .sc1 { color: #f472b6; }
@@ -946,10 +945,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 10:04 AM &middot; 177 TODAY</p>
+	<p class="stats">UPDATED 10:35 AM &middot; 183 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">175</span><span class="sr-only"> — 175 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">214</span><span class="sr-only"> — 214 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">162</span><span class="sr-only"> — 162 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">389</span><span class="sr-only"> — 389 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">207</span><span class="sr-only"> — 207 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">256</span><span class="sr-only"> — 256 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">105</span><span class="sr-only"> — 105 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">313</span><span class="sr-only"> — 313 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">545</span><span class="sr-only"> — 545 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">327</span><span class="sr-only"> — 327 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">307</span><span class="sr-only"> — 307 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">175</span><span class="sr-only"> — 175 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">214</span><span class="sr-only"> — 214 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">162</span><span class="sr-only"> — 162 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">390</span><span class="sr-only"> — 390 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">206</span><span class="sr-only"> — 206 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">255</span><span class="sr-only"> — 255 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">106</span><span class="sr-only"> — 106 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">315</span><span class="sr-only"> — 315 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">545</span><span class="sr-only"> — 545 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">326</span><span class="sr-only"> — 326 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">306</span><span class="sr-only"> — 306 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1227,43 +1226,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.burnleyfootballclub.com/media-article/vardy-joins-the-clarets" target="_blank" rel="noopener noreferrer">VARDY JOINS THE CLARETS</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(76 55% 72%)">BURNLEY FC</span><span class="sep" aria-hidden="true">&middot;</span>"jamie vardy" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.marca.com/futbol/barcelona/2026/09/04/empiezan-sacrificios-barca.html" target="_blank" rel="noopener noreferrer">The sacrifices begin at Barça</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(236 55% 72%)">MARCA</span><span class="sep" aria-hidden="true">&middot;</span>"barcelona vs" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.nytimes.com/2026/09/03/nyregion/gloria-steinem-home-new-york.html" target="_blank" rel="noopener noreferrer">Steinem’s N.Y.C. Brownstone Will Continue to Be a Sanctuary for Feminism</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(284 55% 72%)">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"ms magazine" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://people.com/barbara-eden-95-drops-out-of-film-festival-at-last-minute-due-to-sudden-illness-12109684" target="_blank" rel="noopener noreferrer">Barbara Eden, 95, Drops Out of Film Festival at the Last Minute Due to ‘Sudden Illness’</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(306 55% 72%)">PEOPLE.COM</span><span class="sep" aria-hidden="true">&middot;</span>"barbara eden" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://beyondtheflag.com/carl-edwards-tried-warn-nascar-about-new-no-1-gimmick-01kgthgjja4c" target="_blank" rel="noopener noreferrer">Carl Edwards tried to warn NASCAR about its new No. 1 gimmick</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(204 55% 72%)">BEYOND THE FLAG</span><span class="sep" aria-hidden="true">&middot;</span>"carl edwards" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.foxnews.com/entertainment/sydney-sweeney-scooter-braun-romance-faces-biggest-challenge-yet-expert-warns-couple-be-prepared" target="_blank" rel="noopener noreferrer">Sydney Sweeney, Scooter Braun romance faces biggest challenge yet as expert warns couple to &#39;be prepared&#39;</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(244 55% 72%)">FOX NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"scooter braun" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.footmercato.net/a3100822724120599874-barca-hansi-flick-devoile-son-plan-avec-gabriel-jesus" target="_blank" rel="noopener noreferrer">Barça: Hansi Flick reveals his plan for Gabriel Jesus</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(177 55% 72%)">FOOT MERCATO</span><span class="sep" aria-hidden="true">&middot;</span>"valence – barcelone" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://robbreport.com/shelter/homes-for-sale/tribeca-loft-new-york-city-1238621493/" target="_blank" rel="noopener noreferrer">This $6.8 Million N.Y.C. Loft Sits Within an Old Tribeca Warehouse From 1896</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(295 55% 72%)">ROBB REPORT</span><span class="sep" aria-hidden="true">&middot;</span>"tribeca" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.bbc.com/sport/football/articles/cjdvkn8y5gvo" target="_blank" rel="noopener noreferrer">FA Cup: From playing with Marcus Rashford at Man Utd to non-league &amp; new career</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(19 55% 72%)">BBC</span><span class="sep" aria-hidden="true">&middot;</span>"marcus rashford" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.fox2detroit.com/news/2026-michigan-state-fair-opens-thursday-novi-what-you-need-know" target="_blank" rel="noopener noreferrer">Michigan State Fair in Novi opens Thursday through Labor Day</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(164 55% 72%)">FOX 2 DETROIT</span><span class="sep" aria-hidden="true">&middot;</span>"michigan state fair" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.washingtonpost.com/business/2026/09/06/us-is-not-only-country-grappling-with-soaring-debt/" target="_blank" rel="noopener noreferrer">The U.S. isn’t alone in racking up big debt — and big interest payments</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(17 55% 72%)">THE WASHINGTON POST</span><span class="sep" aria-hidden="true">&middot;</span>"debt" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.espn.com/soccer/story/_/id/49823311/uwcl-draw-overreactions-barcelona-vs-arsenal-final-chelsea-finish-top-ol-lyonnes-miss-top-four" target="_blank" rel="noopener noreferrer">UWCL draw overreactions: Barcelona vs. Arsenal final? Chelsea finish top? OL Lyonnes miss top four?</a>
+		<p class="trend-meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"barcelona schedule" &middot; 500+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1295,18 +1294,118 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49703019" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788705300278" data-slug="soccer story premier league var review red card penalty handball goal line technology">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Premier League VAR review: Should Forest&#39;s goal have stood vs. Spurs? — flip for details">
+	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T14:35:00.278Z">10:35 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Premier League VAR review: Should Forest&#39;s goal have stood vs. Spurs?</h3>
+	<p class="snippet">VAR often causes controversy, but how are decisions made? Our resident ref, Andy Davies, explains all.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0905%2Fr1711837_1296x729_16-9.jpg&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0905%2Fr1711837_1296x729_16-9.jpg&amp;w=240 240w, https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0905%2Fr1711837_1296x729_16-9.jpg&amp;w=340 340w, https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0905%2Fr1711837_1296x729_16-9.jpg&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Premier League VAR review: Should Forest&#39;s goal have stood vs. Spurs?</h3>
+	<p class="about">VAR often causes controversy, but how are decisions made? Our resident ref, Andy Davies, explains all.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.espn.com/soccer/story/_/id/49703019/premier-league-var-review-red-card-penalty-handball-goal-line-technology" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236846877" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788705000000" data-slug="film reviews possible love review">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘Possible Love’ Review: Korean Master Lee Chang-dong Returns With a Beautifully Mature, Quietly Colossal Relationship Drama — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T14:30:00.000Z">10:30 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">‘Possible Love’ Review: Korean Master Lee Chang-dong Returns With a Beautifully Mature, Quietly Colossal Relationship Drama</h3>
+	<p class="snippet">One of the key moments from Lee Chang-dong’s last film, 2018’s “Burning,” still glows bright in the memory. A girl mimes eating a tangerine, and explains the knack for making it convincing: don’t try to pretend there is a tangerine, try to forget there is not. It’s a little zen koan that rhymes imperfectly in […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/08/PossibleLove.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/08/PossibleLove.jpg?w=240 240w, https://variety.com/wp-content/uploads/2026/08/PossibleLove.jpg?w=340 340w, https://variety.com/wp-content/uploads/2026/08/PossibleLove.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">‘Possible Love’ Review: Korean Master Lee Chang-dong Returns With a Beautifully Mature, Quietly Colossal Relationship Drama</h3>
+	<p class="about">One of the key moments from Lee Chang-dong’s last film, 2018’s “Burning,” still glows bright in the memory. A girl mimes eating a tangerine, and explains the knack for making it convincing: don’t try to pretend there is a tangerine, try to forget there is not. It’s a little zen koan that rhymes imperfectly in […]</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://variety.com/2026/film/reviews/possible-love-review-1236846877/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.polygon.com/steven-spielberg-interstellar-script-differences/" data-srckey="polygon" data-cat="entertainment" data-sent="0" data-ts="1788703274000" data-slug="steven spielberg interstellar script differences">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="7 Huge Differences Between Christopher Nolan&#39;s &#39;Interstellar&#39; and Steven Spielberg&#39;s Original Script — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T14:01:14.000Z">10:01 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">7 Huge Differences Between Christopher Nolan&#39;s &#39;Interstellar&#39; and Steven Spielberg&#39;s Original Script</h3>
+	<p class="snippet">Before Christopher Nolan directed the 2014 film Interstellar, it was going to be made by Steven Spielberg. It would have been much different.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/01/mcdinte_ec206.jpg?w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/01/mcdinte_ec206.jpg?w=600 600w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/01/mcdinte_ec206.jpg?w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">7 Huge Differences Between Christopher Nolan&#39;s &#39;Interstellar&#39; and Steven Spielberg&#39;s Original Script</h3>
+	<p class="about">Before Christopher Nolan directed the 2014 film Interstellar, it was going to be made by Steven Spielberg. It would have been much different.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.polygon.com/steven-spielberg-interstellar-script-differences/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:bbd31537-0f44-40bd-8b4d-975efdce998f" data-srckey="coindesk" data-cat="markets" data-sent="0" data-ts="1788703200000" data-slug="business better and coinbase bitcoin backed mortgages can reuse borrowers collateral">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Better and Coinbase’s bitcoin-backed mortgages can reuse borrowers’ collateral — flip for details">
+	<div class="meta"><span class="src" style="color:#fbbf24">COINDESK</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T14:00:00.000Z">10:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Better and Coinbase’s bitcoin-backed mortgages can reuse borrowers’ collateral</h3>
+	<p class="snippet">Better Mortgage can reuse the pledged bitcoin, and borrowers cannot recover their crypto until the main conventional mortgage is fully repaid or refinanced.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://cdn.sanity.io/images/s3y3vcno/production/a02993e4b0be694cb7d7b4718d4e0922311ed0c6-5472x3648.jpg?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://cdn.sanity.io/images/s3y3vcno/production/a02993e4b0be694cb7d7b4718d4e0922311ed0c6-5472x3648.jpg?fm=jpg&amp;w=240&amp;h=135&amp;crop=focalpoint&amp;fit=clip 240w, https://cdn.sanity.io/images/s3y3vcno/production/a02993e4b0be694cb7d7b4718d4e0922311ed0c6-5472x3648.jpg?fm=jpg&amp;w=340&amp;h=191&amp;crop=focalpoint&amp;fit=clip 340w, https://cdn.sanity.io/images/s3y3vcno/production/a02993e4b0be694cb7d7b4718d4e0922311ed0c6-5472x3648.jpg?fm=jpg&amp;w=510&amp;h=287&amp;crop=focalpoint&amp;fit=clip 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Better and Coinbase’s bitcoin-backed mortgages can reuse borrowers’ collateral</h3>
+	<p class="about">Better Mortgage can reuse the pledged bitcoin, and borrowers cannot recover their crypto until the main conventional mortgage is fully repaid or refinanced.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.coindesk.com/business/2026/09/06/better-and-coinbase-s-bitcoin-backed-mortgages-can-reuse-borrowers-collateral" target="_blank" rel="noopener noreferrer">CoinDesk &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
 <article class="card compact h2 has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:3415f0da-a9f8-11f1-bf5c-9b447c8e7aa4" data-srckey="france 24" data-cat="world" data-sent="0" data-ts="1788702762000" data-slug="africa egyptian presenter sarah khalifa sentenced death drug case">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Egyptian TV presenter Sarah Khalifa sentenced to death in drug case — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(279 55% 72%)">FRANCE 24</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T13:52:42.000Z">9:52 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
 	<h3 class="title">Egyptian TV presenter Sarah Khalifa sentenced to death in drug case</h3>
-	<p class="snippet">Sarah Khalifa, a well-known Egyptian TV presenter, has been sentenced to death for her involvement in a drug ring, state media reported over the weekend. Eleven others were also convicted in the case and handed a death sentence. Khalifa is best known for her program “Mission Impossible”.</p>
+	<p class="snippet">Sarah Khalifa, a well-known Egyptian TV presenter, has been sentenced to death for her involvement in a drug ring, state media reported over the weekend. Eleven others were also convicted in the case and handed a death sentence. Khalifa is best known for her program “Mission Impossible”. An Egyptian court sentenced a well-known television presenter and 11 others to death for manufacturing and trafficking narcotics in a sprawling drugs case, official media reported on Saturday. The presenter, Sarah Khalifa , 39, is best known for her program “Mission Impossible”, which dealt with issues concerning security and crime. The state-linked Al-Ahram newspaper said a Cairo court sentenced “Khalifa and 11 other defendants to death by hanging on charges of forming an organised criminal gang…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://s.france24.com/media/display/bc9ddf20-a9f4-11f1-8ad4-005056a90284/w:1024/p:16x9/Capture-d-%C3%A9cran-2026-09-06-144741.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Egyptian TV presenter Sarah Khalifa sentenced to death in drug case</h3>
-	<p class="about">Sarah Khalifa, a well-known Egyptian TV presenter, has been sentenced to death for her involvement in a drug ring, state media reported over the weekend. Eleven others were also convicted in the case and handed a death sentence. Khalifa is best known for her program “Mission Impossible”.</p>
+	<p class="about">Sarah Khalifa, a well-known Egyptian TV presenter, has been sentenced to death for her involvement in a drug ring, state media reported over the weekend. Eleven others were also convicted in the case and handed a death sentence. Khalifa is best known for her program “Mission Impossible”. An Egyptian court sentenced a well-known television presenter and 11 others to death for manufacturing and trafficking narcotics in a sprawling drugs case, official media reported on Saturday. The presenter, Sarah Khalifa , 39, is best known for her program “Mission Impossible”, which dealt with issues concerning security and crime. The state-linked Al-Ahram newspaper said a Cairo court sentenced “Khalifa and 11 other defendants to death by hanging on charges of forming an organised criminal gang…</p>
 	
 	
 	<div class="actions">
@@ -1420,6 +1519,31 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact h2 has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:108359137" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1788701761000" data-slug="parents who are really good handling tantrums things psychologist html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Parents who are really good at handling tantrums do 5 things—their kids become more emotionally intelligent, says psychologist — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T13:36:01.000Z">9:36 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Parents who are really good at handling tantrums do 5 things—their kids become more emotionally intelligent, says psychologist</h3>
+	<p class="snippet">&quot;These kids become more emotionally intelligent, which helps them weather setbacks, embrace independence and try new things,&quot; says Juli Fraga.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://image.cnbcfm.com/api/v1/image/108359193-1788550868025-gettyimages-2247827936-dsc07223.jpeg?v=1788551009&amp;w=1080&amp;h=608" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://image.cnbcfm.com/api/v1/image/108359193-1788550868025-gettyimages-2247827936-dsc07223.jpeg?v=1788551009&amp;w=600&amp;h=338 600w, https://image.cnbcfm.com/api/v1/image/108359193-1788550868025-gettyimages-2247827936-dsc07223.jpeg?v=1788551009&amp;w=1080&amp;h=608 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Parents who are really good at handling tantrums do 5 things—their kids become more emotionally intelligent, says psychologist</h3>
+	<p class="about">&quot;These kids become more emotionally intelligent, which helps them weather setbacks, embrace independence and try new things,&quot; says Juli Fraga.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.cnbc.com/2026/09/06/parents-who-are-really-good-at-handling-tantrums-do-things-psychologist.html" target="_blank" rel="noopener noreferrer">CNBC &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
 <article class="card compact w2 has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/codewithnuh/foundations-of-system-design-learn-it-the-way-i-wish-someone-taught-me-4lg" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788701718000" data-slug="codewithnuh foundations system design learn the way wish someone taught 4lg">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Foundations of System Design: Learn It the Way I Wish Someone Taught Me — flip for details">
@@ -1445,14 +1569,14 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49808319" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788701704683" data-slug="college football story heisman trophy campaign trinidad chambliss kewan lacy">
+<article class="card compact h2 has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49808319" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788701704683" data-slug="college football story heisman trophy campaign trinidad chambliss kewan lacy">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="From Times Square to the Sphere: The new versions of Heisman campaigns — flip for details">
 	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T13:35:04.683Z">9:35 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
 	<h3 class="title">From Times Square to the Sphere: The new versions of Heisman campaigns</h3>
 	<p class="snippet">Ole Miss is trying some new places and tried-and-true plans to promote it&#39;s stars.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0903%2Fr1710683_1296x729_16-9.jpg&amp;w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0903%2Fr1710683_1296x729_16-9.jpg&amp;w=600 600w, https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0903%2Fr1710683_1296x729_16-9.jpg&amp;w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">From Times Square to the Sphere: The new versions of Heisman campaigns</h3>
@@ -1520,14 +1644,14 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49795224" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788701704668" data-slug="college football story ole miss pete golding lane kiffin shadow">
+<article class="card compact w2 has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49795224" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788701704668" data-slug="college football story ole miss pete golding lane kiffin shadow">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Can Pete Golding get Ole Miss out from Lane Kiffin&#39;s shadow? — flip for details">
 	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T13:35:04.668Z">9:35 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
 	<h3 class="title">Can Pete Golding get Ole Miss out from Lane Kiffin&#39;s shadow?</h3>
 	<p class="snippet">With two playoff wins under his belt, Pete Golding is officially ready to kick off a new era at Ole Miss.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0901%2Fr1710082_1296x729_16-9.jpg&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0901%2Fr1710082_1296x729_16-9.jpg&amp;w=240 240w, https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0901%2Fr1710082_1296x729_16-9.jpg&amp;w=340 340w, https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0901%2Fr1710082_1296x729_16-9.jpg&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Can Pete Golding get Ole Miss out from Lane Kiffin&#39;s shadow?</h3>
@@ -1545,14 +1669,14 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49842819" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788701704622" data-slug="soccer story cavan sullivan freddy adu mls record philadelphia union">
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49842819" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788701704622" data-slug="soccer story cavan sullivan freddy adu mls record philadelphia union">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Cavan Sullivan, 16, breaks Freddy Adu&#39;s MLS mark — flip for details">
 	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T13:35:04.622Z">9:35 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
 	<h3 class="title">Cavan Sullivan, 16, breaks Freddy Adu&#39;s MLS mark</h3>
 	<p class="snippet">Philadelphia Union teenage star Cavan Sullivan scored in a third successive MLS game and in the process broke a record set by one-time U.S. soccer prodigy Freddy Adu.</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0906%2Fr1712111_1296x729_16-9.jpg&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0906%2Fr1712111_1296x729_16-9.jpg&amp;w=240 240w, https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0906%2Fr1712111_1296x729_16-9.jpg&amp;w=340 340w, https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0906%2Fr1712111_1296x729_16-9.jpg&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Cavan Sullivan, 16, breaks Freddy Adu&#39;s MLS mark</h3>
@@ -1650,13 +1774,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Vikes&#39; Smith agrees to deal, back for 15th season — flip for details">
 	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T13:35:04.148Z">9:35 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
 	<h3 class="title">Vikes&#39; Smith agrees to deal, back for 15th season</h3>
-	<p class="snippet">Vikings safety Harrison Smith is returning for a 15th season, with sources telling NFL Network he reached a one-year deal worth $12.25 million.</p>
+	<p class="snippet">Solak picks X factors for all 32 NFL teams: Which players could sway the 2026 season? What&#39;s the Patriots&#39; plan if RB TreVeyon Henderson is out for Week 1? Mike Clay&#39;s Playbook, Part 3: Your draft is over ... now what? Guide to the NFL&#39;s rookie class: Who will win OROY, DROY? When will first-year QBs start? Solak picks X factors for all 32 NFL teams: Which players could sway the 2026 season? EAGAN, Minn. -- After months of contemplating retirement, safety Harrison Smith has agreed to return to the Minnesota Vikings for a 15th season, the team announced Saturday. Smith will sign a one-year contract worth $12.25 million, with a maximum value of $16.25 million, according to NFL Network&#39;s Ian Rapoport and Mike Garafolo. He is the second veteran defender to sign with the Vikings this week…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0125%2Fr1605472_1296x729_16-9.jpg&amp;w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0125%2Fr1605472_1296x729_16-9.jpg&amp;w=600 600w, https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0125%2Fr1605472_1296x729_16-9.jpg&amp;w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Vikes&#39; Smith agrees to deal, back for 15th season</h3>
-	<p class="about">Vikings safety Harrison Smith is returning for a 15th season, with sources telling NFL Network he reached a one-year deal worth $12.25 million.</p>
+	<p class="about">Solak picks X factors for all 32 NFL teams: Which players could sway the 2026 season? What&#39;s the Patriots&#39; plan if RB TreVeyon Henderson is out for Week 1? Mike Clay&#39;s Playbook, Part 3: Your draft is over ... now what? Guide to the NFL&#39;s rookie class: Who will win OROY, DROY? When will first-year QBs start? Solak picks X factors for all 32 NFL teams: Which players could sway the 2026 season? EAGAN, Minn. -- After months of contemplating retirement, safety Harrison Smith has agreed to return to the Minnesota Vikings for a 15th season, the team announced Saturday. Smith will sign a one-year contract worth $12.25 million, with a maximum value of $16.25 million, according to NFL Network&#39;s Ian Rapoport and Mike Garafolo. He is the second veteran defender to sign with the Vikings this week…</p>
 	
 	
 	<div class="actions">
@@ -1795,6 +1919,31 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact has-thumb" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.rollingstone.com/?p=1235621697" data-srckey="rolling stone music" data-cat="music" data-sent="0" data-ts="1788701400000" data-slug="music features the wilder blue luke combs seven bridges road">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="This Texas Country Band Is Trying to Turn a Viral Collab With Luke Combs Into Longevity — flip for details">
+	<div class="meta"><span class="src" style="color:#fb7185">ROLLING STONE MUSIC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T13:30:00.000Z">9:30 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f472b6">Music</span></div>
+	<h3 class="title">This Texas Country Band Is Trying to Turn a Viral Collab With Luke Combs Into Longevity</h3>
+	<p class="snippet">The Wilder Blue&#39;s version of &quot;Seven Bridges Road&quot; put them on the map. Their new album Cinco aims to keep them there</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.rollingstone.com/wp-content/uploads/2026/09/the_wilder_blue2-2.jpg?w=340#038;h=900&amp;#038;crop=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://www.rollingstone.com/wp-content/uploads/2026/09/the_wilder_blue2-2.jpg?w=240#038;h=900&amp;#038;crop=1 240w, https://www.rollingstone.com/wp-content/uploads/2026/09/the_wilder_blue2-2.jpg?w=340#038;h=900&amp;#038;crop=1 340w, https://www.rollingstone.com/wp-content/uploads/2026/09/the_wilder_blue2-2.jpg?w=510#038;h=900&amp;#038;crop=1 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">This Texas Country Band Is Trying to Turn a Viral Collab With Luke Combs Into Longevity</h3>
+	<p class="about">The Wilder Blue&#39;s version of &quot;Seven Bridges Road&quot; put them on the map. Their new album Cinco aims to keep them there</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.rollingstone.com/music/music-features/the-wilder-blue-luke-combs-seven-bridges-road-1235621697/" target="_blank" rel="noopener noreferrer">Rolling Stone Music &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
 <article class="card compact has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/mryadavgulshan/websockets-in-nodejs-real-time-apps-done-right-2ejg" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788701400000" data-slug="mryadavgulshan websockets nodejs real time apps done right 2ejg">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="WebSockets in Node.js: Real-Time Apps Done Right — flip for details">
@@ -1845,14 +1994,14 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact h2" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/janvi_bhardwaj/the-invisible-health-risk-in-every-ac-building-2c2e" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788700913000" data-slug="janvi bhardwaj the invisible health risk every building 2c2e">
+<article class="card compact h2 has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/janvi_bhardwaj/the-invisible-health-risk-in-every-ac-building-2c2e" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788700913000" data-slug="janvi bhardwaj the invisible health risk every building 2c2e">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The Invisible Health Risk in Every AC Building — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T13:21:53.000Z">9:21 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
 	<h3 class="title">The Invisible Health Risk in Every AC Building</h3>
 	<p class="snippet">I walk out of my AC lab six times a day. The lab sits at 18°C. Chennai outside is 37°C. That&#39;s a 19-degree jump and my body absorbs it in the ten seconds it takes to reach the parking lot. By evening, I&#39;m tired. Sometimes I have a headache. Sometimes my throat feels scratchy. I used to blame it on sleep, or the hostel food, or just &quot;college stress.&quot; Turns out the actual cause might be something nobody around me was tracking and something I never even thought of as a health risk. What&#39;s actually happening to your body Do this once, and you barely notice. Do it six times a day, five days a week, for months and it compounds into…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=1080,height=564,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6xx7qn57atgwxk72b64g.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=600,height=314,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6xx7qn57atgwxk72b64g.png 600w, https://media2.dev.to/dynamic/image/width=1080,height=564,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6xx7qn57atgwxk72b64g.png 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">The Invisible Health Risk in Every AC Building</h3>
@@ -4375,13 +4524,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Age Twisters is a genuinely charming co-op game hoping to bridge the generation divide - and one of my loveliest surprises at Gamescom — flip for details">
 	<div class="meta"><span class="src" style="color:#60a5fa">EUROGAMER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T09:09:56.000Z">5:09 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
 	<h3 class="title">Age Twisters is a genuinely charming co-op game hoping to bridge the generation divide - and one of my loveliest surprises at Gamescom</h3>
-	<p class="snippet">Despite the horrors its name might imply, Age Twisters it&#39;s a surprisingly nifty little thing. I had the opportunity to check it out at Gamescom, and to my delight its co-op adventuring provided a lovely tonic to the various violent delights the show provided elsewhere. Read more</p>
+	<p class="snippet">Despite the horrors its name might imply, Age Twisters it&#39;s a surprisingly nifty little thing. I had the opportunity to check it out at Gamescom, and to my delight its co-op adventuring provided a lovely tonic to the various violent delights the show provided elsewhere. Developed by Piccolo Studios in Barcelona, Age Twisters - if you&#39;re wondering where the name comes from - thrusts two players into the shoes of a grandfather or granddaughter after they receive a strange message from a long-gone mother / daughter. That message arrives with two bracelets enabling the titular age twisting: the ability for our pair to change to various points in their life - child, teenager, adult, elder - at will, each stage providing abilities that can help them solve puzzles. What follows is a witty…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://assetsio.gnwcdn.com/AgeTwisters_Screenshot_01.png?width=1080&amp;quality=85&amp;format=jpg&amp;auto=webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://assetsio.gnwcdn.com/AgeTwisters_Screenshot_01.png?width=600&amp;quality=85&amp;format=jpg&amp;auto=webp 600w, https://assetsio.gnwcdn.com/AgeTwisters_Screenshot_01.png?width=1080&amp;quality=85&amp;format=jpg&amp;auto=webp 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Age Twisters is a genuinely charming co-op game hoping to bridge the generation divide - and one of my loveliest surprises at Gamescom</h3>
-	<p class="about">Despite the horrors its name might imply, Age Twisters it&#39;s a surprisingly nifty little thing. I had the opportunity to check it out at Gamescom, and to my delight its co-op adventuring provided a lovely tonic to the various violent delights the show provided elsewhere. Read more</p>
+	<p class="about">Despite the horrors its name might imply, Age Twisters it&#39;s a surprisingly nifty little thing. I had the opportunity to check it out at Gamescom, and to my delight its co-op adventuring provided a lovely tonic to the various violent delights the show provided elsewhere. Developed by Piccolo Studios in Barcelona, Age Twisters - if you&#39;re wondering where the name comes from - thrusts two players into the shoes of a grandfather or granddaughter after they receive a strange message from a long-gone mother / daughter. That message arrives with two bracelets enabling the titular age twisting: the ability for our pair to change to various points in their life - child, teenager, adult, elder - at will, each stage providing abilities that can help them solve puzzles. What follows is a witty…</p>
 	
 	
 	<div class="actions">
@@ -4950,13 +5099,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘The engine’s on fire’: Qantas flight from Queenstown to Sydney reroutes after flames seen by passengers — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(243 55% 72%)">GUARDIAN WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T07:32:58.000Z">3:32 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
 	<h3 class="title">‘The engine’s on fire’: Qantas flight from Queenstown to Sydney reroutes after flames seen by passengers</h3>
-	<p class="snippet">Passenger recalls seeing cabin lights flicker and ‘a lot of screaming’ after suspected engine issue Get our breaking news email, free app or daily news podcast Liza-Jayne Loch was returning home from a business trip to New Zealand when her Qantas flight ran into trouble. The plane was climbing above the scenic South Island’s mountain ranges on Saturday afternoon, bound for Sydney, when a bang shook the cabin. Continue reading...</p>
+	<p class="snippet">Liza-Jayne Loch was returning home from a business trip to New Zealand when her Qantas flight ran into trouble. The plane was climbing above the scenic South Island’s mountain ranges on Saturday afternoon, bound for Sydney , when a bang shook the cabin. A passenger seated near the left wing soon shouted “the engine’s on fire”, Loch recalled, as the cabin lights began to flicker. Footage recorded by a passenger and shared with AAP shows flames appearing to issue from the plane’s left engine in a series of rapid bursts. “I was sitting on the left-hand side of the plane, and the flames were very, very visible,” Loch said. As the plane continued to gain altitude, Loch tried to comfort herself by recalling that modern jets could land safely on a single engine. Sign up for the Breaking News…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://i.guim.co.uk/img/media/3ca12bde3a74a85c19b5ac0c15a38e92cccb1f2e/465_0_2423_1939/master/2423.jpg?width=1080&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=97dd882d1c95c71d4bf51493a56943aa" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://i.guim.co.uk/img/media/3ca12bde3a74a85c19b5ac0c15a38e92cccb1f2e/465_0_2423_1939/master/2423.jpg?width=600&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=97dd882d1c95c71d4bf51493a56943aa 600w, https://i.guim.co.uk/img/media/3ca12bde3a74a85c19b5ac0c15a38e92cccb1f2e/465_0_2423_1939/master/2423.jpg?width=1080&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=97dd882d1c95c71d4bf51493a56943aa 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">‘The engine’s on fire’: Qantas flight from Queenstown to Sydney reroutes after flames seen by passengers</h3>
-	<p class="about">Passenger recalls seeing cabin lights flicker and ‘a lot of screaming’ after suspected engine issue Get our breaking news email, free app or daily news podcast Liza-Jayne Loch was returning home from a business trip to New Zealand when her Qantas flight ran into trouble. The plane was climbing above the scenic South Island’s mountain ranges on Saturday afternoon, bound for Sydney, when a bang shook the cabin. Continue reading...</p>
+	<p class="about">Liza-Jayne Loch was returning home from a business trip to New Zealand when her Qantas flight ran into trouble. The plane was climbing above the scenic South Island’s mountain ranges on Saturday afternoon, bound for Sydney , when a bang shook the cabin. A passenger seated near the left wing soon shouted “the engine’s on fire”, Loch recalled, as the cabin lights began to flicker. Footage recorded by a passenger and shared with AAP shows flames appearing to issue from the plane’s left engine in a series of rapid bursts. “I was sitting on the left-hand side of the plane, and the flames were very, very visible,” Loch said. As the plane continued to gain altitude, Loch tried to comfort herself by recalling that modern jets could land safely on a single engine. Sign up for the Breaking News…</p>
 	
 	
 	<div class="actions">
@@ -5698,7 +5847,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2817 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2811 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241003" data-cat="entertainment" data-sent="0" data-slug="interest rilakkuma heads mount midoriyama new ninja warrior crossover" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-05/rilakkuma-heads-to-mount-midoriyama-in-new-ninja-warrior-crossover/.241003" target="_blank" rel="noopener noreferrer">Rilakkuma Heads to Mount Midoriyama in New Ninja Warrior Crossover</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/netflix-haunting-bly-manor-perfect-binge-september-2026/" data-cat="entertainment" data-sent="0" data-slug="netflix haunting bly manor perfect binge september" hidden="until-found"><span class="ameta"><span class="src sc1">POLYGON</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.polygon.com/netflix-haunting-bly-manor-perfect-binge-september-2026/" target="_blank" rel="noopener noreferrer">Netflix&#39;s Near-Perfect 9-Part Gothic Thriller Is So Good You&#39;ll Finish in One Weekend</a></li>
@@ -5735,6 +5884,7 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:32236167-e9c8-4322-9dc6-33158eed3efd" data-cat="sports" data-sent="0" data-slug="college football news notre dame wisconsin prediction picks odds spread where watch live" hidden="until-found"><span class="ameta"><span class="src sc6">CBS SPORTS</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Sports</span></span></span><a class="atitle" href="https://www.cbssports.com/college-football/news/notre-dame-wisconsin-prediction-picks-odds-spread-where-to-watch-live/" target="_blank" rel="noopener noreferrer">Notre Dame vs. Wisconsin prediction, picks, odds, spread: Fighting Irish, Badgers clash from Lambeau Field</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cm274p8m88lo#2" data-cat="world" data-sent="0" data-slug="news articles cm274p8m88lo" hidden="until-found"><span class="ameta"><span class="src sc7">BBC WORLD</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.bbc.co.uk/news/articles/cm274p8m88lo" target="_blank" rel="noopener noreferrer">Aviation faces hotter, stormier skies – and passengers might have to accept more disruption</a></li>
 <li class="arow" data-count="1" data-id="rss:012138b0-a1bf-46b4-873b-588091923da0" data-cat="sports" data-sent="0" data-slug="betting news week nfl score predictions odds best bets picks today" hidden="until-found"><span class="ameta"><span class="src sc6">CBS SPORTS</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Sports</span></span></span><a class="atitle" href="https://www.cbssports.com/betting/news/2026-week-1-nfl-score-predictions-odds-best-bets-picks-today/" target="_blank" rel="noopener noreferrer">2026 Week 1 NFL score predictions, odds, best picks today: Expert reveals exact scores for every NFL game</a></li>
+<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/football/videos/c5y5qpnjgglo#8" data-cat="sports" data-sent="0" data-slug="sport football videos c5y5qpnjgglo" hidden="until-found"><span class="ameta"><span class="src sc15">BBC SPORT</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Sports</span></span></span><a class="atitle" href="https://www.bbc.co.uk/sport/football/videos/c5y5qpnjgglo" target="_blank" rel="noopener noreferrer">How Crystal Palace exposed Fulham&#39;s defence</a></li>
 <li class="arow" data-count="1" data-id="rss:0132301b-ce2a-420f-a643-c4ab158bdf6d" data-cat="games" data-sent="0" data-slug="articles left dead dev admits valve intentionally leaked its own trailer after the esrb blocked from" hidden="until-found"><span class="ameta"><span class="src sc7">IGN</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Games</span></span></span><a class="atitle" href="https://www.ign.com/articles/left-4-dead-2-dev-admits-valve-intentionally-leaked-its-own-trailer-after-the-esrb-blocked-it-from-release" target="_blank" rel="noopener noreferrer">Left 4 Dead 2 Dev Admits Valve Intentionally Leaked Its Own Trailer After the ESRB Blocked It from Release</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2246423/apple-itunes-still-exists-how-different-from-past/" data-cat="tech" data-sent="0" data-slug="apple itunes still exists how different from past" hidden="until-found"><span class="ameta"><span class="src sc12">ENGADGET</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Tech</span></span></span><a class="atitle" href="https://www.engadget.com/2246423/apple-itunes-still-exists-how-different-from-past/" target="_blank" rel="noopener noreferrer">Apple iTunes still exists, but not the way it used to</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.nytimes.com/2026/09/05/world/middleeast/huckabee-west-bank-settler-attacks.html" data-cat="world" data-sent="0" data-slug="world middleeast huckabee west bank settler attacks html" hidden="until-found"><span class="ameta"><span class="src sc10">NYT WORLD</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.nytimes.com/2026/09/05/world/middleeast/huckabee-west-bank-settler-attacks.html" target="_blank" rel="noopener noreferrer">Huckabee Condemns ‘Terrorist’ Attacks on Palestinians in West Bank Town Hall</a></li>
@@ -7063,6 +7213,7 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.nytimes.com/2026/09/01/world/middleeast/iran-study-abroad-sanctions.html" data-cat="world" data-sent="0" data-slug="world middleeast iran study abroad sanctions html" hidden="until-found"><span class="ameta"><span class="src sc10">NYT WORLD</span> &middot; Sep 1<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.nytimes.com/2026/09/01/world/middleeast/iran-study-abroad-sanctions.html" target="_blank" rel="noopener noreferrer">U.S. Sanctions on Iran Cut Off Students From Tests Needed for Study Abroad</a></li>
 <li class="arow" data-count="1" data-id="rss:88b4d711-9d27-4a8a-908b-0277d61cce89" data-cat="sports" data-sent="0" data-slug="college football news boom bust players lagway nico iamaleava" hidden="until-found"><span class="ameta"><span class="src sc6">CBS SPORTS</span> &middot; Sep 1<span class="acat"> &middot; <span class="cat">Sports</span></span></span><a class="atitle" href="https://www.cbssports.com/college-football/news/college-football-25-boom-bust-players-2026-dj-lagway-nico-iamaleava/" target="_blank" rel="noopener noreferrer">College football&#39;s 25 biggest boom-or-bust players for 2026: DJ Lagway, Nico Iamaleava eye breakouts</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241193" data-cat="entertainment" data-sent="0" data-slug="news kotaro koizumi dori sakurada guest star doraemon birthday special" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 1<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-09-01/kotaro-koizumi-dori-sakurada-guest-star-in-doraemon-birthday-special/.241193" target="_blank" rel="noopener noreferrer">Kotaro Koizumi, Dori Sakurada Guest Star in Doraemon Birthday Special</a></li>
+<li class="arow" data-count="1" data-id="rss:https://github.com/rhsev/fileregister" data-cat="tech" data-sent="0" data-slug="rhsev fileregister" hidden="until-found"><span class="ameta"><span class="src sc16">HACKER NEWS</span> &middot; Sep 1<span class="acat"> &middot; <span class="cat">Tech</span></span></span><a class="atitle" href="https://github.com/rhsev/fileregister" target="_blank" rel="noopener noreferrer">Fileregister: Tagging and reference layer for your files, in plain text</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/australia-news/2026/sep/02/nsw-government-to-resume-pill-testing-at-music-festivals-but-rejects-calls-for-wider-community-rollout" data-cat="world" data-sent="0" data-slug="australia news sep nsw government resume pill testing music festivals but rejects calls for wider community" hidden="until-found"><span class="ameta"><span class="src sc17">GUARDIAN WORLD</span> &middot; Sep 1<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.theguardian.com/australia-news/2026/sep/02/nsw-government-to-resume-pill-testing-at-music-festivals-but-rejects-calls-for-wider-community-rollout" target="_blank" rel="noopener noreferrer">NSW government to resume pill testing at music festivals but rejects calls for wider community rollout</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/australia-news/2026/sep/02/property-house-prices-drop-sydney-melbourne-brisbane-perth-adelaide-interest-rates" data-cat="world" data-sent="0" data-slug="australia news sep property house prices drop sydney melbourne brisbane perth adelaide interest rates" hidden="until-found"><span class="ameta"><span class="src sc17">GUARDIAN WORLD</span> &middot; Sep 1<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.theguardian.com/australia-news/2026/sep/02/property-house-prices-drop-sydney-melbourne-brisbane-perth-adelaide-interest-rates" target="_blank" rel="noopener noreferrer">House prices head for historic 10% drop as fourth interest rate hike looms</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/technology/2026/sep/02/macquarie-university-using-ai-chatbot-tutorials" data-cat="world" data-sent="0" data-slug="technology sep macquarie university using chatbot tutorials" hidden="until-found"><span class="ameta"><span class="src sc17">GUARDIAN WORLD</span> &middot; Sep 1<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.theguardian.com/technology/2026/sep/02/macquarie-university-using-ai-chatbot-tutorials" target="_blank" rel="noopener noreferrer">Macquarie University swaps in-person psychology classes with AI chatbot for two subjects</a></li>
@@ -8509,14 +8660,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788010158" data-cat="world" data-sent="0" data-slug="news israeli attacks across gaza kill two people hit hospital supply warehouse" hidden="until-found"><span class="ameta"><span class="src sc3">AL JAZEERA</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.aljazeera.com/news/2026/8/29/israeli-attacks-across-gaza-kill-two-people-hit-hospital-supply-warehouse?traffic_source=rss" target="_blank" rel="noopener noreferrer">Israeli attacks across Gaza kill two people, hit hospital supply warehouse</a></li>
 <li class="arow" data-count="1" data-id="rss:d1e3089e-a3bc-11f1-b84b-775873edb3f6" data-cat="world" data-sent="0" data-slug="iran war reaches month mark conflict cost per taxpayer" hidden="until-found"><span class="ameta"><span class="src sc30">FRANCE 24</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.france24.com/en/iran-war-reaches-6-month-mark-conflict-cost-1-100-per-us-taxpayer" target="_blank" rel="noopener noreferrer">Iran war reaches 6-month mark: Conflict cost $1,100 per US taxpayer</a></li>
 <li class="arow" data-count="1" data-id="rss:06dad5f0-a3bc-11f1-9539-775873edb3f6" data-cat="world" data-sent="0" data-slug="extremely risky operations rescuers work amid threat river banks bursting" hidden="until-found"><span class="ameta"><span class="src sc30">FRANCE 24</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.france24.com/en/extremely-risky-operations-rescuers-work-amid-threat-of-river-banks-bursting" target="_blank" rel="noopener noreferrer">‘Extremely risky operations’: Rescuers work amid threat of river banks bursting</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241108" data-cat="entertainment" data-sent="0" data-slug="news youka nitta publish more embracing love manga spring" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-08-29/youka-nitta-to-publish-more-embracing-love-manga-in-spring-2027/.241108" target="_blank" rel="noopener noreferrer">Youka Nitta to Publish More Embracing Love Manga in Spring 2027</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.theverge.com/entertainment/983448/welcome-to-night-vale-cocreator-joseph-fink-learned-storytelling-from-grim-fandango" data-cat="tech" data-sent="0" data-slug="entertainment welcome night vale cocreator joseph fink learned storytelling from grim fandango" hidden="until-found"><span class="ameta"><span class="src sc18">THE VERGE</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Tech</span></span></span><a class="atitle" href="https://www.theverge.com/entertainment/983448/welcome-to-night-vale-cocreator-joseph-fink-learned-storytelling-from-grim-fandango" target="_blank" rel="noopener noreferrer">Welcome to Night Vale cocreator Joseph Fink learned storytelling from Grim Fandango</a></li>
-<li class="arow" data-count="1" data-id="rss:6f2f748d-af22-40b1-846f-c0b56e85d9c3" data-cat="markets" data-sent="0" data-slug="business the next trillion dollar currency may not stablecoin might even have name yet" hidden="until-found"><span class="ameta"><span class="src sc29">COINDESK</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Markets</span></span></span><a class="atitle" href="https://www.coindesk.com/business/2026/08/29/the-next-trillion-dollar-currency-may-not-be-a-stablecoin-it-might-not-even-have-a-name-yet" target="_blank" rel="noopener noreferrer">The next trillion-dollar currency may not be a stablecoin — it might not even have a name yet</a></li>
-<li class="arow" data-count="1" data-id="rss:5fbf26f1-d14f-404e-a716-5f6d4c427497" data-cat="markets" data-sent="0" data-slug="business swift usd1 quadrillion network faces blockchain test" hidden="until-found"><span class="ameta"><span class="src sc29">COINDESK</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Markets</span></span></span><a class="atitle" href="https://www.coindesk.com/business/2026/08/29/swift-s-usd1-5-quadrillion-network-faces-a-blockchain-test" target="_blank" rel="noopener noreferrer">Swift’s $1.5 quadrillion network faces a blockchain test</a></li>
-<li class="arow" data-count="1" data-id="rss:4f2c69f7-7eda-4fa6-a7b7-891efbac870a" data-cat="markets" data-sent="0" data-slug="business ditch digital gold bpi study suggests everyday americans prefer control and micro investing" hidden="until-found"><span class="ameta"><span class="src sc29">COINDESK</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Markets</span></span></span><a class="atitle" href="https://www.coindesk.com/business/2026/08/28/ditch-digital-gold-bpi-study-suggests-everyday-americans-prefer-control-and-micro-investing" target="_blank" rel="noopener noreferrer">Ditching &#39;digital gold&#39;: BPI study suggests everyday Americans prefer control and micro-investing</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.engadget.com/2246969/openai-pull-its-models-from-cursor-due-to-spacexai-acquisition/" data-cat="tech" data-sent="0" data-slug="openai pull its models from cursor due spacexai acquisition" hidden="until-found"><span class="ameta"><span class="src sc12">ENGADGET</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Tech</span></span></span><a class="atitle" href="https://www.engadget.com/2246969/openai-pull-its-models-from-cursor-due-to-spacexai-acquisition/" target="_blank" rel="noopener noreferrer">OpenAI will pull its models from Cursor due to SpaceXAI acquisition</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.nytimes.com/2026/08/29/us/politics/teleprompter-trump-speech-kalshi-perez-bet.html" data-cat="politics" data-sent="0" data-slug="politics teleprompter trump speech kalshi perez bet html" hidden="until-found"><span class="ameta"><span class="src sc25">NYT POLITICS</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Politics</span></span></span><a class="atitle" href="https://www.nytimes.com/2026/08/29/us/politics/teleprompter-trump-speech-kalshi-perez-bet.html" target="_blank" rel="noopener noreferrer">Teleprompter Operator Who Bet on Trump Speeches Is Ordered to Pay Fine</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.eurogamer.net/ea-motive-iron-man-leak-response-tweet" data-cat="games" data-sent="0" data-slug="motive iron man leak response tweet" hidden="until-found"><span class="ameta"><span class="src sc8">EUROGAMER</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Games</span></span></span><a class="atitle" href="https://www.eurogamer.net/ea-motive-iron-man-leak-response-tweet" target="_blank" rel="noopener noreferrer">EA breaks its silence after Iron Man gameplay leak, admitting &quot;well, that didn&#39;t go as planned&quot;</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
