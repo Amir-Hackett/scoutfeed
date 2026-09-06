@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-06T22:29:18.062Z">
+<meta name="sf-version" content="2026-09-06T22:32:04.278Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -399,6 +399,13 @@ h1 .tld { color: var(--accent); }
 .following .trend-item::before { background: var(--following); }
 .following .trend-item:hover { border-color: rgba(129, 140, 248, 0.35); }
 .following .breaking-empty strong { color: var(--following); }
+/* Square art in the tile's leading flex slot — the slot BREAKING fills with a
+   rank badge. flex:none so a slow image cannot squeeze the headline, and an
+   explicit height so the tile does not reflow when the art finally lands. */
+.following .fthumb {
+	flex: none; width: 72px; height: 72px; border-radius: 10px;
+	object-fit: cover; background: var(--surface);
+}
 .trending .rule { flex: 1; height: 1px; background: var(--border); }
 /* Breaking / Trending as tiles with the river card's chrome — surface,
    border, radius, 12px gutter, coloured left rail — instead of the dashed
@@ -984,7 +991,7 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 6:29 PM &middot; 277 TODAY</p>
+	<p class="stats">UPDATED 6:32 PM &middot; 277 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
 	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">139</span><span class="sr-only"> — 139 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">244</span><span class="sr-only"> — 244 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">155</span><span class="sr-only"> — 155 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">363</span><span class="sr-only"> — 363 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">247</span><span class="sr-only"> — 247 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">269</span><span class="sr-only"> — 269 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">109</span><span class="sr-only"> — 109 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">299</span><span class="sr-only"> — 299 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">507</span><span class="sr-only"> — 507 stories</span></button><button class="chip" data-filter="humanitarian">Humanitarian<span class="chipn" aria-hidden="true">29</span><span class="sr-only"> — 29 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">324</span><span class="sr-only"> — 324 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">315</span><span class="sr-only"> — 315 stories</span></button>
@@ -1217,18 +1224,21 @@ footer a { color: var(--text-faint); }
 <h2><span class="date">FOLLOWING</span><span class="rel">EVERY STORY, HOWEVER RARE</span><span class="rule" aria-hidden="true"></span></h2>
 <ol class="trend-list">
 <li class="trend-item">
+	<img class="fthumb" src="https://img.msf.org/AssetLink/phwyo8w10sx32v2bnj258h14qgm66cuo.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 	<div class="trend-body">
 		<a class="trend-title" href="https://www.msf.org/water-security-and-public-health-changing-climate" target="_blank" rel="noopener noreferrer">Water security and public health in a changing climate</a>
 		<p class="trend-meta"><span class="src" style="color:hsl(320 55% 72%)">MSF</span><span class="sep" aria-hidden="true">&middot;</span>Sep 4</p>
 	</div>
 </li>
 <li class="trend-item">
+	<img class="fthumb" src="https://img.msf.org/AssetLink/e833kru5168j28q842c17kx0gfm7tbnc.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 	<div class="trend-body">
 		<a class="trend-title" href="https://www.msf.org/urgent-needs-persist-three-weeks-after-earthquake-colombia" target="_blank" rel="noopener noreferrer">Urgent needs persist three weeks after earthquake in Colombia</a>
 		<p class="trend-meta"><span class="src" style="color:hsl(320 55% 72%)">MSF</span><span class="sep" aria-hidden="true">&middot;</span>Sep 2</p>
 	</div>
 </li>
 <li class="trend-item">
+	<img class="fthumb" src="https://img.msf.org/AssetLink/e885v2l0vo377i5yq5833atll4cuv853.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 	<div class="trend-body">
 		<a class="trend-title" href="https://www.msf.org/sudan-bringing-water-and-healthcare-displaced-people-south-kordofan" target="_blank" rel="noopener noreferrer">Sudan: Bringing water and healthcare to displaced people in South Kordofan</a>
 		<p class="trend-meta"><span class="src" style="color:hsl(320 55% 72%)">MSF</span><span class="sep" aria-hidden="true">&middot;</span>Sep 1</p>
