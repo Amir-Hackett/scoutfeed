@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-06T15:05:58.045Z">
+<meta name="sf-version" content="2026-09-06T15:35:58.029Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -631,18 +631,20 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb923c"] { color: #9d3b00 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(140 55% 72%)"] { color: #1b6f41 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#7dd3fc"] { color: #00678c !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb7185"] { color: #a72041 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(336 55% 72%)"] { color: #894262 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
@@ -654,7 +656,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(273 55% 72%)"] { color: #724890 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
@@ -663,7 +664,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(207 55% 72%)"] { color: #396281 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(232 55% 72%)"] { color: #4f5795 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(89 55% 72%)"] { color: #49691b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
@@ -682,10 +682,10 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(324 55% 72%)"] { color: #88416d !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(52 55% 72%)"] { color: #695e19 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(283 55% 72%)"] { color: #79448d !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(71 55% 72%)"] { color: #5a6512 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(284 55% 72%)"] { color: #7a438c !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(145 55% 72%)"] { color: #1a6e47 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(143 55% 72%)"] { color: #1a6f44 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(154 55% 72%)"] { color: #186e51 !important; }
 .sc0 { color: hsl(269 55% 72%); }
 :root[data-theme="light"] .sc0 { color: #6e4992; }
 .sc1 { color: #f472b6; }
@@ -944,10 +944,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 11:05 AM &middot; 184 TODAY</p>
+	<p class="stats">UPDATED 11:35 AM &middot; 188 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">176</span><span class="sr-only"> — 176 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">242</span><span class="sr-only"> — 242 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">160</span><span class="sr-only"> — 160 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">384</span><span class="sr-only"> — 384 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">203</span><span class="sr-only"> — 203 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">254</span><span class="sr-only"> — 254 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">105</span><span class="sr-only"> — 105 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">310</span><span class="sr-only"> — 310 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">537</span><span class="sr-only"> — 537 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">326</span><span class="sr-only"> — 326 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">303</span><span class="sr-only"> — 303 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">176</span><span class="sr-only"> — 176 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">242</span><span class="sr-only"> — 242 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">160</span><span class="sr-only"> — 160 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">383</span><span class="sr-only"> — 383 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">204</span><span class="sr-only"> — 204 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">254</span><span class="sr-only"> — 254 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">105</span><span class="sr-only"> — 105 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">310</span><span class="sr-only"> — 310 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">536</span><span class="sr-only"> — 536 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">326</span><span class="sr-only"> — 326 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">304</span><span class="sr-only"> — 304 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -995,6 +995,31 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact rail-art" style="--rail:#34d399" data-count="1" data-id="rss:https://beza1e1.tuxen.de/ai_feelings.html" data-srckey="hacker news" data-cat="tech" data-sent="0" data-ts="1788706819000" data-slug="feelings html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="I Feel about AI — flip for details">
+	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T15:00:19.000Z">11:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">I Feel about AI</h3>
+	<p class="snippet">It&#39;s complicated</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">I Feel about AI</h3>
+	<p class="about">It&#39;s complicated</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://beza1e1.tuxen.de/ai_feelings.html" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
 <article class="card compact rail-art has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/yashksaini/dev-log-deleting-180k-lines-and-chasing-socket-leaks-a-week-in-the-oss-trenches-4f9b" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788702376000" data-slug="yashksaini dev log deleting 180k lines and chasing socket leaks week the oss trenches 4f9b">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Dev log 20: Deleting 180k lines and chasing socket leaks: A week in the OSS trenches — flip for details">
@@ -1011,31 +1036,6 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://dev.to/yashksaini/dev-log-deleting-180k-lines-and-chasing-socket-leaks-a-week-in-the-oss-trenches-4f9b" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-	</div>
-</div>
-</div>
-</article>
-<article class="card compact rail-art has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.theverge.com/tech/990436/fairphone-6-plus-review" data-srckey="the verge" data-cat="tech" data-sent="0" data-ts="1788699600000" data-slug="tech fairphone plus review">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The Fairphone 6 Plus is the midrange phone we desperately needed — flip for details">
-	<div class="meta"><span class="src" style="color:#c084fc">THE VERGE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T13:00:00.000Z">9:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
-	<h3 class="title">The Fairphone 6 Plus is the midrange phone we desperately needed</h3>
-	<p class="snippet">Repairability rules. The Fairphone 6 Plus feels like an extremely average midrange Android phone and I couldn&#39;t be more thrilled. The mission has always been admirable. Fairphone seeks out ethically sourced materials and offers a high degree of repairability for its devices. But the phones themselves required a lot of sacrifices, like putting up with underpowered processors and bad cameras, in order to embrace the sustainability mission. The latest generations of Fairphone have inched toward closing that gap, and the 6 Plus achieves two huge milestones: It feels very much like using a middling Android phone, and it&#39;s actually on…</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/268725_Fairphone_6_Plus_review_AJohnson_0001.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.723165084465%2C100%2C78.55366983107&amp;w=640" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/268725_Fairphone_6_Plus_review_AJohnson_0001.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.723165084465%2C100%2C78.55366983107&amp;w=320 320w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/268725_Fairphone_6_Plus_review_AJohnson_0001.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.723165084465%2C100%2C78.55366983107&amp;w=640 640w, https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/268725_Fairphone_6_Plus_review_AJohnson_0001.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.723165084465%2C100%2C78.55366983107&amp;w=960 960w" sizes="(max-width: 640px) 78vw, 320px">
-</div>
-<div class="face back" inert>
-	<h3 class="title">The Fairphone 6 Plus is the midrange phone we desperately needed</h3>
-	<p class="about">Repairability rules. The Fairphone 6 Plus feels like an extremely average midrange Android phone and I couldn&#39;t be more thrilled. The mission has always been admirable. Fairphone seeks out ethically sourced materials and offers a high degree of repairability for its devices. But the phones themselves required a lot of sacrifices, like putting up with underpowered processors and bad cameras, in order to embrace the sustainability mission. The latest generations of Fairphone have inched toward closing that gap, and the 6 Plus achieves two huge milestones: It feels very much like using a middling Android phone, and it&#39;s actually on…</p>
-	
-	
-	<div class="actions">
-	<a class="more" href="https://www.theverge.com/tech/990436/fairphone-6-plus-review" target="_blank" rel="noopener noreferrer">The Verge &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1225,43 +1225,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.reuters.com/world/least-25-killed-bus-crash-cape-verdes-fogo-island-agency-says-2026-09-06/" target="_blank" rel="noopener noreferrer">At least 25 killed in bus crash on Cape Verde&#39;s Fogo island, agency says</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(324 55% 72%)">REUTERS</span><span class="sep" aria-hidden="true">&middot;</span>"cape verde" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.nytimes.com/2026/09/04/world/asia/nepal-symbolic-cremation-floods.html" target="_blank" rel="noopener noreferrer">Families Turn to Symbolic Cremation After Nepal Floods</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(284 55% 72%)">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"cremation" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://apnews.com/article/iran-us-war-strait-hormuz-ship-attack-a52beec77dc90af3d040d0553837ad20" target="_blank" rel="noopener noreferrer">Iran claims a strike on a US ship in the Strait of Hormuz but the US denies it</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(52 55% 72%)">AP NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"strait of hormuz news" &middot; 10000+ searches</p>
+		<a class="trend-title" href="https://www.cope.es/religion/10-minutos-con-jesus/episodios/6-sep-2026-10-minutos-jesus-no-seas-tonto-20260904_3430816.html" target="_blank" rel="noopener noreferrer">6 SEP 2026 | 10 Minutes with Jesus: Don&#39;t Be Foolish</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(145 55% 72%)">COPE</span><span class="sep" aria-hidden="true">&middot;</span>"fermín lópez" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://ca.news.yahoo.com/police-confirm-three-month-old-112609369.html" target="_blank" rel="noopener noreferrer">Police confirm three-month-old girl died in woods</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(283 55% 72%)">YAHOO NEWS CANADA</span><span class="sep" aria-hidden="true">&middot;</span>"cheslyn hay" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.aljazeera.com/news/2026/9/6/netanyahu-boasts-about-bombing-qatar-says-gaza-funds-used-for-aid" target="_blank" rel="noopener noreferrer">Netanyahu boasts about bombing Qatar, says Gaza funds used for aid</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span>"benjamin netanyahu" &middot; 200+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sports.yahoo.com/articles/glen-davis-spending-time-prison-231059487.html" target="_blank" rel="noopener noreferrer">Glen Davis on spending time in prison while Kendrick Perkins, Tony Allen were free: &#39;They literally wanted to make me out to be an example&#39;</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(71 55% 72%)">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"glen davis" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://www.nytimes.com/athletic/live-blogs/us-open-2026-live-updates-day-8-scores-results/DfQw236tRPfZ/" target="_blank" rel="noopener noreferrer">U.S. Open 2026 live updates: Day 8 latest with Aryna Sabalenka, Carlos Alcaraz and Ben Shelton in action today</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(284 55% 72%)">THE NEW YORK TIMES</span><span class="sep" aria-hidden="true">&middot;</span>"taylor townsend" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.yahoo.com/entertainment/tv/articles/general-hospital-recap-anna-threatens-202715032.html" target="_blank" rel="noopener noreferrer">General Hospital recap: Anna Threatens Britt</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(152 55% 72%)">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"general hospital" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://timesofindia.indiatimes.com/sports/racing/top-stories/max-verstappen-rewrote-f1-history-at-monza-with-a-118-792-lap-and-set-the-fastest-average-speed-ever-now-he-starts-from-p5-at-italian-gp-2026/articleshow/133832708.cms" target="_blank" rel="noopener noreferrer">Max Verstappen rewrote F1 history at Monza with a 1:18.792 lap and set the fastest average speed ever, no</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(143 55% 72%)">THE TIMES OF INDIA</span><span class="sep" aria-hidden="true">&middot;</span>"max verstappen" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://shopping.yahoo.com/deals/breaking-news/article/labor-day-sales-2026-the-best-expert-approved-deals-from-amazon-apple-hoka-patagonia-and-more-up-to-75-off-204203986.html" target="_blank" rel="noopener noreferrer">Labor Day sales 2026: The best expert-approved deals from Amazon, Apple, Hoka, Patagonia and more up to 75% off</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(152 55% 72%)">YAHOO</span><span class="sep" aria-hidden="true">&middot;</span>"labor day sales 2026" &middot; 200+ searches</p>
+		<a class="trend-title" href="https://gocamels.com/news/2026/9/5/football-game-vs-western-carolina-postponed.aspx" target="_blank" rel="noopener noreferrer">Football game vs. Western Carolina postponed</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(154 55% 72%)">CAMPBELL UNIVERSITY</span><span class="sep" aria-hidden="true">&middot;</span>"western carolina football" &middot; 500+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1284,6 +1284,81 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://www.aljazeera.com/features/2026/9/6/israeli-flags-become-the-latest-weapon-of-settlers-in-west-bank-domination?traffic_source=rss" target="_blank" rel="noopener noreferrer">Al Jazeera &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.polygon.com/death-race-2000-free-tubi/" data-srckey="polygon" data-cat="entertainment" data-sent="0" data-ts="1788707714000" data-slug="death race free tubi">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="51 Years Later, Sylvester Stallone&#39;s Gritty Action Sci-Fi Classic Is Officially Free on Streaming — flip for details">
+	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T15:15:14.000Z">11:15 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">51 Years Later, Sylvester Stallone&#39;s Gritty Action Sci-Fi Classic Is Officially Free on Streaming</h3>
+	<p class="snippet">Celebrating 51 years of twisted metal</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/mcddera_ec029.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/mcddera_ec029.jpg?w=240 240w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/mcddera_ec029.jpg?w=340 340w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/mcddera_ec029.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">51 Years Later, Sylvester Stallone&#39;s Gritty Action Sci-Fi Classic Is Officially Free on Streaming</h3>
+	<p class="about">Celebrating 51 years of twisted metal</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.polygon.com/death-race-2000-free-tubi/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#34d399" data-count="1" data-id="rss:https://beza1e1.tuxen.de/ai_feelings.html" data-srckey="hacker news" data-cat="tech" data-sent="0" data-ts="1788706819000" data-slug="feelings html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="I Feel about AI — flip for details">
+	<div class="meta"><span class="src" style="color:#fb923c">HACKER NEWS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T15:00:19.000Z">11:00 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">I Feel about AI</h3>
+	<p class="snippet">It&#39;s complicated</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">I Feel about AI</h3>
+	<p class="about">It&#39;s complicated</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://beza1e1.tuxen.de/ai_feelings.html" target="_blank" rel="noopener noreferrer">Hacker News &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:a71f89be-56c7-4d77-b5e3-409f48449a7c" data-srckey="cbs sports" data-cat="sports" data-sent="0" data-ts="1788705927000">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="SportsLine Newsletter September 6, 2026 — flip for details">
+	<div class="meta"><span class="src" style="color:#3b82f6">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T14:45:27.000Z">10:45 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">SportsLine Newsletter September 6, 2026</h3>
+	<p class="snippet">Sunday Betting Guide: Fantasy football draft prep, college football Sunday picks and a look ahead to the NFL Kickoff Games</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://sportsfly.cbsistatic.com/fly-782/bundles/sportsmediacss/images/fantasy/default-article-image-large.png?width=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://sportsfly.cbsistatic.com/fly-782/bundles/sportsmediacss/images/fantasy/default-article-image-large.png?width=240 240w, https://sportsfly.cbsistatic.com/fly-782/bundles/sportsmediacss/images/fantasy/default-article-image-large.png?width=340 340w, https://sportsfly.cbsistatic.com/fly-782/bundles/sportsmediacss/images/fantasy/default-article-image-large.png?width=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">SportsLine Newsletter September 6, 2026</h3>
+	<p class="about">Sunday Betting Guide: Fantasy football draft prep, college football Sunday picks and a look ahead to the NFL Kickoff Games</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.cbssports.com/" target="_blank" rel="noopener noreferrer">CBS Sports &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1373,13 +1448,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="7 Huge Differences Between Christopher Nolan&#39;s &#39;Interstellar&#39; and Steven Spielberg&#39;s Original Script — flip for details">
 	<div class="meta"><span class="src" style="color:#f472b6">POLYGON</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T14:01:14.000Z">10:01 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
 	<h3 class="title">7 Huge Differences Between Christopher Nolan&#39;s &#39;Interstellar&#39; and Steven Spielberg&#39;s Original Script</h3>
-	<p class="snippet">Before Christopher Nolan directed the 2014 film Interstellar, it was going to be made by Steven Spielberg. It would have been much different.</p>
+	<p class="snippet">More than six weeks after its premiere, Christopher Nolan’s The Odyssey is still going strong at the box office. Recently, it surpassed Deadpool &amp; Wolverine to become the highest-grossing R-rated film of all time. As such, the celebration of Nolan’s entire filmography continues, including his 2014 sci-fi epic, Interstellar , which is about a team of astronauts traveling into deep space to find a new home for humans before the Earth becomes uninhabitable. But before Christopher Nolan signed on as the director of Interstellar , the director was none other than Steven Spielberg, who developed the story with Nolan’s screenwriter brother, Jonathan Nolan. Spielberg had been on the project for about a year when he moved his production company, DreamWorks, from Paramount to Disney, meaning he had…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/01/mcdinte_ec206.jpg?w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/01/mcdinte_ec206.jpg?w=600 600w, https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/01/mcdinte_ec206.jpg?w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">7 Huge Differences Between Christopher Nolan&#39;s &#39;Interstellar&#39; and Steven Spielberg&#39;s Original Script</h3>
-	<p class="about">Before Christopher Nolan directed the 2014 film Interstellar, it was going to be made by Steven Spielberg. It would have been much different.</p>
+	<p class="about">More than six weeks after its premiere, Christopher Nolan’s The Odyssey is still going strong at the box office. Recently, it surpassed Deadpool &amp; Wolverine to become the highest-grossing R-rated film of all time. As such, the celebration of Nolan’s entire filmography continues, including his 2014 sci-fi epic, Interstellar , which is about a team of astronauts traveling into deep space to find a new home for humans before the Earth becomes uninhabitable. But before Christopher Nolan signed on as the director of Interstellar , the director was none other than Steven Spielberg, who developed the story with Nolan’s screenwriter brother, Jonathan Nolan. Spielberg had been on the project for about a year when he moved his production company, DreamWorks, from Paramount to Disney, meaning he had…</p>
 	
 	
 	<div class="actions">
@@ -1493,6 +1568,31 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact h2 has-thumb" style="--rail:#a3e635" data-count="1" data-id="rss:679d7099-587a-4733-b6bc-3a50f1ddc9db" data-srckey="ign" data-cat="games" data-sent="0" data-ts="1788702325000" data-slug="articles exodus companions might not make the ending based player choices mass effect">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Exodus Ending and Character Fates Change Based on Your Choices — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">IGN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T13:45:25.000Z">9:45 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
+	<h3 class="title">Exodus Ending and Character Fates Change Based on Your Choices</h3>
+	<p class="snippet">Exodus is an upcoming sci-fi RPG that will account for the decisions you make in its story, and its narrative director explains how it&#39;ll all be reflected in the end.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://assets-prd.ignimgs.com/2026/09/03/02-4k-exodus-gameinformer-gauntlet-1788460988651.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Exodus Ending and Character Fates Change Based on Your Choices</h3>
+	<p class="about">Exodus is an upcoming sci-fi RPG that will account for the decisions you make in its story, and its narrative director explains how it&#39;ll all be reflected in the end.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.ign.com/articles/exodus-companions-might-not-make-the-ending-based-on-player-choices-mass-effect" target="_blank" rel="noopener noreferrer">IGN &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
 <article class="card compact w2 has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/iroha1203/the-goddess-of-plenty-smiles-at-the-summit-16-theorems-2-refutations-and-the-structure-of-52i9" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788702213000" data-slug="iroha1203 the goddess plenty smiles summit theorems refutations and structure 52i9">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="The Goddess of Plenty Smiles at the Summit: 16 Theorems, 2 Refutations, and the Structure of Software Design — flip for details">
@@ -1548,13 +1648,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Parents who are really good at handling tantrums do 5 things—their kids become more emotionally intelligent, says psychologist — flip for details">
 	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T13:36:01.000Z">9:36 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
 	<h3 class="title">Parents who are really good at handling tantrums do 5 things—their kids become more emotionally intelligent, says psychologist</h3>
-	<p class="snippet">&quot;These kids become more emotionally intelligent, which helps them weather setbacks, embrace independence and try new things,&quot; says Juli Fraga.</p>
+	<p class="snippet">Kids tend to express their emotions in actions. Toddlers scream and hit when they don&#39;t get their way. Middle schoolers stomp out of the room when they get angry. Teenagers roll their eyes and slam doors to express frustration or disapproval. As a psychologist and co-author of &quot;Parents Have Feelings, Too,&quot; I&#39;ve worked with hundreds of parents who feel overwhelmed when their child doesn&#39;t listen, misbehaves or throws tantrums for no discernible reason. Some of them try to negotiate with their children. Others become frustrated and lose their cool. Both approaches can leave parents feeling even more taxed and out of control. Misbehaving is a normal part of childhood. And it&#39;s a form of communication, like a set of clues to the scary feelings and worries behind the meltdowns. Parents who can…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://image.cnbcfm.com/api/v1/image/108359193-1788550868025-gettyimages-2247827936-dsc07223.jpeg?v=1788551009&amp;w=1080&amp;h=608" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://image.cnbcfm.com/api/v1/image/108359193-1788550868025-gettyimages-2247827936-dsc07223.jpeg?v=1788551009&amp;w=600&amp;h=338 600w, https://image.cnbcfm.com/api/v1/image/108359193-1788550868025-gettyimages-2247827936-dsc07223.jpeg?v=1788551009&amp;w=1080&amp;h=608 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Parents who are really good at handling tantrums do 5 things—their kids become more emotionally intelligent, says psychologist</h3>
-	<p class="about">&quot;These kids become more emotionally intelligent, which helps them weather setbacks, embrace independence and try new things,&quot; says Juli Fraga.</p>
+	<p class="about">Kids tend to express their emotions in actions. Toddlers scream and hit when they don&#39;t get their way. Middle schoolers stomp out of the room when they get angry. Teenagers roll their eyes and slam doors to express frustration or disapproval. As a psychologist and co-author of &quot;Parents Have Feelings, Too,&quot; I&#39;ve worked with hundreds of parents who feel overwhelmed when their child doesn&#39;t listen, misbehaves or throws tantrums for no discernible reason. Some of them try to negotiate with their children. Others become frustrated and lose their cool. Both approaches can leave parents feeling even more taxed and out of control. Misbehaving is a normal part of childhood. And it&#39;s a form of communication, like a set of clues to the scary feelings and worries behind the meltdowns. Parents who can…</p>
 	
 	
 	<div class="actions">
@@ -1598,13 +1698,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="From Times Square to the Sphere: The new versions of Heisman campaigns — flip for details">
 	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T13:35:04.683Z">9:35 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
 	<h3 class="title">From Times Square to the Sphere: The new versions of Heisman campaigns</h3>
-	<p class="snippet">Ole Miss is trying some new places and tried-and-true plans to promote it&#39;s stars.</p>
+	<p class="snippet">At Virginia Tech, what does success look like for James Franklin? Close Eli Lederman covers college football and recruiting for ESPN.com. He joined ESPN in 2024 after covering the University of Oklahoma for Sellout Crowd and the Tulsa World. NEW YORK -- Few people understand the unique marketing power of Times Square better than Robert Burck. Muscled, goateed and impressively tan, the 55-year-old has operated his business from the five-block sliver of Midtown Manhattan for the past 28 years, forging a global brand that has taken him to faraway places such as Australia, Japan and Daytona Beach, Florida. Leaning into the undeniable forces of one of the world&#39;s busiest pedestrian intersections and a famous pair of tighty whities, he pulls in more than $200,000 annually in tips alone, by his…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0903%2Fr1710683_1296x729_16-9.jpg&amp;w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0903%2Fr1710683_1296x729_16-9.jpg&amp;w=600 600w, https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0903%2Fr1710683_1296x729_16-9.jpg&amp;w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">From Times Square to the Sphere: The new versions of Heisman campaigns</h3>
-	<p class="about">Ole Miss is trying some new places and tried-and-true plans to promote it&#39;s stars.</p>
+	<p class="about">At Virginia Tech, what does success look like for James Franklin? Close Eli Lederman covers college football and recruiting for ESPN.com. He joined ESPN in 2024 after covering the University of Oklahoma for Sellout Crowd and the Tulsa World. NEW YORK -- Few people understand the unique marketing power of Times Square better than Robert Burck. Muscled, goateed and impressively tan, the 55-year-old has operated his business from the five-block sliver of Midtown Manhattan for the past 28 years, forging a global brand that has taken him to faraway places such as Australia, Japan and Daytona Beach, Florida. Leaning into the undeniable forces of one of the world&#39;s busiest pedestrian intersections and a famous pair of tighty whities, he pulls in more than $200,000 annually in tips alone, by his…</p>
 	
 	
 	<div class="actions">
@@ -1823,13 +1923,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Infantino sticking to reelection bid amid backlash — flip for details">
 	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T13:35:04.036Z">9:35 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
 	<h3 class="title">Infantino sticking to reelection bid amid backlash</h3>
-	<p class="snippet">FIFA president Gianni Infantino has reiterated his desire to stand for re-election despite the continuing controversy surrounding his leadership.</p>
+	<p class="snippet">Yamal already has 50 goals for Barcelona! When did Messi, Ronaldo, Mbappé, Haaland reach half-centuries? Premier League VAR review: Should Forest&#39;s goal have stood vs. Spurs? FIFA president Gianni Infantino has reiterated his desire to stand for reelection despite the continuing controversy surrounding his leadership. Infantino refused to answer questions about his future when asked by reporters at the Women&#39;s Under-20 World Cup in Poland on Saturday. He is under severe pressure to resign after trying to sell stakes in FIFA tournaments, including the World Cup, to private investors. European governing body UEFA has led calls for Infantino to step down, with further opposition coming from the confederations representing Asia and countries in North and Central America plus the Caribbean. A…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0906%2Fr1712226_1296x729_16-9.jpg&amp;w=1080" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0906%2Fr1712226_1296x729_16-9.jpg&amp;w=600 600w, https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0906%2Fr1712226_1296x729_16-9.jpg&amp;w=1080 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Infantino sticking to reelection bid amid backlash</h3>
-	<p class="about">FIFA president Gianni Infantino has reiterated his desire to stand for re-election despite the continuing controversy surrounding his leadership.</p>
+	<p class="about">Yamal already has 50 goals for Barcelona! When did Messi, Ronaldo, Mbappé, Haaland reach half-centuries? Premier League VAR review: Should Forest&#39;s goal have stood vs. Spurs? FIFA president Gianni Infantino has reiterated his desire to stand for reelection despite the continuing controversy surrounding his leadership. Infantino refused to answer questions about his future when asked by reporters at the Women&#39;s Under-20 World Cup in Poland on Saturday. He is under severe pressure to resign after trying to sell stakes in FIFA tournaments, including the World Cup, to private investors. European governing body UEFA has led calls for Infantino to step down, with further opposition coming from the confederations representing Asia and countries in North and Central America plus the Caribbean. A…</p>
 	
 	
 	<div class="actions">
@@ -2093,14 +2193,14 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/toyaab/wordpress-performance-the-most-common-causes-of-slow-websites-and-how-to-diagnose-them-1hf2" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788700862000" data-slug="toyaab wordpress performance the most common causes slow websites and how diagnose them 1hf2">
+<article class="card compact w2 has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/toyaab/wordpress-performance-the-most-common-causes-of-slow-websites-and-how-to-diagnose-them-1hf2" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788700862000" data-slug="toyaab wordpress performance the most common causes slow websites and how diagnose them 1hf2">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="WordPress Performance: The Most Common Causes of Slow Websites and How to Diagnose Them — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T13:21:02.000Z">9:21 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
 	<h3 class="title">WordPress Performance: The Most Common Causes of Slow Websites and How to Diagnose Them</h3>
 	<p class="snippet">A slow WordPress website is rarely caused by one thing. A page can be slow because the server takes too long to generate the HTML. It can be slowed down by an inefficient database query, an overloaded plugin, unoptimized images, excessive JavaScript, third-party services, poor caching, or simply too much work happening before the browser can render the page. That distinction matters. Installing a caching plugin may improve one website dramatically while making little difference to another. Compressing images may help a media-heavy site but do almost nothing for a page whose biggest problem is a slow database query. Performance…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fwiskm1i1hypjuxj79if4.jpeg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=240,height=125,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fwiskm1i1hypjuxj79if4.jpeg 240w, https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fwiskm1i1hypjuxj79if4.jpeg 340w, https://media2.dev.to/dynamic/image/width=510,height=266,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fwiskm1i1hypjuxj79if4.jpeg 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">WordPress Performance: The Most Common Causes of Slow Websites and How to Diagnose Them</h3>
@@ -2118,14 +2218,14 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/komestudio/building-komeverse-where-games-meet-technology-16b5" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788700834000" data-slug="komestudio building komeverse where games meet technology 16b5">
+<article class="card compact has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/komestudio/building-komeverse-where-games-meet-technology-16b5" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788700834000" data-slug="komestudio building komeverse where games meet technology 16b5">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Building KomeVerse: Where Games Meet Technology — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T13:20:34.000Z">9:20 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
 	<h3 class="title">Building KomeVerse: Where Games Meet Technology</h3>
 	<p class="snippet">Kome Studio is a small independent studio from Vietnam building something we hope can grow far beyond a single game: KomeVerse. KomeVerse is our long-term creative universe — a collection of games, characters, stories, and digital experiences connected by a shared identity. We don&#39;t want to build one game and move on to the next. We want to create characters that players remember, worlds that can evolve, and small games that can eventually become part of something much bigger. Our approach is simple: Build small → Learn fast → Connect the pieces → Grow the universe. Our first experiments focus on casual and accessible games. We&#39;re…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fwpsr9svd88xyyu10vtai.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=240,height=125,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fwpsr9svd88xyyu10vtai.png 240w, https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fwpsr9svd88xyyu10vtai.png 340w, https://media2.dev.to/dynamic/image/width=510,height=266,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fwpsr9svd88xyyu10vtai.png 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Building KomeVerse: Where Games Meet Technology</h3>
@@ -2143,14 +2243,14 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact w2" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/polycratia/a-withdrawal-is-a-queue-entry-before-it-is-a-transfer-4nkb" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788700820000" data-slug="polycratia withdrawal queue entry before transfer 4nkb">
+<article class="card compact w2 has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/polycratia/a-withdrawal-is-a-queue-entry-before-it-is-a-transfer-4nkb" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788700820000" data-slug="polycratia withdrawal queue entry before transfer 4nkb">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="A withdrawal is a queue entry before it is a transfer — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(140 55% 72%)">DEV.TO</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T13:20:20.000Z">9:20 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#5eead4">Dev</span></div>
 	<h3 class="title">A withdrawal is a queue entry before it is a transfer</h3>
 	<p class="snippet">Most withdrawal code collapses two different events into one function call: the user asking for money to leave, and the money actually leaving. Once those are the same operation, everything you might reasonably want to do in between — hold the request for review, batch it with others going to the same chain, re-price it when the fee market moves, cancel it because the destination has a typo in it — has nowhere to live. The fix is not a smarter send function. It is to make the request its own record with an explicit state machine, and to demote the broadcast to one transition inside it. The version I keep finding in custodial…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	
+	<img class="thumb" src="https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Ffw9w5kzky4gm3t4ebob1.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://media2.dev.to/dynamic/image/width=240,height=125,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Ffw9w5kzky4gm3t4ebob1.png 240w, https://media2.dev.to/dynamic/image/width=340,height=178,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Ffw9w5kzky4gm3t4ebob1.png 340w, https://media2.dev.to/dynamic/image/width=510,height=266,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Ffw9w5kzky4gm3t4ebob1.png 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">A withdrawal is a queue entry before it is a transfer</h3>
@@ -5871,7 +5971,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2810 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2806 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241003" data-cat="entertainment" data-sent="0" data-slug="interest rilakkuma heads mount midoriyama new ninja warrior crossover" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-05/rilakkuma-heads-to-mount-midoriyama-in-new-ninja-warrior-crossover/.241003" target="_blank" rel="noopener noreferrer">Rilakkuma Heads to Mount Midoriyama in New Ninja Warrior Crossover</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/netflix-haunting-bly-manor-perfect-binge-september-2026/" data-cat="entertainment" data-sent="0" data-slug="netflix haunting bly manor perfect binge september" hidden="until-found"><span class="ameta"><span class="src sc1">POLYGON</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.polygon.com/netflix-haunting-bly-manor-perfect-binge-september-2026/" target="_blank" rel="noopener noreferrer">Netflix&#39;s Near-Perfect 9-Part Gothic Thriller Is So Good You&#39;ll Finish in One Weekend</a></li>
@@ -8679,10 +8779,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000729581" data-cat="games" data-sent="0" data-slug="james pond creator calls rife remake disrespectful and soulless" hidden="until-found"><span class="ameta"><span class="src sc22">KOTAKU</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Games</span></span></span><a class="atitle" href="https://kotaku.com/james-pond-co-creator-calls-ai-rife-remake-disrespectful-and-soulless-2000729581" target="_blank" rel="noopener noreferrer">James Pond Co-Creator Calls AI-Rife Remake Disrespectful And Soulless</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.foxnews.com/politics/house-republican-aims-put-democrats-record-over-dsa-resolution-condemning-socialism" data-cat="politics" data-sent="0" data-slug="politics house republican aims put democrats record over dsa resolution condemning socialism" hidden="until-found"><span class="ameta"><span class="src sc21">FOX NEWS POLITICS</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Politics</span></span></span><a class="atitle" href="https://www.foxnews.com/politics/house-republican-aims-put-democrats-record-over-dsa-resolution-condemning-socialism" target="_blank" rel="noopener noreferrer">House Republican aims to put Democrats on the record over DSA with resolution condemning socialism</a></li>
 <li class="arow" data-count="1" data-id="rss:https://techcrunch.com/?p=3156771" data-cat="tech" data-sent="0" data-slug="were not doing bets year vijay pande betting small after running billion a16z" hidden="until-found"><span class="ameta"><span class="src sc25">TECHCRUNCH</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Tech</span></span></span><a class="atitle" href="https://techcrunch.com/2026/08/29/were-not-doing-30-bets-a-year-vijay-pande-on-betting-small-after-running-4-billion-at-a16z/" target="_blank" rel="noopener noreferrer">“We’re not doing 30 bets a year”: Vijay Pande on betting small after running $4 billion at a16z</a></li>
-<li class="arow" data-count="1" data-id="rss:US-EN-49763527" data-cat="sports" data-sent="0" data-slug="mlb story dodgers ohtani knee mound return uncertain" hidden="until-found"><span class="ameta"><span class="src sc9">ESPN</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Sports</span></span></span><a class="atitle" href="https://www.espn.com/mlb/story/_/id/49763527/dodgers-ohtani-knee-mound-mound-return-uncertain" target="_blank" rel="noopener noreferrer">Ohtani (knee) &#39;not 100%&#39;, mound return uncertain</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241105" data-cat="entertainment" data-sent="0" data-slug="news director scriptwriter izuru narushima dies" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-08-29/director-scriptwriter-izuru-narushima-dies-at-65/.241105" target="_blank" rel="noopener noreferrer">Director, Scriptwriter Izuru Narushima Dies at 65</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.nytimes.com/2026/08/29/world/asia/nepal-flood-rescue.html" data-cat="world" data-sent="0" data-slug="world asia nepal flood rescue html" hidden="until-found"><span class="ameta"><span class="src sc10">NYT WORLD</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.nytimes.com/2026/08/29/world/asia/nepal-flood-rescue.html" target="_blank" rel="noopener noreferrer">Search Continues for 2,400 Missing in Nepal Floods Amid ‘Immense’ Devastation</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.polygon.com/goodbye-lara-captures-what-makes-old-school-anime-so-special/" data-cat="entertainment" data-sent="0" data-slug="goodbye lara captures what makes old school anime special" hidden="until-found"><span class="ameta"><span class="src sc1">POLYGON</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.polygon.com/goodbye-lara-captures-what-makes-old-school-anime-so-special/" target="_blank" rel="noopener noreferrer">‘Frieren’ Meets ‘The Little Mermaid’ in Crunchyroll’s Near-Perfect 12-Part Fantasy Series</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
