@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-06T08:50:28.021Z">
+<meta name="sf-version" content="2026-09-06T09:10:46.846Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -631,11 +631,11 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(6 55% 72%)"] { color: #884943 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
@@ -682,10 +682,11 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(277 55% 72%)"] { color: #74468f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(81 55% 72%)"] { color: #506717 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(284 55% 72%)"] { color: #7a438c !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(9 55% 72%)"] { color: #864b41 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(335 55% 72%)"] { color: #894262 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(10 55% 72%)"] { color: #864b40 !important; }
 .sc0 { color: hsl(269 55% 72%); }
 :root[data-theme="light"] .sc0 { color: #6e4992; }
 .sc1 { color: #fb923c; }
@@ -944,10 +945,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 4:50 AM &middot; 6 TODAY</p>
+	<p class="stats">UPDATED 5:10 AM &middot; 8 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">219</span><span class="sr-only"> — 219 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">163</span><span class="sr-only"> — 163 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">393</span><span class="sr-only"> — 393 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">208</span><span class="sr-only"> — 208 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">259</span><span class="sr-only"> — 259 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">113</span><span class="sr-only"> — 113 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">308</span><span class="sr-only"> — 308 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">533</span><span class="sr-only"> — 533 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">334</span><span class="sr-only"> — 334 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">293</span><span class="sr-only"> — 293 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">177</span><span class="sr-only"> — 177 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">218</span><span class="sr-only"> — 218 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">163</span><span class="sr-only"> — 163 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">393</span><span class="sr-only"> — 393 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">208</span><span class="sr-only"> — 208 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">259</span><span class="sr-only"> — 259 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">113</span><span class="sr-only"> — 113 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">308</span><span class="sr-only"> — 308 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">535</span><span class="sr-only"> — 535 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">333</span><span class="sr-only"> — 333 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">293</span><span class="sr-only"> — 293 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1020,31 +1021,6 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
-<article class="card compact rail-art has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:108358020" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1788615188000" data-slug="data centers cost economy html">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Many truckers don&#39;t feel like the rest of America about AI data centers as business booms — flip for details">
-	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:33:08.000Z">9:33 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
-	<h3 class="title">Many truckers don&#39;t feel like the rest of America about AI data centers as business booms</h3>
-	<p class="snippet">Sprawling data center components from HVAC systems to tubing, wiring and semiconductors arrive primarily by truck, a boon for a business hit hard by trade wars.</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=640&amp;h=360" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=320&amp;h=180 320w, https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=640&amp;h=360 640w, https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=960&amp;h=540 960w" sizes="(max-width: 640px) 78vw, 320px">
-</div>
-<div class="face back" inert>
-	<h3 class="title">Many truckers don&#39;t feel like the rest of America about AI data centers as business booms</h3>
-	<p class="about">Sprawling data center components from HVAC systems to tubing, wiring and semiconductors arrive primarily by truck, a boon for a business hit hard by trade wars.</p>
-	
-	
-	<div class="actions">
-	<a class="more" href="https://www.cnbc.com/2026/09/05/ai-data-centers-cost-economy.html" target="_blank" rel="noopener noreferrer">CNBC &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-	</div>
-</div>
-</div>
-</article>
 <article class="card compact rail-art has-thumb" style="--rail:#5eead4" data-count="1" data-id="rss:https://dev.to/lluisestape/how-i-built-my-own-set-of-audio-plugins-with-juce-4i2b" data-srckey="dev.to" data-cat="dev" data-sent="0" data-ts="1788612707000" data-slug="lluisestape how built own set audio plugins with juce 4i2b">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="How I built my own set of audio plugins with JUCE — flip for details">
@@ -1061,6 +1037,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://dev.to/lluisestape/how-i-built-my-own-set-of-audio-plugins-with-juce-4i2b" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact rail-art has-thumb" style="--rail:#facc15" data-count="1" data-id="rss:108358020" data-srckey="cnbc" data-cat="markets" data-sent="0" data-ts="1788615188000" data-slug="data centers cost economy html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Many truckers don&#39;t feel like the rest of America about AI data centers as business booms — flip for details">
+	<div class="meta"><span class="src" style="color:#60a5fa">CNBC</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:33:08.000Z">9:33 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#facc15">Markets</span></div>
+	<h3 class="title">Many truckers don&#39;t feel like the rest of America about AI data centers as business booms</h3>
+	<p class="snippet">Sprawling data center components from HVAC systems to tubing, wiring and semiconductors arrive primarily by truck, a boon for a business hit hard by trade wars.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=640&amp;h=360" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=320&amp;h=180 320w, https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=640&amp;h=360 640w, https://image.cnbcfm.com/api/v1/image/108358029-1788378695959-gettyimages-2258003728-QTS_DATA_CENTER.jpeg?v=1788378710&amp;w=960&amp;h=540 960w" sizes="(max-width: 640px) 78vw, 320px">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Many truckers don&#39;t feel like the rest of America about AI data centers as business booms</h3>
+	<p class="about">Sprawling data center components from HVAC systems to tubing, wiring and semiconductors arrive primarily by truck, a boon for a business hit hard by trade wars.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.cnbc.com/2026/09/05/ai-data-centers-cost-economy.html" target="_blank" rel="noopener noreferrer">CNBC &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1225,8 +1226,8 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.ign.com/wikis/wardogs/WARDOGS_Closed_Beta_End_Time_Twitch_Drops" target="_blank" rel="noopener noreferrer">Closed Beta Schedule and Twitch Drops</a>
-		<p class="trend-meta"><span class="src" style="color:#f87171">IGN</span><span class="sep" aria-hidden="true">&middot;</span>"when does wardogs beta end" &middot; 100+ searches</p>
+		<a class="trend-title" href="https://games.gg/wardogs/guides/wardogs-closed-beta-playtest-end-date/" target="_blank" rel="noopener noreferrer">WARDOGS Closed Beta Playtest End Date &amp; How to Join</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(277 55% 72%)">GAMES.GG</span><span class="sep" aria-hidden="true">&middot;</span>"wardogs beta" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
@@ -1253,8 +1254,8 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.ocregister.com/2026/09/06/update-earthquake-measuring-3-2-shakes-area-near-compton-in-los-angeles-county-on-sept-6/" target="_blank" rel="noopener noreferrer">Update: Earthquake measuring 3.2 shakes area near Compton in Los Angeles County on Sept. 6</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(335 55% 72%)">ORANGE COUNTY REGISTER</span><span class="sep" aria-hidden="true">&middot;</span>"earthquake" &middot; 10000+ searches</p>
+		<a class="trend-title" href="https://www.dailybreeze.com/2026/09/06/update-earthquake-measuring-3-2-shakes-area-near-compton-in-los-angeles-county-on-sept-6/?mrfcid=202609066a9718ec5163c67bd72c0258" target="_blank" rel="noopener noreferrer">Update: Earthquake measuring 3.2 shakes area near Compton in Los Angeles County on Sept. 6</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(10 55% 72%)">DAILY BREEZE</span><span class="sep" aria-hidden="true">&middot;</span>"earthquake" &middot; 10000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
@@ -1284,6 +1285,56 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://www.aljazeera.com/video/newsfeed/2026/9/6/flames-burst-from-qantas-plane-engine-after-new-zealand-takeoff?traffic_source=rss" target="_blank" rel="noopener noreferrer">Al Jazeera &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#f87171" data-count="1" data-id="rss:https://www.dw.com/en/how-climate-change-and-food-insecurity-could-fuel-future-conflicts/a-78871431?maca=en-rss-en-world-4025-rdf" data-srckey="dw world" data-cat="world" data-sent="0" data-ts="1788680820000" data-slug="how climate change and food insecurity could fuel future conflicts">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="How climate change and food insecurity could fuel future conflicts — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(29 55% 72%)">DW WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T07:47:00.000Z">3:47 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">How climate change and food insecurity could fuel future conflicts</h3>
+	<p class="snippet">Climate change, conflict, and trade tensions are putting pressure on the global food system. New research suggests the biggest risk is not food shortages, but whether societies can peacefully adapt to change.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">How climate change and food insecurity could fuel future conflicts</h3>
+	<p class="about">Climate change, conflict, and trade tensions are putting pressure on the global food system. New research suggests the biggest risk is not food shortages, but whether societies can peacefully adapt to change.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.dw.com/en/how-climate-change-and-food-insecurity-could-fuel-future-conflicts/a-78871431?maca=en-rss-en-world-4025-rdf" target="_blank" rel="noopener noreferrer">DW World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact" style="--rail:#f87171" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788680558" data-srckey="al jazeera" data-cat="world" data-sent="0" data-ts="1788680708000" data-slug="video the numbers how you arrest people quietly">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="How do you arrest 50,000 people quietly? — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T07:45:08.000Z">3:45 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">How do you arrest 50,000 people quietly?</h3>
+	<p class="snippet">ICE agents arrested an average of one person every 54 seconds in July. AJLabs examines a record month for deportations.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">How do you arrest 50,000 people quietly?</h3>
+	<p class="about">ICE agents arrested an average of one person every 54 seconds in July. AJLabs examines a record month for deportations.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.aljazeera.com/video/by-the-numbers-3/2026/9/6/how-do-you-arrest-50000-people-quietly?traffic_source=rss" target="_blank" rel="noopener noreferrer">Al Jazeera &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -9901,7 +9952,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2650 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2648 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241376" data-cat="entertainment" data-sent="0" data-slug="interest toei animation confirms license for french dragon ball theme park" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-04/toei-animation-confirms-no-license-for-french-dragon-ball-theme-park/.241376" target="_blank" rel="noopener noreferrer">Toei Animation Confirms No License for French Dragon Ball Theme Park</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241422" data-cat="entertainment" data-sent="0" data-slug="news yowaki max reijo nanoni ratsuwan konyakusha sama kake notte shimatta anime reveals theme song" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 4<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-09-04/yowaki-max-reijo-nanoni-ratsuwan-konyakusha-sama-no-kake-ni-notte-shimatta-anime-reveals-theme-song-/.241422" target="_blank" rel="noopener noreferrer">&#39;Yowaki MAX Reijō nanoni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta&#39; Anime Reveals Theme Song Artist, October 4 Debut</a></li>
@@ -12551,8 +12602,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000729352" data-cat="games" data-sent="0" data-slug="pet dog gta throw poop" hidden="until-found"><span class="ameta"><span class="src sc14">KOTAKU</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Games</span></span></span><a class="atitle" href="https://kotaku.com/pet-dog-gta-6-throw-poop-2000729352" target="_blank" rel="noopener noreferrer">You Can Pet The Dog In GTA 6 And Also Throw Its Poop At NPCs</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/gta-6-netflix-charts/" data-cat="entertainment" data-sent="0" data-slug="gta netflix charts" hidden="until-found"><span class="ameta"><span class="src sc46">POLYGON</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.polygon.com/gta-6-netflix-charts/" target="_blank" rel="noopener noreferrer">Netflix&#39;s New 26-Minute GTA 6 Release Is Already the No. 1 Movie on Streaming</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241034" data-cat="entertainment" data-sent="0" data-slug="news oceanveil reveals september simulcast debut now that can control reality with mouse" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/news/2026-08-28/oceanveil-reveals-september-11-simulcast-debut-of-now-that-i-can-control-reality-with-a-mouse-/.241034" target="_blank" rel="noopener noreferrer">OceanVeil Reveals September 11 Simulcast Debut of Now That I Can Control Reality With A Mouse Cursor Anime; English Dub of Marika&#39;s Love Meter Malfunction</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.washingtonpost.com/national-security/2026/08/28/judge-rejects-trumps-latest-bid-challenge-hush-money-conviction/" data-cat="politics" data-sent="0" data-slug="national security judge rejects trumps latest bid challenge hush money conviction" hidden="until-found"><span class="ameta"><span class="src sc22">WASHINGTON POST POLITICS</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Politics</span></span></span><a class="atitle" href="https://www.washingtonpost.com/national-security/2026/08/28/judge-rejects-trumps-latest-bid-challenge-hush-money-conviction/" target="_blank" rel="noopener noreferrer">Judge rejects Trump’s latest bid to challenge hush money conviction</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.beckershospitalreview.com/?p=409206" data-cat="healthcare" data-sent="0" data-slug="finance ceos size site neutral pay amid tightening financial picture" hidden="until-found"><span class="ameta"><span class="src sc32">BECKER&#39;S HOSPITAL REVIEW</span> &middot; Aug 28<span class="acat"> &middot; <span class="cat">Healthcare</span></span></span><a class="atitle" href="https://www.beckershospitalreview.com/finance/ceos-size-up-site-neutral-pay-amid-tightening-financial-picture/" target="_blank" rel="noopener noreferrer">CEOs size up site-neutral pay amid tightening financial picture</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
