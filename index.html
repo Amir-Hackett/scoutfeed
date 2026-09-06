@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-06T18:45:28.159Z">
+<meta name="sf-version" content="2026-09-06T18:50:55.021Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -653,21 +653,22 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#a3e635"] { color: #367000 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb7185"] { color: #a72041 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#ef4444"] { color: #b60010 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fbbf24"] { color: #885000 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
@@ -680,7 +681,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(336 55% 72%)"] { color: #894262 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#a78bfa"] { color: #6545ad !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(243 55% 72%)"] { color: #58529b !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(273 55% 72%)"] { color: #724890 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(267 55% 72%)"] { color: #6d4a93 !important; }
@@ -704,8 +704,8 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(242 55% 72%)"] { color: #58529b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(236 55% 72%)"] { color: #525598 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(244 55% 72%)"] { color: #5a519b !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(294 55% 72%)"] { color: #813f88 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(319 55% 72%)"] { color: #874073 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(315 55% 72%)"] { color: #873f77 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(54 55% 72%)"] { color: #685f15 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(99 55% 72%)"] { color: #3e6c1f !important; }
@@ -967,10 +967,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 2:45 PM &middot; 236 TODAY</p>
+	<p class="stats">UPDATED 2:50 PM &middot; 240 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">178</span><span class="sr-only"> — 178 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">243</span><span class="sr-only"> — 243 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">158</span><span class="sr-only"> — 158 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">392</span><span class="sr-only"> — 392 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">208</span><span class="sr-only"> — 208 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">252</span><span class="sr-only"> — 252 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">305</span><span class="sr-only"> — 305 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">535</span><span class="sr-only"> — 535 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">324</span><span class="sr-only"> — 324 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">298</span><span class="sr-only"> — 298 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">179</span><span class="sr-only"> — 179 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">243</span><span class="sr-only"> — 243 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">156</span><span class="sr-only"> — 156 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">393</span><span class="sr-only"> — 393 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">207</span><span class="sr-only"> — 207 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">251</span><span class="sr-only"> — 251 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">107</span><span class="sr-only"> — 107 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">305</span><span class="sr-only"> — 305 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">537</span><span class="sr-only"> — 537 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">324</span><span class="sr-only"> — 324 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">298</span><span class="sr-only"> — 298 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1009,31 +1009,6 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://variety.com/2026/film/reviews/everest-the-other-side-review-1236852376/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-	</div>
-</div>
-</div>
-</article>
-<article class="card compact rail-art has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49829911" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788613727927" data-slug="tennis story feeling good return injury carlos alcaraz plans take more long breaks">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Feeling good, Alcaraz plans more in-season breaks — flip for details">
-	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-05T13:08:47.927Z">9:08 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
-	<h3 class="title">Feeling good, Alcaraz plans more in-season breaks</h3>
-	<p class="snippet">Feeling better than he expected after a four-month absence, Carlos Alcaraz is planning to take more breaks during the tennis season.</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0905%2Fr1711591_1296x729_16-9.jpg&amp;w=640" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0905%2Fr1711591_1296x729_16-9.jpg&amp;w=320 320w, https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0905%2Fr1711591_1296x729_16-9.jpg&amp;w=640 640w, https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0905%2Fr1711591_1296x729_16-9.jpg&amp;w=960 960w" sizes="(max-width: 640px) 78vw, 320px">
-</div>
-<div class="face back" inert>
-	<h3 class="title">Feeling good, Alcaraz plans more in-season breaks</h3>
-	<p class="about">Feeling better than he expected after a four-month absence, Carlos Alcaraz is planning to take more breaks during the tennis season.</p>
-	
-	
-	<div class="actions">
-	<a class="more" href="https://www.espn.com/tennis/story/_/id/49829911/feeling-good-return-injury-carlos-alcaraz-plans-take-more-long-breaks-tennis" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1084,6 +1059,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://dev.to/yashksaini/dev-log-deleting-180k-lines-and-chasing-socket-leaks-a-week-in-the-oss-trenches-4f9b" target="_blank" rel="noopener noreferrer">Dev.to &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact rail-art has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:788566b3-7b4e-4c20-8219-31486f6991c1" data-srckey="cbs sports" data-cat="sports" data-sent="0" data-ts="1788696549000" data-slug="college football news dabo swinney clemson future historic lsu loss">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Another year, another &#39;Dabo is done&#39; moment: Why Clemson&#39;s blowout loss to LSU feels like game over — flip for details">
+	<div class="meta"><span class="src" style="color:#3b82f6">CBS SPORTS</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T12:09:09.000Z">8:09 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Another year, another &#39;Dabo is done&#39; moment: Why Clemson&#39;s blowout loss to LSU feels like game over</h3>
+	<p class="snippet">Swinney&#39;s insistence on rehiring Chad Morris and bypassing transfer quarterbacks backfired immediately in Clemson&#39;s humiliating 51-10 loss to LSU</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://sportshub.cbsistatic.com/i/2026/09/06/0b005c15-c329-46ac-8833-82692b936884/daboswinneyclemson-1.jpg?width=640" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://sportshub.cbsistatic.com/i/2026/09/06/0b005c15-c329-46ac-8833-82692b936884/daboswinneyclemson-1.jpg?width=320 320w, https://sportshub.cbsistatic.com/i/2026/09/06/0b005c15-c329-46ac-8833-82692b936884/daboswinneyclemson-1.jpg?width=640 640w, https://sportshub.cbsistatic.com/i/2026/09/06/0b005c15-c329-46ac-8833-82692b936884/daboswinneyclemson-1.jpg?width=960 960w" sizes="(max-width: 640px) 78vw, 320px">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Another year, another &#39;Dabo is done&#39; moment: Why Clemson&#39;s blowout loss to LSU feels like game over</h3>
+	<p class="about">Swinney&#39;s insistence on rehiring Chad Morris and bypassing transfer quarterbacks backfired immediately in Clemson&#39;s humiliating 51-10 loss to LSU</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.cbssports.com/college-football/news/dabo-swinney-clemson-future-historic-lsu-loss/" target="_blank" rel="noopener noreferrer">CBS Sports &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1248,15 +1248,15 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.marca.com/tenis/us-open/tommy-paul-carlos-alcaraz/2026/09/06/04_0404_20260906_120-directo.html" target="_blank" rel="noopener noreferrer">Tommy Paul - Carlos Alcaraz live | US Open round of 16, live</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(236 55% 72%)">MARCA</span><span class="sep" aria-hidden="true">&middot;</span>"alcaraz" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://as.com/tenis/us_open/alcaraz-paul-hoy-en-directo-octavos-de-final-del-us-open-en-vivo-online-f202609-d/" target="_blank" rel="noopener noreferrer">Alcaraz - Paul, live today: US Open round of 16 live online</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(294 55% 72%)">DIARIO AS</span><span class="sep" aria-hidden="true">&middot;</span>"alcaraz" &middot; 2000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://wsvn.com/news/local/miami-dade/mishap-with-plane-forces-ground-stop-at-mia/" target="_blank" rel="noopener noreferrer">Mishap with plane forces ground stop at MIA</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(244 55% 72%)">WSVN</span><span class="sep" aria-hidden="true">&middot;</span>"miami airport" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.nbcmiami.com/news/local/video-appears-to-show-crashed-amazon-plane-on-runway-at-mia/3855448/" target="_blank" rel="noopener noreferrer">Video appears to show crashed Amazon plane on runway at MIA</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(319 55% 72%)">NBC 6 SOUTH FLORIDA</span><span class="sep" aria-hidden="true">&middot;</span>"miami airport" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
@@ -1316,18 +1316,43 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236853234" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788719945000" data-slug="film reviews agata the writer review mia wasikowska">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="‘Agata the Writer’ Review: Mia Wasikowska Plays an Author Adrift and Short of Ideas, in a Sly, Witty Film With Plenty — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T18:39:05.000Z">2:39 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">‘Agata the Writer’ Review: Mia Wasikowska Plays an Author Adrift and Short of Ideas, in a Sly, Witty Film With Plenty</h3>
+	<p class="snippet">As anyone who has made a great-author biopic (or even watched one, for that matter) can tell you, writing is among the hardest professions to make cinematic. The slow churn of ideas, the second-guessing and self-editing, and even those rare, exhilarating surges of creative flow are all part of a stubbornly interior, usually static process. […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/09/114295-AGATA_THE_WRITER_-_Actresses_Mia_Wasikowska_and_Mia_Morrissey.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/09/114295-AGATA_THE_WRITER_-_Actresses_Mia_Wasikowska_and_Mia_Morrissey.jpg?w=240 240w, https://variety.com/wp-content/uploads/2026/09/114295-AGATA_THE_WRITER_-_Actresses_Mia_Wasikowska_and_Mia_Morrissey.jpg?w=340 340w, https://variety.com/wp-content/uploads/2026/09/114295-AGATA_THE_WRITER_-_Actresses_Mia_Wasikowska_and_Mia_Morrissey.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">‘Agata the Writer’ Review: Mia Wasikowska Plays an Author Adrift and Short of Ideas, in a Sly, Witty Film With Plenty</h3>
+	<p class="about">As anyone who has made a great-author biopic (or even watched one, for that matter) can tell you, writing is among the hardest professions to make cinematic. The slow churn of ideas, the second-guessing and self-editing, and even those rare, exhilarating surges of creative flow are all part of a stubbornly interior, usually static process. […]</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://variety.com/2026/film/reviews/agata-the-writer-review-mia-wasikowska-1236853234/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
 <article class="card compact h2 has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/formula1/articles/c5y4k1v7gryo#1" data-srckey="bbc sport" data-cat="sports" data-sent="0" data-ts="1788718920000" data-slug="sport formula1 articles c5y4k1v7gryo">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Far too late for title fight priority - Hamilton — flip for details">
 	<div class="meta"><span class="src" style="color:#facc15">BBC SPORT</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T18:22:00.000Z">2:22 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
 	<h3 class="title">Far too late for title fight priority - Hamilton</h3>
-	<p class="snippet">Lewis Hamilton says it is &quot;far too late&quot; for Ferrari to give him priority over team-mate Charles Leclerc in the championship fight.</p>
+	<p class="snippet">Lewis Hamilton says it is &quot;far too late&quot; for Ferrari to give him priority over team-mate Charles Leclerc in the championship fight, following a disappointing weekend at their home Italian Grand Prix. The seven-time world champion, who started fourth and finished sixth, was pushed on to the grass by Leclerc on the opening lap, slipping him down to 10th, as the pair battled wheel-to-wheel at the exit of the first chicane. Leclerc then suffered a high-speed crash at the Parabolica shortly after to leave Hamilton as Ferrari&#39;s only hope of a top-three finish. Once the race restarted following the red-flag period caused by Leclerc&#39;s crash, Hamilton never fully rejoined the fight at the front, and with Mercedes securing a one-two finish at Monza, he has fallen further back in the championship…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/f67c/live/588bb050-aa19-11f1-bbe8-51444f709166.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/600/cpsprodpb/f67c/live/588bb050-aa19-11f1-bbe8-51444f709166.jpg 600w, https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/f67c/live/588bb050-aa19-11f1-bbe8-51444f709166.jpg 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Far too late for title fight priority - Hamilton</h3>
-	<p class="about">Lewis Hamilton says it is &quot;far too late&quot; for Ferrari to give him priority over team-mate Charles Leclerc in the championship fight.</p>
+	<p class="about">Lewis Hamilton says it is &quot;far too late&quot; for Ferrari to give him priority over team-mate Charles Leclerc in the championship fight, following a disappointing weekend at their home Italian Grand Prix. The seven-time world champion, who started fourth and finished sixth, was pushed on to the grass by Leclerc on the opening lap, slipping him down to 10th, as the pair battled wheel-to-wheel at the exit of the first chicane. Leclerc then suffered a high-speed crash at the Parabolica shortly after to leave Hamilton as Ferrari&#39;s only hope of a top-three finish. Once the race restarted following the red-flag period caused by Leclerc&#39;s crash, Hamilton never fully rejoined the fight at the front, and with Mercedes securing a one-two finish at Monza, he has fallen further back in the championship…</p>
 	
 	
 	<div class="actions">
@@ -1382,6 +1407,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://www.rollingstone.com/music/music-news/andy-williams-every-time-i-die-guitarist-wrestler-dead-obit-1235622341/" target="_blank" rel="noopener noreferrer">Rolling Stone Music &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788715585" data-srckey="al jazeera" data-cat="world" data-sent="0" data-ts="1788717373000" data-slug="sports arsenal come from behind beat chelsea and maintain perfect start">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Arsenal come from behind to beat Chelsea 2-1 and maintain perfect start — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T17:56:13.000Z">1:56 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Arsenal come from behind to beat Chelsea 2-1 and maintain perfect start</h3>
+	<p class="snippet">Gunners pass ⁠stiffest test so far in the defence of their Premier ⁠League title as they hit back after going behind.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.aljazeera.com/wp-content/uploads/2026/09/getty_6a9d99b9af-1788713401.jpg?resize=1920%2C1440" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Arsenal come from behind to beat Chelsea 2-1 and maintain perfect start</h3>
+	<p class="about">Gunners pass ⁠stiffest test so far in the defence of their Premier ⁠League title as they hit back after going behind.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.aljazeera.com/sports/2026/9/6/arsenal-come-from-behind-to-beat-chelsea-2-1-and-maintain-perfect-start?traffic_source=rss" target="_blank" rel="noopener noreferrer">Al Jazeera &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1491,6 +1541,31 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:0bdc4c90-aa11-11f1-bf15-fd184c2e2b2f" data-srckey="france 24" data-cat="world" data-sent="0" data-ts="1788715922000" data-slug="shows spotlight ready talk german far right celebrates victory">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="&quot;Ready to talk&quot;: German far-right celebrates victory — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(279 55% 72%)">FRANCE 24</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T17:32:02.000Z">1:32 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">&quot;Ready to talk&quot;: German far-right celebrates victory</h3>
+	<p class="snippet">“Everything is possible” is the election campaign slogan of the far-right Alternative for Germany, the leader in Saxony-Anhalt, where the polls have just closed. It talks of a seminal moment for the country. Ulrich Siegmund, who has been polling in pole position to become the state leader, knows he has history in his grasp.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://s.france24.com/media/display/9f9acea0-aa18-11f1-8daf-005056bf30b7/w:1024/p:16x9/Ulrich-Siegmund.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">&quot;Ready to talk&quot;: German far-right celebrates victory</h3>
+	<p class="about">“Everything is possible” is the election campaign slogan of the far-right Alternative for Germany, the leader in Saxony-Anhalt, where the polls have just closed. It talks of a seminal moment for the country. Ulrich Siegmund, who has been polling in pole position to become the state leader, knows he has history in his grasp.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.france24.com/en/tv-shows/spotlight/20260906-ready-to-talk-german-far-right-celebrates-victory" target="_blank" rel="noopener noreferrer">France 24 &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
 <article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236852435" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788715919000" data-slug="film box office spiderman brand new day sixth weekend">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Box Office: ‘Spider-Man: Brand New Day’ Remains No. 1 in Sixth Weekend, Nears ‘Avengers: Endgame’ All-Time Domestic Record — flip for details">
@@ -1532,6 +1607,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://www.polygon.com/backrooms-sequel-kane-parsons-director-report/" target="_blank" rel="noopener noreferrer">Polygon &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#a78bfa" data-count="1" data-id="rss:https://www.engadget.com/2247843/how-to-set-up-chatgpt-parental-controls/" data-srckey="engadget" data-cat="ai" data-sent="0" data-ts="1788715800000" data-slug="how set chatgpt parental controls">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="How to set up ChatGPT&#39;s parental controls to protect your teen — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(229 55% 72%)">ENGADGET</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T17:30:00.000Z">1:30 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a78bfa">AI</span></div>
+	<h3 class="title">How to set up ChatGPT&#39;s parental controls to protect your teen</h3>
+	<p class="snippet">The idea of your child using ChatGPT can be daunting, but OpenAI&#39;s new teen-focused tools provide granular controls over what they can and can&#39;t access.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.engadget.com/img/gallery/how-to-set-up-chatgpts-parental-controls-to-protect-your-teen/l-intro-1787767354.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">How to set up ChatGPT&#39;s parental controls to protect your teen</h3>
+	<p class="about">The idea of your child using ChatGPT can be daunting, but OpenAI&#39;s new teen-focused tools provide granular controls over what they can and can&#39;t access.</p>
+	<p class="why"><span class="whylabel">matched</span> <span class="whykey">OpenAI</span> <span class="whystrength" title="How strongly this matched your interest (decayed frequency: 2.0)">match</span></p>
+	
+	<div class="actions">
+	<a class="more" href="https://www.engadget.com/2247843/how-to-set-up-chatgpt-parental-controls/" target="_blank" rel="noopener noreferrer">Engadget &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1996,13 +2096,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Civilization 7’s Biggest Free Update Yet Will Finally Take It To The Atomic Age Over Two Years Later — flip for details">
 	<div class="meta"><span class="src" style="color:#a3e635">KOTAKU</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T16:05:17.000Z">12:05 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#a3e635">Games</span></div>
 	<h3 class="title">Civilization 7’s Biggest Free Update Yet Will Finally Take It To The Atomic Age Over Two Years Later</h3>
-	<p class="snippet">Arc of Tomorrow will arrive in 2027</p>
+	<p class="snippet">Following its developer panel at PAX West 2026, Firaxis Games revealed the free update that will bring the long-awaited Atomic Age to Civilization 7 . It’s called Arc of Tomorrow and will launch in 2017, roughly two years after the game first arrived. The developers are pitching it as the 4X strategy game’s biggest overhaul yet as it struggles to stay above the 50 percent positive rating threshold on Steam. “Our shared proximity to the recent past makes it a unique and fascinating period of history to explore with Civ ,” wrote creative director Ed Beach on Valve’s storefront. “There’s a compelling need to honor the uncertainty and fear present in that history, where proxy warfare became the new norm by which global conflict was conducted and the specter of nuclear war loomed, as it still…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://kotaku.com/app/uploads/2026/09/civy7-7.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Civilization 7’s Biggest Free Update Yet Will Finally Take It To The Atomic Age Over Two Years Later</h3>
-	<p class="about">Arc of Tomorrow will arrive in 2027</p>
+	<p class="about">Following its developer panel at PAX West 2026, Firaxis Games revealed the free update that will bring the long-awaited Atomic Age to Civilization 7 . It’s called Arc of Tomorrow and will launch in 2017, roughly two years after the game first arrived. The developers are pitching it as the 4X strategy game’s biggest overhaul yet as it struggles to stay above the 50 percent positive rating threshold on Steam. “Our shared proximity to the recent past makes it a unique and fascinating period of history to explore with Civ ,” wrote creative director Ed Beach on Valve’s storefront. “There’s a compelling need to honor the uncertainty and fear present in that history, where proxy warfare became the new norm by which global conflict was conducted and the specter of nuclear war loomed, as it still…</p>
 	
 	
 	<div class="actions">
@@ -2021,13 +2121,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Carrick &#39;disappointed&#39; that Man Utd could not see game out — flip for details">
 	<div class="meta"><span class="src" style="color:#facc15">BBC SPORT</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T16:02:19.000Z">12:02 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
 	<h3 class="title">Carrick &#39;disappointed&#39; that Man Utd could not see game out</h3>
-	<p class="snippet">Manchester United boss Michael Carrick says his side made decisions that made the game more difficult as Everton rescued a point with a stoppage-time equaliser at Hill Dickinson Stadium.</p>
+	<p class="snippet">Manchester United boss Michael Carrick says his side made decisions that made the game more difficult as Everton rescued a point with a stoppage-time equaliser at Hill Dickinson Stadium. Updates from your Sport topics will appear in My Sport and in a collection on the Sport homepage . Updates from your Sport topics will appear in My Sport and in a collection on the Sport homepage . Updates from your Sport topics will appear in My Sport and in a collection on the Sport homepage . Updates from your Sport topics will appear in My Sport and in a collection on the Sport homepage .</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/ed61/live/912fc2d0-aa09-11f1-aed2-8d6da8d75094.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/600/cpsprodpb/ed61/live/912fc2d0-aa09-11f1-aed2-8d6da8d75094.jpg 600w, https://ichef.bbci.co.uk/ace/standard/1080/cpsprodpb/ed61/live/912fc2d0-aa09-11f1-aed2-8d6da8d75094.jpg 1080w" sizes="(max-width: 640px) 92vw, min(50vw, 600px)">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Carrick &#39;disappointed&#39; that Man Utd could not see game out</h3>
-	<p class="about">Manchester United boss Michael Carrick says his side made decisions that made the game more difficult as Everton rescued a point with a stoppage-time equaliser at Hill Dickinson Stadium.</p>
+	<p class="about">Manchester United boss Michael Carrick says his side made decisions that made the game more difficult as Everton rescued a point with a stoppage-time equaliser at Hill Dickinson Stadium. Updates from your Sport topics will appear in My Sport and in a collection on the Sport homepage . Updates from your Sport topics will appear in My Sport and in a collection on the Sport homepage . Updates from your Sport topics will appear in My Sport and in a collection on the Sport homepage . Updates from your Sport topics will appear in My Sport and in a collection on the Sport homepage .</p>
 	
 	
 	<div class="actions">
@@ -3546,13 +3646,13 @@ footer a { color: var(--text-faint); }
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Persona 4 Revival Game&#39;s Videos Highlight Kanji, Yosuke, Chie, Yukiko — flip for details">
 	<div class="meta"><span class="src" style="color:hsl(269 55% 72%)">ANIME NEWS NETWORK</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T13:15:00.000Z">9:15 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
 	<h3 class="title">Persona 4 Revival Game&#39;s Videos Highlight Kanji, Yosuke, Chie, Yukiko</h3>
-	<p class="snippet">Game launches for PS5, Xbox X|S, Xbox PC with Xbox Game Pass, PC via Steam on February 18</p>
+	<p class="snippet">Discuss in the forum, contribute to the Encyclopedia, build your own MyAnime lists, and more. Atlus revealed new character videos for Persona 4 Revival , a remake of its original 2008 role-playing game, in July and August, and a new video for Kanji on Saturday. The videos below feature Kanji, Yosuke, Chie, and Yukiko respectively. Atlus revealed that Daman Mills will voice Kanji in the game. The remake will feature a new English voice cast. The company had streamed videos for the Protagonist and Rise in July. Atlus announced that the animation studio MAPPA will work on all the animated cutscenes in the game. The game will launch for PlayStation 5, Xbox Series X|S, Xbox PC with Xbox Game Pass, and PC via Steam on February 18, 2027. The game is available for pre-order now. The original…</p>
 	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
 	<img class="thumb" src="https://www.animenewsnetwork.com/thumbnails/crop600x315gK2/youtube/MrxM5g688SI.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
 </div>
 <div class="face back" inert>
 	<h3 class="title">Persona 4 Revival Game&#39;s Videos Highlight Kanji, Yosuke, Chie, Yukiko</h3>
-	<p class="about">Game launches for PS5, Xbox X|S, Xbox PC with Xbox Game Pass, PC via Steam on February 18</p>
+	<p class="about">Discuss in the forum, contribute to the Encyclopedia, build your own MyAnime lists, and more. Atlus revealed new character videos for Persona 4 Revival , a remake of its original 2008 role-playing game, in July and August, and a new video for Kanji on Saturday. The videos below feature Kanji, Yosuke, Chie, and Yukiko respectively. Atlus revealed that Daman Mills will voice Kanji in the game. The remake will feature a new English voice cast. The company had streamed videos for the Protagonist and Rise in July. Atlus announced that the animation studio MAPPA will work on all the animated cutscenes in the game. The game will launch for PlayStation 5, Xbox Series X|S, Xbox PC with Xbox Game Pass, and PC via Steam on February 18, 2027. The game is available for pre-order now. The original…</p>
 	
 	
 	<div class="actions">
@@ -7194,7 +7294,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2760 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2756 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241003" data-cat="entertainment" data-sent="0" data-slug="interest rilakkuma heads mount midoriyama new ninja warrior crossover" hidden="until-found"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-05/rilakkuma-heads-to-mount-midoriyama-in-new-ninja-warrior-crossover/.241003" target="_blank" rel="noopener noreferrer">Rilakkuma Heads to Mount Midoriyama in New Ninja Warrior Crossover</a></li>
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/netflix-haunting-bly-manor-perfect-binge-september-2026/" data-cat="entertainment" data-sent="0" data-slug="netflix haunting bly manor perfect binge september" hidden="until-found"><span class="ameta"><span class="src sc1">POLYGON</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.polygon.com/netflix-haunting-bly-manor-perfect-binge-september-2026/" target="_blank" rel="noopener noreferrer">Netflix&#39;s Near-Perfect 9-Part Gothic Thriller Is So Good You&#39;ll Finish in One Weekend</a></li>
@@ -9952,10 +10052,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.foxnews.com/politics/seneca-nation-leader-calls-trumps-lake-america-renaming-unpresidential-demands-reversal" data-cat="politics" data-sent="0" data-slug="politics seneca nation leader calls trumps lake america renaming unpresidential demands reversal" hidden="until-found"><span class="ameta"><span class="src sc21">FOX NEWS POLITICS</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Politics</span></span></span><a class="atitle" href="https://www.foxnews.com/politics/seneca-nation-leader-calls-trumps-lake-america-renaming-unpresidential-demands-reversal" target="_blank" rel="noopener noreferrer">Seneca Nation leader calls Trump&#39;s Lake America renaming &#39;unpresidential,&#39; demands reversal</a></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/wsbhcr" data-cat="dev" data-sent="0" data-slug="posts glm flash chinese hardware" hidden="until-found"><span class="ameta"><span class="src sc11">LOBSTERS</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Dev</span></span></span><a class="atitle" href="https://martinalderson.com/posts/glm-5-3-flash-chinese-hardware/" target="_blank" rel="noopener noreferrer">What GLM-5.3 Flash running on Chinese hardware actually means</a></li>
 <li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000729601" data-cat="entertainment" data-sent="0" data-slug="phil collins returns vice city with ominous song choice for jason and lucia" hidden="until-found"><span class="ameta"><span class="src sc22">KOTAKU</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://kotaku.com/phil-collins-returns-to-vice-city-with-an-ominous-song-choice-for-jason-and-lucia-2000729601" target="_blank" rel="noopener noreferrer">Phil Collins Returns To Vice City With An Ominous Song Choice For Jason And Lucia</a></li>
-<li class="arow" data-count="1" data-id="rss:https://www.polygon.com/petit-planet-gamescom-2026-preview/" data-cat="games" data-sent="0" data-slug="petit planet gamescom preview" hidden="until-found"><span class="ameta"><span class="src sc1">POLYGON</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Games</span></span></span><a class="atitle" href="https://www.polygon.com/petit-planet-gamescom-2026-preview/" target="_blank" rel="noopener noreferrer">Animal Crossing Gets Its First Serious Competition In Years</a></li>
-<li class="arow" data-count="1" data-id="rss:https://cointelegraph.com/news/polygon-discloses-security-flaws-fixed-in-recent-hard-forks" data-cat="markets" data-sent="0" data-slug="news polygon discloses security flaws fixed recent hard forks" hidden="until-found"><span class="ameta"><span class="src sc38">COINTELEGRAPH</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Markets</span></span></span><a class="atitle" href="https://cointelegraph.com/news/polygon-discloses-security-flaws-fixed-in-recent-hard-forks" target="_blank" rel="noopener noreferrer">Polygon discloses security flaws fixed in recent hard forks</a></li>
-<li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/flcppv" data-cat="dev" data-sent="0" data-slug="project news reactos released" hidden="until-found"><span class="ameta"><span class="src sc11">LOBSTERS</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Dev</span></span></span><a class="atitle" href="https://reactos.org/project-news/reactos-0416-released/" target="_blank" rel="noopener noreferrer">Introducing ReactOS 0.4.16</a></li>
-<li class="arow" data-count="1" data-id="rss:https://dev.to/psycho_gopher/-3ld7" data-cat="dev" data-sent="0" data-slug="psycho gopher 3ld7" hidden="until-found"><span class="ameta"><span class="src sc24">DEV.TO</span> &middot; Aug 29<span class="acat"> &middot; <span class="cat">Dev</span></span></span><a class="atitle" href="https://dev.to/psycho_gopher/-3ld7" target="_blank" rel="noopener noreferrer">[Boost]</a></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
