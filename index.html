@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-07T01:26:56.919Z">
+<meta name="sf-version" content="2026-09-07T02:11:56.947Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -684,6 +684,7 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
@@ -691,7 +692,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#a78bfa"] { color: #6545ad !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(287 55% 72%)"] { color: #7c428b !important; }
@@ -738,11 +738,11 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#818cf8"] { color: #4a4eb4 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(201 55% 72%)"] { color: #33647d !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(173 55% 72%)"] { color: #126c65 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(214 55% 72%)"] { color: #405f87 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(106 55% 72%)"] { color: #366d21 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(71 55% 72%)"] { color: #5a6512 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(333 55% 72%)"] { color: #894265 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(211 55% 72%)"] { color: #3d6085 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(238 55% 72%)"] { color: #54549a !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(289 55% 72%)"] { color: #7d418b !important; }
 .sc0 { color: hsl(269 55% 72%); }
 :root[data-theme="light"] .sc0 { color: #6e4992; }
 .sc1 { color: #f472b6; }
@@ -1007,10 +1007,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 9:26 PM &middot; 295 TODAY</p>
+	<p class="stats">UPDATED 10:11 PM &middot; 296 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">138</span><span class="sr-only"> — 138 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">245</span><span class="sr-only"> — 245 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">147</span><span class="sr-only"> — 147 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">378</span><span class="sr-only"> — 378 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">223</span><span class="sr-only"> — 223 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">270</span><span class="sr-only"> — 270 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">111</span><span class="sr-only"> — 111 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">297</span><span class="sr-only"> — 297 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">500</span><span class="sr-only"> — 500 stories</span></button><button class="chip" data-filter="humanitarian">Humanitarian<span class="chipn" aria-hidden="true">58</span><span class="sr-only"> — 58 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">320</span><span class="sr-only"> — 320 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">313</span><span class="sr-only"> — 313 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">138</span><span class="sr-only"> — 138 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">245</span><span class="sr-only"> — 245 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">147</span><span class="sr-only"> — 147 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">379</span><span class="sr-only"> — 379 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">223</span><span class="sr-only"> — 223 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">270</span><span class="sr-only"> — 270 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">111</span><span class="sr-only"> — 111 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">297</span><span class="sr-only"> — 297 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">499</span><span class="sr-only"> — 499 stories</span></button><button class="chip" data-filter="humanitarian">Humanitarian<span class="chipn" aria-hidden="true">58</span><span class="sr-only"> — 58 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">320</span><span class="sr-only"> — 320 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">313</span><span class="sr-only"> — 313 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1334,43 +1334,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.cagesideseats.com/rumor-round-up/473341/rumor-roundup-sept-2-2026-bronson-reed-return-new-level-plans-the-elite-aaa-nxt-doubleheader-wwe-eye-opener" target="_blank" rel="noopener noreferrer">Rumor Roundup (Sept. 2, 2026): Bronson Reed return, New Level plans, AAA/NXT doubleheader, more!</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(201 55% 72%)">CAGESIDE SEATS</span><span class="sep" aria-hidden="true">&middot;</span>"bronson reed" &middot; 1000+ searches</p>
+		<a class="trend-title" href="https://www.mlbtraderumors.com/2026/09/latest-on-nick-pivetta.html" target="_blank" rel="noopener noreferrer">Padres To Activate Nick Pivetta From 60-Day IL On Monday</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(287 55% 72%)">MLB TRADE RUMORS</span><span class="sep" aria-hidden="true">&middot;</span>"nationals - dodgers" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.sounderatheart.com/2026/09/reign-vs-wave-gamethread-2/" target="_blank" rel="noopener noreferrer">Reign vs. Wave: Gamethread</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(173 55% 72%)">SOUNDER AT HEART</span><span class="sep" aria-hidden="true">&middot;</span>"san diego wave vs seattle reign fc" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.wsj.com/arts-culture/television/marble-hall-murders-review-overlapping-mysteries-on-pbs-40af99f6" target="_blank" rel="noopener noreferrer">‘Marble Hall Murders’ Review: Overlapping Mysteries on PBS</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(214 55% 72%)">WSJ</span><span class="sep" aria-hidden="true">&middot;</span>"lesley manville" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://sports.yahoo.com/fantasy/article/fantasy-football-strategy-cheat-sheets-mock-drafts-rankings-204834810.html" target="_blank" rel="noopener noreferrer">2026 Fantasy Football Draft Kit: Strategy, cheat sheets, mock drafts, rankings — everything you need to win your league</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(71 55% 72%)">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"rookie of the year" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.techpowerup.com/352287/modders-get-gta-5-running-natively-on-the-original-nintendo-switch" target="_blank" rel="noopener noreferrer">Modders Get GTA 5 Running Natively on the Original Nintendo Switch</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(106 55% 72%)">TECHPOWERUP</span><span class="sep" aria-hidden="true">&middot;</span>"gta 5 nintendo switch" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://deadline.com/2026/09/telluride-surprise-movie-sparks-guessing-game-studio-buyer-1237069433/" target="_blank" rel="noopener noreferrer">Telluride&#39;s Surprise Movie Sparks Industry Guessing Game As Studio Buyer Emerges</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(288 55% 72%)">DEADLINE</span><span class="sep" aria-hidden="true">&middot;</span>"elizabeth holmes" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://sports.yahoo.com/fantasy/article/fantasy-football-waiver-wire-plenty-of-impact-talent-available-to-boost-college-lineups-going-into-week-2-192342047.html" target="_blank" rel="noopener noreferrer">Fantasy Football Waiver Wire: Plenty of impact talent available to boost college lineups going into Week 2</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(71 55% 72%)">YAHOO SPORTS</span><span class="sep" aria-hidden="true">&middot;</span>"tre richardson" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.wwe.com/videos/wwe-superstars-predict-oba-femi-vs-bron-breakker" target="_blank" rel="noopener noreferrer">WWE Superstars predict Oba Femi vs. Bron Breakker</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(333 55% 72%)">WWE</span><span class="sep" aria-hidden="true">&middot;</span>"oba femi" &middot; 2000+ searches</p>
+		<a class="trend-title" href="https://www.mlb.com/news/josh-beckett-inducted-into-marlins-legends-hall-of-fame" target="_blank" rel="noopener noreferrer">Postseason hero Beckett inducted into Marlins Legends Hall of Fame</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(238 55% 72%)">MLB.COM</span><span class="sep" aria-hidden="true">&middot;</span>"josh beckett" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.wmur.com/article/new-hampshire-weather-video-evening-9526/73623127" target="_blank" rel="noopener noreferrer">Video: Low chance of showers Sunday ahead of brighter skies for Labor Day</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(211 55% 72%)">WMUR</span><span class="sep" aria-hidden="true">&middot;</span>"labor day" &middot; 5000+ searches</p>
+		<a class="trend-title" href="https://fortune.com/article/what-is-kevin-oleary-rule-for-turning-68000-salary-into-millionaire-retirement/" target="_blank" rel="noopener noreferrer">Kevin O’Leary says if you earn $68,000 a year and follow this rule, you’ll retire a millionaire</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(289 55% 72%)">FORTUNE</span><span class="sep" aria-hidden="true">&middot;</span>"kevin o&#39;leary retirement savings rule" &middot; 1000+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1393,6 +1393,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://www.aljazeera.com/features/2026/9/6/israeli-flags-become-the-latest-weapon-of-settlers-in-west-bank-domination?traffic_source=rss" target="_blank" rel="noopener noreferrer">Al Jazeera &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236853584" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788743505000" data-slug="film news nathan fielder secret elizabeth holmes doc you can see everything a24 telluride">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Nathan Fielder Drops Weird Trailer for Secret Elizabeth Holmes Doc ‘You Can See Everything’ — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-07T01:11:45.000Z">9:11 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Nathan Fielder Drops Weird Trailer for Secret Elizabeth Holmes Doc ‘You Can See Everything’</h3>
+	<p class="snippet">For years, it’s been rumored that Nathan Fielder had been interviewing Theranos founder (and certified huckster) Elizabeth Holmes — including visiting her in prison — for a top-secret documentary. And on Sunday night, that documentary premiered at the Telluride Film Festival. Titled “You Can See Everything,” the film is billed as follows: Thirty-four days before […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/09/Screenshot-2026-09-06-at-7.57.52-PM.png?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/09/Screenshot-2026-09-06-at-7.57.52-PM.png?w=240 240w, https://variety.com/wp-content/uploads/2026/09/Screenshot-2026-09-06-at-7.57.52-PM.png?w=340 340w, https://variety.com/wp-content/uploads/2026/09/Screenshot-2026-09-06-at-7.57.52-PM.png?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Nathan Fielder Drops Weird Trailer for Secret Elizabeth Holmes Doc ‘You Can See Everything’</h3>
+	<p class="about">For years, it’s been rumored that Nathan Fielder had been interviewing Theranos founder (and certified huckster) Elizabeth Holmes — including visiting her in prison — for a top-secret documentary. And on Sunday night, that documentary premiered at the Telluride Film Festival. Titled “You Can See Everything,” the film is billed as follows: Thirty-four days before […]</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://variety.com/2026/film/news/nathan-fielder-secret-elizabeth-holmes-doc-you-can-see-everything-a24-telluride-1236853584/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -8755,7 +8780,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2701 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2700 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241003" data-cat="entertainment" data-sent="0" data-slug="interest rilakkuma heads mount midoriyama new ninja warrior crossover" hidden="until-found"><img class="athumb" src="https://www.animenewsnetwork.com/thumbnails/crop600x315gH9/cms/interest.3/241003/rilakkuma-sasuke.jpeg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-05/rilakkuma-heads-to-mount-midoriyama-in-new-ninja-warrior-crossover/.241003" target="_blank" rel="noopener noreferrer">Rilakkuma Heads to Mount Midoriyama in New Ninja Warrior Crossover</a></div></li>
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/netflix-haunting-bly-manor-perfect-binge-september-2026/" data-cat="entertainment" data-sent="0" data-slug="netflix haunting bly manor perfect binge september" hidden="until-found"><img class="athumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/07/victoria-pedretti-bly-manor.jpg?w=240" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc1">POLYGON</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.polygon.com/netflix-haunting-bly-manor-perfect-binge-september-2026/" target="_blank" rel="noopener noreferrer">Netflix&#39;s Near-Perfect 9-Part Gothic Thriller Is So Good You&#39;ll Finish in One Weekend</a></div></li>
@@ -11457,7 +11482,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/2026/aug/30/pacific-islands-forum-meeting-in-turmoil-after-several-leaders-pull-out-of-palau-summit" data-cat="world" data-sent="0" data-slug="world aug pacific islands forum meeting turmoil after several leaders pull out palau summit" hidden="until-found"><img class="athumb" src="https://i.guim.co.uk/img/media/f40f8cb802aeda03510d3ec8bdf678aeca81101c/393_0_4519_3615/master/4519.jpg?width=240&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=11add7064128e57bc4ec17319056e488" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc17">GUARDIAN WORLD</span> &middot; Aug 30<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.theguardian.com/world/2026/aug/30/pacific-islands-forum-meeting-in-turmoil-after-several-leaders-pull-out-of-palau-summit" target="_blank" rel="noopener noreferrer">Pacific Islands Forum meeting in turmoil after several leaders pull out of Palau summit</a></div></li>
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/pcldcc" data-cat="dev" data-sent="0" data-slug="news california passes" hidden="until-found"><img class="athumb" src="https://www.phoronix.net/image.php?id=2026&amp;image=ab_1856_passes" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc11">LOBSTERS</span> &middot; Aug 30<span class="acat"> &middot; <span class="cat">Dev</span></span></span><a class="atitle" href="https://www.phoronix.com/news/California-AB-1856-Passes" target="_blank" rel="noopener noreferrer">California Passes AB-1856 For Open-Source Relief Over Age Verification</a></div></li>
 <li class="arow" data-count="1" data-id="rss:https://www.dw.com/en/nepal-issues-fresh-flood-warning-as-3-000-still-missing/a-78561068?maca=en-rss-en-world-4025-rdf" data-cat="world" data-sent="0" data-slug="nepal issues fresh flood warning still missing" hidden="until-found"><div class="abody"><span class="ameta"><span class="src sc32">DW WORLD</span> &middot; Aug 30<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.dw.com/en/nepal-issues-fresh-flood-warning-as-3-000-still-missing/a-78561068?maca=en-rss-en-world-4025-rdf" target="_blank" rel="noopener noreferrer">Nepal issues fresh flood warning as 3,000 still missing</a></div></li>
-<li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/2026/aug/30/renee-gyirong-port-flood-nepal-family-australia-help-search" data-cat="world" data-sent="0" data-slug="world aug renee gyirong port flood nepal family australia help search" hidden="until-found"><img class="athumb" src="https://i.guim.co.uk/img/media/2032b6eb7594afc8a6fa850b3901cb1ca14be9e8/0_0_870_696/master/870.jpg?width=240&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=c7674f50a8a186a895f69e9325fb7432" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc17">GUARDIAN WORLD</span> &middot; Aug 30<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.theguardian.com/world/2026/aug/30/renee-gyirong-port-flood-nepal-family-australia-help-search" target="_blank" rel="noopener noreferrer">Renee was at Gyirong Port minutes before flood struck, now her family want to travel from Australia to help search</a></div></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
