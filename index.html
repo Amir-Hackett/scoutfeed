@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-06T23:22:56.076Z">
+<meta name="sf-version" content="2026-09-07T00:22:57.937Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -684,12 +684,14 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#ef4444"] { color: #b60010 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(287 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(224 55% 72%)"] { color: #495b8f !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(152 55% 72%)"] { color: #186e4e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#3b82f6"] { color: #0755c5 !important; }
@@ -700,14 +702,12 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#c084fc"] { color: #7638ab !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(336 55% 72%)"] { color: #894262 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f87171"] { color: #a7242f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(29 55% 72%)"] { color: #795532 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fbbf24"] { color: #885000 !important; }
@@ -738,9 +738,10 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(320 55% 72%)"] { color: #874072 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#5eead4"] { color: #007362 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#818cf8"] { color: #4a4eb4 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(159 55% 72%)"] { color: #176d56 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(92 55% 72%)"] { color: #466a1c !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(63 55% 72%)"] { color: #61620b !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(337 55% 72%)"] { color: #894360 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(342 55% 72%)"] { color: #8a435b !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(230 55% 72%)"] { color: #4e5894 !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(185 55% 72%)"] { color: #1d6970 !important; }
 .sc0 { color: hsl(269 55% 72%); }
 :root[data-theme="light"] .sc0 { color: #6e4992; }
 .sc1 { color: #f472b6; }
@@ -1005,10 +1006,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 7:22 PM &middot; 283 TODAY</p>
+	<p class="stats">UPDATED 8:22 PM &middot; 289 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">138</span><span class="sr-only"> — 138 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">245</span><span class="sr-only"> — 245 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">150</span><span class="sr-only"> — 150 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">374</span><span class="sr-only"> — 374 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">224</span><span class="sr-only"> — 224 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">269</span><span class="sr-only"> — 269 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">110</span><span class="sr-only"> — 110 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">297</span><span class="sr-only"> — 297 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">502</span><span class="sr-only"> — 502 stories</span></button><button class="chip" data-filter="humanitarian">Humanitarian<span class="chipn" aria-hidden="true">58</span><span class="sr-only"> — 58 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">321</span><span class="sr-only"> — 321 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">312</span><span class="sr-only"> — 312 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">138</span><span class="sr-only"> — 138 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">245</span><span class="sr-only"> — 245 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">148</span><span class="sr-only"> — 148 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">376</span><span class="sr-only"> — 376 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">224</span><span class="sr-only"> — 224 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">269</span><span class="sr-only"> — 269 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">110</span><span class="sr-only"> — 110 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">298</span><span class="sr-only"> — 298 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">500</span><span class="sr-only"> — 500 stories</span></button><button class="chip" data-filter="humanitarian">Humanitarian<span class="chipn" aria-hidden="true">58</span><span class="sr-only"> — 58 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">321</span><span class="sr-only"> — 321 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">313</span><span class="sr-only"> — 313 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1047,6 +1048,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://variety.com/2026/film/reviews/everest-the-other-side-review-1236852376/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact rail-art has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cwyz74xn8q8o#0" data-srckey="bbc world" data-cat="world" data-sent="0" data-ts="1788739292000" data-slug="news articles cwyz74xn8q8o">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Austria&#39;s Islamic headscarf ban in force as under-14s go back to school — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-07T00:01:32.000Z">8:01 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Austria&#39;s Islamic headscarf ban in force as under-14s go back to school</h3>
+	<p class="snippet">The government says the law is intended to protect the rights of young girls, but critics say it is fuelling anti-Muslim feeling.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/640/cpsprodpb/cd65/live/c08394c0-a843-11f1-b3a7-d5de760fef6e.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/320/cpsprodpb/cd65/live/c08394c0-a843-11f1-b3a7-d5de760fef6e.jpg 320w, https://ichef.bbci.co.uk/ace/standard/640/cpsprodpb/cd65/live/c08394c0-a843-11f1-b3a7-d5de760fef6e.jpg 640w, https://ichef.bbci.co.uk/ace/standard/960/cpsprodpb/cd65/live/c08394c0-a843-11f1-b3a7-d5de760fef6e.jpg 960w" sizes="(max-width: 640px) 78vw, 320px">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Austria&#39;s Islamic headscarf ban in force as under-14s go back to school</h3>
+	<p class="about">The government says the law is intended to protect the rights of young girls, but critics say it is fuelling anti-Muslim feeling.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.bbc.co.uk/news/articles/cwyz74xn8q8o" target="_blank" rel="noopener noreferrer">BBC World &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1122,31 +1148,6 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://www.cbssports.com/college-football/news/dabo-swinney-clemson-future-historic-lsu-loss/" target="_blank" rel="noopener noreferrer">CBS Sports &#8599;</a>
-	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
-	<div class="fb">
-	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
-	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
-</div>
-	</div>
-</div>
-</div>
-</article>
-<article class="card compact rail-art has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788680997" data-srckey="al jazeera" data-cat="world" data-sent="0" data-ts="1788687606000" data-slug="features israeli flags become the latest weapon settlers west bank domination">
-<div class="inner">
-<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Israeli flags become the latest weapon of settlers in West Bank domination — flip for details">
-	<div class="meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T09:40:06.000Z">5:40 am</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
-	<h3 class="title">Israeli flags become the latest weapon of settlers in West Bank domination</h3>
-	<p class="snippet">Israel&#39;s visual colonisation aims to make Palestinians feel like guests in their own homeland.</p>
-	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
-	<img class="thumb" src="https://www.aljazeera.com/wp-content/uploads/2026/02/afp_6991c3fac364-1771160570.jpg?resize=1920%2C1440" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-</div>
-<div class="face back" inert>
-	<h3 class="title">Israeli flags become the latest weapon of settlers in West Bank domination</h3>
-	<p class="about">Through the rapid deployment of mobile outposts and hundreds of flags, a new phase of visual and psychological colonisation aims to make Palestinians feel like guests in their own homeland. A profound sense of anguish accompanies 25-year-old Taghreed Yahya during her daily commute from her town of Kafr Ra’i to the city centre of Jenin in the north of the occupied West Bank. Along the main road connecting Jenin and Nablus, she is routinely confronted by hundreds of Israeli flags, a jarring visual imposition of Israeli domination and occupation on a route heavily used by local Palestinians. Yahya said it started with a flag here, an outpost there, a new road cutting through the landscape. “[It] makes the scene that was familiar for years change; all of this naturally leaves sadness, anger…</p>
-	
-	
-	<div class="actions">
-	<a class="more" href="https://www.aljazeera.com/features/2026/9/6/israeli-flags-become-the-latest-weapon-of-settlers-in-west-bank-domination?traffic_source=rss" target="_blank" rel="noopener noreferrer">Al Jazeera &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -1332,43 +1333,43 @@ footer a { color: var(--text-faint); }
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">1</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.usopen.org/en_US/news/articles/2026-09-05/stefanos_tsitsipas_prepares_to_face_ben_shelton_on_sunday_at_the_2026_us_open.html" target="_blank" rel="noopener noreferrer">Stefanos Tsitsipas prepares to face Ben Shelton on Sunday at the 2026 US Open</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(159 55% 72%)">US OPEN TENNIS</span><span class="sep" aria-hidden="true">&middot;</span>"stefanos tsitsipas" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.espn.com/college-football/story/_/id/49845870/swinney-says-clemson-long-way-go-loss-lsu" target="_blank" rel="noopener noreferrer">Swinney says Clemson has &#39;long way to go&#39; after loss to LSU</a>
+		<p class="trend-meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"act" &middot; 50000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">2</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.orlandocitysc.com/pride/news/orlando-pride-starting-xi-a-look-at-the-pride-s-starters-and-bench-as-they-host-the-houston-dash" target="_blank" rel="noopener noreferrer">Orlando Pride Starting XI: A look at the Pride&#39;s starters and bench as they host the Houston Dash</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(242 55% 72%)">ORLANDO CITY</span><span class="sep" aria-hidden="true">&middot;</span>"houston dash vs orlando pride" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://nypost.com/2026/09/06/lifestyle/women-ban-men-from-grand-theft-auto-6-for-cheating-feature/" target="_blank" rel="noopener noreferrer">Sexy Grand Theft Auto romance triggers in-real-life ‘cheating’ scandals: ‘No way is my fiancé playing this’</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(337 55% 72%)">NEW YORK POST</span><span class="sep" aria-hidden="true">&middot;</span>"gta vi" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">3</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://collider.com/thoroughbreds-anya-taylor-joy-best-mystery-thriller/" target="_blank" rel="noopener noreferrer">Anya Taylor-Joy&#39;s 93-Minute Thriller Is Quietly One of the Best Mysteries Streaming</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(92 55% 72%)">COLLIDER</span><span class="sep" aria-hidden="true">&middot;</span>"anya taylor-joy" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://www.si.com/nfl/cardinals/onsi/arizona-cardinals-mailbag-jeremiyah-love-recovery-josh-sweat-trade-talk-biggest-question-marks" target="_blank" rel="noopener noreferrer">Cardinals Mailbag: Jeremiyah Love&#39;s Recovery, Josh Sweat Trade Talk and Arizona&#39;s Biggest Question Marks</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(342 55% 72%)">SPORTS ILLUSTRATED</span><span class="sep" aria-hidden="true">&middot;</span>"jeremiyah love" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">4</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.sltrib.com/religion/2026/09/04/commentary-sainted-charlie-kirk/" target="_blank" rel="noopener noreferrer">Commentary: A sainted Charlie Kirk serves MAGA. It doesn’t serve the girls drawn to his myth.</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(63 55% 72%)">THE SALT LAKE TRIBUNE</span><span class="sep" aria-hidden="true">&middot;</span>"erika kirk" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://muddyrivernews.com/opinion/daily-dirt-its-time-for-aneyas-williams-to-shine-at-notre-dame/20260904080728/" target="_blank" rel="noopener noreferrer">DAILY DIRT: It’s time for Aneyas Williams to shine at Notre Dame</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(230 55% 72%)">MUDDY RIVER NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"aneyas williams" &middot; 500+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">5</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://espndeportes.espn.com/futbol/colombia/nota/_/id/17217665/deportivo-pereira-vs-millonarios-liga-betplay-equipo-fecha-hora-tv-en-vivo" target="_blank" rel="noopener noreferrer">When do Deportivo Pereira vs. Millonarios play in the Liga BetPlay: team, date, time and live TV</a>
-		<p class="trend-meta"><span class="src" style="color:hsl(12 55% 72%)">ESPN DEPORTES</span><span class="sep" aria-hidden="true">&middot;</span>"deportivo pereira - millonarios" &middot; 500+ searches</p>
+		<a class="trend-title" href="https://wtop.com/sports/2026/09/a-sunday-night-at-lambeau-marks-dan-hicks-35th-nbc-sports-season-milestone/" target="_blank" rel="noopener noreferrer">A Sunday night at Lambeau marks Dan Hicks’ 35th NBC Sports season milestone</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(29 55% 72%)">WTOP NEWS</span><span class="sep" aria-hidden="true">&middot;</span>"nbc sports" &middot; 1000+ searches</p>
 	</div>
 </li>
 <li class="trend-item">
 	<span class="rank" aria-hidden="true">6</span>
 	<div class="trend-body">
-		<a class="trend-title" href="https://www.espn.com/nfl/story/_/id/49853118/rams-expect-puka-nacua-alaric-jackson-play-vs-49ers" target="_blank" rel="noopener noreferrer">Rams expect Puka Nacua, Alaric Jackson to play vs. 49ers</a>
-		<p class="trend-meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span>"puka nacua" &middot; 5000+ searches</p>
+		<a class="trend-title" href="https://www.thestar.com/entertainment/donald-trump-s-escalating-feud-with-canada-has-prompted-joe-rogan-and-george-clooney-to-fire-back/article_a53c9b21-d7e2-45fd-810c-2ffcf3d1b03c.html" target="_blank" rel="noopener noreferrer">Donald Trump’s escalating feud with Canada has prompted Joe Rogan and George Clooney to fire back</a>
+		<p class="trend-meta"><span class="src" style="color:hsl(185 55% 72%)">TORONTO STAR</span><span class="sep" aria-hidden="true">&middot;</span>"seth meyers" &middot; 500+ searches</p>
 	</div>
 </li>
 </ol>
@@ -1391,6 +1392,156 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://www.aljazeera.com/features/2026/9/6/israeli-flags-become-the-latest-weapon-of-settlers-in-west-bank-domination?traffic_source=rss" target="_blank" rel="noopener noreferrer">Al Jazeera &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#3b82f6" data-count="1" data-id="rss:US-EN-49853865" data-srckey="espn" data-cat="sports" data-sent="0" data-ts="1788739823402" data-slug="mlb story braves ronald acuna does curtain call amid boos philly">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Acuña gives Philly fans curtain call after 3-run HR — flip for details">
+	<div class="meta"><span class="src" style="color:#ef4444">ESPN</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-07T00:10:23.402Z">8:10 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#3b82f6">Sports</span></div>
+	<h3 class="title">Acuña gives Philly fans curtain call after 3-run HR</h3>
+	<p class="snippet">Ronald Acuna Jr. did a curtain call to irate Phillies fans after hitting a tying three-run homer and the Braves used a late rally to defeat Philadelphia 5-4 on Sunday, extending their lead in the NL East to five games.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0906%2Fr1712541_1296x729_16-9.jpg&amp;w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0906%2Fr1712541_1296x729_16-9.jpg&amp;w=240 240w, https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0906%2Fr1712541_1296x729_16-9.jpg&amp;w=340 340w, https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0906%2Fr1712541_1296x729_16-9.jpg&amp;w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Acuña gives Philly fans curtain call after 3-run HR</h3>
+	<p class="about">Ronald Acuna Jr. did a curtain call to irate Phillies fans after hitting a tying three-run homer and the Braves used a late rally to defeat Philadelphia 5-4 on Sunday, extending their lead in the NL East to five games.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.espn.com/mlb/story/_/id/49853865/braves-ronald-acuna-jr-does-curtain-call-amid-boos-philly" target="_blank" rel="noopener noreferrer">ESPN &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.bbc.co.uk/news/articles/cwyz74xn8q8o#0" data-srckey="bbc world" data-cat="world" data-sent="0" data-ts="1788739292000" data-slug="news articles cwyz74xn8q8o">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Austria&#39;s Islamic headscarf ban in force as under-14s go back to school — flip for details">
+	<div class="meta"><span class="src" style="color:#f87171">BBC WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-07T00:01:32.000Z">8:01 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Austria&#39;s Islamic headscarf ban in force as under-14s go back to school</h3>
+	<p class="snippet">The government says the law is intended to protect the rights of young girls, but critics say it is fuelling anti-Muslim feeling.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/cd65/live/c08394c0-a843-11f1-b3a7-d5de760fef6e.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cd65/live/c08394c0-a843-11f1-b3a7-d5de760fef6e.jpg 240w, https://ichef.bbci.co.uk/ace/standard/340/cpsprodpb/cd65/live/c08394c0-a843-11f1-b3a7-d5de760fef6e.jpg 340w, https://ichef.bbci.co.uk/ace/standard/510/cpsprodpb/cd65/live/c08394c0-a843-11f1-b3a7-d5de760fef6e.jpg 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Austria&#39;s Islamic headscarf ban in force as under-14s go back to school</h3>
+	<p class="about">The government says the law is intended to protect the rights of young girls, but critics say it is fuelling anti-Muslim feeling.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.bbc.co.uk/news/articles/cwyz74xn8q8o" target="_blank" rel="noopener noreferrer">BBC World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236852405" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788739200000" data-slug="film festivals tokyo festival new competition award honoring women">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Tokyo Film Festival Adds Nippon Cinema Now Competition, Crosscut Asia+ Section, New Award Honoring Women in Film — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-07T00:00:00.000Z">8:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Tokyo Film Festival Adds Nippon Cinema Now Competition, Crosscut Asia+ Section, New Award Honoring Women in Film</h3>
+	<p class="snippet">The Tokyo International Film Festival will introduce two new competitive awards, a Southeast Asia-focused section and a prize honoring women in cinema. The Nippon Cinema Now section will award a Best Film prize and a Special Jury Prize this year, with a jury combining Japanese and international industry figures. TIFF said the awards are meant […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/08/Filipinana_Still_13.jpg?w=528" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/08/Filipinana_Still_13.jpg?w=264 264w, https://variety.com/wp-content/uploads/2026/08/Filipinana_Still_13.jpg?w=528 528w, https://variety.com/wp-content/uploads/2026/08/Filipinana_Still_13.jpg?w=792 792w" sizes="(max-width: 680px) 34vw, min(36vw, 264px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Tokyo Film Festival Adds Nippon Cinema Now Competition, Crosscut Asia+ Section, New Award Honoring Women in Film</h3>
+	<p class="about">The Tokyo International Film Festival will introduce two new competitive awards, a Southeast Asia-focused section and a prize honoring women in cinema. The Nippon Cinema Now section will award a Best Film prize and a Special Jury Prize this year, with a jury combining Japanese and international industry figures. TIFF said the awards are meant […]</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://variety.com/2026/film/festivals/tokyo-film-festival-new-competition-award-honoring-women-1236852405/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://variety.com/?p=1236853165" data-srckey="variety" data-cat="entertainment" data-sent="0" data-ts="1788738665000" data-slug="news emmy awards winners list night two creative arts">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Creative Arts Emmy Awards Night 2: Winners List (Updating Live) — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(152 55% 72%)">VARIETY</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T23:51:05.000Z">7:51 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Creative Arts Emmy Awards Night 2: Winners List (Updating Live)</h3>
+	<p class="snippet">The 78th Emmys Night 2 was set to kick off on Sunday night with an opening monologue by “The Pitt” star Noah Wyle, whose series is this year’s most nominated — at 25 total. “This is a very special industry and I am so blessed to be a part of it,” he said. “Awards and […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://variety.com/wp-content/uploads/2026/09/78th-emmys-horiz-generic-v1-e1788649570183.jpg?w=340" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" srcset="https://variety.com/wp-content/uploads/2026/09/78th-emmys-horiz-generic-v1-e1788649570183.jpg?w=240 240w, https://variety.com/wp-content/uploads/2026/09/78th-emmys-horiz-generic-v1-e1788649570183.jpg?w=340 340w, https://variety.com/wp-content/uploads/2026/09/78th-emmys-horiz-generic-v1-e1788649570183.jpg?w=510 510w" sizes="(max-width: 640px) 34vw, min(34vw, 170px)">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Creative Arts Emmy Awards Night 2: Winners List (Updating Live)</h3>
+	<p class="about">The 78th Emmys Night 2 was set to kick off on Sunday night with an opening monologue by “The Pitt” star Noah Wyle, whose series is this year’s most nominated — at 25 total. “This is a very special industry and I am so blessed to be a part of it,” he said. “Awards and […]</p>
+	<p class="why"><span class="whylabel">matched</span> <span class="whykey">The Pitt</span> <span class="whystrength" title="How strongly this matched your interest (decayed frequency: 2.0)">match</span></p>
+	
+	<div class="actions">
+	<a class="more" href="https://variety.com/2026/tv/news/emmy-awards-winners-list-night-two-creative-arts-1236853165/" target="_blank" rel="noopener noreferrer">Variety &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact w2 has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.nytimes.com/2026/09/06/world/europe/afd-germany-europe-far-right-saxony-anhalt.html" data-srckey="nyt world" data-cat="world" data-sent="0" data-ts="1788736546000" data-slug="world europe afd germany far right saxony anhalt html">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="AfD Victory in Saxony-Anhalt Sends a Signal to Europe — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(147 55% 72%)">NYT WORLD</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T23:15:46.000Z">7:15 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">AfD Victory in Saxony-Anhalt Sends a Signal to Europe</h3>
+	<p class="snippet">A vote in eastern Germany has given fresh momentum to hard-right parties hoping to win elections across Europe next year, analysts said.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://static01.nyt.com/images/2026/09/06/multimedia/06int-europe-far-right-hmvt/06int-europe-far-right-hmvt-mediumSquareAt3X.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">AfD Victory in Saxony-Anhalt Sends a Signal to Europe</h3>
+	<p class="about">A vote in eastern Germany has given fresh momentum to hard-right parties hoping to win elections across Europe next year, analysts said.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.nytimes.com/2026/09/06/world/europe/afd-germany-europe-far-right-saxony-anhalt.html" target="_blank" rel="noopener noreferrer">NYT World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact h2 has-thumb" style="--rail:#34d399" data-count="1" data-id="rss:https://www.engadget.com/2248646/smart-gadgets-could-instantly-upgrade-backyard/" data-srckey="engadget" data-cat="tech" data-sent="0" data-ts="1788736500000" data-slug="smart gadgets could instantly upgrade backyard">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="10 Smart Gadgets That Could Instantly Upgrade Your Backyard — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(229 55% 72%)">ENGADGET</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-06T23:15:00.000Z">7:15 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#34d399">Tech</span></div>
+	<h3 class="title">10 Smart Gadgets That Could Instantly Upgrade Your Backyard</h3>
+	<p class="snippet">Smart outdoor tech is changing how people use their backyards, and this handful of clever upgrades can make your space more useful and enjoyable.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.engadget.com/img/gallery/10-smart-gadgets-that-could-instantly-upgrade-your-backyard/l-intro-1787156050.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">10 Smart Gadgets That Could Instantly Upgrade Your Backyard</h3>
+	<p class="about">Smart outdoor tech is changing how people use their backyards, and this handful of clever upgrades can make your space more useful and enjoyable.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.engadget.com/2248646/smart-gadgets-could-instantly-upgrade-backyard/" target="_blank" rel="noopener noreferrer">Engadget &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -8453,7 +8604,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2713 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2707 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241003" data-cat="entertainment" data-sent="0" data-slug="interest rilakkuma heads mount midoriyama new ninja warrior crossover" hidden="until-found"><img class="athumb" src="https://www.animenewsnetwork.com/thumbnails/crop600x315gH9/cms/interest.3/241003/rilakkuma-sasuke.jpeg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-05/rilakkuma-heads-to-mount-midoriyama-in-new-ninja-warrior-crossover/.241003" target="_blank" rel="noopener noreferrer">Rilakkuma Heads to Mount Midoriyama in New Ninja Warrior Crossover</a></div></li>
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/netflix-haunting-bly-manor-perfect-binge-september-2026/" data-cat="entertainment" data-sent="0" data-slug="netflix haunting bly manor perfect binge september" hidden="until-found"><img class="athumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/07/victoria-pedretti-bly-manor.jpg?w=240" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc1">POLYGON</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.polygon.com/netflix-haunting-bly-manor-perfect-binge-september-2026/" target="_blank" rel="noopener noreferrer">Netflix&#39;s Near-Perfect 9-Part Gothic Thriller Is So Good You&#39;ll Finish in One Weekend</a></div></li>
@@ -11162,12 +11313,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:bda6ad80-a435-11f1-9783-ed09ccae7966" data-cat="world" data-sent="0" data-slug="asia pacific putin set for central summit russia china seek counter western influence" hidden="until-found"><img class="athumb" src="https://s.france24.com/media/display/32f6bdfa-a436-11f1-a03d-005056a97e36/w:1024/p:16x9/AP26140554039627.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc31">FRANCE 24</span> &middot; Aug 30<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.france24.com/en/asia-pacific/20260830-putin-xi-set-for-central-asia-summit-as-russia-china-seek-to-counter-western-influence" target="_blank" rel="noopener noreferrer">Putin, Xi set for Central Asia summit as Russia, China seek to counter Western influence</a></div></li>
 <li class="arow" data-count="1" data-id="rss:https://dev.to/highcenburg/what-do-you-think-is-better-a-free-period-or-a-freemium-5026" data-cat="dev" data-sent="0" data-slug="highcenburg what you think better free period freemium" hidden="until-found"><img class="athumb" src="https://media2.dev.to/dynamic/image/width=240,height=125,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fo0bpxulnk0e1mlt2zhsr.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc24">DEV.TO</span> &middot; Aug 30<span class="acat"> &middot; <span class="cat">Dev</span></span></span><a class="atitle" href="https://dev.to/highcenburg/what-do-you-think-is-better-a-free-period-or-a-freemium-5026" target="_blank" rel="noopener noreferrer">What do you think is better, a free period or a freemium?</a></div></li>
 <li class="arow" data-count="1" data-id="rss:https://www.foxnews.com/politics/iceland-votes-resuming-eu-membership-talks-trump-push-neighboring-greenland-looms-debate" data-cat="politics" data-sent="0" data-slug="politics iceland votes resuming membership talks trump push neighboring greenland looms debate" hidden="until-found"><img class="athumb" src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/01/931/523/trump-greenland-split.jpg?ve=1&amp;tl=1" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc21">FOX NEWS POLITICS</span> &middot; Aug 30<span class="acat"> &middot; <span class="cat">Politics</span></span></span><a class="atitle" href="https://www.foxnews.com/politics/iceland-votes-resuming-eu-membership-talks-trump-push-neighboring-greenland-looms-debate" target="_blank" rel="noopener noreferrer">Iceland voters say no to negotiations to join EU</a></div></li>
-<li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/australia-news/live/2026/aug/30/nepal-tibet-floods-missing-australians-secret-harbour-byelection-wa-tanya-plibersek-insiders-pacific-islands-forum-ntwnfb" data-cat="world" data-sent="0" data-slug="australia news live aug nepal tibet floods missing australians secret harbour byelection tanya plibersek insiders pacific" hidden="until-found"><img class="athumb" src="https://i.guim.co.uk/img/media/e4f0700cc93a6fb638c98ecf5b42de6146354abe/519_116_2967_2374/master/2967.jpg?width=240&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=85a44ce403cc370d68a25c69d4b706be" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc17">GUARDIAN WORLD</span> &middot; Aug 30<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.theguardian.com/australia-news/live/2026/aug/30/nepal-tibet-floods-missing-australians-secret-harbour-byelection-wa-tanya-plibersek-insiders-pacific-islands-forum-ntwnfb" target="_blank" rel="noopener noreferrer">‘We owe it to history’ to defeat One Nation, PM tells Labor faithful – as it happened</a></div></li>
-<li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/ktbweg" data-cat="dev" data-sent="0" data-slug="blog posts breaking claude code opus and automode" hidden="until-found"><img class="athumb" src="https://embracethered.com/blog/images/2026/claude-automode/claude-auto-mode-rce.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc11">LOBSTERS</span> &middot; Aug 30<span class="acat"> &middot; <span class="cat">Dev</span></span></span><a class="atitle" href="https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/" target="_blank" rel="noopener noreferrer">Prompt Injection in Claude Code Opus 5 Auto Mode</a></div></li>
-<li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/australia-news/2026/aug/30/one-nations-secret-harbour-byelection-win-shows-labor-is-at-a-loss-when-it-comes-to-calming-angry-voters" data-cat="world" data-sent="0" data-slug="australia news aug one nations secret harbour byelection win shows labor loss when comes calming angry" hidden="until-found"><img class="athumb" src="https://i.guim.co.uk/img/media/78bab8fec87b3634837de0a122850d7c6a16070e/297_0_3474_2779/master/3474.jpg?width=240&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=10adb8f52f4532e6f0927f9dca67ba7e" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc17">GUARDIAN WORLD</span> &middot; Aug 30<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.theguardian.com/australia-news/2026/aug/30/one-nations-secret-harbour-byelection-win-shows-labor-is-at-a-loss-when-it-comes-to-calming-angry-voters" target="_blank" rel="noopener noreferrer">One Nation’s Secret Harbour byelection win shows Labor is at a loss when it comes to calming angry voters | Analysis</a></div></li>
-<li class="arow" data-count="1" data-id="rss:https://dev.to/ax0r/i-building-small-auditable-ai-tools-for-defensive-security-i5c" data-cat="dev" data-sent="0" data-slug="ax0r building small auditable tools for defensive security i5c" hidden="until-found"><img class="athumb" src="https://media2.dev.to/dynamic/image/width=240,height=125,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fxpd8z3qlu0u2s77e82yz.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc24">DEV.TO</span> &middot; Aug 30<span class="acat"> &middot; <span class="cat">Dev</span></span></span><a class="atitle" href="https://dev.to/ax0r/i-building-small-auditable-ai-tools-for-defensive-security-i5c" target="_blank" rel="noopener noreferrer">Building Small, Auditable AI Tools for Defensive Security</a></div></li>
-<li class="arow" data-count="1" data-id="rss:https://www.nytimes.com/2026/08/30/world/asia/japan-hirosaki-castle-moving.html" data-cat="world" data-sent="0" data-slug="world asia japan hirosaki castle moving html" hidden="until-found"><img class="athumb" src="https://static01.nyt.com/images/2026/08/28/multimedia/28Hirosaki-Castle-cover-gwfk/28Hirosaki-Castle-cover-gwfk-mediumSquareAt3X.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc10">NYT WORLD</span> &middot; Aug 30<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.nytimes.com/2026/08/30/world/asia/japan-hirosaki-castle-moving.html" target="_blank" rel="noopener noreferrer">The People of Hirosaki, Japan, Try to Move a Castle by Hand</a></div></li>
-<li class="arow" data-count="1" data-id="rss:c9561506-a432-11f1-a91a-574a0623f441" data-cat="world" data-sent="0" data-slug="americas nasa set launch roman telescope map the universe" hidden="until-found"><img class="athumb" src="https://s.france24.com/media/display/54b1beee-a432-11f1-8b6d-005056bfb2b6/w:1024/p:16x9/2026-08-29T195602Z-94810877-RC2I8NAYVGKF-RTRMADP-3-SPACE-NASA-TELESCOPE.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc31">FRANCE 24</span> &middot; Aug 30<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.france24.com/en/americas/20260830-nasa-set-to-launch-roman-telescope-to-map-the-universe" target="_blank" rel="noopener noreferrer">NASA set to launch Roman telescope to map the universe</a></div></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
