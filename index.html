@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/feed+json" title="scoutfeed" href="feed.json">
 <!-- What this render IS, so a cached copy can notice it has been superseded
      (the pill at the end of the page script compares it to version.json). -->
-<meta name="sf-version" content="2026-09-07T01:11:56.857Z">
+<meta name="sf-version" content="2026-09-07T01:26:56.919Z">
 <!-- Prefetch a story the reader is about to open; viewport heuristics keep
      this to links actually in view. -->
 <script type="speculationrules">
@@ -684,6 +684,9 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
    (Dev #5eead4) — under AA. Each colour now gets an exact OKLCH-lightness-
    clamped variant, emitted per distinct colour below (see lightColorRules).
    .sent keeps the --sent token, which is already 4.81:1 in light. */
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
+:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#60a5fa"] { color: #145dac !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#ef4444"] { color: #b60010 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#a78bfa"] { color: #6545ad !important; }
@@ -692,14 +695,12 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(147 55% 72%)"] { color: #196e49 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(229 55% 72%)"] { color: #4d5993 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(287 55% 72%)"] { color: #7c428b !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(288 55% 72%)"] { color: #7c428b !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(224 55% 72%)"] { color: #495b8f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#f472b6"] { color: #9f216c !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#34d399"] { color: #007644 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#3b82f6"] { color: #0755c5 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb7185"] { color: #a72041 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#a3e635"] { color: #367000 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(37 55% 72%)"] { color: #73592a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(314 55% 72%)"] { color: #863f78 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(323 55% 72%)"] { color: #88406f !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#c084fc"] { color: #7638ab !important; }
@@ -708,7 +709,6 @@ a.atitle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; 
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#fb923c"] { color: #9d3b00 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="#facc15"] { color: #815500 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(69 55% 72%)"] { color: #5c6410 !important; }
-:root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(18 55% 72%)"] { color: #80503a !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(279 55% 72%)"] { color: #76458e !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(101 55% 72%)"] { color: #3c6c20 !important; }
 :root[data-theme="light"] :is(.meta, .trend-meta) [style*="hsl(269 55% 72%)"] { color: #6e4992 !important; }
@@ -1007,10 +1007,10 @@ footer a { color: var(--text-faint); }
 	<p class="eyebrow">PERSONAL NEWS RADAR</p>
 	<h1>scout<span class="tld">feed</span></h1>
 	<p class="sub">Everything your scout matched — texted or not. The phone gets the top three; nothing else gets missed.</p>
-	<p class="stats">UPDATED 9:11 PM &middot; 291 TODAY</p>
+	<p class="stats">UPDATED 9:26 PM &middot; 295 TODAY</p>
 </header>
 <nav class="chips" aria-label="Filter feed">
-	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">138</span><span class="sr-only"> — 138 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">245</span><span class="sr-only"> — 245 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">147</span><span class="sr-only"> — 147 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">376</span><span class="sr-only"> — 376 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">224</span><span class="sr-only"> — 224 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">270</span><span class="sr-only"> — 270 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">111</span><span class="sr-only"> — 111 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">298</span><span class="sr-only"> — 298 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">500</span><span class="sr-only"> — 500 stories</span></button><button class="chip" data-filter="humanitarian">Humanitarian<span class="chipn" aria-hidden="true">58</span><span class="sr-only"> — 58 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">320</span><span class="sr-only"> — 320 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">313</span><span class="sr-only"> — 313 stories</span></button>
+	<button class="chip active" data-filter="">All<span class="sr-only"> — 3000 stories</span></button><button class="chip" data-filter="ai">AI<span class="chipn" aria-hidden="true">138</span><span class="sr-only"> — 138 stories</span></button><button class="chip" data-filter="healthcare">Healthcare<span class="chipn" aria-hidden="true">245</span><span class="sr-only"> — 245 stories</span></button><button class="chip" data-filter="dev">Dev<span class="chipn" aria-hidden="true">147</span><span class="sr-only"> — 147 stories</span></button><button class="chip" data-filter="entertainment">Entertainment<span class="chipn" aria-hidden="true">378</span><span class="sr-only"> — 378 stories</span></button><button class="chip" data-filter="games">Games<span class="chipn" aria-hidden="true">223</span><span class="sr-only"> — 223 stories</span></button><button class="chip" data-filter="markets">Markets<span class="chipn" aria-hidden="true">270</span><span class="sr-only"> — 270 stories</span></button><button class="chip" data-filter="music">Music<span class="chipn" aria-hidden="true">111</span><span class="sr-only"> — 111 stories</span></button><button class="chip" data-filter="sports">Sports<span class="chipn" aria-hidden="true">297</span><span class="sr-only"> — 297 stories</span></button><button class="chip" data-filter="world">World<span class="chipn" aria-hidden="true">500</span><span class="sr-only"> — 500 stories</span></button><button class="chip" data-filter="humanitarian">Humanitarian<span class="chipn" aria-hidden="true">58</span><span class="sr-only"> — 58 stories</span></button><button class="chip" data-filter="politics">Politics<span class="chipn" aria-hidden="true">320</span><span class="sr-only"> — 320 stories</span></button><button class="chip" data-filter="tech">Tech<span class="chipn" aria-hidden="true">313</span><span class="sr-only"> — 313 stories</span></button>
 	<button class="toggle" data-sent-only aria-pressed="false">Texted only</button>
 	<!-- 3.4: hiding a story used to be a one-way door. The script shows this
 	     when sf-hidden is non-empty; it restores every hidden story at once. -->
@@ -1402,6 +1402,81 @@ footer a { color: var(--text-faint); }
 </div>
 </div>
 </article>
+<article class="card compact" style="--rail:#fbbf24" data-count="1" data-id="rss:https://www.hollywoodreporter.com/?p=1236692790" data-srckey="hollywood reporter" data-cat="entertainment" data-sent="0" data-ts="1788743503000" data-slug="news shailene woodley ernest harden win emmys">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Shailene Woodley and Ernest Harden Jr. Score 2026 Emmy Guest Acting in a Drama Series Wins — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(18 55% 72%)">HOLLYWOOD REPORTER</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-07T01:11:43.000Z">9:11 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Shailene Woodley and Ernest Harden Jr. Score 2026 Emmy Guest Acting in a Drama Series Wins</h3>
+	<p class="snippet">The awards were given out at Sunday&#39;s Creative Arts Emmys, the second of three nights that make up the 2026 Emmy Awards.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	
+</div>
+<div class="face back" inert>
+	<h3 class="title">Shailene Woodley and Ernest Harden Jr. Score 2026 Emmy Guest Acting in a Drama Series Wins</h3>
+	<p class="about">The awards were given out at Sunday&#39;s Creative Arts Emmys, the second of three nights that make up the 2026 Emmy Awards.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.hollywoodreporter.com/tv/tv-news/shailene-woodley-ernest-harden-jr-win-2026-emmys-1236692790/" target="_blank" rel="noopener noreferrer">Hollywood Reporter &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#fbbf24" data-count="1" data-id="rss:https://deadline.com/?p=1237069703" data-srckey="deadline" data-cat="entertainment" data-sent="0" data-ts="1788741179000" data-slug="shailene woodley emmy winner paradise guest actress speech">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Shailene Woodley Wins First Emmy For ‘Paradise’, Gives Shoutout To Her Mom — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(288 55% 72%)">DEADLINE</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-07T00:32:59.000Z">8:32 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#fbbf24">Entertainment</span></div>
+	<h3 class="title">Shailene Woodley Wins First Emmy For ‘Paradise’, Gives Shoutout To Her Mom</h3>
+	<p class="snippet">Shailene Woodley’s tragic turn in Season 2 of Dan Fogelman’s post-apocalyptic series Paradise won the actress — and the Hulu show — their first Emmy Award. Woodley took home the trophy in the Guest Actress In a Drama Series category during Night 2 of the 2026 Emmy Awards for playing former Graceland tour guide Annie […]</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://deadline.com/wp-content/uploads/2026/06/176877_0380_V2.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Shailene Woodley Wins First Emmy For ‘Paradise’, Gives Shoutout To Her Mom</h3>
+	<p class="about">Shailene Woodley’s tragic turn in Season 2 of Dan Fogelman’s post-apocalyptic series Paradise won the actress — and the Hulu show — their first Emmy Award. Woodley took home the trophy in the Guest Actress In a Drama Series category during Night 2 of the 2026 Emmy Awards for playing former Graceland tour guide Annie […]</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://deadline.com/2026/09/shailene-woodley-emmy-winner-paradise-guest-actress-speech-1237069703/" target="_blank" rel="noopener noreferrer">Deadline &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788730469" data-srckey="al jazeera" data-cat="world" data-sent="0" data-ts="1788740404000" data-slug="news north korea deploys warship capable annihilating retaliatory strikes">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="North Korea deploys warship ‘capable of annihilating retaliatory strikes’ — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-07T00:20:04.000Z">8:20 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">North Korea deploys warship ‘capable of annihilating retaliatory strikes’</h3>
+	<p class="snippet">Leader Kim Jong Un says vessel will form part of Pyongyang&#39;s nuclear response system, strengthen naval forces.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.aljazeera.com/wp-content/uploads/2026/09/2026-09-06T220958Z_1520531840_RC2XDNABDUIX_RTRMADP_3_NORTHKOREA-WARSHIP-1788736478.jpg?resize=1920%2C1440" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">North Korea deploys warship ‘capable of annihilating retaliatory strikes’</h3>
+	<p class="about">Leader Kim Jong Un says vessel will form part of Pyongyang&#39;s nuclear response system, strengthen naval forces.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.aljazeera.com/news/2026/9/7/north-korea-deploys-warship-capable-of-annihilating-retaliatory-strikes?traffic_source=rss" target="_blank" rel="noopener noreferrer">Al Jazeera &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
 <article class="card compact" style="--rail:#f472b6" data-count="1" data-id="rss:https://www.billboard.com/?p=1236335224" data-srckey="billboard" data-cat="music" data-sent="0" data-ts="1788740026000" data-slug="music news kid cudi kanye west reunion chicago reaction">
 <div class="inner">
 <div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Kid Cudi Responds to Criticism of Ye Support After Chicago Stage Reunion — flip for details">
@@ -1493,6 +1568,31 @@ footer a { color: var(--text-faint); }
 	
 	<div class="actions">
 	<a class="more" href="https://www.bbc.co.uk/news/articles/cwyz74xn8q8o" target="_blank" rel="noopener noreferrer">BBC World &#8599;</a>
+	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
+	<div class="fb">
+	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
+	<button class="vote down" data-vote="down" aria-label="Less like this — hide" title="Less like this (hides the story)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.7a2 2 0 0 0-2 1.7l-1.4 9a2 2 0 0 0 2 2.3zm7-13h2.7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H17"/></svg></button>
+</div>
+	</div>
+</div>
+</div>
+</article>
+<article class="card compact has-thumb" style="--rail:#f87171" data-count="1" data-id="rss:https://www.aljazeera.com/?t=1788736037" data-srckey="al jazeera" data-cat="world" data-sent="0" data-ts="1788739200000" data-slug="news liveblog iran war live tehran announce new hormuz shipping route coming days">
+<div class="inner">
+<div class="face front" role="button" tabindex="0" aria-expanded="false" aria-label="Iran war live: Tehran to announce new Hormuz shipping route in coming days — flip for details">
+	<div class="meta"><span class="src" style="color:hsl(37 55% 72%)">AL JAZEERA</span><span class="sep" aria-hidden="true">&middot;</span><time datetime="2026-09-07T00:00:00.000Z">8:00 pm</time><span class="sep" aria-hidden="true">&middot;</span><span class="cat" style="color:#f87171">World</span></div>
+	<h3 class="title">Iran war live: Tehran to announce new Hormuz shipping route in coming days</h3>
+	<p class="snippet">Move comes as Iran&#39;s top negotiator warns of heavier responses to new attacks after US strikes on Iranian oil tankers.</p>
+	<svg class="hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+	<img class="thumb" src="https://www.aljazeera.com/wp-content/uploads/2026/09/2026-09-06T121357Z_1772036827_RC2LDNAV29NA_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-1788738517.jpg?resize=1920%2C1440" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+</div>
+<div class="face back" inert>
+	<h3 class="title">Iran war live: Tehran to announce new Hormuz shipping route in coming days</h3>
+	<p class="about">Move comes as Iran&#39;s top negotiator warns of heavier responses to new attacks after US strikes on Iranian oil tankers.</p>
+	
+	
+	<div class="actions">
+	<a class="more" href="https://www.aljazeera.com/news/liveblog/2026/9/7/iran-war-live-tehran-to-announce-new-hormuz-shipping-route-in-coming-days?traffic_source=rss" target="_blank" rel="noopener noreferrer">Al Jazeera &#8599;</a>
 	<button class="share" type="button" hidden aria-label="Share this story" title="Share"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>share</button>
 	<div class="fb">
 	<button class="vote up" data-vote="up" aria-pressed="false" aria-label="More like this" title="More like this"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></button>
@@ -8655,7 +8755,7 @@ footer a { color: var(--text-faint); }
 </div>
 </section>
 <section class="archive" id="archive" hidden>
-<h2><span class="date">EARLIER</span><span class="rel">2705 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
+<h2><span class="date">EARLIER</span><span class="rel">2701 OLDER STORIES &middot; SHOWN WHEN YOU FILTER OR SEARCH</span><span class="rule" aria-hidden="true"></span></h2>
 <ul class="alist">
 <li class="arow" data-count="1" data-id="rss:https://www.animenewsnetwork.com/cms/.241003" data-cat="entertainment" data-sent="0" data-slug="interest rilakkuma heads mount midoriyama new ninja warrior crossover" hidden="until-found"><img class="athumb" src="https://www.animenewsnetwork.com/thumbnails/crop600x315gH9/cms/interest.3/241003/rilakkuma-sasuke.jpeg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc0">ANIME NEWS NETWORK</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.animenewsnetwork.com/interest/2026-09-05/rilakkuma-heads-to-mount-midoriyama-in-new-ninja-warrior-crossover/.241003" target="_blank" rel="noopener noreferrer">Rilakkuma Heads to Mount Midoriyama in New Ninja Warrior Crossover</a></div></li>
 <li class="arow" data-count="1" data-id="rss:https://www.polygon.com/netflix-haunting-bly-manor-perfect-binge-september-2026/" data-cat="entertainment" data-sent="0" data-slug="netflix haunting bly manor perfect binge september" hidden="until-found"><img class="athumb" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/07/victoria-pedretti-bly-manor.jpg?w=240" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc1">POLYGON</span> &middot; Sep 5<span class="acat"> &middot; <span class="cat">Entertainment</span></span></span><a class="atitle" href="https://www.polygon.com/netflix-haunting-bly-manor-perfect-binge-september-2026/" target="_blank" rel="noopener noreferrer">Netflix&#39;s Near-Perfect 9-Part Gothic Thriller Is So Good You&#39;ll Finish in One Weekend</a></div></li>
@@ -11358,10 +11458,6 @@ footer a { color: var(--text-faint); }
 <li class="arow" data-count="1" data-id="rss:https://lobste.rs/s/pcldcc" data-cat="dev" data-sent="0" data-slug="news california passes" hidden="until-found"><img class="athumb" src="https://www.phoronix.net/image.php?id=2026&amp;image=ab_1856_passes" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc11">LOBSTERS</span> &middot; Aug 30<span class="acat"> &middot; <span class="cat">Dev</span></span></span><a class="atitle" href="https://www.phoronix.com/news/California-AB-1856-Passes" target="_blank" rel="noopener noreferrer">California Passes AB-1856 For Open-Source Relief Over Age Verification</a></div></li>
 <li class="arow" data-count="1" data-id="rss:https://www.dw.com/en/nepal-issues-fresh-flood-warning-as-3-000-still-missing/a-78561068?maca=en-rss-en-world-4025-rdf" data-cat="world" data-sent="0" data-slug="nepal issues fresh flood warning still missing" hidden="until-found"><div class="abody"><span class="ameta"><span class="src sc32">DW WORLD</span> &middot; Aug 30<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.dw.com/en/nepal-issues-fresh-flood-warning-as-3-000-still-missing/a-78561068?maca=en-rss-en-world-4025-rdf" target="_blank" rel="noopener noreferrer">Nepal issues fresh flood warning as 3,000 still missing</a></div></li>
 <li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/2026/aug/30/renee-gyirong-port-flood-nepal-family-australia-help-search" data-cat="world" data-sent="0" data-slug="world aug renee gyirong port flood nepal family australia help search" hidden="until-found"><img class="athumb" src="https://i.guim.co.uk/img/media/2032b6eb7594afc8a6fa850b3901cb1ca14be9e8/0_0_870_696/master/870.jpg?width=240&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=c7674f50a8a186a895f69e9325fb7432" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc17">GUARDIAN WORLD</span> &middot; Aug 30<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.theguardian.com/world/2026/aug/30/renee-gyirong-port-flood-nepal-family-australia-help-search" target="_blank" rel="noopener noreferrer">Renee was at Gyirong Port minutes before flood struck, now her family want to travel from Australia to help search</a></div></li>
-<li class="arow" data-count="1" data-id="rss:https://kotaku.com/?p=2000729605" data-cat="games" data-sent="0" data-slug="star wars effects artist phil tippett shutters studio" hidden="until-found"><img class="athumb" src="https://kotaku.com/app/uploads/2026/08/philtippett.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc22">KOTAKU</span> &middot; Aug 30<span class="acat"> &middot; <span class="cat">Games</span></span></span><a class="atitle" href="https://kotaku.com/star-wars-effects-artist-phil-tippett-shutters-studio-2000729605" target="_blank" rel="noopener noreferrer">Star Wars Effects Artist Phil Tippett Shutters Studio</a></div></li>
-<li class="arow" data-count="1" data-id="rss:https://www.bbc.co.uk/sport/boxing/articles/cg7krndl84do#1" data-cat="sports" data-sent="0" data-slug="sport boxing articles cg7krndl84do" hidden="until-found"><img class="athumb" src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1f3e/live/63b16870-a461-11f1-aed2-8d6da8d75094.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc15">BBC SPORT</span> &middot; Aug 30<span class="acat"> &middot; <span class="cat">Sports</span></span></span><a class="atitle" href="https://www.bbc.co.uk/sport/boxing/articles/cg7krndl84do" target="_blank" rel="noopener noreferrer">Heavyweight Itauma handed harsh world-title lesson</a></div></li>
-<li class="arow" data-count="1" data-id="rss:https://www.theguardian.com/world/2026/aug/30/humanitarian-crisis-worsening-refuge-civilians-sudan-el-obeid" data-cat="world" data-sent="0" data-slug="world aug humanitarian crisis worsening refuge civilians sudan obeid" hidden="until-found"><img class="athumb" src="https://i.guim.co.uk/img/media/d8bca429d9ad2a591d7f9ac06371092198b118b5/635_0_3165_2533/master/3165.jpg?width=240&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=58f9f0d7208bbda79fbdbacd5af00b50" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc17">GUARDIAN WORLD</span> &middot; Aug 30<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.theguardian.com/world/2026/aug/30/humanitarian-crisis-worsening-refuge-civilians-sudan-el-obeid" target="_blank" rel="noopener noreferrer">People fleeing Sudan civil war face ‘dire and deteriorating’ conditions in refuge city</a></div></li>
-<li class="arow" data-count="1" data-id="rss:bda6ad80-a435-11f1-9783-ed09ccae7966" data-cat="world" data-sent="0" data-slug="asia pacific putin set for central summit russia china seek counter western influence" hidden="until-found"><img class="athumb" src="https://s.france24.com/media/display/32f6bdfa-a436-11f1-a03d-005056a97e36/w:1024/p:16x9/AP26140554039627.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="abody"><span class="ameta"><span class="src sc31">FRANCE 24</span> &middot; Aug 30<span class="acat"> &middot; <span class="cat">World</span></span></span><a class="atitle" href="https://www.france24.com/en/asia-pacific/20260830-putin-xi-set-for-central-asia-summit-as-russia-china-seek-to-counter-western-influence" target="_blank" rel="noopener noreferrer">Putin, Xi set for Central Asia summit as Russia, China seek to counter Western influence</a></div></li>
 </ul>
 </section>
 <p class="empty" id="no-match" hidden>No stories match that filter/search &mdash; try the All chip or clear the search.</p>
